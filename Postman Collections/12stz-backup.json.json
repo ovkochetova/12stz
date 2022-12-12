@@ -3639,14 +3639,32 @@
 			"name": "ТК в 1С",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Информация о ТК в 1С",
 					"id": "9da4135f-b55b-4d8f-820a-2878b399b7a2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -8347,19 +8365,19 @@
 	],
 	"variable": [
 		{
-			"id": "7ac43616-8468-4ae0-b1de-a984e397d829",
+			"id": "4e91e67b-f32f-470d-97dd-c63495635c35",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dca3ff2a-ca24-425d-bc9f-7933096682da",
+			"id": "f10c0a90-ede0-4138-aca9-b435e8ca22bd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "51248264-4b0c-4238-859b-4aa8586952eb",
+			"id": "c1dd4455-7004-4db1-b6f3-8b096c5a1411",
 			"key": "token",
 			"value": "",
 			"type": "string"
