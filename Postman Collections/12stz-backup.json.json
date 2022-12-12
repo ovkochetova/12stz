@@ -3702,7 +3702,7 @@
 					"response": []
 				},
 				{
-					"name": "Изменение статуса на Активно",
+					"name": "New Request",
 					"id": "c7bff6dc-83b2-4029-8486-bd2680080997",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -8472,19 +8472,19 @@
 	],
 	"variable": [
 		{
-			"id": "dfa81dbf-b8f0-43ac-ab4e-009cb568a9ed",
+			"id": "2a3d50ba-d120-4dd7-8888-e751004bb23e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03ece5c4-556e-4b3c-bede-170410316598",
+			"id": "6173782b-d023-4add-b3a4-9b9f7bb5923e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "738c5948-9ac6-48de-97a4-c6bc09c35fb8",
+			"id": "66d5a18f-2107-4042-85de-b7a3cb38ae67",
 			"key": "token",
 			"value": "",
 			"type": "string"
