@@ -3784,7 +3784,7 @@
 					"response": []
 				},
 				{
-					"name": "Огр по категор для группы зон  не активно Copy",
+					"name": "ТК в 1С Активно",
 					"event": [
 						{
 							"listen": "test",
@@ -8532,25 +8532,25 @@
 	],
 	"variable": [
 		{
-			"id": "d854973a-1379-4937-b96d-600e7c389c74",
+			"id": "a214e99c-e24e-43d8-a761-47700868f6e6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "046949cd-265a-4d0b-ab43-b6829af0621d",
+			"id": "53d2325a-316c-4026-a132-8fc66e531aa4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f3d9c056-45e7-40e0-a28f-f5742ed4d6b9",
+			"id": "a908d8f2-2dcb-489a-bd42-a84949d29cb5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4876f734-65f2-410d-8502-b09062824305",
+			"id": "f35aaad7-cd43-412b-bd3c-b60908e313d0",
 			"key": "TKM",
 			"value": ""
 		}
