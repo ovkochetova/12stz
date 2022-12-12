@@ -3699,62 +3699,6 @@
 					"response": []
 				},
 				{
-					"name": "Изменение статуса ТК в 1С на Активно",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "62daa77e-8114-474f-b6e7-a09990e2740f",
-								"exec": [
-									"\r",
-									"let body = pm.collectionVariables.get(\"TKM\");\r",
-									"console.log(body)\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "c7bff6dc-83b2-4029-8486-bd2680080997",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"transport-company-mode",
-								":id"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": null
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Огр по категор для группы зон  не активно Copy",
 					"event": [
 						{
@@ -8503,30 +8447,30 @@
 	],
 	"variable": [
 		{
-			"id": "99e3c8eb-691b-40fd-adc8-0492d4546323",
+			"id": "61ca3ca4-8ee3-4735-ae9e-00c42b0f31f6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e2da0ca-1df9-4c63-b8f7-1ba1ae6bbff5",
+			"id": "d5550d4f-fec8-4d1d-904c-29a44d151b3e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ec20c02e-09e9-4af4-bc34-adb0fb63d59e",
+			"id": "84ffbcae-37fc-42d7-9f73-f35eecc8861f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7c227623-6f27-45b8-8f24-dbbcc7e2ecbd",
+			"id": "c88f7e60-b6d5-4782-887e-4a7a37448b94",
 			"key": "transportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "2a1c643c-0fbf-41e7-9516-0ab331ffc568",
+			"id": "582a71aa-febd-410e-860e-0db904046292",
 			"key": "TransportCompanyMode",
 			"value": ""
 		}
