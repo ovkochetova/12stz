@@ -4005,6 +4005,12 @@
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Количество дней для выбора клиенту равно\" + jsonData.deliveryIntervalDays , function () {\r",
+									"    pm.expect(jsonData.deliveryIntervalDays).to.eql(4);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -8836,25 +8842,25 @@
 	],
 	"variable": [
 		{
-			"id": "487300cf-85f7-4eee-a8e3-ec78bd48418f",
+			"id": "f9bc5556-7d36-438c-ae5c-3bdc3ba632df",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e81b787-51e9-4aeb-91e5-fbd4fbc5fa62",
+			"id": "6f280589-158f-4624-870b-fe0e7930cb06",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e5f8a1ac-e339-476e-a24e-1f91ec8aa215",
+			"id": "2c4c4360-6021-4d5f-aff7-8df2e7712f61",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1532b830-c67e-49db-8aaa-897ffed02ab5",
+			"id": "45e66aee-88c3-4702-a0d5-38846d2f2a02",
 			"key": "TKM",
 			"value": ""
 		}
