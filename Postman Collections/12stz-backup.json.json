@@ -3856,7 +3856,6 @@
 									"delete body.id;\r",
 									"body.isActive = true;\r",
 									"\r",
-									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
 									"\r",
@@ -8848,25 +8847,25 @@
 	],
 	"variable": [
 		{
-			"id": "eac4808f-5755-41f9-b044-a87c6e219f16",
+			"id": "b78023b9-c442-4bcf-a452-5a70a644d5d8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "09cbfb74-20bf-4c4b-bb45-99887e2f027e",
+			"id": "1dba525d-77d0-49ec-bc2e-4a84fcc71096",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b2db394f-ec9e-4ee9-87a2-09fecf90942a",
+			"id": "1fd23981-c93b-4afe-aebd-e1285f3c21d4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "426e6566-8816-4045-8907-22e785c966fe",
+			"id": "fd898af9-3eba-42b0-a9c1-0e0805316603",
 			"key": "TKM",
 			"value": ""
 		}
