@@ -3667,18 +3667,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "c7bff6dc-83b2-4029-8486-bd2680080997",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": []
-					},
-					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -8357,7 +8345,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7db331e0-09a8-4f9e-bad6-bbbb0217d3f6",
+				"id": "6e030091-f42b-4ef4-a417-c3567795d628",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8367,7 +8355,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9192d7ec-2f2d-4d97-8572-6b9748ebfde7",
+				"id": "a898abb8-91a9-470f-9682-d20e8b791c82",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8377,19 +8365,19 @@
 	],
 	"variable": [
 		{
-			"id": "ccd2ed59-f32d-43de-8845-595ad1ff3de6",
+			"id": "f58b9123-edb0-4c9f-a139-0d9536a7984a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "807835ca-0002-49ba-b185-5af07a85ee03",
+			"id": "6c06d956-4148-4d2d-b2d8-66bad273bc42",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e02b8e3d-2559-48dc-8e1b-8f76b7d753d3",
+			"id": "6e0a1a8b-096d-45af-b5c1-796a17754ace",
 			"key": "token",
 			"value": "",
 			"type": "string"
