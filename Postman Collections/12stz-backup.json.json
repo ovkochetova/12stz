@@ -3715,8 +3715,6 @@
 									"\r",
 									"delete body.id;\r",
 									"body.isActive = true;\r",
-									"let bodyText = JSON.stringify(body);\r",
-									"console.log(bodyText);\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -3742,6 +3740,15 @@
 								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{baseUrl}}/api/v1/transport-company-mode"
 					},
 					"response": []
@@ -8495,30 +8502,30 @@
 	],
 	"variable": [
 		{
-			"id": "35595357-d415-4a40-9e6a-387019bfc262",
+			"id": "e28d6b0f-b870-4433-825e-43bc24b3c764",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b3c72b1-9868-410c-8a15-4d60a1a1ac30",
+			"id": "3969f8ed-7df5-4b6b-a2db-21605136bf2c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bfe31f08-7568-437a-8b07-c549572e91b2",
+			"id": "06136533-c358-4266-993c-ee402ab82051",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "44764488-6203-4049-bc6a-f7c0d8249e3e",
+			"id": "5be113df-f4af-45e2-8064-9e2a14a2f84e",
 			"key": "TransportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "888cc630-b5dd-495c-bf04-772aaa2ef520",
+			"id": "29990fb8-21f5-460a-a2a4-b41431d02084",
 			"key": "TKM",
 			"value": ""
 		}
