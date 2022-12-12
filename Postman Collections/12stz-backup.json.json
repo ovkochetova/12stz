@@ -3848,7 +3848,7 @@
 									"console.log(body);\r",
 									"\r",
 									"delete body.id;\r",
-									"body.isActive = false;\r",
+									"body.isActive = true;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -3867,11 +3867,6 @@
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.test(\"ТК в 1С не активна\", function () {\r",
-									"        pm.expect(jsonData.isActive).to.eql(false);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -8619,25 +8614,25 @@
 	],
 	"variable": [
 		{
-			"id": "509ac460-f493-4520-a333-c69bed860e19",
+			"id": "8ef69b40-221c-4b48-b9b3-b5b33de3b4e9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cc6896f2-d4ca-4cda-87ad-cc31054c5fc1",
+			"id": "2715088f-ce8d-44a8-af8d-7b0c4514b75e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9479ca38-c2eb-4290-aef0-3f28961dcb99",
+			"id": "8683a29e-6959-4337-a603-c50b197ce182",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "225df4ce-1a49-4d42-b8f6-3bfe19236999",
+			"id": "4c100d9a-fdab-461d-8a1e-1600c83869a2",
 			"key": "TKM",
 			"value": ""
 		}
