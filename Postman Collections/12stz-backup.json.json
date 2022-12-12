@@ -8728,7 +8728,20 @@
 		},
 		{
 			"name": "Казахстан",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "2c1db03f-97bd-4950-87a1-7afa108cf9d7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "00ba5489-623b-43c7-830d-aea978d81ce3"
 		}
 	],
@@ -8756,25 +8769,25 @@
 	],
 	"variable": [
 		{
-			"id": "1886fcc6-ee49-4532-a17e-ed178397bb9c",
+			"id": "65a6c3ab-d983-4183-b90c-25aa89e6a478",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aa323db2-8eae-4ef2-8ea2-e7a8698e9e7f",
+			"id": "0c3bb909-997d-42f5-a044-7fa91e600555",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3fa4f7a1-635b-4840-b09a-a6330371c0c3",
+			"id": "dfad09f4-a41f-464c-b972-e94c913369eb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bbf583c7-5f65-4f5f-a9f1-733aef2ff724",
+			"id": "9edc35e8-e352-4b01-a6ce-15cda45eb1c4",
 			"key": "TKM",
 			"value": ""
 		}
