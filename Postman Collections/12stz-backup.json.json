@@ -3758,25 +3758,13 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [],
-						"url": {
-							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"transport-company-mode",
-								":id"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": null
-								}
-							]
-						}
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						]
 					},
 					"response": []
 				}
@@ -8477,30 +8465,30 @@
 	],
 	"variable": [
 		{
-			"id": "b4560ab0-04c6-4c92-9d08-ae98d853372c",
+			"id": "acd8f10f-d422-4015-8b16-736fe23da076",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "69d6d43a-b753-491b-84f1-8933c7131da9",
+			"id": "a1e93046-25a5-40b6-ad32-b871e3874b91",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "14e8184a-f50e-4f88-b1e6-665e2771cb12",
+			"id": "3875732d-360c-48f7-b70a-c0db0bc58208",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5836943b-48a1-41f5-ae25-0885a47c0e09",
+			"id": "2f89af08-6ed4-4a7e-80a1-0146ffdfeccb",
 			"key": "transportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "6e1cfeb8-d14b-4a2a-8752-a2cbe27e9084",
+			"id": "c8611adb-7ff0-4e69-bb56-b118518a2c65",
 			"key": "TransportCompanyMode",
 			"value": ""
 		}
