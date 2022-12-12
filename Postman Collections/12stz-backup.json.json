@@ -3657,7 +3657,7 @@
 									"\r",
 									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"category_id\",jsonData.category.id);\r",
+									"pm.environment.set(\"transportCompany_id\",jsonData.transportCompany.id);\r",
 									"pm.environment.set(\"zonegroup_id\",jsonData.zoneGroup.id);\r",
 									"pm.environment.set(\"message_id\",jsonData.message.id);\r",
 									"pm.environment.set(\"popup_id\",jsonData.popup.id);\r",
@@ -8490,19 +8490,19 @@
 	],
 	"variable": [
 		{
-			"id": "bbe8290d-4cc5-44ee-818b-223ec4ba467f",
+			"id": "1053e1eb-8fec-46ff-a3be-983e8d3f3a96",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "17968425-3596-44db-be45-955ccedff75f",
+			"id": "52229437-9e79-42dd-8b3f-a3d3c17163f3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "faa6bf6d-05fa-4598-96a0-8f8ecb2d12de",
+			"id": "84ba54f4-bb77-4a05-a616-d27341a82f44",
 			"key": "token",
 			"value": "",
 			"type": "string"
