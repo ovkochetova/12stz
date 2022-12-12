@@ -3699,6 +3699,25 @@
 					"response": []
 				},
 				{
+					"name": "изменение статуса на Активно",
+					"id": "057436ed-065a-43ed-85b1-02d2d24472e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{baseUrl}}/api/v1/transport-company-mode/"
+					},
+					"response": []
+				},
+				{
 					"name": "Огр по категор для группы зон  не активно Copy",
 					"event": [
 						{
@@ -3747,24 +3766,6 @@
 							}
 						},
 						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "изменение статуса на Активно",
-					"id": "057436ed-065a-43ed-85b1-02d2d24472e0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{token}}",
-								"type": "text"
-							}
-						]
 					},
 					"response": []
 				}
@@ -8465,30 +8466,30 @@
 	],
 	"variable": [
 		{
-			"id": "acd8f10f-d422-4015-8b16-736fe23da076",
+			"id": "0af028e6-9f7f-41d1-92be-4a8b364a269c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a1e93046-25a5-40b6-ad32-b871e3874b91",
+			"id": "053a5311-16ec-4455-a819-71647d6844bd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3875732d-360c-48f7-b70a-c0db0bc58208",
+			"id": "cf3dbe10-e0bd-4d91-95f1-11dee71912cb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2f89af08-6ed4-4a7e-80a1-0146ffdfeccb",
+			"id": "e96430dd-8b54-43d8-bf43-ea6fb69efdf6",
 			"key": "transportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "c8611adb-7ff0-4e69-bb56-b118518a2c65",
+			"id": "15496686-ac70-4227-9164-3b947dfe2d47",
 			"key": "TransportCompanyMode",
 			"value": ""
 		}
