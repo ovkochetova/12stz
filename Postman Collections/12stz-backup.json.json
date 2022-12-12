@@ -3725,18 +3725,6 @@
 								],
 								"type": "text/javascript"
 							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
 						}
 					],
 					"id": "057436ed-065a-43ed-85b1-02d2d24472e0",
@@ -8514,25 +8502,25 @@
 	],
 	"variable": [
 		{
-			"id": "aa494084-03bf-45ce-a504-b0eaed22f50a",
+			"id": "8e6f3250-45ea-4f8b-bc23-973ee62e77dc",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "86be6146-9971-414f-a72e-bd8b1c71a16e",
+			"id": "d79b1fd7-c39f-4d76-95f3-5c500eed4e15",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b77e435f-a412-4d6b-996b-6cacf50f2788",
+			"id": "fb1823e6-1ce6-4877-a4b3-2989f49ac3aa",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "92eeb77c-e22f-4601-a181-299a562f9d7e",
+			"id": "0e1883d9-9acc-4741-85ff-2ea8e9e291af",
 			"key": "TKM",
 			"value": ""
 		}
