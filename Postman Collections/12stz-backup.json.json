@@ -3655,7 +3655,6 @@
 									"    pm.expect(jsonData).to.be.an('object');\r",
 									"});\r",
 									"\r",
-									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
 									"pm.environment.set(\"category_id\",jsonData.category.id);\r",
 									"pm.environment.set(\"zonegroup_id\",jsonData.zoneGroup.id);\r",
@@ -8490,19 +8489,19 @@
 	],
 	"variable": [
 		{
-			"id": "3360c038-ec46-4bde-a45b-0a113505445f",
+			"id": "352ae2b4-fa8e-4345-8048-44f85e3f56e6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ed224bf5-b90b-42db-8121-dde6fdd900f2",
+			"id": "f6c9287b-39c4-47f6-a4b4-80aad14ff707",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0663f8f3-8a7f-405b-a92e-9debdafe5f13",
+			"id": "d47698a1-7db2-4e78-b317-83721bc87b48",
 			"key": "token",
 			"value": "",
 			"type": "string"
