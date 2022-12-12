@@ -3717,6 +3717,7 @@
 									"body.isActive = true;\r",
 									"let bodyText = JSON.stringify(body);\r",
 									"console.log(bodyText);\r",
+									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
 									"\r",
@@ -8494,30 +8495,30 @@
 	],
 	"variable": [
 		{
-			"id": "b8679f8d-0b8d-42a0-9591-099882f6e023",
+			"id": "a287f1a2-0a2a-4045-a300-237ad1243cf4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4da69f0f-010a-4108-a3f4-7fcede9c7da0",
+			"id": "f65a463c-66ab-4906-bfd7-d3d32c7d3ea9",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "02e738eb-868f-4d10-81ea-6ea3cd93f48d",
+			"id": "0f6535b6-a131-4a56-be4d-cabcc23454c8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6ee6d67e-852b-4c13-9762-d52319dd9399",
+			"id": "bc714caf-9540-4eea-a8c7-8d70932251e6",
 			"key": "TransportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "8c11b8cf-63db-4a92-8b3d-41a097150611",
+			"id": "7dd470a6-ca1f-4a93-a3c4-940d3433ad8d",
 			"key": "TKM",
 			"value": ""
 		}
