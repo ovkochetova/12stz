@@ -3824,7 +3824,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"сity_geo_id\": \"0c5b2444-70a0-4932-980c-b4dc0d3f02b5\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"0c5b2444-70a0-4932-980c-b4dc0d3f02b5\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3832,6 +3832,88 @@
 							}
 						},
 						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "изменение статуса на не Активно",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = false;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "192e956b-197f-4890-8bb3-11611871fbea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "83a977c1-52f2-4cd6-8c77-5da709fcd3ad",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -8532,25 +8614,25 @@
 	],
 	"variable": [
 		{
-			"id": "e2e87db4-170d-4d1f-86fc-d8806f079e8b",
+			"id": "f069903b-bcf4-49de-9391-331c50e17c54",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "31c92fe8-e073-42ee-9ad9-eb604a483ed9",
+			"id": "35f3acbf-60e5-4d5f-a963-e5edf380dada",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "404caef2-4244-4973-a953-85e9f31970b3",
+			"id": "3ffb1b9f-65ac-4f66-b5d8-cd919f1aad2c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7d76e1e5-0800-43bd-a102-8b4964c0903e",
+			"id": "e6a24b6d-b7c9-4c7f-90fd-c79fc16e728f",
 			"key": "TKM",
 			"value": ""
 		}
