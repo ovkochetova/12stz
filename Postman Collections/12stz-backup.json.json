@@ -8508,22 +8508,27 @@
 	],
 	"variable": [
 		{
-			"id": "cdc91c6d-28ea-45f1-ac95-a103f37cfb16",
+			"id": "2267cbc0-47aa-4e18-99cd-82e2c388754b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "497bccce-7bd3-4ed0-aeb2-9d64dbeae5c4",
+			"id": "cb6f6dcd-d2dd-48f7-9a4d-262a5340d798",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3f00ac12-d6f6-4bd7-8618-9d72779a9e72",
+			"id": "898f87fd-96ed-4af8-9dd3-891df027336c",
 			"key": "token",
 			"value": "",
 			"type": "string"
+		},
+		{
+			"id": "e6209c18-11ab-4652-941e-fda6b02a6353",
+			"key": "transportCompanyMode",
+			"value": ""
 		}
 	]
 }
