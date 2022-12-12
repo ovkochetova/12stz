@@ -4009,7 +4009,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Количество дней для выбора клиенту равно\" + jsonData.deliveryIntervalDays , function () {\r",
+									"pm.test(\"Количество дней для выбора клиенту равно \" + jsonData.deliveryIntervalDays , function () {\r",
 									"    pm.expect(jsonData.deliveryIntervalDays).to.eql(4);\r",
 									"});"
 								],
@@ -8842,25 +8842,25 @@
 	],
 	"variable": [
 		{
-			"id": "f9bc5556-7d36-438c-ae5c-3bdc3ba632df",
+			"id": "86775a91-55cb-4992-92f6-90b2b601fef1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6f280589-158f-4624-870b-fe0e7930cb06",
+			"id": "294a7a7b-4435-4cda-9424-358af3bc93ee",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2c4c4360-6021-4d5f-aff7-8df2e7712f61",
+			"id": "818c8a67-e1f5-4588-b2d4-90bca340146b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "45e66aee-88c3-4702-a0d5-38846d2f2a02",
+			"id": "5f3a7ae3-e44c-4519-8339-a7c3fe473033",
 			"key": "TKM",
 			"value": ""
 		}
