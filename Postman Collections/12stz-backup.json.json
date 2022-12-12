@@ -3640,6 +3640,33 @@
 			"item": [
 				{
 					"name": "Информация о ТК в 1С",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cc976591-0081-49aa-b552-918d1c558d5f",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Получение инфо об ограничении по категории для группы зон\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"category_id\",jsonData.category.id);\r",
+									"pm.environment.set(\"zonegroup_id\",jsonData.zoneGroup.id);\r",
+									"pm.environment.set(\"message_id\",jsonData.message.id);\r",
+									"pm.environment.set(\"popup_id\",jsonData.popup.id);\r",
+									"pm.environment.set(\"isActive\", jsonData.isActive)\r",
+									"pm.environment.set(\"id\", jsonData.id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "9da4135f-b55b-4d8f-820a-2878b399b7a2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3675,7 +3702,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Изменение статуса на Активно",
 					"id": "c7bff6dc-83b2-4029-8486-bd2680080997",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3685,7 +3712,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJoaXFpSDI0RmxRY0lpM0RScGo2TjVQVHVIMEd4VDV3VVRRX1NPM056MWs4In0.eyJleHAiOjE2NzA4NDg1MTAsImlhdCI6MTY3MDg0NzkxMCwiYXV0aF90aW1lIjoxNjcwODI4NjM2LCJqdGkiOiIwOWU0YmFiOS05YWYyLTRiOTQtYWY2My0zNzRiZWRiYzQxNzgiLCJpc3MiOiJodHRwczovL2tleWNsb2FrLWJlaWdlLjEyc3R6LmNvbS9hdXRoL3JlYWxtcy9hdXRvcml6YXRpb24tcHJvamVjdCIsImF1ZCI6WyJ0ZXN0LXpodWJhIiwiYWNjb3VudCJdLCJzdWIiOiIwOTViMTZiYi00ZDRhLTQ4NTAtOTEwNi04NjYyMjMyNjJmODgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJsb2dpc3RpY3MiLCJub25jZSI6IjE3YzQ0ODM2LThiNDUtNDQ0My1iOTA4LWFkZjBiY2U5ZWE5ZiIsInNlc3Npb25fc3RhdGUiOiJjNzk4MTk0Zi1iNzc2LTQ3YzItODhiOC01NTk1M2Y2NzZiMzQiLCJhY3IiOiIwIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbG9naXN0aWNzLjEyc3R6LmRldiIsImh0dHBzOi8vbG9naXN0aWNzLjEyc3R6LmNvbSIsImh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsImRlZmF1bHQtcm9sZXMtYXV0b3Jpc2F0aW9uLXByb2plY3QiXX0sInJlc291cmNlX2FjY2VzcyI6eyJ0ZXN0LXpodWJhIjp7InJvbGVzIjpbImFjY2VzcyIsIm1hbmFnZXIiLCJhZG1pbiJdfSwibG9naXN0aWNzIjp7InJvbGVzIjpbImFjY2VzcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsInNpZCI6ImM3OTgxOTRmLWI3NzYtNDdjMi04OGI4LTU1OTUzZjY3NmIzNCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IktvY2hldG92YSBPbGdhIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiby5rb2NoZXRvdmEiLCJnaXZlbl9uYW1lIjoiS29jaGV0b3ZhIiwiZmFtaWx5X25hbWUiOiJPbGdhIiwiZW1haWwiOiJvLmtvY2hldG92YUAxMnN0b3JlZXouY29tIn0.BY1O8aqJpQILP1kIr6oCF42yTB7Bal_4-1dYwBqAKgszsc9hKc8wgiEaDoePV1BGDOMGqyY6wY9YRzRPZCofIPAwQavrfAxSdN5gKn2kig60uX6r3lxQStGQVDpxZwLnleLw-kOQ9ZFHOc8gUIjGqwrkzNYRDXfeDOOBPzszJ0cUVCrLreay_Yagwez67LKsiMG-DWYzzV7Y4eI1Kkjo8K7Tofx4lwb-4YvBVbi2KCgWEihyjuAmWIZoMWuT5dzxEJe5ioKxcspc9aoX5OUh2P8GkSbjB9JSznd8PgD9ruZnP5rLwVwjIRVGX2sQBoRD-tucgJdv4rA6hjWZMQXL0g",
+							"raw": "{\r\n  \"transportCompany\": {\r\n    \"id\": -1912850,\r\n    \"name\": \"ex laboris ipsum nisi sed\",\r\n    \"trackUrl\": \"Lorem Duis sed\",\r\n    \"hasIntegration\": false,\r\n    \"isDeliveryUseOnlyWorkingDays\": false,\r\n    \"isActive\": true,\r\n    \"createdAt\": \"ea cillum tempor\",\r\n    \"updatedAt\": \"consequat in ut minim\"\r\n  },\r\n  \"deliveryMode\": {\r\n    \"id\": 39512703,\r\n    \"titleRu\": \"adipisicing incididunt nisi\",\r\n    \"isActive\": false,\r\n    \"isBackupMethod\": true,\r\n    \"createdAt\": \"minim ex occaecat\",\r\n    \"updatedAt\": \"tempor\"\r\n  },\r\n  \"deliveryMethod\": {\r\n    \"id\": 435293,\r\n    \"name\": \"nostrud mo\",\r\n    \"isActive\": false,\r\n    \"createdAt\": \"tempor amet\",\r\n    \"updatedAt\": \"esse\"\r\n  },\r\n  \"intervals\": [\r\n    {\r\n      \"id\": -65387675,\r\n      \"clientTimeFrom\": \"nisi consequat aute magna\",\r\n      \"clientTimeTo\": \"et irure est aliquip incididunt\",\r\n      \"tkTimeFrom\": \"amet eiusmod consectetur ut\",\r\n      \"tkTimeTo\": \"ad eu nostrud Lorem quis\",\r\n      \"dayOfWeek\": \"monday\",\r\n      \"code\": \"aute in ipsum\",\r\n      \"createdAt\": \"aute\",\r\n      \"updatedAt\": \"laboris aute aliquip\"\r\n    },\r\n    {\r\n      \"id\": 27551780,\r\n      \"clientTimeFrom\": \"officia anim dolor Ut Excepteur\",\r\n      \"clientTimeTo\": \"aliqua\",\r\n      \"tkTimeFrom\": \"consectetur dolore\",\r\n      \"tkTimeTo\": \"anim ipsum\",\r\n      \"dayOfWeek\": \"monday\",\r\n      \"code\": \"incididunt deserunt ut\",\r\n      \"createdAt\": \"sit eiusmod\",\r\n      \"updatedAt\": \"aute sit\"\r\n    }\r\n  ],\r\n  \"deliveryIntervalDays\": -48231853,\r\n  \"deliveryDeltaDays\": 80940704,\r\n  \"title\": \"sunt do tempor\",\r\n  \"code\": \"veniam anim ut eiusmod\",\r\n  \"sdtCode\": \"aute a\",\r\n  \"isPriceBorderIncludeDelivery\": false,\r\n  \"isPriceBorderIncludePresent\": false,\r\n  \"isProductQuantityBorderIncludeDelivery\": false,\r\n  \"isProductQuantityBorderIncludePresent\": true,\r\n  \"isActive\": true,\r\n  \"createdAt\": \"deserunt labore reprehenderit\",\r\n  \"updatedAt\": \"dolore esse id voluptate officia\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -8445,19 +8472,19 @@
 	],
 	"variable": [
 		{
-			"id": "e6f1935f-69d9-463b-b00d-6b6a9dbd61d3",
+			"id": "dfa81dbf-b8f0-43ac-ab4e-009cb568a9ed",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c68b226b-702e-4c95-9515-0274496179b1",
+			"id": "03ece5c4-556e-4b3c-bede-170410316598",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a57c40da-e9a2-4398-b4ac-2042065c9eb9",
+			"id": "738c5948-9ac6-48de-97a4-c6bc09c35fb8",
 			"key": "token",
 			"value": "",
 			"type": "string"
