@@ -3939,9 +3939,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"})\r",
 									"\r",
-									"pm.test(\"Ограничение по категории для группы зон не активно\", () => {\r",
-									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
-									"     });\r",
+									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -8753,25 +8751,25 @@
 	],
 	"variable": [
 		{
-			"id": "def5d65e-8b10-4194-bb87-19717c42acb4",
+			"id": "811121e9-1778-40b0-b231-a855a7203f97",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "da56035f-e7f0-4b5b-be32-99d35fdba830",
+			"id": "efbc162e-cdb1-4d96-8266-a4bf2384d54a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1fc10d22-c7df-47e3-8ffd-260869937ad7",
+			"id": "aac783cf-b4d4-4282-bfc0-9eb16ba66f15",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6eef3ffc-764b-4e50-acb1-5c570b189d77",
+			"id": "ecb408ca-55a0-4095-b6c1-fc69a3a0147b",
 			"key": "TKM",
 			"value": ""
 		}
