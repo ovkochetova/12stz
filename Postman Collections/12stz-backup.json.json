@@ -3731,7 +3731,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"transportCompany\": {\r\n    \"id\": -1912850,\r\n    \"name\": \"ex laboris ipsum nisi sed\",\r\n    \"trackUrl\": \"Lorem Duis sed\",\r\n    \"hasIntegration\": false,\r\n    \"isDeliveryUseOnlyWorkingDays\": false,\r\n    \"isActive\": true,\r\n    \"createdAt\": \"ea cillum tempor\",\r\n    \"updatedAt\": \"consequat in ut minim\"\r\n  },\r\n  \"deliveryMode\": {\r\n    \"id\": 39512703,\r\n    \"titleRu\": \"adipisicing incididunt nisi\",\r\n    \"isActive\": false,\r\n    \"isBackupMethod\": true,\r\n    \"createdAt\": \"minim ex occaecat\",\r\n    \"updatedAt\": \"tempor\"\r\n  },\r\n  \"deliveryMethod\": {\r\n    \"id\": 435293,\r\n    \"name\": \"nostrud mo\",\r\n    \"isActive\": false,\r\n    \"createdAt\": \"tempor amet\",\r\n    \"updatedAt\": \"esse\"\r\n  },\r\n  \"intervals\": [\r\n    {\r\n      \"id\": -65387675,\r\n      \"clientTimeFrom\": \"nisi consequat aute magna\",\r\n      \"clientTimeTo\": \"et irure est aliquip incididunt\",\r\n      \"tkTimeFrom\": \"amet eiusmod consectetur ut\",\r\n      \"tkTimeTo\": \"ad eu nostrud Lorem quis\",\r\n      \"dayOfWeek\": \"monday\",\r\n      \"code\": \"aute in ipsum\",\r\n      \"createdAt\": \"aute\",\r\n      \"updatedAt\": \"laboris aute aliquip\"\r\n    },\r\n    {\r\n      \"id\": 27551780,\r\n      \"clientTimeFrom\": \"officia anim dolor Ut Excepteur\",\r\n      \"clientTimeTo\": \"aliqua\",\r\n      \"tkTimeFrom\": \"consectetur dolore\",\r\n      \"tkTimeTo\": \"anim ipsum\",\r\n      \"dayOfWeek\": \"monday\",\r\n      \"code\": \"incididunt deserunt ut\",\r\n      \"createdAt\": \"sit eiusmod\",\r\n      \"updatedAt\": \"aute sit\"\r\n    }\r\n  ],\r\n  \"deliveryIntervalDays\": -48231853,\r\n  \"deliveryDeltaDays\": 80940704,\r\n  \"title\": \"sunt do tempor\",\r\n  \"code\": \"veniam anim ut eiusmod\",\r\n  \"sdtCode\": \"aute a\",\r\n  \"isPriceBorderIncludeDelivery\": false,\r\n  \"isPriceBorderIncludePresent\": false,\r\n  \"isProductQuantityBorderIncludeDelivery\": false,\r\n  \"isProductQuantityBorderIncludePresent\": true,\r\n  \"isActive\": true,\r\n  \"createdAt\": \"deserunt labore reprehenderit\",\r\n  \"updatedAt\": \"dolore esse id voluptate officia\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -8508,25 +8508,25 @@
 	],
 	"variable": [
 		{
-			"id": "69dc55c1-171e-4c26-aa84-d37678e610f8",
+			"id": "a2ed1752-abca-40b9-9906-73753db773cd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c2baaa48-f12b-44e2-b090-2bc217122efd",
+			"id": "d11a891d-99eb-4ae5-918f-f29e6dcc81f2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4faf202f-d8f4-4348-a644-6ffca10e3423",
+			"id": "c7d1dd3a-d2c4-47f3-9230-a5c7a8c36f24",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dc55a134-46ba-444d-8797-12774effdd91",
+			"id": "75938aac-4058-48e8-bd71-f8a3d8b0c715",
 			"key": "transportCompanyMode",
 			"value": ""
 		}
