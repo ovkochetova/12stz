@@ -3655,6 +3655,7 @@
 									"    pm.expect(jsonData).to.be.an('object');\r",
 									"});\r",
 									"\r",
+									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
 									"pm.environment.set(\"category_id\",jsonData.category.id);\r",
 									"pm.environment.set(\"zonegroup_id\",jsonData.zoneGroup.id);\r",
@@ -8469,7 +8470,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "32ae6e78-a7e7-4170-bf8b-6ecf82123970",
+				"id": "00d3cd8c-38bf-4adc-ad29-9aa6622c7937",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8479,7 +8480,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "46af33cc-7187-4438-b0e3-5dd4d061e6a6",
+				"id": "63c2a3e1-de4a-4967-9f08-b2e0f8549158",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8489,19 +8490,19 @@
 	],
 	"variable": [
 		{
-			"id": "352ae2b4-fa8e-4345-8048-44f85e3f56e6",
+			"id": "bbe8290d-4cc5-44ee-818b-223ec4ba467f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f6c9287b-39c4-47f6-a4b4-80aad14ff707",
+			"id": "17968425-3596-44db-be45-955ccedff75f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d47698a1-7db2-4e78-b317-83721bc87b48",
+			"id": "faa6bf6d-05fa-4598-96a0-8f8ecb2d12de",
 			"key": "token",
 			"value": "",
 			"type": "string"
