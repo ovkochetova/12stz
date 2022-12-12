@@ -3658,7 +3658,7 @@
 									"var TransportCompanyMode = pm.response.json();\r",
 									"console.log(TransportCompanyMode)\r",
 									"\r",
-									"pm.collectionVariables.set(\"TKM\", \"TransportCompanyMode\");\r",
+									"pm.collectionVariables.set(\"TKM\", TransportCompanyMode);\r",
 									"\r",
 									"\r",
 									""
@@ -8495,30 +8495,30 @@
 	],
 	"variable": [
 		{
-			"id": "33631bf5-c074-4ddd-be8f-15c60cf915f6",
+			"id": "e5af3662-89fe-46f4-aa69-b418546ea0e6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "98653a13-8a5d-4db7-99bb-8f9013992493",
+			"id": "a6a03977-b284-4924-8f1b-458068d8b588",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aab2893b-a778-4054-aa28-39ff58276fc0",
+			"id": "9f9ba088-e536-4410-929a-31e77ca4614a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2b479147-70df-4534-b577-bf9872f8f281",
+			"id": "eed33c37-c2b5-4649-9590-849dadef89c5",
 			"key": "TransportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "be76a169-b77f-44fb-80ef-f3154b6fae56",
+			"id": "42cc2ef7-8548-4a7a-b5a7-ade4cfa25885",
 			"key": "TKM",
 			"value": ""
 		}
