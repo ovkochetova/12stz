@@ -3682,7 +3682,60 @@
 					},
 					"request": {
 						"method": "PATCH",
-						"header": []
+						"header": [],
+						"url": "Изменение статуса Активно"
+					},
+					"response": []
+				},
+				{
+					"name": "Огр по категор для группы зон  не активно Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Ограничение по категории для группы зон не активно\", () => {\r",
+									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
+									"     });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "f70d88c8-76c7-4837-8a4d-5ca5150d8549",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"сity_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"3c278535-eeeb-45e7-9cb9-c05175060a18\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
 					},
 					"response": []
 				}
@@ -8383,19 +8436,19 @@
 	],
 	"variable": [
 		{
-			"id": "4269a97d-f9fa-4c2e-865f-82e099a55fe8",
+			"id": "6274eb36-a6ce-420b-92d6-68fba7ba5e38",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bf0119f7-07fa-4664-88b1-c54ed85f66e5",
+			"id": "53036205-28e6-4c44-8aca-79c405230e4b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c5bd5e8b-3c03-4479-97ac-384a03625d77",
+			"id": "3468665b-b47e-4cf5-b1cb-68221e23c776",
 			"key": "token",
 			"value": "",
 			"type": "string"
