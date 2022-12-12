@@ -3856,6 +3856,7 @@
 									"delete body.id;\r",
 									"body.isActive = true;\r",
 									"\r",
+									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
 									"\r",
@@ -4062,7 +4063,7 @@
 					"response": []
 				},
 				{
-					"name": "кол-во дней для клиента",
+					"name": "Доделать! кол-во дней для клиента",
 					"event": [
 						{
 							"listen": "test",
@@ -8847,25 +8848,25 @@
 	],
 	"variable": [
 		{
-			"id": "c4f2f809-8444-472f-85f2-8ef97fbb42fe",
+			"id": "eac4808f-5755-41f9-b044-a87c6e219f16",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "992364bf-2ef2-438b-aea5-2a4142835c58",
+			"id": "09cbfb74-20bf-4c4b-bb45-99887e2f027e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d5715e3f-3d98-48d4-a6d7-07ccfacaf99c",
+			"id": "b2db394f-ec9e-4ee9-87a2-09fecf90942a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8eeb9520-095f-4221-83b1-9b5b425b5b0c",
+			"id": "426e6566-8816-4045-8907-22e785c966fe",
 			"key": "TKM",
 			"value": ""
 		}
