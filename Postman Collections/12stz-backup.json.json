@@ -3711,6 +3711,12 @@
 									"let body = pm.collectionVariables.get(\"TKM\");\r",
 									"console.log(body)\r",
 									"\r",
+									"body.isActive = true;\r",
+									"let bodyText = JSON.stringify(body);\r",
+									"console.log(bodyText);\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -8483,30 +8489,30 @@
 	],
 	"variable": [
 		{
-			"id": "1babbb9f-2acb-4cd8-a669-1efab45210b9",
+			"id": "829ebd03-f55b-478f-a6ef-22ce28129f4b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41234490-46de-495b-8483-6cdc61b15fcb",
+			"id": "aa2d7742-909b-4c41-a5ff-9710154acc5e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fb088d76-c8d9-4c18-9c81-26753d7c3344",
+			"id": "aeabea75-0dad-4e57-9a6b-654a0beef94c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e77346ac-4b39-4aca-b7ad-ee858c9b51f4",
+			"id": "6089d74b-b82a-4c4d-82a5-95aac38ca136",
 			"key": "transportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "ef10c816-3b1f-4389-b74e-6f3e5fcaedb3",
+			"id": "21a4de22-8739-4d28-b586-6fdade275577",
 			"key": "TransportCompanyMode",
 			"value": ""
 		}
