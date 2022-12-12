@@ -3700,6 +3700,24 @@
 				},
 				{
 					"name": "изменение статуса на Активно",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body)\r",
+									"body.transportCompany.isActive = true;\r",
+									"let bodyText = JSON.stringify(body);\r",
+									"console.log(bodyText);\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "057436ed-065a-43ed-85b1-02d2d24472e0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -8466,30 +8484,30 @@
 	],
 	"variable": [
 		{
-			"id": "069bf394-3dac-4236-9888-093b49719f5f",
+			"id": "80dfe614-9cc8-41c8-a990-2124cf27e940",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "150764b8-90c6-4759-8a0c-3057e4d681d5",
+			"id": "cd63c75c-cb96-4fce-8e94-60269785dda3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "64f849f0-27a6-4daa-b402-cb149b58b3f4",
+			"id": "3e0bd820-6e39-4596-af14-2a864e6913ba",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "807b7e38-d451-4f26-b8ed-09ec2fbfb80b",
+			"id": "72c0f59f-5db3-4add-8205-b684f29d0232",
 			"key": "transportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "af832508-6928-442f-bd3f-a4ab29caf99e",
+			"id": "a340a3dc-4260-4cf3-80b2-80ff382f109a",
 			"key": "TransportCompanyMode",
 			"value": ""
 		}
