@@ -3657,7 +3657,7 @@
 									"\r",
 									"var TransportCompanyMode = pm.response.json();\r",
 									"\r",
-									"pm.collectionVariables.set(\"TransportCompanyMode\", \"TKM\");\r",
+									"pm.collectionVariables.set(\"transportCompanyMode\", \"TKM\");\r",
 									""
 								],
 								"type": "text/javascript"
@@ -3699,40 +3699,41 @@
 					"response": []
 				},
 				{
-					"name": "изменение статуса на Активно",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
-								"exec": [
-									"\r",
-									"let body = pm.collectionVariables.get(\"TKM\");\r",
-									"console.log(body)\r",
-									"body.isActive = true;\r",
-									"let bodyText = JSON.stringify(body);\r",
-									"console.log(bodyText);\r",
-									"pm.request.body.raw = body;\r",
-									"console.log(body);"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "057436ed-065a-43ed-85b1-02d2d24472e0",
+					"name": "Изменение статуса ТК в 1С на Активно",
+					"id": "c7bff6dc-83b2-4029-8486-bd2680080997",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{token}}",
-								"type": "text"
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"transportCompany\": {\r\n    \"id\": -1912850,\r\n    \"name\": \"ex laboris ipsum nisi sed\",\r\n    \"trackUrl\": \"Lorem Duis sed\",\r\n    \"hasIntegration\": false,\r\n    \"isDeliveryUseOnlyWorkingDays\": false,\r\n    \"isActive\": true,\r\n    \"createdAt\": \"ea cillum tempor\",\r\n    \"updatedAt\": \"consequat in ut minim\"\r\n  },\r\n  \"deliveryMode\": {\r\n    \"id\": 39512703,\r\n    \"titleRu\": \"adipisicing incididunt nisi\",\r\n    \"isActive\": false,\r\n    \"isBackupMethod\": true,\r\n    \"createdAt\": \"minim ex occaecat\",\r\n    \"updatedAt\": \"tempor\"\r\n  },\r\n  \"deliveryMethod\": {\r\n    \"id\": 435293,\r\n    \"name\": \"nostrud mo\",\r\n    \"isActive\": false,\r\n    \"createdAt\": \"tempor amet\",\r\n    \"updatedAt\": \"esse\"\r\n  },\r\n  \"intervals\": [\r\n    {\r\n      \"id\": -65387675,\r\n      \"clientTimeFrom\": \"nisi consequat aute magna\",\r\n      \"clientTimeTo\": \"et irure est aliquip incididunt\",\r\n      \"tkTimeFrom\": \"amet eiusmod consectetur ut\",\r\n      \"tkTimeTo\": \"ad eu nostrud Lorem quis\",\r\n      \"dayOfWeek\": \"monday\",\r\n      \"code\": \"aute in ipsum\",\r\n      \"createdAt\": \"aute\",\r\n      \"updatedAt\": \"laboris aute aliquip\"\r\n    },\r\n    {\r\n      \"id\": 27551780,\r\n      \"clientTimeFrom\": \"officia anim dolor Ut Excepteur\",\r\n      \"clientTimeTo\": \"aliqua\",\r\n      \"tkTimeFrom\": \"consectetur dolore\",\r\n      \"tkTimeTo\": \"anim ipsum\",\r\n      \"dayOfWeek\": \"monday\",\r\n      \"code\": \"incididunt deserunt ut\",\r\n      \"createdAt\": \"sit eiusmod\",\r\n      \"updatedAt\": \"aute sit\"\r\n    }\r\n  ],\r\n  \"deliveryIntervalDays\": -48231853,\r\n  \"deliveryDeltaDays\": 80940704,\r\n  \"title\": \"sunt do tempor\",\r\n  \"code\": \"veniam anim ut eiusmod\",\r\n  \"sdtCode\": \"aute a\",\r\n  \"isPriceBorderIncludeDelivery\": false,\r\n  \"isPriceBorderIncludePresent\": false,\r\n  \"isProductQuantityBorderIncludeDelivery\": false,\r\n  \"isProductQuantityBorderIncludePresent\": true,\r\n  \"isActive\": true,\r\n  \"createdAt\": \"deserunt labore reprehenderit\",\r\n  \"updatedAt\": \"dolore esse id voluptate officia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
 							}
-						],
-						"url": "{{baseUrl}}/api/v1/transport-company-mode"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -8465,7 +8466,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e26ae887-a711-40ab-b573-71d9cb6b5f10",
+				"id": "7012bb93-a941-4283-b1ba-8b44c1ddb70f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8475,7 +8476,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ac31abc0-6ee8-4e4c-9697-5cad368c2ba4",
+				"id": "be311da9-bfe4-448b-8e62-34fe1c01f23b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8485,32 +8486,22 @@
 	],
 	"variable": [
 		{
-			"id": "6c90393c-ac3d-4d32-a956-f653df006040",
+			"id": "bb522fee-3393-4b01-9154-2e9d0f39e2dd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8850e2fb-32df-4125-beb4-2295b26e4568",
+			"id": "90eb9506-737a-4140-946a-f867e9c4e797",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2d6ef985-8876-4a52-8a23-b864434f86f8",
+			"id": "f5a0453d-78f4-4ab5-8a82-fc96eb3e6b7f",
 			"key": "token",
 			"value": "",
 			"type": "string"
-		},
-		{
-			"id": "7fe921b9-547b-4020-b517-6a6c907bdecf",
-			"key": "transportCompanyMode",
-			"value": ""
-		},
-		{
-			"id": "fb02d17f-0307-472a-beb5-775b9bb28392",
-			"key": "TransportCompanyMode",
-			"value": ""
 		}
 	]
 }
