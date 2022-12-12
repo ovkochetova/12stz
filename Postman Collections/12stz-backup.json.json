@@ -8725,6 +8725,11 @@
 				}
 			],
 			"id": "aeff015f-9afc-42f7-885f-da196c6ac10b"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "00ba5489-623b-43c7-830d-aea978d81ce3"
 		}
 	],
 	"event": [
@@ -8751,25 +8756,25 @@
 	],
 	"variable": [
 		{
-			"id": "811121e9-1778-40b0-b231-a855a7203f97",
+			"id": "68ebfd59-d747-4a11-9def-d08287d596fd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "efbc162e-cdb1-4d96-8266-a4bf2384d54a",
+			"id": "f0def780-454d-402f-9876-950c06d8a1a8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aac783cf-b4d4-4282-bfc0-9eb16ba66f15",
+			"id": "4078ebaf-ac66-4bb5-9416-d5219c1c146e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ecb408ca-55a0-4095-b6c1-fc69a3a0147b",
+			"id": "cf1ec3ee-5dd9-4874-bbab-336bd5dd5f64",
 			"key": "TKM",
 			"value": ""
 		}
