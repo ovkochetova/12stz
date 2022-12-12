@@ -8730,7 +8730,7 @@
 			"name": "Казахстан",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Астана",
 					"id": "2c1db03f-97bd-4950-87a1-7afa108cf9d7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -8769,25 +8769,25 @@
 	],
 	"variable": [
 		{
-			"id": "65a6c3ab-d983-4183-b90c-25aa89e6a478",
+			"id": "cb55e78c-2d22-4e00-8711-0d6efe6eeac0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0c3bb909-997d-42f5-a044-7fa91e600555",
+			"id": "d038586a-7dab-4d66-91de-303f1ae79d7f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dfad09f4-a41f-464c-b972-e94c913369eb",
+			"id": "4d481ede-7399-40e6-9e45-3781bb0cf7a8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9edc35e8-e352-4b01-a6ce-15cda45eb1c4",
+			"id": "f277cd00-8b04-4271-b7b9-c318aeba4ca3",
 			"key": "TKM",
 			"value": ""
 		}
