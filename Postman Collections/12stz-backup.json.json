@@ -4054,6 +4054,56 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "кол-во дней для клиента",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"})\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "9e79996d-4eaa-4f5c-8eb7-3b9d6bbc4a48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"0c5b2444-70a0-4932-980c-b4dc0d3f02b5\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -8766,7 +8816,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "df2257af-2e8e-4bbc-be20-7e526ecbf744",
+				"id": "5d95f4be-ad86-462a-aea7-1e7ea7adb1b8",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8776,7 +8826,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "f37c966e-c24c-4e29-b76f-8d1329db1541",
+				"id": "24ee78ba-3874-42a5-ac41-49c5424705f4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8786,25 +8836,25 @@
 	],
 	"variable": [
 		{
-			"id": "57269dab-08ef-43c2-82c8-595dc4af33f2",
+			"id": "f2525c61-88ad-4ad8-a12f-329a113f7797",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "48f0ee36-e399-42d1-851f-41126db6be6f",
+			"id": "e57d6000-cdf1-4459-a125-75c429adefd3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bd1862bd-1005-418d-a430-d6f93f17aafb",
+			"id": "c58ce0f0-8804-41d9-90bb-2d58305d44e6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1ff54468-aac4-4ebf-8430-928f0bc83302",
+			"id": "fe3e7c0a-4945-4e41-a486-7998e488915d",
 			"key": "TKM",
 			"value": ""
 		}
