@@ -3708,6 +3708,7 @@
 								"exec": [
 									"\r",
 									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body)\r",
 									"\r",
 									"body.transportCompany.isActive = true;\r",
 									"\r",
@@ -8508,25 +8509,25 @@
 	],
 	"variable": [
 		{
-			"id": "a2ed1752-abca-40b9-9906-73753db773cd",
+			"id": "b7ef2105-1fce-4ebd-be42-e3473b96bdfd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d11a891d-99eb-4ae5-918f-f29e6dcc81f2",
+			"id": "4b7d7ec5-4017-4708-87d4-031cfcf837f2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7d1dd3a-d2c4-47f3-9230-a5c7a8c36f24",
+			"id": "1bd9f18a-6466-4a90-97e2-c302374cbdff",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "75938aac-4058-48e8-bd71-f8a3d8b0c715",
+			"id": "616ff284-93a6-49f3-b8dc-04a7cde6d6e3",
 			"key": "transportCompanyMode",
 			"value": ""
 		}
