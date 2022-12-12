@@ -3656,11 +3656,8 @@
 									"});\r",
 									"\r",
 									"var TransportCompanyMode = pm.response.json();\r",
-									"console.log(TransportCompanyMode)\r",
 									"\r",
-									"pm.collectionVariables.set(\"TKM\", \"TransportCompanyMode\");\r",
-									"\r",
-									"pm.environment.set(\"variable_key\", \"variable_value\");\r",
+									"pm.collectionVariables.set(\"TransportCompanyMode\", \"TKM\");\r",
 									""
 								],
 								"type": "text/javascript"
@@ -3698,43 +3695,6 @@
 								}
 							]
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "изменение статуса на Активно",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
-								"exec": [
-									"\r",
-									"let body = pm.collectionVariables.get(\"TKM\");\r",
-									"console.log(body)\r",
-									"\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "057436ed-065a-43ed-85b1-02d2d24472e0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{token}}",
-								"type": "text"
-							}
-						],
-						"url": "{{baseUrl}}/api/v1/transport-company-mode"
 					},
 					"response": []
 				},
@@ -3787,6 +3747,36 @@
 							}
 						},
 						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "изменение статуса на Активно",
+					"id": "057436ed-065a-43ed-85b1-02d2d24472e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -8467,7 +8457,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e26ae887-a711-40ab-b573-71d9cb6b5f10",
+				"id": "2096db1a-b7e2-4ff9-965d-2ee175f8ad31",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8477,7 +8467,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ac31abc0-6ee8-4e4c-9697-5cad368c2ba4",
+				"id": "6efe848c-c9a8-41a3-91b6-42bcf857d504",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -8487,30 +8477,30 @@
 	],
 	"variable": [
 		{
-			"id": "5e8636e7-00fd-4c83-ad21-33a3ae647cf1",
+			"id": "47680aed-404f-4edf-a2a2-f3540b102b61",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "664eafe6-2180-48b8-a8f4-a4840a22aa6b",
+			"id": "fbd6318d-3ecf-437e-9ec4-0075c93ef75f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "67c3db5c-660b-4447-b22d-f259f1e9c5c2",
+			"id": "4cbf8bf2-acec-4bdd-aa6e-807f9be4c1b1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ba99e5c-058b-4b76-8273-3d5af5f75679",
+			"id": "b5527a1f-59fc-4c5b-a705-67635cad3a0c",
 			"key": "transportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "db80768b-624a-416f-b89f-318117938251",
+			"id": "dceff258-e6e6-45f6-b325-13406bee9e61",
 			"key": "TransportCompanyMode",
 			"value": ""
 		}
