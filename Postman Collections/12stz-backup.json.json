@@ -8509,31 +8509,26 @@
 	],
 	"variable": [
 		{
-			"id": "bfbab68a-7723-4c1f-989a-326dee3eeb02",
+			"id": "55524a9f-91ad-4873-94f4-d041c3952378",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "392b94fb-67b6-4132-8b6d-2aef402b23e6",
+			"id": "94e09933-a9b3-4a9d-beb7-6f8b8274ccc3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b464f163-1295-46f0-97f7-f41e6012d627",
+			"id": "c28a1e88-a4e1-4f4c-8d6a-be984127ccd6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f152a8e1-e450-4b01-bd06-0528d8611a9d",
+			"id": "245d3fa7-0c5c-4cab-8577-94b08c0024d3",
 			"key": "transportCompanyMode",
-			"value": ""
-		},
-		{
-			"id": "52045de5-0403-4b69-91ad-3f305c2923b6",
-			"key": "TransportCompanyMode",
 			"value": ""
 		}
 	]
