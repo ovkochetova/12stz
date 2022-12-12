@@ -4074,9 +4074,14 @@
 									"});\r",
 									"\r",
 									"let jsonData = pm.response.json();\r",
+									"\r",
 									"pm.test(\"Типы доставки есть\", () => {\r",
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"})\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Количество дней равно 4\", function () {\r",
+									"    pm.expect(jsonData.value).to.eql(100);\r",
+									"});\r",
 									"\r",
 									"\r",
 									""
@@ -8842,25 +8847,25 @@
 	],
 	"variable": [
 		{
-			"id": "86775a91-55cb-4992-92f6-90b2b601fef1",
+			"id": "c4f2f809-8444-472f-85f2-8ef97fbb42fe",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "294a7a7b-4435-4cda-9424-358af3bc93ee",
+			"id": "992364bf-2ef2-438b-aea5-2a4142835c58",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "818c8a67-e1f5-4588-b2d4-90bca340146b",
+			"id": "d5715e3f-3d98-48d4-a6d7-07ccfacaf99c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f3a7ae3-e44c-4519-8339-a7c3fe473033",
+			"id": "8eeb9520-095f-4221-83b1-9b5b425b5b0c",
 			"key": "TKM",
 			"value": ""
 		}
