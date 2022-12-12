@@ -3762,7 +3762,24 @@
 								}
 							}
 						},
-						"url": "{{baseUrl}}/api/v1/transport-company-mode"
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -8515,25 +8532,25 @@
 	],
 	"variable": [
 		{
-			"id": "bb37355c-b949-4100-a2ce-b7c014ce25ee",
+			"id": "e21c55c3-93c4-495f-91fe-1889db058db6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aaf594fd-326b-41bb-91d2-a0801ef65a86",
+			"id": "ec1143ed-197c-454a-ac7c-d8942b6d9d0b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "01e57bc7-7dae-4762-b92e-e08e4bb77dbf",
+			"id": "df91856f-6fce-4ab3-90f2-2071f7bbf131",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "37facd50-9a69-414b-99d5-59cca9f09fa0",
+			"id": "314d1a84-4a09-4320-a9fc-7e8464a0477b",
 			"key": "TKM",
 			"value": ""
 		}
