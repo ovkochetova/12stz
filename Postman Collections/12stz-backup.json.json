@@ -3749,6 +3749,18 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "8b5461d5-6067-4e26-9fc0-ec84bff66969",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -8447,30 +8459,30 @@
 	],
 	"variable": [
 		{
-			"id": "61ca3ca4-8ee3-4735-ae9e-00c42b0f31f6",
+			"id": "77112b86-248d-44ac-9f1f-2a4930f779da",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d5550d4f-fec8-4d1d-904c-29a44d151b3e",
+			"id": "ebabca7c-0d78-4bbf-91cb-7381066cbb98",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "84ffbcae-37fc-42d7-9f73-f35eecc8861f",
+			"id": "460575bb-c5ea-4971-987d-38a9cc52ba2c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c88f7e60-b6d5-4782-887e-4a7a37448b94",
+			"id": "98f800c1-d70d-40f3-806b-8c954fea7c37",
 			"key": "transportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "582a71aa-febd-410e-860e-0db904046292",
+			"id": "639574b9-bbc0-424c-89d8-0f9172f9f07e",
 			"key": "TransportCompanyMode",
 			"value": ""
 		}
