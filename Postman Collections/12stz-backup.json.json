@@ -3655,14 +3655,10 @@
 									"    pm.expect(jsonData).to.be.an('object');\r",
 									"});\r",
 									"\r",
+									"var TransportCompanyMode = pm.response.json();\r",
 									"\r",
-									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"transportCompany_id\",jsonData.transportCompany.id);\r",
-									"pm.environment.set(\"transportCompany_name\",jsonData.transportCompany.name);\r",
-									"pm.environment.set(\"transportCompany_trackUrl\",jsonData.transportCompany.trackUrl);\r",
-									"pm.environment.set(\"popup_id\",jsonData.popup.id);\r",
-									"pm.environment.set(\"isActive\", jsonData.isActive)\r",
-									"pm.environment.set(\"id\", jsonData.id)"
+									"pm.collectionVariables.set(\"transportCompanyMode\", \"TKM\");\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -3704,6 +3700,28 @@
 				},
 				{
 					"name": "Изменение статуса ТК в 1С на Активно",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "62daa77e-8114-474f-b6e7-a09990e2740f",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"\r",
+									"body.transportCompany.isActive = true;\r",
+									"\r",
+									"let bodyText = JSON.stringify(body);\r",
+									"console.log(bodyText);\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body);\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "c7bff6dc-83b2-4029-8486-bd2680080997",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -8490,19 +8508,19 @@
 	],
 	"variable": [
 		{
-			"id": "c43cdc3c-9b88-409d-a2e5-d9cfaa343d48",
+			"id": "cdc91c6d-28ea-45f1-ac95-a103f37cfb16",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0ab9f6d5-8a31-4e77-add8-7273e694a7a2",
+			"id": "497bccce-7bd3-4ed0-aeb2-9d64dbeae5c4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d3ef6d76-b603-48fc-a873-2b82aae42d8b",
+			"id": "3f00ac12-d6f6-4bd7-8618-9d72779a9e72",
 			"key": "token",
 			"value": "",
 			"type": "string"
