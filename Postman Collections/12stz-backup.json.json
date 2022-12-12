@@ -3867,6 +3867,11 @@
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК в 1С не активна\", function () {\r",
+									"        pm.expect(jsonData.value).to.eql(100);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -8614,25 +8619,25 @@
 	],
 	"variable": [
 		{
-			"id": "f069903b-bcf4-49de-9391-331c50e17c54",
+			"id": "da3432b3-1d15-48f4-b942-d9d68445da83",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "35f3acbf-60e5-4d5f-a963-e5edf380dada",
+			"id": "4138555b-0016-49c0-aaee-25db419e0bf3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ffb1b9f-65ac-4f66-b5d8-cd919f1aad2c",
+			"id": "4442e579-d015-4e30-9a24-c544deb436bd",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e6a24b6d-b7c9-4c7f-90fd-c79fc16e728f",
+			"id": "96049bbc-4661-4fd2-a7fb-99c7bb35cbd8",
 			"key": "TKM",
 			"value": ""
 		}
