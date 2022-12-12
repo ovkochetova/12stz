@@ -3646,7 +3646,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
 							"host": [
@@ -8377,19 +8383,19 @@
 	],
 	"variable": [
 		{
-			"id": "88d6dcb3-3b0a-4b3f-9cca-73219459331e",
+			"id": "4269a97d-f9fa-4c2e-865f-82e099a55fe8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4460e433-6c09-4a3a-bca1-0456703879ae",
+			"id": "bf0119f7-07fa-4664-88b1-c54ed85f66e5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1aa28b76-301a-4917-90ee-57359d7f77ac",
+			"id": "c5bd5e8b-3c03-4479-97ac-384a03625d77",
 			"key": "token",
 			"value": "",
 			"type": "string"
