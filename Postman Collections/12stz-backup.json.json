@@ -3683,7 +3683,7 @@
 					"request": {
 						"method": "PATCH",
 						"header": [],
-						"url": "Изменение статуса Активно"
+						"url": "Изменение статуса на Активно"
 					},
 					"response": []
 				},
@@ -8436,19 +8436,19 @@
 	],
 	"variable": [
 		{
-			"id": "6274eb36-a6ce-420b-92d6-68fba7ba5e38",
+			"id": "741ea59b-c649-4773-a4fb-2e3d79bcadd3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "53036205-28e6-4c44-8aca-79c405230e4b",
+			"id": "9fd987aa-78a1-4483-a1c8-5f036c3254d5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3468665b-b47e-4cf5-b1cb-68221e23c776",
+			"id": "f4782b9d-d24b-4ac1-823a-3a6770f5b96d",
 			"key": "token",
 			"value": "",
 			"type": "string"
