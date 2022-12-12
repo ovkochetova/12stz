@@ -3702,7 +3702,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Изменение статуса ТК в 1С на Активно",
 					"id": "c7bff6dc-83b2-4029-8486-bd2680080997",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3719,7 +3719,24 @@
 								}
 							}
 						},
-						"url": "Изменение статуса на Активно"
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -8472,19 +8489,19 @@
 	],
 	"variable": [
 		{
-			"id": "2a3d50ba-d120-4dd7-8888-e751004bb23e",
+			"id": "afec8e05-c372-43f0-99a7-8ccb1719e759",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6173782b-d023-4add-b3a4-9b9f7bb5923e",
+			"id": "4e2403f8-e8ff-49a1-8b62-7af350f9a768",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "66d5a18f-2107-4042-85de-b7a3cb38ae67",
+			"id": "c3ae1fef-77cc-4bc0-8696-77bb99373db0",
 			"key": "token",
 			"value": "",
 			"type": "string"
