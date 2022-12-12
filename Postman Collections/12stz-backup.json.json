@@ -8737,7 +8737,16 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n\r\n{\r\n  \"country_iso_code\": \"KZ\",\r\n  \"region_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"EkjQv9GA0L7RgdC_0LXQutGCINCQ0LHRi9C70LDQuSDQpdCw0L3QsCwg0JDQu9C80LDRgtGLLCDQmtCw0LfQsNGF0YHRgtCw0L0iLiosChQKEglJB64V6m6DOBFcFdiOEGXfGhIUChIJq8vFFn1ugzgRdm2YrY9mRD0\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
 					},
 					"response": []
 				}
@@ -8769,25 +8778,25 @@
 	],
 	"variable": [
 		{
-			"id": "cb55e78c-2d22-4e00-8711-0d6efe6eeac0",
+			"id": "17c5f235-0cf7-48ac-b3a6-d0696e3bc36a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d038586a-7dab-4d66-91de-303f1ae79d7f",
+			"id": "0f289260-6c2d-402a-82ed-95b37a1bb6ae",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d481ede-7399-40e6-9e45-3781bb0cf7a8",
+			"id": "68287b8b-56a4-40a2-915c-5fba35d61ba3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f277cd00-8b04-4271-b7b9-c318aeba4ca3",
+			"id": "c2152849-9393-4139-855c-809953ecd338",
 			"key": "TKM",
 			"value": ""
 		}
