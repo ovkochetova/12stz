@@ -8482,30 +8482,30 @@
 	],
 	"variable": [
 		{
-			"id": "d0d5dab3-31e6-470a-966f-1dbf3a914c22",
+			"id": "0db77957-ee1f-4a32-94e1-77f5ab0671c7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "756f70bf-d921-414d-bde3-a3b8a9d6202c",
+			"id": "2ad9a8af-1636-432e-bf5f-8d123b81ed55",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a154a1c0-0f5b-49a3-9550-b908f171b251",
+			"id": "49e10515-802e-4191-8b26-a71d3dae2744",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "664852e0-5f16-45f8-b291-9f309816961c",
+			"id": "6702b052-814e-45da-a648-197a90aad0b5",
 			"key": "transportCompanyMode",
 			"value": ""
 		},
 		{
-			"id": "5c7446b0-304e-4811-becd-f6400eca861c",
+			"id": "f8f50717-045a-4653-b115-92a7fff272f8",
 			"key": "TransportCompanyMode",
 			"value": ""
 		}
