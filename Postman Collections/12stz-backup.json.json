@@ -8727,7 +8727,7 @@
 			"id": "aeff015f-9afc-42f7-885f-da196c6ac10b"
 		},
 		{
-			"name": "New Folder",
+			"name": "Казахстан",
 			"item": [],
 			"id": "00ba5489-623b-43c7-830d-aea978d81ce3"
 		}
@@ -8756,25 +8756,25 @@
 	],
 	"variable": [
 		{
-			"id": "68ebfd59-d747-4a11-9def-d08287d596fd",
+			"id": "1886fcc6-ee49-4532-a17e-ed178397bb9c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f0def780-454d-402f-9876-950c06d8a1a8",
+			"id": "aa323db2-8eae-4ef2-8ea2-e7a8698e9e7f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4078ebaf-ac66-4bb5-9416-d5219c1c146e",
+			"id": "3fa4f7a1-635b-4840-b09a-a6330371c0c3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf1ec3ee-5dd9-4874-bbab-336bd5dd5f64",
+			"id": "bbf583c7-5f65-4f5f-a9f1-733aef2ff724",
 			"key": "TKM",
 			"value": ""
 		}
