@@ -8740,7 +8740,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\r\n\r\n{\r\n  \"country_iso_code\": \"KZ\",\r\n  \"region_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"EkjQv9GA0L7RgdC_0LXQutGCINCQ0LHRi9C70LDQuSDQpdCw0L3QsCwg0JDQu9C80LDRgtGLLCDQmtCw0LfQsNGF0YHRgtCw0L0iLiosChQKEglJB64V6m6DOBFcFdiOEGXfGhIUChIJq8vFFn1ugzgRdm2YrY9mRD0\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"raw": "\r\n{\r\n  \"country_iso_code\": \"KZ\",\r\n  \"region_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"EkjQv9GA0L7RgdC_0LXQutGCINCQ0LHRi9C70LDQuSDQpdCw0L3QsCwg0JDQu9C80LDRgtGLLCDQmtCw0LfQsNGF0YHRgtCw0L0iLiosChQKEglJB64V6m6DOBFcFdiOEGXfGhIUChIJq8vFFn1ugzgRdm2YrY9mRD0\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -8778,25 +8778,25 @@
 	],
 	"variable": [
 		{
-			"id": "17c5f235-0cf7-48ac-b3a6-d0696e3bc36a",
+			"id": "0792be36-8bf8-406f-98cb-492d7717e3d1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0f289260-6c2d-402a-82ed-95b37a1bb6ae",
+			"id": "01fa4b80-8b30-4870-8d89-4492ffaa2813",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "68287b8b-56a4-40a2-915c-5fba35d61ba3",
+			"id": "3f93aa60-989d-48d1-8175-7c2aaa60a7d6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c2152849-9393-4139-855c-809953ecd338",
+			"id": "7eab93ea-e379-408b-9f82-f1d5737f90bd",
 			"key": "TKM",
 			"value": ""
 		}
