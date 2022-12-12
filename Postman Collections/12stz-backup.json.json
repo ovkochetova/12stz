@@ -8487,26 +8487,31 @@
 	],
 	"variable": [
 		{
-			"id": "832b696d-00c6-489f-9892-910714b8b04a",
+			"id": "0a820117-3174-4a76-b8e8-38cba27cde9d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "26dc168b-6f02-4850-b8e5-62c742a39a25",
+			"id": "85a6bf72-bd75-4aad-8452-aa2b744499c4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "37b86eb8-1505-4204-809a-a6e726d3c900",
+			"id": "c49f4249-2c76-4eee-a2e1-81340d68e68b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "459629b9-6c84-4388-906d-52dbec266c1f",
+			"id": "f217af91-dafb-46ae-9f97-87276a3a2e91",
 			"key": "TransportCompanyMode",
+			"value": ""
+		},
+		{
+			"id": "8ba620d6-9543-4d7d-865f-b02d5a96b533",
+			"key": "TKM",
 			"value": ""
 		}
 	]
