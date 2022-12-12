@@ -3834,88 +3834,6 @@
 						"url": "{{url}}"
 					},
 					"response": []
-				},
-				{
-					"name": "изменение статуса на не Активно",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
-								"exec": [
-									"\r",
-									"let body = pm.collectionVariables.get(\"TKM\");\r",
-									"console.log(body);\r",
-									"\r",
-									"delete body.id;\r",
-									"body.isActive = true;\r",
-									"\r",
-									"pm.request.body.raw = body;\r",
-									"console.log(body)\r",
-									"\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "192e956b-197f-4890-8bb3-11611871fbea",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{token}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"transport-company-mode",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "83a977c1-52f2-4cd6-8c77-5da709fcd3ad",
-									"key": "id",
-									"value": "{{id}}"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -8614,25 +8532,25 @@
 	],
 	"variable": [
 		{
-			"id": "8ef69b40-221c-4b48-b9b3-b5b33de3b4e9",
+			"id": "a91de751-7354-494e-8c89-910b33f492b7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2715088f-ce8d-44a8-af8d-7b0c4514b75e",
+			"id": "32ae1d9e-ea9a-4095-847b-46707bd235db",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8683a29e-6959-4337-a603-c50b197ce182",
+			"id": "31a49db8-8fbc-4742-93dd-4347e3a31b10",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4c100d9a-fdab-461d-8a1e-1600c83869a2",
+			"id": "f9056443-7c0d-485d-ae66-de13d7767683",
 			"key": "TKM",
 			"value": ""
 		}
