@@ -8736,7 +8736,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -8779,25 +8779,25 @@
 	],
 	"variable": [
 		{
-			"id": "4a9dda27-ef20-4986-adce-e6c755113b5c",
+			"id": "bc3541f3-e24f-474b-82cd-84a4728206dd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1c63be54-5d95-46ef-958f-8ad710dfcea1",
+			"id": "29c88cca-5040-46db-b92f-6ced4f11e6ae",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5cb6cfa1-f992-435d-bc02-0107e267138c",
+			"id": "13c5d7b3-014e-4ba4-9c7c-54a315e21a97",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b548ed20-2eea-4075-8ef3-87d733094d2f",
+			"id": "fcdc1444-f830-4790-9530-8be60239825c",
 			"key": "TKM",
 			"value": ""
 		}
