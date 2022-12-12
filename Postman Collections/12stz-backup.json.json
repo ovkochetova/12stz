@@ -3657,9 +3657,10 @@
 									"\r",
 									"var TransportCompanyMode = pm.response.json();\r",
 									"console.log(TransportCompanyMode)\r",
-									"\r",
 									"pm.collectionVariables.set(\"TKM\", TransportCompanyMode);\r",
 									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\",jsonData.id);\r",
 									"\r",
 									""
 								],
@@ -3722,6 +3723,18 @@
 									"\r",
 									"\r",
 									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -8502,25 +8515,25 @@
 	],
 	"variable": [
 		{
-			"id": "8e6f3250-45ea-4f8b-bc23-973ee62e77dc",
+			"id": "bb37355c-b949-4100-a2ce-b7c014ce25ee",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d79b1fd7-c39f-4d76-95f3-5c500eed4e15",
+			"id": "aaf594fd-326b-41bb-91d2-a0801ef65a86",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fb1823e6-1ce6-4877-a4b3-2989f49ac3aa",
+			"id": "01e57bc7-7dae-4762-b92e-e08e4bb77dbf",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0e1883d9-9acc-4741-85ff-2ea8e9e291af",
+			"id": "37facd50-9a69-414b-99d5-59cca9f09fa0",
 			"key": "TKM",
 			"value": ""
 		}
