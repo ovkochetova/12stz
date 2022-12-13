@@ -5232,7 +5232,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки для отображения клиенту 499999",
+					"name": "учитывать подарки сумма 499999",
 					"id": "a5a0a20b-b1ca-40ac-aa15-705b8cf98fb8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "6a9aa8d0-cb43-4636-b235-7c34ef6f1edb",
+			"id": "448ff0ae-4d11-41f0-98a2-bf7b235d4ee9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "64474484-d235-44cd-af20-cc4960f17d07",
+			"id": "5f42980f-0f9a-4d87-bac5-7df61551dc18",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b6cdd454-d592-4af6-b008-727c68a5bac7",
+			"id": "45112440-4b7a-45b6-baf8-7120a54ae807",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "46b283ca-60c3-4ef8-88e4-236563f47df5",
+			"id": "a5665590-cf26-4eaa-81ff-e3dcf17affab",
 			"key": "TKM",
 			"value": ""
 		}
