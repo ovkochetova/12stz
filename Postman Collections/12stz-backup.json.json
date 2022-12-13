@@ -4237,6 +4237,7 @@
 									"let mindostavka = delivery.from_days;\r",
 									"console.log(mindostavka);\r",
 									"\r",
+									"\r",
 									"pm.test(\"Разброс доставки для отображения пользователю\" , function () {\r",
 									"    pm.expect(maxdostavka - mindostavka).to.eql(4)\r",
 									"});\r",
@@ -9005,25 +9006,25 @@
 	],
 	"variable": [
 		{
-			"id": "e1d85d0f-f45b-4376-80fd-a4da48a0fa84",
+			"id": "b4031c8a-17fe-47a7-bb96-445b2c42a0c7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dc8d4b4b-7933-4997-ae6c-48ade571e433",
+			"id": "93bbb442-7dc4-44b0-a0d9-c5c2c7813149",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "054d6246-d8b2-410e-b8d4-cdec3c385877",
+			"id": "3882f5d3-e681-4776-81f9-6a4165b8bc17",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa9d8869-c444-4cec-bdba-54cdb036bc2d",
+			"id": "876f0919-e468-4968-8130-ddb68a17a120",
 			"key": "TKM",
 			"value": ""
 		}
