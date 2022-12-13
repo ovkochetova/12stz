@@ -4312,7 +4312,9 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									""
+									"pm.test(\"Your test name\", function () {\r",
+									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(true);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -4666,8 +4668,8 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Разброс доставки для отображения пользователю равно \" + jsonData.deliveryIntervalDays , function () {\r",
-									"    pm.expect(jsonData.deliveryDeltaDays).to.eql(4);\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(false);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -9449,25 +9451,25 @@
 	],
 	"variable": [
 		{
-			"id": "3cca5ab4-b08a-490e-b1ec-fc21528027ff",
+			"id": "7d9855ed-ce4b-4148-959c-073d812a3576",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "602fb552-79cc-4a0a-9bf0-bc7f96b97c73",
+			"id": "b1579016-7cb4-4944-8b04-43f144b37266",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4d8389a-6de7-4666-b6d1-d53db0b15f77",
+			"id": "9536b5ce-da7d-47d5-ad96-97c9307d9520",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b3564dec-8c2e-46e3-9c17-98dfe663d40a",
+			"id": "3e0d5910-755d-4a98-829f-a896979c0749",
 			"key": "TKM",
 			"value": ""
 		}
