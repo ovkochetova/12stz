@@ -4120,6 +4120,95 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "разброс доставки для выбора клиенту",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.deliveryIntervalDays = 4;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Количество дней для выбора клиенту равно \" + jsonData.deliveryIntervalDays , function () {\r",
+									"    pm.expect(jsonData.deliveryIntervalDays).to.eql(4);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "1cdb961f-c963-4d5c-ba4a-b03cee665ddf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -8852,25 +8941,25 @@
 	],
 	"variable": [
 		{
-			"id": "192cd1e1-e564-4168-8700-fb31ce01a852",
+			"id": "3b2e0e3d-587d-4c75-824b-1ab02d6fd4ef",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2573cfcb-8ce1-4aef-bdaa-cefa0c3f2817",
+			"id": "c4bc3cd8-fd14-4951-8ffc-24fd5cc7a21c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a9a115eb-fc54-4315-897f-9250a1f33f0a",
+			"id": "4416971d-6606-46fb-b984-9db2707e1d50",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e405a7b9-7a66-4add-b92b-bd0bc4d3d5f9",
+			"id": "5ff31697-f687-4a9b-9f36-1e69ad260c19",
 			"key": "TKM",
 			"value": ""
 		}
