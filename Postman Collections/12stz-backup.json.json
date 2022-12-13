@@ -4365,6 +4365,73 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "! разброс доставки для отображения клиенту Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='СДТ_Москва_МО_590 примерка (запись не редактировать!)')\r",
+									"console.log(delivery);\r",
+									"\r",
+									"let maxdostavka = delivery.to_days;\r",
+									"console.log(maxdostavka)\r",
+									"let mindostavka = delivery.from_days;\r",
+									"console.log(mindostavka);\r",
+									"\r",
+									"let delta = maxdostavka - mindostavka;\r",
+									"console.log(delta);\r",
+									"\r",
+									"pm.test(\"Разброс доставки для отображения пользователю равно \" + delta , function () {\r",
+									"    pm.expect(maxdostavka - mindostavka).to.eql(4)\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b4af67b2-a001-4353-b696-88fee88eaf32",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -9097,25 +9164,25 @@
 	],
 	"variable": [
 		{
-			"id": "7a531d88-4789-488c-aceb-eb4f5286fd70",
+			"id": "8b17727e-d6f7-4efb-9b83-02cd10c3a618",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2d820c98-9e20-42cb-b8d5-650c1fe5d488",
+			"id": "ab036875-cf89-486b-9950-47bcf4126669",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "69127028-0b65-4068-9849-0de9e926f772",
+			"id": "8d07a792-fc21-43b4-bb9a-819582356802",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "afb9fafd-6baa-4aa2-9d21-85994c8b8128",
+			"id": "bbd0e6a2-ef6e-4343-ab7d-b99d277ccdb4",
 			"key": "TKM",
 			"value": ""
 		}
