@@ -4721,7 +4721,7 @@
 					"response": []
 				},
 				{
-					"name": "разброс доставки для отображения клиенту 499410 руб Copy",
+					"name": "учитывать доставку для отображения клиенту 499410 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -9504,25 +9504,25 @@
 	],
 	"variable": [
 		{
-			"id": "1348054f-9b99-403d-9078-0e32936ff469",
+			"id": "2e5df5ce-0dec-4818-8601-c96ccf1c0dc7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d3d48564-55cf-479d-ad37-8cc35331146f",
+			"id": "abb39fbd-fbc1-49b6-a474-c30ca9256929",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c5d421fc-09db-4d2c-aab4-4df7914ca5ce",
+			"id": "bfe853d7-041c-4acb-abf6-384bc8032ae8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "76f077b9-7de0-48ea-9c42-dbbef83591ec",
+			"id": "049c76a0-f1c0-4572-a9a9-5f7a429c8adc",
 			"key": "TKM",
 			"value": ""
 		}
