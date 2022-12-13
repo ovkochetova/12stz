@@ -4785,7 +4785,7 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать доставку для отображения клиенту 500000 руб",
+					"name": "!учитывать доставку сумма  500000 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "241ca60f-4181-4fbf-ae06-4cb470c87606",
+			"id": "2341e922-685c-444e-bd8c-2ca6799716e5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2540abc8-4d42-4f90-ba4a-96e1332634a1",
+			"id": "857a2c09-304c-4757-83f9-2f0371d9ccca",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e150f5a8-c2fd-49fa-970c-51ef3d1620d0",
+			"id": "840b58e7-3fd8-4796-a352-2cb2dc31f130",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c033ba8d-c96b-44f6-ad0c-323d4fc73c5d",
+			"id": "f37fd8d5-daa1-434b-9a29-35e19313a0ae",
 			"key": "TKM",
 			"value": ""
 		}
