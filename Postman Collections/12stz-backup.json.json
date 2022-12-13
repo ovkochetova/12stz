@@ -4135,7 +4135,7 @@
 									"\r",
 									"delete body.id;\r",
 									"body.isActive = true;\r",
-									"body.deliveryIntervalDays = 4;\r",
+									"body.deliveryDeltaDays = 4\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -8941,25 +8941,25 @@
 	],
 	"variable": [
 		{
-			"id": "35612f65-0404-433f-ab4c-de08a8fe64c5",
+			"id": "6a1f167a-528a-4ff9-9c2c-ee6efbc4002e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bcea1e5c-04db-467d-90d4-ee7362f767fc",
+			"id": "0b889f5d-dd1c-4b4e-96cd-40c9747f1808",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4039832-bf64-4a40-a4a8-a0ce4d397419",
+			"id": "2a553b5c-9abc-4973-8f28-cc0b2131a3e6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41e28497-d9c4-4613-be4b-79af24300a05",
+			"id": "05cf119e-8430-44a9-8243-f1cdfc8b5250",
 			"key": "TKM",
 			"value": ""
 		}
