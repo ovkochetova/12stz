@@ -4984,7 +4984,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки для отображения клиенту 499999",
+					"name": "!учитывать подарки для отображения клиенту 499999 (499410)",
 					"event": [
 						{
 							"listen": "test",
@@ -5139,6 +5139,95 @@
 							}
 						},
 						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "чекбокс учитывать подарки в стоимости заказа не Активен",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isPriceBorderIncludePresent = true,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7c974f9b-50c0-49cd-b9da-3a3f20f3956d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -9873,25 +9962,25 @@
 	],
 	"variable": [
 		{
-			"id": "0e8f9320-77a1-416e-a029-b82e7111cf4a",
+			"id": "74a091c1-5817-43dc-bbb2-fe846dfee155",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "139ea782-2dbd-44a9-96f8-9b23fba83e48",
+			"id": "63c5c5a4-95a8-4955-82b0-49fe9abac4e0",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "51e0d21e-ee7d-48db-8817-aa5338e03b96",
+			"id": "11f091c5-51b3-4a5d-9e46-28c0215dc723",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "40b49626-c8db-4d7a-aeff-75029af10700",
+			"id": "437e363d-654a-4582-a789-be7b3dfe7fe0",
 			"key": "TKM",
 			"value": ""
 		}
