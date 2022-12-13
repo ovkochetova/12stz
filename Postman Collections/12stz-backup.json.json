@@ -4085,7 +4085,7 @@
 									"console.log(delivery);\r",
 									"\r",
 									"pm.test(\"Количество дней равно 4\", function () {\r",
-									"    pm.expect(delivery.delivery_dates[0]).to.be.an(array).to.have.lengthOf(4);\r",
+									"    pm.expect(delivery.delivery_dates.to.be.an(array).to.have.lengthOf(4);\r",
 									"});\r",
 									"\r",
 									"\r",
@@ -8852,25 +8852,25 @@
 	],
 	"variable": [
 		{
-			"id": "df8cafbb-c8ec-492f-85a5-a0923344ad53",
+			"id": "a7ae1871-89ca-4b2b-88c8-4799a0466647",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "674488e3-876b-4b87-8907-a45941448233",
+			"id": "a0c29e33-18db-4d4a-9667-e7be9df4149a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "15ce5ab5-d24e-4df3-97eb-861e561c390e",
+			"id": "c4a3150c-874f-4662-b12b-c0443f6971aa",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f24901f0-04e6-4b5f-8d89-43597314a86e",
+			"id": "cdc75cff-29cd-43f7-b3e9-0637d3c9893d",
 			"key": "TKM",
 			"value": ""
 		}
