@@ -4598,7 +4598,7 @@
 									"\r",
 									"\r",
 									"pm.test(\"Ограничение 500 000 руб\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
 									"});\r",
 									"\r",
 									""
@@ -9364,25 +9364,25 @@
 	],
 	"variable": [
 		{
-			"id": "2fa67b07-eb42-4dc7-8fea-b1485174f470",
+			"id": "e1a397e9-774a-4030-98a1-48aedc706b34",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c6aabe89-1fec-4b9c-9e48-d9351f19ee76",
+			"id": "1b4e3604-9dd6-4b06-bc17-34447d3d992b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03df4418-fbf6-4917-86cb-1f0e260d3963",
+			"id": "def5b46c-7aa4-4846-aa1e-bf85b802748b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "069d75de-9820-419b-a5a6-29438cc4552a",
+			"id": "fe9c46e2-8d57-4b0d-b098-ce53280aa4a9",
 			"key": "TKM",
 			"value": ""
 		}
