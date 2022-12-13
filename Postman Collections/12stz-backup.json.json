@@ -4135,7 +4135,7 @@
 									"\r",
 									"delete body.id;\r",
 									"body.isActive = true;\r",
-									"body.deliveryIntervalDays = 4;\r",
+									"body.deliveryDeltaDays = 4\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -4158,8 +4158,8 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Количество дней для выбора клиенту равно \" + jsonData.deliveryIntervalDays , function () {\r",
-									"    pm.expect(jsonData.deliveryIntervalDays).to.eql(4);\r",
+									"pm.test(\"Разброс доставки для отображения пользователю равно \" + jsonData.deliveryIntervalDays , function () {\r",
+									"    pm.expect(jsonData.deliveryDeltaDays).to.eql(4);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -8941,25 +8941,25 @@
 	],
 	"variable": [
 		{
-			"id": "c8f4fc1c-2340-4563-a1fd-78b4ea959337",
+			"id": "1255e941-69e7-4923-adda-f5e8cc9cda46",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e92bdab0-ed68-4a16-93cd-29d1499ec0d5",
+			"id": "4656d227-ed68-42bb-8c4a-023b714c60d6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3b9eb5d0-d40e-47fd-b2bd-2f876ce82a34",
+			"id": "244acaa9-7e96-417f-b8c6-37d23afa5fbf",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a9fabe5c-a959-43b3-9cae-2b75906e446a",
+			"id": "e5d4f5bf-a9b0-4896-94b8-1d52e3f99351",
 			"key": "TKM",
 			"value": ""
 		}
