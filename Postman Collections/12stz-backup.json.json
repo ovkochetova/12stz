@@ -5233,58 +5233,27 @@
 				},
 				{
 					"name": "!учитывать подарки для отображения клиенту 499999",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
 					"id": "a5a0a20b-b1ca-40ac-aa15-705b8cf98fb8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 499999.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 499999.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
-						},
-						"url": "{{url}}"
+						}
 					},
 					"response": []
 				},
 				{
-					"name": "учитывать подарки для отображения клиенту 500000 Copy",
+					"name": "учитывать подарки для отображения клиенту 500000",
 					"event": [
 						{
 							"listen": "test",
@@ -10121,25 +10090,25 @@
 	],
 	"variable": [
 		{
-			"id": "ab5ef5c4-40aa-49e7-a99a-674fca95f550",
+			"id": "d0e0594c-0a84-44a1-96ab-f60567dbc12a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3eda81ed-9a6a-4031-9ebe-b1526bf17527",
+			"id": "72cc5649-01e8-43ad-a660-2d25c8b00033",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e5d0a197-9de2-49c4-a003-3f58a9c80590",
+			"id": "89b4cc13-0669-477c-ab7d-b5d6b8f987d1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "26d70b75-8c64-45f8-80d2-57e87fca40c0",
+			"id": "2fb3dfbc-c8a0-4da6-9403-6dc40760d5df",
 			"key": "TKM",
 			"value": ""
 		}
