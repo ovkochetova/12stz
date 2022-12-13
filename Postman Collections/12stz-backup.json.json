@@ -4276,6 +4276,95 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "чекбокс учитывать доставку",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.deliveryDeltaDays = 4\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Разброс доставки для отображения пользователю равно \" + jsonData.deliveryIntervalDays , function () {\r",
+									"    pm.expect(jsonData.deliveryDeltaDays).to.eql(4);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "2dceb080-7f33-473e-9299-0c28cbd800e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -9008,25 +9097,25 @@
 	],
 	"variable": [
 		{
-			"id": "0446d929-cc03-4c1a-9ce7-4d501a1d8566",
+			"id": "6600c704-88ac-420e-af24-79573c1064bf",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7902a733-0be2-4deb-b3c5-e026b48c92ce",
+			"id": "86e7bb14-5885-418e-b9f4-3aa02a9154fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "629e647a-ef3e-479b-8bef-be7d22d4d5c7",
+			"id": "697948ad-8020-4268-a53c-a4119f2badfd",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e2281449-c913-4b9d-aafb-655a1da53fdb",
+			"id": "8f388de5-c42a-49ce-aa4d-c86c5c33d028",
 			"key": "TKM",
 			"value": ""
 		}
