@@ -4719,6 +4719,59 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "разброс доставки для отображения клиенту 499410 руб Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "a4aac6c4-c338-499d-a401-4be6645584e9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 499410.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -9431,7 +9484,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9e201c43-869a-4770-a986-0d52ee25df90",
+				"id": "a2df1f74-29ec-42fd-b1f7-3e829699c510",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -9441,7 +9494,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "393d232f-4496-4e12-940f-423732587d63",
+				"id": "c6e62752-0923-4b06-81a7-f2af2f35b073",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -9451,25 +9504,25 @@
 	],
 	"variable": [
 		{
-			"id": "26fe2d3e-09cd-4219-a88b-7694412f5833",
+			"id": "5e2b3995-35d0-4f26-948b-c8a1b989d2d3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "446c447c-88ac-461d-92d0-ea5e66b6261c",
+			"id": "d74d42fa-f136-4c59-a730-16ec24c7d86c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dc73fe48-89f1-420a-a687-24cd927b54e6",
+			"id": "959325cb-3e80-4634-ab82-2b35bdcfbca2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a78ad28d-2e8c-4b6b-a992-e65506763c7a",
+			"id": "f0660693-ae02-445c-8163-1ee4e4b9017b",
 			"key": "TKM",
 			"value": ""
 		}
