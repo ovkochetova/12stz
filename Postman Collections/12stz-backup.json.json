@@ -4418,7 +4418,7 @@
 					"response": []
 				},
 				{
-					"name": "разброс доставки для отображения клиенту 499410 руб",
+					"name": "учитывать доставку для отображения клиенту 499410 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4471,7 +4471,7 @@
 					"response": []
 				},
 				{
-					"name": "разброс доставки для отображения клиенту 499411 руб",
+					"name": "учитывать доставку для отображения клиенту 499411 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4524,7 +4524,7 @@
 					"response": []
 				},
 				{
-					"name": "разброс доставки для отображения клиенту 500000 руб",
+					"name": "учитывать доставку для отображения клиенту 500000 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4577,7 +4577,7 @@
 					"response": []
 				},
 				{
-					"name": "разброс доставки для отображения клиенту 500001 руб",
+					"name": "учитывать доставку для отображения клиенту 500001 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4721,7 +4721,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку для отображения клиенту 499410 руб",
+					"name": "учитывать доставку для отображения клиенту 500000 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4762,7 +4762,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 499410.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500001.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -9504,25 +9504,25 @@
 	],
 	"variable": [
 		{
-			"id": "04e9c9fc-45f3-4258-9a79-beae8ff61e85",
+			"id": "8fc8d664-2f06-4320-a171-aebc2ca5e147",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "74a53019-2433-4661-8566-296125858773",
+			"id": "e7ec11b2-88fe-4f12-8d73-d1d52c7d0bda",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "080dab1b-7992-41a4-99e0-1953fb391250",
+			"id": "5ad4547d-b113-4815-a18d-bf1e525aafa9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c6b0780b-bef8-48f5-8677-f9d4ec148eb7",
+			"id": "5aebe6ea-f2b3-49d7-81b2-9a6e53aaba77",
 			"key": "TKM",
 			"value": ""
 		}
