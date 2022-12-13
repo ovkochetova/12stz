@@ -4081,7 +4081,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='СДТ_Москва_МО_590 примерка (запись не редактировать!)')\r",
+									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='CSE_СПБ_590 примерка (запись не редактировать!)')\r",
 									"console.log(delivery);\r",
 									"\r",
 									"pm.test(\"Количество дней равно 4\" , function () {\r",
@@ -9256,25 +9256,25 @@
 	],
 	"variable": [
 		{
-			"id": "cf428c09-0bcf-4f35-8b80-b634ae4af060",
+			"id": "a1e801f4-5236-4e5f-a971-f0b26001b5f0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "668294ff-90ee-425f-8d52-cb1d5d8a6791",
+			"id": "d9b8cdd7-4a6d-46c0-8ef3-32de5d12453f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6271731b-ef39-484b-85a1-349fa0d6ab31",
+			"id": "0798a294-108c-4abc-bcc5-9dbda4e6617b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0b6bd488-140d-467d-859d-ebfbf1bde613",
+			"id": "85589aac-bb27-41ff-b1c1-91660f09d38e",
 			"key": "TKM",
 			"value": ""
 		}
