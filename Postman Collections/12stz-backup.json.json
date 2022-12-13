@@ -4471,7 +4471,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку для отображения клиенту 499411 руб",
+					"name": "!учитывать доставку для отображения клиенту 499411 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -9590,7 +9590,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "50c30115-f051-4aaf-80ec-295367207174",
+				"id": "3f68c494-a1a1-4850-ad8e-efef4dcd6051",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -9600,7 +9600,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "aa040c9f-0127-42f5-8955-4984a1c61184",
+				"id": "b4a91444-6051-477e-9ae9-8e4b26673d71",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -9610,25 +9610,25 @@
 	],
 	"variable": [
 		{
-			"id": "51f5217a-e58a-4201-8ec8-1fd7eff9bb13",
+			"id": "3c1f3998-43b4-493f-8df6-54ee6f73b170",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f538c467-3bc0-472a-bece-77c15fe0a48a",
+			"id": "77396c48-5f19-47b2-bf60-8bde67752056",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "52863190-0099-4519-8cae-6aec75d18a39",
+			"id": "29acef8d-7e18-4a90-a8ad-96deb4a5ee40",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cb970e13-44da-4709-961a-2398160785ac",
+			"id": "9c104eaa-308b-41c5-ae93-09230adf6999",
 			"key": "TKM",
 			"value": ""
 		}
