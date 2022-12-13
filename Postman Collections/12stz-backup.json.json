@@ -4984,7 +4984,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки для отображения клиенту 499999",
+					"name": "!учитывать подарки для отображения клиенту 499999",
 					"event": [
 						{
 							"listen": "test",
@@ -9853,7 +9853,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "072e3e0b-756e-4dd7-af1d-1d4bf9abec7d",
+				"id": "3bff27c0-6205-490e-9856-073691fa0beb",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -9863,7 +9863,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "eba262bc-3ec5-4b83-ab89-eca88fcde652",
+				"id": "ab3384a4-346d-48e9-881b-001382b7aafc",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -9873,25 +9873,25 @@
 	],
 	"variable": [
 		{
-			"id": "3699ff28-fb76-4f61-a39e-267ed455a463",
+			"id": "0811ba12-5b62-4801-8f39-1a1172e7d761",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e35da1a5-32bb-4402-9455-438b0d64b27c",
+			"id": "f7009835-37bf-45dc-b96b-ce70c520a525",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "59c4549e-c23c-4dd2-a9f8-c5d42cf5c397",
+			"id": "c74ddfbd-38f8-45e6-b4f8-dda67d4c80db",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0bfc4631-d2c9-4906-8ef7-9ae9f73bf858",
+			"id": "4e61719a-1653-4f96-96f0-d571b35fb20f",
 			"key": "TKM",
 			"value": ""
 		}
