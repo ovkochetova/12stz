@@ -4229,7 +4229,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='СДТ_Москва_МО_590 примерка (запись не редактировать!)')\r",
+									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='CSE_СПБ_590 примерка (запись не редактировать!)')\r",
 									"console.log(delivery);\r",
 									"\r",
 									"let maxdostavka = delivery.to_days;\r",
@@ -9256,25 +9256,25 @@
 	],
 	"variable": [
 		{
-			"id": "7fd4bc23-d3a5-497c-911a-a66b02beabfb",
+			"id": "18db133e-aaed-4e66-9f76-de22dc229326",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b5656dde-dbf9-4b5a-b54b-3a2de0170303",
+			"id": "c983aada-f463-452a-837f-1deeb1addaf6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cd9e515b-a07f-421a-931e-99612c4138c0",
+			"id": "89f44b1b-fa07-4d74-84a3-bd3a4c73fa32",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2c131dda-93cd-4845-bd05-fae1b8aa0d13",
+			"id": "3fbd75df-2c77-4878-b8bc-0e077b799318",
 			"key": "TKM",
 			"value": ""
 		}
