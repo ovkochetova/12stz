@@ -4984,7 +4984,7 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать подарки для отображения клиенту 499999 (449410)",
+					"name": "!учитывать подарки для отображения клиенту 499999 (499410)",
 					"event": [
 						{
 							"listen": "test",
@@ -9873,25 +9873,25 @@
 	],
 	"variable": [
 		{
-			"id": "3bdc23f9-0c77-41ce-bc1a-38fa8859edd0",
+			"id": "0c2ee13e-a7dd-4d59-b91e-7a5dc119f4ce",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3e30e17d-d413-47c7-9ec2-cd2d6f1b5aff",
+			"id": "8c837c5a-4594-4508-a1cb-6f1715c1b8d2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b58c7293-78e3-4a4a-8b41-7ecc6411ffb3",
+			"id": "5b8eeedb-0498-4c27-863a-8e6f595c821c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c2ad9f07-7b6c-455c-9026-42577dad8297",
+			"id": "fe500567-6f52-4c25-9984-ae05b60b8bd1",
 			"key": "TKM",
 			"value": ""
 		}
