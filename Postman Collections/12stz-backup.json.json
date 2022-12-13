@@ -4278,7 +4278,7 @@
 					"response": []
 				},
 				{
-					"name": "чекбокс учитывать доставку",
+					"name": "чекбокс учитывать доставку в стоимости заказа Активен",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -9097,25 +9097,25 @@
 	],
 	"variable": [
 		{
-			"id": "6600c704-88ac-420e-af24-79573c1064bf",
+			"id": "f26659bc-7e5b-435a-a612-232633846b36",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "86e7bb14-5885-418e-b9f4-3aa02a9154fa",
+			"id": "0b742d91-5f39-4a11-a52c-13ca687b6ecf",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "697948ad-8020-4268-a53c-a4119f2badfd",
+			"id": "78e44421-b36f-42df-83f1-137d75f6ca0d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8f388de5-c42a-49ce-aa4d-c86c5c33d028",
+			"id": "2619a4b1-683c-4a74-9a28-9928107fa75a",
 			"key": "TKM",
 			"value": ""
 		}
