@@ -5053,9 +5053,6 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
-									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
-									"});\r",
 									"\r",
 									"\r",
 									""
@@ -5134,7 +5131,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500001.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -9876,25 +9873,25 @@
 	],
 	"variable": [
 		{
-			"id": "59085521-fdd5-4315-8286-d54bd2b574af",
+			"id": "fb3b6454-27ef-4736-900b-fefe62d6dec6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3695748d-2697-4c9c-ac89-2912675f6f0b",
+			"id": "3ab70680-8479-444a-99c4-4cd87fda09da",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e57827d-5d26-430f-a03e-e7d258f258a4",
+			"id": "6c130aed-2390-4f77-bfe8-9cdf6e5bdaae",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cc3add3e-74eb-4e4c-a3d7-4a87bd3f3860",
+			"id": "3ab19a70-1e2c-4b68-9066-57c7e958fc0a",
 			"key": "TKM",
 			"value": ""
 		}
