@@ -4471,7 +4471,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку для отображения клиенту 499411 руб",
+					"name": "!учитывать доставку для отображения клиенту 499411 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4854,6 +4854,59 @@
 						}
 					],
 					"id": "3728aaac-89f3-4e68-b576-2a353a6afc14",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500590.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "учитывать доставку для отображения клиенту 500591 руб",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "a6c6b6a6-7464-4f8d-8ebd-85c20846f5de",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -9610,25 +9663,25 @@
 	],
 	"variable": [
 		{
-			"id": "e8f28b94-8002-4a6b-8fbc-83776aeb6a63",
+			"id": "4714b172-7532-436a-864a-55ff2bd900a6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41cfb08e-05c9-4ae0-b2b4-b31141169885",
+			"id": "13853bf8-17ee-4c1e-8c04-9b05abd853ff",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a240692b-2740-48e7-a063-d45eb15eff33",
+			"id": "7e421382-d2be-4f4e-8166-b2c389218854",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "049b360f-3a02-46fb-ab19-1c3acb034c83",
+			"id": "cde764c0-09a1-4949-8561-bd36239d2be7",
 			"key": "TKM",
 			"value": ""
 		}
