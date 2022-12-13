@@ -5248,7 +5248,8 @@
 									"language": "json"
 								}
 							}
-						}
+						},
+						"url": "{{url}}"
 					},
 					"response": []
 				},
@@ -5269,7 +5270,8 @@
 									"language": "json"
 								}
 							}
-						}
+						},
+						"url": "{{url}}"
 					},
 					"response": []
 				},
@@ -10025,25 +10027,25 @@
 	],
 	"variable": [
 		{
-			"id": "a0bbd28d-03f2-4daa-913c-ca283688f325",
+			"id": "5780f812-514e-4f5d-a2d2-68dfdda82bca",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "77790ab4-e37c-4e66-b345-034e3e9aae75",
+			"id": "626d6caf-30ad-46cc-b158-d199ddcdf681",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "45496254-2e77-4660-b554-ff7b0fbfd79c",
+			"id": "3e1ee096-2cd6-4990-93de-80b4f1d3299d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1bb9d0c8-d9c4-4bb9-92b0-56844704b445",
+			"id": "df506472-b3e4-49ae-b24b-ecbb5c088d2d",
 			"key": "TKM",
 			"value": ""
 		}
