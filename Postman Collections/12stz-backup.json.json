@@ -5036,7 +5036,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки сумма 500000",
+					"name": "учитывать подарки для отображения клиенту 500000",
 					"event": [
 						{
 							"listen": "test",
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "60e49c56-64c0-4d11-b3cf-b3d8465263b6",
+			"id": "cc47b884-e031-4011-b9dd-300f9860c54c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d683b873-ff0d-4d69-8395-2d7682a98d76",
+			"id": "d04e1a8c-1007-46b6-92c2-478aeb28e4bb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c0e55ca8-50e3-45d8-8b59-5b3306c38ae0",
+			"id": "9196692e-0f47-4f75-87e3-86b0c3cf8dd6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa9c3dda-eb5b-4459-b3e2-eb4a805b83ce",
+			"id": "3251d675-4962-437d-9485-8b77b42fefad",
 			"key": "TKM",
 			"value": ""
 		}
