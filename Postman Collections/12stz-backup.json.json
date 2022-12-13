@@ -4792,7 +4792,9 @@
 									"});\r",
 									"\r",
 									"\r",
-									"\r",
+									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"\");\r",
+									"});\r",
 									"\r",
 									""
 								],
@@ -9610,25 +9612,25 @@
 	],
 	"variable": [
 		{
-			"id": "3e288415-db9c-4c6a-930b-5136a166506c",
+			"id": "f7f49fe1-ec8b-49fe-a551-d934e697172e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b49d2394-8a4b-4ff9-a50e-3edc8f7cc318",
+			"id": "6f33710d-02cf-436a-9ef4-4fcad3943acb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1968f6d2-2750-4833-b2dd-7faca5d1c4ce",
+			"id": "33c8376d-1196-4bf9-91c7-7f7f96405752",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4db13894-02e2-4ecd-b76c-32b5b501ad25",
+			"id": "c8897602-a65d-4cda-b2f3-98aa272690fb",
 			"key": "TKM",
 			"value": ""
 		}
