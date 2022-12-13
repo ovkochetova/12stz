@@ -4211,7 +4211,7 @@
 					"response": []
 				},
 				{
-					"name": "дописать! разброс доставки для отображения клиенту",
+					"name": "! разброс доставки для отображения клиенту",
 					"event": [
 						{
 							"listen": "test",
@@ -9008,25 +9008,25 @@
 	],
 	"variable": [
 		{
-			"id": "aeeef1c2-de8e-402f-88e2-fd9e596bdd24",
+			"id": "2516a39c-eddf-4db1-8455-f49a1117cac4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a5cd7068-564c-4b56-bff4-8527c5b1a680",
+			"id": "a016e497-c0ea-4432-a81c-5fd30899d7ab",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "69ec2991-f2ee-4f4a-9aef-426da72ab4de",
+			"id": "2e80e079-9167-42eb-841d-5cd95b8d8342",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e8116bae-539d-43ef-9b85-308227a3247b",
+			"id": "aa5dd067-5a8b-453e-8ea8-91075ba38ef3",
 			"key": "TKM",
 			"value": ""
 		}
