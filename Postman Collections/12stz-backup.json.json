@@ -4785,7 +4785,7 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать доставку сумма  500000 руб",
+					"name": "!учитывать доставку сумма  500000",
 					"event": [
 						{
 							"listen": "test",
@@ -4840,7 +4840,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку сумма 500001 руб",
+					"name": "учитывать доставку сумма 500001",
 					"event": [
 						{
 							"listen": "test",
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "7bd62487-9aac-428d-ae06-48ada080e6bb",
+			"id": "3c815ed1-dc66-4e6a-bbd6-db51521473ec",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3eaf1bdd-720b-4c73-a188-380b144059d6",
+			"id": "a011a2ca-85ef-4249-82d7-c2ea0a0a1b94",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "69d5189a-f743-4841-9681-ef4259766236",
+			"id": "f92aff06-6987-420e-a33b-5c089018ca67",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "80adbc95-05a3-42ad-a071-071351ba5327",
+			"id": "c85631ba-1c61-4281-a4cb-d97fc7dbc71b",
 			"key": "TKM",
 			"value": ""
 		}
