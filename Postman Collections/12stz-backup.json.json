@@ -4240,7 +4240,7 @@
 									"let delta = maxdostavka - mindostavka;\r",
 									"console.log(delta);\r",
 									"\r",
-									"pm.test(\"Разброс доставки для отображения пользователю равно\" , function () {\r",
+									"pm.test(\"Разброс доставки для отображения пользователю равно \" + delta , function () {\r",
 									"    pm.expect(maxdostavka - mindostavka).to.eql(4)\r",
 									"});\r",
 									"\r",
@@ -9008,25 +9008,25 @@
 	],
 	"variable": [
 		{
-			"id": "85c03a9e-fd24-4b7f-881e-49a01bc1e04c",
+			"id": "aeeef1c2-de8e-402f-88e2-fd9e596bdd24",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "df18cb5d-9046-418d-8a06-5bf0bd5907b3",
+			"id": "a5cd7068-564c-4b56-bff4-8527c5b1a680",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9ac0c135-bed9-4e05-8915-0ef9ebc5eb33",
+			"id": "69ec2991-f2ee-4f4a-9aef-426da72ab4de",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "44416b81-1e3e-4b49-9c93-0f7858f432c7",
+			"id": "e8116bae-539d-43ef-9b85-308227a3247b",
 			"key": "TKM",
 			"value": ""
 		}
