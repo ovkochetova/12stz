@@ -4312,9 +4312,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Разброс доставки для отображения пользователю равно \" + jsonData.deliveryIntervalDays , function () {\r",
-									"    pm.expect(jsonData.deliveryDeltaDays).to.eql(4);\r",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -9451,25 +9449,25 @@
 	],
 	"variable": [
 		{
-			"id": "00d200cf-e0bd-4144-88f5-a5173c59fa9a",
+			"id": "3cca5ab4-b08a-490e-b1ec-fc21528027ff",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "121f5e7b-a99f-4186-be74-d39c1eda66a6",
+			"id": "602fb552-79cc-4a0a-9bf0-bc7f96b97c73",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "49428d75-d03a-45d9-8dd5-d25140332f1c",
+			"id": "a4d8389a-6de7-4666-b6d1-d53db0b15f77",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "de71f4c2-5422-441e-a49d-14fa45780de8",
+			"id": "b3564dec-8c2e-46e3-9c17-98dfe663d40a",
 			"key": "TKM",
 			"value": ""
 		}
