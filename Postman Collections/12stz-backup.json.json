@@ -4730,7 +4730,7 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать доставку для отображения клиенту 499411 руб",
+					"name": "!учитывать доставку сумма 499411 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "2341e922-685c-444e-bd8c-2ca6799716e5",
+			"id": "7d5e4d73-7498-4134-99df-283e3c1bfa63",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "857a2c09-304c-4757-83f9-2f0371d9ccca",
+			"id": "1c52e41a-5d5d-46a5-a543-d2d5fac4773b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "840b58e7-3fd8-4796-a352-2cb2dc31f130",
+			"id": "ce5c4de6-04d8-49c4-b623-c538246a9fea",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f37fd8d5-daa1-434b-9a29-35e19313a0ae",
+			"id": "4cbaaf65-a885-4a3c-8a65-bc1ff2d520b6",
 			"key": "TKM",
 			"value": ""
 		}
