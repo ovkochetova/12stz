@@ -4932,7 +4932,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Your test name\", function () {\r",
-									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(false);\r",
+									"       pm.expect(jsonData.isPriceBorderIncludePresent).to.eql(false);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "a15bed11-1093-44d6-b370-39f7e3a3bea4",
+			"id": "95f20cc3-49d3-44d5-8293-4e2d5cbbf9a8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eab3c351-f202-48f1-9a60-5cf9cc661443",
+			"id": "89ffe8af-a480-438c-a1b8-b52f8870a802",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b822fb2f-be2d-4d4d-8658-ca4c09e04743",
+			"id": "874680cc-ac15-4da8-b112-afb48608c2b5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2fa647e2-e3a3-489f-b5eb-d2db4fa27a6e",
+			"id": "5737b480-8910-4026-be61-7dc6fc6e6b5b",
 			"key": "TKM",
 			"value": ""
 		}
