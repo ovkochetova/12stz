@@ -4577,6 +4577,59 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "разброс доставки для отображения клиенту 500001 руб",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "55cb4bb7-b053-4221-8fc0-12f3e23f2d07",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500000.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -9309,25 +9362,25 @@
 	],
 	"variable": [
 		{
-			"id": "37d27adf-71be-462f-9c48-48726431939b",
+			"id": "aa6a12a9-3475-44c1-a3f6-4199457f3273",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "18771ba4-1082-4f42-b635-1eca5ac82386",
+			"id": "b953eead-cfe7-4b71-abeb-f7542faa5925",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c010bded-b96f-491d-84de-feae81ff6962",
+			"id": "2805fbbf-1db7-4db4-93b9-01d70397fd42",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d4b8ab6e-5769-49d8-8da9-2c48cf059dff",
+			"id": "36c129f4-c493-4841-b78d-c72c28695c3c",
 			"key": "TKM",
 			"value": ""
 		}
