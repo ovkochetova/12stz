@@ -4620,7 +4620,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку сумма 499409 руб",
+					"name": "учитывать доставку сумма 499409",
 					"event": [
 						{
 							"listen": "test",
@@ -4675,7 +4675,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку сумма 499410 руб",
+					"name": "учитывать доставку сумма 499410",
 					"event": [
 						{
 							"listen": "test",
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "c79130ab-012f-4f37-9c2f-3e07931b0796",
+			"id": "d2d1ac83-587b-4dab-8b3b-14ea9e39ba2a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0812218c-120c-4ccc-9e77-5fa5768173fb",
+			"id": "55538326-7f24-4508-9490-f97679add04d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "010d4cd3-32fc-430d-a7bf-193727e5b9a0",
+			"id": "9e2b37c9-2548-4a72-be05-5000b826788a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f9f11545-7277-4dba-a5d2-f13dda17540a",
+			"id": "6f2cac22-f28a-4f63-9b03-4f0eeb519c0b",
 			"key": "TKM",
 			"value": ""
 		}
