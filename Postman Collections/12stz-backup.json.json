@@ -4908,7 +4908,7 @@
 									"\r",
 									"delete body.id;\r",
 									"body.isActive = true;\r",
-									"body.isPriceBorderIncludeDelivery = false,\r",
+									"body.isPriceBorderIncludePresent = true,\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -9769,25 +9769,25 @@
 	],
 	"variable": [
 		{
-			"id": "55be93a0-29b0-4e6a-8548-4330fd21111c",
+			"id": "9a770181-9cfa-4d04-8b62-3609b64b766c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0a3f949e-ddf2-4f96-bac9-df3005a594ee",
+			"id": "3fbec4fb-8de0-4aed-a469-524297ea60df",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "26327e6c-5d9c-4332-a20c-fc17b1d63ece",
+			"id": "3ba65618-4b9b-4079-85c8-41bfeab19fd6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "70b3eb65-102e-4146-bbe2-10bf0f708793",
+			"id": "0ccccd7d-4577-4144-b399-ffb126aaf341",
 			"key": "TKM",
 			"value": ""
 		}
