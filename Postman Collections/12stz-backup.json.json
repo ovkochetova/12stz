@@ -4385,20 +4385,6 @@
 									"});\r",
 									"\r",
 									"\r",
-									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='СДТ_Москва_МО_590 примерка (запись не редактировать!)')\r",
-									"console.log(delivery);\r",
-									"\r",
-									"let maxdostavka = delivery.to_days;\r",
-									"console.log(maxdostavka)\r",
-									"let mindostavka = delivery.from_days;\r",
-									"console.log(mindostavka);\r",
-									"\r",
-									"let delta = maxdostavka - mindostavka;\r",
-									"console.log(delta);\r",
-									"\r",
-									"pm.test(\"Разброс доставки для отображения пользователю равно \" + delta , function () {\r",
-									"    pm.expect(maxdostavka - mindostavka).to.eql(4)\r",
-									"});\r",
 									"\r",
 									"\r",
 									""
@@ -9164,25 +9150,25 @@
 	],
 	"variable": [
 		{
-			"id": "0c07ab27-a2e3-4ffc-914a-2d8409a82ebc",
+			"id": "50127981-934a-4408-ab6e-d522da339e2a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4c040ed6-d843-4f44-b02d-e664800f5bb9",
+			"id": "1de33a94-f6bf-4614-9208-ec4a1b83902d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "672b27a1-ba40-48db-afc1-c6cb8849e67f",
+			"id": "da9668b8-1635-41ae-b4f1-3b62b511e295",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "04bb2cd1-121a-4ed1-9759-8b3858291318",
+			"id": "046a4985-5614-49df-ae6b-2b6bf46e6482",
 			"key": "TKM",
 			"value": ""
 		}
