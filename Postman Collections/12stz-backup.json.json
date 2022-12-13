@@ -4984,6 +4984,58 @@
 					"response": []
 				},
 				{
+					"name": "учитывать подарки для отображения клиенту 499999",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "f1160eaa-0865-40dc-a980-d22cdb48102d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 499999.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "учитывать подарки для отображения клиенту 500000",
 					"event": [
 						{
@@ -5039,7 +5091,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки для отображения клиенту 499999",
+					"name": "учитывать подарки для отображения клиенту 500001",
 					"event": [
 						{
 							"listen": "test",
@@ -5056,6 +5108,9 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
+									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"});\r",
 									"\r",
 									"\r",
 									""
@@ -5064,7 +5119,7 @@
 							}
 						}
 					],
-					"id": "f1160eaa-0865-40dc-a980-d22cdb48102d",
+					"id": "77d11dc7-761a-4766-b0fa-fd6fdbecc90c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -5079,7 +5134,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 499999.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500001.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -9821,25 +9876,25 @@
 	],
 	"variable": [
 		{
-			"id": "d54af6ff-567d-4e97-8f3d-ca5592ed5dad",
+			"id": "000ca85b-8aea-4fd4-a93e-18be7f3af9e9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bde6ea4e-ebe8-43c9-bdd8-3439b3508dee",
+			"id": "c06ed0ca-3110-435f-bd06-851d21eeac6f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03b2370d-046e-455d-8330-242bd0cf1a9f",
+			"id": "1798b369-77a5-4ca1-bc53-246ee1cf1968",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2e9abcf7-5654-40fd-995e-a285f407d37c",
+			"id": "b838dd48-6213-44d3-8d0f-dce58e120b9d",
 			"key": "TKM",
 			"value": ""
 		}
