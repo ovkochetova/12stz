@@ -4597,7 +4597,9 @@
 									"});\r",
 									"\r",
 									"\r",
-									"\r",
+									"pm.test(\"Ограничение 500 000 руб\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");\r",
+									"});\r",
 									"\r",
 									""
 								],
@@ -9362,25 +9364,25 @@
 	],
 	"variable": [
 		{
-			"id": "c42369a1-a784-4a53-a82d-21189c572ca3",
+			"id": "2fa67b07-eb42-4dc7-8fea-b1485174f470",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7e27e657-c31d-4be0-a4d6-576a40b128ba",
+			"id": "c6aabe89-1fec-4b9c-9e48-d9351f19ee76",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7cac941e-2df7-4a0a-ad6e-ec10414f43cd",
+			"id": "03df4418-fbf6-4917-86cb-1f0e260d3963",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "80e48431-4be7-4b33-bf29-a12f9d537f2f",
+			"id": "069d75de-9820-419b-a5a6-29438cc4552a",
 			"key": "TKM",
 			"value": ""
 		}
