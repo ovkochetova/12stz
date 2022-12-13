@@ -4984,7 +4984,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки для отображения клиенту",
+					"name": "учитывать подарки для отображения клиенту 500000",
 					"event": [
 						{
 							"listen": "test",
@@ -9769,25 +9769,25 @@
 	],
 	"variable": [
 		{
-			"id": "072e3217-160c-43b4-a38d-dd44766b9082",
+			"id": "9182102c-1e09-436d-a1ba-d0b69db882c2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0127d430-24df-47c0-8451-bd22672e9ea2",
+			"id": "93e0ce9a-27ee-4bbd-a5b3-5b5175794199",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "09d66ba2-d94b-4479-94c7-a36d09e0024a",
+			"id": "b1df0838-9f3a-46e6-aba8-0b856d6e976a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e78c34c3-be5f-4504-addd-eae60f5dffc8",
+			"id": "8d2b1997-07a0-435c-a863-597b6db7fb6e",
 			"key": "TKM",
 			"value": ""
 		}
