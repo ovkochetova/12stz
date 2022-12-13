@@ -4856,7 +4856,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость доставка не включена, ограничение есть\", function () {\r",
+									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
 									"});\r",
 									"\r",
@@ -9625,25 +9625,25 @@
 	],
 	"variable": [
 		{
-			"id": "2331b8d3-4325-4202-a82b-17099d588bf9",
+			"id": "14d16442-e50c-4aac-bbac-624ea832deef",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ad593d0c-4242-47f0-a6c7-1c581d3eb1be",
+			"id": "7fc82bdb-e397-470b-b4e8-f22edcbffe96",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b3ce96e3-1d6f-4175-80f6-d2c21fbd27c7",
+			"id": "0e1daf1e-8eb9-4bd3-84dd-58e2c9a49895",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6c009ac1-906c-4231-bf0a-dfa08c0d3d96",
+			"id": "75b592c0-f9ef-4960-93aa-27a241448a46",
 			"key": "TKM",
 			"value": ""
 		}
