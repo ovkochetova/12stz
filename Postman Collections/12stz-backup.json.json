@@ -4577,7 +4577,7 @@
 					"response": []
 				},
 				{
-					"name": "разброс доставки для отображения клиенту 500001 руб",
+					"name": "учитывать доставку для отображения клиенту 500001 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -9504,25 +9504,25 @@
 	],
 	"variable": [
 		{
-			"id": "106f2499-ba2d-41b6-9c2c-1078dc3ca2a8",
+			"id": "f4fe88ff-a240-402f-ad8c-4d7eaec6c542",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "127229ea-1f34-43b0-bd52-62bee6e58f55",
+			"id": "48fa9a46-428a-47d5-8435-e3c5af97e263",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f8c9044-9fdf-4193-b83c-32f6ac1a63c1",
+			"id": "d14ac152-aa81-4d16-bfca-5cf5b517facf",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bf04e8be-c4b5-434e-9343-c4149b586cbb",
+			"id": "20ce6e8f-9adb-48b4-930b-e6adbb545ffd",
 			"key": "TKM",
 			"value": ""
 		}
