@@ -5232,7 +5232,7 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать подарки для отображения клиенту 499999",
+					"name": "учитывать подарки для отображения клиенту 499999",
 					"id": "a5a0a20b-b1ca-40ac-aa15-705b8cf98fb8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "e38fd6c4-7ed3-4998-8001-41590ddeedf6",
+			"id": "6a9aa8d0-cb43-4636-b235-7c34ef6f1edb",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d23e0fd4-0896-48be-ac8b-ed425336a24d",
+			"id": "64474484-d235-44cd-af20-cc4960f17d07",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "61f21db0-6af1-4937-9689-04051e22461c",
+			"id": "b6cdd454-d592-4af6-b008-727c68a5bac7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "62ceb589-ad09-4fbc-a17d-89a4ff10b534",
+			"id": "46b283ca-60c3-4ef8-88e4-236563f47df5",
 			"key": "TKM",
 			"value": ""
 		}
