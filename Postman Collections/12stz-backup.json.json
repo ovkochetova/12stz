@@ -4984,7 +4984,7 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать подарки для отображения клиенту 499999 (499410)",
+					"name": "!учитывать подарки сумма 499999 (499410)",
 					"event": [
 						{
 							"listen": "test",
@@ -5036,7 +5036,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки для отображения клиенту 500000",
+					"name": "учитывать подарки сумма 500000",
 					"event": [
 						{
 							"listen": "test",
@@ -5282,7 +5282,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки для отображения клиенту 500001",
+					"name": "учитывать подарки сумма 500001",
 					"id": "fcf9b402-1b3f-44ab-9df9-ff491eb49284",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "3c2ee4f4-0444-4cd9-a73e-1fe7bf2b055e",
+			"id": "60e49c56-64c0-4d11-b3cf-b3d8465263b6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8afbb60b-f062-4818-b9d5-10d0fbb7b3a7",
+			"id": "d683b873-ff0d-4d69-8395-2d7682a98d76",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b70ab330-4824-4eb7-80cd-9ae7f2015b64",
+			"id": "c0e55ca8-50e3-45d8-8b59-5b3306c38ae0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5603daef-842b-4c74-a5cd-130b1cf06806",
+			"id": "fa9c3dda-eb5b-4459-b3e2-eb4a805b83ce",
 			"key": "TKM",
 			"value": ""
 		}
