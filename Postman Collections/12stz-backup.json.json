@@ -4365,7 +4365,7 @@
 					"response": []
 				},
 				{
-					"name": "разброс доставки для отображения клиенту 499409 руб",
+					"name": "учитывать доставку для отображения клиенту 499409 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4418,7 +4418,7 @@
 					"response": []
 				},
 				{
-					"name": "разброс доставки для отображения клиенту 499410 руб",
+					"name": "учитывать доставку для отображения клиенту 499410 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -9504,25 +9504,25 @@
 	],
 	"variable": [
 		{
-			"id": "2e5df5ce-0dec-4818-8601-c96ccf1c0dc7",
+			"id": "dc858626-76bc-4765-ac7d-11bc3bcedbc0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "abb39fbd-fbc1-49b6-a474-c30ca9256929",
+			"id": "b7100803-52d7-4622-93e1-0abcde79c080",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bfe853d7-041c-4acb-abf6-384bc8032ae8",
+			"id": "96d0383f-c541-4b8e-8d3d-94d598e5bdfa",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "049c76a0-f1c0-4572-a9a9-5f7a429c8adc",
+			"id": "46c67966-faff-4bde-bc51-25006add9c6a",
 			"key": "TKM",
 			"value": ""
 		}
