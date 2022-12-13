@@ -4232,8 +4232,12 @@
 									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='СДТ_Москва_МО_590 примерка (запись не редактировать!)')\r",
 									"console.log(delivery);\r",
 									"\r",
-									"pm.test(\"Количество дней равно 4\" , function () {\r",
-									"    pm.expect(delivery.delivery_dates).to.be.an('array').to.have.lengthOf(4);\r",
+									"let maxdostavka = delivery.to_days;\r",
+									"console.log(maxdostavka)\r",
+									"let mindostavka = delivery.from_days;\r",
+									"\r",
+									"pm.test(\"Разброс доставки для отображения пользователю\" , function () {\r",
+									"    pm.expect(delivery.to_days\r",
 									"});\r",
 									"\r",
 									"\r",
@@ -9000,25 +9004,25 @@
 	],
 	"variable": [
 		{
-			"id": "baad410f-2f3b-4ace-b1e4-6ce98fdf8a2d",
+			"id": "7c4c8e9c-56ba-4290-b3f8-b3932da975b5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b8bb6711-3998-4bf3-ac72-049422f03255",
+			"id": "71d0c61c-6c85-406d-a20a-9ef5433c5172",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6d4ab96b-a117-4f59-8ed6-179ab0ccdd65",
+			"id": "0dc0e30d-5e47-4492-8bbb-36691198bb78",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "26269a0d-52ae-43d6-a4b3-4e4c50e8d0ed",
+			"id": "6d675ba8-70d3-4c69-bbf3-ce1300b24e9a",
 			"key": "TKM",
 			"value": ""
 		}
