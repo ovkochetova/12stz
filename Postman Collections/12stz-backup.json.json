@@ -4524,7 +4524,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку для отображения клиенту 500000 руб",
+					"name": "!учитывать доставку для отображения клиенту 500000 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4738,7 +4738,9 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"\r",
+									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"});\r",
 									"\r",
 									"\r",
 									""
@@ -4774,7 +4776,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку для отображения клиенту 500590 руб",
+					"name": "!учитывать доставку для отображения клиенту 500590 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4792,7 +4794,9 @@
 									"});\r",
 									"\r",
 									"\r",
-									"\r",
+									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"});\r",
 									"\r",
 									""
 								],
@@ -4844,6 +4848,9 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
+									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"});\r",
 									"\r",
 									"\r",
 									"\r",
@@ -9610,25 +9617,25 @@
 	],
 	"variable": [
 		{
-			"id": "08098e67-3c35-4be0-beb6-d88f420f69a9",
+			"id": "799718f5-78e9-4b27-86af-6d10d722a5b4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a16f51f3-eb1d-4859-be80-0edf5518c78a",
+			"id": "ed93ba2c-a0b2-4cd4-b6ac-b8c0d9d3ae32",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb03908a-2db1-4ffa-a385-1e731433f377",
+			"id": "60bada85-37d1-49d3-80b2-a17bcb74166d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "02e550a5-977c-4c41-82d3-33779ff99c71",
+			"id": "6675abeb-23dc-47b8-89c9-ff3da03a5263",
 			"key": "TKM",
 			"value": ""
 		}
