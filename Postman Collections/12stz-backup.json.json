@@ -4235,6 +4235,7 @@
 									"let maxdostavka = delivery.to_days;\r",
 									"console.log(maxdostavka)\r",
 									"let mindostavka = delivery.from_days;\r",
+									"console.log(mindostavka);\r",
 									"\r",
 									"pm.test(\"Разброс доставки для отображения пользователю\" , function () {\r",
 									"    pm.expect(maxdostavka - mindostavka).to.eql(4)\r",
@@ -9004,25 +9005,25 @@
 	],
 	"variable": [
 		{
-			"id": "f0e48c8b-2b20-4e0f-9137-6ffdf3b5a3ea",
+			"id": "e1d85d0f-f45b-4376-80fd-a4da48a0fa84",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c0366dfd-6727-4495-8d68-dbafccfaa401",
+			"id": "dc8d4b4b-7933-4997-ae6c-48ade571e433",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "245bb65f-51ee-4166-adba-b5074158ad17",
+			"id": "054d6246-d8b2-410e-b8d4-cdec3c385877",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "355c14af-17da-47f8-8546-5ac273fefe7a",
+			"id": "fa9d8869-c444-4cec-bdba-54cdb036bc2d",
 			"key": "TKM",
 			"value": ""
 		}
