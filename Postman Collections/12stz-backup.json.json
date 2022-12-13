@@ -4382,7 +4382,9 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"\r",
+									"pm.test(\"В максимальную стоимость доставка включена, ограничения нет\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"});\r",
 									"\r",
 									"\r",
 									""
@@ -4436,7 +4438,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
+									"pm.test(\"В максимальную стоимость доставка включена, ограничения нет\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
 									"});\r",
 									"\r",
@@ -4490,7 +4492,9 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"\r",
+									"pm.test(\"В максимальную стоимость доставка включена, ограничения нет\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"});\r",
 									"\r",
 									"\r",
 									""
@@ -4544,7 +4548,9 @@
 									"});\r",
 									"\r",
 									"\r",
-									"\r",
+									"pm.test(\"В максимальную стоимость доставка не включена, ограничение есть\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"});\r",
 									"\r",
 									""
 								],
@@ -4597,7 +4603,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"pm.test(\"Ограничение 500 000 руб\", function () {\r",
+									"pm.test(\"В максимальную стоимость доставка не включена\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
 									"});\r",
 									"\r",
@@ -9619,25 +9625,25 @@
 	],
 	"variable": [
 		{
-			"id": "eb57b6e7-797c-46a8-83f8-f5f7a9aef28b",
+			"id": "045888bc-610f-4fca-b661-1ae5222cd302",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0d328531-a16f-467c-b2d3-3b84cf04a30d",
+			"id": "63b38eff-53bd-43cc-9af1-7aefbd0760e6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2bcc4b8e-66bc-4bfb-8bde-15286de77105",
+			"id": "7896c0ab-c381-45a9-8f38-c431a1829687",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "94627c79-45c7-42fa-ba30-35f9ebfe1c19",
+			"id": "ac404281-2ae6-4a1f-a76f-6e54115643ce",
 			"key": "TKM",
 			"value": ""
 		}
