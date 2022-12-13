@@ -4122,65 +4122,6 @@
 					"response": []
 				},
 				{
-					"name": "кол-во дней для клиента Copy",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"\r",
-									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='СДТ_Москва_МО_590 примерка (запись не редактировать!)')\r",
-									"console.log(delivery);\r",
-									"\r",
-									"pm.test(\"Количество дней равно 4\" , function () {\r",
-									"    pm.expect(delivery.delivery_dates).to.be.an('array').to.have.lengthOf(4);\r",
-									"});\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "dd2fa13e-fb56-493b-ac06-2f5f4e712018",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"0c5b2444-70a0-4932-980c-b4dc0d3f02b5\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "разброс доставки для отображения клиенту",
 					"event": [
 						{
@@ -4266,6 +4207,65 @@
 								}
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "разброс доставки для отображения клиенту",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='СДТ_Москва_МО_590 примерка (запись не редактировать!)')\r",
+									"console.log(delivery);\r",
+									"\r",
+									"pm.test(\"Количество дней равно 4\" , function () {\r",
+									"    pm.expect(delivery.delivery_dates).to.be.an('array').to.have.lengthOf(4);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "dd2fa13e-fb56-493b-ac06-2f5f4e712018",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"0c5b2444-70a0-4932-980c-b4dc0d3f02b5\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
 					},
 					"response": []
 				}
@@ -9000,25 +9000,25 @@
 	],
 	"variable": [
 		{
-			"id": "2d9c19d8-37d1-47bc-a082-39b4509bc4fa",
+			"id": "755955ef-3529-425b-8617-8e23cf2a3bd0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a49c3f18-8a65-4037-959d-f418b8065dfe",
+			"id": "2b9e9d00-235a-49c0-82d2-0af4baec3c33",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "328b05c6-a45f-4888-bd96-b5f6239d8654",
+			"id": "ba042694-9683-4346-b4d0-68efd3de66ef",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fbea3a1f-df85-4a2f-908d-d7943136fe2a",
+			"id": "ab255b8b-51cd-4463-b56a-b48798de9e5b",
 			"key": "TKM",
 			"value": ""
 		}
