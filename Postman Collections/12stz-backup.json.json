@@ -9118,7 +9118,8 @@
 									"pm.test(\"Ограничение по категории для группы зон не активно\", () => {\r",
 									"    let jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"})"
+									"})\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -10073,25 +10074,25 @@
 	],
 	"variable": [
 		{
-			"id": "ae271973-2839-43cc-bdc1-8336df35dba6",
+			"id": "0e267e53-52ea-49fd-b0b5-8a0cd0781658",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4e19fbd5-90b7-493a-8d8d-76a590bbef5e",
+			"id": "d2c40977-7270-429c-b0cc-8e2a459a42b7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4317d450-7b2c-4b86-b8bd-7074c88fbded",
+			"id": "4f5d4af0-1ba5-4790-8a28-1db59407d325",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7f98b674-ef14-452b-936b-27bbaec2aaad",
+			"id": "c0a17253-c2e9-4636-9b5a-0a30fe4ea317",
 			"key": "TKM",
 			"value": ""
 		}
