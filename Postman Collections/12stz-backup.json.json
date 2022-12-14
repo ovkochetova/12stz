@@ -3966,7 +3966,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJCUa1fcSARUIRKJKx3Y0U-Zc\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJCUa1fcSARUIRKJKx3Y0U-Zc\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -10073,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "13326a86-f4e9-4fff-af0b-197c35436b5b",
+			"id": "67b5d182-2887-4c13-8020-a8b6d8ffd504",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5526cd81-1e0d-44d3-84f2-2a5d572ec9a0",
+			"id": "1359bd5c-4532-4544-b7d0-9e51f9404fe7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ae79021c-bf86-4231-93cb-636a9eacfbf9",
+			"id": "18055df4-58ef-491c-8d9a-847184efe113",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "088e2dd2-7863-440f-9208-842ca9f3afe6",
+			"id": "afcb2126-73df-4402-930f-6138b4717d0e",
 			"key": "TKM",
 			"value": ""
 		}
