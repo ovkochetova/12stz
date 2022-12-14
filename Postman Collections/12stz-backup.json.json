@@ -8473,7 +8473,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": {{id}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"countryIsoCode\": \"RU\",\n  \"messageId\": {{message_id}},\n  \"popupId\": {{popup_id}},\n  \"isActive\": true\n}"
+							"raw": "{\n  \"id\": {{id}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"countryIsoCode\": \"{{countryIsoCode}}\",\n  \"messageId\": {{message_id}},\n  \"popupId\": {{popup_id}},\n  \"isActive\": true\n}"
 						},
 						"url": "{{baseUrl}}/api/v1/restriction/zone"
 					},
@@ -10073,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "d9150fe3-f59b-4eb8-b473-11834c4a5fc1",
+			"id": "dd804bf8-334a-4c62-99ca-329f8b14ef08",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f7c9fe6e-1141-46e3-942a-e150afba3fe3",
+			"id": "ee086f94-2fe1-4a45-a3e2-b25d94416c6a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "67a1b9ba-840f-4b9a-8ad1-aee4bcb270e2",
+			"id": "13983c12-2f5d-4069-af48-5e4ae351f0c0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ae970663-55ac-49d8-add1-34f7193c0800",
+			"id": "45451457-b12c-46f1-b6c7-213cf8b040e1",
 			"key": "TKM",
 			"value": ""
 		}
