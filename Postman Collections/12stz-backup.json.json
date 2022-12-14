@@ -3876,7 +3876,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"ТК в 1С не активна\", function () {\r",
+									"pm.test(\"ТК в 1С активна\", function () {\r",
 									"        pm.expect(jsonData.isActive).to.eql(true);\r",
 									"});"
 								],
@@ -5239,13 +5239,40 @@
 				},
 				{
 					"name": "учитывать подарки сумма 499999",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e28b0795-1c7e-4e05-9a28-e56a950721fb",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "a5a0a20b-b1ca-40ac-aa15-705b8cf98fb8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 499999.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
@@ -10046,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "4daca1b3-6737-4a6d-912c-28894ae739fb",
+			"id": "07a039ca-e136-412c-bc82-6eb17bf66755",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "74f34511-7416-4b75-8729-b68c98a5052f",
+			"id": "cf40ca2d-4625-4bf9-ba46-a7bcf5a0a590",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d1bc0a2d-bd3e-47f8-bd7e-30e2da9aa926",
+			"id": "255e21bb-88b1-484b-a0ad-821f5e629852",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "94be0976-3eca-400b-83d2-1bfc166aa361",
+			"id": "40e3fe29-7c17-4845-9e8d-d49c023788cd",
 			"key": "TKM",
 			"value": ""
 		}
