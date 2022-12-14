@@ -8695,7 +8695,7 @@
 					"response": []
 				},
 				{
-					"name": "Изменение статуса ограничения на false (зона в ТК)",
+					"name": "Изменение статуса ограничения на false",
 					"event": [
 						{
 							"listen": "test",
@@ -10073,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "15f96b76-bce6-453c-be56-f3ab70ce1dc5",
+			"id": "924c1acb-1232-4d9d-a174-87f72182c83d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "33f77455-f1ad-45d7-962e-587375548b38",
+			"id": "46e00a25-5048-4f6c-a860-a77ed36a5455",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "908057d2-f104-44de-922d-cd298dc933e0",
+			"id": "98ea2e15-63d0-4605-a38a-30857cb849b5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "70f50384-fdf2-4a22-8066-307061fb1a0f",
+			"id": "34c96e12-90c1-42b0-a9c4-9e8b9741a143",
 			"key": "TKM",
 			"value": ""
 		}
