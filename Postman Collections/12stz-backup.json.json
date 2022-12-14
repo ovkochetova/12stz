@@ -3876,7 +3876,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"ТК в 1С не активна\", function () {\r",
+									"pm.test(\"ТК в 1С активна\", function () {\r",
 									"        pm.expect(jsonData.isActive).to.eql(true);\r",
 									"});"
 								],
@@ -10053,7 +10053,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9a1b4506-0a32-43bf-80b9-c917edb0932a",
+				"id": "d092d463-f7a7-4917-8b74-659ac0218df9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10063,7 +10063,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2069ae0a-a8a9-45c2-9b60-0592ad306f4f",
+				"id": "6dbc7990-411b-4770-acb9-27bf631b3982",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10073,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "652acd9b-1e63-4db4-915d-507085142a59",
+			"id": "072ecdee-fc61-4005-af10-c245de6d1590",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7500e064-05c9-43f5-b050-e73caff874a5",
+			"id": "2a70d478-076a-4e00-83cd-3f3bf48f7abc",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6c780bae-adba-4924-8d39-a50fa7dbf510",
+			"id": "6d40349f-d26a-4b6b-bace-32da589a9ef2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "837c4d39-e56e-483f-8a2a-5f599316da54",
+			"id": "45838dc4-13d9-4c8d-b1fe-d245d1a2c5fc",
 			"key": "TKM",
 			"value": ""
 		}
