@@ -3876,7 +3876,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"ТК в 1С активна\", function () {\r",
+									"pm.test(\"ТК в 1С не активна\", function () {\r",
 									"        pm.expect(jsonData.isActive).to.eql(true);\r",
 									"});"
 								],
@@ -10073,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "07a039ca-e136-412c-bc82-6eb17bf66755",
+			"id": "652acd9b-1e63-4db4-915d-507085142a59",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf40ca2d-4625-4bf9-ba46-a7bcf5a0a590",
+			"id": "7500e064-05c9-43f5-b050-e73caff874a5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "255e21bb-88b1-484b-a0ad-821f5e629852",
+			"id": "6c780bae-adba-4924-8d39-a50fa7dbf510",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "40e3fe29-7c17-4845-9e8d-d49c023788cd",
+			"id": "837c4d39-e56e-483f-8a2a-5f599316da54",
 			"key": "TKM",
 			"value": ""
 		}
