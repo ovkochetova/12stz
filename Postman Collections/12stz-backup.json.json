@@ -10018,7 +10018,7 @@
 			"name": "Казахстан",
 			"item": [
 				{
-					"name": "Астана",
+					"name": "Казахстан",
 					"id": "2c1db03f-97bd-4950-87a1-7afa108cf9d7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -10073,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "83ac69bc-f572-43ae-8d01-d741e68abe3c",
+			"id": "9d8ce39e-5fcd-4626-8b58-44e84f9f7d97",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e2b6e9d5-aa5e-43f6-842e-5c1cbdc4e49d",
+			"id": "fd7d09f3-52f5-4056-93b9-0f0bb7039107",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "093c6031-99f1-47f2-b3d2-f63002c40ca1",
+			"id": "7c0ab710-6997-40d4-adbd-20f73adf9be3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ad9e207c-b93a-4aa5-936c-9f72df4f1c69",
+			"id": "0cd7970a-75af-489b-aa8e-720a7bb7b27e",
 			"key": "TKM",
 			"value": ""
 		}
