@@ -8289,7 +8289,7 @@
 					"response": []
 				},
 				{
-					"name": "!Изменение статуса запрещенной страны на false",
+					"name": "Изменение статуса запрещенной страны на false",
 					"event": [
 						{
 							"listen": "test",
@@ -8333,7 +8333,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": {{id}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"countryIsoCode\": {{countryIsoCode}},\n  \"messageId\": {{message_id}},\n  \"popupId\": {{popup_id}},\n  \"isActive\": false\n}\n\n\n\n"
+							"raw": "{\n  \"id\": {{id}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"countryIsoCode\": \"{{countryIsoCode}}\",\n  \"messageId\": {{message_id}},\n  \"popupId\": {{popup_id}},\n  \"isActive\": false\n}\n\n\n\n"
 						},
 						"url": "{{baseUrl}}/api/v1/restriction/zone"
 					},
@@ -10073,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "5697a2a8-f2dc-492a-a452-e93317635c8d",
+			"id": "7db19770-f660-42e3-b6ea-55cecb0fd09d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0e5b6e94-f9d5-4a74-b60d-a61c253098d2",
+			"id": "35f7347d-1281-4fc3-8709-78c42d028c9b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bc19bc21-c187-419c-b302-e9a4fb4b3c0e",
+			"id": "12a0ae99-b4c3-40ed-9609-116445785e32",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e9e42577-8c4f-4fa3-bd96-619443f4e673",
+			"id": "32f20b2a-d985-4284-9c14-4ff374f2e443",
 			"key": "TKM",
 			"value": ""
 		}
