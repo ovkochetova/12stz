@@ -3828,7 +3828,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"KZ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJCUa1fcSARUIRKJKx3Y0U-Zc\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -10073,25 +10073,25 @@
 	],
 	"variable": [
 		{
-			"id": "b378387c-4525-4a71-af73-fff48887e8e6",
+			"id": "83ac69bc-f572-43ae-8d01-d741e68abe3c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a9e3344b-af71-4906-8f98-2ab7caeafcca",
+			"id": "e2b6e9d5-aa5e-43f6-842e-5c1cbdc4e49d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ae5298c6-00d6-4ed4-b2ec-531f373be7fa",
+			"id": "093c6031-99f1-47f2-b3d2-f63002c40ca1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f10f3bef-234f-4c04-8718-cb582a0d081b",
+			"id": "ad9e207c-b93a-4aa5-936c-9f72df4f1c69",
 			"key": "TKM",
 			"value": ""
 		}
