@@ -5376,7 +5376,7 @@
 					"response": []
 				},
 				{
-					"name": "чекбокс учитывать доставку в max кол-ве товаров не Активен Copy",
+					"name": "чекбокс учитывать доставку в max кол-ве товаров не Активен",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -10163,25 +10163,25 @@
 	],
 	"variable": [
 		{
-			"id": "8af69a4e-357e-4179-9db7-439857b4687d",
+			"id": "80981354-bd53-41f8-9fe9-df9f8faf28ab",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f035c063-d38e-4e70-9366-394b466296e3",
+			"id": "0becc482-ccc2-477b-9694-5f092f66d5c5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9d15fff7-d856-4508-8dd7-ded5d337cf84",
+			"id": "b5e54cb4-9a5f-4b11-8ef0-1c6a862946fb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8f3dc678-0ef9-458e-9dfe-30a9ec053ed8",
+			"id": "32bb8c57-87fa-4f43-9fcf-154ccb21c67f",
 			"key": "TKM",
 			"value": ""
 		}
