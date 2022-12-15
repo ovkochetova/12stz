@@ -4405,7 +4405,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку  300000 руб",
+					"name": "не учитывать доставку  300000 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -10215,25 +10215,25 @@
 	],
 	"variable": [
 		{
-			"id": "69891387-ab7b-4e18-87dd-4f0a419e3ba4",
+			"id": "9d8cf178-92b3-4268-9426-35aeb20735ca",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b345d78d-a58d-4344-a58e-051ea547e876",
+			"id": "e08910e7-14cc-4f7a-91bd-73f093690613",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eea44eba-44fa-4c31-86b2-4df34c30cfa7",
+			"id": "3eca4807-db9c-412f-8c30-347c981362e8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c941da65-16b3-4d14-b9f5-7cfaf1a10ba0",
+			"id": "35e15ac0-5456-4bf8-81a1-4b9ef82fbc14",
 			"key": "TKM",
 			"value": ""
 		}
