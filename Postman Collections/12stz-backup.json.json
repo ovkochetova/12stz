@@ -4460,7 +4460,7 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать доставку для отображения клиенту 500590 руб",
+					"name": "!учитывать доставку для отображения клиенту 300990 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -4503,7 +4503,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500590.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 300990.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "0adb924b-e68d-494a-933c-acbd43ee7c98",
+			"id": "5b8cdcac-e602-4212-9603-f6ec6fca952e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "acb06c04-2b1a-4cda-ac4b-009144288103",
+			"id": "73b01367-9eef-48c7-aada-0466689f77d2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "441c4771-27fa-411d-a9c5-8775ffb794ae",
+			"id": "60bec0e7-d447-4a28-886e-353d4078708e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "761bb82d-07dd-4f14-b5fe-6c652a22e4d1",
+			"id": "e1b00c99-28bd-40d8-bc44-8981a6141c2b",
 			"key": "TKM",
 			"value": ""
 		}
