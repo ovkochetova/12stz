@@ -4267,7 +4267,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='CSE_СПБ_590 примерка (запись не редактировать!)')\r",
+									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='Тестовая ТК (не удалять)')\r",
 									"console.log(delivery);\r",
 									"\r",
 									"let maxdostavka = delivery.to_days;\r",
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "6420ddc3-3214-435f-9673-c3e21adc831d",
+			"id": "1705fab0-f8c5-4728-96d4-f682b0d2ae70",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0ff085f5-e043-4989-a8bd-afade15589a8",
+			"id": "ee5039e9-95ec-4954-912a-b4f3d16d6b36",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5678647f-e9ae-4740-9ca5-34c3c6572bc9",
+			"id": "ff03efd4-758c-4905-9ab1-79b2e9cda5cf",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cb5684ec-5c57-4ba3-9496-9293c282e2ed",
+			"id": "ff7578d4-0b2e-4b63-808c-086148c40445",
 			"key": "TKM",
 			"value": ""
 		}
