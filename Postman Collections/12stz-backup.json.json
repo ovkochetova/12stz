@@ -4678,7 +4678,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"В максимальную стоимость доставка включена, ограничения нет\", function () {\r",
-									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"    pm.expect(pm.response.text()).not.to.include(\" превышать 300.000 руб\");\r",
 									"});\r",
 									"\r",
 									"\r",
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "3cce2526-cd85-45ae-95da-0809c0b8c1d8",
+			"id": "78137e6d-950e-4e12-8abd-e9c8d091ae81",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb83787b-3960-4b89-b1d1-6138d7dee2e8",
+			"id": "191fe1d5-f469-4776-8863-4a7286caadf2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fae9a467-d898-4915-ba74-cf092757a751",
+			"id": "f0e0af23-9dbc-42cd-84b4-a307441cce11",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7215f5b-3f08-4ca2-a1c5-6dece308280c",
+			"id": "d4f4cf4e-e998-4106-a9a1-9c38ebdc32f2",
 			"key": "TKM",
 			"value": ""
 		}
