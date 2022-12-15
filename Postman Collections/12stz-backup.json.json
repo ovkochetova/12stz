@@ -5093,7 +5093,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость подарки включены, ограничений нет\", function () {\r",
+									"pm.test(\"В максимальную стоимость подарки включены, ограничения есть\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"превышает 300 000\");\r",
 									"});\r",
 									"});\r",
@@ -10064,25 +10064,25 @@
 	],
 	"variable": [
 		{
-			"id": "3eee9357-e94f-4671-aaa6-3e93ec804e1e",
+			"id": "00e7f568-c101-4a37-b7e4-ccdcdbb45811",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7d441b1f-1c59-47e9-934b-bd20f68f413d",
+			"id": "63ebfeb3-85d3-4bdb-b8bf-03a601cf3c4f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8cb80860-c7b6-4be3-94ad-d61ad97cda98",
+			"id": "ce8cb778-a06d-4f28-a19b-385207304541",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5723bcd5-4c65-4e85-9f2a-dbdc9bb845a1",
+			"id": "6817cff0-ae35-4c69-876a-92dec564a998",
 			"key": "TKM",
 			"value": ""
 		}
