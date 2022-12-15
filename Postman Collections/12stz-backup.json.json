@@ -4119,7 +4119,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='CSE_СПБ_590 примерка (запись не редактировать!)')\r",
+									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='Тестовая ТК (не удалять)')\r",
 									"console.log(delivery);\r",
 									"\r",
 									"pm.test(\"Количество дней равно 4\" , function () {\r",
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "925715d3-c48e-4e98-b07f-a69152c2c69b",
+			"id": "3cc0285e-a2c1-4bb4-90e0-d827d59e39b1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "12e6f146-b490-4394-98a7-32dc0213abcd",
+			"id": "b29d4276-a722-4c08-8145-bb489a70d66b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8ba92d30-8557-4b68-92ff-87dd0395d491",
+			"id": "aba1a500-3f2e-41d4-91f2-153776d84389",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eaa980e1-dd8c-42ac-9475-1842975b0df8",
+			"id": "f899ac72-b898-4173-9eb5-1a7dc9d3d2fe",
 			"key": "TKM",
 			"value": ""
 		}
