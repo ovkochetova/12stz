@@ -4825,7 +4825,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку сумма 500001",
+					"name": "учитывать доставку сумма 300001",
 					"event": [
 						{
 							"listen": "test",
@@ -10020,25 +10020,25 @@
 	],
 	"variable": [
 		{
-			"id": "22d4e5b2-12f4-47ef-90af-f25de5b53d3f",
+			"id": "97f1e465-4a56-4fd8-8dd0-e5a45a15dbd0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "00aabbbd-3acd-4204-8df6-5599f9452f0b",
+			"id": "50760d1a-0bc2-42ee-b817-4558100982fb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "449e47b7-af7b-404b-8ad6-0ae4cb0868b1",
+			"id": "6b89eb95-5aaf-4a68-853c-acc3b7aa66d5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "82e20182-f23e-44c2-8f8c-45a8a664a52d",
+			"id": "9bb3c498-44be-4fd5-b598-03afe1e9df39",
 			"key": "TKM",
 			"value": ""
 		}
