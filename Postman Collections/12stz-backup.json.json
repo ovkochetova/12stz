@@ -5569,7 +5569,7 @@
 					"response": []
 				},
 				{
-					"name": "не учитывать доставку 8 шт. Copy 2",
+					"name": "не учитывать доставку 10 шт.",
 					"event": [
 						{
 							"listen": "test",
@@ -10319,25 +10319,25 @@
 	],
 	"variable": [
 		{
-			"id": "78497248-9971-42dd-8835-eeed434feb51",
+			"id": "3812d3ee-c01d-43f3-a01d-7caa64ea6d11",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fec4cdb0-e9f5-4acc-8166-828095a0ff6b",
+			"id": "0e4aca8c-f951-4dac-8574-39ae6f0888e4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5d53d17d-fb62-4fbd-ad3f-9e11e7249d71",
+			"id": "3b9c6342-cbef-460a-b57d-abd0d27f50b2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fffe996f-d430-40a4-82f1-52e8c4b9f41d",
+			"id": "b598c5c4-0f80-497b-a0b9-b7c42532bcc4",
 			"key": "TKM",
 			"value": ""
 		}
