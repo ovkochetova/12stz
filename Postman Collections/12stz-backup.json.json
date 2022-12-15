@@ -4571,7 +4571,7 @@
 					"response": []
 				},
 				{
-					"name": "чекбокс учитывать доставку в стоимости заказа Активен",
+					"name": "чекбокс учитывать доставку в max стоимости заказа Активен",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -10044,25 +10044,25 @@
 	],
 	"variable": [
 		{
-			"id": "8dfaec6a-d2ea-40ce-9063-33d858f5bff6",
+			"id": "04762e80-479d-4f47-91c4-7d0dc5f93328",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "13fa8351-ea30-494b-9bbd-7118e2948fb3",
+			"id": "e08a5977-2542-42d1-8aaa-633201fdaa20",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bf87f655-dca0-4c99-8938-b02718093775",
+			"id": "bd4ae228-e7a0-48ce-8e12-9c8aed6dea0e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7a3d7793-341e-41c4-8b38-60f7164ff98d",
+			"id": "8e367a15-5771-4587-aa11-ad1b8dbb9d5b",
 			"key": "TKM",
 			"value": ""
 		}
