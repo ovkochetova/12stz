@@ -4660,7 +4660,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку сумма 499409",
+					"name": "учитывать доставку сумма 299010",
 					"event": [
 						{
 							"listen": "test",
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "d929114a-3e69-4037-943c-16f93e50c4ac",
+			"id": "5c5b6396-e77a-4338-8a31-26d1c4fafc30",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f622aa2f-f58c-4d69-b284-5c3f862f151a",
+			"id": "7cb3ffd2-86b9-4287-8f4a-bf7e7efe5cdd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "caebd98d-68fc-4d73-a2d1-7b6cc36ef9b9",
+			"id": "4f2cd09b-ff4f-4c72-9d59-bec8087e06be",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7460419d-16e5-4ed5-bf2d-249de6e4ba08",
+			"id": "b87b524c-e1ae-48f6-a866-848b17ae4378",
 			"key": "TKM",
 			"value": ""
 		}
