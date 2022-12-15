@@ -5374,6 +5374,95 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "чекбокс учитывать доставку в max стоимости заказа не Активен Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isPriceBorderIncludePresent = false,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Максимальная стоимость заказа не включает подарки\", function () {\r",
+									"       pm.expect(jsonData.isPriceBorderIncludePresent).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "f79d0fb4-e51a-463a-8aae-6648134d211d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -10074,25 +10163,25 @@
 	],
 	"variable": [
 		{
-			"id": "4b36a3ed-3808-421a-b46a-74bfbffc3239",
+			"id": "2300409d-9759-4d90-977f-946889cf3be8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8cb03649-1334-4991-a5c0-78dab304a239",
+			"id": "128bc48c-c870-4b64-b145-d2edd10b4e5a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0e1cfc18-22cb-4054-b557-420a1198e901",
+			"id": "650b968d-c121-4296-ae84-066dbc52b282",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "33e43891-c602-4052-ae58-3f2a1a13fce2",
+			"id": "bc5e256c-cd1e-4e73-b009-5f5c6b377215",
 			"key": "TKM",
 			"value": ""
 		}
