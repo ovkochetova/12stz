@@ -6007,7 +6007,7 @@
 					"response": []
 				},
 				{
-					"name": "не учитывать доставку 9 шт.",
+					"name": "не учитывать подарки 9 шт.",
 					"event": [
 						{
 							"listen": "test",
@@ -11054,25 +11054,25 @@
 	],
 	"variable": [
 		{
-			"id": "19cd3d71-b696-498c-9fd6-83ab70a7dd90",
+			"id": "da44006e-bf2c-439c-b5dd-5884be478eea",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0d874aac-69f6-4be0-b0c8-c2d15c5caafc",
+			"id": "08eccbd6-c55f-4770-b229-c84344293451",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0598b8eb-a5cb-406e-ba21-59bbcde43422",
+			"id": "766afe5c-977b-4988-8a9b-797f9e76a796",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "81d32675-149c-4f44-97f5-a1583d0c70a9",
+			"id": "d7e8730b-d3cb-49ce-a60e-a3e5806f3d56",
 			"key": "TKM",
 			"value": ""
 		}
