@@ -6252,7 +6252,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки 9 шт.",
+					"name": "!учитывать подарки 9 шт.",
 					"event": [
 						{
 							"listen": "test",
@@ -11054,25 +11054,25 @@
 	],
 	"variable": [
 		{
-			"id": "63211ff0-7dae-4a01-b5da-255f26729cdd",
+			"id": "db83cdcd-b0e0-4c87-8a24-8c0db4122fd7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "74337289-56ce-4e29-b61d-ddcb056130ce",
+			"id": "b29e3fb2-fa57-4510-bea8-fd6fb990bd51",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4ede48b-334e-40c9-9631-14faddd736a9",
+			"id": "135835e1-c4c2-40c0-ae7f-4f935c426eec",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a50cb78f-c9a5-4926-8aca-22a329b1e3a1",
+			"id": "f76a2174-2871-43e4-8ad5-59d9346aea09",
 			"key": "TKM",
 			"value": ""
 		}
