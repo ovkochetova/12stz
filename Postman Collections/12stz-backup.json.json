@@ -5864,6 +5864,95 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "чекбокс учитывать доставку в max кол-ве товаров  Активен Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isProductQuantityBorderIncludePresent = false,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Максимальная количество товаров не включает доставку\", function () {\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludeDelivery).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b5fb3b83-6857-4eb2-b65b-fbbd579f7b79",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -10564,25 +10653,25 @@
 	],
 	"variable": [
 		{
-			"id": "acc9bce6-1746-44ae-911f-39c15e1b568c",
+			"id": "1e2112d3-daf3-41ee-89b4-3dc5f0a82739",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5726a591-b6d5-403e-bf2e-20d08f7343ac",
+			"id": "1fc8590e-4dca-4d44-bb24-31e3cd886ad0",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "309007e9-6e10-491d-8613-bdc86bebca74",
+			"id": "aa92bedc-98fa-4daf-918f-568881b4f12b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e70983ac-b4c8-4b3c-a4a4-9ff08c01dff3",
+			"id": "6bde0e37-a039-4067-a5e7-a58acaba9b57",
 			"key": "TKM",
 			"value": ""
 		}
