@@ -4448,7 +4448,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500000.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 300000.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "4159ebb6-b8f4-4bc0-9951-491bbaa09773",
+			"id": "0adb924b-e68d-494a-933c-acbd43ee7c98",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "86964c72-66e7-4170-b9ce-f4d7e8a74a8e",
+			"id": "acb06c04-2b1a-4cda-ac4b-009144288103",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b264930c-e06e-45aa-b925-2e9f90aeb799",
+			"id": "441c4771-27fa-411d-a9c5-8775ffb794ae",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "08c45dc3-cff4-418c-b383-0a438fe0871c",
+			"id": "761bb82d-07dd-4f14-b5fe-6c652a22e4d1",
 			"key": "TKM",
 			"value": ""
 		}
