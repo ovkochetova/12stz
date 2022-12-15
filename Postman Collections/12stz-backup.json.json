@@ -4880,7 +4880,7 @@
 					"response": []
 				},
 				{
-					"name": "чекбокс учитывать подарки в стоимости заказа  Активен",
+					"name": "чекбокс учитывать подарки в max стоимости заказа  Активен",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -10044,25 +10044,25 @@
 	],
 	"variable": [
 		{
-			"id": "04762e80-479d-4f47-91c4-7d0dc5f93328",
+			"id": "4eb4c02b-2bfe-40ab-b32e-ed36ff062fd1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e08a5977-2542-42d1-8aaa-633201fdaa20",
+			"id": "cf4fa8c6-df5e-4d4c-9b50-2beca0f2c82d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bd4ae228-e7a0-48ce-8e12-9c8aed6dea0e",
+			"id": "75ddea8c-c039-42b7-949f-67049595af5a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e367a15-5771-4587-aa11-ad1b8dbb9d5b",
+			"id": "3b4b634d-6978-47b0-9436-5cf19f28de39",
 			"key": "TKM",
 			"value": ""
 		}
