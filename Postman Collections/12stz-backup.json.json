@@ -8388,7 +8388,7 @@
 					"response": []
 				},
 				{
-					"name": "!Запрещенная страна geo_id  не в справочнике",
+					"name": "Запрещенная страна geo_id  не в справочнике",
 					"event": [
 						{
 							"listen": "test",
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "904b9f8f-2f64-4155-b808-c9f1b03f0674",
+			"id": "d1ff5e68-d17f-4e84-a3ac-7bfcb72f006f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e75592ad-d6f7-49ce-9db3-fe99558d82c5",
+			"id": "6a7fdc90-a4fc-4fe8-9e03-fbdf88aa0683",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e3d464f1-c786-46d6-bdd2-7bacd4f9d44d",
+			"id": "80605662-e81b-40ca-9063-6180e3cd715d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c52b6f2f-ae4a-4125-b237-12474b7ebee9",
+			"id": "ecb936c0-ac4f-41a3-b6f0-3b23090a54bd",
 			"key": "TKM",
 			"value": ""
 		}
