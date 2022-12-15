@@ -4607,7 +4607,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Максимальная стоимость заказа не включает доставку\", function () {\r",
+									"pm.test(\"Максимальная стоимость заказа включает доставку\", function () {\r",
 									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(true);\r",
 									"});"
 								],
@@ -10020,25 +10020,25 @@
 	],
 	"variable": [
 		{
-			"id": "84839ca3-8a24-4029-a12c-4c4d8628645e",
+			"id": "04131640-0f4a-4d06-ac9a-d56f7e891b1c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c1e21bb3-35ea-4584-9873-eb4545a6d77b",
+			"id": "22d81350-9c75-438e-ad11-a2c0c66a5ef3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "80e90c95-9279-4cff-98fb-c920374d833a",
+			"id": "fae2c6d7-6bff-49a8-b71a-a2dd1ca3464a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f37956e6-fc30-44fb-be8e-7aa84f74b24b",
+			"id": "cb071c5f-4532-415e-9225-98e544a81bdc",
 			"key": "TKM",
 			"value": ""
 		}
