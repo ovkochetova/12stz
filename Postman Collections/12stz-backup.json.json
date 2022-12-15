@@ -5902,7 +5902,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Максимальная количество товаров не включает доставку\", function () {\r",
+									"pm.test(\"Максимальная количество товаров не включает подарки\", function () {\r",
 									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(false);\r",
 									"});"
 								],
@@ -10653,25 +10653,25 @@
 	],
 	"variable": [
 		{
-			"id": "04310ec2-b5be-49ed-be95-0c57bc0bf954",
+			"id": "0a0aeab4-df2b-4a14-873f-22c1ec49ab28",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "610c3d06-0705-461a-835b-e19f210805c3",
+			"id": "eed4d2d9-31a4-4fbd-a30b-0b07b2b008fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eee07f45-5538-4042-b5d2-49f0e4fa446a",
+			"id": "23ecc07b-f661-4101-b940-b8cfc62122cb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8686c0c1-f608-48d0-a200-a07ba117e6a2",
+			"id": "b2eda08e-e6a5-4c20-be90-d2fd954b8fba",
 			"key": "TKM",
 			"value": ""
 		}
