@@ -5586,7 +5586,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость подарки включены, ограничений нет\", function () {\r",
+									"pm.test(\"В максимальную стоимость подарки включены, ограничения есть\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"больше 9 товаров в корзине\");\r",
 									"})"
 								],
@@ -10319,25 +10319,25 @@
 	],
 	"variable": [
 		{
-			"id": "596ee92c-e524-4317-a508-bba59ee60127",
+			"id": "cce45dc4-5754-4c7b-834d-69660672adda",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ace04f8a-4f76-4623-92e0-f4d13004800d",
+			"id": "ef430709-35a0-49e0-ae8e-45335f35de6a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6a98502e-e03b-458c-8003-3d90560f866f",
+			"id": "000a5fee-16b3-4eb9-980a-d8825f03b4c9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "87936f29-f821-4e12-a3a9-641a674a173a",
+			"id": "fc939002-f54d-4fb9-9bf8-626afc8d4f5f",
 			"key": "TKM",
 			"value": ""
 		}
