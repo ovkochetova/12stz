@@ -406,6 +406,40 @@
 			"id": "a62e6a00-7318-4baa-a312-982691c46379"
 		},
 		{
+			"name": "Казахстан",
+			"item": [
+				{
+					"name": "Казахстан",
+					"id": "2c1db03f-97bd-4950-87a1-7afa108cf9d7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"country_iso_code\": \"KZ\",\r\n  \"region_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJOXmTbhj4TkIRl78zNZRbyz0\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				}
+			],
+			"id": "00ba5489-623b-43c7-830d-aea978d81ce3"
+		},
+		{
 			"name": "Москва",
 			"item": [
 				{
@@ -8211,7 +8245,7 @@
 			"id": "db72f363-a39b-4b0a-9dfb-d14565c087da"
 		},
 		{
-			"name": "!Запрещенные страны",
+			"name": "Запрещенные страны",
 			"item": [
 				{
 					"name": "Информация о запрещенной стране по id",
@@ -10015,40 +10049,6 @@
 				}
 			],
 			"id": "aeff015f-9afc-42f7-885f-da196c6ac10b"
-		},
-		{
-			"name": "Казахстан",
-			"item": [
-				{
-					"name": "Казахстан",
-					"id": "2c1db03f-97bd-4950-87a1-7afa108cf9d7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "\r\n{\r\n  \"country_iso_code\": \"KZ\",\r\n  \"region_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJOXmTbhj4TkIRl78zNZRbyz0\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				}
-			],
-			"id": "00ba5489-623b-43c7-830d-aea978d81ce3"
 		}
 	],
 	"event": [
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "d4094647-b913-442d-86e2-5d5f8a4cec26",
+			"id": "6675b448-1cef-403e-bc92-fe306ddeaa24",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "82ae3b2c-ce70-4e97-a4ff-9786f73e9a62",
+			"id": "19782a67-6257-4536-8d9b-557e743d8532",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "10363532-2c52-4332-94af-2ef4c3369273",
+			"id": "116ac1a2-dc7e-4c18-99b4-3bba3f455244",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "114e4860-d835-48b3-aa6a-732ce0a7716e",
+			"id": "6126f264-ccd3-4a65-a8d7-ab2e7949ec04",
 			"key": "TKM",
 			"value": ""
 		}
