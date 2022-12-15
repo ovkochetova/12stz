@@ -5271,6 +5271,26 @@
 				},
 				{
 					"name": "учитывать подарки сумма 300000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9e7ac9a2-46ff-4450-ab52-bf1529ebee4a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "b984a591-d790-4e21-a685-4098a8c23bc7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -10044,25 +10064,25 @@
 	],
 	"variable": [
 		{
-			"id": "352d7dca-2a03-4057-861d-7bdac3ddde11",
+			"id": "14626e10-525c-4050-b521-fb9eb7085e4c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "932e296e-cf5b-42c6-8cd6-1399a3015cad",
+			"id": "f9177291-b0ed-412c-9b1a-566e0f41a8b6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ed121741-ff18-481c-83d0-9f6603ab455a",
+			"id": "7d209fc1-a647-4a1b-bffa-187bb6c62989",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "22c1e7b4-4abc-4b90-8827-6c695fc6519d",
+			"id": "bc4a85cd-b450-45cf-ae1e-0963c2efa080",
 			"key": "TKM",
 			"value": ""
 		}
