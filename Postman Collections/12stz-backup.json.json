@@ -4770,61 +4770,6 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать доставку сумма 499411",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"В максимальную стоимость доставка включена, ограничение есть\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
-									"});\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "ce07181d-5c98-439a-a0a9-d83bb7c33ae5",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 499411.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "!учитывать доставку сумма  500000",
 					"event": [
 						{
@@ -10075,25 +10020,25 @@
 	],
 	"variable": [
 		{
-			"id": "040cedf4-be5e-4ddb-a774-1f204e58ed66",
+			"id": "d9cc9dec-4185-4e19-bfc3-9f650c967f08",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "95328b57-c3da-4809-b9a1-a92f1160d4ec",
+			"id": "4fffb112-c13c-4910-9f89-84a2f4bb0472",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8c3dbc47-d279-49be-b6aa-57615d760ae2",
+			"id": "f4594c47-cbd9-42c0-bc95-fdb55654673b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "73d65697-789c-44cd-8f49-c302b64d5699",
+			"id": "62e8d7c8-22bf-4bb7-bbd5-49bd4c79db2c",
 			"key": "TKM",
 			"value": ""
 		}
