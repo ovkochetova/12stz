@@ -5955,7 +5955,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку 8 шт.",
+					"name": "не учитывать доставку 8 шт.",
 					"event": [
 						{
 							"listen": "test",
@@ -10898,25 +10898,25 @@
 	],
 	"variable": [
 		{
-			"id": "b470aea2-5827-42e7-b3fb-d12c1ecc070e",
+			"id": "c9f7d0ac-a13a-4ac4-a55e-4a66063d5ba7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "93d49da8-9178-49f1-b77e-34bc60fb5d61",
+			"id": "a8f0cd85-f115-4d72-a264-ef8e3f4beefe",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b9ae7a78-f216-44d1-892a-5bf25f3878f2",
+			"id": "9c9d5229-4f3e-47f6-9cfd-f1b0812ed505",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ea6102f7-0ba9-4c29-bba6-a89b3273555b",
+			"id": "6ac42b6b-10f0-4c35-8ab7-0c86970639f1",
 			"key": "TKM",
 			"value": ""
 		}
