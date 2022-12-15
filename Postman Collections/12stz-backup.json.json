@@ -5955,7 +5955,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку 8 шт.",
+					"name": "учитывать доставку 8 шт. Copy",
 					"event": [
 						{
 							"listen": "test",
@@ -5995,7 +5995,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 8,\r\n      \"price\": 3000,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 8,\r\n      \"price\": 3000,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -6007,7 +6007,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку 9 шт.",
+					"name": "учитывать доставку 9 шт. Copy",
 					"event": [
 						{
 							"listen": "test",
@@ -10898,25 +10898,25 @@
 	],
 	"variable": [
 		{
-			"id": "4dd6d441-d1fd-447f-a507-bc87977e7ec2",
+			"id": "fe385cef-4a7a-45b6-be3c-5a5640d26b24",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f8cc4e21-d56e-4df0-9481-892aa40368af",
+			"id": "2fa5b088-3bc2-4304-b0c4-9ec20ea429d4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03d77b4c-4811-4fc7-8b02-957610fe04c2",
+			"id": "1ece0bd6-d1ee-41b1-ab7b-a6895038f98c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "db88e4ef-74ef-4168-98f0-f5df0c569534",
+			"id": "87298bce-8f00-40ab-8de0-bae237f6e964",
 			"key": "TKM",
 			"value": ""
 		}
