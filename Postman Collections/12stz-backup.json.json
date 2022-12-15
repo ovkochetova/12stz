@@ -5236,7 +5236,10 @@
 									"pm.test(\"Типы доставки есть\", () => {\r",
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
-									""
+									"\r",
+									"pm.test(\"В максимальную стоимость подарки включены, ограничений нет\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"превышает 300 000\");\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -10063,25 +10066,25 @@
 	],
 	"variable": [
 		{
-			"id": "b0264438-1a43-4814-a29e-a85df63db4bf",
+			"id": "931d2433-5844-4b51-aa3b-130e188bb6ce",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "56db98f3-0bfd-4b66-8e8d-98b03adfbd86",
+			"id": "9b8d3a2b-c1f6-4a33-b2a6-bf920795149c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7cbb5cb2-0f2e-40d0-b4f6-af5b027b2982",
+			"id": "c1107e13-d33d-4576-822c-5241de5524ac",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c114f2db-a0dd-4b77-902b-f7ba223c0d10",
+			"id": "427ab51c-f90a-475f-9d03-2086c9b7e253",
 			"key": "TKM",
 			"value": ""
 		}
