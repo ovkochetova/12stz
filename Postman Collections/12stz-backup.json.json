@@ -5324,7 +5324,7 @@
 					"response": []
 				},
 				{
-					"name": "?учитывать подарки сумма 300001",
+					"name": "?не учитывать подарки сумма 300001",
 					"event": [
 						{
 							"listen": "test",
@@ -10215,25 +10215,25 @@
 	],
 	"variable": [
 		{
-			"id": "d23cc8a4-c281-4b0d-9b4d-cb31f1b978ae",
+			"id": "fc2a9d9d-a441-4099-a13b-849b17afdaa7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c570e5e9-1886-44b7-8d51-1632a253a316",
+			"id": "7fc5cf77-8ed4-433f-bea8-373d69405987",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c6361186-a7db-4b98-a389-fd134159b4c6",
+			"id": "046c1b9d-8a51-4ec4-ab96-e6034363b2e7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41b95db7-e1dd-4ab6-a10b-a88f6a722725",
+			"id": "82463741-1bda-4133-84b2-7392c0043b25",
 			"key": "TKM",
 			"value": ""
 		}
