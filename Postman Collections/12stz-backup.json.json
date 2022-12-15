@@ -6059,7 +6059,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку 10 шт.",
+					"name": "не учитывать доставку 10 шт.",
 					"event": [
 						{
 							"listen": "test",
@@ -10898,25 +10898,25 @@
 	],
 	"variable": [
 		{
-			"id": "c9f7d0ac-a13a-4ac4-a55e-4a66063d5ba7",
+			"id": "6bb692c1-6802-4440-a44a-87d47f701a69",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8f0cd85-f115-4d72-a264-ef8e3f4beefe",
+			"id": "b50181a9-622a-44d0-a2ad-28ad6ba30a22",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9c9d5229-4f3e-47f6-9cfd-f1b0812ed505",
+			"id": "f9620991-3b52-4e33-93e3-34af1bbc7318",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6ac42b6b-10f0-4c35-8ab7-0c86970639f1",
+			"id": "8c193007-3fa4-4037-aee8-e164497e7009",
 			"key": "TKM",
 			"value": ""
 		}
