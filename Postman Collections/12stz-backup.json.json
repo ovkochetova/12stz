@@ -5968,7 +5968,7 @@
 									"\r",
 									"delete body.id;\r",
 									"body.isActive = true;\r",
-									"body.isProductQuantityBorderIncludePresent = false,\r",
+									"body.isProductQuantityBorderIncludePresent = true,\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -5991,8 +5991,8 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Максимальная количество товаров не включает подарки\", function () {\r",
-									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(false);\r",
+									"pm.test(\"Максимальная количество товаров включает подарки\", function () {\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -10742,25 +10742,25 @@
 	],
 	"variable": [
 		{
-			"id": "ac035399-8d34-4f50-8a41-f9ddfa5a4b15",
+			"id": "95087e2a-24d6-417d-bf12-863353c03047",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f4fcf7a9-4860-4905-81c4-7d2600d8ace5",
+			"id": "56f43323-33b3-45da-a40e-b5ce4cf2a827",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "50d1bb02-5232-4d61-8e36-07838bb46294",
+			"id": "be2f670d-3e4c-4a33-9b0c-0966111edba0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "493c7007-8f01-4c1f-9467-42d74bdca5f2",
+			"id": "30b33ddc-102c-4778-b423-4d159e8985b0",
 			"key": "TKM",
 			"value": ""
 		}
