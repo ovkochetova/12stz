@@ -4267,7 +4267,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='Тестовая ТК (не удалять)')\r",
+									"/*let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='Тестовая ТК (не удалять)')\r",
 									"console.log(delivery);\r",
 									"\r",
 									"let maxdostavka = delivery.to_days;\r",
@@ -4280,7 +4280,7 @@
 									"\r",
 									"pm.test(\"Разброс доставки для отображения пользователю равно \" + delta , function () {\r",
 									"    pm.expect(maxdostavka - mindostavka).to.eql(4)\r",
-									"});\r",
+									"});*/\r",
 									"\r",
 									"\r",
 									""
@@ -4423,7 +4423,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"В максимальную стоимость доставка не включена, ограничения нет\", function () {\r",
-									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 500.000 руб\");\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа не должна превышать 300.000 руб\");\r",
 									"});\r",
 									"\r",
 									"\r",
@@ -10075,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "2c0d2ece-291e-4485-a51e-17beb0b0d6fb",
+			"id": "5821a19a-4532-487e-9e41-a43b439287a7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d59c5fe5-9d30-45a3-8f80-f3d923d0db6f",
+			"id": "24fd73e5-9ef7-41d1-bce4-c3c89f8d7782",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "53e9f627-696a-40d2-874c-b25f56a59500",
+			"id": "11c705bf-3e43-49e9-b3b1-9501a86778c7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "05f78163-f368-42af-8068-d08f1a95455e",
+			"id": "65d0f070-6d08-4565-b5a7-c825940cf0de",
 			"key": "TKM",
 			"value": ""
 		}
