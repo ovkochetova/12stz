@@ -8388,6 +8388,54 @@
 					"response": []
 				},
 				{
+					"name": "!Запрещенная страна geo_id  не в справочнике",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bc6bc372-1aca-431c-b3de-146b6e61c226",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ca3eb967-e349-44a5-82af-b8df9386e38f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"{{countryIsoCode}}\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJa2JP5tcMREARo25X4u2E0GE\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",  \r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }         \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "!Изменение статуса запрещенной страны на true",
 					"event": [
 						{
@@ -10027,25 +10075,25 @@
 	],
 	"variable": [
 		{
-			"id": "a9e64a69-88a8-4396-98ed-d4ef8ec61ea7",
+			"id": "e8d736c4-44fd-45b6-a094-2bca4ca37df1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4b12bdf7-6c97-4289-93d5-aaea398f0fb4",
+			"id": "b37f89f4-7d96-4afe-b16c-4dd07ad3104d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "22097710-ac31-4600-87dd-43cd80c302b7",
+			"id": "224a19a3-06f7-431a-8c80-05fa0265b1f9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e980107b-d588-48c2-8d5b-40e075dcc9fa",
+			"id": "f731f548-e9c8-4de2-b2e2-ef0acc959004",
 			"key": "TKM",
 			"value": ""
 		}
