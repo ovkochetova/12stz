@@ -5116,7 +5116,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500001.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 300001.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -10020,7 +10020,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "67e871a0-ec94-48ed-80d7-e23dd504106f",
+				"id": "eba8b1d8-6356-4324-b524-133fe41c4be9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10030,7 +10030,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "5c8397b4-c1d8-45a2-95ea-e02c99e5e962",
+				"id": "e481b7e0-9a7f-4a88-92e6-6e984311116b",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "1f28bbc3-58aa-4d65-aae6-5da069a0c94b",
+			"id": "6b7066ff-c58a-4201-91d6-8e23d0849225",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7e6c76d8-8cf7-4ccd-a72d-67ae21a55b08",
+			"id": "9a90ab63-a161-46a3-a196-f1fd34ee67d3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4979b18b-db71-4a87-b34e-715f3e13f11b",
+			"id": "aded5e7f-a007-4af4-8a8d-d546e6719b49",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c74c33f4-97c2-4aaf-8f24-367fb12a67c8",
+			"id": "98a04426-0f86-4c6a-a742-9d4226030b46",
 			"key": "TKM",
 			"value": ""
 		}
