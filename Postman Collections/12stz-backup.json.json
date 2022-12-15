@@ -4987,7 +4987,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"В максимальную стоимость подарки включены, ограничений нет\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"s\");\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"превышает 300 000\");\r",
 									"});\r",
 									""
 								],
@@ -10041,25 +10041,25 @@
 	],
 	"variable": [
 		{
-			"id": "8c492599-13e1-4685-8d1e-9f233742225a",
+			"id": "3e9bbf60-a0cc-4e0d-a48c-98edb5958112",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e9f104ba-a059-4098-ac82-fa84e06423fa",
+			"id": "41761bd1-efbb-41e9-b0d6-19b7e62e6686",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "08711424-4444-4f19-96f0-58ef9e40c5d2",
+			"id": "cb4b8d0e-afed-4302-ad4f-b02dd885bbb0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a689af34-164a-43ec-b7d9-bc2e73973826",
+			"id": "09e5d761-ed12-40dd-8e0c-63218ee3183a",
 			"key": "TKM",
 			"value": ""
 		}
