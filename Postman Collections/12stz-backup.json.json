@@ -4969,7 +4969,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки сумма 299999 (299410)",
+					"name": "учитывать подарки сумма 299999",
 					"event": [
 						{
 							"listen": "test",
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "0aa66a7e-22f6-485f-bb0e-6bff7ea02f9a",
+			"id": "abf755f1-dc2d-437a-b296-5c7ff6099a64",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1b73a982-49ba-4170-bdf7-3538d6a81186",
+			"id": "cb8f2976-902c-4317-89a1-59b5a1271d38",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a0d8accf-4e0c-401f-892f-bbb96ffb62d4",
+			"id": "8af51584-0f28-4c70-8f1e-93207496e1b9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "53e8677d-c2b3-418d-bedb-3d12bde802d9",
+			"id": "d3bae757-56ee-42e1-abda-2ad1f0e0a86b",
 			"key": "TKM",
 			"value": ""
 		}
