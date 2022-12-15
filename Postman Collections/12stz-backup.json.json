@@ -5021,7 +5021,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки сумма 500000",
+					"name": "учитывать подарки сумма 300000",
 					"event": [
 						{
 							"listen": "test",
@@ -5061,7 +5061,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 500000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 300000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -10040,25 +10040,25 @@
 	],
 	"variable": [
 		{
-			"id": "49635ff0-9625-4f95-a464-0cac1e2207f2",
+			"id": "72be7f3f-f1cf-4f0c-8818-adfd3a336daf",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9352147e-511e-4d1e-9251-64495ce64003",
+			"id": "bd60adf6-81a0-4b3d-acf2-6cf9c3c2790d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "777a5254-5d3c-4360-993f-8b18de44b920",
+			"id": "b8ceed73-54ad-4441-83bd-256368ce9af5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a028d0ac-09ec-42b1-942c-61abbd0752e7",
+			"id": "a1eca2fe-6473-4960-9da5-f0ebaff037be",
 			"key": "TKM",
 			"value": ""
 		}
