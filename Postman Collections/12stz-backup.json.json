@@ -5482,7 +5482,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость подарки включены, ограничений нет\", function () {\r",
+									"pm.test(\"Максимальная количество товаров не включает доставку, ограничений нет\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\" 9\");\r",
 									"})"
 								],
@@ -5534,7 +5534,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость подарки включены, ограничений нет\", function () {\r",
+									"pm.test(\"Максимальная количество товаров не включает доставку, ограничений нет\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\" 9\");\r",
 									"})"
 								],
@@ -5557,7 +5557,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 8,\r\n      \"price\": 3000,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 9,\r\n      \"price\": 3000,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -10564,25 +10564,25 @@
 	],
 	"variable": [
 		{
-			"id": "95c7b63e-d9ee-4278-823f-186df99741ed",
+			"id": "10dce835-1254-4cc8-9118-9c4ded0f07a8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4660c83-6d2f-4369-a72a-6d592a36f734",
+			"id": "ce73e102-8817-46fd-a385-8fbe7c23169a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b05cc2cc-7f84-4ac6-aecf-4c7006cb36dd",
+			"id": "764b5970-30e6-43db-9834-381531b3b395",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "18bf6aa4-96ff-48ad-b9d5-a436ffcb39ce",
+			"id": "77bb49cf-a6d9-4778-873d-17d0d84c5089",
 			"key": "TKM",
 			"value": ""
 		}
