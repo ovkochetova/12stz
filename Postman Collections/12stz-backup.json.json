@@ -5482,7 +5482,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость подарки включены, ограничений нет\", function () {\r",
+									"pm.test(\"Максимальная количество товаров не включает доставку, ограничений нет\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\" 9\");\r",
 									"})"
 								],
@@ -5727,7 +5727,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"В максимальную стоимость подарки включены, ограничений нет\", function () {\r",
+									"pm.test(\"Максимальная количество товаров включает доставку ограничений нет\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\" 9\");\r",
 									"})"
 								],
@@ -10564,25 +10564,25 @@
 	],
 	"variable": [
 		{
-			"id": "ce6b24be-4a37-4e1b-91b0-110f04523164",
+			"id": "db4ee1e0-f3f5-4df8-9399-b561a70c2de4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "97174537-1f5c-4658-a889-a4aa4ca70c6d",
+			"id": "96ad95eb-8593-43b7-ae9a-ab94d797f6ce",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "339a106d-73ef-4bbe-899b-4c9298db9dcd",
+			"id": "dea97571-87d0-4ac2-be18-41d2c0a413e4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f3d6815f-fd4e-4b6e-b38a-6efac0e3e90d",
+			"id": "bc2a4e14-894e-4cfc-9846-d914979c8320",
 			"key": "TKM",
 			"value": ""
 		}
