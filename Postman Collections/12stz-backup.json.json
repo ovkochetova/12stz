@@ -5953,6 +5953,95 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "чекбокс учитывать подарки в max кол-ве товаров Активен",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isProductQuantityBorderIncludePresent = false,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Максимальная количество товаров не включает подарки\", function () {\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "3312ce50-7fca-4cd8-8dbf-9da77b4e4a46",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -10653,25 +10742,25 @@
 	],
 	"variable": [
 		{
-			"id": "0a0aeab4-df2b-4a14-873f-22c1ec49ab28",
+			"id": "ac035399-8d34-4f50-8a41-f9ddfa5a4b15",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eed4d2d9-31a4-4fbd-a30b-0b07b2b008fa",
+			"id": "f4fcf7a9-4860-4905-81c4-7d2600d8ace5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "23ecc07b-f661-4101-b940-b8cfc62122cb",
+			"id": "50d1bb02-5232-4d61-8e36-07838bb46294",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b2eda08e-e6a5-4c20-be90-d2fd954b8fba",
+			"id": "493c7007-8f01-4c1f-9467-42d74bdca5f2",
 			"key": "TKM",
 			"value": ""
 		}
