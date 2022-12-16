@@ -7763,7 +7763,7 @@
 								"id": "c16e749a-8a65-482f-b493-72250f18f0d6",
 								"exec": [
 									"pm.collectionVariables.get('groupzone');\r",
-									"console.log(groupzone)\r",
+									"console.log('groupzone')\r",
 									"\r",
 									"\r",
 									""
@@ -11079,25 +11079,25 @@
 	],
 	"variable": [
 		{
-			"id": "2e3010ba-5a4d-40ea-a7b0-69c1e1563a79",
+			"id": "cd7b2915-99c1-4b1f-99ee-2b0e0396cfef",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa649985-6850-460a-ac4a-841edca07689",
+			"id": "9d94f4f5-d622-40f9-b83b-42edaf1e637f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fad028ee-dbd5-46b7-aca4-e6dd876ffda1",
+			"id": "37ab12e2-0ecf-46b4-a19a-b2702a559434",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "85242fbc-6f8d-4139-8b7e-c1a8511b1923",
+			"id": "2af84121-69e7-4c66-b806-0782ef43459b",
 			"key": "TKM",
 			"value": ""
 		}
