@@ -7766,6 +7766,8 @@
 									"\r",
 									"body.isActive = false;\r",
 									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body);\r",
 									"\r",
 									"\r",
 									"\r",
@@ -11082,25 +11084,25 @@
 	],
 	"variable": [
 		{
-			"id": "b212a59d-bb19-4ab2-a2d9-355ccb230acb",
+			"id": "112108d3-cf9b-4322-9d68-75cdb1c7e3a4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ba98dbe9-a7b9-42f9-ad02-27a5771f69a0",
+			"id": "0ed2ac37-8f3d-4451-ac3f-4086cd336b9a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2bb62772-b2e2-4ab8-abd0-7341be00e492",
+			"id": "f8b5ef74-b14b-4641-b10b-be629fa55a48",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ca5edc76-07bc-48a6-835a-7199b9588084",
+			"id": "79aa8ac7-a181-439b-ad9b-4d964b8b0e0a",
 			"key": "TKM",
 			"value": ""
 		}
