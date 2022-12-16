@@ -11023,7 +11023,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9dcf3b53-1c9f-41c3-8220-7648c9e45089",
+				"id": "16814707-4f69-4d46-bc8a-3d08b65cc20f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11033,7 +11033,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2bd45149-32fd-494d-8a53-3d2a331ca868",
+				"id": "ff562099-2da7-46bb-96c4-d7cc19fbef80",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11043,30 +11043,30 @@
 	],
 	"variable": [
 		{
-			"id": "5b30051f-cb12-4fbb-8c5a-34e94587a898",
+			"id": "201af163-402b-46a9-a528-9a3f76fe9a68",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "23b4e5fb-0c47-4add-9684-96dfa748bec3",
+			"id": "77da47b5-04ae-436c-9a80-bfd54612e208",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa2d20b7-c43f-462e-be8a-925fbfb60d1d",
+			"id": "2e78c29d-6d13-486c-b836-c9fd9911c088",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bd4bd2cf-5697-4880-a362-1b23335747da",
+			"id": "c314f77b-8918-4a1b-ad7c-1b85246c20d6",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f698fd2e-a326-4d74-a9c9-73a81c957bc2",
+			"id": "257e97e6-dc96-4b2b-8669-b394b952bcb4",
 			"key": "groupzone",
 			"value": ""
 		}
