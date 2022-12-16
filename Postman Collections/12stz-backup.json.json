@@ -9608,57 +9608,6 @@
 						"url": "{{url}}"
 					},
 					"response": []
-				},
-				{
-					"name": "Установить переменную countryIsoCode = RU",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bb594704-2d04-4e72-b39c-c8c0c60aab07",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"const responseJson = pm.response.json();\r",
-									"pm.test(\"Ограничение по категории для групп зон неактивно\",() => {\r",
-									"  pm.expect(responseJson.isActive).to.eql(false);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "c6674cb5-02dc-4597-9c25-5f09cd4823a7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "\n\n\n{\n  \"id\": {{id}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"countryIsoCode\": \"RU\",\n  \"messageId\": {{message_id}},\n  \"popupId\": {{popup_id}},\n  \"isActive\": false\n}\n\n\n\n"
-						},
-						"url": "{{baseUrl}}/api/v1/restriction/zone"
-					},
-					"response": []
 				}
 			],
 			"id": "907aa0ae-2605-46d6-ab89-583f0e761006"
@@ -11094,30 +11043,30 @@
 	],
 	"variable": [
 		{
-			"id": "9e307aac-c474-465b-ab1c-d011ee51754a",
+			"id": "e478eb14-3b07-45e3-99c5-80cee683bac9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6cecfb92-3851-401f-94c5-6281c6b0b287",
+			"id": "80080136-e140-4328-a66e-eb57f3c24223",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ab9452f5-cb09-4524-bb18-137d6e713917",
+			"id": "ca64f09f-d151-4f2b-b267-6c6c550f0723",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ab322f46-a52b-4c65-a17f-a3e4690d25ff",
+			"id": "f504227d-5edd-4fb0-929f-f07dec275ddd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "148a9286-6633-48fc-9573-789bbbf84f5f",
+			"id": "3bedb9c5-3a44-49bb-94db-abda8a42d7d7",
 			"key": "groupzone",
 			"value": ""
 		}
