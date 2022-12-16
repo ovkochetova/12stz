@@ -8148,7 +8148,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": [\n      {{geoIds}}\n      ]\n}"
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": [ {{geoIds}}  ]\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone/:id",
@@ -11247,35 +11247,35 @@
 	],
 	"variable": [
 		{
-			"id": "4f775991-a643-490d-8011-c80cb4cb6f37",
+			"id": "23645dbf-fa1f-432c-8ee8-8f63d5e5144e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "92ff4f6f-1d55-4027-b84f-62c3cc16706b",
+			"id": "76c7bdb5-0d7e-4420-9cff-c69f8209e274",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "97ea82e4-5e80-40ce-94de-c2d8e249053d",
+			"id": "85259bbf-588a-41f3-8260-6fd21dfcd6ed",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b0df2505-065e-49db-b826-af22e72d5325",
+			"id": "a2282257-400b-4097-9734-4f9127241691",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "25723175-e399-4730-b51a-9923d73b64cf",
+			"id": "48a85238-ee70-4ae0-926c-f1dfe27e11f7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "63997cec-f579-4eed-90bd-542739f7e02c",
+			"id": "28c46c82-c767-4e54-9f02-8e0cc4d28ae1",
 			"key": "zone",
 			"value": ""
 		}
