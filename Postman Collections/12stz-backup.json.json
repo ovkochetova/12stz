@@ -7703,7 +7703,6 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"\r",
 									"var groupzone = pm.response.json();\r",
 									"console.log(groupzone)\r",
 									"\r",
@@ -11086,25 +11085,25 @@
 	],
 	"variable": [
 		{
-			"id": "01762901-c150-4bb7-93c2-3665644b2c1f",
+			"id": "ba7a26eb-ce62-45ac-92dd-b6c7058031e7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7f71255-e00c-46b9-b085-6291126918f1",
+			"id": "95218504-d052-4dfe-9981-0b20163deddf",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7f7f28cc-2150-4d88-a52f-017cbd993279",
+			"id": "7ad17411-a1bb-4fea-9e9b-217e429fce5b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "12bc602e-39db-4eb2-a4c2-93c7a6c39c7a",
+			"id": "ad2d39d3-b677-4693-ba89-bd99f971ee46",
 			"key": "TKM",
 			"value": ""
 		}
