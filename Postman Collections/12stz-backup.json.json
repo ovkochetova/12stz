@@ -7904,6 +7904,25 @@
 				},
 				{
 					"name": "Изменение статуса зоны на true",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "615b3f7f-cdc8-4ed0-9924-3286ed07bba2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"   pm.expect(jsonData.isActive).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "2b700456-06e4-419a-97de-5d3904d6dcf3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -11111,30 +11130,30 @@
 	],
 	"variable": [
 		{
-			"id": "9e3e97df-c292-478c-ac1d-66e07ba6c547",
+			"id": "9837a401-c33b-4d0b-bdca-26a7c01b32c1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "46a74618-360a-4d36-be38-4a563c8aad16",
+			"id": "5e9b2789-9c26-4717-a55c-94435717c855",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f714674-cc05-45e6-a1b6-5c30159c1939",
+			"id": "053cd54e-3cb5-49b6-8b50-c9da81bfa28b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "69fc69ca-d4d8-4963-9246-6ba3ab7479f5",
+			"id": "355b53d1-e666-4f79-81fa-198812f0d574",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "df9d125d-1913-4519-9edb-1ff7272434ca",
+			"id": "7b40cd36-1515-4a0a-8e91-5f96d52972a8",
 			"key": "groupzone",
 			"value": ""
 		}
