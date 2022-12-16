@@ -8052,14 +8052,18 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"var jsonData = JSON.parse(responseBody);\r",
+									"/*var jsonData = JSON.parse(responseBody);\r",
 									"pm.environment.set(\"name\",jsonData.name);\r",
 									"pm.environment.set(\"isActive\", jsonData.isActive)\r",
 									"pm.environment.set(\"id\", jsonData.id)\r",
-									"pm.environment.set(\"geoIds\", jsonData.geoIds)\r",
+									"pm.environment.set(\"geoIds\", jsonData.geoIds)*/\r",
 									"\r",
-									"\r",
-									")"
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    \r",
+									"    pm.expect(jsonData.value).to.eql(100);\r",
+									"});\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -11218,30 +11222,30 @@
 	],
 	"variable": [
 		{
-			"id": "56c2981e-e502-4696-af1e-ea872baa3095",
+			"id": "9c7a4cea-472b-4976-865f-63520a071c3a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "73c8e01a-dcf1-4b5b-b491-b0061d1b82cf",
+			"id": "99a39afc-198d-470f-ba0a-008406bb16fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ce0455a5-3979-4226-8194-fab0330dc533",
+			"id": "22ad9dca-a488-4e80-adc3-ee8ea50a8a28",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fc43be87-287d-49e9-941c-f7e54d56b795",
+			"id": "16e57876-6d8f-4ccb-90d8-1e565552140e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "84fce7e8-80d1-4325-ad78-734e198a1108",
+			"id": "113b1d7d-f894-4c8a-9c7a-b5e1cb99b8c8",
 			"key": "groupzone",
 			"value": ""
 		}
