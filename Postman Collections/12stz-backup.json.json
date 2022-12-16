@@ -7762,8 +7762,10 @@
 							"script": {
 								"id": "c16e749a-8a65-482f-b493-72250f18f0d6",
 								"exec": [
-									"pm.collectionVariables.get('groupzone');\r",
-									"console.log('groupzone')\r",
+									"let body = pm.collectionVariables.get('groupzone');\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
 									"\r",
 									"\r",
 									""
@@ -11079,25 +11081,25 @@
 	],
 	"variable": [
 		{
-			"id": "cd7b2915-99c1-4b1f-99ee-2b0e0396cfef",
+			"id": "4532a6b7-07e1-402e-8f1d-ad8f16ceb2e4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9d94f4f5-d622-40f9-b83b-42edaf1e637f",
+			"id": "ef7ca677-c9c5-488e-8678-b1b8b8e739c4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "37ab12e2-0ecf-46b4-a19a-b2702a559434",
+			"id": "d8929873-4b0b-4d9b-be45-b53677866605",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2af84121-69e7-4c66-b806-0782ef43459b",
+			"id": "230c8510-c489-4583-9c99-9be01be9f624",
 			"key": "TKM",
 			"value": ""
 		}
