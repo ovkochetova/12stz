@@ -7901,51 +7901,6 @@
 						"url": "{{url}}"
 					},
 					"response": []
-				},
-				{
-					"name": "Изменение статуса зоны на true",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "615b3f7f-cdc8-4ed0-9924-3286ed07bba2",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Your test name\", function () {\r",
-									"   pm.expect(jsonData.isActive).to.eql(false);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "2b700456-06e4-419a-97de-5d3904d6dcf3",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": true,\n  \"zoneIds\": [\n    {{zoneIds}}\n  ]\n}"
-						},
-						"url": "https://logistics.12stz.dev/api/v1/zone-group/-50834831"
-					},
-					"response": []
 				}
 			],
 			"id": "a55e763d-8beb-4d77-b930-1d919e5abf29"
@@ -11130,30 +11085,30 @@
 	],
 	"variable": [
 		{
-			"id": "9837a401-c33b-4d0b-bdca-26a7c01b32c1",
+			"id": "f88c37fe-ab1e-42a2-8347-ec84f322c872",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e9b2789-9c26-4717-a55c-94435717c855",
+			"id": "3b44bbc8-b505-4a2e-b1f0-f6a392acf607",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "053cd54e-3cb5-49b6-8b50-c9da81bfa28b",
+			"id": "e441feed-8bca-4a45-885e-2613ce36df39",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "355b53d1-e666-4f79-81fa-198812f0d574",
+			"id": "47db02ac-d05e-4943-bbe0-30a164d2738c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7b40cd36-1515-4a0a-8e91-5f96d52972a8",
+			"id": "d9526a21-c340-423e-8d4b-5ee0b5c5551a",
 			"key": "groupzone",
 			"value": ""
 		}
