@@ -8107,6 +8107,18 @@
 				},
 				{
 					"name": "Изменение статуса зоны на false",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e4fddb64-af52-4944-aa03-ae5966c92301",
+								"exec": [
+									"pm.collectionVariables.get(\"zone\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "577871b5-cf7f-4b78-99a9-49fea8ac6a56",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -8131,7 +8143,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": \"{{geoIds}}\"\n}"
+							"raw": "/*{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": {{geoIds}}\n}*/"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone/:id",
@@ -11219,30 +11231,30 @@
 	],
 	"variable": [
 		{
-			"id": "6d45bc74-4ee4-4ada-891b-ba8e710970d5",
+			"id": "7261003f-3cbf-4fb7-9ec7-ca65325b2a35",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "64f23400-1209-4bdf-899c-92b4e4eff563",
+			"id": "cdc574a4-4114-48ef-aa79-ec73f9eda9d1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "70ae4f49-3c06-44e8-9c75-18fd7225b494",
+			"id": "a43a02ad-5235-4104-9cb8-bcfb794b5631",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "864a10b1-79d6-47e6-910f-f67579953649",
+			"id": "85bca775-6957-4b12-a645-fdec7859aafc",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d83526a8-4c3f-4dba-b84e-0d16631d7dd6",
+			"id": "5b85e651-5759-4dcf-a5ba-8c10a8a19a6d",
 			"key": "groupzone",
 			"value": ""
 		}
