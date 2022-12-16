@@ -7797,7 +7797,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Your test name\", function () {\r",
-									"   pm.expect(jsonData.isActive).to.eql(true);\r",
+									"   pm.expect(jsonData.isActive).to.eql(false);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -11111,30 +11111,30 @@
 	],
 	"variable": [
 		{
-			"id": "50553eb9-da5f-4319-8daa-80866a75bf4e",
+			"id": "f05068ba-215a-43dd-938e-dec2610774ca",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "edb99fdb-b222-405d-81f0-685e0c99b4e0",
+			"id": "5a9bc115-7e64-4703-82e7-090c7b945dca",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6057b26c-3a46-4263-8540-2ffe70eee5b6",
+			"id": "56c92159-a61c-42a8-9631-3c3128b5708a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "499f7661-fc5a-4316-b79f-38f87bdd0f82",
+			"id": "55148cba-a167-42d0-9711-ac70b0cdca89",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "427dd79a-a7cf-4d0b-b354-a43e9d41eca6",
+			"id": "07dddf81-5040-4de8-9519-4d87ffba87d8",
 			"key": "groupzone",
 			"value": ""
 		}
