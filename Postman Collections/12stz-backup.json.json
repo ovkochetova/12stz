@@ -7804,7 +7804,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "{\n  \"name\": \"mollit tempor et culpa\",\n  \"isActive\": true,\n  \"zoneIds\": [\n    62699813,\n    -77362126\n  ]\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone-group/:id",
@@ -11087,30 +11087,30 @@
 	],
 	"variable": [
 		{
-			"id": "93b3c597-739f-4e33-9563-fdd11ad78edf",
+			"id": "9b4827ec-aabf-4605-8aa9-85e8f695ddb5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0c98da30-e84f-491b-b09e-f98762686102",
+			"id": "9820214d-05d9-42f7-beb9-170737dbece4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41772a0a-526a-4ad0-b8b0-e24935541894",
+			"id": "8045275f-4a22-4ee5-833d-bdd71a36fa67",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "89d90190-fa45-49de-8a4f-db9825de936a",
+			"id": "778468b1-6c12-444f-b954-9792dc838bb8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1b9ea916-7323-46ae-8222-0f5a44b9d9a5",
+			"id": "19b2c783-5ef7-4d26-bc84-a2d7c977c866",
 			"key": "groupzone",
 			"value": ""
 		}
