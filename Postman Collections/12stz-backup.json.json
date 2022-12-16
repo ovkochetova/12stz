@@ -9499,7 +9499,7 @@
 					"response": []
 				},
 				{
-					"name": "Запрещенная страна geo_id не в справочнике",
+					"name": "!Запрещенная страна geo_id не в справочнике",
 					"id": "a36f3093-437a-44c2-81fa-645c1e57fa46",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -11059,25 +11059,25 @@
 	],
 	"variable": [
 		{
-			"id": "9f9c0963-85c8-4195-a18a-f819f534f1f7",
+			"id": "be8efd0a-c0fa-451b-8d09-8f9e42b23260",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4eadfac0-53f5-416f-98ee-a16e2d819a2a",
+			"id": "8a9cf88d-cfe8-4834-9852-e93e7bca95b1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c4f9c483-2706-4a08-9a1f-a3e131bc7b89",
+			"id": "a6366c78-ea64-4a4e-b627-7dd415eafba6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6f4df476-89d9-44d7-970c-16c51cf0b253",
+			"id": "f6524e35-fdb6-499a-a4d8-ebaa60f133c2",
 			"key": "TKM",
 			"value": ""
 		}
