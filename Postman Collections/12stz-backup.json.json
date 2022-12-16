@@ -11085,30 +11085,30 @@
 	],
 	"variable": [
 		{
-			"id": "26a59152-b51a-46ea-8290-9713d0d237d7",
+			"id": "c82dc83f-d37f-41db-a31d-4b0d9525a389",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dbc49964-c29e-40f7-8463-f4c7a85387d2",
+			"id": "0f3ee1f2-d97a-4cd1-bef4-1c61cbc334cd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3d3634a6-573b-46ed-9f22-f0096554ba85",
+			"id": "78cd2d52-c4fd-4b50-83b6-0b625ae67ce9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "653ccc27-e2f9-4376-b4f5-f7a88a647444",
+			"id": "6a3a1db9-13d4-4bb0-90b1-ab39a7e275ea",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ea99ad29-4d5e-455e-b7fb-76c15cef52f2",
+			"id": "46487405-ffa2-4ecf-b12e-10558d8d1ab1",
 			"key": "groupzone",
 			"value": ""
 		}
