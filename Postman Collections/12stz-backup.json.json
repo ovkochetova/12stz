@@ -9483,6 +9483,11 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -11054,25 +11059,25 @@
 	],
 	"variable": [
 		{
-			"id": "3fd3c2b8-00d3-45db-888f-108037f468b7",
+			"id": "9f9c0963-85c8-4195-a18a-f819f534f1f7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "50055ead-60ef-421e-bf5b-bbd84eb5eee7",
+			"id": "4eadfac0-53f5-416f-98ee-a16e2d819a2a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "faf32e3f-87fb-47bf-8c22-95e9191b648a",
+			"id": "c4f9c483-2706-4a08-9a1f-a3e131bc7b89",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2c062c5c-9b3c-4ad4-b86c-dc7d4f1377ae",
+			"id": "6f4df476-89d9-44d7-970c-16c51cf0b253",
 			"key": "TKM",
 			"value": ""
 		}
