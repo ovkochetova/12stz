@@ -8130,7 +8130,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": [ {{geoId}} ]\n}"
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": \"{{geoId}}\",\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone/:id",
@@ -11218,30 +11218,30 @@
 	],
 	"variable": [
 		{
-			"id": "8b2aa91a-dc67-4114-bbdf-3d91aafabf88",
+			"id": "5e6e96a9-f20e-4e32-8bde-c35e4fc9710b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "18c46ba9-e9a7-40b0-a0ec-580ff50471fb",
+			"id": "75efdecc-701e-4416-aa22-f3492be0fc50",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1545f84d-a058-4b6f-ab31-0b35bf0529cd",
+			"id": "8a61aa1a-7dac-4d45-97c0-efd87b55c30e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ea6a897-9daa-4630-bf57-35139ebbbf78",
+			"id": "a2406bf0-42e9-4e6d-94ac-4a487cac8152",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8ab381d2-7b9f-4359-88b1-dab2e0161312",
+			"id": "7efcc902-a076-4271-a83f-0e722ffd800a",
 			"key": "groupzone",
 			"value": ""
 		}
