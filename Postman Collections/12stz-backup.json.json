@@ -7762,6 +7762,58 @@
 					"response": []
 				},
 				{
+					"name": "учитывать подарки 10 шт. Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Максимальная количество товаров включает подарки, ограничения есть\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"больше 9 товаров\");\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "4e1b4386-753c-4202-a3f7-8e3b87ba6a6c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"36ef6536-6617-4746-8aef-893926481b78\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Изменение статуса зоны на false",
 					"event": [
 						{
@@ -11060,30 +11112,30 @@
 	],
 	"variable": [
 		{
-			"id": "adae7fa7-4334-4641-b473-3769f0579e85",
+			"id": "49a1ecb1-1e3b-499a-bb98-a10cb9b872b5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "31e7cfe2-c329-4779-8ce7-2cb2e8cc6649",
+			"id": "d2a00f5c-f29b-4893-a4f4-3d399d5c2e9e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "13c58d94-3441-4c5f-98f4-76fd5516d3a2",
+			"id": "cdbe6511-4a3d-4337-a15b-cd935e804715",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ac0a8f5-e7e4-4e42-abb5-1dd1c833b9b8",
+			"id": "42bcbe6f-69d1-4c3d-b803-134beae2d388",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a26db224-cbe4-4339-9d75-4f115f3eaf48",
+			"id": "d8f012d1-f769-4725-a028-828918dd51ef",
 			"key": "groupzone",
 			"value": ""
 		}
