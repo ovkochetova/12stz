@@ -8055,12 +8055,12 @@
 									"var jsonData = JSON.parse(responseBody);\r",
 									"pm.environment.set(\"id\", jsonData.id)\r",
 									"pm.environment.set(\"name\",jsonData.name);\r",
-									"pm.environment.set(\"geoIds\", jsonData.geoIds.map(item=>item.geoIds).join(', '))\r",
+									"pm.environment.set(\"geoIds\", jsonData.geoIds.map(item=>item.geoIds).join('\\n '))\r",
 									"\r",
-									"console.log(jsonData.geoIds.map(item=>item.geoIds).join(','))\r",
+									"console.log(jsonData.geoIds.map(item=>item.geoIds).join('\\n '))\r",
 									"\r",
 									"\r",
-									"pm.environment.set(\"zoneIds\", jsonData.zones.map(z => z.id).join('\\n '));"
+									";"
 								],
 								"type": "text/javascript"
 							}
@@ -11246,35 +11246,35 @@
 	],
 	"variable": [
 		{
-			"id": "e3c38b6f-fa65-40d7-b9bf-d5238417e8b8",
+			"id": "56ed1a37-9cc8-4719-942d-e198764330f7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ddec4dd8-d267-48dc-9772-db23c7b269d0",
+			"id": "9ceef0c1-cb37-4aa8-a7ef-97b1fa35dc60",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "386e1daf-50a3-4b61-a9af-c12bd22d0210",
+			"id": "cceb1cb0-47a5-4e6f-b1c3-30d383706470",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "912756f1-005f-4525-a2d0-fa9167f1c1b7",
+			"id": "e5cf053e-86c9-43dd-bd35-7eb07028672f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1d1c15bb-c5f8-4426-98a0-7b9beb25058b",
+			"id": "e6cc28a8-3238-4834-96dc-d1292f7015a5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "544ef26b-cf38-47da-8ebc-29074b844a09",
+			"id": "c876ded4-ca69-41fc-890d-242a06bfd48c",
 			"key": "zone",
 			"value": ""
 		}
