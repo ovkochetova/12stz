@@ -9364,11 +9364,11 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"let jsonData = pm.response.json();\r",
+									"/*let jsonData = pm.response.json();\r",
 									"pm.test(\"Типы доставки есть\", () => {\r",
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"})\r",
-									""
+									"*/"
 								],
 								"type": "text/javascript"
 							}
@@ -11054,25 +11054,25 @@
 	],
 	"variable": [
 		{
-			"id": "318469d8-3fe2-492d-afae-902ee35dd207",
+			"id": "ac094586-cc72-4da8-8ad1-e2c7099c2df8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "47090624-a345-4366-b697-6bd89f29ff42",
+			"id": "01edc8fa-f16b-497c-a74a-ae874e4b15b1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6dab3d4d-0a92-47c8-9f89-9719ad5aa574",
+			"id": "b4d59bdf-84c6-46ca-a31b-0894d6fc5ea3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e94740c-ed0d-4502-8d68-6edb6be18ac3",
+			"id": "621092ea-498b-4c5c-ac37-27e2bc14d968",
 			"key": "TKM",
 			"value": ""
 		}
