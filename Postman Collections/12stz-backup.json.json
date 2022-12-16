@@ -7755,6 +7755,18 @@
 				},
 				{
 					"name": "Изменение статуса зоны на false",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "c16e749a-8a65-482f-b493-72250f18f0d6",
+								"exec": [
+									"pm.collectionVariables.get(\"groupzone\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "27718748-6014-418c-992a-0e32acafad54",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -7779,7 +7791,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{value}}\",\n  \"isActive\": false,\n  \"zoneIds\": [\n    62699813,\n    -77362126\n  ]\n}"
+							"raw": ""
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone-group/:id",
@@ -11062,25 +11074,25 @@
 	],
 	"variable": [
 		{
-			"id": "3f469850-f4fb-49a6-bd38-0212a8394e17",
+			"id": "4c6da6bd-8d27-4c07-a659-95b3453c969e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fbb051e0-23f5-4dc0-addf-8afd45ede263",
+			"id": "1db0c01f-33cc-4d9c-a508-e9fb91fca7cb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "33479e65-ec7b-43d8-a512-e93634361348",
+			"id": "542fc86b-5683-4ae3-8d20-235577a622e0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bd8a66d7-f362-4ba0-9f09-f7ba82f4415c",
+			"id": "6536e29e-f0b0-43bc-90fd-69d925777bdb",
 			"key": "TKM",
 			"value": ""
 		}
