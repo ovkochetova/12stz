@@ -7852,7 +7852,7 @@
 					"response": []
 				},
 				{
-					"name": "Изменение статуса зоны на false Copy",
+					"name": "Изменение статуса зоны на true",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -11176,30 +11176,30 @@
 	],
 	"variable": [
 		{
-			"id": "b09543de-8b49-4c16-87e2-f04d632f0ab1",
+			"id": "9c70726e-bdba-4d80-bc23-b8b1261afa3f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "54e766b0-5b56-48e9-97b1-890fcfbc4913",
+			"id": "06e53a33-266b-41c7-ad3e-1854d595d1d1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cd26ae5b-9007-4e0d-933d-c5cde10e1e78",
+			"id": "77fe6327-1b7d-4519-9b0c-d4c03ac78a8d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aeb55b47-38ec-48fe-9b55-ab4b8a73128b",
+			"id": "b8db3cfa-241f-4a25-9338-94e2b06fcc2d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5aac04a4-f414-4a71-9d36-44604d0f488a",
+			"id": "559d31b7-19db-430e-9cfe-4ed8aff645d6",
 			"key": "groupzone",
 			"value": ""
 		}
