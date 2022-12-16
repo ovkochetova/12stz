@@ -7703,13 +7703,20 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"var groupzone = pm.response.json();\r",
+									"/*var groupzone = pm.response.json();\r",
 									"console.log(groupzone)\r",
 									"\r",
-									"pm.collectionVariables.set(\"groupzone\", groupzone);\r",
+									"pm.collectionVariables.set(\"groupzone\", groupzone);*/\r",
 									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"id\", jsonData.id)"
+									"pm.environment.set(\"name\", jsonData.name);\r",
+									"pm.environment.set(\"isActive\", jsonData.isActive);\r",
+									"\r",
+									"\r",
+									"\r",
+									"\"name\": \"mollit tempor et culpa\",\r",
+									"  \"isActive\": true,\r",
+									"  \"zoneIds\""
 								],
 								"type": "text/javascript"
 							}
@@ -11087,30 +11094,30 @@
 	],
 	"variable": [
 		{
-			"id": "f783a7fb-bb8a-4661-8fb7-1969be8ac1a0",
+			"id": "2fada98f-49bf-4939-8f47-d77412ffa832",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3f7a8480-e83f-4585-995e-2e7170c2d461",
+			"id": "40b2f73a-e14d-410a-bb85-4d48f174d911",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dba7cc0d-c8dc-48c7-974d-caff1caf19ec",
+			"id": "5cec1d9c-9c09-458e-bdcb-3c12c725080b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "05562fa9-2688-482b-bf69-fcedafa4d7af",
+			"id": "59fe11cc-6b0b-4927-9155-0530dc74deea",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f4735801-8a20-461e-9430-61ad7ea6d096",
+			"id": "f63adca2-b5c8-4264-adff-3c2e97f63b70",
 			"key": "groupzone",
 			"value": ""
 		}
