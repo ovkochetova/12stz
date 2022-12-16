@@ -7703,20 +7703,13 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"/*var groupzone = pm.response.json();\r",
+									"var groupzone = pm.response.json();\r",
 									"console.log(groupzone)\r",
 									"\r",
-									"pm.collectionVariables.set(\"groupzone\", groupzone);*/\r",
+									"pm.collectionVariables.set(\"groupzone\", groupzone);\r",
 									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"id\", jsonData.id);\r",
-									"pm.environment.set(\"name\", jsonData.name);\r",
-									"pm.environment.set(\"isActive\", jsonData.isActive);\r",
-									"pm.environment.set(\"zoneIds\", jsonData.zones.map(z => z.id).join(', '));\r",
-									"\r",
-									"\r",
-									"\r",
-									""
+									"pm.environment.set(\"id\", jsonData.id)"
 								],
 								"type": "text/javascript"
 							}
@@ -7754,7 +7747,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "99"
+									"value": "145"
 								}
 							]
 						}
@@ -7769,7 +7762,7 @@
 							"script": {
 								"id": "c16e749a-8a65-482f-b493-72250f18f0d6",
 								"exec": [
-									"/*let body = pm.collectionVariables.get('groupzone');\r",
+									"let body = pm.collectionVariables.get('groupzone');\r",
 									"console.log(body);\r",
 									"\r",
 									"body.isActive = false;\r",
@@ -7777,7 +7770,7 @@
 									"//     id: \"{{id}}\"\r",
 									"// })\r",
 									"pm.request.body.raw = body;\r",
-									"console.log(body);*/\r",
+									"console.log(body);\r",
 									"\r",
 									"\r",
 									"\r",
@@ -7811,7 +7804,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"zoneIds\": [\n    {{zoneIds}}\n  ]\n}"
+							"raw": "{\n  \"name\": \"mollit tempor et culpa\",\n  \"isActive\": true,\n  \"zoneIds\": [\n    62699813,\n    -77362126\n  ]\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone-group/:id",
@@ -11074,7 +11067,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2980ced9-4f23-4a1b-ab19-aaa7e9b4a527",
+				"id": "0c6b63d4-69f1-4ae3-bc3f-50412e6850a6",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11084,7 +11077,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ebd37546-bc93-4751-b254-7c566e423c34",
+				"id": "55d7e9bd-0019-46f9-ada9-9b8201ec1e5f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11094,30 +11087,30 @@
 	],
 	"variable": [
 		{
-			"id": "e60753d8-1030-4301-b111-da438af7f7d7",
+			"id": "f783a7fb-bb8a-4661-8fb7-1969be8ac1a0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "08df9bfb-d2cc-4841-a321-0d15a932509d",
+			"id": "3f7a8480-e83f-4585-995e-2e7170c2d461",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "70899254-d9ba-41e7-ae89-137104b3f331",
+			"id": "dba7cc0d-c8dc-48c7-974d-caff1caf19ec",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e813631f-00cb-4f62-bbf8-598909b35d67",
+			"id": "05562fa9-2688-482b-bf69-fcedafa4d7af",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4a1a7766-d138-44da-94d9-73811cb65b5f",
+			"id": "f4735801-8a20-461e-9430-61ad7ea6d096",
 			"key": "groupzone",
 			"value": ""
 		}
