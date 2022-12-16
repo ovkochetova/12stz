@@ -10955,7 +10955,13 @@
 									"pm.test(\"Ограничение по категории для типов доставки не активно\", () => {\r",
 									"    let jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"})"
+									"})\r",
+									"\r",
+									"\r",
+									"\r",
+									"pm.test(\"Доставка этой категории не осуществляется\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Доставка этой категории не осуществляется\");\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -11238,35 +11244,35 @@
 	],
 	"variable": [
 		{
-			"id": "6e82faa5-a054-48de-878d-54f5118c80c3",
+			"id": "d9a4d091-bdce-49ca-9dcf-7b720cafb7c1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e563a54f-5fe0-4d65-9170-b2f3026f7887",
+			"id": "eb5f8944-276d-4413-9576-f69af554f72e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "917fe37e-f17f-4bf7-a59d-7cd7019fd681",
+			"id": "0da32215-5964-4589-a65d-df7a988a3762",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d844b328-6fd8-4dba-9ed2-4cb09a0f25af",
+			"id": "2253560f-e371-48ae-9e57-7ba8a4c8a4aa",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8d4a6443-66f9-4ccf-86fd-ac6cbe317018",
+			"id": "8ecd210f-17e5-4743-bf72-e78b182fccae",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "eb620458-65db-4a18-a436-c8169e49609e",
+			"id": "78512a79-278c-46f8-bfba-6d268abcb734",
 			"key": "zone",
 			"value": ""
 		}
