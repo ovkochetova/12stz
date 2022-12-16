@@ -8058,11 +8058,9 @@
 									"pm.environment.set(\"id\", jsonData.id)\r",
 									"pm.environment.set(\"geoIds\", jsonData.geoIds)*/\r",
 									"\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Your test name\", function () {\r",
-									"    pm.expect(jsonData.value).to.eql(100);\r",
-									"});\r",
-									""
+									"var zone = pm.response.json();\r",
+									"\r",
+									"pm.collectionVariables.set(\"variable_key\", \"variable_value\");"
 								],
 								"type": "text/javascript"
 							}
@@ -11221,30 +11219,30 @@
 	],
 	"variable": [
 		{
-			"id": "6606a4f5-c569-4fa4-8584-0ad1d8d2447b",
+			"id": "1937c8ab-b73a-43e1-a908-8f394433e490",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3be6f31d-e062-4a8f-a740-9027a1beaf75",
+			"id": "b04da7d5-a8d1-429d-b989-056bc01c7e15",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "454be527-4115-4f36-8960-d5f130ad40f0",
+			"id": "9a0a36ac-b2b8-40b4-9e5b-848cb43e2b80",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "47928eab-e80f-44a5-902d-74a9948cdb06",
+			"id": "c8a1b963-bebc-46fe-9b84-73f53e861ea8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f6c6ec62-9ac3-4812-9a6f-e2301ac77a79",
+			"id": "614f2b1e-4ac2-4d13-b2f1-3117bcf7c889",
 			"key": "groupzone",
 			"value": ""
 		}
