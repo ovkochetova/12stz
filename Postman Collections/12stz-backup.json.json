@@ -8115,8 +8115,7 @@
 							"script": {
 								"id": "e4fddb64-af52-4944-aa03-ae5966c92301",
 								"exec": [
-									"let body = pm.collectionVariables.get(\"zone\");\r",
-									"console.log(body)\r",
+									"\r",
 									"\r",
 									"\r",
 									""
@@ -11248,35 +11247,35 @@
 	],
 	"variable": [
 		{
-			"id": "d9c4b73f-9bce-49e7-a230-e243f2f2c0e2",
+			"id": "f78dce1e-9195-4fa5-b0f4-7c93dc72c1ec",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "99edb8a1-0fb6-4ba4-8d01-1f3dc8c1b78b",
+			"id": "6b87ede6-403b-4d80-b224-1971a52a3fcf",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e78a6f7c-5807-4060-9e2d-45e59c1c548d",
+			"id": "bdd2a4f4-0b2b-4bd8-93fd-5cbba1794e63",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1d276bbe-8321-4fb4-9096-9747238722c5",
+			"id": "aca9d7eb-de73-4150-82da-1f974da96d66",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "633c8973-afb6-4a9a-b531-a61e520e3c4c",
+			"id": "a20f764f-94cd-4cb1-a054-c69fe2921000",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "cd1f03f1-11ae-4935-a18d-e2e9bfc352e4",
+			"id": "8d7682d9-c83e-4cd0-9c42-00cef34ea77a",
 			"key": "zone",
 			"value": ""
 		}
