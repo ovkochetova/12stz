@@ -7703,9 +7703,12 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"isActive\", jsonData.isActive)\r",
-									"pm.environment.set(\"id\", jsonData.id)"
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    \r",
+									"    pm.expect(jsonData.value).to.eql(100);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -11059,25 +11062,25 @@
 	],
 	"variable": [
 		{
-			"id": "35e077a4-3cd1-4d42-94ac-6b00807bd1c5",
+			"id": "fba0c0ca-6896-46a6-9c38-0c6b6bb81c1e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "58154f3f-b650-48f9-aa7a-65046b4419a1",
+			"id": "9d6b1c79-2970-4299-bcda-0b9dbbaff229",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "546b9302-9dfd-43e9-8825-6c94a7ac7d55",
+			"id": "25d4e926-9b98-475a-b010-dfaa66db7c34",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2de58fbd-f1bc-4b8f-9a11-c8c8579f4311",
+			"id": "f719b9f2-c779-4388-bcdc-55bd85cc6f6f",
 			"key": "TKM",
 			"value": ""
 		}
