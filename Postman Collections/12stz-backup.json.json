@@ -7762,7 +7762,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки 10 шт. Copy",
+					"name": "группа зон неактивна",
 					"event": [
 						{
 							"listen": "test",
@@ -11112,30 +11112,30 @@
 	],
 	"variable": [
 		{
-			"id": "49a1ecb1-1e3b-499a-bb98-a10cb9b872b5",
+			"id": "fa8a264c-f58f-46ae-999f-062eadb90088",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d2a00f5c-f29b-4893-a4f4-3d399d5c2e9e",
+			"id": "a5e7cb22-3843-490f-9d4a-f9e070c98172",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cdbe6511-4a3d-4337-a15b-cd935e804715",
+			"id": "02f0da3a-865c-4951-bce2-6e91de0e1818",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "42bcbe6f-69d1-4c3d-b803-134beae2d388",
+			"id": "72a81d76-44e7-4a76-991f-b4ff8c8930ce",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d8f012d1-f769-4725-a028-828918dd51ef",
+			"id": "5c053d4b-452a-4188-a52d-e1eb159da954",
 			"key": "groupzone",
 			"value": ""
 		}
