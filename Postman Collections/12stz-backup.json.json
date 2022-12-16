@@ -11043,30 +11043,30 @@
 	],
 	"variable": [
 		{
-			"id": "905c0ca8-8ba7-4529-ac2c-d9a6e2ebf996",
+			"id": "11f78fc7-e44a-4227-93e8-f8eef28fbb78",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c6eaadd3-282c-406c-a3ff-1e6c131f96a1",
+			"id": "55ec1de8-d8c9-46fd-b1a5-bb6ddeae5b7f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a37f5897-944b-4357-aa68-be616d6142ae",
+			"id": "d473798b-a8e5-4d80-8796-94e93124b8a4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4158d68d-f403-4b39-879f-bd1bc1b199c2",
+			"id": "a7f9eea7-597f-479a-9b7e-6b69b6d1126c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9647db11-4a3b-47dc-b4f7-40136b44ef9d",
+			"id": "2c439b31-7117-439b-9289-3048b9f8b704",
 			"key": "groupzone",
 			"value": ""
 		}
