@@ -8055,9 +8055,9 @@
 									"var jsonData = JSON.parse(responseBody);\r",
 									"pm.environment.set(\"id\", jsonData.id)\r",
 									"pm.environment.set(\"name\",jsonData.name);\r",
-									"pm.environment.set(\"geoIds\", jsonData.geoIds.map(item => item.geoIds).join(',  ' ));\r",
+									"pm.environment.set(\"geoIds\", jsonData.geoIds)\r",
 									"\r",
-									"console.log(jsonData.geoIds.map(item => item.geoIds).join(',  ' ))\r",
+									"console.log(jsonData.geoIds)\r",
 									"\r",
 									"\r",
 									"\r",
@@ -11247,35 +11247,35 @@
 	],
 	"variable": [
 		{
-			"id": "b8feba91-ea14-4f45-bd4f-55443a5a7cb9",
+			"id": "4f775991-a643-490d-8011-c80cb4cb6f37",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2bbec2f1-9418-48eb-9ce9-1b7dd56fbc07",
+			"id": "92ff4f6f-1d55-4027-b84f-62c3cc16706b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "40fb3025-845b-4273-af87-149e2b3e24c2",
+			"id": "97ea82e4-5e80-40ce-94de-c2d8e249053d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0eb18c89-0a96-42de-9bca-70260bdb7f67",
+			"id": "b0df2505-065e-49db-b826-af22e72d5325",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c8caf478-5d9c-43ff-b278-b60d9ac83844",
+			"id": "25723175-e399-4730-b51a-9923d73b64cf",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "cccde61f-c405-4f32-9be0-4455ce50265b",
+			"id": "63997cec-f579-4eed-90bd-542739f7e02c",
 			"key": "zone",
 			"value": ""
 		}
