@@ -3812,6 +3812,56 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "чекбокс доставка отображ в раб днях true",
+					"id": "6fbc25a1-dd84-477b-b0ea-2905e9a10254",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"trackUrl\": \"{{trackUrl}}\",\n  \"hasIntegration\": true,\n  \"isDeliveryUseOnlyWorkingDays\": false,\n  \"isActive\": false\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "68e50d25-3fac-45d5-bb3f-4db70a499697",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "b212974d-2036-48a0-ae8c-83bda0875238"
@@ -11550,35 +11600,35 @@
 	],
 	"variable": [
 		{
-			"id": "bf863df7-431c-428e-aae2-7397a5b4f1d5",
+			"id": "d4a38208-293a-4bee-9b06-4f43fe83e3ec",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a17a22c-8baf-4ed3-966d-2bf55fefd8f3",
+			"id": "7b672a13-d627-46b3-8e29-2a0c4112e337",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1ce8f6fe-d195-4dad-91b8-960e70f06b46",
+			"id": "f7ad0043-0615-4cb3-a73a-60f733f0c5f4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "be120566-e33e-4135-b505-d4ff774a8b8c",
+			"id": "cda662b0-d1af-4dcf-a155-4f0525699ed5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "42411fe3-6269-492b-ac81-f00130ccdd50",
+			"id": "2a64487c-56b1-4778-accc-d5cb6406c1b2",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "4c63c97d-690c-4bb1-9f3e-006d956aee44",
+			"id": "ce026d7a-08ed-41bc-b72f-ad94833673eb",
 			"key": "zone",
 			"value": ""
 		}
