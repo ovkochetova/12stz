@@ -3764,7 +3764,7 @@
 					"response": []
 				},
 				{
-					"name": "чекбокс доставка отображ в раб днях",
+					"name": "чекбокс доставка отображ в раб днях false",
 					"id": "315692ea-3d2d-4a4b-987b-086aac54e327",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -11550,35 +11550,35 @@
 	],
 	"variable": [
 		{
-			"id": "9417db3c-43fe-4d82-bb8c-e7e6952b2d81",
+			"id": "bf863df7-431c-428e-aae2-7397a5b4f1d5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c2a1ac20-49b2-45b1-8fb1-1dc5ea23f82d",
+			"id": "9a17a22c-8baf-4ed3-966d-2bf55fefd8f3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "831e1378-fc57-4679-a2cd-377a15103d94",
+			"id": "1ce8f6fe-d195-4dad-91b8-960e70f06b46",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "622e82cb-fb7c-4978-9356-17ab08fff091",
+			"id": "be120566-e33e-4135-b505-d4ff774a8b8c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1f6a5c82-3851-4f51-9a9d-8745ec1eeaf5",
+			"id": "42411fe3-6269-492b-ac81-f00130ccdd50",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "52f24d32-3b27-4a39-bccd-043815497a15",
+			"id": "4c63c97d-690c-4bb1-9f3e-006d956aee44",
 			"key": "zone",
 			"value": ""
 		}
