@@ -3850,12 +3850,12 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"})\r",
 									"\r",
-									"pm.test(\"Body matches string\", function () {\r",
+									"pm.test(\"Флаг 'Доставка в рабочих днях' не отображается\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\"is_delivery_use_only_working_days\");\r",
 									"});\r",
 									"\r",
 									"\r",
-									"pm.test(\"Your test name\", function () {\r",
+									"pm.test(\"Флаг 'Доставка в рабочих днях' не отображается\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.delivery_types[0].is_delivery_use_only_working_days).not.to.exist;\r",
 									"});"
@@ -11753,35 +11753,35 @@
 	],
 	"variable": [
 		{
-			"id": "470410a0-ee4d-4d0d-9379-e85c3fcb20e2",
+			"id": "4e5f438c-d8ec-4b3b-8fc2-22ca781405e6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e987ed1a-e075-4f4f-934a-b22158dd623c",
+			"id": "f7b60f28-da74-4137-a25b-c9b71820087f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aff54cfc-03d3-4953-9662-fadd32760f35",
+			"id": "b7ed4ec5-a2f5-47c6-b5be-86302b71c048",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dbb7ba76-e11b-45bf-9515-fe99e4c8489c",
+			"id": "83b1da82-ba21-4c0e-8fb5-318d9bfe1eeb",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e1220fb4-f517-48f0-b01b-de87a7f33e78",
+			"id": "f40b80a3-7fc0-4f1c-b577-e9e392b8d4b3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "6394fbcd-e2c8-492d-b808-d4556b05fc5b",
+			"id": "bc19dbba-6f63-4383-87b9-a8bd058fd235",
 			"key": "zone",
 			"value": ""
 		}
