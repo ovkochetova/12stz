@@ -7714,7 +7714,7 @@
 									"pm.environment.set(\"isActive\", jsonData.isActive);\r",
 									"pm.environment.set(\"zoneIds\", jsonData.zones);\r",
 									"\r",
-									"console.log(\"zoneIds\", jsonData.zones))\r",
+									"console.log(\"zoneIds\", jsonData.zones);\r",
 									"\r",
 									"\r",
 									"\r",
@@ -11246,35 +11246,35 @@
 	],
 	"variable": [
 		{
-			"id": "3c27a9ac-444f-4126-83bd-884ce62d8037",
+			"id": "faf3e52d-f3b6-4d17-a6af-6cb2893f2eb7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7afe8b14-8afd-4410-8293-27a0cdf0e637",
+			"id": "ff9c93bc-578b-4640-bae1-911bc2f4b649",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "be232712-ece2-4473-b494-3c0232dbb4ff",
+			"id": "ce2f9840-bd5c-48d4-96c2-c330e30867f1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "54d53d6a-3486-4ef4-b1f1-d3492fcd44a9",
+			"id": "e44698d3-6e17-4935-8966-1a57fe297779",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d74817ad-4151-4831-bd12-4cf7e840b588",
+			"id": "85ad6311-0fda-4ef4-b298-d7d09cee073f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c95c2f1a-629f-4723-a067-cb98deb926c3",
+			"id": "614dbbdf-9909-4883-8bdc-219fed0c318b",
 			"key": "zone",
 			"value": ""
 		}
