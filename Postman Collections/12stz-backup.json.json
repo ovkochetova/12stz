@@ -8197,6 +8197,55 @@
 					"response": []
 				},
 				{
+					"name": "зон не Активна",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "e71aa331-27ea-481e-b2b8-91c47ae5a6e7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"36ef6536-6617-4746-8aef-893926481b78\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Изменение статуса зоны на true",
 					"id": "ad9ea1cd-6be0-4aab-a46f-55e026979dea",
 					"protocolProfileBehavior": {
@@ -11272,35 +11321,35 @@
 	],
 	"variable": [
 		{
-			"id": "49a2b4aa-c718-46ef-87d9-c5f48e935589",
+			"id": "abfff544-e0b3-4253-bb82-843c7fe83981",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b89f59e4-59a2-426f-92bc-774c89235332",
+			"id": "bfd738df-2f1e-4d1d-bc13-91dc6b39007b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b6442d0-b68a-4c50-933b-b06542ed4d92",
+			"id": "37e2b841-97d9-460f-bbe1-f62f57f62e1f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1ad81147-d763-462b-84dd-af742f901edd",
+			"id": "a3a5ce99-0c7e-4592-ba81-fc0dd56ecb8d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "0ca929a9-2bd4-492b-8f1b-ce143264e851",
+			"id": "753f0abd-71eb-4c40-8b02-7652f9303089",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2f5fc7e2-c346-4e07-9a75-fccd28640fab",
+			"id": "aef8bc62-2913-42c1-83c2-fb33cf6b819d",
 			"key": "zone",
 			"value": ""
 		}
