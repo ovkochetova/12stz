@@ -7790,7 +7790,8 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Your test name\", function () {\r",
+									"\r",
+									"pm.test(\"Статус зоны не Активна\", function () {\r",
 									"   pm.expect(jsonData.isActive).to.eql(false);\r",
 									"});"
 								],
@@ -7822,7 +7823,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"zoneIds\": [\n    {{zoneIds}}\n  ]\n}"
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"zoneIds\": [\n    {{zoneIds}}\n  ]\n}\n"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone-group/:id",
@@ -11246,35 +11247,35 @@
 	],
 	"variable": [
 		{
-			"id": "aef0cdb0-499c-409c-80a5-131f242dbce3",
+			"id": "439a7ae4-caf4-4d50-a372-ede800b8b1f0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b26c28f-ac16-4568-9757-949c965227d8",
+			"id": "d7126ee7-3d11-4f24-aa13-004ef0ed0c4b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "40d2e558-15d8-41c7-bf52-611b59f3b519",
+			"id": "4a2aaa3e-afde-482a-a806-33b7e8442b0b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b197dfe2-bc52-4732-8401-5f20c604a5fa",
+			"id": "dc5371e6-edd9-495f-9d8c-ff542f2b06b4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5c93fdad-f495-474e-8497-64fcb2399265",
+			"id": "547a0e0f-5036-405f-bf48-890fc6372913",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "adf43024-9eb3-48d4-b7f0-84a8c55668a5",
+			"id": "2684426a-f18d-4218-9731-d1f22307283b",
 			"key": "zone",
 			"value": ""
 		}
