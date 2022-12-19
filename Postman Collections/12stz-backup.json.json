@@ -6706,7 +6706,7 @@
 					"response": []
 				},
 				{
-					"name": "чекбокс учит подарки и доставку в max кол-ве товаров Активны",
+					"name": "чекбокс учит подарки и доставку в max стоимости Активны",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -6751,6 +6751,95 @@
 						}
 					],
 					"id": "d3bab48c-6daf-42ff-9bb1-a1aefd785fac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "чекбокс учит подарки и доставку в max кол-ве товаров Активны Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isProductQuantityBorderIncludePresent = true,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Максимальная количество товаров включает подарки\", function () {\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "f4942a89-1cbe-4c36-a09e-b513bd21c78f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -11842,35 +11931,35 @@
 	],
 	"variable": [
 		{
-			"id": "30492fe4-a383-4bf0-bf79-ae211033b160",
+			"id": "d8cad3ae-713e-4bbc-a1b6-1183fdfa605f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a358042-895d-4fcb-ba53-136932d3db08",
+			"id": "24610517-77be-4a8b-90b6-d9a3e2ebd466",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9c5999b6-481a-472d-bf22-cf5462b5de95",
+			"id": "a4702c7d-a2eb-48f5-bb6b-4010e1baee57",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9f54e611-df76-4c17-ae36-e0e5a6afd620",
+			"id": "9eaf7eeb-5d25-475d-9c11-82ce8c577676",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5405c723-2095-4503-9f74-9dfccc5298d2",
+			"id": "e046c94d-bacb-403b-8832-56b026e757c1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1703b222-d0c4-487e-ac0a-4ef34136dcfb",
+			"id": "5823104a-4d5f-4ed5-95f4-ebaefe963b75",
 			"key": "zone",
 			"value": ""
 		}
