@@ -8121,7 +8121,9 @@
 							"script": {
 								"id": "e4fddb64-af52-4944-aa03-ae5966c92301",
 								"exec": [
-									""
+									"let body = pm.collectionVariables.get(\"zone\");\r",
+									"\r",
+									"body.id = delete"
 								],
 								"type": "text/javascript"
 							}
@@ -8151,7 +8153,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": [{{geoIds}}]\n}"
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": [{{geoIds}}]\n}\n"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone/:id",
@@ -11250,35 +11252,35 @@
 	],
 	"variable": [
 		{
-			"id": "80a522ec-adeb-4674-9121-326c2ec72af2",
+			"id": "13be32ab-288d-4241-91cd-f67379c599e9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cfb2cac8-4bc1-474f-abef-a3925a018d56",
+			"id": "cb908839-702c-4d80-9234-1805b2822a47",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "89602264-f1a6-4eb1-bf55-460e99f067f1",
+			"id": "22987ebd-5004-4ddf-90aa-64f3712d5b14",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a0f7c3f-b12c-4935-94b7-82c6f647894a",
+			"id": "dfffcf16-3ec4-43c4-9c6d-01b2adcbc281",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e32c58d2-b509-42dc-acdd-d6172c64abe7",
+			"id": "887f302e-d256-4680-8605-9cac152d72e3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "dedb60ec-4c54-4410-bb33-1895ade07e39",
+			"id": "9ad5fde1-96a8-4e71-9b5a-ff10778f7c8f",
 			"key": "zone",
 			"value": ""
 		}
