@@ -7993,7 +7993,7 @@
 					"response": []
 				},
 				{
-					"name": "группа зон активна",
+					"name": "группа зон Активна",
 					"event": [
 						{
 							"listen": "test",
@@ -11321,35 +11321,35 @@
 	],
 	"variable": [
 		{
-			"id": "3d9f44da-3059-47f3-ac61-92596855ac7e",
+			"id": "702ab3ce-ddba-4b06-a71c-be649961ff5a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ad0d7a48-56cd-48bd-b1db-ab6de170a2eb",
+			"id": "6f8d9019-c378-4929-bbc0-11c083ea5d35",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "808907be-0d4e-4efd-9e18-15517ad5002f",
+			"id": "d5bc5f70-b750-4c5a-9843-9e1d4a9922c1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "71ef1e18-aeeb-4f57-bfa7-cadabade3591",
+			"id": "31033847-e8b0-4297-a10c-604a5b3ee2a5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "6c726a08-60cc-4568-9583-69e04de5f384",
+			"id": "04e8505b-c835-4b55-b383-f2e776d1afc7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "fc0c3b95-0a24-48d6-ab80-3e282b2d358f",
+			"id": "d79f2845-5817-4b27-8048-3eaaff204e8e",
 			"key": "zone",
 			"value": ""
 		}
