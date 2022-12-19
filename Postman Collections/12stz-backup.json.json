@@ -3853,7 +3853,12 @@
 									"pm.test(\"Body matches string\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\"is_delivery_use_only_working_days\");\r",
 									"});\r",
-									""
+									"\r",
+									"\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.delivery_types[0].is_delivery_use_only_working_days).not.to.exist;\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -11748,35 +11753,35 @@
 	],
 	"variable": [
 		{
-			"id": "f1c0d495-3fc5-4708-8ff9-69a648b818e8",
+			"id": "7fd09799-834f-4dbb-a60e-4f715fe31d56",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0c8ad597-6a18-41b1-aa1d-b3f0bb29636e",
+			"id": "ce13338a-1198-41cb-b992-81addffe079c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5efdbbec-3734-4592-bf1f-8e4de38203b2",
+			"id": "0b51f99d-ed46-474b-901f-ab3ec69503ae",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "803c7035-61c1-47a0-a224-02255c343002",
+			"id": "1bf4bbfe-bc6d-474f-b835-5901f510d201",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b3a7165b-da4e-4aac-9da2-fbfe9a9f620c",
+			"id": "a61b1a4b-03a6-49b7-ab10-8fc963d1849f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "acb5a7cb-f799-4c48-b7e7-340a5287fcbf",
+			"id": "33d4db4a-5005-48e2-bf3a-57afc23c5824",
 			"key": "zone",
 			"value": ""
 		}
