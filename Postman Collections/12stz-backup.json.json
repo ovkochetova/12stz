@@ -8244,6 +8244,91 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Изменение статуса зоны на true",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e4fddb64-af52-4944-aa03-ae5966c92301",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"zone\");\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = false;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "c91cb2e0-a4d4-4bea-9f0d-bd9f6bfc714b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Статус зоны не Активна\", function () {\r",
+									"       pm.expect(jsonData.isActive).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "f672554b-2f45-4710-bd0c-8eb45c7d6905",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/zone/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"zone",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "83adcbbf-eb28-406f-9eb4-cbf5c4c656b5",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "a6d1c1a3-2076-47a5-be5c-5263a4540f5f"
@@ -11268,35 +11353,35 @@
 	],
 	"variable": [
 		{
-			"id": "266e6ffd-1f37-484e-a5dd-297c2313df9c",
+			"id": "70ed6687-cd9d-48e8-8307-0b700564466f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b5600870-3a8a-456e-b978-ebf63a71dd4a",
+			"id": "4ef59cd1-6c31-4d03-a08f-5a183c15bcb4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8507931c-286b-4abf-9ae3-9f68c28c3a1e",
+			"id": "63c513a5-b4c8-4b99-a6e3-72e6ba8da25e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f7157212-48bf-4409-ab79-11248cf647e1",
+			"id": "b327b01b-734e-43e7-9d37-82025aef3087",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9d5cd56c-d6de-499e-b292-8c4da241b3b6",
+			"id": "6b0a1368-2d0d-463d-8548-724f2227f4a2",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e7258c23-d0ac-4576-9d53-225a55562568",
+			"id": "a7e092ac-2af8-43ba-b366-4c91376322a1",
 			"key": "zone",
 			"value": ""
 		}
