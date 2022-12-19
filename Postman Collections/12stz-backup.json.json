@@ -3855,7 +3855,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"pm.test(\"Флаг 'Доставка в рабочих днях' не отображается\", function () {\r",
+									"pm.test(\"Флаг 'Доставка в рабочих днях' не существует\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.delivery_types[0].is_delivery_use_only_working_days).not.to.exist;\r",
 									"});"
@@ -6702,6 +6702,95 @@
 							}
 						},
 						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "чекбокс учитывать подарки в max кол-ве товаров Активен Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isProductQuantityBorderIncludePresent = true,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Максимальная количество товаров включает подарки\", function () {\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "d3bab48c-6daf-42ff-9bb1-a1aefd785fac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -11753,35 +11842,35 @@
 	],
 	"variable": [
 		{
-			"id": "72f989d5-26d0-4a9a-b9ad-15d0bf6b59d9",
+			"id": "bd053006-046b-42b0-b1d1-6c9087f0613a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "70149cea-2018-4fd6-bb7b-232bf2e17efe",
+			"id": "399be69b-b15f-482e-a260-517e07e64f7b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c1f1275d-e527-4ad6-99de-34ce30775838",
+			"id": "6159ef2c-8e3f-41fe-9f3e-d02377d8f83b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6a32f32e-aa3e-4635-b5c2-7aba07e12561",
+			"id": "f21fb9c8-a265-4d05-ac12-648fb0286f25",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e6d7c98c-329a-4cd4-bb98-1fc47159ac48",
+			"id": "2e1b5f82-4029-410f-8aa2-3f30f0419228",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d62d8b72-914a-4cf8-a1a3-d392087ed116",
+			"id": "2d4d4cca-cc8e-41e8-8b33-2fc83569ef9e",
 			"key": "zone",
 			"value": ""
 		}
