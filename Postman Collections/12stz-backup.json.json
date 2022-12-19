@@ -3568,7 +3568,7 @@
 					"response": []
 				},
 				{
-					"name": "Инзменение статуса Юр. Лица на false",
+					"name": "Изменение статуса Юр. Лица на false",
 					"id": "287a3ca2-f152-447c-9488-855937bf9ccd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -11453,35 +11453,35 @@
 	],
 	"variable": [
 		{
-			"id": "a5ed5808-3de9-4092-9023-b14f443b3f3d",
+			"id": "22753afe-4fb9-4bb8-bf87-a6576e945ba6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f8a9a51b-3506-4263-8870-1bd654997587",
+			"id": "e9d80e7b-bf93-4823-9e60-db3213b07265",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f2fb99b0-465a-4972-9a51-28d574fa3aa5",
+			"id": "2db962f4-7044-43dc-a786-bca466e18e0f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0d70a27a-2ca0-4878-ba84-faaf9998577f",
+			"id": "af146b86-a66f-48e8-9ef4-1ab60b53c9e4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7c5fd804-8a10-4c51-96a5-c75d33111436",
+			"id": "fc76204d-895b-4239-976e-0ecde0eef06d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "366f22d2-1a52-464b-a214-dee695124cb4",
+			"id": "70f4696a-8686-4ba4-9553-47cf8717586c",
 			"key": "zone",
 			"value": ""
 		}
