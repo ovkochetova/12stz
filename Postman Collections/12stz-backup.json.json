@@ -6795,7 +6795,7 @@
 					"response": []
 				},
 				{
-					"name": "чекбокс учит подарки и доставку в max кол-ве товаров Активны Copy",
+					"name": "чекбокс учит подарки и доставку в max кол-ве товаров Активны",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -11931,35 +11931,35 @@
 	],
 	"variable": [
 		{
-			"id": "d8cad3ae-713e-4bbc-a1b6-1183fdfa605f",
+			"id": "fbece85a-0502-4637-93af-f29b19fd414a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "24610517-77be-4a8b-90b6-d9a3e2ebd466",
+			"id": "29374d80-a290-4871-b82b-6a14e091c4b2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4702c7d-a2eb-48f5-bb6b-4010e1baee57",
+			"id": "40ad10ed-4bf6-410f-ac0e-9194d895e89b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9eaf7eeb-5d25-475d-9c11-82ce8c577676",
+			"id": "0de99b14-cee5-4f8f-83fe-8b33db3fb962",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e046c94d-bacb-403b-8832-56b026e757c1",
+			"id": "489785dd-2422-48e6-8493-6b7a900afa6d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5823104a-4d5f-4ed5-95f4-ebaefe963b75",
+			"id": "0f98de9e-73e4-471e-8b95-6ed8292b5883",
 			"key": "zone",
 			"value": ""
 		}
