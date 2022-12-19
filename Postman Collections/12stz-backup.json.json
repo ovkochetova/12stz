@@ -3981,7 +3981,7 @@
 									"    pm.expect(pm.response.text()).to.include(\"is_delivery_use_only_working_days\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Флаг 'Доставка в рабочих днях' is true\", function () {\r",
+									"pm.test(\"Флаг 'Доставка в рабочих днях' истинно\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.delivery_types[0].is_delivery_use_only_working_days).to.eql(true);\r",
 									"});"
@@ -11753,35 +11753,35 @@
 	],
 	"variable": [
 		{
-			"id": "e0e67bdd-5b5f-4e05-ae79-924c00187df6",
+			"id": "71375d6c-0d58-4ec5-a394-9f688c90d0fe",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e7817726-7d16-4c74-8ced-9761ad616994",
+			"id": "fc1321b8-9316-4e25-8c1d-e2046efd6677",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ade2488b-5b13-4b61-ad66-55163a905550",
+			"id": "13819669-2ba0-463e-a24a-b80300d74810",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d8247af7-f18f-451b-a15e-cb87e3e7ec04",
+			"id": "fe4a8e08-f0d5-4608-968e-e9e430910d92",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7aeeeb49-7dac-43ac-aa46-e55d3fff5a71",
+			"id": "55e563c6-b810-4752-a532-f743344a3dae",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2c69c802-5028-4cf1-91c4-669912fd276b",
+			"id": "de7c6f2d-03aa-49bd-8243-e948b14ff7ba",
 			"key": "zone",
 			"value": ""
 		}
