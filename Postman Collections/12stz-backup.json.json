@@ -8122,7 +8122,10 @@
 								"exec": [
 									"let body = pm.collectionVariables.get(\"zone\");\r",
 									"\r",
-									"body.id = delete"
+									"delete body.id;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)"
 								],
 								"type": "text/javascript"
 							}
@@ -8152,7 +8155,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"isActive\": false,\n  \"geoIds\": [{{geoIds}}]\n}\n"
+							"raw": "\n"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/zone/:id",
@@ -11251,35 +11254,35 @@
 	],
 	"variable": [
 		{
-			"id": "46bc4b73-8edf-4fb2-ace5-0384ce242e5c",
+			"id": "892359db-49bd-4bea-bbb7-54df4f6c5abc",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "534f6e88-c7e6-406e-9fca-209dabaa360d",
+			"id": "96d10742-d606-46ba-ad55-3eaa45f5dfd8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "60247f9d-bd81-4ee4-9269-fa704044164d",
+			"id": "c2aca7cf-50e5-4590-a24d-99519f3e9fab",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "84821a65-7531-447d-a887-4dd58db3b2e9",
+			"id": "73adf862-5a4c-4188-9dcd-1bd8eb24bef3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cf121d51-99d6-4981-8d4d-5abafa45bf93",
+			"id": "5f885b9c-72c1-4716-a4de-e48de35cf41d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "975a25f5-a600-4983-92fd-bf7ac60d3246",
+			"id": "c47d05d5-aa61-4386-ac5f-21a1c71cb9cc",
 			"key": "zone",
 			"value": ""
 		}
