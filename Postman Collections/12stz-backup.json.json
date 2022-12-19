@@ -3617,6 +3617,56 @@
 					"response": []
 				},
 				{
+					"name": "ЮЛ не Активно",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"})\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "fb5b3dda-07fe-4824-888b-b809e7556c36",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Инзменение статуса Юр. Лица на true",
 					"id": "0c6a15dd-3a8f-43c4-9271-af722b9c4e52",
 					"protocolProfileBehavior": {
@@ -11403,35 +11453,35 @@
 	],
 	"variable": [
 		{
-			"id": "078a7714-cb67-4dd3-9a4c-7fecd1c0b4d5",
+			"id": "d7c35d10-7739-457d-beec-b412b225e1ab",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "42da2a43-d561-4182-8639-6fc6e2adb62a",
+			"id": "b56ce9f5-c804-47d9-93de-8e886bd94f37",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "51ad1920-84b5-49eb-ac0d-1e1e9bf6b5ee",
+			"id": "750a44bd-421b-4555-a89e-3c712f8851a3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cd5079b4-218b-49b9-9805-314dd0121d29",
+			"id": "399c88b1-2b01-469a-826f-29cdbdeeb630",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ccf03112-d30e-43b3-9304-67b4df37bb63",
+			"id": "6667ad3b-f24d-4ad5-92d3-fdfa0ed7d6d6",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d0839205-41a6-4c01-9260-08f3d036e951",
+			"id": "6c7ce255-eda1-4e61-8a33-8eb1e947421a",
 			"key": "zone",
 			"value": ""
 		}
