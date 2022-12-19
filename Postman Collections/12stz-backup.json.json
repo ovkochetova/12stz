@@ -3976,10 +3976,10 @@
 									"    pm.expect(pm.response.text()).to.include(\"is_delivery_use_only_working_days\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Body is correct\", function () {\r",
-									"    pm.response.to.have.body(\"is_delivery_use_only_working_days\");\r",
-									"});\r",
-									""
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.delivery_types[0].is_delivery_use_only_working_days).to.eql(true);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -11748,35 +11748,35 @@
 	],
 	"variable": [
 		{
-			"id": "79c5ecf8-4289-4934-b9ee-4f8f4343548f",
+			"id": "f1c0d495-3fc5-4708-8ff9-69a648b818e8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "65fcceb1-9494-457a-a7bd-ec6ba21c07f9",
+			"id": "0c8ad597-6a18-41b1-aa1d-b3f0bb29636e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b2c9d071-3ac7-400d-952e-2831cbce7511",
+			"id": "5efdbbec-3734-4592-bf1f-8e4de38203b2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ffc5ba8-c1e6-4e07-80f8-43e86b457132",
+			"id": "803c7035-61c1-47a0-a224-02255c343002",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1a5206a0-2205-464c-bf81-2eca8f0281a3",
+			"id": "b3a7165b-da4e-4aac-9da2-fbfe9a9f620c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1d4e2bd3-b165-4911-8c6e-48b99fd22c28",
+			"id": "acb5a7cb-f799-4c48-b7e7-340a5287fcbf",
 			"key": "zone",
 			"value": ""
 		}
