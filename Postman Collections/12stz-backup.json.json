@@ -3593,7 +3593,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{value}}\",\n  \"trackUrl\": \"{{trackUrl}}\",\n  \"hasIntegration\": true,\n  \"isDeliveryUseOnlyWorkingDays\": false,\n  \"isActive\": false\n}"
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"trackUrl\": \"{{trackUrl}}\",\n  \"hasIntegration\": true,\n  \"isDeliveryUseOnlyWorkingDays\": false,\n  \"isActive\": false\n}"
 						},
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/transport-company/:id",
@@ -11500,35 +11500,35 @@
 	],
 	"variable": [
 		{
-			"id": "b3f399bb-5990-4019-88de-e872c4d13073",
+			"id": "0e7303c6-e388-46f4-96bb-efccb8aa96d0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "90e7333e-43a5-40d4-ba39-103b48c6c03e",
+			"id": "92514e79-18ca-4df3-a0ba-4aa1cc63c952",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f3ba8046-b778-441f-a075-930b372e578e",
+			"id": "0d6357ad-439f-4e43-9e5f-7004e894bd79",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "54223dbe-8d1d-46ab-aea2-3b2a1c95c993",
+			"id": "687c7658-cfaf-439b-a240-13a16edc9cff",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3b6f42f9-1705-401d-9ab5-f8a3cc0e7a2d",
+			"id": "f0e47d8d-b569-4e10-af25-015deb72d0a6",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "34b75ee9-750c-4426-a83d-6f0d6afa714c",
+			"id": "64d77f22-b1c6-448f-8fa9-3d93a973502f",
 			"key": "zone",
 			"value": ""
 		}
