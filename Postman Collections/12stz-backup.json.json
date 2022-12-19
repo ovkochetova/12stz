@@ -3765,6 +3765,26 @@
 				},
 				{
 					"name": "чекбокс доставка отображ в раб днях false",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6d789e06-fbd3-4b59-9c07-a245e39eb186",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.isDeliveryUseOnlyWorkingDays).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "315692ea-3d2d-4a4b-987b-086aac54e327",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -11700,35 +11720,35 @@
 	],
 	"variable": [
 		{
-			"id": "1718729d-e0d1-4369-88ba-3e2e512a04da",
+			"id": "9272e09c-0db3-40cb-9733-ed2e908e7aa8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b728952c-c048-4e8a-aa2b-a638a4205ae3",
+			"id": "648ec521-e36f-4e6d-815a-19bd96341ea2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "93f0c94b-a6eb-42c3-9eee-c5605f76f4d8",
+			"id": "2534b6d0-d193-49fe-a59e-4185a51eaa45",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "519ec326-f01a-48fe-81c6-46b1c678963f",
+			"id": "1ac1d97b-fe9f-4139-af2e-2bd8624edd12",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c86e9c19-a7a3-4afa-b42b-4438aec26cc6",
+			"id": "2c3d1475-75c4-4a7a-8f3b-1ef47122f968",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a974be07-eb77-4cff-995c-deef337471f4",
+			"id": "189f3a51-4b94-46d8-aee1-0ce784477d58",
 			"key": "zone",
 			"value": ""
 		}
