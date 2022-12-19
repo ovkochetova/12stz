@@ -8244,59 +8244,6 @@
 						"url": "{{url}}"
 					},
 					"response": []
-				},
-				{
-					"name": "Изменение статуса зоны на true",
-					"id": "ad9ea1cd-6be0-4aab-a46f-55e026979dea",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{value}}\",\n  \"isActive\": true,\n  \"geoIds\": [\"\"\n  ]\n}"
-						},
-						"url": {
-							"raw": "https://logistics.12stz.dev/api/v1/zone/:id",
-							"protocol": "https",
-							"host": [
-								"logistics",
-								"12stz",
-								"dev"
-							],
-							"path": [
-								"api",
-								"v1",
-								"zone",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "efb0b051-9633-4925-8e2e-e96df28f58c8",
-									"key": "id",
-									"value": "{{id}}"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "a6d1c1a3-2076-47a5-be5c-5263a4540f5f"
@@ -11321,35 +11268,35 @@
 	],
 	"variable": [
 		{
-			"id": "21dc9fe6-7d49-40e2-a7ec-007566064ed1",
+			"id": "266e6ffd-1f37-484e-a5dd-297c2313df9c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d20b892b-a4c3-46cc-82b0-517c5e61095a",
+			"id": "b5600870-3a8a-456e-b978-ebf63a71dd4a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d0f2bed7-b742-46c9-917c-d5779c3a6c16",
+			"id": "8507931c-286b-4abf-9ae3-9f68c28c3a1e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b27f375b-0ac1-4c9b-a4da-8c2e06ff87b8",
+			"id": "f7157212-48bf-4409-ab79-11248cf647e1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b62853dd-3168-4a3b-84da-f6ae5bf3999d",
+			"id": "9d5cd56c-d6de-499e-b292-8c4da241b3b6",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1e0b2268-b6da-4d6c-87eb-fe7cebb0829e",
+			"id": "e7258c23-d0ac-4576-9d53-225a55562568",
 			"key": "zone",
 			"value": ""
 		}
