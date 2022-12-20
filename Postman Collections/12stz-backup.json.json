@@ -7444,40 +7444,12 @@
 											"\r",
 											"var jsonData = JSON.parse(responseBody);\r",
 											"pm.environment.set(\"id\", jsonData.id)\r",
-											"pm.environment.set(\"transportCompanyMode\", jsonData.transportCompanyMode.id)\r",
-											"pm.environment.set(\"zonegroup_id\", jsonData.zoneGroup.id)\r",
-											"pm.environment.set(\"zonegroup_name\", jsonData.zoneGroup.name)\r",
-											"pm.environment.set(\"popup_id\", jsonData.popup.id)\r",
-											"pm.environment.set(\"code\", jsonData.code)\r",
-											"pm.environment.set(\"defaultDaysFrom\", jsonData.defaultDaysFrom)\r",
-											"pm.environment.set(\"defaultDaysTo\", jsonData.defaultDaysTo)\r",
-											"pm.environment.set(\"deliveryPrice\", jsonData.deliveryPrice)\r",
-											"pm.environment.set(\"deliveryPriceBorder\", jsonData.deliveryPriceBorder)\r",
-											"pm.environment.set(\"deliveryPriceAfterBorder\", jsonData.deliveryPriceAfterBorder)\r",
-											"pm.environment.set(\"deliveryMinDays\", jsonData.deliveryMinDays)\r",
-											"pm.environment.set(\"cutoffTime\", jsonData.cutoffTime)\r",
-											"pm.environment.set(\"consolidationHours\", jsonData.consolidationHours)\r",
-											"pm.environment.set(\"gapHours\", jsonData.gapHours)\r",
-											"pm.environment.set(\"priorityCoefficient\", jsonData.priorityCoefficient)\r",
-											"pm.environment.set(\"maxDaysCoefficient\", jsonData.maxDaysCoefficient)\r",
-											"pm.environment.set(\"tariffCoefficient\", jsonData.tariffCoefficient)\r",
-											"pm.environment.set(\"winnerPercent\", jsonData.winnerPercent)\r",
 											"\r",
-											"pm.environment.set(\"maxPrice\", jsonData.maxPrice)\r",
-											"pm.environment.set(\"restrictionByPriceMessage\", jsonData.restrictionByPriceMessage.id)\r",
-											"pm.environment.set(\"restrictionByPricePopup\", jsonData.restrictionByPricePopup.id)\r",
 											"\r",
-											"pm.environment.set(\"maxQuantity\", jsonData.maxQuantity)\r",
-											"pm.environment.set(\"restrictionByQuantityMessage\", jsonData.restrictionByQuantityMessage.id)\r",
-											"pm.environment.set(\"restrictionByQuantityPopup\", jsonData.restrictionByQuantityPopup.id)\r",
+											"var DeliveryType = pm.response.json();\r",
+											"console.log(DeliveryType);\r",
+											"pm.collectionVariables.set(\"DT\", TransportCompanyMode);\r",
 											"\r",
-											"pm.environment.set(\"maxQuantityPerArticle\", jsonData.maxQuantityPerArticle)\r",
-											"pm.environment.set(\"restrictionByQuantityPerArticleMessage\", jsonData.restrictionByQuantityPerArticleMessage.id)\r",
-											"pm.environment.set(\"restrictionByQuantityPerArticlePopup\", jsonData.restrictionByQuantityPerArticlePopup.id)\r",
-											"\r",
-											"pm.environment.set(\"paymentMethod_id\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
-											"pm.environment.set(\"message_paymentMethod_id\", jsonData.paymentMethodToDeliveryType[0].message.id)\r",
-											"pm.environment.set(\"maxPrice_paymentMethod\", jsonData.paymentMethodToDeliveryType[0].maxPrice)\r",
 											"\r",
 											"\r",
 											"\r",
@@ -12485,40 +12457,40 @@
 	],
 	"variable": [
 		{
-			"id": "d9b8c166-2eca-47c8-9827-aa302e9e4f7a",
+			"id": "abd0ad79-7f7c-47f4-bf24-123643ba52f3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7d694a15-80b2-4fca-94c7-1a2114f12167",
+			"id": "0bf86227-2468-486b-ae30-cfc61f1a7e83",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "acf6ec87-26f6-436c-9aef-2702fef03d50",
+			"id": "d87fbd45-83c3-4923-b709-f0a2531ac552",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5166b2a9-9fbf-4d77-ac39-7f78788b9929",
+			"id": "48c75f5e-e769-4c8c-8146-03b70eb5f97f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "71e30215-5d2f-4588-8056-dca4ca40e277",
+			"id": "88532caf-ee3e-484e-bd4e-c0b680a51641",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7407209c-c222-4da9-9930-bd81217c5448",
+			"id": "5f876991-c774-45c3-901b-b43bab7bc4f0",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "818f069c-0fe0-423a-9a2f-c789ed1f134b",
+			"id": "a5412d27-2447-4d27-891e-eac845a445c1",
 			"key": "now",
 			"value": ""
 		}
