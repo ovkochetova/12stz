@@ -7291,7 +7291,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 8,\r\n      \"price\": 3000,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 7,\r\n      \"price\": 3000,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -12455,40 +12455,40 @@
 	],
 	"variable": [
 		{
-			"id": "96eec15a-1da4-441e-870f-3d355e415abc",
+			"id": "85187f32-47ff-4fa2-8ea2-182a0dbcc1f0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3c036eec-d84a-4d20-941b-a0281e5f1c7d",
+			"id": "34f005b7-2f9a-40c9-b72f-39871b1727e0",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4f9e7cdd-7438-4327-9da1-9ae8c8599a7a",
+			"id": "c65eb88c-f2b8-4a10-99fe-5514103f554b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8cb96241-fce7-488c-9d11-5eea45530b0f",
+			"id": "789b7d12-eb0f-463d-8539-3b53743b28f3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "bb02ca92-cf8c-4804-9e53-d6ee13e925e3",
+			"id": "a7aa0c76-5b60-474c-a09e-bbacd8d777e8",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "fd482240-fb34-4678-8cd0-5f2ff1710a33",
+			"id": "83164d13-19b1-4cab-ba11-05d4f1153d48",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9a115110-78cb-4e5d-8941-a197a5b34e18",
+			"id": "3cee1b89-5a60-4575-a31e-bc06c587f239",
 			"key": "now",
 			"value": ""
 		}
