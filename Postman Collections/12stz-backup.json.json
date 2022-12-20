@@ -3839,7 +3839,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"id": "9c6f7ede-5285-40d1-92cd-aca608cdc066",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -3857,6 +3857,21 @@
 									"pm.test(\"Флаг 'Доставка в рабочих днях' истинно\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.delivery_types[0].is_delivery_use_only_working_days).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var schema = {\r",
+									"    \"items\": {\r",
+									"        \"type\": \"boolean\"\r",
+									"    }\r",
+									"};\r",
+									"\r",
+									"var data1 = [true, false];\r",
+									"var data2 = [true, 123];\r",
+									"\r",
+									"pm.test('Schema is valid', function () {\r",
+									"    pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+									"    pm.expect(tv4.validate(data2, schema)).to.be.true;\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -12455,40 +12470,40 @@
 	],
 	"variable": [
 		{
-			"id": "8981b9e2-1955-42e8-8466-048b8887ed1f",
+			"id": "69278c6a-2292-4dab-928e-4c6e281bc11b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "151a44b7-b670-4933-aef8-9963db293afa",
+			"id": "3464039a-e65b-4ed5-8bb3-44dbccff71e6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f7a740fb-0c8b-4ecd-af7a-922dbd563b92",
+			"id": "92663fcf-f933-4c26-a94b-cb666c108ee1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f87c796b-d74c-4582-b47e-1d82c0e61e58",
+			"id": "ecf3dfe7-9fc1-42aa-a6c6-0c4d57f9bfeb",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "50d91839-934c-4f2c-b9c9-1f1e692febbf",
+			"id": "bbe50747-ff42-4d15-a481-237145c82338",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b26f78dc-e5bb-4d3a-9f66-b4ed33a3f9ae",
+			"id": "c6e163fa-e3ae-4ec9-be30-7172846e2231",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b2799f04-757a-4499-9981-921115823249",
+			"id": "c511838a-e1bc-4e88-9712-0d870e1efa57",
 			"key": "now",
 			"value": ""
 		}
