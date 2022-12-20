@@ -7057,7 +7057,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки и дост 300001",
+					"name": "!учитывать подарки и дост 300001",
 					"event": [
 						{
 							"listen": "test",
@@ -12246,40 +12246,40 @@
 	],
 	"variable": [
 		{
-			"id": "d7789a68-fa2d-46e3-8217-cbb17a32da93",
+			"id": "f0f9233d-4aee-4241-8c05-d9ea58544f3b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "83371ce8-59a0-4109-ac3d-8cfef684483e",
+			"id": "1d2e6eca-7ad3-4eb4-983b-2e870781ec0c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6b88ad05-0161-4d31-992a-3e7b734befb7",
+			"id": "530e8426-22b5-4b7f-85f2-75eee9f426f0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b67639a4-59b9-47ba-a364-e3e00df3c302",
+			"id": "9a7f80a8-6aa5-4957-aab7-a47199febd0e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "47902c5b-dc9e-439b-9230-cee84ca1547f",
+			"id": "029cfdf5-d0cb-4ea2-94d8-174dfac65efc",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "87d16a8e-8ac6-438f-8918-acecb6eafe43",
+			"id": "be3e8ad0-5c12-4f68-8722-a2c2fff0a0cb",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "99a3aa00-77cf-47fb-b6c7-42a1ccb076ca",
+			"id": "c1f8ee07-9e89-432b-8171-68421d4ca49b",
 			"key": "now",
 			"value": ""
 		}
