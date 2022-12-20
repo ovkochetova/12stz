@@ -7249,6 +7249,58 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "!учитывать подарки  8 шт. Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Максимальная количество товаров включает подарки, ограничений нет\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\" больше 9 товаров\");\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "53518401-2b57-4fa8-bb43-476bc8552fc6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 8,\r\n      \"price\": 3000,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -12299,40 +12351,40 @@
 	],
 	"variable": [
 		{
-			"id": "1da4b529-cdc2-4eeb-aa6b-7837879eef0e",
+			"id": "8bee1aa5-3a13-4ba6-896b-db5f37b5cfcd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6a81023a-1a1d-44be-9fc7-b084dd210677",
+			"id": "7dbfd8c9-1933-4ff5-8057-83a9de7363f4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c3fe3fcd-ea46-4814-b3a3-3d9977a1126d",
+			"id": "358a4af4-cc43-4b4f-9c4f-40e0217f7110",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5fe33507-25e3-4a5f-8d99-315cd2457d46",
+			"id": "d4b484f6-7d6a-42d2-901a-d38b331e2a2b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a42f99b5-6a9d-450b-ade0-d8e0f801de38",
+			"id": "3e33c233-33b1-46f9-b00d-3e6faf20282d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0fe12fae-603e-43d5-ab1b-42111c393268",
+			"id": "69bc0303-2d76-425c-9b84-65008df65bfb",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "786fc487-cc8a-4134-9f14-361221e5662e",
+			"id": "f05a7444-978f-456d-9761-ab42a5e7b15f",
 			"key": "now",
 			"value": ""
 		}
