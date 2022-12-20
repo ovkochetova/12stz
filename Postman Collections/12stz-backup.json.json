@@ -6796,6 +6796,58 @@
 					"response": []
 				},
 				{
+					"name": "учитывать подарки 10 шт. Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Максимальная количество товаров включает подарки, ограничения есть\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"больше 9 товаров\");\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "4ba1555b-450e-43cd-b2a5-3990d6aa0214",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 100000,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "чекбокс учит подарки и доставку в max кол-ве товаров Активны",
 					"event": [
 						{
@@ -11932,35 +11984,35 @@
 	],
 	"variable": [
 		{
-			"id": "384f2242-bc14-489c-98c0-70655a634c5b",
+			"id": "d0bb79cc-e187-49f9-a6fe-528e8c477bee",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ff88d6cc-05d4-4cc5-a70b-ba043efe4be0",
+			"id": "f8cfe638-4d8d-4d07-b0a3-915274588be8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8463fb02-a0e5-47f2-8abb-1079f16c9e89",
+			"id": "aeaca0ee-bb23-4ed0-8eeb-29939df382c2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "750d2859-4b47-4f1a-9b36-4c7211aaf20c",
+			"id": "133fe53f-eec5-4d05-ad5c-6b84c0f5af0d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "aa7f3644-273a-42c0-af1d-e70031ecdf8b",
+			"id": "c8600c1d-2681-45f8-b2cb-b018d7833e9a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f472c31d-7c8e-47ec-8d7f-777ae06fe6f1",
+			"id": "0b0c3bf8-ca88-4962-a093-ab935b144110",
 			"key": "zone",
 			"value": ""
 		}
