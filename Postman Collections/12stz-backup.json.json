@@ -6719,8 +6719,8 @@
 									"\r",
 									"delete body.id;\r",
 									"body.isActive = true;\r",
-									"body.isPriceBorderIncludeDelivery = true,\r",
-									"body.isPriceBorderIncludePresent = true,\r",
+									"body.isPriceBorderIncludeDelivery = true;\r",
+									"body.isPriceBorderIncludePresent = true;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -6744,7 +6744,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Максимальная количество товаров включает подарки\", function () {\r",
-									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
+									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(true);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -11984,35 +11984,35 @@
 	],
 	"variable": [
 		{
-			"id": "6659c0e4-9c51-4bd0-b33a-160438c80fc8",
+			"id": "38d6c57f-ef3b-4ad4-acad-5e8f7e43cd17",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dda56f2e-0a69-4323-b3ca-c2254c7fa91d",
+			"id": "07bd1c0b-e483-4c0c-8fff-062c7942eb21",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "76613912-e060-4012-84b2-1ae83917719e",
+			"id": "b59b79a1-6f6d-452e-8049-75ceb1a7a282",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d80c0118-30e7-4dd2-8bf4-18d1b3f53a30",
+			"id": "2ef3d97e-da2f-41b3-9aa6-80f746e20fb7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cfe6ddbb-b337-4ab5-8ea3-2be35e2f47c3",
+			"id": "abbf22cb-0aee-485f-8163-4ca240fa633a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c5b90646-5fb9-4bd8-865f-41d5331a684d",
+			"id": "e31d6e43-4484-45dc-adc2-56cd4483d30d",
 			"key": "zone",
 			"value": ""
 		}
