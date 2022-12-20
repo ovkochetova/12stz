@@ -526,7 +526,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"city_geo_id\": \"0c5b2444-70a0-4932-980c-b4dc0d3f02b5\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"42102baf-cb22-4801-b1a8-8f05f4a7152e\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}\r\n\r\n\r\n  ",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"city_geo_id\": \"0c5b2444-70a0-4932-980c-b4dc0d3f02b5\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"42102baf-cb22-4801-b1a8-8f05f4a7152e\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\": \"{{now}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}\r\n\r\n\r\n  ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -12194,40 +12194,40 @@
 	],
 	"variable": [
 		{
-			"id": "e67ebcf8-4b04-4fbf-b4d6-c5564ad864c1",
+			"id": "b2e65099-423b-44d1-9994-627f61ac6120",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "12586870-cf27-43bd-8b7a-709e30a71776",
+			"id": "36b5cac1-47e3-469b-a48b-0f560009b9da",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0db7c876-dd6a-4635-bfb0-20512dee2a38",
+			"id": "eb3c43ce-34db-4469-b403-217c3a3a6be8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf831a27-6b70-4b43-be63-4baf0d0eac24",
+			"id": "e3d280aa-2cbe-41c3-a538-9c4755710937",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "beaaac1d-5da8-458d-a4e7-cc37b95ed9e7",
+			"id": "5290b012-44c4-4d5d-a548-0849fd83fecc",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a406f8cb-04d3-423a-8756-c393bb3f2f7c",
+			"id": "c8134e18-f8ae-4db3-837b-5ed1828bbfb2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1cc89b5f-0d44-4f3b-806d-edc9fb0f4fa8",
+			"id": "fe3baa8b-bca8-47b5-be52-6aba979b6253",
 			"key": "now",
 			"value": ""
 		}
