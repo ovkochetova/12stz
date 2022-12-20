@@ -8763,7 +8763,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "2cc6df76-1221-441c-b425-1cabd25a1d75",
+								"id": "0579e2a6-cb90-470d-ace3-14d658500174",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -8789,6 +8789,21 @@
 									"    return zone.id}));\r",
 									"\r",
 									"\r",
+									"\r",
+									"\r",
+									"var schema = {\r",
+									"    \"items\": {\r",
+									"        \"type\": \"boolean\"\r",
+									"    }\r",
+									"};\r",
+									"\r",
+									"var data1 = [true, false];\r",
+									"var data2 = [true, 123];\r",
+									"\r",
+									"pm.test('Schema is valid', function () {\r",
+									"    pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
+									"    pm.expect(tv4.validate(data2, schema)).to.be.true;\r",
+									"});\r",
 									"\r",
 									""
 								],
@@ -12470,40 +12485,40 @@
 	],
 	"variable": [
 		{
-			"id": "69278c6a-2292-4dab-928e-4c6e281bc11b",
+			"id": "6391c161-d3b9-4212-9e52-519d0ef94c55",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3464039a-e65b-4ed5-8bb3-44dbccff71e6",
+			"id": "34232bc9-dd31-4b52-83ef-b0e50ab084d1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "92663fcf-f933-4c26-a94b-cb666c108ee1",
+			"id": "9d0c1be1-d605-4dec-9759-7af3b07e06e8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ecf3dfe7-9fc1-42aa-a6c6-0c4d57f9bfeb",
+			"id": "265e4d47-094a-4822-af70-e7388a8ddd7d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "bbe50747-ff42-4d15-a481-237145c82338",
+			"id": "5e518d52-8f89-4721-8132-2394dd44a2bf",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c6e163fa-e3ae-4ec9-be30-7172846e2231",
+			"id": "8ca0d118-a31b-421c-be59-4c0beb319b2c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "c511838a-e1bc-4e88-9712-0d870e1efa57",
+			"id": "1a5498c8-25a7-4da5-aca2-ec6fe40eb5fa",
 			"key": "now",
 			"value": ""
 		}
