@@ -7500,6 +7500,21 @@
 						},
 						{
 							"name": "Изменение статуса типа доставки на false",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "2bd1655c-0d60-4e46-9cc5-7463641a64a7",
+										"exec": [
+											"let body = pm.collectionVariables.get(\"DT\");\r",
+											"\r",
+											"delete body.id;\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "45f4b580-29e5-41f8-a8ee-61c3cfdbeb5a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7524,7 +7539,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"transportCompanyModeId\": {{transportCompanyMode}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"name\": \"{{zonegroup_name}}\",\n  \"descriptionRu\": \"\",\n  \"popupId\": {{popup_id}},\n  \"code\": \"{{code}}\",\n  \"isActive\": false,\n\n  \"defaultDaysFrom\": {{defaultDaysFrom}},\n  \"defaultDaysTo\": {{defaultDaysTo}},\n  \"deliveryPrice\": {{deliveryPrice}},\n  \"deliveryPriceBorder\": {{deliveryPriceBorder}},\n  \"deliveryPriceAfterBorder\": {{deliveryPriceAfterBorder}},\n  \"deliveryMinDays\": {{deliveryMinDays}},\n  \"cutoffTime\": \"{{cutoffTime}}\",\n  \"consolidationHours\": {{consolidationHours}},\n  \"gapHours\": {{gapHours}},\n\n  \"priorityCoefficient\": {{priorityCoefficient}},\n  \"maxDaysCoefficient\": {{maxDaysCoefficient}},\n  \"tariffCoefficient\": {{tariffCoefficient}},\n  \"winnerPercent\": {{winnerPercent}},\n\n  \"isVisibleWhileRestricted\": false,\n  \"maxPrice\": {{maxPrice}},\n  \"restrictionByPriceIsActive\": false,\n  \"restrictionByPriceMessageId\": {{restrictionByPriceMessage}},\n  \"restrictionByPricePopupId\": {{restrictionByPricePopup}},\n\n  \"maxQuantity\": {{maxQuantity}},\n  \"restrictionByQuantityIsActive\": true,\n  \"restrictionByQuantityMessageId\": {{restrictionByQuantityMessage}},\n  \"restrictionByQuantityPopupId\": {{restrictionByQuantityPopup}},\n\n  \"maxQuantityPerArticle\": {{maxQuantityPerArticle}},\n  \"restrictionByQuantityPerArticleIsActive\": true,\n  \"restrictionByQuantityPerArticleMessageId\": {{restrictionByQuantityPerArticleMessage}},\n  \"restrictionByQuantityPerArticlePopupId\": {{restrictionByQuantityPerArticlePopup}},\n  \"categoryDeliveryTypeRestrictions\": [],\n\n  \"paymentMethodToDeliveryType\": [\n    {\n      \"paymentMethodId\": {{paymentMethod_id}},\n      \"messageId\": {{message_paymentMethod_id}},\n      \"maxPrice\": {{maxPrice_paymentMethod}},\n      \"isVisibleWhileRestricted\": true\n    }\n      ],\n\n    \"intervals\": []\n\n}"
+									"raw": "\n\n"
 								},
 								"url": {
 									"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
@@ -12455,45 +12470,45 @@
 	],
 	"variable": [
 		{
-			"id": "d2fc4736-d9ec-406a-bf65-47bd1b10a262",
+			"id": "4c47a910-2654-4791-97b4-77a932f9fd41",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b8ae5cd7-a23e-4d7d-baca-e15e5f3907c1",
+			"id": "c6017195-5ee9-4c35-a6c7-085c63491ec2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dd9bfafa-858e-4dcd-a22c-5262fc6df510",
+			"id": "f080947a-5b93-4c1c-9f7c-0eed51d00d29",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7060fbe-9866-4be8-8d14-b64299b0a01f",
+			"id": "9fea7bc2-3a74-4ce0-8d02-5e886f7f1a88",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "6f2a3d49-3aec-4ee5-8b42-9aafd7352ece",
+			"id": "c300d630-32ba-4e06-9842-1208330e72dd",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "8c8555af-65a5-4f2c-9a98-f1b25b028728",
+			"id": "3a498b63-7ccf-415c-9ee8-259002087e17",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "90f49a81-1ddf-4e00-b786-8e75c2d89a3c",
+			"id": "73937955-efe9-4324-b572-b3fef68a80d5",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "17232dd1-a7d8-4e22-8898-33aea432e40c",
+			"id": "9cf40707-41ce-4c18-b883-0cb933f04c3c",
 			"key": "DT",
 			"value": ""
 		}
