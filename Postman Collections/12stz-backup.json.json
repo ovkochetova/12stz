@@ -6567,7 +6567,7 @@
 					"response": []
 				},
 				{
-					"name": "!не учитывать подарки 8 шт.",
+					"name": "не учитывать подарки 8 шт.",
 					"event": [
 						{
 							"listen": "test",
@@ -12596,51 +12596,51 @@
 	],
 	"variable": [
 		{
-			"id": "7f52f41f-7d3b-400f-8298-7d845d9ad6be",
+			"id": "d0451188-76ad-4b14-b2a5-1598663d481a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2d2be9d6-2f60-4947-bbaa-017de3889877",
+			"id": "51d29738-dbc2-4d5a-baa9-9c1d4295aebc",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5622bf43-13f8-4cd1-9442-e152e2ced01e",
+			"id": "db74b946-8e84-4405-861c-2e761841cb63",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2e90483b-e494-473d-a119-3644b3d0dfcf",
+			"id": "34220d7e-c036-41cf-bbd9-d150bbd8ada6",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2993042f-e080-4c4d-ba58-630c320cf354",
+			"id": "e63970bb-b87b-4968-a52e-5b1b03ae95b0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3cda5556-9cba-454c-8858-e0717b1fcc32",
+			"id": "64106522-1aa7-4b4b-8fcb-016ff87cb7f5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d5f536ef-9c27-4533-b934-8d0b66f5626f",
+			"id": "aa42c86c-3820-4021-80b4-a8e43943f849",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "da59417f-0aaf-42cd-9acf-25c8183f1272",
+			"id": "5e3e6da1-23ad-4d94-b6c5-3334240e1caa",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2105165b-152d-4133-9c4b-017e7c0e26c7",
+			"id": "6581cea1-f816-4417-909e-a6d0a4739df6",
 			"key": "now",
 			"value": ""
 		}
