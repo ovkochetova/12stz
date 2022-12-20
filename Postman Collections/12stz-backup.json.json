@@ -6711,7 +6711,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"id": "6999dcb4-c837-4270-b86e-4fe8ab9f4712",
 								"exec": [
 									"\r",
 									"let body = pm.collectionVariables.get(\"TKM\");\r",
@@ -6720,6 +6720,7 @@
 									"delete body.id;\r",
 									"body.isActive = true;\r",
 									"body.isProductQuantityBorderIncludePresent = true,\r",
+									"body.\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -6734,7 +6735,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"id": "c0582aca-2edb-46b3-9a94-faf77306185a",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -11931,35 +11932,35 @@
 	],
 	"variable": [
 		{
-			"id": "95a2d617-f0a7-4e72-9858-92aa85b7fa00",
+			"id": "bf961413-1bdc-43db-96a2-0fc61e306ee1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "be180bdf-3d6f-406d-9b0c-5b605593f48a",
+			"id": "b0d0864b-9269-4677-89fa-b20fd2c68ef1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d85f6496-8e3b-41d1-b32b-243ef7a57422",
+			"id": "9499a81d-96c8-4ba8-a2ca-8dc78af2f70c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8bde900a-ec4d-4154-a311-769a3a00f794",
+			"id": "d477fcb3-ed90-4df3-83f3-b0d93008cca2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4f4c3a88-caee-4af0-8ee9-dbbb2bcb1c41",
+			"id": "e1d47df5-2745-43c3-b58e-9ff2ad6c1087",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c2114bc9-595c-44f5-9769-43efc88d936a",
+			"id": "136de2fe-0599-4a6c-a2dc-be7e00f8c094",
 			"key": "zone",
 			"value": ""
 		}
