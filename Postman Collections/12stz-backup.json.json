@@ -7005,6 +7005,58 @@
 					"response": []
 				},
 				{
+					"name": "учитывать подарки и дост 300000",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Максимальная количество товаров включает подарки, ограничения есть\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"больше 300 000\");\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "e14d5433-e35a-4295-9c38-5f493a8f2468",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 100000,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100145, \r\n      \"quantity\": 1,\r\n      \"price\": 100000,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100010, \r\n      \"quantity\": 1,\r\n      \"price\": 99999,\r\n      \"is_present\": true\r\n    }    \r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "чекбокс учит подарки и доставку в max кол-ве товаров Активны",
 					"event": [
 						{
@@ -12141,35 +12193,35 @@
 	],
 	"variable": [
 		{
-			"id": "6637b23a-da3e-4163-add2-3179e0c68cea",
+			"id": "473e3b52-b90a-4353-b5a6-0ab2f464b1ee",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "91c8c611-9303-4234-8147-90de061733c1",
+			"id": "cb23f80e-2dad-4bcd-9e88-36676eb4adfd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d006ea47-0483-4de3-bde3-80153a3a1e7d",
+			"id": "a89a1827-ef75-4167-bdd3-58a23f3d010d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "133ede3b-5563-4f16-99a4-d503f0903a3a",
+			"id": "f8a9ac27-1fe8-4d8b-bd94-ea7100b3e205",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cd3c5e0e-fd42-42bb-b3d3-f3d3104dc00f",
+			"id": "f8528927-a805-44e9-8450-61d19a67a327",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9139a3fd-f240-4a58-ba5f-729816c4e1d1",
+			"id": "9186ee52-7652-4d15-a6b6-ed3906d88d8d",
 			"key": "zone",
 			"value": ""
 		}
