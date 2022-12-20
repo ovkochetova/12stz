@@ -6837,7 +6837,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 100000,\r\n      \"is_present\": true\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100145, \r\n      \"quantity\": 1,\r\n      \"price\": 100000,\r\n      \"is_present\": true\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100010, \r\n      \"quantity\": 1,\r\n      \"price\": 99999,\r\n      \"is_present\": true\r\n    }    \r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 100000,\r\n      \"is_present\": true\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100145, \r\n      \"quantity\": 1,\r\n      \"price\": 100000,\r\n      \"is_present\": true\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100010, \r\n      \"quantity\": 1,\r\n      \"price\": 99009,\r\n      \"is_present\": true\r\n    }    \r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -12037,35 +12037,35 @@
 	],
 	"variable": [
 		{
-			"id": "d11badf9-4e70-4b66-899d-560f074fd30a",
+			"id": "60eede81-0d75-4bc0-9758-efb32e929e78",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c6887869-beaf-44bd-b280-bd7205b20c85",
+			"id": "be16a44f-4da8-47cb-b7d1-02785862af98",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c1a68c88-05c0-4f3f-8e7d-551c40c8c04a",
+			"id": "65bdd74c-b940-4471-ba0d-7ebaee1dafa2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "20a6cd64-7371-4494-aa80-d763f1dccb9d",
+			"id": "b9a76f80-803a-4ce3-8535-a9c8356f8b7e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b74c6a75-cc91-4268-a0f4-7113f8a565e1",
+			"id": "cb9e6748-e4a0-4d52-8145-d83d5d0d382b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "629c75bd-304b-47d7-872f-41365b9743d2",
+			"id": "b7846575-95c6-49df-9fc8-585e7fe593e4",
 			"key": "zone",
 			"value": ""
 		}
