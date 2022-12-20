@@ -3764,6 +3764,132 @@
 					"response": []
 				},
 				{
+					"name": "чекбокс доставка отображ в раб днях true",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fee7b060-96de-4700-8de3-9d191cbd2ed4",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.isDeliveryUseOnlyWorkingDays).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "6fbc25a1-dd84-477b-b0ea-2905e9a10254",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"trackUrl\": \"{{trackUrl}}\",\n  \"hasIntegration\": true,\n  \"isDeliveryUseOnlyWorkingDays\": true,\n  \"isActive\": false\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "68e50d25-3fac-45d5-bb3f-4db70a499697",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "доставка в раб днях true",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Флаг 'Доставка в рабочих днях' отображается\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"is_delivery_use_only_working_days\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Флаг 'Доставка в рабочих днях' истинно\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.delivery_types[0].is_delivery_use_only_working_days).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "e924a4a7-39e9-4ef5-8677-cba69e8f0e50",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "чекбокс доставка отображ в раб днях false",
 					"event": [
 						{
@@ -3865,132 +3991,6 @@
 						}
 					],
 					"id": "2700803e-76ad-452c-b747-cd0aa4eb5d30",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100256, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }        \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "чекбокс доставка отображ в раб днях true",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "fee7b060-96de-4700-8de3-9d191cbd2ed4",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"\r",
-									"pm.test(\"Your test name\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.isDeliveryUseOnlyWorkingDays).to.eql(true);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "6fbc25a1-dd84-477b-b0ea-2905e9a10254",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"trackUrl\": \"{{trackUrl}}\",\n  \"hasIntegration\": true,\n  \"isDeliveryUseOnlyWorkingDays\": true,\n  \"isActive\": false\n}"
-						},
-						"url": {
-							"raw": "{{baseUrl}}/api/v1/transport-company/:id",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"transport-company",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "68e50d25-3fac-45d5-bb3f-4db70a499697",
-									"key": "id",
-									"value": "{{id}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "доставка в раб днях true",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"})\r",
-									"\r",
-									"pm.test(\"Флаг 'Доставка в рабочих днях' отображается\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"is_delivery_use_only_working_days\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Флаг 'Доставка в рабочих днях' истинно\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData.delivery_types[0].is_delivery_use_only_working_days).to.eql(true);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "e924a4a7-39e9-4ef5-8677-cba69e8f0e50",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -11964,7 +11964,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e0fc062e-bd01-4757-a02b-b04586fa91a7",
+				"id": "3ebd99f1-d90c-4656-9bf3-34d8b3e97b2c",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11974,7 +11974,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b38c4ee3-8ede-45f2-8a2e-29558744d2d7",
+				"id": "f53621f0-8e8e-4cc0-a0f0-7495896dba63",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -11984,35 +11984,35 @@
 	],
 	"variable": [
 		{
-			"id": "67b9b6ba-c53c-4ee4-b54f-d526306c6f00",
+			"id": "a3252010-73b4-4bea-ab7a-f339952d99f2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "486dd498-7727-4b26-9291-a5f0e250df3a",
+			"id": "68c6bd46-8def-43ee-aaa2-2e05184e1e24",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b22337c7-ad76-486b-9062-782ac8ef3377",
+			"id": "8b75a3af-7617-46a8-b138-35ac18ccaf88",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1d3a3e3e-fc39-4c48-856c-ec7654dd503b",
+			"id": "24e91be2-728f-491e-9a98-67feca0eb7c1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "db20065a-b9f1-4f0b-8816-fc15c60dd646",
+			"id": "4daec6a0-5138-42b4-8d36-b7e4a5ab6511",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "65a78ab2-b409-4d8f-b126-30a998894c7d",
+			"id": "df5e0d8d-0be8-47f9-82d5-cf8fedce9713",
 			"key": "zone",
 			"value": ""
 		}
