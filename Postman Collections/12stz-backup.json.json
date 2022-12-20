@@ -6152,7 +6152,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 9,\r\n      \"price\": 3000,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 6000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 9000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 24000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 4000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -12455,40 +12455,40 @@
 	],
 	"variable": [
 		{
-			"id": "e35f25eb-9048-4a05-82d9-29dbf1439113",
+			"id": "0fc8f88a-692e-4bc1-9fc3-b0c378f4c376",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d2f40e15-c3a7-4544-83aa-b4781a43559c",
+			"id": "4e9e5f40-54f5-4878-90f4-5d7dbeedd57d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0ddd31f2-f26c-4d52-b9a9-d30625b18c1e",
+			"id": "193c8c60-4dda-4b1c-aab9-716b965adfc5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "56c0fba6-e231-41e3-a21d-b343a85ce5f4",
+			"id": "a0427b44-c320-42d7-937c-56a7ed7b53b5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "efca1a1f-8676-4c97-924b-a3cc556548a4",
+			"id": "dca0d54c-2b34-4c31-bc23-429eb8393dd1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5e49f664-bbae-4131-806f-6098c0f30606",
+			"id": "b00caa7a-57e0-4d99-9e63-60ab6d9a4460",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9c66b653-e934-4b98-9d0a-86b35df8eb46",
+			"id": "e425f353-46a3-4d36-99cc-2bf23e16add9",
 			"key": "now",
 			"value": ""
 		}
