@@ -6345,7 +6345,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 6000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 9000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 24000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 4000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 6000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 9000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 24000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 4000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -12455,40 +12455,40 @@
 	],
 	"variable": [
 		{
-			"id": "fb8a99f8-f303-4eb0-9799-de06c6c510e7",
+			"id": "c06ec2fe-2be8-4767-874c-0911d35c1ba4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ace1790b-39ef-489e-96c3-6d3bfd19ccd6",
+			"id": "b2422b28-5635-4671-85fc-f1995af29022",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cfdfd4d6-410e-4b41-87fb-01ddbbced484",
+			"id": "e1de4a11-3eda-49ba-8f2c-a8171f24478a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "51fc006c-f79a-4e04-8167-de4c6c4d0976",
+			"id": "e9738325-f08d-4d94-a6d1-3c3b4b409463",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5a14f7cf-e379-429d-bbd6-6f1ba0c4979c",
+			"id": "1a244ad2-daaf-4c07-81e4-3a7506f7656c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f54a1a09-20f9-4381-a40b-bc3893e278c7",
+			"id": "1cb25adf-9e2c-421f-8ec9-d5340b365f71",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "93497688-ced8-4027-8079-a6de59821b75",
+			"id": "530dec75-327d-4bca-bccf-16bb280fd403",
 			"key": "now",
 			"value": ""
 		}
