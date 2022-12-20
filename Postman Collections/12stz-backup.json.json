@@ -7391,8 +7391,9 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Максимальная количество товаров включает подарки, ограничений нет\", function () {\r",
-									"    pm.expect(pm.response.text()).not.to.include(\" больше 9 товаров\");\r",
+									"\r",
+									"pm.test(\"Максимальная количество товаров включает подарки и доставку, ограничения есть\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\" больше 9 товаров\");\r",
 									"})"
 								],
 								"type": "text/javascript"
@@ -7414,7 +7415,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 9,\r\n      \"price\": 3000,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 6000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 9000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 24000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 4000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -12598,51 +12599,51 @@
 	],
 	"variable": [
 		{
-			"id": "9635d897-b0c7-49a3-ac22-d46a982c37c2",
+			"id": "55deff2c-aecd-498e-b12d-3dd6d8b438eb",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7eb74d1f-89c2-458f-8835-ac9ead341f48",
+			"id": "023911b8-952e-451a-b410-dfbde062800b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b92c35bf-7ece-498a-b57c-491a6905078a",
+			"id": "93e17a99-4e64-41bf-975e-3b41f9d3790b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "de79c814-5b46-4e75-bc96-ea3c2503eed8",
+			"id": "274d1771-2159-4096-8807-b01676a3c6a9",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a197e9bb-db52-4266-a267-c8ebd6084266",
+			"id": "4213ad12-a980-48ea-98a7-a5a73c485358",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5f2310a5-301f-48a5-b9eb-df348416dd8d",
+			"id": "81cd8f91-fa85-4732-b44e-3786183db984",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b074d1f4-19fc-47f9-b8d2-2e53a63e86f0",
+			"id": "faa58017-80f2-43b9-874d-b1b541054cc7",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "4965909c-8d8e-4574-bf7b-eef38c5cb7af",
+			"id": "3cb7be67-aa30-4436-a713-90073dab0e7f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "95a6262a-34d3-489c-8913-325b015a7a9d",
+			"id": "f2f8190e-61f9-4cf4-8f44-176c347e32cb",
 			"key": "now",
 			"value": ""
 		}
