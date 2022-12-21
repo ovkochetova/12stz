@@ -12039,7 +12039,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Получение списка всех ограничений по кат для групп зон",
 					"id": "6ecfc85e-c29a-40dd-ab6d-02f592559f75",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12679,51 +12679,51 @@
 	],
 	"variable": [
 		{
-			"id": "c6f6e5f7-f6ed-4c4f-8622-ed20ecc85bac",
+			"id": "b669dcbf-df8a-4d8a-9daf-1d1a9f2be3d2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6a574929-097b-453b-b4fe-3d611abcdbce",
+			"id": "ade03fc4-e671-49fa-87f9-5190da64f00d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ad2731d2-fb7b-4588-a9ca-cb7529a6a749",
+			"id": "20f81bd5-1414-471e-bf76-a83066f393bd",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fbb161cc-8703-4ca5-ac97-393090da6929",
+			"id": "2d133cf6-b47a-4253-a1bf-2a510f84a257",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "964cc921-0f25-421f-86f1-ddd9290a5ab8",
+			"id": "95829d0d-d84f-4204-b811-85ed1214a54b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1910e01c-dab0-468a-8a53-5cd1fa1fdee3",
+			"id": "f3aff555-3e4a-42a9-9725-0ece874ca6b7",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b409eac4-0709-46a1-a594-17785819a408",
+			"id": "1262420e-8479-4172-8b23-e2f15ae6d00c",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "2c5ce2f7-1214-4d30-afbb-8d54a015f682",
+			"id": "f4d3eef0-2535-40ca-ba18-21a694c10c66",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "787d93eb-a7f1-4c26-ae85-d2ff27436514",
+			"id": "fec02b0e-ef22-4819-90d2-9ef149a848c9",
 			"key": "now",
 			"value": ""
 		}
