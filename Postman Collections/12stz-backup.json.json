@@ -12046,6 +12046,24 @@
 			"item": [
 				{
 					"name": "Получение списка всех ограничений по катег для типов доставки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c9c80ae4-b7f1-4531-a955-cfa246a5543b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\",jsonData.results.id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "a0d670bb-a8d0-40e7-976d-a3b3c68e98a0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12647,51 +12665,51 @@
 	],
 	"variable": [
 		{
-			"id": "915116b1-67c4-41fa-8a64-9a0c8e6e2858",
+			"id": "48e20d3a-fff6-4aeb-a880-226aea1bb5d7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f77bac9e-6a2b-4833-a5f5-05fd84bd939a",
+			"id": "aa7f867f-d539-4d3d-bbd3-c5c6281cba76",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6c6cbfa8-d62f-464a-a783-d45276a54677",
+			"id": "22f00dc2-459a-4521-b2c2-c7c90df45da3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4228da3f-29a8-4ce9-bd20-e5153625e5fc",
+			"id": "577bc27e-a945-499e-880a-122fe8e0e13b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2721c3a6-a914-42cd-8039-3cef4c32987b",
+			"id": "bb9c14fe-8546-4128-b86a-5b704b0120a5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f218ed50-671d-4351-9629-a3e96d2724c6",
+			"id": "8beb8238-42b8-4732-8060-89eafa906c91",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a0f336c9-5308-4813-97eb-2e6705d61e0d",
+			"id": "d98e29b8-866e-4653-b007-dc44c39a1d14",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "0a7928bb-498c-4fbc-a4a2-edb206eb34a6",
+			"id": "453f0f63-370c-4c08-927c-0d2889b0488a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "98fc99c9-ab34-4f6e-b357-5a657c847142",
+			"id": "97a0fa12-4fe3-4a94-b84a-ed44d83343d3",
 			"key": "now",
 			"value": ""
 		}
