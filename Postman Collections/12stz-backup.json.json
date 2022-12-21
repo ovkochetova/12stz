@@ -11154,7 +11154,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Поиск ограничения по названию",
 					"id": "6da14404-ac72-47fe-a7f4-0a66d224132b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12813,51 +12813,51 @@
 	],
 	"variable": [
 		{
-			"id": "5b6c71a9-43e2-4fe5-840a-a98017d1f7a9",
+			"id": "acdc8b48-146b-4062-b5fb-bcf7aaab48d8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ea6ea9eb-b3f0-4345-b285-edc2b401bf83",
+			"id": "41ae814d-20c6-457c-b72d-ccdadbcf5918",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "538f30b0-edb1-4fe2-af51-f21684259961",
+			"id": "ceeae1db-3239-45ba-970a-02cbdf8d6801",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e81757c-1a6c-45e0-a2d3-f694a2827fb5",
+			"id": "b8b840fe-c02d-4b76-ad90-822b38734667",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c0c65837-da32-490c-87ca-0cfdb1f98d04",
+			"id": "b555bbf9-d3be-4c6a-bd4e-65f9732796c7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c2deefc5-ee93-4ff7-b1c1-ff100598f558",
+			"id": "478ee15c-040a-4772-b158-f6352a7ac557",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3d81a7fb-9bb4-430f-a886-0449f63552a7",
+			"id": "bb7cb704-e2d1-42ed-a008-b5b7e80c40b6",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "ce03129e-cdb6-49d5-8a14-885a9a95fb5a",
+			"id": "c4789fab-4a16-4f35-bccf-6d5e60bc6e54",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "15a28fe5-0708-4f7f-bcee-a775cc66dcfc",
+			"id": "815f4761-8812-4770-89d9-ea5ec64ed803",
 			"key": "now",
 			"value": ""
 		}
