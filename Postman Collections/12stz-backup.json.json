@@ -11172,7 +11172,7 @@
 			"name": "Ограничение по категориям для групп зон",
 			"item": [
 				{
-					"name": "Получение списка всех ограничений по кат для групп зон",
+					"name": "Поиск ограничения по названию",
 					"event": [
 						{
 							"listen": "test",
@@ -11774,6 +11774,73 @@
 							}
 						},
 						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Получение списка всех ограничений по кат для групп зон Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "52e8569d-b0c8-4daf-95ec-cddcc48e40b5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\",jsonData.results[0].id);\r",
+									"console.log(\"id\",jsonData.results[0].id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ba8cf590-c232-4f3c-b503-1c4afd180bc2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/restriction/category-zone-group?limit=30&offset=0&search=Екатеринбург&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"restriction",
+								"category-zone-group"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "30"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "Екатеринбург"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -12746,51 +12813,51 @@
 	],
 	"variable": [
 		{
-			"id": "836e2d95-f70e-4aa7-a6a7-eef9dcdb4262",
+			"id": "5b6c71a9-43e2-4fe5-840a-a98017d1f7a9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c5653c4e-3416-401a-956d-c803b8d25ad0",
+			"id": "ea6ea9eb-b3f0-4345-b285-edc2b401bf83",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2677b6f2-1a35-4bd1-a090-b86836c5aa59",
+			"id": "538f30b0-edb1-4fe2-af51-f21684259961",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "408505f3-c9ac-4b75-a971-8ea8748c0a24",
+			"id": "1e81757c-1a6c-45e0-a2d3-f694a2827fb5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b16d9b45-8041-4c6d-8fb3-08fac91b21fc",
+			"id": "c0c65837-da32-490c-87ca-0cfdb1f98d04",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5740dd43-7ea8-44fa-b4be-e409413c5aac",
+			"id": "c2deefc5-ee93-4ff7-b1c1-ff100598f558",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0da1c8f7-4889-4a3e-9d88-1a9a6fd3a2bd",
+			"id": "3d81a7fb-9bb4-430f-a886-0449f63552a7",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "eda8a401-38d9-4f6c-ab62-3238cafcdb44",
+			"id": "ce03129e-cdb6-49d5-8a14-885a9a95fb5a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "000df9c7-1300-44ac-a737-48409464bfab",
+			"id": "15a28fe5-0708-4f7f-bcee-a775cc66dcfc",
 			"key": "now",
 			"value": ""
 		}
