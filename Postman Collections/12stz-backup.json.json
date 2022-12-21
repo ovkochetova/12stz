@@ -12147,7 +12147,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/category-delivery-type?limit=30&offset=0&search=вечерняя&sort=",
+							"raw": "{{baseUrl}}/api/v1/restriction/category-delivery-type?limit=30&offset=0&search=Вечерняя&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -12168,7 +12168,7 @@
 								},
 								{
 									"key": "search",
-									"value": "вечерняя"
+									"value": "Вечерняя"
 								},
 								{
 									"key": "sort",
@@ -12734,51 +12734,51 @@
 	],
 	"variable": [
 		{
-			"id": "a9fa0dc8-49d6-4911-baf7-c6665d885fef",
+			"id": "925a4f59-1707-4eb4-854f-33b2be5df1f3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7496f7bc-17a6-425d-95cd-9c0243c54dd8",
+			"id": "92e3fb3d-bbf9-49d2-a5a3-e16489ae3583",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4e745435-4967-4b5b-8846-9e4eb8d39da8",
+			"id": "06466457-5f9f-4bd4-818b-b5611bb820a3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8908b40b-78ab-458e-87e9-851e889571b0",
+			"id": "6ac058c0-4ee4-4164-aa86-a0278cbc7c0e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ed87804f-2aa9-4b3d-869a-04e2e28a10ae",
+			"id": "533016f0-775d-4202-81ea-a2583da0fe3d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c7e97994-d43c-4a68-818d-5ee2ce1e84b6",
+			"id": "33f809fc-9fa9-4ae9-b9cb-168d278177ac",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a165ba6c-265f-4bde-96ad-57327b37e2e3",
+			"id": "ed65476b-81d8-44d3-a378-aa9fe87dd30e",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "0717a8de-a8c3-40ae-a610-b734985ee36f",
+			"id": "994fdec7-3e11-4b67-8aa7-6a68db9f71ac",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fa8ec81d-1fe6-4d20-a021-52df13cf792d",
+			"id": "90882870-934f-4f34-b7c2-f461cc92d2ef",
 			"key": "now",
 			"value": ""
 		}
