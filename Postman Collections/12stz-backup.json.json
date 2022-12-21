@@ -10840,7 +10840,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=Груз&sort=&isCountryRestriction=true",
+							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=Калин&sort=&isCountryRestriction=true",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -10861,7 +10861,7 @@
 								},
 								{
 									"key": "search",
-									"value": "Груз"
+									"value": "Калин"
 								},
 								{
 									"key": "sort",
@@ -12872,51 +12872,51 @@
 	],
 	"variable": [
 		{
-			"id": "b52bee39-46c8-4cbc-8689-f10c85faeff0",
+			"id": "a867bbd8-4f13-4baf-9d94-b1dcd19da055",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8c9abefc-db07-4b43-8742-09f7429916fa",
+			"id": "8af21f48-d230-4a90-a0c2-be41835360a5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a3f504f-8275-4812-9145-f0664876fe1a",
+			"id": "c25a05f0-8b11-44e3-848b-add877b0c292",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b2fa1835-d1e9-4df2-858e-11705e3cb70d",
+			"id": "85c39c65-339b-44e0-88f0-432565edac3e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f39ff9ca-376f-48ea-891c-ecd216fb9713",
+			"id": "19c1f58b-a61b-4f6a-9897-2206d4e651a1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bfc144fd-f51c-4ad8-809f-a1a5378c5c7c",
+			"id": "b51c949d-ec64-4fef-b048-dbd43e218997",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b5d707e7-6745-448e-b9ae-682a1e68c0eb",
+			"id": "8742780c-bd78-42f1-86ae-a1975a32d22b",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "84f905b8-77fe-4512-a9ca-d74cefaf9d6c",
+			"id": "0f210f76-a16f-4cb4-8b14-08a29b4a5a4f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b1ce7718-e5ee-4422-ab03-50cfd5ce59da",
+			"id": "2db0e636-0823-42ef-a700-f36864325389",
 			"key": "now",
 			"value": ""
 		}
