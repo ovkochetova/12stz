@@ -11167,7 +11167,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/restriction/category-zone-group?limit=30&offset=0&search=Екатеринбург&sort=",
 							"host": [
@@ -12709,51 +12715,51 @@
 	],
 	"variable": [
 		{
-			"id": "e883a488-1f12-4881-aca4-8b8d2a8ade8f",
+			"id": "5f1e39cd-9f05-42c9-98af-0127ef1e3fc9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "723863cb-26bd-4ed7-b456-b831506ea145",
+			"id": "c65e98b8-bc0a-4de4-b0f7-ce3c80f66535",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ada33171-4106-42ca-8420-f0be17c0b4e0",
+			"id": "a266bb12-5fbd-41c5-8203-7e52d0f03610",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dd256e68-c1e0-4279-b5ec-961ab65847ff",
+			"id": "174004b3-a885-4feb-a87f-14c96451b0fb",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "aab45872-c940-46d6-a4c5-6711e5234846",
+			"id": "3a1218f6-e0fa-4845-8d81-abb389b62808",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "309e82e6-89b4-4c2b-a186-806e339ffbb0",
+			"id": "30ea414d-ff76-45e3-b594-0aa36cd94f2c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6f3ac743-3670-475e-952d-7be149fe43da",
+			"id": "75b704eb-f531-4630-8f15-29f6ac213cae",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "5ddf0519-b54b-4439-8e13-d9a86adb5961",
+			"id": "168d55f1-fc8b-4927-89b4-6b354e8af972",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d9159f95-a1bd-4028-a102-4aaba310d11a",
+			"id": "e198b834-1e2e-49c3-8ff9-bf540d1b3874",
 			"key": "now",
 			"value": ""
 		}
