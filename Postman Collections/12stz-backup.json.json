@@ -10840,7 +10840,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=Грузия&sort=&isCountryRestriction=true",
+							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=Груз&sort=&isCountryRestriction=true",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -10861,7 +10861,7 @@
 								},
 								{
 									"key": "search",
-									"value": "Грузия"
+									"value": "Груз"
 								},
 								{
 									"key": "sort",
@@ -12872,51 +12872,51 @@
 	],
 	"variable": [
 		{
-			"id": "692c6243-3ba0-4d9f-8301-61411bf7d29b",
+			"id": "54a78764-e43f-4e38-a06e-cf0bb1b42323",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "745523d9-a604-4993-b27a-957bfa5eefdf",
+			"id": "0b750a21-4643-4d61-b977-7404bc96a8d3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "61e5bb05-b63d-43cf-8041-33cb19af5af6",
+			"id": "acab4076-9e96-4e8d-8136-5ccf88bbc416",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "50802cb2-a66b-4015-82ea-180526ccd2f2",
+			"id": "866220aa-2deb-4e0b-af3d-9f15fb898c0f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e0927169-e0f1-44b3-a256-65766460a434",
+			"id": "d396365a-6bc8-4668-b08b-0e8228126688",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9d8a89bf-ee1a-4cf0-8817-684b697de9f9",
+			"id": "124c5f09-dc20-4df2-94c3-2e20824893d0",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "37c03439-e8da-4fe0-8f2a-ee38d34c508c",
+			"id": "b998442a-dc92-4b54-ae91-da10822c427b",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "ead4b92b-2807-423a-811b-0e1915976ccd",
+			"id": "154efb26-9a8c-4a15-84c1-58f914f542b0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0a064ce3-2a82-4e43-9542-5b93098e268b",
+			"id": "d3888d02-1c20-467f-a8e1-7aa363148c0a",
 			"key": "now",
 			"value": ""
 		}
