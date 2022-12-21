@@ -12052,7 +12052,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/restriction/category-delivery-type?limit=30&offset=0&search=Вечерняя коллекция&sort=",
 							"host": [
@@ -12641,51 +12647,51 @@
 	],
 	"variable": [
 		{
-			"id": "6df6deeb-2fd8-4f84-b82e-39ce7d301985",
+			"id": "6644357a-8ec9-4820-966a-23c7d9dfc3d1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "adfd29e2-2fcf-458e-a712-d42fceac1af8",
+			"id": "405f311b-1243-45d3-8378-fa77bf17a1ea",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "493ec591-72fe-4957-8778-6a3f89921e7a",
+			"id": "c37e616a-c0d5-4f93-a239-ff4cf5658070",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e2e8edc3-795e-4bc5-ae23-83de29aed96f",
+			"id": "3cfe89b4-50a8-4990-a77e-ccb7cf388602",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3d190bae-f60f-42d1-a334-b08a32021a5a",
+			"id": "2ecba5d0-13bf-4e12-9ec5-1f8645f70756",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d3572038-9af5-49d7-a28a-e603c926940d",
+			"id": "826af5eb-2c51-4fbb-8c8b-59a6d7085df2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "50bc2e43-29a5-4b7d-8161-d8a6999885ea",
+			"id": "7b950391-735f-4e87-b3b4-c1c898c78f66",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "298cb4c1-542c-4914-9658-eefc872a6355",
+			"id": "29443525-dec6-48ff-aaed-44b783d070a2",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9e7d3e23-a847-4cc2-b18f-4403fcf3e1d3",
+			"id": "3019cc10-7c68-4f30-9a14-8e0bf16b21c1",
 			"key": "now",
 			"value": ""
 		}
