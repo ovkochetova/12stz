@@ -10813,14 +10813,14 @@
 							"script": {
 								"id": "4f655e8f-6eb2-4f4f-87b9-5e8dcef9caea",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
+									"/*pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
 									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
 									"pm.environment.set(\"id\",jsonData.results[0].id);\r",
-									"console.log(\"id\",jsonData.results[0].id)"
+									"console.log(\"id\",jsonData.results[0].id)*/"
 								],
 								"type": "text/javascript"
 							}
@@ -10840,7 +10840,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=Калин&sort=0&isCountryRestriction=true",
+							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=Калин&sort=&isCountryRestriction=true",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -10865,7 +10865,7 @@
 								},
 								{
 									"key": "sort",
-									"value": "0"
+									"value": ""
 								},
 								{
 									"key": "isCountryRestriction",
@@ -12872,51 +12872,51 @@
 	],
 	"variable": [
 		{
-			"id": "45973cbd-bc68-4eb1-92a6-bb4aeb7935c5",
+			"id": "a1dfcfb9-cc43-4bad-a6a3-42d27adf2dd1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fe8607cf-7d16-48c7-95f3-68cb3da8edbe",
+			"id": "d4255c6b-3cac-44af-92b8-86ea4b87b613",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8079771d-fe6b-44b1-bb41-40dcbc998db1",
+			"id": "9c4ff50b-faf1-463e-a760-4b0d33e61460",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3efc5ec7-49a6-486c-86cd-de470e1f7329",
+			"id": "91b6d256-3a60-46d3-b5a9-44d7117ed1bb",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9cadd5e9-6eb6-4989-b795-00980165c9e3",
+			"id": "935f5ad8-b80e-4cb8-963e-f8948a9e40b0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7e6a1441-b2e2-4f59-a88e-e90477a94a44",
+			"id": "c0dba69c-5d53-4078-8d1c-ec939ec0df68",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1eff50cd-89bb-4482-9ec3-d5cd249816cc",
+			"id": "290cd97a-19b1-414a-bbbe-e0941ec90947",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "dedad38d-8996-416c-80b7-c21cdf416fca",
+			"id": "27902624-8dec-4cd1-8778-81902a553aea",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b0d2da14-2118-44b8-908f-ce01a3293156",
+			"id": "884ed125-9837-4d2a-917e-de56afd52266",
 			"key": "now",
 			"value": ""
 		}
