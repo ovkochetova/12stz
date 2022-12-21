@@ -12147,7 +12147,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/category-delivery-type?limit=30&offset=0&search=CSE_СПБ_590 примерка (запись не редактировать!)&sort=",
+							"raw": "{{baseUrl}}/api/v1/restriction/category-delivery-type?limit=30&offset=0&search=вечерняя&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -12168,7 +12168,7 @@
 								},
 								{
 									"key": "search",
-									"value": "CSE_СПБ_590 примерка (запись не редактировать!)"
+									"value": "вечерняя"
 								},
 								{
 									"key": "sort",
@@ -12734,51 +12734,51 @@
 	],
 	"variable": [
 		{
-			"id": "174486ac-4420-46ba-95d4-0eca8edf0a0a",
+			"id": "a9fa0dc8-49d6-4911-baf7-c6665d885fef",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e95ad6ff-833c-4460-888b-2ba06e0dfe08",
+			"id": "7496f7bc-17a6-425d-95cd-9c0243c54dd8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "59daa82e-f67b-4b14-8f65-8304c755671e",
+			"id": "4e745435-4967-4b5b-8846-9e4eb8d39da8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "78a5afed-f8ad-44d5-a6f0-3754dbcbcf46",
+			"id": "8908b40b-78ab-458e-87e9-851e889571b0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "95d92340-d2a0-4936-bff7-d11fdb4f1658",
+			"id": "ed87804f-2aa9-4b3d-869a-04e2e28a10ae",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "96241724-4e53-4bcc-996b-82a69a8778d1",
+			"id": "c7e97994-d43c-4a68-818d-5ee2ce1e84b6",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0a9c8430-2035-4d0e-9ba6-a92b35a89fa0",
+			"id": "a165ba6c-265f-4bde-96ad-57327b37e2e3",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "7090b921-4337-4a2d-9d03-946d9af6f3ea",
+			"id": "0717a8de-a8c3-40ae-a610-b734985ee36f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "850bc6ab-9f3e-4662-96c6-22662ca6483c",
+			"id": "fa8ec81d-1fe6-4d20-a021-52df13cf792d",
 			"key": "now",
 			"value": ""
 		}
