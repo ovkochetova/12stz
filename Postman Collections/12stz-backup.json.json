@@ -10821,7 +10821,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/zone?limit=30&offset=&search=груз&sort=",
+							"raw": "{{baseUrl}}/api/v1/zone?limit=30&offset=&search=Груз&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -10841,7 +10841,7 @@
 								},
 								{
 									"key": "search",
-									"value": "груз"
+									"value": "Груз"
 								},
 								{
 									"key": "sort",
@@ -12848,51 +12848,51 @@
 	],
 	"variable": [
 		{
-			"id": "acb254e7-52d6-492c-8b04-6696f11f7d24",
+			"id": "11663dac-a776-433a-9a43-ce318f30aecf",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2f38cb7b-19bc-4d34-8965-b0e798c7b175",
+			"id": "40db9869-2e17-45f2-b8a2-3a0b23ee4722",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b18b16d3-cc89-46fb-86fa-8a962842c4bf",
+			"id": "972d5ac4-8528-442c-bb4c-34c513363ee5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "81aa5dec-a5ef-41fd-a1b6-b4dacf38ccaf",
+			"id": "0f30e2c0-65a7-435d-8d52-724ccfd6f771",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "86f6922e-5714-47a3-983d-b673a25932dd",
+			"id": "27e48aa3-5a96-4374-9930-bf37225de55c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3c87e19d-6d1a-42e3-927f-c8839f0cb312",
+			"id": "579216dc-667b-4518-b77d-f9e1199f2cf3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "8a4feff6-2efe-4d41-b843-46103fe73955",
+			"id": "553ea836-9b3f-4be9-8b74-dc9447b77565",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "98646c32-d46b-4390-97e5-57eb81b54fb6",
+			"id": "c4f281c2-6016-41fd-910f-9d15b3f391da",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d27b51f6-d9d4-4ded-8609-15c712936bb6",
+			"id": "fa2e2c18-0806-4e0c-80db-e658998e5b34",
 			"key": "now",
 			"value": ""
 		}
