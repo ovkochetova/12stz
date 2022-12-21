@@ -12052,7 +12052,37 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/restriction/category-delivery-type?limit=30&offset=0&search=Вечерняя коллекция&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"restriction",
+								"category-delivery-type"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "30"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "Вечерняя коллекция"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -12611,51 +12641,51 @@
 	],
 	"variable": [
 		{
-			"id": "6c209a25-27fe-4398-9d69-b68be46856f5",
+			"id": "72916e32-1c59-44a4-bb06-16735877c971",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4665667-25c6-4758-aef9-1f9367b82894",
+			"id": "70b1e38d-074d-4f08-8cef-e9d7446ef45e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b58cbfba-a4bf-47a6-a02a-735ac71c5da3",
+			"id": "4d5d9452-ed92-4a56-907c-2336472c06ed",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f9989f6e-25b8-402e-88d7-dc130ff1733f",
+			"id": "6e08d940-7cc0-443a-9caa-ec7bdcc2ad9f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "88dee66a-1645-4ef6-9663-e64cb5869a51",
+			"id": "8f663030-6f77-4080-b00c-92f8a466a822",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "06bc7462-d22c-4246-b47c-d0768c19778f",
+			"id": "3ef71a10-f9bd-4564-b67c-d58ff271e054",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "249b49b8-f35d-4074-a442-1de3be0660fb",
+			"id": "e542ce6c-585a-409d-a582-5f77415513a3",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "31e8d4ea-7b6e-48f3-910c-f6cde7f4c348",
+			"id": "45461941-f98a-41c4-8088-ffa21d2dd9df",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d3d5754d-4cd2-4461-bb27-01347317cce5",
+			"id": "333b2dfb-6bbe-4c6b-8145-46fbb4956a4c",
 			"key": "now",
 			"value": ""
 		}
