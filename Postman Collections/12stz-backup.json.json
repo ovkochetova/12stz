@@ -11864,7 +11864,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/category-zone-group?limit=30&offset=0&search=Екатеринбург&sort=",
+							"raw": "{{baseUrl}}/api/v1/restriction/category-zone-group?limit=30&offset=0&search=Норильск&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -11885,7 +11885,7 @@
 								},
 								{
 									"key": "search",
-									"value": "Екатеринбург"
+									"value": "Норильск"
 								},
 								{
 									"key": "sort",
@@ -12865,51 +12865,51 @@
 	],
 	"variable": [
 		{
-			"id": "1fb6e504-a00a-4c7b-961c-8fe6154d6106",
+			"id": "89877d22-a89e-414e-8622-afccea8c9cd6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f3d4ef62-8831-4293-b748-4421b786e0b3",
+			"id": "77f3b1b9-d890-479c-a592-4da256fa7522",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2ca90b4a-50df-4d88-ad9d-306c2aad0894",
+			"id": "3a4fa7c8-d709-4f06-89c9-547d74fb9ee0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2418a375-2dac-4ba5-992c-af9613687f92",
+			"id": "75485713-cef4-489c-a561-31409d713764",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "acde65be-3af6-41cf-a9bb-69d6bcc091d4",
+			"id": "77fa85bc-cb0a-431f-86ef-63a015c0a1f0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a6a20430-5211-41a1-bc70-80f1672b45be",
+			"id": "d1472bc3-2ccb-42d2-b4f3-75224836d614",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "48108f9f-a838-4fd1-92e0-b6e346a2d0a8",
+			"id": "d9b9331d-2058-4d8e-8b99-57dba1d34dd2",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "e31ab38b-aa11-484e-a730-70730c10f062",
+			"id": "6947347b-b96f-4d58-bf6a-035780be74e5",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4ac7b2d4-538c-43c3-abdb-3f5fb8ff48c9",
+			"id": "73e7e390-0e73-4b32-8679-80fe603c5dac",
 			"key": "now",
 			"value": ""
 		}
