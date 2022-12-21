@@ -10840,7 +10840,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=Калин&sort=&isCountryRestriction=true",
+							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=Калин&sort=0&isCountryRestriction=true",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -10865,7 +10865,7 @@
 								},
 								{
 									"key": "sort",
-									"value": ""
+									"value": "0"
 								},
 								{
 									"key": "isCountryRestriction",
@@ -12872,51 +12872,51 @@
 	],
 	"variable": [
 		{
-			"id": "27850b63-5bc3-46c0-a9fc-c475e738e4b1",
+			"id": "bc343acf-d729-439b-834e-f3f95e65a52a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bde8bdb7-8fea-4b86-9e8d-0c037ce8b11a",
+			"id": "7309bc4b-b9e4-4e37-9edf-3e72824bc147",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0678c097-4d7d-48ee-9d85-49af3e6f52cb",
+			"id": "3c21c25e-bc5f-4afd-8ba0-96a8b5dd8cc4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7d28ae68-1e11-466e-9428-f9c05fb41ed6",
+			"id": "dfa84737-e766-4f30-94d2-065699c86b06",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c6e0b410-5823-446e-832f-76321e084a52",
+			"id": "de687e60-86cb-4cc4-8a76-d1fc5dcaea05",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c572eefb-0da7-41b4-96a8-2b561c263ac8",
+			"id": "6ffb9d29-1b60-42e7-b907-c4e589c3e56b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6ee719c3-0dde-47b4-b0d9-e979bc6fb863",
+			"id": "16b02072-73be-4efe-8ec2-7031f575bbac",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "2fb5e9e6-254e-4ee4-831a-7326b35b7f0c",
+			"id": "1f42afc7-91b7-4d62-985f-d7a364600376",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "73a4db37-3ad6-4c8e-a252-7c7fd9785ff4",
+			"id": "bae29a4f-5c49-425b-9d13-2ba93b7a4eba",
 			"key": "now",
 			"value": ""
 		}
