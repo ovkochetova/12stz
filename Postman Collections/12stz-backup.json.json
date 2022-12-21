@@ -12147,7 +12147,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/category-delivery-type?limit=30&offset=0&search=Вечерняя коллекция&sort=",
+							"raw": "{{baseUrl}}/api/v1/restriction/category-delivery-type?limit=30&offset=0&search=CSE_СПБ_590 примерка (запись не редактировать!)&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -12168,7 +12168,7 @@
 								},
 								{
 									"key": "search",
-									"value": "Вечерняя коллекция"
+									"value": "CSE_СПБ_590 примерка (запись не редактировать!)"
 								},
 								{
 									"key": "sort",
@@ -12734,51 +12734,51 @@
 	],
 	"variable": [
 		{
-			"id": "a666a003-37ae-444c-beb2-ba6fc0bbe513",
+			"id": "3ca5837c-fdf7-42cd-9bc4-e3936ca543f8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9c8396bc-e1ef-414a-a247-5d007464a255",
+			"id": "de3a5ebe-bacd-4885-a6d2-ed4795d875ab",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fd5a0c13-c1e1-4889-a947-8fa81b2cb467",
+			"id": "cd7d5041-18f4-4a2d-9f33-4dd9507c5aae",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b3e94619-50a9-4525-a7e0-46b44ea4ec47",
+			"id": "4fda8b38-cd9d-4d4d-8723-7e6751b395c7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "69748f1a-2b82-4deb-853b-6d63b0dba6fb",
+			"id": "5be75db4-addc-41d7-92d6-eed85a72ea87",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "914511b9-1245-4c73-a1f6-6a3fbfca9705",
+			"id": "e5843ba8-fa8e-465f-b148-7ee4cbb75a07",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "2c85967d-6686-4af6-9732-9c8ff516547e",
+			"id": "b01ba512-7e8b-45dd-b191-3e310766af89",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "c5461b0b-8126-4657-a09e-3fdb8bf22ad7",
+			"id": "defc92c2-ab69-4bcb-81a2-968605183f3e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "400c2e50-98e5-4495-aa14-72e1dae58af4",
+			"id": "04201b82-67a2-411d-94c7-aad4ef5efaf4",
 			"key": "now",
 			"value": ""
 		}
