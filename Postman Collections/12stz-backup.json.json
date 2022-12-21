@@ -12045,6 +12045,18 @@
 			"name": "Ограничение по категориям  для типов доставки",
 			"item": [
 				{
+					"name": "Получение списка всех ограничений",
+					"id": "a0d670bb-a8d0-40e7-976d-a3b3c68e98a0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
 					"name": "Инфо об огр по категории для типов дост",
 					"event": [
 						{
@@ -12569,18 +12581,6 @@
 						"url": "{{url}}"
 					},
 					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "a0d670bb-a8d0-40e7-976d-a3b3c68e98a0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
 				}
 			],
 			"id": "aeff015f-9afc-42f7-885f-da196c6ac10b"
@@ -12611,51 +12611,51 @@
 	],
 	"variable": [
 		{
-			"id": "d6f2b3f7-03d2-4389-bbf3-8b40f77aa404",
+			"id": "6c209a25-27fe-4398-9d69-b68be46856f5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "38ba5139-21ca-4a7f-b16c-06989af51a3f",
+			"id": "a4665667-25c6-4758-aef9-1f9367b82894",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "72e049b3-55c9-4464-8f5a-a454d87b7709",
+			"id": "b58cbfba-a4bf-47a6-a02a-735ac71c5da3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a390483-6e3d-48f0-9ab1-835c26496aad",
+			"id": "f9989f6e-25b8-402e-88d7-dc130ff1733f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4c14e482-2419-46db-a228-9d6309a0adf1",
+			"id": "88dee66a-1645-4ef6-9663-e64cb5869a51",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bc24d54d-8290-4aae-aadb-a9df26b4b613",
+			"id": "06bc7462-d22c-4246-b47c-d0768c19778f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "87e74714-131e-42b5-9628-72138a92c86b",
+			"id": "249b49b8-f35d-4074-a442-1de3be0660fb",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "99e9129f-bbd7-4c8b-b46f-b6ab471dd83c",
+			"id": "31e8d4ea-7b6e-48f3-910c-f6cde7f4c348",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "95b38bb1-e017-4c60-bb6b-b29d3285a567",
+			"id": "d3d5754d-4cd2-4461-bb27-01347317cce5",
 			"key": "now",
 			"value": ""
 		}
