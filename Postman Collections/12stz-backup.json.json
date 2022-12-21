@@ -10840,7 +10840,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/zone/:id",
+							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=грузия&sort=&isCountryRestriction=false",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -10848,13 +10848,28 @@
 								"api",
 								"v1",
 								"restriction",
-								"zone",
-								":id"
+								"zone"
 							],
-							"variable": [
+							"query": [
 								{
-									"key": "id",
-									"value": null
+									"key": "limit",
+									"value": "30"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "грузия"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								},
+								{
+									"key": "isCountryRestriction",
+									"value": "false"
 								}
 							]
 						}
@@ -12857,51 +12872,51 @@
 	],
 	"variable": [
 		{
-			"id": "b61aaf01-95af-4917-b037-9e5e7c6f5c14",
+			"id": "844265f7-1358-4def-9558-81767487a7e7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "68da97fa-dd94-498f-8b58-4507831e2994",
+			"id": "e0b904e9-ed8e-448e-aa37-0da662262163",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dbc9bd86-42f6-4709-9bcd-4ca0cba4794a",
+			"id": "037a0114-27c3-4872-9944-f5b627629f1e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ca7fc44a-ff0f-47bf-9129-cfecc71bdf80",
+			"id": "82d0ed09-d6c5-4643-99af-272a4df54f80",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "705c0425-cce1-4671-8c76-19e91464f945",
+			"id": "dac67793-0aff-4661-b2bc-261b92cff99a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "48a1d6bd-a23e-4139-9e47-0d27373e8cf3",
+			"id": "5f3c06dc-9631-4c80-b00b-9431eb67ee80",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a1562fe7-57fa-4a03-978d-7eadbe6c200c",
+			"id": "bae066e8-6353-4c37-bcbf-8f6190cee422",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "8eceaea4-cf9e-4270-8d2a-aa56b81ac174",
+			"id": "0e1b159e-999e-49c5-a168-edbabdf1b916",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "508e8ea9-4cce-4fb7-88ca-78e06ee23a8e",
+			"id": "55ebb063-abc6-4ac7-a57e-1aca673c15da",
 			"key": "now",
 			"value": ""
 		}
