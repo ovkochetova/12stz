@@ -10806,6 +10806,47 @@
 			"name": "Запрещенные страны",
 			"item": [
 				{
+					"name": "Поиск ограничения по названию",
+					"id": "6da14404-ac72-47fe-a7f4-0a66d224132b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/zone?limit=30&offset=&search=&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"zone"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "30"
+								},
+								{
+									"key": "offset",
+									"value": ""
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Информация о запрещенной стране по id",
 					"event": [
 						{
@@ -11150,18 +11191,6 @@
 							}
 						},
 						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "Поиск ограничения по названию",
-					"id": "6da14404-ac72-47fe-a7f4-0a66d224132b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
 					},
 					"response": []
 				}
@@ -12813,51 +12842,51 @@
 	],
 	"variable": [
 		{
-			"id": "acdc8b48-146b-4062-b5fb-bcf7aaab48d8",
+			"id": "e6a72dc9-b9db-4f0d-ba5d-1d9955f1215b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41ae814d-20c6-457c-b72d-ccdadbcf5918",
+			"id": "b8e0bbce-b813-4ef0-8d07-9e15f18006e5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ceeae1db-3239-45ba-970a-02cbdf8d6801",
+			"id": "a3ace14d-ebe9-4121-be18-c2a7d313a950",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b8b840fe-c02d-4b76-ad90-822b38734667",
+			"id": "49990261-d8b4-487b-94a4-e49a0ac59157",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b555bbf9-d3be-4c6a-bd4e-65f9732796c7",
+			"id": "29532f28-e0e2-485a-ade0-a2428ca56040",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "478ee15c-040a-4772-b158-f6352a7ac557",
+			"id": "cafb5ada-c08f-48e2-878d-ff251439b82f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "bb7cb704-e2d1-42ed-a008-b5b7e80c40b6",
+			"id": "70001a0c-e3fb-4f5c-9f2f-14315e3a3207",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "c4789fab-4a16-4f35-bccf-6d5e60bc6e54",
+			"id": "706f76bc-155a-4ebf-90f4-511a14f07dac",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "815f4761-8812-4770-89d9-ea5ec64ed803",
+			"id": "440bd22f-c987-49ed-89e9-196d6e9a431c",
 			"key": "now",
 			"value": ""
 		}
