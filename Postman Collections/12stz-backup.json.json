@@ -11160,6 +11160,48 @@
 			"name": "Ограничение по категориям для групп зон",
 			"item": [
 				{
+					"name": "Получение списка всех ограничений по кат для групп зон",
+					"id": "6ecfc85e-c29a-40dd-ab6d-02f592559f75",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/restriction/category-zone-group?limit=-50834831&offset=-50834831&search=voluptate aute ut Excepteur dolore&sort=voluptate aute ut Excepteur dolore",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"restriction",
+								"category-zone-group"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "-50834831"
+								},
+								{
+									"key": "offset",
+									"value": "-50834831"
+								},
+								{
+									"key": "search",
+									"value": "voluptate aute ut Excepteur dolore"
+								},
+								{
+									"key": "sort",
+									"value": "voluptate aute ut Excepteur dolore"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Инфо об огранич по кат для группы зон по id( зона в типах дост)",
 					"event": [
 						{
@@ -12037,18 +12079,6 @@
 						"url": "{{url}}"
 					},
 					"response": []
-				},
-				{
-					"name": "Получение списка всех ограничений по кат для групп зон",
-					"id": "6ecfc85e-c29a-40dd-ab6d-02f592559f75",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
 				}
 			],
 			"id": "51720116-7058-4958-9cf6-24d6c3128d82"
@@ -12679,51 +12709,51 @@
 	],
 	"variable": [
 		{
-			"id": "b669dcbf-df8a-4d8a-9daf-1d1a9f2be3d2",
+			"id": "0cf6df6d-6336-4286-a0e7-bc149e4c2b02",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ade03fc4-e671-49fa-87f9-5190da64f00d",
+			"id": "53ae624a-ca6e-4583-8b93-a5646b7cffc7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "20f81bd5-1414-471e-bf76-a83066f393bd",
+			"id": "328172f4-0370-4ee7-8b10-393331633e74",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2d133cf6-b47a-4253-a1bf-2a510f84a257",
+			"id": "dfa4a7ae-3923-4631-ab34-323a1cfc217b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "95829d0d-d84f-4204-b811-85ed1214a54b",
+			"id": "bd6aec4e-23bf-4355-8244-541f5e4d678c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f3aff555-3e4a-42a9-9725-0ece874ca6b7",
+			"id": "97583e3b-eeb6-4b5b-8cd5-3077e088e6e2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1262420e-8479-4172-8b23-e2f15ae6d00c",
+			"id": "f27d5ae1-5a7f-48b6-a211-4e981f49bb81",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "f4d3eef0-2535-40ca-ba18-21a694c10c66",
+			"id": "419ab8b9-1ef5-41da-a9b6-d3e1bc3b919c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fec02b0e-ef22-4819-90d2-9ef149a848c9",
+			"id": "9aa2c02f-2ec8-44e4-abd6-f2e911f611fb",
 			"key": "now",
 			"value": ""
 		}
