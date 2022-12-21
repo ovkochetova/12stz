@@ -11169,7 +11169,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/category-zone-group?limit=-50834831&offset=-50834831&search=voluptate aute ut Excepteur dolore&sort=voluptate aute ut Excepteur dolore",
+							"raw": "{{baseUrl}}/api/v1/restriction/category-zone-group?limit=30&offset=0&search=Екатеринбург&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -11182,19 +11182,19 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "-50834831"
+									"value": "30"
 								},
 								{
 									"key": "offset",
-									"value": "-50834831"
+									"value": "0"
 								},
 								{
 									"key": "search",
-									"value": "voluptate aute ut Excepteur dolore"
+									"value": "Екатеринбург"
 								},
 								{
 									"key": "sort",
-									"value": "voluptate aute ut Excepteur dolore"
+									"value": ""
 								}
 							]
 						}
@@ -12709,51 +12709,51 @@
 	],
 	"variable": [
 		{
-			"id": "41faf8d8-9cb9-4584-8f2b-fd3362b724b4",
+			"id": "d23209cc-e68c-45ce-a5ee-88fcd3c234cb",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "780d4288-b4fd-46c4-b6d3-072328b95020",
+			"id": "c64f81d3-a75a-4ae7-90ad-501a24878b02",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b29699da-3163-40cb-a9ac-43c349627f60",
+			"id": "81227694-ee7a-4fed-b6b8-85692d30143e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2ce3faad-b2e1-42fe-bebc-db226f844947",
+			"id": "b8bb0879-2b77-471f-aeb3-5925daca80d7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e25c38a9-b3db-4406-9bc6-9a4c517246b5",
+			"id": "8f268140-dad2-4d24-8d72-be715bdf161c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0a939714-4860-4fe5-a7b9-dfe7021b6670",
+			"id": "f53cd7ca-58e2-471a-abdf-f2a3d258b618",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "06fea1dc-c6da-458c-a8fd-e67c5f7f4724",
+			"id": "9dd0eab4-9585-4a8a-baf6-d8d264c2d575",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "58b38ad7-9089-4377-9434-b5e7e30b7844",
+			"id": "77924732-a01e-48f5-9f9c-c397b116f6b0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c56957e1-e375-40a3-ba2a-c03edef02243",
+			"id": "a72fd6c9-c920-4a56-85fd-ba11a17d53d6",
 			"key": "now",
 			"value": ""
 		}
