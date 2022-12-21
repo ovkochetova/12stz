@@ -10840,31 +10840,21 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/zone?limit=30&offset=0&search=Груз&sort=",
+							"raw": "{{baseUrl}}/api/v1/restriction/zone/:id",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"api",
 								"v1",
-								"zone"
+								"restriction",
+								"zone",
+								":id"
 							],
-							"query": [
+							"variable": [
 								{
-									"key": "limit",
-									"value": "30"
-								},
-								{
-									"key": "offset",
-									"value": "0"
-								},
-								{
-									"key": "search",
-									"value": "Груз"
-								},
-								{
-									"key": "sort",
-									"value": ""
+									"key": "id",
+									"value": null
 								}
 							]
 						}
@@ -12867,51 +12857,51 @@
 	],
 	"variable": [
 		{
-			"id": "0abf2365-fae3-4205-98f2-798ca9627221",
+			"id": "b61aaf01-95af-4917-b037-9e5e7c6f5c14",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "011a8a85-f898-4103-8495-01149273223e",
+			"id": "68da97fa-dd94-498f-8b58-4507831e2994",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "608c57e6-3bad-4864-8556-fe1ada5b1a72",
+			"id": "dbc9bd86-42f6-4709-9bcd-4ca0cba4794a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fbea5d9f-d68d-4922-bab6-1ac2ca88cb09",
+			"id": "ca7fc44a-ff0f-47bf-9129-cfecc71bdf80",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "92b9f7af-201e-45f2-9a1c-90a9b0e4ced4",
+			"id": "705c0425-cce1-4671-8c76-19e91464f945",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ed196a0c-c498-46ea-bb19-61a1e13bc8ee",
+			"id": "48a1d6bd-a23e-4139-9e47-0d27373e8cf3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "c350dcf8-64b9-429a-bc93-f9077ab370e0",
+			"id": "a1562fe7-57fa-4a03-978d-7eadbe6c200c",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "60c049d5-fd4a-40a6-8cb9-3af1c513d32c",
+			"id": "8eceaea4-cf9e-4270-8d2a-aa56b81ac174",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "6d52b923-1162-4ca0-a8ce-f9aacf1a3b45",
+			"id": "508e8ea9-4cce-4fb7-88ca-78e06ee23a8e",
 			"key": "now",
 			"value": ""
 		}
