@@ -10806,7 +10806,7 @@
 			"name": "Запрещенные страны",
 			"item": [
 				{
-					"name": "!!!Поиск по названию",
+					"name": "!!!Поиск по названию(нет поиска по названию)",
 					"event": [
 						{
 							"listen": "test",
@@ -12865,51 +12865,51 @@
 	],
 	"variable": [
 		{
-			"id": "4cdd937b-f749-445f-ba04-824f497cd9fd",
+			"id": "8ea5b71a-1b45-4519-bfae-27eabf88a28f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "665e40e0-c915-465c-84d1-e935c7e55a9c",
+			"id": "a99843db-776a-4601-a1c5-96547e5a0fab",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3b56c0fd-8a8f-4f03-bd96-20baab694d4a",
+			"id": "86b023a2-3129-4739-9118-455252ea3d20",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b6c89120-e122-4d2a-bbe4-ee6f4fbadae3",
+			"id": "cac39cbf-78e8-4f79-9aa6-998a5700cdf1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d1887d52-fc34-449b-a0df-f3330317e396",
+			"id": "7b98a6e5-5105-41c0-a964-0617e3129a87",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "8fff4cb9-6a81-4ab6-a1e1-edeae0bc1379",
+			"id": "2de106eb-18df-4de7-9f26-768f4f1bb6da",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "683a90c4-780f-405f-b1cd-25ed8dc2fc68",
+			"id": "d7bc9ec5-9818-45b6-ae59-831b8eac093b",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "1a4c63d6-c36f-4b79-9479-0767fdfd4f3d",
+			"id": "fdb96950-4678-422e-a4d2-12f4c3c2cc68",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fb96f027-1bbf-4c4b-ba68-cf6440a341ad",
+			"id": "96a35825-a643-4dc8-8e45-690fb3b88b46",
 			"key": "now",
 			"value": ""
 		}
