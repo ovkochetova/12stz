@@ -10840,7 +10840,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=грузия&sort=&isCountryRestriction=false",
+							"raw": "{{baseUrl}}/api/v1/restriction/zone?limit=30&offset=0&search=грузия&sort=&isCountryRestriction=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -10869,7 +10869,7 @@
 								},
 								{
 									"key": "isCountryRestriction",
-									"value": "false"
+									"value": ""
 								}
 							]
 						}
@@ -12872,51 +12872,51 @@
 	],
 	"variable": [
 		{
-			"id": "908be6a2-a08d-4d86-8e24-179697e3c59b",
+			"id": "dc0e199e-428e-45ef-8494-db17138cfd00",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "98e924e4-69c5-43f4-8458-7e8c5295b91f",
+			"id": "37b93869-938e-48c4-8958-1b14555b8dac",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "84d72091-e125-40d9-982a-b51a35a77068",
+			"id": "4320b031-0d40-4eaa-8ec2-c18ef9af4575",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "62fdf291-a544-44b5-a36b-aac3b3edb5f7",
+			"id": "5056d343-0434-4735-bb21-aeb5e83d6e20",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "05557e29-90a3-4a67-b401-6ba6bd58d116",
+			"id": "af0472ae-6f0f-4c51-b6e7-a2de575d0780",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ef2f715d-98f7-48e1-b240-4e1d13d8ac22",
+			"id": "30527562-01d8-4918-a5bb-fffbfc88a3e8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "38d3621d-8878-4187-9331-d36b1c185a36",
+			"id": "c300e842-4eab-43ea-82b2-58a2e9a36596",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "e180a545-3e09-4527-9e60-a279111404c0",
+			"id": "d0dbd749-5737-44d1-beca-28a6dc1d5432",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0fb9fa11-93bf-4c95-94df-c1f11a292906",
+			"id": "a18db527-2d2d-4647-8d68-406baf3d2f03",
 			"key": "now",
 			"value": ""
 		}
