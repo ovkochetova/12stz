@@ -12045,7 +12045,7 @@
 			"name": "Ограничение по категориям  для типов доставки",
 			"item": [
 				{
-					"name": "Получение списка всех ограничений",
+					"name": "Получение списка всех ограничений по катег для типов доставки",
 					"id": "a0d670bb-a8d0-40e7-976d-a3b3c68e98a0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12641,51 +12641,51 @@
 	],
 	"variable": [
 		{
-			"id": "72916e32-1c59-44a4-bb06-16735877c971",
+			"id": "5b8e7fa1-8762-4c31-bca9-1bf2603cd3e8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "70b1e38d-074d-4f08-8cef-e9d7446ef45e",
+			"id": "c1a40b3c-b54c-4b8b-87f9-1afab8672ff5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d5d9452-ed92-4a56-907c-2336472c06ed",
+			"id": "cffd6018-1428-486e-b453-1404bf12b508",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6e08d940-7cc0-443a-9caa-ec7bdcc2ad9f",
+			"id": "090a5da1-3fcb-4882-b884-19fca15d628a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8f663030-6f77-4080-b00c-92f8a466a822",
+			"id": "07bf5904-c546-4d71-9f69-776afc45361a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3ef71a10-f9bd-4564-b67c-d58ff271e054",
+			"id": "ab384fc2-7621-4262-8af4-933bceb79a03",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e542ce6c-585a-409d-a582-5f77415513a3",
+			"id": "b1db2c2f-3baa-4c24-a89d-8e62fb0d06b8",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "45461941-f98a-41c4-8088-ffa21d2dd9df",
+			"id": "07af72ea-c38c-4a03-b654-99c62ea81050",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "333b2dfb-6bbe-4c6b-8145-46fbb4956a4c",
+			"id": "62464468-e84b-4734-a521-865781b29777",
 			"key": "now",
 			"value": ""
 		}
