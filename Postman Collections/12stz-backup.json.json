@@ -12276,7 +12276,7 @@
 									"\r",
 									"\r",
 									"pm.test(\"Доставка в вашу зону не доступна\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"не удалось найти зону, обслуживающую geoID\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"не удалось получить типы доставок\");\r",
 									"});\r",
 									""
 								],
@@ -12939,51 +12939,51 @@
 	],
 	"variable": [
 		{
-			"id": "7fc9bb2e-92be-4c4f-8590-1d171f8f4914",
+			"id": "b6d6da50-34a7-468c-9248-cd4a801db7a4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "136a331e-848d-4c04-8106-b997c739739e",
+			"id": "fd3d6ed4-c252-4ba3-b371-cfb9b128409a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f6be5fbd-7f11-4e16-8a69-c21147afa72e",
+			"id": "e5940aca-55e4-43cc-80d9-fe2911b25ca2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d7bbf498-f69c-4fd2-9c4d-391672c11430",
+			"id": "e028b107-8339-4646-af69-a700d8e95617",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "edf624b5-c85f-45e7-8394-8b89ecf4a225",
+			"id": "54017e70-26d4-4f9a-b473-6c2ae368129f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "701381a7-0a2d-4204-8e0e-7f404c5f35c2",
+			"id": "598aea26-bdae-4bec-aba6-4cac873a6f30",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f12a3e6e-c6ec-48ff-a27c-4048b0304281",
+			"id": "57851d2b-1715-4614-8546-0cd7e759ad9e",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "40a38e95-849e-44bf-9d82-c6b1c7d95911",
+			"id": "c57d64bb-70b5-43ad-9884-386677d2a1a1",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ee00f5a0-bb37-49cb-b354-306c8ac24104",
+			"id": "6f3af52c-ec3e-4655-8f09-c3ea15944814",
 			"key": "now",
 			"value": ""
 		}
