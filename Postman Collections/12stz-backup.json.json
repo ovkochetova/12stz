@@ -7533,14 +7533,10 @@
 											"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopupId.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessageId.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopupId.id);\r",
-											"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType.paymentMethod.id.map(function(paymentmethod){\r",
-											"    return paymentmethod.id}));\r",
+											"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
-											"pm.environment.set(\"messageId\", jsonData.paymentMethodToDeliveryType.message.id.map(function(message){\r",
-											"    return message.id}));\r",
 											"\r",
-											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryTypepaymentMethod.id.map(function(paymentmethod){\r",
-											"    return paymentmethod.id}));\r",
+											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"console.log(\"messageId\", jsonData.paymentMethodToDeliveryType.message.id.map(function(message){\r",
 											"    return message.id}));\r",
 											"\r",
@@ -13090,51 +13086,51 @@
 	],
 	"variable": [
 		{
-			"id": "a690b4c0-4f0a-427d-82bd-959c724e86ae",
+			"id": "21ac7332-1f76-48b0-8ab5-d3169395e479",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f783d30b-51e3-4edd-ae64-2c1e5f11ab99",
+			"id": "b8653306-a6c3-4382-87c4-d41ace4b7c67",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d828acb9-b435-43dd-a0c8-a4d44fb33e2a",
+			"id": "61422f8a-6ab7-43bc-93ea-d134b3a2b576",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1a7d1629-de94-42e2-8762-1ae207431b28",
+			"id": "80b8c597-1bff-4b3e-af65-347a9ef7a357",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c5b51313-7c2d-432e-9897-0390c4cc4bf2",
+			"id": "5ae62f48-4cde-421c-b660-33e3ba0d731a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5da4103a-76fb-4e66-9f30-d2baa7acd867",
+			"id": "032b47c5-234d-4f66-be00-deac56266782",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "068e2129-d077-4d06-afee-f739fe2090a0",
+			"id": "3362080b-49d9-4467-93c3-89f4e305eaa9",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "50d8ae4b-2263-477c-b1b0-4b6042f29338",
+			"id": "f1132ea5-b11e-4737-a254-31ef60471f27",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "641118a1-8e85-41da-94cd-257b39dbf180",
+			"id": "a9fb5907-a793-409c-9e44-611292700f36",
 			"key": "now",
 			"value": ""
 		}
