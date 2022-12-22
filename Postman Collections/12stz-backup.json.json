@@ -7427,7 +7427,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "Поиск ТК в 1С по названию",
 					"id": "dae81e63-5d87-4a26-9314-2f2bb0de3d76",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -13008,51 +13008,51 @@
 	],
 	"variable": [
 		{
-			"id": "934752cb-f507-44e3-820a-e0092b2c6e4b",
+			"id": "730cba0d-81ce-41c5-b4b7-aea1b6b5e12b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f03070f0-7aa7-40dd-9b23-67beb8914151",
+			"id": "35919ee7-bfdb-436a-8b36-3c981f59fc11",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8cf96e6e-83b2-4cfc-a23d-d058a5ab0baf",
+			"id": "a25edea8-6dec-42a5-a339-9270a5c729de",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4dac3ab1-38b9-41d2-a4bb-e68fa7e85305",
+			"id": "3ab5a33d-f2c4-4b27-a755-7537b22b5e2c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b61e6d6a-28ba-49a9-83aa-e1975dec8938",
+			"id": "14ccbcf0-9ac0-4497-9491-091a6248d63b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e00a8ef1-692d-46f5-88dc-4b7dfc046adc",
+			"id": "284a338d-fcb2-4ead-ac0d-c3e5ae6e4f0d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d39023a1-316f-424a-b4b5-9be0e1006515",
+			"id": "6e29e67c-84b7-4770-8336-de91aa5ea3f3",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "3f80b2ac-5299-4ba5-bc56-feb5b9cf91eb",
+			"id": "4e686912-798b-4cf6-8759-98feb046eaa2",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d8fe4d2d-5824-4e30-93ee-7bd47d9fa091",
+			"id": "c209908c-86a9-4239-b8b3-cfcb31fb18c0",
 			"key": "now",
 			"value": ""
 		}
