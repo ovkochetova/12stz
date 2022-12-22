@@ -11143,6 +11143,25 @@
 				},
 				{
 					"name": "Запрещенная страна geo_id не в справочнике",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e4e6fe51-0652-4bae-9578-f68abfd13e65",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"не доставляем \");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "a36f3093-437a-44c2-81fa-645c1e57fa46",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12865,51 +12884,51 @@
 	],
 	"variable": [
 		{
-			"id": "d3428732-651b-4bab-aa8f-99f9ba6faebd",
+			"id": "964ad793-fdb8-4852-8a16-00c5f4954f8b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2730bb11-baa2-4f0a-9d7b-3d14e7ddf1a0",
+			"id": "1e42e534-e6a5-4328-bbc7-1310b991fe8f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c9a7f974-54db-43b3-accc-bdd830d4ecfe",
+			"id": "e65b4486-35f1-4e43-b732-a86b13831949",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1dcf888a-5ef5-42ad-8d11-457f544b3266",
+			"id": "51dde39a-41da-44a0-b1ca-e5e71a4cf40a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a7692d57-df1e-4cbc-858d-678f8fe5e43a",
+			"id": "82d3bbcc-c224-441a-b2a6-0e36607219ab",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "4bceab85-07dd-488a-94d8-cb3a053a5eef",
+			"id": "f07dbb2d-7555-49d5-a0e5-5cd3f67ec782",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "667b9acd-451f-4122-acb7-925c80b8e310",
+			"id": "b3e7ac19-3e2d-44bc-90ad-22e637f56225",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "4c2c5b9f-fc67-4609-b171-9b5b8f13cb4f",
+			"id": "231d1e2e-cc5b-4972-be85-b12d9404e670",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4df0f109-3dfa-4b02-88f8-123b32e16f5b",
+			"id": "cfaa5545-ab84-4131-a147-fba7d2c20a72",
 			"key": "now",
 			"value": ""
 		}
