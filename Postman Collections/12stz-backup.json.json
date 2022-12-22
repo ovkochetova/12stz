@@ -11722,7 +11722,7 @@
 									"     });\r",
 									"\r",
 									"\r",
-									"//такой ли ответ должен быть от сервера????? возможно, прверка некорректна"
+									"//такой ли ответ должен быть от сервера????? "
 								],
 								"type": "text/javascript"
 							}
@@ -12889,51 +12889,51 @@
 	],
 	"variable": [
 		{
-			"id": "3cca2c10-6a7a-4ff3-a9ba-8cd3579905b3",
+			"id": "c6d0dd92-04ec-44ec-9429-429e63be43bb",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a3bfea2-8951-4578-a036-2dc5bc58506f",
+			"id": "ef67fcde-e1a0-4532-8d45-26bc42327129",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7e0ea1e7-044e-4d09-a75c-9efbb88e8b81",
+			"id": "4f081ee3-1161-4602-8637-6935cea7feb2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ea147ce5-1a1f-4c81-89e0-414a2b3e4b80",
+			"id": "7603aaed-f1ed-464f-a50c-3f2a2b9cc2e2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e25c32c8-fa94-4f62-83f1-2e75abb7dda8",
+			"id": "d47033dd-0e95-4d00-83ea-d29da575c25d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9e2c54d9-4f2e-49ea-bfb9-5bed5edc4bd9",
+			"id": "9c680bbd-2b98-4e68-ad51-074b30489d9b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d752e7c6-f167-4bd6-9aa8-b36ffd571fee",
+			"id": "25953261-9af9-445e-830c-af15f4f8d8d4",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "235c1a2c-7be6-4235-b102-0de939bc2016",
+			"id": "5b607b37-0747-48d8-9f29-815bd8f692e6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "39f4c0dc-ce02-4834-bdb5-35a5705a600b",
+			"id": "d07d2741-984f-4434-b2b4-9ae17fbbaaf3",
 			"key": "now",
 			"value": ""
 		}
