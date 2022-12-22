@@ -7536,7 +7536,7 @@
 											"//pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
 											"\r",
-											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+											"\r",
 											"console.log(\"transportCompanyModeId\", jsonData.transportCompanyMode.id)\r",
 											"console.log(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
 											"console.log(\"popupId\", jsonData.popup.id);\r",
@@ -13089,51 +13089,51 @@
 	],
 	"variable": [
 		{
-			"id": "d3345755-0bfb-4ed3-9866-fbc8355b5df6",
+			"id": "b5c50f83-88db-4252-a222-26961434be5c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41e58bfc-09a8-4179-97c3-596a6d1c6883",
+			"id": "9a9354fe-f69b-4589-86d0-ae740482886f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dd018ae9-d102-43d8-9047-50e86daf4050",
+			"id": "f4a0740e-edcc-471d-af99-70a5130c5332",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3f2ca05c-093f-4b09-a08a-33a6bbbb8b75",
+			"id": "b2b2ee59-a509-41af-b60a-b68aa248b409",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d5d62416-1b61-48ab-9136-b5ff98e7ddf6",
+			"id": "f8a3ac3e-c33e-4a85-abc2-c2670479418a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "697db971-78d6-4460-97a1-24b8eaf8d772",
+			"id": "6d68c977-04b9-4e54-b4ff-0136fc039436",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9804201f-4ad2-4b0c-8014-a9303895cca2",
+			"id": "c5dd2395-0287-4110-bbfc-80c38fdfb027",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "0a6619a4-327f-47ac-9212-58fdd61f4f37",
+			"id": "5b11972c-50ac-4d5a-8f26-f9c176fc5658",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "733ed1c7-3ab1-44a5-89da-e1a4af1a2f79",
+			"id": "fea08396-80f2-4349-86d6-1a3c25bafd3b",
 			"key": "now",
 			"value": ""
 		}
