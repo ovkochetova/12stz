@@ -4038,6 +4038,61 @@
 			"name": "ТК в 1С",
 			"item": [
 				{
+					"name": "Поиск ТК в 1С по названию",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "25409c96-45f9-4889-a01d-fc5d22f7e515",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "dae81e63-5d87-4a26-9314-2f2bb0de3d76",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode?limit=40&offset=0&search=ТК для тестов&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "40"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "ТК для тестов"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Информация о ТК в 1С",
 					"event": [
 						{
@@ -7423,18 +7478,6 @@
 							}
 						},
 						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "Поиск ТК в 1С по названию",
-					"id": "dae81e63-5d87-4a26-9314-2f2bb0de3d76",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
 					},
 					"response": []
 				}
@@ -13008,51 +13051,51 @@
 	],
 	"variable": [
 		{
-			"id": "730cba0d-81ce-41c5-b4b7-aea1b6b5e12b",
+			"id": "a1f39fd7-d1b2-4ab6-a8a8-9fe82f7abe9a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "35919ee7-bfdb-436a-8b36-3c981f59fc11",
+			"id": "33427392-7fca-45a6-b648-b4662de6b426",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a25edea8-6dec-42a5-a339-9270a5c729de",
+			"id": "cc1d6bf8-370b-4924-b5eb-9b262ecc0432",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ab5a33d-f2c4-4b27-a755-7537b22b5e2c",
+			"id": "9306fcad-4fd7-409d-bf58-51ba51b87752",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "14ccbcf0-9ac0-4497-9491-091a6248d63b",
+			"id": "59f49175-4fef-4d69-a66d-765230da0b19",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "284a338d-fcb2-4ead-ac0d-c3e5ae6e4f0d",
+			"id": "2319036e-b2c6-422d-aa47-9be74860f12e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6e29e67c-84b7-4770-8336-de91aa5ea3f3",
+			"id": "3eeb60c5-c137-4f03-9adc-d53541cf7d16",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "4e686912-798b-4cf6-8759-98feb046eaa2",
+			"id": "107f229d-037e-4864-8b1b-db57184b40a5",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c209908c-86a9-4239-b8b3-cfcb31fb18c0",
+			"id": "602eaa46-766d-4d3a-bbba-a87268de696c",
 			"key": "now",
 			"value": ""
 		}
