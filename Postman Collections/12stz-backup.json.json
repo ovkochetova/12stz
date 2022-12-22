@@ -7545,7 +7545,7 @@
 											"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
 											"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+											"console.log(\"paymentMethodToDeliveryType\", jsonData.paymentMethodToDeliveryType)\r",
 											"\r",
 											"  \r",
 											"\r",
@@ -13089,51 +13089,51 @@
 	],
 	"variable": [
 		{
-			"id": "fe234762-d242-4999-a6bb-c775f51a8ff7",
+			"id": "58ea9a67-5f3d-4bc5-bb90-9abdaad2fea9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ede01e7-063e-45f2-bcd8-e70616f3214f",
+			"id": "76685733-3b48-4de2-925b-ed4d0419041b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a281bde9-36f3-4f07-b083-38580ad00da7",
+			"id": "faf1d90e-c5ae-495a-a4a5-6f9527f8f269",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1a41ff23-6bf5-46b7-a54c-78e23cc23c2e",
+			"id": "361a33c7-8cc0-4aad-af5f-80500152c6e5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "30b4eeaa-c7ac-4a73-a235-31a454b2996e",
+			"id": "5a366182-2001-4c14-a332-2acf627894b0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f68a8c27-ff9d-423b-b880-f3de714c7a0b",
+			"id": "f4b99f7c-2ce1-459a-9bc5-5b838d3cf7de",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6ee011a3-d007-4f21-82e7-994518279d63",
+			"id": "96a76b8b-e887-442c-a3e8-9df71e28c2fc",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "159cda6a-1c63-401e-aebd-a4f715466298",
+			"id": "821cca15-efcf-4e83-b985-4717d069fd1c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "69874668-c116-4dbe-9646-fd43775e65da",
+			"id": "34c07e3a-eea9-4258-8d3b-30833eab3815",
 			"key": "now",
 			"value": ""
 		}
