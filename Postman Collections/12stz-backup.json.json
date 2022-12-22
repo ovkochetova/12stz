@@ -12327,12 +12327,11 @@
 									"    pm.expect(pm.response.text()).not.to.include(\"не удалось получить типы доставок\");\r",
 									"});\r",
 									"\r",
+									"let jsonData = pm.response.json();\r",
 									"pm.test(\"Ограничение по категории для этой группы зон не активно\", () => {\r",
 									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
 									"     });\r",
 									"\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
 									"pm.test(\"Типы доставки есть\", () => {\r",
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"})\r",
@@ -12997,51 +12996,51 @@
 	],
 	"variable": [
 		{
-			"id": "fea35ebb-b993-4880-b4b5-dd2a514ad7e9",
+			"id": "02c2fa55-8158-4efe-886c-0b1a89fe9591",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "070f1238-8070-4033-9f0b-47ac0b576a47",
+			"id": "90801f8a-f92a-4dee-ab8e-00b54ea977d9",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9cbc8427-9850-494c-b276-8ce1b2685b60",
+			"id": "ff004076-0b00-4453-a260-b0e4c3ebf7e2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "43d8bc98-8ef1-43ed-8b8c-3f8be96b5772",
+			"id": "30af4c99-bd4b-4686-9fed-2bb975fb9185",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "29d00f4c-33db-4086-9877-37fa10eefa38",
+			"id": "116afbc1-f8cb-4226-a706-38986e751ce8",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3cc9557b-b853-49f5-8a4e-4a9458ead977",
+			"id": "df05979e-efb5-49da-97b0-57a7a2b4be4b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0e487d3a-b45f-4228-abbd-9c033fd9940d",
+			"id": "a8eed7db-0170-43bd-a27d-030a4886195c",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "e85a1414-3661-4325-a5bf-60e4120bdf60",
+			"id": "446fcb7d-6e8f-4469-8473-c9a077c55378",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3a5429fc-2c2b-4481-acae-7449070e4bf6",
+			"id": "32703b2b-d039-4492-b208-a4c2f3ee61ed",
 			"key": "now",
 			"value": ""
 		}
