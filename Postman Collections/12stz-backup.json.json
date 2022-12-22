@@ -11771,14 +11771,6 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"})\r",
 									"\r",
-									"pm.test(\"Ограничений на другую категорию нет\", () => {\r",
-									"       pm.expect(jsonData.restrictions).not.to.exist;\r",
-									"     });\r",
-									"\r",
-									"\r",
-									"     pm.test(\"Типов доставки есть\", () => {\r",
-									"       pm.expect(jsonData.delivery_types).to.exist;\r",
-									"     });\r",
 									"\r",
 									"     pm.test(\"Ограничение на другую категорию нет\", () => {\r",
 									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
@@ -12898,51 +12890,51 @@
 	],
 	"variable": [
 		{
-			"id": "4b507ad1-d31a-49ea-966b-1a9de5dff72d",
+			"id": "79ef38b6-0835-480c-8773-4a92ff7c2bad",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b5eca49-7864-4b8e-b7fb-2da85c7108f8",
+			"id": "4a54eb43-4bca-4a81-a34a-702b396094e4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3807db34-2a6b-4bfb-a2df-e88222ac681f",
+			"id": "cafd3983-0fa7-4a24-a124-75af50173375",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "061f1e44-8584-4105-80ce-48f21756dd1e",
+			"id": "e0708b80-3e47-4a5c-883e-8fd61491e7e8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "16a054bf-57be-4367-8031-b95ee24767ba",
+			"id": "9b418be1-3b78-4c84-a982-f3b50606157e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "083830eb-0a9b-4e99-a61d-134538a6675d",
+			"id": "2e46e48a-9ef7-4e80-8586-7f750b2846df",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "dfdc3df1-3df1-4860-af08-1def10c0e66b",
+			"id": "6c9a47f2-2534-4ca7-84a0-e120ebd2c501",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "f62318bc-2086-4dc7-8c73-189495221d28",
+			"id": "6f45b5e2-f62e-4642-9ec8-da19ad20127e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f4137479-a250-4c39-89df-bf5a8bba0b76",
+			"id": "dfd3ba2e-f85c-4bf2-a60f-cb4534b0af73",
 			"key": "now",
 			"value": ""
 		}
