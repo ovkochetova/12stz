@@ -11722,7 +11722,7 @@
 									"     });\r",
 									"\r",
 									"\r",
-									"//такой ли ответ должен быть от сервера????? "
+									"//такой ли ответ должен быть от сервера?"
 								],
 								"type": "text/javascript"
 							}
@@ -12890,51 +12890,51 @@
 	],
 	"variable": [
 		{
-			"id": "09c391c5-bd21-4ec2-a473-ba5aed1f8acf",
+			"id": "80b3a1f1-ecab-49a1-951a-738681d11528",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1b260970-a441-48be-87cd-7f714c0bc2eb",
+			"id": "e9502e31-051d-476d-8838-9f17e68917ca",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2bfd78d5-a3e2-4b4e-b67e-0ea7fc238339",
+			"id": "7bc883ee-3178-4d08-9ec6-3bf92cfb60c5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "096e2771-dfd2-4e90-9f21-a02b6fccb5e3",
+			"id": "7aacffcc-7b11-4052-9ed8-d22f0b5b9a2f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7b3ae0be-ffb3-49b6-ad44-c30a91893fcd",
+			"id": "219226de-12a7-460e-b0ee-a5a4f7e38e7f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9d7bba41-0f91-4b19-a28b-be009ebb16dc",
+			"id": "3848c9a5-9af1-465c-8626-2e6ff7ecb8ba",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b7b37435-6198-4a13-8758-fac8254feb82",
+			"id": "4647a4f5-e285-4eb4-aa33-000b21261317",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "641aaea2-b328-4faa-8948-bb25870fe3e6",
+			"id": "133aeb72-d444-4924-925b-2fd949ef08ec",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "268dc33c-ff2e-4229-8b6c-d5d8cc8da1bc",
+			"id": "428e98ca-3a88-46c1-9c98-3e475368c207",
 			"key": "now",
 			"value": ""
 		}
