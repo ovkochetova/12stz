@@ -7533,7 +7533,7 @@
 											"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-											"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+											"pm.environment.set(\"paymentMethodToDeliveryType\", jsonData.paymentMethodToDeliveryType)\r",
 											"\r",
 											"\r",
 											"\r",
@@ -13089,51 +13089,51 @@
 	],
 	"variable": [
 		{
-			"id": "cb0681b6-3c93-4045-8b0a-099b0d7bfcbb",
+			"id": "fe234762-d242-4999-a6bb-c775f51a8ff7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fd612f2a-48f7-4c44-bfab-db90c19a94c6",
+			"id": "7ede01e7-063e-45f2-bcd8-e70616f3214f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "be7eef3b-9757-4464-939d-16c2015f4e23",
+			"id": "a281bde9-36f3-4f07-b083-38580ad00da7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e1ed975-4ec9-4bc4-a901-a7cf34c826f1",
+			"id": "1a41ff23-6bf5-46b7-a54c-78e23cc23c2e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c90d92af-e6c2-491f-a4b2-9a05fd9f17c2",
+			"id": "30b4eeaa-c7ac-4a73-a235-31a454b2996e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "4d8eb51d-ee20-4e50-b446-53d10ab37800",
+			"id": "f68a8c27-ff9d-423b-b880-f3de714c7a0b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "89f22f99-7c9a-4982-b608-3caa1329831a",
+			"id": "6ee011a3-d007-4f21-82e7-994518279d63",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "8f5d3eaa-fc22-480f-bf27-7fd4744b2cb5",
+			"id": "159cda6a-1c63-401e-aebd-a4f715466298",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "895d3561-cee3-4343-9552-a9e4ce5b341b",
+			"id": "69874668-c116-4dbe-9646-fd43775e65da",
 			"key": "now",
 			"value": ""
 		}
