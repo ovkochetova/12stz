@@ -7524,7 +7524,7 @@
 											"\r",
 											"var jsonData = JSON.parse(responseBody);\r",
 											"pm.environment.set(\"id\", jsonData.id);\r",
-											"/*pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
+											"pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
 											"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
 											"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
 											"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessageId.id);\r",
@@ -7537,11 +7537,14 @@
 											"\r",
 											"\r",
 											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)*/\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
-											"\r",
+											"console.log(\"transportCompanyModeId\", jsonData.transportCompanyMode.id)\r",
+											"console.log(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
+											"console.log(\"popupId\", jsonData.popup.id);\r",
+											"console.log(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessageId.id);\r",
+											"console.log(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessageId.id);\r",
+											"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopupId.id);\r",
+											"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessageId.id);\r",
+											"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopupId.id);\r",
 											"\r",
 											"  \r",
 											"\r",
@@ -13085,51 +13088,51 @@
 	],
 	"variable": [
 		{
-			"id": "8af3c450-74fa-4cd3-8b2c-7b1e934c09a8",
+			"id": "fdb9d1cb-a2bc-4d72-ac14-bbd93a948000",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6019e6e2-e924-48dd-915b-d14e6c3ace27",
+			"id": "4a50072f-c21f-4737-8ba9-05d183b72898",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f2e5b49d-5ea4-45c4-bb15-2e30567e4721",
+			"id": "edd90d58-4232-485e-a533-fd0f30b2dac5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "83571837-eb96-46ee-a903-9be82a7b2502",
+			"id": "89d5b855-358c-4252-8dda-65ba2acf7348",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "aa4a5e53-6a45-488a-adc2-943dcb601b4c",
+			"id": "d0ac3022-10a2-4ad4-8721-2f2191dacc51",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "efacefc7-5988-4472-a74b-02358903b8d9",
+			"id": "a91d9bc8-94cb-4517-8867-894af32ac3b2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "25d39ff3-fcd6-4f5f-b74d-002a1acfe550",
+			"id": "e71be1cc-9cc1-4985-9f27-4e06afe3fefd",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "e48383b6-92d3-4e66-9215-e157facb019f",
+			"id": "9b63658d-3524-4e65-89bc-bf34a89003f3",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9ee421b6-993b-420c-aaf3-050e44ea77df",
+			"id": "f6030837-0044-4536-96f9-ad2d1abaa755",
 			"key": "now",
 			"value": ""
 		}
