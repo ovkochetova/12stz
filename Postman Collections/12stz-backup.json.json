@@ -7537,11 +7537,12 @@
 											"pm.environment.set(\"deliveryPriceBorder\", jsonData.deliveryPriceBorder);\r",
 											"pm.environment.set(\"deliveryPriceAfterBorder\", jsonData.deliveryPriceAfterBorder);\r",
 											"pm.environment.set(\"deliveryMinDays\", jsonData.deliveryMinDays);\r",
+											"pm.environment.set(\"cutoffTime\", jsonData.cutoffTime);\r",
 											"\r",
 											"\r",
 											"\r",
-											"  \"deliveryPriceAfterBorder\": -31546515.63275066,\r",
-											"  \"deliveryMinDays\": -52409819,\r",
+											"\r",
+											"  \r",
 											"  \"cutoffTime\": \"anim nulla quis\",\r",
 											"  \"consolidationHours\": 21210572,\r",
 											"  \"gapHours\": -43304233,\r",
@@ -13175,51 +13176,51 @@
 	],
 	"variable": [
 		{
-			"id": "30cb1e47-22a6-49b0-9c12-9f137337c755",
+			"id": "bb7a6ccb-73e5-4d5c-b823-8b5ac7c91ad8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "97a4c24a-49c1-4df5-8ddb-a8b3a865cc37",
+			"id": "87099acd-1262-4f19-9c23-6f40102f7495",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "48b30c12-fd82-4830-9234-e55ddd3d0923",
+			"id": "bce9b5cc-f4c8-4946-aa51-d5ccb59712c3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5552c07d-5a97-4bcd-8267-f18c19bddaad",
+			"id": "e4a10313-ba5e-469f-a5ba-3a2c9d9e1d7c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2e7754be-61d3-4b5d-8108-6a2bed040a49",
+			"id": "3e1cd8cc-e1a2-4f22-9c6f-545172c21e21",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "df553a08-c024-4aed-a226-e42400227f26",
+			"id": "1a6425b0-75f1-447e-9933-9323af53f823",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4fcc837b-559c-4b28-833a-3fbb928de813",
+			"id": "0b0edc4c-6e37-4fef-91f8-d8e96cf63fd6",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "1bacca9d-8e48-4ecd-9deb-46d1763fa6ad",
+			"id": "7ca45801-6626-434c-b3ee-d7199f88cc5c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "db734020-f05e-4cb0-afaf-820f9abb30f7",
+			"id": "d47289e0-a16f-489b-a8db-50eb7d2d1064",
 			"key": "now",
 			"value": ""
 		}
