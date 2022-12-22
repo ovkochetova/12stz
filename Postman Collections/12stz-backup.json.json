@@ -11142,7 +11142,7 @@
 					"response": []
 				},
 				{
-					"name": "!Запрещенная страна geo_id не в справочнике",
+					"name": "Запрещенная страна geo_id не в справочнике",
 					"id": "a36f3093-437a-44c2-81fa-645c1e57fa46",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12865,51 +12865,51 @@
 	],
 	"variable": [
 		{
-			"id": "adaf6470-e3e2-42ab-b09d-ccb8d21b9921",
+			"id": "a0a37aa8-ce85-4f5f-b95c-b1dd5d4ff1de",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "02db5363-5083-4540-bc8d-5b21bc90f4a0",
+			"id": "feaa1c4a-db02-4a08-9f81-84dea7d7f145",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b19f573c-2a58-4a03-8e0f-add3d7a67516",
+			"id": "7b190b03-0cd3-4d8b-888d-9128762c27cb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bfa690fe-b0e9-418d-925c-4e394212cf22",
+			"id": "8a271569-dd81-4448-8814-e5209085c3c8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e1274db2-4484-4dbc-806d-d3c37961d128",
+			"id": "624eea43-c7be-4ef8-a824-0500467c284c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "495104e0-fe6e-4a6b-a1b0-eace0cb0dd4d",
+			"id": "6ce913ef-aeae-4dbe-ad4c-a82ad93b4228",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "72a8620f-8abc-47c5-9c92-0fca0ab1a040",
+			"id": "ea4216e2-4905-4213-ad7c-a8013a83c2ee",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "5d3b6818-26d4-47dd-b92a-df0d009c339d",
+			"id": "517db741-7a0f-4bc5-963c-e1d7a88399d1",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9fe70456-e6b1-4814-92d7-0c4e9d1a36de",
+			"id": "17dc6531-bf43-4cdc-9c03-9a09114a0a7c",
 			"key": "now",
 			"value": ""
 		}
