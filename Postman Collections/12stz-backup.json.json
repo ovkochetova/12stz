@@ -11773,6 +11773,15 @@
 									"\r",
 									"pm.test(\"Ограничений на другую категорию нет\", () => {\r",
 									"       pm.expect(jsonData.restrictions).not.to.exist;\r",
+									"     });\r",
+									"\r",
+									"\r",
+									"     pm.test(\"Типов доставки есть\", () => {\r",
+									"       pm.expect(jsonData.delivery_types).to.exist;\r",
+									"     });\r",
+									"\r",
+									"     pm.test(\"Ограничение на другую категорию нет\", () => {\r",
+									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
 									"     });"
 								],
 								"type": "text/javascript"
@@ -12889,51 +12898,51 @@
 	],
 	"variable": [
 		{
-			"id": "b8e61bd9-7ce2-4411-a7ed-57aeec6d81fc",
+			"id": "4b507ad1-d31a-49ea-966b-1a9de5dff72d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3839aa98-6533-4222-9acf-ab385bfed49d",
+			"id": "7b5eca49-7864-4b8e-b7fb-2da85c7108f8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f292b26-f8da-4fd1-a01a-bb9c0e278bd1",
+			"id": "3807db34-2a6b-4bfb-a2df-e88222ac681f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fe0e9d2c-d976-42ac-a973-db7b46b0bdcb",
+			"id": "061f1e44-8584-4105-80ce-48f21756dd1e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "6b7aa9be-3b16-46bb-9a53-6ef8446f8127",
+			"id": "16a054bf-57be-4367-8031-b95ee24767ba",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "fb351117-c60a-4d68-a233-da41dc3e0910",
+			"id": "083830eb-0a9b-4e99-a61d-134538a6675d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "bfa07734-3ca8-4650-bfcc-8d4821e6291f",
+			"id": "dfdc3df1-3df1-4860-af08-1def10c0e66b",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "ac985232-3e00-4695-b26a-f3c4a12767d6",
+			"id": "f62318bc-2086-4dc7-8c73-189495221d28",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c9c6b51b-bf15-46cf-97b7-91d08baaf19c",
+			"id": "f4137479-a250-4c39-89df-bf5a8bba0b76",
 			"key": "now",
 			"value": ""
 		}
