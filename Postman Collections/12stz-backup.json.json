@@ -4059,7 +4059,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/api/v1/transport-company-mode?limit=40&offset=0&search=ТК для тестов&sort=",
 							"host": [
@@ -13051,51 +13057,51 @@
 	],
 	"variable": [
 		{
-			"id": "0f3fa107-b480-4b8c-a97c-45031739ad61",
+			"id": "5086b6cc-9100-4344-85f0-1995782ea9fa",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ce204e05-079d-458d-8bf9-b464530f0129",
+			"id": "15889153-f5c9-49f7-ad1d-937c9fe66112",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6fb62538-e51d-4992-8d67-a60685882b19",
+			"id": "bd49f1a4-6206-4873-9def-55528e35e87f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "45d80987-e412-45e6-8ec3-41e6a7c92730",
+			"id": "40309c51-9cd0-47d8-9a4d-bf76e40395ac",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1df9bfac-b12b-4f41-a20c-b27f1f35c856",
+			"id": "4f662677-d257-4a98-a9c2-937d710118f5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9d9e1201-7bf5-4e74-ad05-e1ed6f3a345c",
+			"id": "5546339d-402b-4b73-a903-2310aa2953be",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b6b7a881-4235-43cd-86f3-1ad0b2a99f37",
+			"id": "231781d2-1161-4b04-b91f-540188bf7f9f",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "74ee7956-5581-4f77-8d8f-6d8325e8c58f",
+			"id": "ee21de7e-4236-4ca6-aa1a-fdeb019b29f2",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b87aa812-a93d-4d64-8784-fdab5eaa49a7",
+			"id": "4c5d4a28-3334-4a72-a7fb-3173bef07e95",
 			"key": "now",
 			"value": ""
 		}
