@@ -7527,24 +7527,15 @@
 											"pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
 											"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
 											"pm.environment.set(\"name\", jsonData.name);\r",
-											"pm.environment.set(\"descriptionRu\", jsonData.descriptionRu);\r",
 											"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
-											"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
-											"pm.environment.set(\"code\", jsonData.code);\r",
-											"pm.environment.set(\"defaultDaysFrom\", jsonData.defaultDaysFrom);\r",
-											"pm.environment.set(\"defaultDaysTo\", jsonData.defaultDaysTo);\r",
-											"pm.environment.set(\"deliveryPrice\", jsonData.deliveryPrice);\r",
-											"pm.environment.set(\"deliveryPriceBorder\", jsonData.deliveryPriceBorder);\r",
-											"pm.environment.set(\"deliveryPriceAfterBorder\", jsonData.deliveryPriceAfterBorder);\r",
-											"pm.environment.set(\"deliveryMinDays\", jsonData.deliveryMinDays);\r",
-											"pm.environment.set(\"cutoffTime\", jsonData.cutoffTime);\r",
-											"pm.environment.set(\"consolidationHours\", jsonData.consolidationHours);\r",
+											"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessageId.id);\r",
+											"\r",
 											"\r",
 											"\r",
 											"\r",
 											"  \r",
 											"  \r",
-											"  \"consolidationHours\": 21210572,\r",
+											" \r",
 											"  \"gapHours\": -43304233,\r",
 											"  \"priorityCoefficient\": 23122457.549490735,\r",
 											"  \"maxDaysCoefficient\": -67135291.7380993,\r",
@@ -13176,51 +13167,51 @@
 	],
 	"variable": [
 		{
-			"id": "a3822abd-2b0d-46a3-aee2-a26dd1591e05",
+			"id": "7e70a7bb-582f-469e-96e5-87e4c2e674de",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0eb2aff1-7c6c-41d4-80c7-2f2e176151fb",
+			"id": "c0993cff-51dd-4a4d-ba81-17123b655fb2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "72560946-6070-43f1-875f-62f6d37da614",
+			"id": "28d64ea8-527e-4e5f-ac9b-5eaa4e28c7bf",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "29031dae-1a5f-4775-9f0e-b040c5ac3513",
+			"id": "77277e23-c771-458f-9c1f-7bbfa26574dd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "605d0ebb-efaa-4949-8061-4a588b626dad",
+			"id": "32aaf8fc-5a13-474e-98a2-9d8f725c413d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "08487bdd-3556-45b9-b0b5-0cc74f33a58c",
+			"id": "4d306b79-692d-4525-bc71-36af61515339",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0c700500-1d8f-472f-81ee-f1169423912f",
+			"id": "c5d4ee03-6fcb-4d15-84e8-fda36aec5b0f",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "26e66de2-6df3-41f6-9e27-5b55dd776fba",
+			"id": "50aca80f-cf3f-4734-b97b-1228875b2e54",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e5455abd-5074-46cf-8a84-90c20b231b44",
+			"id": "30492cfb-169f-4e39-a281-96bbe82af784",
 			"key": "now",
 			"value": ""
 		}
