@@ -12311,7 +12311,7 @@
 					"response": []
 				},
 				{
-					"name": "Огр по другой кат для группы зон дост не активно Copy",
+					"name": "Огр по другой зоны перч не Активно",
 					"event": [
 						{
 							"listen": "test",
@@ -12987,51 +12987,51 @@
 	],
 	"variable": [
 		{
-			"id": "4b6a5f41-b181-4a2d-92ea-9da6c5ac5dec",
+			"id": "976351a8-2532-4369-967e-5f1cae47fc2b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4e8a7bd8-e13d-4072-9bcc-c729e6d3703f",
+			"id": "267c1838-cf03-494a-8e51-8bbf1ad98125",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "203400a1-7faf-4730-96e1-0f65e38c6af5",
+			"id": "3a0a28ce-11da-4dc0-ab4b-43de237a4cbb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "32c700d2-781e-44c3-b290-9e908da19623",
+			"id": "e84d460e-04bb-45e5-8f60-34bbb4a38836",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "20bb021f-cb8e-4844-bd30-5592b2cc2358",
+			"id": "467fcfdf-4e38-48f7-912a-caa0c67f5664",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c72fa1fc-f01b-47b4-bf61-f5ceff7f6322",
+			"id": "29eedc8f-1ad5-406f-a800-75f4a3a5ddf0",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "966cb5c9-3ff6-4e48-a57a-5c98d7894526",
+			"id": "bb9a04ca-99e1-4b10-90f7-9a7baa31ebf6",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "e4a30193-df2a-45f9-a555-4578c268ba89",
+			"id": "f7a61fe6-01ad-42a0-b7c3-646081a2bb58",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a741ab45-a36c-4604-ad43-d92553712af0",
+			"id": "00653210-7c5d-429b-9c84-89a2b3ce289a",
 			"key": "now",
 			"value": ""
 		}
