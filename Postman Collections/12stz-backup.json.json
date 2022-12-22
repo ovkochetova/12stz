@@ -7538,12 +7538,12 @@
 											"pm.environment.set(\"deliveryPriceAfterBorder\", jsonData.deliveryPriceAfterBorder);\r",
 											"pm.environment.set(\"deliveryMinDays\", jsonData.deliveryMinDays);\r",
 											"pm.environment.set(\"cutoffTime\", jsonData.cutoffTime);\r",
-											"\r",
+											"pm.environment.set(\"consolidationHours\", jsonData.consolidationHours);\r",
 											"\r",
 											"\r",
 											"\r",
 											"  \r",
-											"  \"cutoffTime\": \"anim nulla quis\",\r",
+											"  \r",
 											"  \"consolidationHours\": 21210572,\r",
 											"  \"gapHours\": -43304233,\r",
 											"  \"priorityCoefficient\": 23122457.549490735,\r",
@@ -13176,51 +13176,51 @@
 	],
 	"variable": [
 		{
-			"id": "bb7a6ccb-73e5-4d5c-b823-8b5ac7c91ad8",
+			"id": "a3822abd-2b0d-46a3-aee2-a26dd1591e05",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "87099acd-1262-4f19-9c23-6f40102f7495",
+			"id": "0eb2aff1-7c6c-41d4-80c7-2f2e176151fb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bce9b5cc-f4c8-4946-aa51-d5ccb59712c3",
+			"id": "72560946-6070-43f1-875f-62f6d37da614",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e4a10313-ba5e-469f-a5ba-3a2c9d9e1d7c",
+			"id": "29031dae-1a5f-4775-9f0e-b040c5ac3513",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3e1cd8cc-e1a2-4f22-9c6f-545172c21e21",
+			"id": "605d0ebb-efaa-4949-8061-4a588b626dad",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1a6425b0-75f1-447e-9933-9323af53f823",
+			"id": "08487bdd-3556-45b9-b0b5-0cc74f33a58c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0b0edc4c-6e37-4fef-91f8-d8e96cf63fd6",
+			"id": "0c700500-1d8f-472f-81ee-f1169423912f",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "7ca45801-6626-434c-b3ee-d7199f88cc5c",
+			"id": "26e66de2-6df3-41f6-9e27-5b55dd776fba",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d47289e0-a16f-489b-a8db-50eb7d2d1064",
+			"id": "e5455abd-5074-46cf-8a84-90c20b231b44",
 			"key": "now",
 			"value": ""
 		}
