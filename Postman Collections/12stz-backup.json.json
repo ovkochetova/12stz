@@ -12261,6 +12261,54 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "!Огр по другой кат для группы зон дост не активно",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Доставка в вашу зону не доступна\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"не удалось найти зону, обслуживающую geoID\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "317e0ba1-6dba-451d-b4fb-346986f81814",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"сity_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"aeacf4e2-5cf3-4592-8dde-0864d5e5860f\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100006, \r\n      \"quantity\": 1,\r\n      \"price\": 13000.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
 				}
 			],
 			"id": "51720116-7058-4958-9cf6-24d6c3128d82"
@@ -12891,51 +12939,51 @@
 	],
 	"variable": [
 		{
-			"id": "2cca4cf6-81af-4017-bda7-c962a243f4ad",
+			"id": "104ee768-c802-4efd-ad6b-9f2104c2b715",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "559aa023-0306-4d4f-a617-2498ff4c74f8",
+			"id": "3604e92c-3e1c-4948-a847-788aa1ab5d34",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2e83c3c0-61b4-4c37-a678-1c2ae4794e8b",
+			"id": "8ebb021d-2261-47db-b19b-c6ef63c5a4ae",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e9b3c746-d152-4c38-ae88-cd100c289b89",
+			"id": "a04ff769-c087-4c69-8d38-f316aff25f03",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "0a2a6124-ab77-4ef9-95fd-97e01ed13bac",
+			"id": "ac4f49dd-de2a-4439-838b-08559f78299a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "63eb633c-12dd-45f1-9d14-3c580266e9fa",
+			"id": "af27354e-5210-43b5-9850-f98ad1dda8a7",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f8b97f1b-f6a6-4ebc-98f7-c633ed8dc3db",
+			"id": "fb6f0922-35ff-448e-8bd9-37e4dc86dc92",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "69784155-c13f-4a4d-beb3-c88df4fff7d3",
+			"id": "d69799b1-07b7-4675-8dce-ade9e014dadc",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9a4f23ac-4b6d-44a7-b476-021f6af765e9",
+			"id": "55181628-6b73-4c63-a602-db538f654711",
 			"key": "now",
 			"value": ""
 		}
