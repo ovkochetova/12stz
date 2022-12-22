@@ -7525,7 +7525,7 @@
 											"var jsonData = JSON.parse(responseBody);\r",
 											"pm.environment.set(\"id\", jsonData.id);\r",
 											"pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
-											"/*pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
+											"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
 											"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
 											"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
 											"pm.environment.set(\"restrictionByPricePopupId\", jsonData.restrictionByPricePopup.id);\r",
@@ -7533,7 +7533,7 @@
 											"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-											"/*pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+											"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
 											"\r",
 											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)*/\r",
@@ -7545,6 +7545,7 @@
 											"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
 											"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
+											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
 											"  \r",
 											"\r",
@@ -13088,51 +13089,51 @@
 	],
 	"variable": [
 		{
-			"id": "6befff24-1090-4a39-8a63-fef5b0510bad",
+			"id": "c22a6191-76b5-4c14-af78-30698f631a99",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d1c9df26-f9da-475a-84ba-50038d197a49",
+			"id": "2ac6c9f5-5f0e-4348-9df8-7a798682e993",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0f5ec054-38a3-4eb6-a325-a4ce3fecedde",
+			"id": "2b36dd74-d72d-42ab-929a-4268c1637485",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5fb14226-df7a-4440-bfd3-d084e29052b4",
+			"id": "a596e453-0c2a-4246-a266-bb88be5cf9a3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e8b54829-af6a-4ee1-a5e9-a461ce5b2555",
+			"id": "663207d9-04d8-4d9e-a15c-4c9a710348da",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "6895642e-a8bf-463a-ade5-10d6dfa0f364",
+			"id": "0d9ccbe4-4d25-4a60-a95d-565e0df5a501",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "dd2b96c1-d631-4262-a81a-66a18f3c5983",
+			"id": "e3af1fec-364c-41b4-9014-c8b41d071f34",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "8360efa5-5d0f-45f3-aadf-f3dfdf88c302",
+			"id": "f44cd47d-3e04-4274-86b7-59ad1cf2a596",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d2e1a35a-6f78-4dcd-ae29-cef7c7d71b2c",
+			"id": "67506cc8-8045-4876-8e6c-8f46d3a3c730",
 			"key": "now",
 			"value": ""
 		}
