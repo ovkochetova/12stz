@@ -7533,7 +7533,7 @@
 											"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-											"//pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+											"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
 											"\r",
 											"\r",
@@ -7545,7 +7545,7 @@
 											"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
 											"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-											"//console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
 											"  \r",
 											"\r",
@@ -13089,51 +13089,51 @@
 	],
 	"variable": [
 		{
-			"id": "36f56ede-949c-45b6-98f2-fa7777043d00",
+			"id": "3e5ddba7-56b2-4840-b564-41d764d56871",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "85d39594-9e5e-48ae-a1ad-785284adf448",
+			"id": "9f6ae871-f30a-46ea-ba02-127943068779",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "adee7b01-1563-4805-a893-0d157d2c8eed",
+			"id": "3b38df1e-aec4-4a0c-8e57-d555a6277c51",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1a19daf6-7b38-44a6-bf73-43b34f2e8bf5",
+			"id": "16985832-8bcf-490e-aef7-9a13e54f00c0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1897d0e5-ea89-4556-8876-a352304de85f",
+			"id": "db611564-b09c-454d-a762-9a42e4263af6",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0cf35577-23ab-472d-8f2b-990eecf3d844",
+			"id": "45c36928-be54-48a6-9477-7e99b92587d8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6ecf607a-47b2-4d82-83b6-b7194aff5b37",
+			"id": "5ca2dd3f-2518-4940-9258-10319abb2475",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "51a8f935-5a18-4b3b-83ca-d127878e47b0",
+			"id": "a0d76689-cbfa-43c1-bada-a18358357d6f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1fc6948c-8fb3-4f9e-a131-ee6ef2b91fe0",
+			"id": "75813182-b1cc-4d05-8da1-12ad43b35c5c",
 			"key": "now",
 			"value": ""
 		}
