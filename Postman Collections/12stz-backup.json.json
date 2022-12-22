@@ -11772,7 +11772,7 @@
 									"})\r",
 									"\r",
 									"\r",
-									"     pm.test(\"Ограничение на другую категорию нет\", () => {\r",
+									"     pm.test(\"Ограничений на другую категорию нет\", () => {\r",
 									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
 									"     });"
 								],
@@ -12890,51 +12890,51 @@
 	],
 	"variable": [
 		{
-			"id": "22436bc3-9d3a-4a59-907c-aa82ca06b82b",
+			"id": "24b4f98a-2f38-4c8b-a809-5668feecf879",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c96d4a6c-30d5-4b11-b868-da80ac7c93db",
+			"id": "7d95b1df-bdc8-4eba-9c18-880efd12ac90",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b171c0c-6281-48e4-a7ef-906cd187d84f",
+			"id": "20fb7ea4-88cb-48a4-ab38-448910c2eaeb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ef456ecf-cb35-401f-9666-62c22661aca9",
+			"id": "e9cac213-2541-4a31-a1e1-cb01b6caa9f4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "154ed2b0-0801-46d6-a326-09e0711648d1",
+			"id": "d1dbeead-cd04-4f4d-ac27-667c027465e4",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1884b7d4-c737-490f-bb83-fea4cb6bedeb",
+			"id": "5ce104ac-7cad-4f50-92d1-5330dad7fe96",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ffe1f505-065d-42d7-a7a6-1d1b74b1227f",
+			"id": "c15cea8f-64be-45a3-826d-b718c3902cd4",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "1f1c15ac-59dc-4a4a-a02c-54e158305bc2",
+			"id": "be11e558-4ef9-444b-9008-5189e4e27c7b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "64c6b482-2de8-432e-bf7a-069428c865dc",
+			"id": "03f72284-360d-42ea-afb9-9cb6d27af25c",
 			"key": "now",
 			"value": ""
 		}
