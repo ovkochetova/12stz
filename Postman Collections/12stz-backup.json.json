@@ -7533,7 +7533,7 @@
 											"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-											"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+											"//pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
 											"\r",
 											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)*/\r",
@@ -7545,7 +7545,7 @@
 											"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
 											"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+											"//console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
 											"  \r",
 											"\r",
@@ -13089,51 +13089,51 @@
 	],
 	"variable": [
 		{
-			"id": "351afa90-24bb-4949-8cbe-40cbed01987c",
+			"id": "b458ae85-512b-48bc-99d1-93ee6272e089",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4959eaa9-8de6-40cb-9e2f-d9ca9b4c1e91",
+			"id": "5a4f9117-1919-487e-b8c3-7ca2d8948829",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "39b26651-efdf-45f6-b001-14f82daae3a3",
+			"id": "df42a9e8-59fa-420f-bd0c-89b6e408a417",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9b2b33cc-04f4-4a68-b55a-374036ab79cf",
+			"id": "cba6f339-fa33-4c79-a13a-f640f6321154",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c650c7aa-65ca-456b-944c-92a526c4d06c",
+			"id": "30fb69ae-4a06-48fa-a6c2-1af206a50293",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "45a96f65-407e-4481-b2c3-fbbbd1bfa1c7",
+			"id": "733f54e9-f522-432a-b038-2102c2a4ec65",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "dc39ca34-cbbd-4c04-901e-70c4bca73d3f",
+			"id": "27eeb4ac-5a7f-48e0-9aac-2f1f82177383",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "927801d2-d385-42a2-b696-8e5d4873414c",
+			"id": "a145f499-ec73-411d-aa36-c0785f7f0690",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "dfcd2002-45c8-437c-9abb-586cc5a3d288",
+			"id": "b715905c-0fa8-47ef-8cf8-c7989c664d4a",
 			"key": "now",
 			"value": ""
 		}
