@@ -7526,14 +7526,13 @@
 											"pm.environment.set(\"id\", jsonData.id);\r",
 											"pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
 											"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
-											"pm.environment.set(\"name\", jsonData.name);\r",
 											"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
 											"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessageId.id);\r",
 											"pm.environment.set(\"restrictionByPricePopupId\", jsonData.restrictionByPricePopupId.id);\r",
 											"pm.environment.set(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessageId.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopupId.id);\r",
 											"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessageId.id);\r",
-											"\r",
+											"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopupId.id);\r",
 											"\r",
 											"\r",
 											"  \r",
@@ -13176,51 +13175,51 @@
 	],
 	"variable": [
 		{
-			"id": "f81590ba-afb4-4e35-ba7c-93630875a4a4",
+			"id": "069cb3a5-67e4-43aa-804c-369e945e44c1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "66bbb3d7-8c14-4321-87d3-9e42610cdbfb",
+			"id": "69568247-e939-48ed-ac04-9f285ef6f063",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8239a7c5-fde9-4dc9-905b-d302e3c6ff81",
+			"id": "87e2876e-b697-49b5-8859-c840f7d8643b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "05c90463-aeb9-4318-a1cc-542f5e6f7fee",
+			"id": "1391e1f1-ec9b-4caa-9aa9-b3b0dba07ff7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7e6d5f28-f137-402f-b494-53d677716269",
+			"id": "106a410e-925d-439c-8e6a-2d005afb5094",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f6a2678f-f5c7-4ba1-bf9b-24c20b085ba9",
+			"id": "c341f42c-d058-48fa-a7ec-b332b57213f9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f612af20-200a-44d0-b05f-cd7340d44045",
+			"id": "e511084f-e982-4a52-afe9-799a529cb854",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "3967c47d-d68f-48fb-8e24-2db13152f4d0",
+			"id": "533db3db-7ad5-4dbb-83b7-e14980929837",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "23dcf700-64a4-459f-8bc8-fc189cca8c18",
+			"id": "a179902f-f62e-4f57-aeb7-0dd1d440c93a",
 			"key": "now",
 			"value": ""
 		}
