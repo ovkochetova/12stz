@@ -7534,9 +7534,12 @@
 											"pm.environment.set(\"defaultDaysFrom\", jsonData.defaultDaysFrom);\r",
 											"pm.environment.set(\"defaultDaysTo\", jsonData.defaultDaysTo);\r",
 											"pm.environment.set(\"deliveryPrice\", jsonData.deliveryPrice);\r",
-											"pm.environment.set(\"deliveryPriceBorder\", jsonData.deliveryPriceBorder;\r",
+											"pm.environment.set(\"deliveryPriceBorder\", jsonData.deliveryPriceBorder);\r",
+											"pm.environment.set(\"deliveryPriceAfterBorder\", jsonData.deliveryPriceAfterBorder);\r",
+											"pm.environment.set(\"deliveryMinDays\", jsonData.deliveryMinDays);\r",
 											"\r",
-											"\"deliveryPriceBorder\": 96087998.03596643,\r",
+											"\r",
+											"\r",
 											"  \"deliveryPriceAfterBorder\": -31546515.63275066,\r",
 											"  \"deliveryMinDays\": -52409819,\r",
 											"  \"cutoffTime\": \"anim nulla quis\",\r",
@@ -13172,51 +13175,51 @@
 	],
 	"variable": [
 		{
-			"id": "21fb9feb-e996-4d67-9c26-b428d3ce27a2",
+			"id": "30cb1e47-22a6-49b0-9c12-9f137337c755",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9716de26-6f70-4d78-a15b-6360748ed6e0",
+			"id": "97a4c24a-49c1-4df5-8ddb-a8b3a865cc37",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "642d1134-7f39-46d9-8bf9-7d4a2ede288f",
+			"id": "48b30c12-fd82-4830-9234-e55ddd3d0923",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "994c6015-2859-4aaf-8313-d50f49633ba8",
+			"id": "5552c07d-5a97-4bcd-8267-f18c19bddaad",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5ec970e6-afc0-4042-9064-04db71064eb3",
+			"id": "2e7754be-61d3-4b5d-8108-6a2bed040a49",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "57e7d9b0-2267-4278-87e4-1009ed1a9829",
+			"id": "df553a08-c024-4aed-a226-e42400227f26",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1959386f-658e-4d1e-aac8-762b061d89f8",
+			"id": "4fcc837b-559c-4b28-833a-3fbb928de813",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "aecf0dce-172c-4f0d-ab35-c675f778b119",
+			"id": "1bacca9d-8e48-4ecd-9deb-46d1763fa6ad",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "76f1c874-a4a5-4fc8-b9b7-c7b46ed1d733",
+			"id": "db734020-f05e-4cb0-afaf-820f9abb30f7",
 			"key": "now",
 			"value": ""
 		}
