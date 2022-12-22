@@ -11718,7 +11718,7 @@
 									"    });\r",
 									"\r",
 									"pm.test(\"Типов доставки нет\", () => {\r",
-									"       pm.expect(jsonData.delivery_types).to.not.exist;\r",
+									"       pm.expect(jsonData.delivery_types).to.exist;\r",
 									"     });\r",
 									"\r",
 									"//такой ли ответ должен быть от сервера????? возможно, прверка некорректна"
@@ -12884,51 +12884,51 @@
 	],
 	"variable": [
 		{
-			"id": "fac21c19-cbf4-42e1-bf29-86818a2d23b1",
+			"id": "623ff689-8bc2-487a-acc5-12eb07611bcd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03eab289-3f5f-4510-8453-a34784b81d2f",
+			"id": "fe493332-7a04-4ac8-8a72-4c7e3c995b24",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a9daa8eb-4558-47c1-a80d-4fe03f472f86",
+			"id": "be447a5b-b007-4920-af8d-caaf36d844c8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6c1ca16a-7935-4e98-b4a6-beee281ee8f5",
+			"id": "288e6f63-0904-4408-9a71-4ff9650dca98",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "93f915b4-9b4a-4ed0-b8b4-35a82c72304b",
+			"id": "d1230276-5e97-4ca0-aeca-f30ccfe9530a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9e40dfd5-5634-464c-b9ab-cc714d1ac8c2",
+			"id": "f4b3ec48-d2a7-4a68-a1dc-305b72b02c23",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a71a4465-5b1b-474d-b7b9-a92f5c6f54fa",
+			"id": "9dc63423-9d0e-43cd-a0db-613003243c92",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "af732a71-cf0f-4b7d-84d2-e1716809c52d",
+			"id": "b3aba050-7b2d-4c38-8745-198e7afd770d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e4000917-f2e4-4a41-8236-1704ed955fa3",
+			"id": "796593a9-6c61-40eb-9d91-f292aa5c4356",
 			"key": "now",
 			"value": ""
 		}
