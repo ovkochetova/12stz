@@ -7527,12 +7527,12 @@
 											"pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
 											"/*pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
 											"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
-											"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessageId.id);\r",
-											"pm.environment.set(\"restrictionByPricePopupId\", jsonData.restrictionByPricePopupId.id);\r",
-											"pm.environment.set(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessageId.id);\r",
-											"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopupId.id);\r",
-											"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessageId.id);\r",
-											"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopupId.id);\r",
+											"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
+											"pm.environment.set(\"restrictionByPricePopupId\", jsonData.restrictionByPricePopup.id);\r",
+											"pm.environment.set(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
+											"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
+											"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
+											"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
 											"/*pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"\r",
 											"\r",
@@ -13088,51 +13088,51 @@
 	],
 	"variable": [
 		{
-			"id": "e5815716-84da-46a8-a4c8-1d45a0a22f3a",
+			"id": "6befff24-1090-4a39-8a63-fef5b0510bad",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d2e3a0af-51e7-4fc0-a104-11557a5ab0ce",
+			"id": "d1c9df26-f9da-475a-84ba-50038d197a49",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "498246fe-606c-4230-8cf1-b226022ff661",
+			"id": "0f5ec054-38a3-4eb6-a325-a4ce3fecedde",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "36d15217-3b27-48a4-a45a-850b92a0e40b",
+			"id": "5fb14226-df7a-4440-bfd3-d084e29052b4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a6fa283f-d1d5-4317-aa31-f0ced321c047",
+			"id": "e8b54829-af6a-4ee1-a5e9-a461ce5b2555",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "aa0b1f27-6b9c-4fe0-abb6-006ca3f4f283",
+			"id": "6895642e-a8bf-463a-ade5-10d6dfa0f364",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3b5b86c2-4f88-4c95-bcd4-f29c5ea0b529",
+			"id": "dd2b96c1-d631-4262-a81a-66a18f3c5983",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "94ab246a-cfc1-4b7f-9633-31a07e1bd0a5",
+			"id": "8360efa5-5d0f-45f3-aadf-f3dfdf88c302",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3cb41da5-e98a-4111-8eac-251f85d0de28",
+			"id": "d2e1a35a-6f78-4dcd-ae29-cef7c7d71b2c",
 			"key": "now",
 			"value": ""
 		}
