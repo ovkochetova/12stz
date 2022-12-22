@@ -11771,7 +11771,7 @@
 									"})\r",
 									"\r",
 									"pm.test(\"Типов доставки есть\", () => {\r",
-									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
+									"       pm.expect(jsonData.restrictions).not.to.exist;\r",
 									"     });"
 								],
 								"type": "text/javascript"
@@ -12888,51 +12888,51 @@
 	],
 	"variable": [
 		{
-			"id": "093aea25-f1e6-4e3b-8db7-047a27b2552d",
+			"id": "b7907a04-1970-4aeb-a152-61011e658cc1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fb1f4a79-b66d-417c-932f-782b97a68a08",
+			"id": "f2dbbce9-4171-4486-b81d-ab632271576e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ba45e93d-07b0-4fff-955b-3c1cb2c67966",
+			"id": "f5e2e466-5b11-4908-885a-6dbf4330a1ea",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a2772c06-f6f6-4bb5-88e8-02e397fca575",
+			"id": "60e8d16c-415d-41f5-ad0f-439d84027e99",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b0adbfbb-222a-49f2-8031-e3bd96bd145e",
+			"id": "a5e5d22b-1676-4b59-b4b3-d1bd35082909",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "760d1820-f744-47a0-a6a1-7522f1391791",
+			"id": "9992bf56-7455-4427-8054-54b3b079b8d7",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "419fe9da-a0e3-4cf6-b528-8a96fc1e08e8",
+			"id": "bade2ce2-0727-4bc1-a7a4-17e61608aece",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "33f2f29a-7cbd-44a4-8f69-e69854cf3842",
+			"id": "442ca2bb-9c9c-442f-b348-8fd4ea264156",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4637722d-6760-4712-9b20-2632d3c34048",
+			"id": "90a34abb-cbdf-4aea-966f-49df2e53b1e2",
 			"key": "now",
 			"value": ""
 		}
