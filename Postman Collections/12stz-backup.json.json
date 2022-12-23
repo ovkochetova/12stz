@@ -7697,9 +7697,9 @@
 											"  ],\r",
 											"  \"categoryDeliveryTypeRestrictions\": [\r",
 											"    {\r",
-											"      \"categoryId\": body.categoryDeliveryTypeRestrictions.category.id,\r",
-											"      \"messageId\": body.categoryDeliveryTypeRestrictions.message.id,\r",
-											"      \"popupId\": body.categoryDeliveryTypeRestrictions.popup.id,,\r",
+											"      \"categoryId\": body.categoryDeliveryTypeRestrictions[0].category.id,\r",
+											"      \"messageId\": body.categoryDeliveryTypeRestrictions[0].message.id,\r",
+											"      \"popupId\": body.categoryDeliveryTypeRestrictions[0].popup.id,\r",
 											"      \"isActive\": true\r",
 											"    },\r",
 											"    {\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "56d054e2-6977-47a0-8773-cd8fc1e63335",
+			"id": "1c17bebd-f118-47da-aaee-422880f9e9d9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "11c761f4-67cb-453b-bf62-5dacb5409e49",
+			"id": "19d36d9d-8747-4472-8325-6281591874b8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ca97363e-d1f3-4b39-aa28-589a23786ba8",
+			"id": "7236b1a1-bfc5-45e2-ba6a-923ee6cfcfe3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9aaf885d-db30-4bf0-8dfb-887d3280bee9",
+			"id": "de486e11-cb80-4ed7-b986-0927613865a3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7b0cc593-0df4-47ee-8dd9-e654b761d820",
+			"id": "1d81f803-0adc-494f-8db6-547db34cb8b9",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7833f542-5597-49dc-b01c-ebfa3501ba09",
+			"id": "7f65ef1d-d29c-4e9e-86bd-af0ecc4061d9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "2cb96df6-bb1d-4bc1-ad78-87337a39f599",
+			"id": "d798dd4e-d787-484e-830c-1ecb4ae54795",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "41b8d962-25cd-45fa-b0a8-1c2634fe6593",
+			"id": "2ace220f-6d14-40ce-ac5d-cd2968c0871d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "61c526e1-3988-4b49-b1db-7b8c82959cbc",
+			"id": "ffc4dabd-c0dc-43ac-934e-4b52c8ea52b4",
 			"key": "now",
 			"value": ""
 		}
