@@ -7339,148 +7339,6 @@
 					"response": []
 				},
 				{
-					"name": "все чекбоксы Активны",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
-								"exec": [
-									"\r",
-									"let body = pm.collectionVariables.get(\"TKM\");\r",
-									"console.log(body);\r",
-									"\r",
-									"delete body.id;\r",
-									"body.isActive = true;\r",
-									"body.isPriceBorderIncludeDelivery = false;\r",
-									"body.isPriceBorderIncludePresent = false;\r",
-									"body.isProductQuantityBorderIncludeDelivery = true;\r",
-									"body.isProductQuantityBorderIncludePresent = true;\r",
-									"\r",
-									"pm.request.body.raw = body;\r",
-									"console.log(body)\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"body.sProductQuantityBorderIncludeDelivery = true,\r",
-									"body.isProductQuantityBorderIncludePresent = true,\r",
-									"\r",
-									"pm.request.body.raw = body;\r",
-									"console.log(body)\r",
-									"\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Максимальная количество товаров включает подарки\", function () {\r",
-									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "7ad3424d-df60-4280-8520-20fa28fb8f4f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{token}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"transport-company-mode",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
-									"key": "id",
-									"value": "{{id}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "учитывать подарки  7 шт.",
 					"event": [
 						{
@@ -7634,6 +7492,148 @@
 							}
 						},
 						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "все чекбоксы Активны",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isPriceBorderIncludeDelivery = false;\r",
+									"body.isPriceBorderIncludePresent = false;\r",
+									"body.isProductQuantityBorderIncludeDelivery = true;\r",
+									"body.isProductQuantityBorderIncludePresent = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"body.sProductQuantityBorderIncludeDelivery = true,\r",
+									"body.isProductQuantityBorderIncludePresent = true,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Максимальная количество товаров включает подарки\", function () {\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7ad3424d-df60-4280-8520-20fa28fb8f4f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -11732,6 +11732,7 @@
 									"pm.test(\"Ограничение по категории для группы зон не активно\", () => {\r",
 									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
 									"     });\r",
+									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -13245,51 +13246,51 @@
 	],
 	"variable": [
 		{
-			"id": "194fafba-10ef-4c79-a6de-91aa86b83456",
+			"id": "2671998f-efa3-40b0-a61f-cb5ec54df10e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2784223f-0965-4ec6-8e97-4f26dad02102",
+			"id": "b5905548-8ae0-4cef-82e3-60528343d36f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "106ec9ba-5593-41a7-9c48-798926652023",
+			"id": "379949dc-f3ec-455f-820c-d1f397ba7626",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "96b58b87-6e8d-410c-a815-ea75bef3b298",
+			"id": "5981328e-ce80-4fb4-a7c3-bf188321e18f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2dcb7def-8d31-48b9-8142-50cde2fca4a9",
+			"id": "fa49ef13-5b64-4b48-a1c1-eb531cb3e580",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d1253d16-eb95-4d7a-8bc5-a20707acc18b",
+			"id": "1188ffde-14bf-499d-8253-e33bfa1a16a3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3671b73b-d647-4ab4-bd2a-da1778c2baa5",
+			"id": "791a6198-f18a-4612-97f2-27770c7bf5ca",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "b9d14c84-337d-489b-9e66-a0525298eb27",
+			"id": "59187b72-04f3-433d-8b8a-02ac1cf3c888",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "dc212665-5ed8-46d7-b1e6-7f3177d7d2bd",
+			"id": "43c6f58e-155c-43f9-8f34-2921a5722577",
 			"key": "now",
 			"value": ""
 		}
