@@ -7722,18 +7722,18 @@
 											"      \"updatedAt\": body.intervals[0].updatedAt\r",
 											"    },\r",
 											"    {\r",
-											"      \"id\": 29324856,\r",
-											"      \"clientTimeFrom\": \"aliquip Lorem\",\r",
-											"      \"clientTimeTo\": \"sint occaecat minim\",\r",
-											"      \"tkTimeFrom\": \"velit elit Duis a\",\r",
-											"      \"tkTimeTo\": \"pariatur\",\r",
-											"      \"dayOfWeek\": \"monday\",\r",
-											"      \"code\": \"mollit nisi \",\r",
-											"      \"createdAt\": \"enim id\",\r",
-											"      \"updatedAt\": \"ut consectetur dolore reprehenderit\"\r",
+											"      \"id\": body.intervals[1].id,\r",
+											"      \"clientTimeFrom\": body.intervals[0].clientTimeFrom,\r",
+											"      \"clientTimeTo\": body.intervals[0].clientTimeTo,\r",
+											"      \"tkTimeFrom\": body.intervals[0].tkTimeFrom,\r",
+											"      \"tkTimeTo\": body.intervals[0].tkTimeTo,\r",
+											"      \"dayOfWeek\": body.intervals[0].dayOfWeek,\r",
+											"      \"code\": body.intervals[0].code,\r",
+											"      \"createdAt\": body.intervals[0].createdAt,\r",
+											"      \"updatedAt\": body.intervals[0].updatedAt\r",
 											"    }\r",
 											"  ]\r",
-											"}*/"
+											"}"
 										],
 										"type": "text/javascript"
 									}
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "176ae168-9608-447a-a839-0c88e35d9cec",
+			"id": "0fb55287-2e57-49d8-82ed-dfe5eff43be9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9d860ae2-cd0c-4b65-a925-2b56fd90368a",
+			"id": "0062d579-d7b2-4e50-b671-d174f084a06a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7c215dc4-5897-46e8-b934-e0f87c25341b",
+			"id": "4990b39e-6320-4860-97e8-9bc5eedb8ba5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ecf70bb-f385-45ea-816b-a852abcf8866",
+			"id": "f39a9578-3865-488a-b164-debc92a9f745",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2f8a8a0c-5347-4c09-8a5f-c266baf9354f",
+			"id": "62d8ef05-02fa-4564-837d-a7b536b71664",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5a427490-a5e9-451d-a132-b1fd9b31be39",
+			"id": "a890edec-295f-4eec-a4c8-0711a46e0830",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "993995a8-5c09-4c79-bea2-86a1139c0aef",
+			"id": "195642e4-03ee-4c7f-8f3b-eb71f84f934f",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "b9af6ad8-cd8d-4e78-8ecc-6ef40e5be33f",
+			"id": "b10e4373-8a22-4200-a536-9d64d8b7c661",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "6940b695-725f-4c95-a2d0-3a8801dd142b",
+			"id": "214a60ce-c9e7-4027-896f-cf736e732e4f",
 			"key": "now",
 			"value": ""
 		}
