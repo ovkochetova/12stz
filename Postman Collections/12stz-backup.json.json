@@ -7836,7 +7836,7 @@
 											"      ]\r",
 											"    }\r",
 											"  ],\r",
-											"  \"categoryDeliveryTypeRestrictions\": [\r",
+											"  /*\"categoryDeliveryTypeRestrictions\": [\r",
 											"    {\r",
 											"      \"categoryId\": body.categoryDeliveryTypeRestrictions[0].category.id,\r",
 											"      \"messageId\": body.categoryDeliveryTypeRestrictions[0].message.id,\r",
@@ -7849,7 +7849,7 @@
 											"      \"popupId\": body.categoryDeliveryTypeRestrictions[1].popup.id,\r",
 											"      \"isActive\": body.categoryDeliveryTypeRestrictions[1].isActive\r",
 											"    }\r",
-											"  ],\r",
+											"  ],*/\r",
 											"  \"intervals\": [\r",
 											"    {\r",
 											"      \"id\": body.intervals[0].id,\r",
@@ -13248,51 +13248,51 @@
 	],
 	"variable": [
 		{
-			"id": "9ea3bc44-128f-411c-a6d0-8b9eb6eed445",
+			"id": "b2794676-c930-4a7c-b687-e696ebb4c04b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6ad13aaf-aed1-403b-986f-1257ef4150a3",
+			"id": "6ccb6554-f1cc-4f24-9e76-72535ee81c77",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4e342f20-43aa-46a5-9ec4-862f8ea691e7",
+			"id": "63f1d417-2244-4644-b6f6-32a3ace3285b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "64d938c6-b2ce-40f3-afbe-e82d5f8177d2",
+			"id": "e79b9893-0a9f-4303-a599-ec7d780ede7b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4adc164b-038a-49f4-af82-ce3d18eea5d7",
+			"id": "0cdb52dd-ee2d-419b-85f0-d4b8aa01ceef",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "889a5315-2e9a-492d-8ea3-26a144f42549",
+			"id": "35af7df9-c483-4b96-8672-dffd08e60f9d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a1c6d72a-71d2-4db1-bccd-790d25301877",
+			"id": "14f27cdb-16c4-4616-a23f-72ba6395e86d",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "de7708f6-d4e7-4da8-9f5e-d05845ff5576",
+			"id": "04f19cd0-4c24-4558-b79a-a5c66370d2ca",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "24dc3a48-04bf-411b-b721-b393ff9dbd2e",
+			"id": "685f73e0-0656-4e0e-a59e-f2baedb7bf52",
 			"key": "now",
 			"value": ""
 		}
