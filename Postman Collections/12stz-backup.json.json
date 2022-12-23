@@ -7680,7 +7680,7 @@
 											"      \"paymentMethodId\": body.paymentMethodToDeliveryType[1].paymentMethod.id,\r",
 											"      \"messageId\": body.paymentMethodToDeliveryType[1].message.id,\r",
 											"      \"maxPrice\": body.paymentMethodToDeliveryType[1].maxPrice,\r",
-											"      \"isVisibleWhileRestricted\": false,\r",
+											"      \"isVisibleWhileRestricted\": body.paymentMethodToDeliveryType[1].isVisibleWhileRestricted,\r",
 											"      \"paymentMethodCategoryRestrictions\": [\r",
 											"        {\r",
 											"          \"categoryId\": -12029503,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "c24b9e79-5a14-49cf-801a-578f01001707",
+			"id": "3b83cb0b-3110-4d30-9e15-f075ee47d13e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f164c6cf-946e-4183-b2fe-54b7bfd0abf1",
+			"id": "099f1b6a-0598-43a4-9970-8e3663e2c061",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a61d6d2-2a6b-4b7d-aefa-5cce4cfe04cd",
+			"id": "da74628c-53fe-440f-a75f-cdd08e1c3438",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2481f9f9-2378-427f-a225-c99183919c36",
+			"id": "7aa33177-17c1-426e-9595-26497ba3ad65",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1a61428a-d1ef-41b2-8c37-a0bb8e47fb06",
+			"id": "4b9098c1-8902-47e2-8cce-ca11ac6719be",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bc150f4e-aee1-4463-a229-a42b09e49c5e",
+			"id": "6dae8893-141a-4d03-9254-316b6a90c503",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "19b4da8f-5e37-4615-90cd-68bde26ded25",
+			"id": "90e5658e-1460-4c25-93e6-c0e0d2961b0b",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "57f62b5b-80ca-4172-866a-4e3cccf55fa3",
+			"id": "5ad246c4-9e45-47bd-84ff-74526dfe8ecd",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1e89b7ad-c65b-408e-a5a3-d45c0b240d0a",
+			"id": "d5e0667a-ca52-4e2d-8ce5-0fb4b1679209",
 			"key": "now",
 			"value": ""
 		}
