@@ -7651,7 +7651,7 @@
 											"  \"restrictionByQuantityIsActive\": jsonData.restrictionByQuantityIsActive,\r",
 											"  \"restrictionByQuantityMessageId\": jsonData.restrictionByQuantityMessage.id,\r",
 											"  \"restrictionByQuantityPopupId\": jsonData.restrictionByQuantityPopup.id,\r",
-											"  \"maxQuantityPerArticle\": -30915136,\r",
+											"  \"maxQuantityPerArticle\": jsonData.maxQuantityPerArticle,\r",
 											"  \"restrictionByQuantityPerArticleIsActive\": true,\r",
 											"  \"restrictionByQuantityPerArticleMessageId\": -82490202,\r",
 											"  \"restrictionByQuantityPerArticlePopupId\": -17410589,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "8b4be85b-ef3c-48b5-8407-23b11ffb9992",
+			"id": "158a0cca-bdf8-4f2c-85a5-9d8c8f7f60b6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cfb92ab7-f787-4f23-8e13-1e8cb8a38e8f",
+			"id": "116b6a80-e69b-43f7-a048-958cfa327f9d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "284b6bd3-562d-4cf4-9a54-c73697f59655",
+			"id": "cd7c898f-348a-4724-a3f7-56f9c46bcb1c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b8395a66-0522-431d-a7b9-778bbf4f57c6",
+			"id": "eb263a09-84f4-41a5-9196-710f9a0de58d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "dd6526ee-388e-4dcd-b823-3f7d278a2984",
+			"id": "9bfeff1e-aa2a-427e-a9c8-cb29d0f3f187",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "8d98ccf6-25c7-4e38-88e3-941fe6a6b008",
+			"id": "87140575-8dd5-49a1-a97e-bc9af064465d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "06c59a2a-c2b8-4b8f-a927-038202993dcb",
+			"id": "99b706e5-82b9-4e77-a5ad-608367b63e3a",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "a95a0951-fc94-4ea7-8722-799e47bdbff7",
+			"id": "c9e2dd89-af2c-43ca-8f39-4ca6841f82cd",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1fcda50e-969c-44ed-9918-309449ead861",
+			"id": "bcb31433-3392-4e32-838a-d8938f9e6d96",
 			"key": "now",
 			"value": ""
 		}
