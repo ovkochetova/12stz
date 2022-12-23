@@ -7629,7 +7629,7 @@
 											"  \"name\": body.name,\r",
 											"  \"descriptionRu\": body.descriptionRu,\r",
 											"  \"popupId\": jsonData.popup.id,\r",
-											"  \"code\": \"exercitation aliquip\",\r",
+											"  \"code\": jsonData.code,\r",
 											"  \"defaultDaysFrom\": 67446703,\r",
 											"  \"defaultDaysTo\": 460809,\r",
 											"  \"deliveryPrice\": 71685520.37973574,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "15fb0435-51a0-49f7-9b9d-ab0b5fc0f153",
+			"id": "65e17067-e5d5-4223-b494-5d09ab15c67c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9076cf3c-f9f0-4527-b1af-ecd8f74239a7",
+			"id": "cbf93f8e-8e75-40ba-8b92-cfeefb2d58c3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "66be4b45-88b8-4425-a6e4-cb00465c67b9",
+			"id": "7493dbf4-2d4d-49bc-8281-56bcf1fd5b8c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2789be16-1d97-4f67-b013-37421a260f02",
+			"id": "cd68efea-7a6a-4d51-ba70-f9dd61b04d12",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cc83ac5d-c4af-4d40-b316-ee40b2c6dbfa",
+			"id": "a01a595c-ffdc-4795-9488-8c30ca242d49",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ce3e7635-92db-4404-81fc-6463c4acd1fb",
+			"id": "c7bb2276-1dc4-441a-81de-287204a735f4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d4a51f9c-89f6-4c72-be36-a7abc1e48372",
+			"id": "d0b23b89-2dff-49aa-8242-56eb3eab11ea",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "b0763db1-0d38-4dbb-a97b-7c0006daa4a7",
+			"id": "318362d7-3e35-41df-b46f-505378d95531",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fbee2bb0-3ea7-4e24-b028-36d64815e538",
+			"id": "e0365e4b-8666-4d75-8c1d-25fd3ac5c242",
 			"key": "now",
 			"value": ""
 		}
