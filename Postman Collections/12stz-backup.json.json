@@ -7665,8 +7665,8 @@
 											"      \"isVisibleWhileRestricted\": body.paymentMethodToDeliveryType[0].isVisibleWhileRestricted,\r",
 											"      \"paymentMethodCategoryRestrictions\": [\r",
 											"        {\r",
-											"          \"categoryId\": -60383925,\r",
-											"          \"messageId\": 14034716,\r",
+											"          \"categoryId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].category.id,\r",
+											"          \"messageId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].message.id,\r",
 											"          \"isActive\": false\r",
 											"        },\r",
 											"        {\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "8d41cb11-ca3c-4772-bf95-1fb7bc563372",
+			"id": "e75ba6c7-bf12-4662-8258-2dedf1563976",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "48ddba3e-f432-4e0c-b12c-43e2bf243570",
+			"id": "c4be785c-8150-4753-a0e2-e27f34bbe888",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "efe5ec58-d808-44dc-9296-8e44041486e5",
+			"id": "31bfe22c-065d-4169-91e8-90288dbf413c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7c7c0776-ae88-44a1-88c1-ace2d04a9b59",
+			"id": "61855938-70c4-46d8-94f1-0d518a13db3d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "96f4b99e-94ec-4062-89dc-97c83ab34445",
+			"id": "cd6352fc-d90e-41a6-9b46-3aa3232b308f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "fe5b6214-1bb4-4bb8-9d21-1753acf089a0",
+			"id": "d2e7b826-e1d6-41dd-8a5e-824cf7eb5a6e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "cb2cfb55-ca14-4c56-8963-eb678b9f11f0",
+			"id": "e37ab8ee-015a-4b2e-bf00-1ede8fdaebcf",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "06e50299-3eb8-49bd-900b-a1381dcd37cf",
+			"id": "fa492cdf-0672-4406-9457-4db2f6f0ea8f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5fd8d939-d3b9-4a30-9f1a-d467af815e0f",
+			"id": "65c29503-2179-4ff7-b7fc-7f39af690398",
 			"key": "now",
 			"value": ""
 		}
