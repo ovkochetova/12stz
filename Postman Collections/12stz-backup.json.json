@@ -7767,7 +7767,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "/*{\n  \"transportCompanyModeId\": 94154124,\n  \"zoneGroupId\": -83398542,\n  \"name\": \"enim\",\n  \"descriptionRu\": \"dolor labore mollit\",\n  \"popupId\": -85262347,\n  \"code\": \"exercitation aliquip\",\n  \"defaultDaysFrom\": 67446703,\n  \"defaultDaysTo\": 460809,\n  \"deliveryPrice\": 71685520.37973574,\n  \"deliveryPriceBorder\": 96087998.03596643,\n  \"deliveryPriceAfterBorder\": -31546515.63275066,\n  \"deliveryMinDays\": -52409819,\n  \"cutoffTime\": \"anim nulla quis\",\n  \"consolidationHours\": 21210572,\n  \"gapHours\": -43304233,\n  \"priorityCoefficient\": 23122457.549490735,\n  \"maxDaysCoefficient\": -67135291.7380993,\n  \"tariffCoefficient\": 19928296.78901033,\n  \"winnerPercent\": -95528789,\n  \"maxPrice\": -44236094,\n  \"restrictionByPriceIsActive\": false,\n  \"restrictionByPriceMessageId\": 7103634,\n  \"restrictionByPricePopupId\": 75775354,\n  \"maxQuantity\": 71212973,\n  \"restrictionByQuantityIsActive\": true,\n  \"restrictionByQuantityMessageId\": -77386181,\n  \"restrictionByQuantityPopupId\": -70561590,\n  \"maxQuantityPerArticle\": -30915136,\n  \"restrictionByQuantityPerArticleIsActive\": true,\n  \"restrictionByQuantityPerArticleMessageId\": -82490202,\n  \"restrictionByQuantityPerArticlePopupId\": -17410589,\n  \"isVisibleWhileRestricted\": false,\n  \"isActive\": true,\n  \"paymentMethodToDeliveryType\": [\n    {\n      \"paymentMethodId\": 31438397,\n      \"messageId\": -99541659,\n      \"maxPrice\": -50712169,\n      \"isVisibleWhileRestricted\": true,\n      \"paymentMethodCategoryRestrictions\": [\n        {\n          \"categoryId\": -60383925,\n          \"messageId\": 14034716,\n          \"isActive\": false\n        },\n        {\n          \"categoryId\": 50893219,\n          \"messageId\": 13479921,\n          \"isActive\": false\n        }\n      ]\n    },\n    {\n      \"paymentMethodId\": -99229406,\n      \"messageId\": 25844912,\n      \"maxPrice\": -25941617,\n      \"isVisibleWhileRestricted\": false,\n      \"paymentMethodCategoryRestrictions\": [\n        {\n          \"categoryId\": -12029503,\n          \"messageId\": 66435658,\n          \"isActive\": true\n        },\n        {\n          \"categoryId\": 11122594,\n          \"messageId\": 99551250,\n          \"isActive\": false\n        }\n      ]\n    }\n  ],\n  \"categoryDeliveryTypeRestrictions\": [\n    {\n      \"categoryId\": -27734366,\n      \"messageId\": -64258515,\n      \"popupId\": -27777483,\n      \"isActive\": true\n    },\n    {\n      \"categoryId\": -25682050,\n      \"messageId\": -12264283,\n      \"popupId\": -59318827,\n      \"isActive\": true\n    }\n  ],\n  \"intervals\": [\n    {\n      \"id\": -24606008,\n      \"clientTimeFrom\": \"occaecat\",\n      \"clientTimeTo\": \"laboris velit ipsum\",\n      \"tkTimeFrom\": \"commodo dolor nisi\",\n      \"tkTimeTo\": \"sint commodo\",\n      \"dayOfWeek\": \"monday\",\n      \"code\": \"consectetur adipisicing\",\n      \"createdAt\": \"amet cons\",\n      \"updatedAt\": \"dolor elit consectetur ex\"\n    },\n    {\n      \"id\": 29324856,\n      \"clientTimeFrom\": \"aliquip Lorem\",\n      \"clientTimeTo\": \"sint occaecat minim\",\n      \"tkTimeFrom\": \"velit elit Duis a\",\n      \"tkTimeTo\": \"pariatur\",\n      \"dayOfWeek\": \"monday\",\n      \"code\": \"mollit nisi \",\n      \"createdAt\": \"enim id\",\n      \"updatedAt\": \"ut consectetur dolore reprehenderit\"\n    }\n  ]\n}*/"
+									"raw": ""
 								},
 								"url": {
 									"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
@@ -13095,51 +13095,51 @@
 	],
 	"variable": [
 		{
-			"id": "c2796767-00f8-4b14-946a-3f60c52e98a3",
+			"id": "a9b01dd0-ab83-4a23-8d95-72a641cd41b6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a50e7ad-a3b6-4acb-bdac-337eb1c21def",
+			"id": "98145e07-3dcc-4434-9bc0-15f958641d7c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c6e903d6-e909-4867-a4ee-c14b408ab12f",
+			"id": "bb76efa0-c457-40af-b16d-3ea5a3d4dc73",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "24ce8a18-c808-45ce-ad3e-c4b550609ece",
+			"id": "fdedc1a0-93ba-460e-9fff-52796215ec1e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1f74c173-c8bd-4fcb-a69d-5af71e926e94",
+			"id": "23bc9335-9836-4eb4-be87-1b8bc7681cee",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7c0ed1f8-1985-4ae9-9833-d366f79e6559",
+			"id": "cd64442a-6fe3-4f8d-bb53-e7eca698edc4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5d2ac60c-86b9-4a82-a063-092e61a7cbff",
+			"id": "f891c073-5049-49f5-9380-efc0b55f6459",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "fe8f3dab-983a-4ab8-abf9-a17a1e1816c1",
+			"id": "d6cfd809-6da7-4e33-8cca-a5d97ead9613",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2a1a7f90-fd0d-44aa-95d8-86cca48e7bb6",
+			"id": "702b0315-afda-4af7-9be7-c6bcdcad4810",
 			"key": "now",
 			"value": ""
 		}
