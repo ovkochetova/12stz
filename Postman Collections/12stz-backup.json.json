@@ -7619,9 +7619,6 @@
 											"let body = pm.collectionVariables.get(\"DT\");\r",
 											"\r",
 											"\r",
-											"pm.request.body.raw = body;\r",
-											"console.log(body)\r",
-											"\r",
 											"\r",
 											"let newbody = {\r",
 											"  \"transportCompanyModeId\": body.transportCompanyMode.id,\r",
@@ -7733,7 +7730,11 @@
 											"      \"updatedAt\": body.intervals[1].updatedAt\r",
 											"    }\r",
 											"  ]\r",
-											"}"
+											"}\r",
+											"\r",
+											"pm.request.body.raw = newbody;\r",
+											"console.log(body)\r",
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -13091,51 +13092,51 @@
 	],
 	"variable": [
 		{
-			"id": "136a513e-6a5a-4007-af66-3f18eadb13d1",
+			"id": "8477691a-b747-48ee-950a-d1d87b04af46",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9831d184-4e3f-4f5b-9634-4563c654abf7",
+			"id": "869225d7-43ad-4535-b7c8-5da0fe2606ce",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7df3d68b-ab52-4b64-aefe-c116dcc87c58",
+			"id": "f956deac-1b78-4ddb-b9f2-7d818ef6c370",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4ad73570-40d7-4b8d-b447-f0acaf259f11",
+			"id": "0d0f5a4e-f1a2-4379-b9fb-7fc182179330",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "88cffaad-8a63-4012-bcc0-7c9a23453556",
+			"id": "a024dd2d-7629-4d03-9201-2619cd24f60c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "03cf5140-699f-4e7f-97f1-d3af67cd67f0",
+			"id": "2db221b3-5e21-47fb-9bdf-149813cc30e9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4ac4b6e1-7929-45a4-a4f1-3b3317be70fc",
+			"id": "5edbe17f-72b0-45ab-bc47-1d3b111e0e47",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "525aa52a-3a08-4d8a-b91e-a766f07aa44a",
+			"id": "fe7581aa-599c-4fca-bfa5-797ba7a0e718",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1f559f06-029d-41e6-afc5-8376d13897fc",
+			"id": "13da1d9e-ea63-425a-ac01-e416490941d0",
 			"key": "now",
 			"value": ""
 		}
