@@ -7946,6 +7946,18 @@
 						},
 						{
 							"name": "Изменение статуса типа доставки на true",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "07d64568-113c-475b-948b-c64a2aaae808",
+										"exec": [
+											"pm.collectionVariables.get(\"newDT\");"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "4553d999-670d-4611-aa1c-30dddaae2079",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -7970,7 +7982,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"transportCompanyModeId\": {{transportCompanyMode}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"name\": \"{{zonegroup_name}}\",\n  \"descriptionRu\": \"\",\n  \"popupId\": {{popup_id}},\n  \"code\": \"{{code}}\",\n  \"isActive\": false,\n\n  \"defaultDaysFrom\": {{defaultDaysFrom}},\n  \"defaultDaysTo\": {{defaultDaysTo}},\n  \"deliveryPrice\": {{deliveryPrice}},\n  \"deliveryPriceBorder\": {{deliveryPriceBorder}},\n  \"deliveryPriceAfterBorder\": {{deliveryPriceAfterBorder}},\n  \"deliveryMinDays\": {{deliveryMinDays}},\n  \"cutoffTime\": \"{{cutoffTime}}\",\n  \"consolidationHours\": {{consolidationHours}},\n  \"gapHours\": {{gapHours}},\n\n  \"priorityCoefficient\": {{priorityCoefficient}},\n  \"maxDaysCoefficient\": {{maxDaysCoefficient}},\n  \"tariffCoefficient\": {{tariffCoefficient}},\n  \"winnerPercent\": {{winnerPercent}},\n\n  \"isVisibleWhileRestricted\": false,\n  \"maxPrice\": {{maxPrice}},\n  \"restrictionByPriceIsActive\": false,\n  \"restrictionByPriceMessageId\": {{restrictionByPriceMessage}},\n  \"restrictionByPricePopupId\": {{restrictionByPricePopup}},\n\n  \"maxQuantity\": {{maxQuantity}},\n  \"restrictionByQuantityIsActive\": true,\n  \"restrictionByQuantityMessageId\": {{restrictionByQuantityMessage}},\n  \"restrictionByQuantityPopupId\": {{restrictionByQuantityPopup}},\n\n  \"maxQuantityPerArticle\": {{maxQuantityPerArticle}},\n  \"restrictionByQuantityPerArticleIsActive\": true,\n  \"restrictionByQuantityPerArticleMessageId\": {{restrictionByQuantityPerArticleMessage}},\n  \"restrictionByQuantityPerArticlePopupId\": {{restrictionByQuantityPerArticlePopup}},\n  \"categoryDeliveryTypeRestrictions\": [],\n\n  \"paymentMethodToDeliveryType\": [\n    {\n      \"paymentMethodId\": {{paymentMethod_id}},\n      \"messageId\": {{message_paymentMethod_id}},\n      \"maxPrice\": {{maxPrice_paymentMethod}},\n      \"isVisibleWhileRestricted\": true\n    }\n      ],\n\n    \"intervals\": []\n\n}"
+									"raw": ""
 								},
 								"url": {
 									"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
@@ -13223,56 +13235,56 @@
 	],
 	"variable": [
 		{
-			"id": "2128be4d-942f-4b6c-a686-0cca38481f18",
+			"id": "3dcd53de-0cb2-4d1a-8cd4-1c32d3485eb6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "377688dd-fe24-4332-8012-58884bdfa88d",
+			"id": "2465221c-e3e4-454e-b350-489627af9dd1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b3a27aa9-d3ee-4289-ac43-feff8b8cfdb7",
+			"id": "5dff67a1-0ac1-49c0-8f87-91517553eabe",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "583be919-7967-4454-8d1c-dc5ebf8a860c",
+			"id": "01b03cf8-bb30-447f-a5c2-df62edd2effa",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "233544d5-c39f-4fe9-a22d-aae7ba171059",
+			"id": "6f9ec59c-d637-4206-8032-3edf41543950",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b53dfa9d-fbc4-4a46-af20-577003a0ca91",
+			"id": "82da6a08-9141-440f-8ec1-c905a63392fd",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "c625c69a-90b2-4e72-8349-29674fd56068",
+			"id": "0c2be64e-93bb-4abb-b010-f4a4906d6cac",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "4502669b-1d1b-47c0-91d4-8f81f36dbe54",
+			"id": "392537af-f74b-4206-ad38-3c95d56af60c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "317ea5c4-6393-45aa-897e-884590368b6a",
+			"id": "49356da8-e871-4316-a8cf-986ff0e2c9f3",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "e315ba58-ee7c-47d9-9fc9-8055e9648cba",
+			"id": "e4d3925d-1512-4b2d-86f4-419ee3c516e4",
 			"key": "newDT",
 			"value": ""
 		}
