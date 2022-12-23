@@ -7719,7 +7719,7 @@
 											"      \"dayOfWeek\": body.intervals.dayOfWeek,\r",
 											"      \"code\": body.intervals.code,\r",
 											"      \"createdAt\": body.intervals.createdAt,\r",
-											"      \"updatedAt\": \"dolor elit consectetur ex\"\r",
+											"      \"updatedAt\": body.intervals.updatedAt\r",
 											"    },\r",
 											"    {\r",
 											"      \"id\": 29324856,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "f6dfe16b-a457-49be-9ade-9b109a19c468",
+			"id": "d9dcf48b-699f-45a2-8678-b32ad294779c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "73d6286e-f775-40fa-861d-8259ed61cd26",
+			"id": "a8a4549e-abd2-499f-af36-3bed45097c9b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2f47652f-dfe0-4b26-8972-e6c5a755deb0",
+			"id": "9c476322-e80c-41ab-a74b-5403cd2b2f00",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c1c62a1e-c7ac-4950-bd7f-725ffc3496e8",
+			"id": "92d73841-1f8f-4992-a78f-51679518fb19",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a7f62064-cb32-4adc-ac9d-0382899f86f6",
+			"id": "5d17ff27-bf7e-4899-a689-48fba79dc10a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b2d54060-e144-464f-90d4-4fae0879e27a",
+			"id": "cfca77eb-f5e8-4ae4-9cde-9d712e2fd982",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "464ca428-7e2c-4f4f-bec6-5bf48406fdef",
+			"id": "7b8b367d-7c1e-4f14-b826-3699885e8f8c",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "72d48510-2409-495d-9868-03900666e5da",
+			"id": "e9d49282-cc42-4960-9231-caf20444d6b6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3646c122-dfa4-4273-b795-29f5ca375ac0",
+			"id": "cf69831c-a4de-4e7a-a975-f9492bde7d45",
 			"key": "now",
 			"value": ""
 		}
