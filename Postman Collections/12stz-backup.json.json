@@ -7718,7 +7718,7 @@
 											"      \"tkTimeTo\": body.intervals.tkTimeTo,\r",
 											"      \"dayOfWeek\": body.intervals.dayOfWeek,\r",
 											"      \"code\": body.intervals.code,\r",
-											"      \"createdAt\": \"amet cons\",\r",
+											"      \"createdAt\": body.intervals.createdAt,\r",
 											"      \"updatedAt\": \"dolor elit consectetur ex\"\r",
 											"    },\r",
 											"    {\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "3235aa78-8aec-4eb3-8585-aae1237bb7ed",
+			"id": "f6dfe16b-a457-49be-9ade-9b109a19c468",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7d01c668-5a13-4086-aa58-d9d7da2aacec",
+			"id": "73d6286e-f775-40fa-861d-8259ed61cd26",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a670a106-c134-4fd8-bd1e-cfecd07ed149",
+			"id": "2f47652f-dfe0-4b26-8972-e6c5a755deb0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8851c31b-a6c9-4321-bf12-0650e9af4bcb",
+			"id": "c1c62a1e-c7ac-4950-bd7f-725ffc3496e8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f5bf2e3a-1948-4495-a123-f6a38aa6f995",
+			"id": "a7f62064-cb32-4adc-ac9d-0382899f86f6",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "8bb3b80d-248e-4644-83a3-8ac421f7f6ee",
+			"id": "b2d54060-e144-464f-90d4-4fae0879e27a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3e5e4680-f082-4037-a003-1c5ec9b23e78",
+			"id": "464ca428-7e2c-4f4f-bec6-5bf48406fdef",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "6ce7ba80-1275-4b7a-8d87-e9f594134515",
+			"id": "72d48510-2409-495d-9868-03900666e5da",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "58721180-e491-46c6-a1f2-2935dbf2367f",
+			"id": "3646c122-dfa4-4273-b795-29f5ca375ac0",
 			"key": "now",
 			"value": ""
 		}
