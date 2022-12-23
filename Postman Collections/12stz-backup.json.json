@@ -7911,7 +7911,7 @@
 							"response": []
 						},
 						{
-							"name": "Крым",
+							"name": "тип дост не Активный",
 							"id": "8602d87e-9787-4379-b042-7f7a12f634a4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -13239,56 +13239,56 @@
 	],
 	"variable": [
 		{
-			"id": "427a3561-8711-4816-8f98-c52c337d3653",
+			"id": "d5060345-f741-439e-9503-e4111ec5a7eb",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "af875ad0-4b4c-4479-a08a-8167203a0895",
+			"id": "bbec536a-624d-478c-9606-631020a0ed8a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "47352306-713d-42be-8812-026c44235656",
+			"id": "a6fecd8f-857c-4a9b-9ab5-496311aa1643",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c9db7988-3684-4b4e-82f5-0b68bf56f14b",
+			"id": "ef4278a2-6d81-49ab-a0ef-62a5245aaeb7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8dae93da-3b48-4628-8adb-43d750184ac1",
+			"id": "38cba99c-9436-49da-8243-2481db285b1b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1a3ef5f5-3bf0-4687-99e5-211a8ac06bf0",
+			"id": "8512ce6f-26fe-4dfd-8b20-184603a65e07",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e7874791-4c4f-45c9-950e-81525eedd42f",
+			"id": "a526b546-716c-4424-a18e-40992bb99b0a",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "cb13962a-0bad-48fb-8e25-dc92ce5f928d",
+			"id": "3a38335e-b801-44ed-9a59-d27318bcc8db",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5a3a3894-f283-43c2-8ef1-9cf93bbb4f5f",
+			"id": "ffec3db1-e2f7-4087-81af-9780c174be97",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "ef5d33a9-8ef1-49af-aa69-e02b8fcabd12",
+			"id": "9999e436-0045-482f-a6d8-8ec2849c8e17",
 			"key": "newDT",
 			"value": ""
 		}
