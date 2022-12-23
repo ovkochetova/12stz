@@ -7512,7 +7512,7 @@
 									"script": {
 										"id": "26462bb9-ab46-4bfc-8b87-3c7ccd273d24",
 										"exec": [
-											"/*pm.test(\"Status code is 200\", function () {\r",
+											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
 											"});\r",
 											"\r",
@@ -7524,7 +7524,7 @@
 											"\r",
 											"var jsonData = JSON.parse(responseBody);\r",
 											"pm.environment.set(\"id\", jsonData.id);\r",
-											"pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
+											"/*pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
 											"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
 											"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
 											"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
@@ -13095,51 +13095,51 @@
 	],
 	"variable": [
 		{
-			"id": "a9b01dd0-ab83-4a23-8d95-72a641cd41b6",
+			"id": "f0063392-e2d3-42d3-b735-d0cc3ce4dae7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "98145e07-3dcc-4434-9bc0-15f958641d7c",
+			"id": "7ce673c6-8763-45e7-9d5e-d3eab1e5ab35",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb76efa0-c457-40af-b16d-3ea5a3d4dc73",
+			"id": "2152b980-c5eb-4404-86d0-00529f981577",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fdedc1a0-93ba-460e-9fff-52796215ec1e",
+			"id": "0eb8d932-42e9-4466-b666-95d7ec63ea47",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "23bc9335-9836-4eb4-be87-1b8bc7681cee",
+			"id": "033af04e-d2d3-46ec-a475-22e42f5340a2",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "cd64442a-6fe3-4f8d-bb53-e7eca698edc4",
+			"id": "e78c08e3-e50f-4a12-a0ae-5a7531735a81",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f891c073-5049-49f5-9380-efc0b55f6459",
+			"id": "deffaa1f-73c9-4f8b-bed2-ee28eab57613",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "d6cfd809-6da7-4e33-8cca-a5d97ead9613",
+			"id": "66f5b35d-ba25-45d1-9cd3-d1960e94726a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "702b0315-afda-4af7-9be7-c6bcdcad4810",
+			"id": "fbeed255-b2a1-4aae-9c62-06a5c3944bc5",
 			"key": "now",
 			"value": ""
 		}
