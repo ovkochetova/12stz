@@ -7339,6 +7339,148 @@
 					"response": []
 				},
 				{
+					"name": "все чекбоксы Активны",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isPriceBorderIncludeDelivery = false;\r",
+									"body.isPriceBorderIncludePresent = false;\r",
+									"body.isProductQuantityBorderIncludeDelivery = true;\r",
+									"body.isProductQuantityBorderIncludePresent = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"body.sProductQuantityBorderIncludeDelivery = true,\r",
+									"body.isProductQuantityBorderIncludePresent = true,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Максимальная количество товаров включает подарки\", function () {\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7ad3424d-df60-4280-8520-20fa28fb8f4f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "учитывать подарки  7 шт.",
 					"event": [
 						{
@@ -13103,51 +13245,51 @@
 	],
 	"variable": [
 		{
-			"id": "e2134bd3-4fd7-4bdd-8fc3-398893c4f07f",
+			"id": "194fafba-10ef-4c79-a6de-91aa86b83456",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "28cfedec-d58b-4c24-83b0-7d5656e7a66f",
+			"id": "2784223f-0965-4ec6-8e97-4f26dad02102",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1efbdfd8-87fe-45c9-a387-c0dd885df25a",
+			"id": "106ec9ba-5593-41a7-9c48-798926652023",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "adf05413-a4e3-40e2-a49a-f6404a85330b",
+			"id": "96b58b87-6e8d-410c-a815-ea75bef3b298",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "08f7ee4a-c3ad-4d5d-9748-032736177778",
+			"id": "2dcb7def-8d31-48b9-8142-50cde2fca4a9",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1a2fe5b8-c65c-464c-90f3-5aa67f157834",
+			"id": "d1253d16-eb95-4d7a-8bc5-a20707acc18b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "7eab6114-1af3-4395-8b9b-59bc24400f29",
+			"id": "3671b73b-d647-4ab4-bd2a-da1778c2baa5",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "5270358e-9223-42f2-9ae6-bf3870fe70d4",
+			"id": "b9d14c84-337d-489b-9e66-a0525298eb27",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "03856392-0734-4286-86bc-a2d109057cd2",
+			"id": "dc212665-5ed8-46d7-b1e6-7f3177d7d2bd",
 			"key": "now",
 			"value": ""
 		}
