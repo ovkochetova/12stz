@@ -7715,7 +7715,7 @@
 											"      \"clientTimeFrom\": body.intervals.clientTimeFrom,\r",
 											"      \"clientTimeTo\": body.intervals.clientTimeTo,\r",
 											"      \"tkTimeFrom\": body.intervals.tkTimeFrom,\r",
-											"      \"tkTimeTo\": \"sint commodo\",\r",
+											"      \"tkTimeTo\": body.intervals.tkTimeTo,\r",
 											"      \"dayOfWeek\": \"monday\",\r",
 											"      \"code\": \"consectetur adipisicing\",\r",
 											"      \"createdAt\": \"amet cons\",\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "b99be3da-7c3c-4226-8fc4-e529de9d916e",
+			"id": "2e6e0405-62ab-4368-838d-d68367b787af",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "137d474d-e35c-4513-859e-8db2cffd416b",
+			"id": "43356d36-ae10-4a07-ae1c-4197341ed666",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "219f7067-d685-410f-a75e-5129920bf19a",
+			"id": "3d99458e-6321-4230-a92a-3c1673b3435c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb19f659-7801-4943-b0ce-d2a5ccec69b6",
+			"id": "639da762-9203-4632-85f9-061675bf3c99",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "11f62c51-4e90-45aa-940a-a37f97718655",
+			"id": "3f25ec7e-ea91-4dcd-bcb7-faf6840b8811",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e31a96b2-48dd-4cb8-8586-dd82e873714b",
+			"id": "3fa97471-b9ad-4977-b7e4-048f69d0971e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "7e290e76-bfd5-4257-be4e-9b33dcd28ef7",
+			"id": "6a936852-a05f-49f5-b481-ef71c1e3bfca",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "a5ccc969-9fb5-4ffe-a644-4bf7db4c1a3e",
+			"id": "699f24eb-ed32-4c74-8b0f-6e95753ced46",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2a8da9f0-7499-4f40-9d48-8cf0965ac8f0",
+			"id": "064054e0-dcc3-48a1-816c-ce465ecc12d0",
 			"key": "now",
 			"value": ""
 		}
