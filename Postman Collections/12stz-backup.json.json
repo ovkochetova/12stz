@@ -11638,7 +11638,14 @@
 									"pm.test(\"Ограничение для другой категории группы зон не активно\", () => {\r",
 									"    let jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"})"
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Ограничение по категории для группы зон не активно\", () => {\r",
+									"       pm.expect(jsonData.restrictions).to.not.exist;\r",
+									"     });\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -13095,51 +13102,51 @@
 	],
 	"variable": [
 		{
-			"id": "3c27169e-6b81-46b0-8ef1-839c0590ef29",
+			"id": "54d53a33-4f1d-4bb3-a469-0937a94ac7e9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c5a92c2f-7a09-48a0-875c-d4814b3dbe95",
+			"id": "6bd96222-4542-4e57-907e-4725fbca3603",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "133c0392-f1eb-4d44-b771-511dbe7a3b3d",
+			"id": "67063724-ce42-4933-b12b-484467aed9bc",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d0e6b774-6c86-4d82-a6b3-e0eb62f9b9c0",
+			"id": "741d1669-a667-407d-8d49-b85013baf3c0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2fc06bc6-6d4c-47ba-9521-06776ea6cd90",
+			"id": "844dbee7-2089-4ce0-8d10-51ba4ceee443",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ef30441c-9734-4040-8822-e6e7156ca04a",
+			"id": "0c8028fa-18ea-449c-9203-e93e77321822",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "482a1e45-fa63-426b-b3dc-1eb705490faa",
+			"id": "07bfa40a-6e84-46f4-a6a8-44f0e9788dab",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "49a048b7-5d7e-4904-9aff-00963133ce69",
+			"id": "0f85e5ce-ddfa-4ae6-a41f-e6957c676278",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3b082d61-ca30-4cfd-a233-6115fb51ec17",
+			"id": "c48d399e-5793-4c0f-ad0b-170530e18341",
 			"key": "now",
 			"value": ""
 		}
