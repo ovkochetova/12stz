@@ -7634,9 +7634,9 @@
 											"  \"defaultDaysTo\": jsonData.defaultDaysTo,\r",
 											"  \"deliveryPrice\": jsonData.deliveryPrice,\r",
 											"  \"deliveryPriceBorder\": jsonData.deliveryPriceBorder,\r",
-											"  \"deliveryPriceAfterBorder\": -31546515.63275066,\r",
-											"  \"deliveryMinDays\": -52409819,\r",
-											"  \"cutoffTime\": \"anim nulla quis\",\r",
+											"  \"deliveryPriceAfterBorder\": jsonData.deliveryPriceAfterBorder,\r",
+											"  \"deliveryMinDays\": jsonData.deliveryMinDays,\r",
+											"  \"cutoffTime\": jsonData.cutoffTime,\r",
 											"  \"consolidationHours\": 21210572,\r",
 											"  \"gapHours\": -43304233,\r",
 											"  \"priorityCoefficient\": 23122457.549490735,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "efc1d879-4806-4fcc-8102-cf8e95ebb163",
+			"id": "f9fee2f0-04d7-4f06-822f-c7407645a130",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e069e4df-d664-4e1b-bb8d-1c972dc50b4f",
+			"id": "427c564b-d671-4b67-8b5f-b38d5e664d96",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9f55daa6-9fc8-40d0-b3d6-7f6fc41b6d8d",
+			"id": "9491a9fd-5c7a-4682-aee2-cc0690dac091",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d3165e45-3388-4b8f-aa0a-c6a79bec4473",
+			"id": "5d538d1c-4c06-44c5-b8e8-2037758beb10",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "41590307-fb44-446e-b8b5-42de02564095",
+			"id": "b91e5ce9-7cd2-47c3-9b32-8cc30426ec0b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "19401850-2afb-4640-952f-903c2cc83843",
+			"id": "98e910cc-8b55-4462-8133-211f287d4f29",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "999b37c3-5971-43d1-a1d4-f2dd7fd92663",
+			"id": "ad0793e5-5d1c-4cb4-b5b4-b4a688661569",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "d4b90141-4082-4e78-bb37-b29ea078c8a1",
+			"id": "f5036410-4a1c-4038-8d9a-1253fbccacc4",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f057e859-d932-4171-96df-d81730a37d99",
+			"id": "e90cf5c4-85dd-451a-b06d-732df4909220",
 			"key": "now",
 			"value": ""
 		}
