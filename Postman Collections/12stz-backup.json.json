@@ -7814,8 +7814,7 @@
 											"    }\r",
 											"      ],\r",
 											"    \r",
-											"  \r",
-											"  \"categoryDeliveryTypeRestrictions\": [\r",
+											"    \"categoryDeliveryTypeRestrictions\": [\r",
 											"    {\r",
 											"      \"categoryId\": body.categoryDeliveryTypeRestrictions[0].category.id,\r",
 											"      \"messageId\": body.categoryDeliveryTypeRestrictions[0].message.id,\r",
@@ -7858,6 +7857,8 @@
 											"\r",
 											"console.log(\"newbody\",newbody)\r",
 											"pm.request.body.raw = newbody;\r",
+											"\r",
+											"pm.collectionVariables.set(\"newDT\", newbody);\r",
 											"\r",
 											""
 										],
@@ -13228,51 +13229,51 @@
 	],
 	"variable": [
 		{
-			"id": "64c4e8b1-983a-41df-972b-cfc93045acac",
+			"id": "4fb9d4bd-f13a-450f-ad69-d7d70170e825",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "36d307e6-f202-41a6-8b50-831327b87570",
+			"id": "3182edcd-cf25-4408-bfdc-66568761c6ce",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1d3f55ea-64b5-4525-8362-4491aa886070",
+			"id": "cf340377-3e9f-4817-b221-03ddf7a5b8df",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f16dfbb7-5354-4e4e-b2dc-b6628a90d1d9",
+			"id": "f0f6d721-a29d-473e-862a-a74c3c0bf63c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "84553f0d-5d69-4a10-8a1d-a2d0ca66c18a",
+			"id": "9c026af3-fbde-469d-b860-0bb002d47bb5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "66daa9d7-f752-4d62-82b5-75cc66e64cca",
+			"id": "5906edc5-56c7-4be0-8da8-264f6d51eefe",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3a9fbb1e-3989-414a-854c-88e788c7b77d",
+			"id": "e9f91c5d-f4bb-4ab2-9554-5e663e08347f",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "a4bbccdc-2dcf-4b5b-a8b3-b74d33dea607",
+			"id": "879f0aa9-d8b9-4ef1-bf0b-0630418b9268",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c3a5da0c-3be0-4d73-83ab-84d873b8f44a",
+			"id": "7b8ff13f-9039-49ed-b944-4e7dba5d8fdb",
 			"key": "now",
 			"value": ""
 		}
