@@ -11342,7 +11342,7 @@
 			"name": "Ограничение по категориям для групп зон",
 			"item": [
 				{
-					"name": "Поиск ограничения по названию группы зон",
+					"name": "Поиск ограничения по названию группы зон(Екб)",
 					"event": [
 						{
 							"listen": "test",
@@ -13095,51 +13095,51 @@
 	],
 	"variable": [
 		{
-			"id": "433e481d-6e68-4923-a048-690a647aa213",
+			"id": "0c53680d-e12b-4808-b10b-3007d7c1d84e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "edf02b2b-b256-471d-a015-92216613a262",
+			"id": "d65d13d7-7b9b-440b-a71e-df3413f3b18f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a3d0688f-8ee9-45cc-bc4a-45696f635bbc",
+			"id": "fa821acb-4d09-46b6-b3f3-c326ce17eea6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "497415d0-a2ab-466a-a19f-f6424adcc7d6",
+			"id": "a290bc52-a787-4dcd-bfad-39c2d3559e09",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "fcc28dd2-b613-4df4-99fc-ad7163595673",
+			"id": "5e1a68c8-4a5b-42bc-8474-8a351d275826",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e420f72a-2288-461c-a48f-331b4e7d50e1",
+			"id": "fc841e37-47b0-4bb1-8f57-4b38965d1ff1",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a4366720-a2b6-41d9-b81f-4942ac1bf585",
+			"id": "38ec257e-0aee-4c49-bba8-93e80081feba",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "476e66a0-012f-4393-ae7f-c01234822cc5",
+			"id": "6fdb0156-9b53-4b83-8a51-6b6d56d42378",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5d2c6fa1-9097-460d-9320-d82ba239d8f7",
+			"id": "d198165b-692f-4b52-93dd-87185b775421",
 			"key": "now",
 			"value": ""
 		}
