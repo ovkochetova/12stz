@@ -7654,7 +7654,7 @@
 											"  \"maxQuantityPerArticle\": jsonData.maxQuantityPerArticle,\r",
 											"  \"restrictionByQuantityPerArticleIsActive\": jsonData.restrictionByQuantityPerArticleIsActive,\r",
 											"  \"restrictionByQuantityPerArticleMessageId\": jsonData.restrictionByQuantityPerArticleMessage.id,\r",
-											"  \"restrictionByQuantityPerArticlePopupId\": -17410589,\r",
+											"  \"restrictionByQuantityPerArticlePopupId\": jsonData.restrictionByQuantityPerArticlePopup.id,\r",
 											"  \"isVisibleWhileRestricted\": false,\r",
 											"  \"isActive\": true,\r",
 											"  \"paymentMethodToDeliveryType\": [\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "d10fcd9c-4e22-4b7e-8b3c-65a88fcd84a3",
+			"id": "28036786-2291-45d4-bccb-3ddf6e35310c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c7cd98a9-e1db-47ef-be36-38bcf32af643",
+			"id": "2b47f583-afb6-41e4-8839-ee15e0092d55",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "06b21422-0214-436f-90ff-c7c1a60fcf6a",
+			"id": "f2fc641c-e8a1-402e-b9af-73580831902a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4c6eb7f7-0b27-4eb5-9e13-51d6ea73185d",
+			"id": "2816e3ad-eded-44a7-81b3-3b7784886b37",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7823dbab-ccb0-49cc-b5ad-6f6c96bbb72c",
+			"id": "8b465ea2-d5cb-4b12-b459-312fc751e6ae",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c61c79ff-b104-4c9b-9b6f-1773a652f4c2",
+			"id": "ad8178f4-24d9-4854-a6b4-43f1b4a9fae9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "18fd130d-8062-4c45-8aec-571916587c3a",
+			"id": "957e4283-4655-4a35-84dd-18c73d6800bc",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "11a57585-3972-4d5d-b4b3-59e55e166bf6",
+			"id": "91224bd0-61be-45df-a7f3-b1d2e561fd1b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0faaf034-84af-4fea-8e34-4833fdb4ce16",
+			"id": "3b9c9ec0-1cfc-458a-b7d5-057147e274a4",
 			"key": "now",
 			"value": ""
 		}
