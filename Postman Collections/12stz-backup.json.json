@@ -7639,7 +7639,7 @@
 											"  \"cutoffTime\": jsonData.cutoffTime,\r",
 											"  \"consolidationHours\": jsonData.consolidationHours,\r",
 											"  \"gapHours\": jsonData.gapHours,\r",
-											"  \"priorityCoefficient\": 23122457.549490735,\r",
+											"  \"priorityCoefficient\": jsonData.priorityCoefficient,\r",
 											"  \"maxDaysCoefficient\": -67135291.7380993,\r",
 											"  \"tariffCoefficient\": 19928296.78901033,\r",
 											"  \"winnerPercent\": -95528789,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "c1373e90-c99a-45e5-acd1-12e3b421b00d",
+			"id": "296db695-adbe-463a-afc7-43455c3cee52",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0ec6dc41-03d2-454f-8cf4-7447c2e4e2dd",
+			"id": "c00e9dfc-e3e2-45e7-ae15-dbd8954c0986",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e56f52d4-e2f7-4b42-b8e2-3612feaf54e6",
+			"id": "e64b66e3-78a4-4d07-bb8c-0b8683f3b646",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d63be764-dfbe-4917-8876-bb1f88bac978",
+			"id": "a5776dc9-2a1e-401a-8ab8-996ca78e12d7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "71675c3f-c6cf-4656-bf2c-4515ba389be2",
+			"id": "7e16b2c7-3c87-4206-a620-1164058093f2",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d4d55a31-639a-41d1-bdbc-45af6d54793e",
+			"id": "62ee7455-5650-42a6-8e87-dfc68a8828a3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b52fe4d8-4483-45d3-94dc-98f71613e577",
+			"id": "99f746cf-e3c8-4ce5-b265-90852926ff2d",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "1fc68bc6-fb53-4d29-bb11-a7d8924b94a5",
+			"id": "ae10610e-f619-48e3-bd4d-f91071c0723a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7907c17d-65ae-412d-8e1a-b2a8b9805dae",
+			"id": "addfcce2-9b34-4970-a3c7-96b9eec14f96",
 			"key": "now",
 			"value": ""
 		}
