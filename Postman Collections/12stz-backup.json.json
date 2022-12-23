@@ -7637,8 +7637,8 @@
 											"  \"deliveryPriceAfterBorder\": jsonData.deliveryPriceAfterBorder,\r",
 											"  \"deliveryMinDays\": jsonData.deliveryMinDays,\r",
 											"  \"cutoffTime\": jsonData.cutoffTime,\r",
-											"  \"consolidationHours\": 21210572,\r",
-											"  \"gapHours\": -43304233,\r",
+											"  \"consolidationHours\": jsonData.consolidationHours,\r",
+											"  \"gapHours\": jsonData.gapHours,\r",
 											"  \"priorityCoefficient\": 23122457.549490735,\r",
 											"  \"maxDaysCoefficient\": -67135291.7380993,\r",
 											"  \"tariffCoefficient\": 19928296.78901033,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "f9fee2f0-04d7-4f06-822f-c7407645a130",
+			"id": "c1373e90-c99a-45e5-acd1-12e3b421b00d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "427c564b-d671-4b67-8b5f-b38d5e664d96",
+			"id": "0ec6dc41-03d2-454f-8cf4-7447c2e4e2dd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9491a9fd-5c7a-4682-aee2-cc0690dac091",
+			"id": "e56f52d4-e2f7-4b42-b8e2-3612feaf54e6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5d538d1c-4c06-44c5-b8e8-2037758beb10",
+			"id": "d63be764-dfbe-4917-8876-bb1f88bac978",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b91e5ce9-7cd2-47c3-9b32-8cc30426ec0b",
+			"id": "71675c3f-c6cf-4656-bf2c-4515ba389be2",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "98e910cc-8b55-4462-8133-211f287d4f29",
+			"id": "d4d55a31-639a-41d1-bdbc-45af6d54793e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ad0793e5-5d1c-4cb4-b5b4-b4a688661569",
+			"id": "b52fe4d8-4483-45d3-94dc-98f71613e577",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "f5036410-4a1c-4038-8d9a-1253fbccacc4",
+			"id": "1fc68bc6-fb53-4d29-bb11-a7d8924b94a5",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e90cf5c4-85dd-451a-b06d-732df4909220",
+			"id": "7907c17d-65ae-412d-8e1a-b2a8b9805dae",
 			"key": "now",
 			"value": ""
 		}
