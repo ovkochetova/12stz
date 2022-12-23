@@ -7798,7 +7798,7 @@
 											"  \"restrictionByQuantityPerArticlePopupId\": body.restrictionByQuantityPerArticlePopup.id,\r",
 											"  \"isVisibleWhileRestricted\": body.isVisibleWhileRestricted,\r",
 											"  \"isActive\": false,\r",
-											"  \"paymentMethodToDeliveryType\": [\r",
+											"  /*\"paymentMethodToDeliveryType\": [\r",
 											"    {\r",
 											"      \"paymentMethodId\": body.paymentMethodToDeliveryType[0].paymentMethod.id,\r",
 											"      \"messageId\": body.paymentMethodToDeliveryType[0].message.id,\r",
@@ -7849,7 +7849,7 @@
 											"      \"popupId\": body.categoryDeliveryTypeRestrictions[1].popup.id,\r",
 											"      \"isActive\": body.categoryDeliveryTypeRestrictions[1].isActive\r",
 											"    }\r",
-											"  ],\r",
+											"  ],*/\r",
 											"  \"intervals\": [\r",
 											"    {\r",
 											"      \"id\": body.intervals[0].id,\r",
@@ -13248,51 +13248,51 @@
 	],
 	"variable": [
 		{
-			"id": "5f456afd-3a1a-4df6-be67-375d33481c1b",
+			"id": "6d1ee17d-8984-40ea-9d8a-684fa6fd515f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a2d5cec-e385-4682-b981-57874b642abd",
+			"id": "c36d4233-517e-43ef-a560-96c8381feae9",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d38018ff-23bc-46cc-b5d2-e44721f78f78",
+			"id": "8212e0bd-c1b7-4762-a2ad-a4b010d9723e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d873ae52-dae0-447f-96e4-853d2b8dbe14",
+			"id": "f14384a2-0043-47c5-bc8d-506880e043c6",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2c53ba04-c4ac-4942-b3a7-129e5e9cce6b",
+			"id": "83316a8b-f438-468b-ab38-a284da476e0a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "928d6270-1472-4efe-955d-e3f368c54af2",
+			"id": "6ae9cf44-b012-444b-b8cf-a6c693788c73",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "98a4ff57-c6bc-4af2-9f36-8e675b93502f",
+			"id": "956e5036-78ba-4909-9c75-d072ba2aa82d",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "48f580d9-b532-4153-a5e7-fbe166b53188",
+			"id": "8177cfec-aa7a-4c21-9b0c-d6549aba9d51",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "48614775-b6e1-41a6-a50a-baa1a398dfc3",
+			"id": "bcbdee3c-4077-477d-9469-94ddf3457456",
 			"key": "now",
 			"value": ""
 		}
