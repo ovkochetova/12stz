@@ -7711,10 +7711,10 @@
 											"  ],\r",
 											"  \"intervals\": [\r",
 											"    {\r",
-											"      \"id\": -24606008,\r",
-											"      \"clientTimeFrom\": \"occaecat\",\r",
-											"      \"clientTimeTo\": \"laboris velit ipsum\",\r",
-											"      \"tkTimeFrom\": \"commodo dolor nisi\",\r",
+											"      \"id\": body.intervals.id,\r",
+											"      \"clientTimeFrom\": body.intervals.clientTimeFrom,\r",
+											"      \"clientTimeTo\": body.intervals.clientTimeTo,\r",
+											"      \"tkTimeFrom\": body.intervals.tkTimeFrom,\r",
 											"      \"tkTimeTo\": \"sint commodo\",\r",
 											"      \"dayOfWeek\": \"monday\",\r",
 											"      \"code\": \"consectetur adipisicing\",\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "1592bb93-44b1-41f7-81c6-61e9b4541272",
+			"id": "b99be3da-7c3c-4226-8fc4-e529de9d916e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0ba922ab-9881-4b2a-a182-6ced2f82aa1e",
+			"id": "137d474d-e35c-4513-859e-8db2cffd416b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "223e11d8-5e8c-4c39-a117-00adf539617e",
+			"id": "219f7067-d685-410f-a75e-5129920bf19a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eb4d1246-ea12-4513-85ca-d0f202212bc3",
+			"id": "bb19f659-7801-4943-b0ce-d2a5ccec69b6",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f6ee1c5e-3ab4-456d-89e6-1cbb396c8daf",
+			"id": "11f62c51-4e90-45aa-940a-a37f97718655",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a075faf3-6e00-4eb7-9974-620855a4b99e",
+			"id": "e31a96b2-48dd-4cb8-8586-dd82e873714b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "532b42a0-727f-45a5-a08a-acfa3df34a97",
+			"id": "7e290e76-bfd5-4257-be4e-9b33dcd28ef7",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "aef12abe-bccd-4646-aa6c-bd0e0cee9aac",
+			"id": "a5ccc969-9fb5-4ffe-a644-4bf7db4c1a3e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7ec5af8c-3471-490a-9366-c08500807006",
+			"id": "2a8da9f0-7499-4f40-9d48-8cf0965ac8f0",
 			"key": "now",
 			"value": ""
 		}
