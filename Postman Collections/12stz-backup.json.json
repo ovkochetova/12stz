@@ -7631,8 +7631,8 @@
 											"  \"popupId\": jsonData.popup.id,\r",
 											"  \"code\": jsonData.code,\r",
 											"  \"defaultDaysFrom\": jsonData.defaultDaysFrom,\r",
-											"  \"defaultDaysTo\": 460809,\r",
-											"  \"deliveryPrice\": 71685520.37973574,\r",
+											"  \"defaultDaysTo\": jsonData.defaultDaysTo,\r",
+											"  \"deliveryPrice\": jsonData.deliveryPrice ,\r",
 											"  \"deliveryPriceBorder\": 96087998.03596643,\r",
 											"  \"deliveryPriceAfterBorder\": -31546515.63275066,\r",
 											"  \"deliveryMinDays\": -52409819,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "95a64325-4e6c-4978-9e3d-54a5dbc578ad",
+			"id": "47305ce1-f686-47a0-be6a-c52c89b5f2e5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "07395e58-3f7d-4f99-9481-c92b527b5db2",
+			"id": "df0bd50e-8dd5-41eb-a91d-d9749c0f3292",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9dc1abcc-411c-4d23-858d-d9569777e61f",
+			"id": "80356db3-8978-4082-a13b-26be007ebe17",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fff0fa40-a30e-4fb9-b9dd-6ac7d35de452",
+			"id": "122fe555-a386-41c7-9961-f65a955b0ebd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c9c1d033-d0ec-4291-9032-c7cee4ac7e76",
+			"id": "74fa9215-5896-483b-8729-8278f39520c3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d5e218cb-fefb-47ba-ad4d-73173e4b92a1",
+			"id": "6ab79bb0-7a36-4870-a863-c14f6597bcf8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5b0df8a6-a75b-488c-81d2-3b75cfc5eec5",
+			"id": "e4fadc41-7fcf-4947-8091-a8030b815356",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "ba4cec04-1096-4305-ac8f-eef6d090796e",
+			"id": "2496eaad-7ac5-4e8f-b7b0-2131428b709d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b2777af4-fe4e-4112-bc5f-599241b88223",
+			"id": "9a722014-211f-4704-8c8f-585f0523d50e",
 			"key": "now",
 			"value": ""
 		}
