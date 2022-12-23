@@ -7512,7 +7512,7 @@
 									"script": {
 										"id": "26462bb9-ab46-4bfc-8b87-3c7ccd273d24",
 										"exec": [
-											"pm.test(\"Status code is 200\", function () {\r",
+											"/*pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
 											"});\r",
 											"\r",
@@ -7536,6 +7536,8 @@
 											"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
 											"pm.environment.set(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)\r",
 											"\r",
+											"let arr = \r",
+											"\r",
 											"\r",
 											"console.log(\"transportCompanyModeId\", jsonData.transportCompanyMode.id)\r",
 											"console.log(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
@@ -7546,7 +7548,7 @@
 											"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
 											"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
 											"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
-											"console.log(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)\r",
+											"console.log(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)*/\r",
 											"\r",
 											"  \r",
 											"\r",
@@ -13091,51 +13093,51 @@
 	],
 	"variable": [
 		{
-			"id": "0566ec94-4dec-4933-81b0-9a02f0c0db4d",
+			"id": "1bc49017-9f19-4f9b-bad6-232945a317c8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4c007f25-f81e-462f-882a-851fd8f33358",
+			"id": "851541a7-6806-45f8-b843-69d0002a476f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "67ba18e6-7df0-4ff8-b089-eef1e47ff215",
+			"id": "dfa78d61-97a8-4865-a55d-f4485acc2369",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c97501fb-01c4-4bab-8978-6256de8f8844",
+			"id": "11750922-582d-4764-8b8e-22e4b0e71ede",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "90549a33-ccef-48a9-a0c8-9a7d4fe71bc1",
+			"id": "8b7e7bc4-92ee-41b9-8093-7a6b6ed460d6",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7ea92a67-6ed5-4b21-8629-1cf0406e5039",
+			"id": "1f327bf5-8fa3-47d0-8ae1-a5f55e4910b8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f1b025be-b3dd-4ff6-8b32-7d9ed5f99e4d",
+			"id": "d2c68235-d620-41e0-967b-2b32ac4a0f5e",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "f96dde88-fe94-415f-8df8-b5cbf6c12ed3",
+			"id": "2d0abcfa-4cdd-4178-b89f-1d69b94b511b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c532d763-d8cf-4276-94cf-7dcc41cd8f26",
+			"id": "eebf4d18-b661-4957-aecc-6fc1c732b8eb",
 			"key": "now",
 			"value": ""
 		}
