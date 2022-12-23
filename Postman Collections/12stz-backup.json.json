@@ -7648,9 +7648,9 @@
 											"  \"restrictionByPriceMessageId\": jsonData.restrictionByPriceMessage.id,\r",
 											"  \"restrictionByPricePopupId\": jsonData.restrictionByPricePopup.id,\r",
 											"  \"maxQuantity\": jsonData.maxQuantity,\r",
-											"  \"restrictionByQuantityIsActive\": true,\r",
-											"  \"restrictionByQuantityMessageId\": -77386181,\r",
-											"  \"restrictionByQuantityPopupId\": -70561590,\r",
+											"  \"restrictionByQuantityIsActive\": jsonData.restrictionByQuantityIsActive,\r",
+											"  \"restrictionByQuantityMessageId\": jsonData.restrictionByQuantityMessage.id,\r",
+											"  \"restrictionByQuantityPopupId\": jsonData.restrictionByQuantityPopup.id,\r",
 											"  \"maxQuantityPerArticle\": -30915136,\r",
 											"  \"restrictionByQuantityPerArticleIsActive\": true,\r",
 											"  \"restrictionByQuantityPerArticleMessageId\": -82490202,\r",
@@ -13091,51 +13091,51 @@
 	],
 	"variable": [
 		{
-			"id": "69ca798e-9549-4689-a49a-e1e2175c3093",
+			"id": "8b4be85b-ef3c-48b5-8407-23b11ffb9992",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "98f87299-162e-40c4-bf2a-0bbef9116bc5",
+			"id": "cfb92ab7-f787-4f23-8e13-1e8cb8a38e8f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "385038b1-77e1-4e91-9871-550697d124c7",
+			"id": "284b6bd3-562d-4cf4-9a54-c73697f59655",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7a65f20b-b15e-4ff1-8c48-ee656243ee6d",
+			"id": "b8395a66-0522-431d-a7b9-778bbf4f57c6",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a8b65531-f2f5-43ca-88f3-42f1f69b5d57",
+			"id": "dd6526ee-388e-4dcd-b823-3f7d278a2984",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0ee6b1d1-6870-4e5b-bd00-6c45b795957b",
+			"id": "8d98ccf6-25c7-4e38-88e3-941fe6a6b008",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "efc61621-db92-4226-b324-3a4700657f2a",
+			"id": "06c59a2a-c2b8-4b8f-a927-038202993dcb",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "35c9775e-603d-4136-8a2b-3be05f16026e",
+			"id": "a95a0951-fc94-4ea7-8722-799e47bdbff7",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c6a1219b-edfd-493d-9968-1b4100811a8d",
+			"id": "1fcda50e-969c-44ed-9918-309449ead861",
 			"key": "now",
 			"value": ""
 		}
