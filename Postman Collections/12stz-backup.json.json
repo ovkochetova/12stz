@@ -7863,7 +7863,7 @@
 									"  \"restrictionByQuantityPerArticleMessageId\": body.restrictionByQuantityPerArticleMessage.id,\r",
 									"  \"restrictionByQuantityPerArticlePopupId\": body.restrictionByQuantityPerArticlePopup.id,\r",
 									"  \"isVisibleWhileRestricted\": body.isVisibleWhileRestricted,\r",
-									"  \"isActive\": fbody.isActive,\r",
+									"  \"isActive\": body.isActive,\r",
 									"  \"paymentMethodToDeliveryType\": [\r",
 									"    {\r",
 									"      \"paymentMethodId\": body.paymentMethodToDeliveryType[0].paymentMethod.id,\r",
@@ -12601,56 +12601,56 @@
 	],
 	"variable": [
 		{
-			"id": "0faaf96d-fd39-455e-a2ae-e3769d73f867",
+			"id": "e382ccb6-cd18-4028-a854-1de828f27acc",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e9214231-0a21-4bbb-918c-af7a1e060855",
+			"id": "48d6e5fd-10f1-4e16-8a0c-94716bbd2abe",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf1608f8-4c76-482b-90e2-c3c5d6c59485",
+			"id": "2bb8c660-a62c-4804-b053-5d30290fdc4e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "872a6394-ea22-4386-8fe9-6c762d89ce81",
+			"id": "691bee21-1d86-4e50-9432-2f6a494533ef",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4f7ebe93-dca0-4551-a825-48bff53cc582",
+			"id": "e1b4b105-022b-404d-af0e-1cabacdb7783",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ff694f67-c0d4-46b1-946c-50f31ddbe308",
+			"id": "b86b5810-75e8-477a-ad15-ab91501e76b8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "252af2ff-c8e6-455a-814b-efca229319ef",
+			"id": "8c760960-d176-4857-87d9-ba4c6a220969",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "429ade09-ba8a-422b-a728-184bebdf0869",
+			"id": "e5c4f36e-cdcd-4a28-aaff-c199f4c3cb10",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "effee578-da1b-4efa-918d-c7f35aa6de2c",
+			"id": "d40f6b65-75f5-4c9b-9748-02d5f87a16f1",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "a4caa526-b2f8-4cce-8649-b10ff919937f",
+			"id": "b9b87c8d-d6c2-4713-9903-ea32a89728f6",
 			"key": "newDT",
 			"value": ""
 		}
