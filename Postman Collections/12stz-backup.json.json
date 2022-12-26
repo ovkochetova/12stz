@@ -8719,6 +8719,102 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Время отсечки",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.deliveryPriceBorder = 0;\r",
+									"body.deliveryPriceAfterBorder = 0;\r",
+									"body.deliveryMinDays = 5;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Минимальное количество дней доставки равно 5\" , function () {\r",
+									"    pm.expect(jsonData.deliveryMinDays).to.eql(5);\r",
+									"});\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"cutoffTime\", jsonData.cutoffTime);\r",
+									"pm.environment.set(\"consolidationHours\", jsonData.consolidationHours);\r",
+									"pm.environment.set(\"gapHours\", jsonData.gapHours);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "3a6ccf8a-a6a9-423c-8915-f904426eabf0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -12862,56 +12958,56 @@
 	],
 	"variable": [
 		{
-			"id": "e5f3e803-0bac-4cff-819a-1dae47774866",
+			"id": "9713561e-83e3-42b4-833b-3f3af673bf83",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "79e5aed5-9d20-49a4-9f93-121f578d2ef8",
+			"id": "28b47242-dccc-4134-89c8-a9243254b83d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "54199b14-03b5-4231-9654-a6fc1e657215",
+			"id": "178c6e2e-889c-42de-ae63-f478d1720efe",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e890ea2-c186-4187-9c52-b0a80b5cc51b",
+			"id": "e3bafde2-e8d7-4715-9702-686b0d42b648",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "25b30cd6-dc40-4e7d-b10a-1db0ba03017d",
+			"id": "b33a38ac-9942-4f21-aded-a0c64ad92887",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2d03a2a7-e83c-423f-9dff-e369f9f7e85a",
+			"id": "e538d886-0501-4132-b9bc-7747bb6a77be",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1a86c269-b5b7-4e21-b9f4-fc205872e544",
+			"id": "62557abc-5d71-460c-9750-0e1e3ffebd43",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "c02440f7-cb27-4c55-950a-7a1cf78fb4f0",
+			"id": "e062574b-55e0-445f-a3d0-97409c26dbb3",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7bdaee55-15cc-4d74-8658-d1dab53bad54",
+			"id": "ccde9893-1856-444b-8b2f-b541bc89c4da",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "4b57366f-8bbc-4caa-a5ca-e911da09c7cc",
+			"id": "b0cbae3f-cf56-486e-bb4c-edd4320d7bc6",
 			"key": "newDT",
 			"value": ""
 		}
