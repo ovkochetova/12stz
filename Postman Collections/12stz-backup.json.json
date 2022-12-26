@@ -8244,7 +8244,7 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Граница стоимости заказа \" + jsonData.deliveryPriceBorder, function () {\r",
+									"pm.test(\"Граница стоимости заказа 30000 руб\",  function () {\r",
 									"     pm.expect(jsonData.deliveryPriceBorder).to.eql(30000);\r",
 									"});"
 								],
@@ -12565,56 +12565,56 @@
 	],
 	"variable": [
 		{
-			"id": "831c930c-a544-4fd0-a161-4c73d71416fe",
+			"id": "f120b4f5-a74e-4f14-a88e-9eb019f2a46b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9ea35628-6b19-4a4f-883d-e673d1196e7a",
+			"id": "7cdeb50d-c46e-4d79-ab02-c212bf3189e3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ded97bb4-81c3-4066-8ccc-e0da5ad85316",
+			"id": "2c3f1a6a-81c5-4f84-bf20-32fbd0c577d0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "543dfdfc-1d16-4e79-8d54-bacb25e32d69",
+			"id": "902a3148-afa2-4e20-9de4-d764b529b0c3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9b68768d-4f61-45d3-939d-52d141f15c67",
+			"id": "81a9208b-ae0c-4586-b21e-8df79caeff7c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1c74976a-a554-484c-9787-a31fe955a6f2",
+			"id": "7664c0ac-53e9-4fd8-83a1-837b4d152743",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0c43f0d3-b74e-4b63-bd92-ef304d7bbcd9",
+			"id": "bd692476-f08e-459f-92c5-3ad3efaa1c16",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "d139ae5c-8703-41e9-b02f-6a439723eac5",
+			"id": "9cb12124-9903-413c-9f7d-befce89f24a6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3bb43826-e044-4375-b4f5-f7e0d8c5b6b4",
+			"id": "4d756acd-152b-4ced-9ba4-ee1aad0c0b4c",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "7296f04f-9773-4fc5-a648-36d14681059e",
+			"id": "b2209a0e-ff76-4b73-8bd6-1657097bd4a8",
 			"key": "newDT",
 			"value": ""
 		}
