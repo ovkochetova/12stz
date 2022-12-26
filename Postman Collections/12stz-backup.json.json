@@ -8556,7 +8556,7 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"body.deliveryPriceBorder = 0;\r",
-									"body.deliveryPriceAfterBorder = 100;\r",
+									"body.deliveryPriceAfterBorder = 0;\r",
 									"body.deliveryMinDays = 5;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
@@ -12862,56 +12862,56 @@
 	],
 	"variable": [
 		{
-			"id": "74b12879-4ec5-4868-9f9a-c61c6c31aab7",
+			"id": "a5ce0f0f-acfc-4bd1-a39f-4c9c7115c7d1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2df2a8a2-e736-410a-b3b0-1101848d2189",
+			"id": "6cdc47c8-a59b-4bb7-8293-acae4b7433b1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4e28e261-e86e-44bc-85d5-a98fcc1daf80",
+			"id": "ddad49f0-36fd-4e90-8646-2b98fc6db2dc",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "78af54f7-5fac-4517-b50a-e2dc04111b3e",
+			"id": "6fe7e3a0-8dff-4bbe-847b-063e1e67b90e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "557070e7-17e5-470e-9c59-a02d593307d2",
+			"id": "eabdebbe-506d-4c8b-a74b-d141271a4c8c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5e6b9cfb-9348-4f0c-9223-2ce5de7f2ffb",
+			"id": "3c5a79db-4b17-4ee5-a98c-565178c25c39",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e13232ca-8a82-4144-af85-b23cb32ba1e9",
+			"id": "6edcb70f-41ca-4121-9643-827eae626200",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "d17f1308-9502-437d-85c3-31b0d70060a7",
+			"id": "0f5479c6-af0c-4cf0-bab2-dded413d2342",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "19f88241-25ea-492d-968c-d3eebc25a2ac",
+			"id": "cc4d3005-aa5d-4ab6-af44-ccdb9d4940c0",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "733302df-13ec-4f2b-9250-3b78e133d5f1",
+			"id": "be9dd8e5-7138-46db-a032-9c9b3bec6265",
 			"key": "newDT",
 			"value": ""
 		}
