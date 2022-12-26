@@ -8650,10 +8650,10 @@
 									"\r",
 									"\r",
 									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
-									"const deliveryType1 = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
+									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
 									"\r",
 									"//дата, отдаваемая виннером\r",
-									"const dataDostavki_winner = deliveryType1.delivery_dates[0].date;\r",
+									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
 									"console.log('winner', dataDostavki_winner)\r",
 									"\r",
 									"//время отсечки, запас по времени\r",
@@ -12857,56 +12857,56 @@
 	],
 	"variable": [
 		{
-			"id": "82b9f39f-939e-4ecf-9002-ef903b253eaf",
+			"id": "01c56c9b-266d-4389-a84a-4facb2442452",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4b30f998-d2d9-4fe1-aa8e-73052c302445",
+			"id": "7d38f929-4a57-4020-818d-c21f86ab1748",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b6facac2-3df8-4c8b-a455-6c9f5fbdf47c",
+			"id": "5f3a6972-db65-4ef0-9941-bc502f4c5394",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ecc32866-abb8-4f3b-af96-d78e7f6516ac",
+			"id": "2da32610-0599-4b64-a525-03b9edd0eea1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5775ffac-7015-4b3a-a5b1-cff88c5b201d",
+			"id": "2d17a1ee-1b0c-4071-9d52-b25287f07a00",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "570a7979-fefe-4f44-ab4c-f5c8aaea19aa",
+			"id": "8a6a67e3-187f-4578-862f-00cf37c272c3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6574907e-f38d-4e67-9881-a40b7d58eae1",
+			"id": "9c7612ff-ecd6-42d4-8e23-817e45fb7335",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "d1d62f54-a14c-47d7-8d20-69f3ff028cfc",
+			"id": "0eee2ec8-6d3b-4972-af0a-c2df44410ba8",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7845cdcb-626e-4ca0-ab6c-68452aa0ac91",
+			"id": "9340b36a-ee90-42e1-b0b9-d0677094dd7a",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "d770141a-b447-4c3f-99c7-c8cce459be4f",
+			"id": "7a91b8fd-5429-4034-94d6-78d026fa8ab3",
 			"key": "newDT",
 			"value": ""
 		}
