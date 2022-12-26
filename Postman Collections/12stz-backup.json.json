@@ -8652,7 +8652,6 @@
 									"});\r",
 									"\r",
 									"\r",
-									"\r",
 									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
 									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
 									"\r",
@@ -8670,9 +8669,9 @@
 									"//ожидаемая дата доставки\r",
 									"let expectedDelivery = currentDateTime ;\r",
 									"if (currentDateTime.getHours() > actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 6);\r",
 									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 5);\r",
 									"console.log('expectedDelivery', expectedDelivery)\r",
 									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
 									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
@@ -12861,56 +12860,56 @@
 	],
 	"variable": [
 		{
-			"id": "4827763e-9a74-4018-8ae3-1fb967accfde",
+			"id": "7e8ed212-5d6b-4a82-bf56-bdbecdccd5eb",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0fc9b81f-965a-4389-96bd-55a59cecc3b6",
+			"id": "cf70689b-93e7-4b08-b2b7-3f1cf5702b17",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f1bac40e-de00-4dd7-a589-feef3da13d51",
+			"id": "686dc907-bb20-4a0a-ba12-a7c12140d421",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9d35620e-6ebb-4e9e-9d4a-f2886d8d6b1b",
+			"id": "1f575f12-eec4-4b47-99c8-415d54b20fd7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "fc616b97-2802-4198-b7a5-13f6f7a47d12",
+			"id": "1a453942-0a64-4dcb-8054-408bbe2ac439",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "764bd898-f782-4a42-ae86-d60906dc20de",
+			"id": "a9cc1a19-b6b6-48a9-9d31-da06a8e136f6",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5db6281b-2433-4f54-8125-d87ffbc0d1e6",
+			"id": "f1e16365-640f-4138-837b-a5efd5da22d4",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "54278c03-5926-444c-8296-7d626a677bb3",
+			"id": "6a1a022d-67b3-4836-bb02-8722de4cd536",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "61879179-9de1-4e86-934e-473f0d078266",
+			"id": "d7d7ffe9-19db-48d5-ba93-40c1b7761a98",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "3555a91d-dc51-4a2d-aecb-4b87708482da",
+			"id": "8ab09b9f-5e3f-4048-97e5-86712592b450",
 			"key": "newDT",
 			"value": ""
 		}
