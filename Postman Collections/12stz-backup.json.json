@@ -8281,7 +8281,7 @@
 					"response": []
 				},
 				{
-					"name": "стоимость доставки 999 руб",
+					"name": "!стоимость доставки 999 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -12687,56 +12687,56 @@
 	],
 	"variable": [
 		{
-			"id": "ada6b977-632b-485b-9088-d82b432bdebf",
+			"id": "84ed4d1d-12aa-49e4-af13-26aaf5a030d9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "14c3024a-f105-4d4b-9914-c8fccee7c6eb",
+			"id": "eda1836e-ec7d-4750-88ad-3502d6ffb13c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "558fec1a-22db-4096-b8c9-f08269694668",
+			"id": "e7d490da-594d-4985-8fa3-086617a19a4e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c0a9827f-fa98-49bc-b348-d20fdc69809a",
+			"id": "07cf589c-c41d-460d-83c2-6a655104a7ce",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "75228103-6b2f-4207-98b4-3bf2fe46127c",
+			"id": "8db347dc-ecec-416b-b02a-d257fc4b02cf",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3e40dbd9-e8d2-4894-90b6-8f5eb16bd446",
+			"id": "d1894de1-635b-4f06-86f5-4bcff6d0da54",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a92e0907-14e8-4511-a99e-384148c44c8b",
+			"id": "c435e74d-fdc0-490a-b8c6-a70f7a91a23c",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "8bd166f6-e83f-407c-bf9a-50733646fa8e",
+			"id": "f6801534-acbd-4ee5-ba07-807619c99a3a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "df46ddc7-868d-4b2d-916c-055985bc2ddd",
+			"id": "2bc2cf29-d42f-4bb8-9ed3-d7458868fdc8",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "fa0679e9-d4f9-4070-bdc5-b52c14b99a03",
+			"id": "32afd300-cd15-4b07-b5ce-42c57d8f54c0",
 			"key": "newDT",
 			"value": ""
 		}
