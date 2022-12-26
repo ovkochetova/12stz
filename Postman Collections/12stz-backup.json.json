@@ -8339,7 +8339,7 @@
 					"response": []
 				},
 				{
-					"name": "Граница стоимости товаров в заказе",
+					"name": "Граница стоимости товаров в заказе 30000",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -12860,56 +12860,56 @@
 	],
 	"variable": [
 		{
-			"id": "5f159c02-b584-42a5-90ec-9b2699b5307c",
+			"id": "631f69c0-adca-40d2-94fe-ecc990d31acc",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b946fe86-dc05-43ed-8052-0f20705c2d00",
+			"id": "e2d52886-c903-400c-b7be-06f5a1a96a3c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "936cc3ea-8221-4890-b822-797a33d70f6d",
+			"id": "e650b55b-98a1-4d73-bbfd-78f349081ad9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fb616008-3394-4969-b3df-610677814fec",
+			"id": "eae39592-ae20-4035-b103-59159ed715d7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "541391e1-bd15-43a1-8e39-c34c832b946d",
+			"id": "60c0afef-4c2d-41ab-b379-4abcb8419981",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f9f50348-e8d5-4344-aaed-7ebb2a692d13",
+			"id": "6589856a-29d9-448c-88b3-e9d472d7e4a4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "322286d1-9146-42ef-8c02-514f9a73a70d",
+			"id": "060bfe03-9a40-4f1b-acf2-ca3ce7245b9d",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "3a68e4ab-ba89-401b-9b41-62dd49f2ded3",
+			"id": "b749f47e-8cb0-4ed8-9a7e-538abfab0db6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b4a623b2-3202-4547-a5f7-076074fb1f95",
+			"id": "6fce2a5d-5fd5-47de-be7e-28ddfab9cdd5",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "13de63f7-40a0-4942-8ca9-b0b62febafac",
+			"id": "9b5613fe-208d-489f-9784-0146cdef4785",
 			"key": "newDT",
 			"value": ""
 		}
