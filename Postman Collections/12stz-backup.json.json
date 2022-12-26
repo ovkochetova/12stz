@@ -7647,6 +7647,47 @@
 					"name": "Статус типа доставки",
 					"item": [
 						{
+							"name": "Поиск типа доставки по названию",
+							"id": "de61bf0d-9b5f-4300-85e9-012bb83a82c7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/delivery-type?limit=70839026&offset=70839026&search=sint reprehenderit commodo culpa&sort=sint reprehenderit commodo culpa",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"delivery-type"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "70839026"
+										},
+										{
+											"key": "offset",
+											"value": "70839026"
+										},
+										{
+											"key": "search",
+											"value": "sint reprehenderit commodo culpa"
+										},
+										{
+											"key": "sort",
+											"value": "sint reprehenderit commodo culpa"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Информация по типу доставки",
 							"event": [
 								{
@@ -8044,47 +8085,6 @@
 									}
 								},
 								"url": "{{url}}"
-							},
-							"response": []
-						},
-						{
-							"name": "Поиск доставки по названию",
-							"id": "de61bf0d-9b5f-4300-85e9-012bb83a82c7",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/api/v1/delivery-type?limit=70839026&offset=70839026&search=sint reprehenderit commodo culpa&sort=sint reprehenderit commodo culpa",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"api",
-										"v1",
-										"delivery-type"
-									],
-									"query": [
-										{
-											"key": "limit",
-											"value": "70839026"
-										},
-										{
-											"key": "offset",
-											"value": "70839026"
-										},
-										{
-											"key": "search",
-											"value": "sint reprehenderit commodo culpa"
-										},
-										{
-											"key": "sort",
-											"value": "sint reprehenderit commodo culpa"
-										}
-									]
-								}
 							},
 							"response": []
 						}
@@ -13280,56 +13280,56 @@
 	],
 	"variable": [
 		{
-			"id": "4d662c7e-389a-4317-8684-ee686b0c81ac",
+			"id": "6b1f7e58-66f7-498d-8c3a-87f199e88dad",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8463baa9-609a-46b2-9615-637d16b90369",
+			"id": "2038d6ca-555c-438b-ac31-49a7bc16f2cb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "594809c0-3cf9-4c74-a238-1ee9289d3e2a",
+			"id": "470b3bfd-589c-46b0-9e91-266d436b2263",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1d5694c1-87eb-430b-948f-d81b6b7ac19b",
+			"id": "1d03593f-2d7f-4280-b9b9-878e796e4bd3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c936f384-2972-4e67-aeb9-c6a1aa3e96af",
+			"id": "be2150cd-0ae0-40a7-b53b-762d1ba2c37d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1c3edeac-1440-4f48-a541-56b06ad81166",
+			"id": "9df11890-f0cc-49e1-bca7-22f96fdd7324",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0f52f7d5-4f95-4fdd-adac-2064bd22af5b",
+			"id": "b38f527e-7268-44a3-bf9a-1b08e7ba649c",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "59528cb0-eae5-41f4-9cb5-3a03287e707d",
+			"id": "12dae610-b003-4763-b826-eaf54629881d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "74027752-5c13-4b89-b78a-5805044bea95",
+			"id": "9abd974d-75a8-4e30-b7e9-54a97bf76746",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "ec22f7b0-4fa6-4266-af0b-46771d3698f3",
+			"id": "66dbadd2-b6d8-4546-8631-0a5d38e78091",
 			"key": "newDT",
 			"value": ""
 		}
