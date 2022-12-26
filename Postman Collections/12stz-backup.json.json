@@ -8544,6 +8544,96 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Мие кол-во дней доставки",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.isActive = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									"pm.collectionVariables.set(\"newDT\", body);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Статус доставки false\" , function () {\r",
+									"    pm.expect(jsonData.isActive).to.eql(true);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "1a7872bd-6b08-4fde-a9b4-de46a9751843",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -12687,56 +12777,56 @@
 	],
 	"variable": [
 		{
-			"id": "f11947db-5ebb-4f66-a1ae-23e60cf195ab",
+			"id": "2422bf58-bfba-48a4-9163-5f765016df43",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ba74ff38-e7a2-453c-937f-9bbcec5ee937",
+			"id": "59efd839-fe67-43aa-8322-69ab7b6ed81f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3f5540a5-2988-4f14-aaa7-60c20623cadb",
+			"id": "d4b35235-c441-4820-9263-7c48ce9d34dd",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "11a7d1af-6e3c-4aab-b46b-f8428e98cfb2",
+			"id": "dbcabcdf-e0a8-4685-985b-02415b42d348",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d788ef4f-a61c-4a37-9891-05caff2a8dc2",
+			"id": "554f69a2-adef-4653-bc86-2493d7c7a383",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c6411bee-27b8-493d-8cdb-1f0383a60a02",
+			"id": "aed08d22-8f72-496e-ae1e-15bc01b55093",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "225bc912-3f5d-4013-950c-084c83b09544",
+			"id": "f812baf1-3622-4480-b8f5-2b6dc2a8a467",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "abb0ed92-9ee1-4f4b-aef8-96f181105a85",
+			"id": "a34eadde-9712-478a-a2bb-bcfd81bca508",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "37729142-37e7-49f8-ba98-ccf2b5be4d33",
+			"id": "02c7f260-5121-469e-a1a1-d0bcf12c327f",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "f69f0e55-0cbc-4d7d-be27-ce9b62633fac",
+			"id": "21182f00-5c9a-4e33-9a6e-117e3a7bbc6e",
 			"key": "newDT",
 			"value": ""
 		}
