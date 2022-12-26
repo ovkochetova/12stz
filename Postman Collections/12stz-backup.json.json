@@ -7656,7 +7656,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{baseUrl}}/api/v1/delivery-type?limit=70839026&offset=70839026&search=sint reprehenderit commodo culpa&sort=sint reprehenderit commodo culpa",
+									"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=Тестовая ТК (не удалять)&sort=",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -7668,19 +7668,19 @@
 									"query": [
 										{
 											"key": "limit",
-											"value": "70839026"
+											"value": "40"
 										},
 										{
 											"key": "offset",
-											"value": "70839026"
+											"value": "0"
 										},
 										{
 											"key": "search",
-											"value": "sint reprehenderit commodo culpa"
+											"value": "Тестовая ТК (не удалять)"
 										},
 										{
 											"key": "sort",
-											"value": "sint reprehenderit commodo culpa"
+											"value": ""
 										}
 									]
 								}
@@ -13280,56 +13280,56 @@
 	],
 	"variable": [
 		{
-			"id": "6b1f7e58-66f7-498d-8c3a-87f199e88dad",
+			"id": "b12ec602-0fc4-410a-bf72-83f2ad4e85c5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2038d6ca-555c-438b-ac31-49a7bc16f2cb",
+			"id": "cc011bce-1b94-4739-a014-bd56aaf8a463",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "470b3bfd-589c-46b0-9e91-266d436b2263",
+			"id": "fdfdc3b2-c0f9-4c02-8914-b39623a6013c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1d03593f-2d7f-4280-b9b9-878e796e4bd3",
+			"id": "d502cbbc-52a3-4b35-bdba-5a1f817fc385",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "be2150cd-0ae0-40a7-b53b-762d1ba2c37d",
+			"id": "d7a5c3a1-8e0a-4d96-aec6-bf307ec68902",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9df11890-f0cc-49e1-bca7-22f96fdd7324",
+			"id": "b240b825-0806-435e-b320-969469d26140",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b38f527e-7268-44a3-bf9a-1b08e7ba649c",
+			"id": "49fdfbd9-8c73-4d3d-b424-e76e43a93b25",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "12dae610-b003-4763-b826-eaf54629881d",
+			"id": "ab0078f3-6830-4d21-a63e-571f3bc35ed5",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9abd974d-75a8-4e30-b7e9-54a97bf76746",
+			"id": "02117095-760e-44fc-b7f1-b9d326d63dd7",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "66dbadd2-b6d8-4546-8631-0a5d38e78091",
+			"id": "cc9d5137-c587-43da-817c-3f52ef983d66",
 			"key": "newDT",
 			"value": ""
 		}
