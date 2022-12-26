@@ -8390,7 +8390,7 @@
 					"response": []
 				},
 				{
-					"name": "стоимость доставки 999",
+					"name": "стоимость доставки после границы 0 руб",
 					"id": "7127a639-d625-4c93-8945-61bfb66eaf8f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12565,56 +12565,56 @@
 	],
 	"variable": [
 		{
-			"id": "52e7dca8-425a-4f7a-822d-3cc08acd7e3b",
+			"id": "c856dfca-b6fb-4de2-a575-67aaad2e7ed9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "210b6382-cff8-4f90-8568-6b7137014154",
+			"id": "a2d3d57c-514b-4af7-a3e5-f49ee69e3cf8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e8e5fa6a-b1cf-4675-b7d0-aa363ea387c4",
+			"id": "9f7a27a7-3fec-4674-a643-fccd35a6b5be",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ffe42589-e0e0-436e-9b05-4dde4c45039a",
+			"id": "48bd261d-5184-4f05-a2a4-51648344ddcf",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8634c5e3-1856-470f-b7eb-db5455578909",
+			"id": "91c0cf34-5de5-4da0-8b2a-61e8994a8d63",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a3a867dd-c8cc-427f-b034-501bbacb5f06",
+			"id": "90f374c9-4376-467c-91d1-b48c09032683",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9e5230d1-868c-4883-93d3-cef00894e780",
+			"id": "1a5546ef-8606-4bbd-aafe-ac2d6b6cd8d3",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "f198f126-9338-4ccd-955a-30a40a48e3ca",
+			"id": "b0aa8025-9302-45c1-af9a-f3aa86c1c07d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1c243b26-2fc5-4442-a1e7-0fa974094886",
+			"id": "1b206846-661d-4f1f-9d76-61567d43fdaf",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "d6898c7e-9777-4669-959b-bec00be0c48f",
+			"id": "6688d025-d3d6-4820-88e8-cb5e76cbce68",
 			"key": "newDT",
 			"value": ""
 		}
