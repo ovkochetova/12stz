@@ -8314,7 +8314,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Стоимость доставки 999 руб\", function () {\r",
-									"     pm.expect(jsonData.eliveryPriceAfterBorder).to.eql(30000);\r",
+									"     pm.expect(jsonData.eliveryPriceAfterBorder).to.eql(0);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -12548,56 +12548,56 @@
 	],
 	"variable": [
 		{
-			"id": "14e5a4dc-53ba-4fd2-a9d1-ef6a8bbf4ec6",
+			"id": "21840563-e119-43ff-82d8-a91b6f15c948",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "89f2c4e7-597e-43b9-9aec-77a171c9ba01",
+			"id": "be8a3e84-e3ec-4f5b-90f6-1ec857cfdbaf",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6fe039f0-4ac7-496a-a0ba-6b79479e1805",
+			"id": "88f35b95-cf37-47a4-9fc4-97e259a31fe3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a1fc27d6-98ef-42be-8f5f-ff75e7f6eca7",
+			"id": "80e915a0-9f7d-41e9-a508-7d78c102fc28",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b96ecf1b-91cb-46e5-a4ae-eb0317f6cdb5",
+			"id": "36acdc87-6b68-4287-a9df-81f039c566bb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3996021a-62d4-4215-95e0-1502de16272d",
+			"id": "48ed9fcb-441b-467a-ac5c-5e2ef43d459b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a93a39d6-516f-444c-847c-d9d813172ae9",
+			"id": "ce494770-ce2b-42ca-a29c-d7824e864167",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "c9da1f2c-40ab-4249-80dd-19a91345164b",
+			"id": "9d4043fc-babe-4757-ad0d-200b485a150d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0e9552f9-7260-4d1f-92fd-2911cc81c43a",
+			"id": "0436fcd7-bf05-421b-94d3-710e4afd927c",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "3aeddcc8-c100-44d0-8df0-37a361607cf2",
+			"id": "bf3d2b8b-1b91-4f8a-8471-1869cf7341af",
 			"key": "newDT",
 			"value": ""
 		}
