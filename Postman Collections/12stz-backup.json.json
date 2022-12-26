@@ -8732,7 +8732,7 @@
 									"\r",
 									"\r",
 									"body.deliveryMinDays = 7;\r",
-									"body.cutoffTime = 20\r",
+									"body.cutoffTime = \"20:00\";\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -12958,56 +12958,56 @@
 	],
 	"variable": [
 		{
-			"id": "27f5f542-a502-405a-9597-81bfe346de55",
+			"id": "7d5cfb53-0e61-42c9-927f-ef33204eb078",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1cd0429b-875a-4f96-993b-828a1763a9e5",
+			"id": "39d5efe4-f01d-4c06-85d3-f7f34dd7e7d4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "68175d43-2aa1-480d-b8d1-282498e7d605",
+			"id": "94c3777a-a688-4314-a6cf-8e04e11699e9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ee1e05cc-2505-44bc-8089-3d02ad906f3c",
+			"id": "9cadb502-9c04-479c-8ba1-93484e8147a2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "720b5880-4151-496a-b59c-e2a0c989257c",
+			"id": "ae461c35-4c75-43e7-91b6-aafd035c6d90",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "6b75d5b0-be45-4a9f-92f1-7e29ba59caf4",
+			"id": "a1c4c782-2291-4416-9e81-a4d59428ce03",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6aefbe6b-01f5-46ef-ad8a-5366ad226ed8",
+			"id": "e8edd798-4ae8-4c41-992d-6e127c9fd304",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "a579db7d-1229-4bcb-a2d2-160d5900a561",
+			"id": "95ad2eed-d25a-4ad8-8128-67e4a8c6e2ee",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "30b09ac1-036c-4cd1-b177-69cd67a217d2",
+			"id": "9eda6185-6bfe-48b8-bcca-42febbd1ef38",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "b994410f-adb4-40c1-a384-042ed5c0b208",
+			"id": "dcd99519-85b4-4c07-964f-f09a21b81660",
 			"key": "newDT",
 			"value": ""
 		}
