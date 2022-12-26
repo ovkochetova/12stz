@@ -8637,6 +8637,52 @@
 				},
 				{
 					"name": "Мин кол-во дней доставки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
+									"const deliveryType1 = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
+									"\r",
+									"//дата, отдаваемая виннером\r",
+									"const dataDostavki_winner = deliveryType1.delivery_dates[0].date;\r",
+									"console.log('winner', dataDostavki_winner)\r",
+									"\r",
+									"//время отсечки, запас по времени\r",
+									"const cutoff = 19;\r",
+									"const gapHours = 6;\r",
+									"const actualCutoff = cutoff - gapHours;\r",
+									"const currentDateTime = new Date();\r",
+									"console.log('currentDateTime', currentDateTime)\r",
+									"\r",
+									"//ожидаемая дата доставки\r",
+									"let expectedDelivery = currentDateTime ;\r",
+									"if (currentDateTime.getHours() > actualCutoff)\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
+									"else\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
+									"console.log('expectedDelivery', expectedDelivery)\r",
+									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
+									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
+									"\r",
+									"\r",
+									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
+									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "429378bc-efdd-4c34-b9a8-a36aeea39b69",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -12811,56 +12857,56 @@
 	],
 	"variable": [
 		{
-			"id": "6556c974-55c1-4eff-8110-97de2433987f",
+			"id": "82b9f39f-939e-4ecf-9002-ef903b253eaf",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "016e1687-a559-4e9d-8fd7-16cf1b465cd5",
+			"id": "4b30f998-d2d9-4fe1-aa8e-73052c302445",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aa4097c6-46ea-45db-9a9d-0aa9b60fcb3c",
+			"id": "b6facac2-3df8-4c8b-a455-6c9f5fbdf47c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a20106bb-8eb9-42c1-8948-d561b574040b",
+			"id": "ecc32866-abb8-4f3b-af96-d78e7f6516ac",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9fcc3f0d-d9c5-453e-9350-e4149127f0f0",
+			"id": "5775ffac-7015-4b3a-a5b1-cff88c5b201d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a704475b-8f4f-484e-a991-8d436e71ffeb",
+			"id": "570a7979-fefe-4f44-ab4c-f5c8aaea19aa",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3c72cf19-f2df-4822-b22c-9eb714df7a59",
+			"id": "6574907e-f38d-4e67-9881-a40b7d58eae1",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "a52841d0-ebf9-448b-8e62-1d90530e5fb8",
+			"id": "d1d62f54-a14c-47d7-8d20-69f3ff028cfc",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fcf5e1b6-68b6-4594-950b-0ef0055b9e3a",
+			"id": "7845cdcb-626e-4ca0-ab6c-68452aa0ac91",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "7a7358e7-0bba-4d99-b85a-105817192420",
+			"id": "d770141a-b447-4c3f-99c7-c8cce459be4f",
 			"key": "newDT",
 			"value": ""
 		}
