@@ -8287,6 +8287,93 @@
 					"response": []
 				},
 				{
+					"name": "Сьлимость заказа после границы",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.deliveryPrice = 990;\r",
+									"body.deliveryPriceBorder = 30000;\r",
+									"\r",
+									"pm.request.body.raw = body;"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "816d4ea2-9010-41d9-b712-5fa4a6564f8d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Стоимость доставки 999 руб\", function () {\r",
+									"     pm.expect(jsonData.deliveryPriceBorder).to.eql(30000);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "cfb68cc9-2799-4e1f-9c66-fd46c3f4485d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "стоимость доставки 999",
 					"id": "7127a639-d625-4c93-8945-61bfb66eaf8f",
 					"protocolProfileBehavior": {
@@ -12462,56 +12549,56 @@
 	],
 	"variable": [
 		{
-			"id": "bb452108-ba45-46e3-884a-2fb973ee741b",
+			"id": "4fe86531-9afc-49d4-a8a3-a99fa710e78d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8c79286-3e54-4807-a382-3a6d43fd79a0",
+			"id": "31fe5148-f685-4e22-848d-28aec3a4a1fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "de7e6161-a28e-4591-b6b5-0c84394b90d7",
+			"id": "bdb87485-3eca-476e-97df-56b3508d3745",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9643c469-6689-42a0-8d96-633757a96e8a",
+			"id": "a781b68a-038a-44fd-9260-7b83ffb3f110",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4227b42d-ead2-4216-9017-7fc67bc57556",
+			"id": "6f274799-b4e0-4870-8e7d-c6fcd6c83db0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c789c815-02a2-4d2a-ba2a-b226e99b0b5d",
+			"id": "3366e071-b950-4cdd-a718-c6a41edd9d61",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "cbdf11bb-3c06-4eee-9423-07bad8556d2b",
+			"id": "1d2675d7-c57e-483d-8f51-e255a7f5535a",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "01ac327f-12ad-447f-94a6-347965fa5e23",
+			"id": "1e46ff38-5567-477f-9a17-dc480ea3a89a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f399f577-4ed3-471b-b792-5eeed7f3452f",
+			"id": "cd774a9d-9675-4765-b7c8-16c9ec4eeb28",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "8cdcf94c-ea11-4e98-a857-033f4a298a7f",
+			"id": "d8414221-6fa4-4647-92a8-ee7248772d67",
 			"key": "newDT",
 			"value": ""
 		}
