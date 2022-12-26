@@ -7935,8 +7935,8 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Статус доставки \" + jsonData.isActive, function () {\r",
-									"    pm.expect(jsonData.isActive).to.eql(false;\r",
+									"pm.test(\"Статус доставки false\" , function () {\r",
+									"    pm.expect(jsonData.isActive).to.eql(false);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -12565,56 +12565,56 @@
 	],
 	"variable": [
 		{
-			"id": "022b2853-d082-4659-9d71-c5d18e72fb06",
+			"id": "088f5417-184e-43d5-835e-82d9f37c9a71",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "90448d56-7f39-4240-b2e5-de9b3eed281d",
+			"id": "33bab589-b041-4ca2-8a87-3c87437cd461",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bd800e8e-9db8-4307-b6c8-07afa5feafc2",
+			"id": "31bf9ea5-e70c-49d2-b45f-241100141466",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f49c6662-7657-48fc-836a-815f188bfc2a",
+			"id": "d6ac7585-6ae9-4507-ae31-070ea6e1a61c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "bde645bf-eb4f-4c6f-bfa0-e99b22cd8352",
+			"id": "1e526792-f7ff-42f4-a109-319b40b82778",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "27b654d0-4a1f-419a-a638-b5fe772bed5c",
+			"id": "0946dd6c-85c5-4af9-a4c3-debdec5ef61c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "c213ab83-c248-4564-be97-cb2a56b901b2",
+			"id": "7e85990b-c836-4ae8-a7d7-dd22f6b8b750",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "d6cf4eb4-edcd-4c63-950b-7cf991b9abbf",
+			"id": "b0790ab6-3b6a-4fbc-9c65-21883ac0770e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f7d25c31-528e-4ef7-abc0-e22759caf818",
+			"id": "26e35132-6757-43c5-8b99-7d5f18073bf2",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "af9e09a6-ca3e-4393-9764-ad10e8c1e434",
+			"id": "1eef82f8-49d4-412b-b51f-fb2d6876f0b8",
 			"key": "newDT",
 			"value": ""
 		}
