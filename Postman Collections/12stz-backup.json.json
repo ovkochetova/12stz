@@ -7673,7 +7673,13 @@
 							},
 							"request": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=Тестовая ТК (не удалять)&sort=",
 									"host": [
@@ -13299,56 +13305,56 @@
 	],
 	"variable": [
 		{
-			"id": "7d48614a-a087-4700-b952-042439a7b64c",
+			"id": "df261661-fff6-481f-84b6-e61c503e4c67",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1f156b94-808d-43b2-a6d7-e36687705cc8",
+			"id": "6cda2d5f-4894-4955-b398-afab0bb6f0e2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c01a4b6d-49c1-4246-b70b-440f8b2b5c98",
+			"id": "8631154b-2427-49a1-a7d5-6073fb54b307",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8455856c-ac11-4107-bb07-7cee879b5e54",
+			"id": "d899264b-a133-4c4a-9265-75bc19f80df3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4cf8b0c9-9439-45c1-a5cd-aa003c9d800a",
+			"id": "c13e52eb-ebbb-49f6-afd7-ef859331bab7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0311b129-b215-4060-8540-2ca278ced36a",
+			"id": "f4ff8891-31b9-4df0-9846-d3422ab2751c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "870a4712-d171-494c-83a1-f49df692b942",
+			"id": "c238f3a3-f80c-4247-a08b-6fbdf5e19aef",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "733f362f-998e-4036-bdb3-ca6ddcb3b723",
+			"id": "783a4ee5-41c1-4ab5-a4c5-c2aab602b016",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e011549c-7b9f-4f74-9026-1662dc3091bb",
+			"id": "50f93c01-20c6-4e38-ab10-96b3dc78657c",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "bb8da3ab-e28a-4629-a790-addfa3e9cbf9",
+			"id": "9de3bfe1-3fdd-4e46-96f3-d241e34aa0f6",
 			"key": "newDT",
 			"value": ""
 		}
