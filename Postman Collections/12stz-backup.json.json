@@ -8281,6 +8281,62 @@
 					"response": []
 				},
 				{
+					"name": "стоимость доставки 999 руб",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7c764f78-35cb-4961-a68d-3fc004e6cbe6",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "1277644c-2cac-407d-8e81-3b7db50f0881",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Граница стоимости товаров в заказе",
 					"event": [
 						{
@@ -12629,56 +12685,56 @@
 	],
 	"variable": [
 		{
-			"id": "cc0e2346-3c21-4e0c-b77d-44e21e188ed4",
+			"id": "e1d36a65-9a2b-435f-95a3-ae5f8531140b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cbf48358-2bac-4f8f-8e19-85201dd2eabc",
+			"id": "e78f6aa3-8ed3-4cbd-b28b-2006116af75e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5fddc509-80be-44c0-9093-247fc7c3450d",
+			"id": "50e018da-1970-4eac-a724-9e39697e2137",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "04df28e2-b837-4cee-8466-c2b3a31d0bec",
+			"id": "ed4cc85c-48c0-462d-b996-507b309fcc7d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "252f6321-37ae-4056-974b-b41e0129f242",
+			"id": "a6f18c72-6e7c-4e9c-b828-6010b930f07c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d65d05b2-89f6-436b-b440-158674983a03",
+			"id": "0db7f28d-ad7c-4525-abcc-f3f9cbe2a380",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e610a4a1-9add-41cf-959f-19001ffa6ae9",
+			"id": "513e8c1d-7e7a-4e91-94d2-502e1640e900",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "fe2ebf99-7a72-4723-86c5-920208320431",
+			"id": "4b5bc08a-2b29-4733-9ae4-7ba9f9971ca9",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "35a94631-6302-4dd8-99d0-8804609f666d",
+			"id": "f4dc7aac-acb2-41d5-9d94-29cc9a96cda0",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "f9ba5afa-3701-442e-ad4d-0cd6cc90f4bb",
+			"id": "a652f2e2-ba51-4b91-b1ba-23fcf33faf17",
 			"key": "newDT",
 			"value": ""
 		}
