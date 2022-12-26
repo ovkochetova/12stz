@@ -8060,8 +8060,7 @@
 									"pm.request.body.raw = body;\r",
 									"\r",
 									"\r",
-									"pm.collectionVariables.set(\"newDT\", newbody);\r",
-									"console.log(\"newDT\", newbody)"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -12602,56 +12601,56 @@
 	],
 	"variable": [
 		{
-			"id": "b6a7c157-e3f6-43e0-9a32-35e82e0f97f9",
+			"id": "d4f64138-2c65-4f8d-ad6d-5bf78dbe9a24",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ab40ff71-78e1-4444-9cc2-25dac413d1a7",
+			"id": "f11f177b-f8b3-4d61-88ec-6991e133c451",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "39676530-fb00-446b-8f6d-43aa46c78a32",
+			"id": "1f77c7db-569b-4339-8adc-8fd0487341e7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c8e63924-47f7-480d-976f-25413417e49d",
+			"id": "88db2902-6970-4f65-946d-f3bf4c3884f9",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "de77724f-5919-47a9-beac-969382b0bccd",
+			"id": "134ac716-6e58-436b-89bc-d89349456fb1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "dfe79ae2-e011-471c-af01-cb3bcaff13fe",
+			"id": "6578d695-d7f0-4039-ae7d-7f541ee3822d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "cc5ba688-a2b9-4499-87ad-563b9cf7df29",
+			"id": "ab1057ac-4b74-43d5-9811-87381289ef81",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "f9bdcb1c-3fa8-4595-b89c-9189dd9f62d7",
+			"id": "b099ba81-ee7e-42a3-bf6c-4382a9ded87b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0821ae49-00b8-4c4b-b503-e882a432dc52",
+			"id": "2e085c5c-356b-4b17-82b4-709a6e6557ed",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "0c0593eb-f0fa-457a-b445-474e812ac512",
+			"id": "024f13b2-fb72-4057-94be-ebc78f4ca0af",
 			"key": "newDT",
 			"value": ""
 		}
