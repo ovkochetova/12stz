@@ -7644,109 +7644,6 @@
 			"name": "Типы доставки",
 			"item": [
 				{
-					"name": "Изменение статуса типа доставки на true",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "07d64568-113c-475b-948b-c64a2aaae808",
-								"exec": [
-									"let body = pm.collectionVariables.get(\"newDT\");\r",
-									"\r",
-									"body.isActive = true;\r",
-									"\r",
-									"pm.request.body.raw = body;"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "4553d999-670d-4611-aa1c-30dddaae2079",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
-							"protocol": "https",
-							"host": [
-								"logistics",
-								"12stz",
-								"dev"
-							],
-							"path": [
-								"api",
-								"v1",
-								"delivery-type",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
-									"key": "id",
-									"value": "{{id}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "тип достаки активный",
-					"id": "43167e5d-9a21-48d9-86d3-00654bb90cc5",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
-							}
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Grpc-Metadata-Api_Key",
-								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "Поиск типа доставки по названию",
 					"event": [
 						{
@@ -8082,6 +7979,109 @@
 				{
 					"name": "тип дост не Активный",
 					"id": "8602d87e-9787-4379-b042-7f7a12f634a4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Изменение статуса типа доставки на true",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.isActive = true;\r",
+									"\r",
+									"pm.request.body.raw = body;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "4553d999-670d-4611-aa1c-30dddaae2079",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "тип доставки активный",
+					"id": "43167e5d-9a21-48d9-86d3-00654bb90cc5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -12255,56 +12255,56 @@
 	],
 	"variable": [
 		{
-			"id": "39861913-a3ba-408a-aaf4-2051e44ededf",
+			"id": "43317d85-2b1b-412a-aa4f-52efe273ad13",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "381bec81-d8ce-411f-97ba-c85de7850f3c",
+			"id": "9f6a3532-cc40-4b2b-8b9b-7fee67be3726",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0beee4d7-a0b2-4ae9-adab-7e9bdd450ea8",
+			"id": "436649d3-1c2c-4792-bd54-259a8b1ca6e5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa8046f4-ba08-4bfc-a7cb-808aaf655bd4",
+			"id": "1a7a1e03-6234-422b-bf2b-1d6c1ca03689",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "913167a1-d056-4b5c-9a00-d7c8b997a023",
+			"id": "a0314fe2-8e05-4427-82bf-d6580c0728da",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9ad727f0-15ba-4459-9319-65ecd59884fb",
+			"id": "30917668-b948-4efb-955f-a6e05ab5ecdc",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5afff45d-1de2-4599-b9ed-42a62baaf106",
+			"id": "48bbeb88-8df2-4330-be16-382fcb61cd3e",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "06a18b61-ae60-4509-beee-8985b7dc9459",
+			"id": "507bdb71-2ec5-4d1c-9261-89ea9113e4e2",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e9a19945-7dfd-4d4a-b97e-cf542acf8551",
+			"id": "3fb6ddf0-e125-4329-8e1b-caa15c5e0c55",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "6ab387ef-c88f-42bc-a1b5-cc20da0f2371",
+			"id": "b8c80ea3-23ad-4a4c-a7b8-93aff359803d",
 			"key": "newDT",
 			"value": ""
 		}
