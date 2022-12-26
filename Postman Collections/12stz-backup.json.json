@@ -8114,7 +8114,7 @@
 					"response": []
 				},
 				{
-					"name": "Стоимость доставки",
+					"name": "Стоимость доставки изменить на 999",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -12324,56 +12324,56 @@
 	],
 	"variable": [
 		{
-			"id": "3992e8f7-f3c4-4eb1-b5fc-f3aa8b4aa7ac",
+			"id": "0be6203c-5339-4b6d-ad81-e0c0904a4cd6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "75998ca1-e6fb-4867-a43a-fce5467c3ebd",
+			"id": "c3061169-8584-41a0-a54b-60320d2e84bf",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2e1568e2-1359-4182-bb02-8983bfb284e9",
+			"id": "098474a4-e7d0-47ee-92ec-47057114e481",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ff49a69-0538-4b3a-9ecb-bcb456d912fd",
+			"id": "79dc28ab-0d45-46a6-a7e1-ee88db19a3b2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "bd3cf9af-1e61-4c6f-b5d5-9c5f3115469d",
+			"id": "204bbcb9-af5c-4381-8c65-1737f546e3ce",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a75f5818-23a3-4b35-9c8b-78226f3d1dd7",
+			"id": "7541b156-3206-445f-918c-be2408191b8c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "53817bf8-cccd-4d3b-8d75-f130d99ac1d6",
+			"id": "b7e705f0-3dce-4775-a5b8-42121ea69acd",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "b4a3fda1-effa-4830-ac61-f6c8f7acbe87",
+			"id": "07dc903f-2310-409c-a97b-ff294dc0e472",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "30186e04-b70c-4f28-8c91-74bcd3f1a6a4",
+			"id": "e2f44b83-80ab-4574-83a6-48a894dd1514",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "c571538c-f747-4db1-8b19-3bf61a99a396",
+			"id": "3e0f8e5e-41fc-45fc-b02d-31127d254475",
 			"key": "newDT",
 			"value": ""
 		}
