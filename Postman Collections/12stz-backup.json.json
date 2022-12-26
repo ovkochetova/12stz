@@ -8287,7 +8287,7 @@
 					"response": []
 				},
 				{
-					"name": "Сьлимость заказа после границы",
+					"name": "Стоимость заказа после границы",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -12549,56 +12549,56 @@
 	],
 	"variable": [
 		{
-			"id": "4fe86531-9afc-49d4-a8a3-a99fa710e78d",
+			"id": "de464027-b10e-49ae-a21f-b9d776e65d8b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "31fe5148-f685-4e22-848d-28aec3a4a1fa",
+			"id": "569414f5-08da-41ca-8064-1209d2f44df7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bdb87485-3eca-476e-97df-56b3508d3745",
+			"id": "a9e4b367-9320-4471-a0ba-bb3707a0e4ae",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a781b68a-038a-44fd-9260-7b83ffb3f110",
+			"id": "50e7f1f1-d851-45b8-9317-22799957716b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "6f274799-b4e0-4870-8e7d-c6fcd6c83db0",
+			"id": "f9f134f7-48b0-4ae9-92d8-6bc050af6de7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3366e071-b950-4cdd-a718-c6a41edd9d61",
+			"id": "975ab09e-8694-45ea-ae14-a34ea03a81e1",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1d2675d7-c57e-483d-8f51-e255a7f5535a",
+			"id": "81eeb20c-3c46-4134-9896-a24033557fb1",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "1e46ff38-5567-477f-9a17-dc480ea3a89a",
+			"id": "bd94fa2d-3165-43c8-af1f-84cc73c65823",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "cd774a9d-9675-4765-b7c8-16c9ec4eeb28",
+			"id": "e9a8cfd3-d1e6-43f4-a90d-1e697433ae9b",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "d8414221-6fa4-4647-92a8-ee7248772d67",
+			"id": "1866908a-a0e0-4176-a3b9-ba225d80a4bb",
 			"key": "newDT",
 			"value": ""
 		}
