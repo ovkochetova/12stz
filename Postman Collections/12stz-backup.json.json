@@ -8658,6 +8658,25 @@
 				},
 				{
 					"name": "!стоимость доставки после границы 0 руб",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a5488a2f-b079-4928-93e0-f930d4b11aa3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"стоимость доставки составляет 0 руб\", function () {\r",
+									"        pm.expect(jsonData.delivery_types[0].delivery_price).to.eql(0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "aff76c51-c2f9-4800-ab6c-a966661d3183",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -13336,56 +13355,56 @@
 	],
 	"variable": [
 		{
-			"id": "74fee90a-229b-4177-b75b-8c6d36f2f8cc",
+			"id": "f6fe559f-13c0-4101-8fea-00e55e3fa477",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a23bff2f-3c0a-45d8-a994-f20141a641b1",
+			"id": "266b7ded-88e5-4423-afca-ae2e393830a4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c821ef06-dd21-4ebc-91c6-69bc5554a7b6",
+			"id": "abdcd663-4874-42b3-8dba-1376101db8f5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0714a40f-2ef9-4b52-bb69-37e9f76811dc",
+			"id": "c9cb7591-ca16-4f35-864e-a59d43fde3aa",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3de397e2-7f2f-4d0a-82fd-4b61fcd387d4",
+			"id": "52d39312-5274-4291-89f4-2b57de195f3d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c5e4f807-ce6d-4b8d-9768-9a38d35a3bb3",
+			"id": "cfe4bfea-a8a8-471e-b32e-d4b134817448",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4505bc59-a1d9-4d95-9c26-864ebbeb33d2",
+			"id": "e34f3f1e-7e70-42f1-a661-29a3324297f3",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "c5c15a8f-3d9f-48c0-a220-9a75a8a3d0f7",
+			"id": "ab98bae5-0068-4fd9-a4db-29928c7b025c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e1ff97df-94f7-4b6c-ac21-50b571f634ea",
+			"id": "a421faa7-6521-4ced-ac3f-c19cc6b5f928",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "b987dcc2-85db-4a25-9a37-17c75367945b",
+			"id": "905cc67a-c344-47a7-90ed-dd2e9064a069",
 			"key": "newDT",
 			"value": ""
 		}
