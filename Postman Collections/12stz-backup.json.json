@@ -8833,7 +8833,7 @@
 									"\r",
 									"\r",
 									"\r",
-									"console.log(\"expectedDeliveryYMD\", expectedDeliveryYMD)\r",
+									"\r",
 									"/*pm.test(\"Минимальное кол-во дней доставки действительно 5\"  , function () {\r",
 									"        pm.expect(deliveryDeltaDays).to.eql(5); \r",
 									"});*/\r",
@@ -13346,56 +13346,56 @@
 	],
 	"variable": [
 		{
-			"id": "1ecccee0-2bf1-4338-8d7d-a1492c962056",
+			"id": "ebd143a4-5eb0-4d70-8f62-b7a537630b19",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b950c97f-8f07-4d7c-8383-2025bf9c0f18",
+			"id": "2eeeea05-d49b-4a18-a09c-1c40ade3c575",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3a303bac-177c-482c-8dc4-f561d988e73f",
+			"id": "64dab67e-0253-4e24-855d-5a3d453973dd",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ebab2c40-3d54-4cf4-a261-0eecb90f3536",
+			"id": "cfd31823-77a7-424d-8618-3b0ac6a4ad4e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d86ef7b2-e6ac-4db5-ac70-54ad45f6139f",
+			"id": "d2ab5bd5-002d-4bf1-90a8-0341e40b6aea",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d49d6ff0-2a36-40bc-b34d-55f6680bf8b7",
+			"id": "78aee953-6450-4d82-8538-997f519e65f4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "cc22a335-075f-4879-b445-18de62d3669a",
+			"id": "930069e8-8fb3-4131-aa18-b7ec4871d7ce",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "1840155b-7645-4e4d-a7e9-26474532a2b5",
+			"id": "21d0dce1-3d00-47a1-b84d-743612a0d53a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "df5398c1-12ec-4b08-bacc-4cb3f77bb647",
+			"id": "19137737-dca7-46f3-8246-ed0da82fde97",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "5de60050-4700-47dc-b603-e2438a700380",
+			"id": "42bb598f-cef9-4080-bde4-3b2e8318f36a",
 			"key": "newDT",
 			"value": ""
 		}
