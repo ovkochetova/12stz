@@ -8817,7 +8817,6 @@
 									"\r",
 									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
 									"\r",
-									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
 									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
 									"\r",
 									"//дата, отдаваемая виннером\r",
@@ -13347,56 +13346,56 @@
 	],
 	"variable": [
 		{
-			"id": "40ec14ce-961f-415a-be81-e2c601bfeb21",
+			"id": "3b45f98f-a00f-48cf-a65a-301c5ffd3b2f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "82a8fe83-cf17-4bf4-843b-77ae6d652a3a",
+			"id": "9df4a082-21e4-4207-b5fc-2dc7ad23f276",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf6583de-6159-4719-a1c6-fbb04b71176b",
+			"id": "8991c591-23da-4129-9cac-689c886393c6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1999252b-3c20-4195-8378-0c41c4e53e05",
+			"id": "3fd1db2a-5143-4a5a-a67a-d6c1e99571fc",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "afab48c9-80da-4b1e-9f62-1dc4924578a9",
+			"id": "e88683b9-afcd-4509-bc3b-0c16311472e3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e553f072-a600-43ce-ad96-68d63c9df1b6",
+			"id": "f7175ada-8e34-42a2-a54c-a234b9bfe46a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "37e33c1b-047e-40e7-ac7f-29dc78ebad80",
+			"id": "866bbca5-80db-4e5d-996b-7fbb3d79afbd",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "91fb0196-3ce1-49c0-8caa-8fc03f902d51",
+			"id": "a400a66e-4041-4dd6-a3be-b5c98903c1a3",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "114c9a3e-340e-48e1-83c2-1ba22b739e40",
+			"id": "b434ff8b-e791-4c26-a1ef-9ba91a261c39",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "586fd7b9-badb-46f8-a93d-29b870bac3c6",
+			"id": "261934ca-d08e-43c9-a41e-559c523d91bf",
 			"key": "newDT",
 			"value": ""
 		}
