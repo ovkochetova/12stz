@@ -8839,7 +8839,7 @@
 									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
 									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
 									"\r",
-									"let deliveryDays = expectedDelivery.getDate() - currentDateTime.getDate()\r",
+									"let deliveryDays = (expectedDelivery.getDate() - currentDateTime.getDate());\r",
 									"console.log(\"deliveryDays\", deliveryDays)\r",
 									"pm.test(\"Клд-во дней доставки  действительно 5\"  , function () {\r",
 									"        pm.expect(deliveryDays).to.eql(5); \r",
@@ -13353,56 +13353,56 @@
 	],
 	"variable": [
 		{
-			"id": "d3849582-2fd1-4ada-9593-3f7e762f487c",
+			"id": "38ee84f3-8a4e-4a54-8277-1a3b9d56a5c7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "591e792e-f67a-4a8f-9362-d5cd595a7616",
+			"id": "1eef6059-bfd9-474d-a884-0d5277e8e152",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c9aa170b-fd82-4ad2-a4b1-0479f606444b",
+			"id": "c7f8dec1-7ff1-49ac-829c-1bf3da05bdb8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "89779c6d-d966-46be-8aaf-73be5fb84d5e",
+			"id": "f6bd58d1-928f-4b99-ba33-2f744d51c964",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "22b1e370-9134-458b-8a4f-7967cf7dc8cc",
+			"id": "9ea6602f-db8b-41a6-adaf-a3d53960fe0a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b468e1fc-c4b9-4d10-9cac-0756c94df711",
+			"id": "d9e88197-5661-4ab1-a122-525cf1054109",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "23185a89-166c-4460-901a-eb55bbdc157b",
+			"id": "b0bcdce6-1ca8-4cfb-9f5b-136a16edae4a",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "29436229-3108-4707-9c14-377fc4891ddc",
+			"id": "2fbe293d-e4ed-4b2b-9986-9d349c60e624",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f09c9247-7887-4c9a-82bc-a681ba06a027",
+			"id": "872fb398-9f10-4081-9240-a780a380eae0",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "b176e484-5b2d-482a-8c45-988dd043274a",
+			"id": "3954abdc-bc68-43a2-8d99-28a8610e2c26",
 			"key": "newDT",
 			"value": ""
 		}
