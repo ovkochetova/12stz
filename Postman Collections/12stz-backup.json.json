@@ -8840,7 +8840,7 @@
 									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
 									"\r",
 									"let deliveryDays = expectedDelivery.getDate() - currentDateTime.getDate()\r",
-									"console.log(deliveryDays)\r",
+									"console.log(\"deliveryDays\", deliveryDays)\r",
 									"pm.test(\"Клд-во дней доставки  действительно 5\"  , function () {\r",
 									"        pm.expect(deliveryDays).to.eql(5); \r",
 									"});\r",
@@ -13353,56 +13353,56 @@
 	],
 	"variable": [
 		{
-			"id": "e40562ef-53cb-4406-81d7-c2d5307ab774",
+			"id": "04e86e40-bad7-4a97-a03b-19fedd1257ef",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "84eb5ebc-1eb4-4805-b032-d6c75c1d5d71",
+			"id": "bbb7bef9-f0be-466d-88d5-15755db0f2eb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4027d719-ba6c-470a-80ed-27745fcba694",
+			"id": "f49115bd-78f7-4db0-b0be-a541adf7088e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f937ffba-15c1-424a-a74a-778a1c73ad79",
+			"id": "0cbe79a2-9909-4d7c-aac8-198f7bfad73b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "141c18ce-6204-46ae-9d0e-dd96816d7329",
+			"id": "1fd7ba07-d81f-4bb2-971f-e2ef6d2c19b5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "14ac0e3f-eebb-4020-b54d-80c19cc31f38",
+			"id": "bb576ced-8004-456d-a98b-92ddfd27995e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "c9f63b00-55f0-4a88-a341-f4cd3e211439",
+			"id": "cd94a1a8-e666-4100-9aab-a97b277d2474",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "44cdc54e-c2f6-463d-915f-0fd2ee43435d",
+			"id": "22b6e810-64a2-44c7-9ff2-facda33cf0b3",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2065d96d-389c-46f9-b14c-a39a2870b9cf",
+			"id": "5620d2a9-2b2c-49b9-8740-753869df9102",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "84a96d4b-64b5-4ed7-b578-9fe421b1e5e4",
+			"id": "186479c3-c8d1-44ef-a231-bfed67e98242",
 			"key": "newDT",
 			"value": ""
 		}
