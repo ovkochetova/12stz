@@ -8721,85 +8721,6 @@
 					"response": []
 				},
 				{
-					"name": "время отсечки",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"\r",
-									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
-									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
-									"\r",
-									"//дата, отдаваемая виннером\r",
-									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
-									"console.log('winner', dataDostavki_winner)\r",
-									"\r",
-									"//время отсечки, запас по времени\r",
-									"const cutoff = 20;\r",
-									"const gapHours = 6;\r",
-									"const actualCutoff = cutoff - gapHours;\r",
-									"const currentDateTime = new Date();\r",
-									"console.log('currentDateTime', currentDateTime)\r",
-									"\r",
-									"//ожидаемая дата доставки\r",
-									"let expectedDelivery = currentDateTime ;\r",
-									"if (currentDateTime.getHours() > actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 6);\r",
-									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 5);\r",
-									"console.log('expectedDelivery', expectedDelivery)\r",
-									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
-									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
-									"\r",
-									"\r",
-									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
-									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
-									"});\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "2e8d9116-4a95-4cf3-9e48-55437ce3a9b0",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
-							}
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Grpc-Metadata-Api_Key",
-								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "Время отсечки",
 					"event": [
 						{
@@ -8888,6 +8809,85 @@
 								}
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "время отсечки",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
+									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
+									"\r",
+									"//дата, отдаваемая виннером\r",
+									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
+									"console.log('winner', dataDostavki_winner)\r",
+									"\r",
+									"//время отсечки, запас по времени\r",
+									"const cutoff = 20;\r",
+									"const gapHours = 6;\r",
+									"const actualCutoff = cutoff - gapHours;\r",
+									"const currentDateTime = new Date();\r",
+									"console.log('currentDateTime', currentDateTime)\r",
+									"\r",
+									"//ожидаемая дата доставки\r",
+									"let expectedDelivery = currentDateTime ;\r",
+									"if (currentDateTime.getHours() > actualCutoff)\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 6);\r",
+									"else\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 5);\r",
+									"console.log('expectedDelivery', expectedDelivery)\r",
+									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
+									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
+									"\r",
+									"\r",
+									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
+									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "2e8d9116-4a95-4cf3-9e48-55437ce3a9b0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
 					},
 					"response": []
 				}
@@ -13033,56 +13033,56 @@
 	],
 	"variable": [
 		{
-			"id": "239b6a8b-17cb-49d5-94f2-6dc33aeef95f",
+			"id": "bc555222-7055-48ef-ba29-db884d3dd436",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f48d76be-d1c7-43b6-9e85-83baffc29213",
+			"id": "e50b6186-b44c-4236-af43-600f03e19299",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "169a3cc6-8ea3-4be7-bd08-a45dcfc0afde",
+			"id": "d873959c-bdc2-48ce-9ec8-37733014b586",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e79c08ba-dca1-4896-a3a3-af1807109031",
+			"id": "0e857a9a-c421-4923-ad8d-b9aa696b6deb",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d0f8e7db-bd51-4091-89b8-860401d71d2b",
+			"id": "c6cddbe2-2720-4180-b81e-e45b1d2b5941",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "600ae9f7-93e9-42fd-b38f-d78c4978e567",
+			"id": "866589db-3384-4d13-8f9b-ff9333365a56",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "cf40b277-7c9f-4826-90ce-9285fd7e363c",
+			"id": "99f93fbf-c752-438b-bd2a-f96a7216b43d",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "344c6ef0-cdf0-4156-bc25-aee7e822d9b5",
+			"id": "1ad712e7-5a6f-46ef-b2f6-33dccd4694aa",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "bc1eb932-916b-4a36-9d0e-68c52269b0b7",
+			"id": "32161ede-ce1c-4657-ad6b-64d4087c5ebe",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "7f317401-1f6b-4bc6-834c-d77adf6946a3",
+			"id": "a179dd8a-a422-48e0-ad41-722b746df734",
 			"key": "newDT",
 			"value": ""
 		}
