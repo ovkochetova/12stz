@@ -9004,7 +9004,7 @@
 									"\r",
 									"pm.test(\"Минимальное кол-во дней доставки действительно 5\"  , function () {\r",
 									"        pm.expect(dataDostavki_winner).to.eql(expectedDeliveryYMD); \r",
-									"});*/\r",
+									"});\r",
 									""
 								],
 								"type": "text/javascript"
@@ -13514,56 +13514,56 @@
 	],
 	"variable": [
 		{
-			"id": "d7a08224-6e28-4fdf-b86f-951b7e7f84ae",
+			"id": "09e6fa28-49fa-4dfa-be91-afd81db37721",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0a617ec0-864a-4eb2-a9f7-3297de5756b2",
+			"id": "4c62f4e2-d369-4b55-903e-c4d03d706f87",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4549f1d1-e923-4888-88ec-245ebe6bc03c",
+			"id": "e524ca00-721c-4cfa-ac12-1a4e78f0cd73",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f783f4c4-765e-46f7-acfa-fcba592acc42",
+			"id": "2dd48ec5-768e-460d-9298-55245d08f6bf",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7178f45f-9953-439d-bfd3-552189afbc4a",
+			"id": "50e42940-b4ad-4cea-8ef5-89397bde4cfe",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5fea06cb-27a5-49f1-8cf5-9fcd3824c58b",
+			"id": "a5227593-966a-4a96-8928-24f60382cbd1",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1527c919-2796-4ad3-9de6-d8b7d7785d36",
+			"id": "b599f2d0-869e-47e0-a822-a0e6ec68cb80",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "01744fa8-e1dc-489c-94bc-aa2ce6c0ec56",
+			"id": "95a05002-9b47-453c-9f06-1f7eb8f2fbc4",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "113b0c10-e2a4-4813-b601-d0f7b69c2cdb",
+			"id": "3e538fc9-1f79-4bb0-a88f-1292e95ce77d",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "1896d2a6-4420-4c35-b0e2-be1215bc27fd",
+			"id": "aa670131-b993-4e16-a581-1b887f9d9885",
 			"key": "newDT",
 			"value": ""
 		}
