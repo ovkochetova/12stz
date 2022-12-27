@@ -9314,7 +9314,7 @@
 									"console.log('winner', dataDostavki_winner)\r",
 									"\r",
 									"//время отсечки, запас по времени\r",
-									"const cutoff = 20;\r",
+									"const cutoff = 19;\r",
 									"const gapHours = 6;\r",
 									"const actualCutoff = cutoff - gapHours;\r",
 									"const currentDateTime = new Date(\"2023-01-10 12:50:00\");\r",
@@ -13514,56 +13514,56 @@
 	],
 	"variable": [
 		{
-			"id": "fc4aafbb-3a27-4765-a16b-9270d5c74104",
+			"id": "77e37e64-f437-4f58-8cb2-0ffecf2b0149",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "515612b0-b9f2-4565-ba80-356223f88ab5",
+			"id": "643b24ed-5cf7-48ec-b614-70101ca54859",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ac48ff01-52d1-4187-aafd-ba0081531f85",
+			"id": "94ac2f91-a4c6-483d-b7df-4f1bd846d368",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "430cfe7c-389a-4d31-8668-002f9eacb593",
+			"id": "9fb4ec86-b8bb-4933-966d-78cca9c8fb9d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "bf1f13f3-2718-47ed-9cb9-9f032d992764",
+			"id": "a0d95b8d-88d1-4fa3-a4ed-9427f469579b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "4b35d99d-ec3a-4bb8-b2ec-29334e0a312c",
+			"id": "e0caf8ce-2040-41c9-b913-faa5b0e6a398",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0e455335-b5b9-476a-a168-559106a63303",
+			"id": "213aceab-ca4e-40a8-8254-cc84905dd9e4",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "ff1deb57-9167-4728-a41c-3e64e21c3bba",
+			"id": "f93d691b-7604-4fbd-bf9b-995e44d84acd",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ee1ad535-902a-4c2b-b41e-165ead316869",
+			"id": "9318ecaf-68e7-4ca0-a0ca-17d90c0a50f9",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "76fd3f21-eee3-4b76-9e9c-776acfe5b8be",
+			"id": "41cb25e8-71a5-462d-9474-bacbb2232c4b",
 			"key": "newDT",
 			"value": ""
 		}
