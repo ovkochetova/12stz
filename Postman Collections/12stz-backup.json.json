@@ -8803,6 +8803,99 @@
 					"response": []
 				},
 				{
+					"name": "Мин кол-во дней доставки 10 дней",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.deliveryPriceBorder = 0;\r",
+									"body.deliveryPriceAfterBorder = 0;\r",
+									"body.deliveryMinDays = 5;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Минимальное количество дней доставки равно 5\" , function () {\r",
+									"    pm.expect(jsonData.deliveryMinDays).to.eql(5);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8afa68bd-bb0a-4629-be68-11c36d899cb8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "!Мин кол-во дней доставки 5 дней",
 					"event": [
 						{
@@ -13347,56 +13440,56 @@
 	],
 	"variable": [
 		{
-			"id": "f0562990-e225-4f1f-8a51-4d4bf366d9e0",
+			"id": "f846f618-c1a2-47a1-8a03-bf3ec7d6fb89",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7f0bd670-b8a4-442c-8b7f-78b8429b7828",
+			"id": "9519fcd1-da33-42d5-ab89-e6d078f6fde6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d2b9c364-4d31-453a-91e1-843eedb0d535",
+			"id": "89e4131b-d05b-40d9-935e-f0d885360ff9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "141c9cd7-c409-424d-a3f4-4e977835ed8d",
+			"id": "00354617-b4cb-4a9e-9729-932a85d03e5a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5005b4ca-b915-4e32-ae5e-4b15bd22232c",
+			"id": "e5b4550e-85a6-4e35-a3f6-dddc33366d41",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "baa4500e-45ba-475e-b3ef-d93b71058b3a",
+			"id": "695388f7-2c3a-4af4-a9dd-467882fc5dc5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "038a60b2-3a32-455e-8e3f-86c666d4334c",
+			"id": "96ab47be-41ee-4883-bfe0-63935ce09929",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "516dd572-acc4-469b-9bd5-4edd744a5986",
+			"id": "dd3eec73-333b-4655-9f1f-6b654bc33b76",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "cc6898f9-5488-4067-b3a2-ccbb94003242",
+			"id": "2f0d9acb-9e42-4581-9f19-fb83ad981cdc",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "1a588bb6-1002-4421-9118-8fc054601c1e",
+			"id": "2f94b78b-947d-4c58-b039-adcb9c2099e9",
 			"key": "newDT",
 			"value": ""
 		}
