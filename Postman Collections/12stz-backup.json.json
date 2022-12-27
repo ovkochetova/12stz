@@ -8546,7 +8546,7 @@
 					"response": []
 				},
 				{
-					"name": "!Стоимость заказа после границы Copy",
+					"name": "!Стоимость доставкипосле границы 100 руб",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -13277,56 +13277,56 @@
 	],
 	"variable": [
 		{
-			"id": "ef9373ef-b379-42ce-89be-bc42aeeb6020",
+			"id": "fafce616-e892-4f65-855e-b84254c93613",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "49ae5e8d-62d2-4e84-8e81-b32c5756e17f",
+			"id": "7aeb826c-2cf0-452b-b0be-1ee279df32a4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5896e74e-4773-4147-b821-798ce13b951d",
+			"id": "95c38f66-de5c-4a7f-ac7e-af05ac3d169e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c698df82-7e47-444e-b0de-a4ec817e57a6",
+			"id": "47119043-92b6-475d-9aa0-ff2eaa3c7b2b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4b6b300d-b0df-420a-ba50-00ef3da33c46",
+			"id": "158b273e-0ec3-4a0d-9f0f-a61b387ae2db",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7c8b3643-1c78-4cf3-b95d-9cc039936266",
+			"id": "1823e170-8a67-4768-80aa-5072d809848e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "326850c7-0a0f-4d22-978d-47a318cd52f5",
+			"id": "035ab96b-3735-4130-9b88-bd701a932532",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "eec1410b-a41c-4817-99bf-12f46d828274",
+			"id": "5a762e21-cab0-4c3a-9a11-bca50dc8d13f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ebd920a5-da78-484d-885c-8f7da0876a35",
+			"id": "39d8a425-ed61-4cba-b709-00a41beae0ce",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "9cc7d311-15a0-4c2e-abbf-df128737208c",
+			"id": "3e179a27-b7d7-4b2d-845f-35a2ba2f6ac3",
 			"key": "newDT",
 			"value": ""
 		}
