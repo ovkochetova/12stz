@@ -8453,8 +8453,8 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Стоимость заказа после границы 100 руб\", function () {\r",
-									"     pm.expect(jsonData.deliveryPriceAfterBorder).to.eql(100);\r",
+									"pm.test(\"Стоимость заказа после границы 0 руб\", function () {\r",
+									"     pm.expect(jsonData.deliveryPriceAfterBorder).to.eql(0);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -13312,56 +13312,56 @@
 	],
 	"variable": [
 		{
-			"id": "09e2f0e5-c03b-4a77-b885-1275f928062e",
+			"id": "f3f8282a-f2f6-4472-b3c3-d1aa57d3e496",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0d243f36-e5a7-48b8-a4f8-800308547e32",
+			"id": "8d45299d-fc36-43c3-b76c-0f0558e9fa52",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3835caec-9942-48a1-9ad6-c2092738ba78",
+			"id": "8bd4805d-2c7c-4581-b44d-9b78ad9bbedd",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ec9d103-86bc-4010-b032-b691914d74d1",
+			"id": "a4b792d0-30bb-4cd2-af9e-c6c34802258f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "37a064b7-b1a0-4ed8-aa0c-2779171c5a65",
+			"id": "b5f2f36b-477a-46b6-b1b3-24ccafb6f233",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "6fdc34c0-d8ba-488d-a2cc-269dfd3b4313",
+			"id": "9e595416-063f-4bf9-a8d5-b7f1a267c8a9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4f07844a-ecff-478a-a3c9-a7a71ee74bf9",
+			"id": "c3e75e3e-424e-4316-81a7-a364994eb5d9",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "8060c66e-f098-41e3-b687-b0e151ce627f",
+			"id": "41bf6686-8dc7-4cab-86b4-494acf003243",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ad2aefaa-f46b-4d27-9c04-470642420761",
+			"id": "38f749e0-f7db-4cc9-b3ba-33c3ecdc96c9",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "0284b616-7cdf-4935-b67b-2a8772550b65",
+			"id": "a45da2b5-8a13-45ae-863c-78ff7e21b069",
 			"key": "newDT",
 			"value": ""
 		}
