@@ -8842,7 +8842,7 @@
 									"let deliveryDeltaDays = (expectedDelivery.getDate() - currentDateTime.getDate());\r",
 									"console.log(\"deliveryDeltaDays\", deliveryDeltaDays)\r",
 									"pm.test(\"Клд-во дней доставки  действительно 5\"  , function () {\r",
-									"        pm.expect(deliveryDeltaDays).to.eql(5); \r",
+									"        pm.expect(deliveryDays).to.eql(5); \r",
 									"});\r",
 									""
 								],
@@ -13353,56 +13353,56 @@
 	],
 	"variable": [
 		{
-			"id": "3822fb53-e0f6-43af-9812-f87098ecc603",
+			"id": "ef34b976-abc8-4885-9f8d-dcb4d5da0475",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8fa3ced4-51d5-4422-843d-65e6f6a460c0",
+			"id": "2003aeea-fa5d-4716-a167-761eae68bf09",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c6ba81d0-5db6-4f9b-b423-5e0631d2a84a",
+			"id": "f978b84a-a6e0-4555-8fa2-0d6b741f96c6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1951745f-9914-4b34-a8fc-709ccc2e09e7",
+			"id": "ce86f83b-d0e6-4fdd-ba62-a11a04ec4c13",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "fdf0199e-1b06-4808-b406-9ee709704269",
+			"id": "4ed06746-534c-40f1-834e-9b65378e0a0b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3eb6100b-5cc7-4894-87c9-77367cb43d10",
+			"id": "655c2736-6b3c-4577-a76f-90d2bd8b2a30",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "83e7943e-a977-46b4-b839-7fd8b915c615",
+			"id": "7fda869e-4f52-4918-9e4a-a7e631de4f12",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "8a47bb6d-f6ee-4b7a-bf9c-3657d85d7ec3",
+			"id": "85ef0009-97a5-40fb-b961-d23282ff9cdf",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b6206cd1-0819-4ca8-adb0-bb2186f5163c",
+			"id": "85955f39-62a2-4c68-9781-d75edf2202d0",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "bb1bc148-7db3-45b4-8a6a-3f54ad91c79a",
+			"id": "bad53624-6df7-4016-90e3-d083394b487a",
 			"key": "newDT",
 			"value": ""
 		}
