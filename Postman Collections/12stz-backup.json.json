@@ -8823,23 +8823,15 @@
 									"console.log('winner', dataDostavki_winner)\r",
 									"\r",
 									"//время отсечки, запас по времени\r",
-									"const cutoff = 19;\r",
-									"const gapHours = 6;\r",
-									"const actualCutoff = cutoff - gapHours;\r",
+									"\r",
 									"const currentDateTime = new Date(\"2023-01-10 10:00:00\");\r",
 									"console.log('currentDateTime', currentDateTime)\r",
 									"\r",
 									"//ожидаемая дата доставки\r",
-									"let expectedDelivery = currentDateTime ;\r",
-									"if (currentDateTime.getHours() > actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 6);\r",
-									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 5);\r",
-									"console.log('expectedDelivery', expectedDelivery)\r",
-									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
-									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
+									"let expectedDelivery = currentDateTime.getDate + 5\r",
+									"console.log(\"expectedDelivery\", expectedDelivery)\r",
 									"\r",
-									"let deliveryDeltaDays = expectedDelivery.getDate() - currentDateTime.getDate();\r",
+									"\r",
 									"\r",
 									"console.log(\"deliveryDeltaDays\", deliveryDeltaDays)\r",
 									"pm.test(\"Минимальное кол-во дней доставки действительно 5\"  , function () {\r",
@@ -13354,56 +13346,56 @@
 	],
 	"variable": [
 		{
-			"id": "3d72e3de-7c84-459b-8875-ce700a6e3d5e",
+			"id": "59f82fdd-ea2b-4e39-b658-1e7835a30ae2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8c002eae-a4aa-4da5-824b-1055a197badb",
+			"id": "7c73f938-9985-4496-a8c8-85edce3c23ca",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d1aa03a2-adeb-4e82-9019-a3ad0b3af8f1",
+			"id": "c258c6ff-87b6-47ae-a9a9-bb3828993ef3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "60c27629-ae2c-4266-82d8-9214940e9fe1",
+			"id": "3fb8cf1e-4afc-4efe-9fa5-b3a3067380d1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a0d9a1e5-9be5-49cb-9f12-a0323d96f78d",
+			"id": "98cded16-801e-4e91-82b3-5bc96d911dca",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2bfc2cbd-355d-4533-878d-3c0b02932280",
+			"id": "5a802cd6-9803-41bc-bb3a-70787ecda16d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d19c85b2-c156-4b97-a2ee-a37d5a7bda8a",
+			"id": "d14022a6-efb2-4cc4-ba76-dce21f9057bc",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "e7dac4a5-0835-4c77-8205-19d6f273aeef",
+			"id": "75ef68a1-e5e4-4446-9c8d-cac29db53f84",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "6181b338-e0e7-45dc-9ab5-7e282370a502",
+			"id": "8b680634-644d-44b5-9018-39209708e254",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "9bc883b3-25d3-45f3-bf6e-71e464974cd7",
+			"id": "331efcb9-53a4-4b5b-a2f2-b0876661bf03",
 			"key": "newDT",
 			"value": ""
 		}
