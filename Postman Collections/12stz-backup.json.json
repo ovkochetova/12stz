@@ -8833,10 +8833,10 @@
 									"\r",
 									"\r",
 									"\r",
-									"console.log(\"deliveryDeltaDays\", deliveryDeltaDays)\r",
+									"/*console.log(\"deliveryDeltaDays\", deliveryDeltaDays)\r",
 									"pm.test(\"Минимальное кол-во дней доставки действительно 5\"  , function () {\r",
 									"        pm.expect(deliveryDeltaDays).to.eql(5); \r",
-									"});\r",
+									"});*/\r",
 									""
 								],
 								"type": "text/javascript"
@@ -13346,56 +13346,56 @@
 	],
 	"variable": [
 		{
-			"id": "59f82fdd-ea2b-4e39-b658-1e7835a30ae2",
+			"id": "c67518b5-c27e-415b-ac6b-49dcb72e7dcd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7c73f938-9985-4496-a8c8-85edce3c23ca",
+			"id": "29dbcd9c-9d94-4e1c-a161-42ef4b301128",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c258c6ff-87b6-47ae-a9a9-bb3828993ef3",
+			"id": "fbb5eab5-f293-4b5e-b728-150052976bd1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3fb8cf1e-4afc-4efe-9fa5-b3a3067380d1",
+			"id": "c853e724-b8d7-4670-90e3-8e060fd789cc",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "98cded16-801e-4e91-82b3-5bc96d911dca",
+			"id": "5b4c4654-d339-48c0-a540-6e5faeee12c3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5a802cd6-9803-41bc-bb3a-70787ecda16d",
+			"id": "c79de422-617d-4e40-bf08-13b0cd21c26e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d14022a6-efb2-4cc4-ba76-dce21f9057bc",
+			"id": "7c39f696-ba59-4c86-99b2-9c5abd614def",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "75ef68a1-e5e4-4446-9c8d-cac29db53f84",
+			"id": "9219daa1-af32-4379-8630-01576e22b31a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8b680634-644d-44b5-9018-39209708e254",
+			"id": "43fd4d67-8588-41c3-9d82-fd337ecbf1ff",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "331efcb9-53a4-4b5b-a2f2-b0876661bf03",
+			"id": "fb0ffefe-d662-4267-a51a-1146944954b2",
 			"key": "newDT",
 			"value": ""
 		}
