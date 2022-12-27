@@ -8909,7 +8909,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Минимальное количество дней доставки равно 5\" , function () {\r",
-									"    pm.expect(jsonData.deliveryMinDays).to.eql(5);\r",
+									"    pm.expect(jsonData.deliveryMinDays).to.eql(10);\r",
 									"});\r",
 									"\r",
 									""
@@ -13440,56 +13440,56 @@
 	],
 	"variable": [
 		{
-			"id": "81a1d333-99d2-459a-b2be-b544d2c6757c",
+			"id": "d740b234-5ef1-4085-bb83-0eb0f53b4ee0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5fb04fc1-c71e-4350-b4f6-f9b10e792d8d",
+			"id": "77f42d7b-de01-4b70-a190-8136cab76ef3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e179b8b1-8c9f-4f30-88ce-53a0cb4031d8",
+			"id": "061a0874-a088-4ee5-8ec4-52035fc769d4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "670f4c0b-ec3d-4dfa-98b7-827b867495f3",
+			"id": "8fcf5d60-a9ee-4f50-b276-bf3f33735824",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "29f242f8-3430-4392-a567-940245fff300",
+			"id": "d5a3be6e-2e9c-492c-b021-bb097dd00f69",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5808a8a6-3fb9-42ca-b718-bc99e8d5d164",
+			"id": "2d345107-6068-4190-979a-cb5a4b356eb2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3fbd2948-9b7c-49af-9219-2c8d4b242cc4",
+			"id": "5f2467e0-929c-489d-934c-79cf4eb546d7",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "ac01f247-ef65-4665-82b5-3c9178b7b7cc",
+			"id": "b004c1f4-9878-4ae9-8723-124cb2c06ebf",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4587689c-60b0-424d-ab15-c30e24ae7ed1",
+			"id": "288818e9-d433-4e73-9b46-0ac006935d97",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "34c13cc8-860c-4c0c-bc43-2455c84b0f8a",
+			"id": "994964c3-bdc0-4b2c-a281-722671e81027",
 			"key": "newDT",
 			"value": ""
 		}
