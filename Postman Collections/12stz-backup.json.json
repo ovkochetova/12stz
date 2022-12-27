@@ -8745,10 +8745,7 @@
 									"    pm.expect(jsonData.deliveryMinDays).to.eql(5);\r",
 									"});\r",
 									"\r",
-									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"cutoffTime\", jsonData.cutoffTime);\r",
-									"pm.environment.set(\"consolidationHours\", jsonData.consolidationHours);\r",
-									"pm.environment.set(\"gapHours\", jsonData.gapHours);"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -13355,56 +13352,56 @@
 	],
 	"variable": [
 		{
-			"id": "3aba8159-a9b6-4f94-9fa8-536a01a21705",
+			"id": "0ddac3e9-6c44-474e-b887-1496ee167d82",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "abcd61a5-4780-4d6f-a185-252a59a939c1",
+			"id": "225930ad-cb61-40df-aa04-f56790a0b160",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4ddfd48-2489-4d6f-ac92-fa3bf60ef29f",
+			"id": "757af3eb-2e0f-44ca-bd9b-480f20712d19",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5adc8900-bde5-44a9-96eb-35cf5b7630aa",
+			"id": "574d8b8c-64d1-4246-b8ff-61c55583c94d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "88203193-8e26-4637-9acc-5a78c242c4ea",
+			"id": "657e1b81-bae9-4c37-99c4-112bdc335116",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b8550b1f-d6eb-49bc-9e8c-36f0b37ef9ed",
+			"id": "e60e7e39-b248-4a8b-bd8e-3e60de726f8e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b7554278-db0d-4603-b5f7-c84f42b0f4eb",
+			"id": "7b24ba7e-21cc-491e-8f9f-265c9ccd9f5c",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "33270afc-d5e8-40c4-bdb6-dc933faecc79",
+			"id": "b9ff74bd-b8d6-4d5f-ad06-00d649fbd99e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9780d321-8294-4cd0-a36b-fda84f2edbd5",
+			"id": "bbe039c6-c414-4707-84ea-5c731bd9a0b7",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "6d2ad5fa-889a-4e0b-9946-3ad26f50921f",
+			"id": "572d315d-f1a5-49dc-be3f-4badc21eadec",
 			"key": "newDT",
 			"value": ""
 		}
