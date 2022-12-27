@@ -8632,6 +8632,40 @@
 					"response": []
 				},
 				{
+					"name": "!стоимость доставки после границы 100 руб",
+					"id": "aff76c51-c2f9-4800-ab6c-a966661d3183",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 20000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Мин кол-во дней доставки 5 дней",
 					"event": [
 						{
@@ -13277,56 +13311,56 @@
 	],
 	"variable": [
 		{
-			"id": "07866ce7-e365-4d78-b6d0-15f259f61c5b",
+			"id": "245a7eff-d4a4-4e05-b34c-c6ffdd0c3839",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f07d701a-9154-4962-be81-a550d5a2c52f",
+			"id": "4e1567a1-b567-4d82-b5c8-9ef42d85faf3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bfdd81e5-e9f5-4afe-8dc3-40a078536ecc",
+			"id": "702b267d-3f1d-4dce-9709-f36d03279fc8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5535229d-9012-471a-8a66-283451bb35d4",
+			"id": "a9d70bf9-40d5-484a-9525-3eb85721e86a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "522cfad1-dea4-45fd-a218-1832a395c321",
+			"id": "682184e6-d819-48e4-9dde-13af7a182d01",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2bb6b404-dcec-4758-aa84-de5b9fa26914",
+			"id": "77a43f7d-c492-4b1c-9b93-bc6db9f00e9e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "2d5aaaea-fadd-47ed-b7e6-c6d1b8518956",
+			"id": "df461578-7e11-4717-987a-f611980890cf",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "f22c698f-7f2e-49ae-8012-5134e270f4bb",
+			"id": "1cb33f58-063e-4117-aa50-1d6c29f9a110",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "460b54b5-1516-4749-b7c2-63632ba7122f",
+			"id": "d3255a44-c07f-45d4-be8e-aedb5cd371ce",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "c13bc13c-7979-4728-b917-7e0b6285b273",
+			"id": "4ca26e9e-1a3e-450e-bdc4-37133c180b0c",
 			"key": "newDT",
 			"value": ""
 		}
