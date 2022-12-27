@@ -8835,8 +8835,8 @@
 									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
 									"\r",
 									"\r",
-									"/*pm.test(\"Минимальное кол-во дней доставки действительно 5\"  , function () {\r",
-									"        pm.expect(deliveryDeltaDays).to.eql(5); \r",
+									"pm.test(\"Минимальное кол-во дней доставки действительно 5\"  , function () {\r",
+									"        pm.expect(dataDostavki_winner).to.eql(expectedDeliveryYMD); \r",
 									"});*/\r",
 									""
 								],
@@ -13347,56 +13347,56 @@
 	],
 	"variable": [
 		{
-			"id": "a25db7a8-63b1-484e-94b2-f2168a0fe349",
+			"id": "89a380bb-51ef-4ebe-b3bc-4197a03c3e20",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b3ec48e-d66e-4855-8211-a2b9e327ca14",
+			"id": "8e6818f7-1a83-4c37-9d0b-92981a98f767",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "af6698c0-6087-44c4-871e-e4ec1de21f17",
+			"id": "32bb3d5a-6cf9-42b9-a39f-dc1db4c166c8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3c568a44-8c20-40e9-b540-4ac93128e106",
+			"id": "6aea46b7-1f7a-425d-9112-9f5fc8148096",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "82087fd5-7913-4997-afe0-95fbc119981e",
+			"id": "b6c346ad-91e3-410d-b34d-78776e71b352",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "fc3eddaa-2821-428e-9837-f48daf005bf3",
+			"id": "1046f4e0-1e63-4ac6-be18-3b85f9cff98c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4160d7d1-fb5a-46fa-9780-03b30a63c41b",
+			"id": "c8784346-7ac8-497e-b1bb-58b693ac0b59",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "8b4a25a7-d749-47f5-b18e-b237ec9cc557",
+			"id": "b407db32-2b6f-4206-ab9e-1e88e7bdbd08",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ac93a699-cf85-4f44-8054-1f3cdac3a8b7",
+			"id": "c7e0962f-c8d2-44bb-bbf2-ffb89ce4650d",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "01ed5cce-ca5e-41a8-897d-71c4bf802386",
+			"id": "c532ae06-9be8-4043-8731-aaa4eadbdaa2",
 			"key": "newDT",
 			"value": ""
 		}
