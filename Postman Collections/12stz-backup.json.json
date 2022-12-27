@@ -8957,7 +8957,7 @@
 									"const cutoff = 20;\r",
 									"const gapHours = 6;\r",
 									"const actualCutoff = cutoff - gapHours;\r",
-									"const currentDateTime = Mon Jan 09 2023 13:00:00 GMT+0300;\r",
+									"const currentDateTime = \"2023-01-10 13:00:00\";\r",
 									"console.log('currentDateTime', currentDateTime)\r",
 									"\r",
 									"//ожидаемая дата доставки\r",
@@ -13312,56 +13312,56 @@
 	],
 	"variable": [
 		{
-			"id": "f96d38b2-c77a-4e27-a023-b679b0c118fc",
+			"id": "719364c9-d5f8-49da-a6a5-9fffc84c3f48",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3f55f2ec-6e7b-4358-958f-b8ad74b936e9",
+			"id": "a2e3cdd5-9872-400d-802b-7cc95d830938",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "090d93b4-00e6-4b26-8307-6d1edf846e61",
+			"id": "af94b1e6-79bd-449c-b997-9a705accf12b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3637fdb1-a38e-48d9-81e6-b222a709a1e4",
+			"id": "e6c5a631-67bb-4935-8edd-3c2b1e107336",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e1e87606-e38d-4927-a0c8-ce83498c812a",
+			"id": "efa52bc3-716b-4735-884e-1bc5e4505bc3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "75065e4f-f575-4dee-aece-ec004a2b00ba",
+			"id": "20afd90b-89c5-444f-96c5-65177fdad865",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4f6faf5d-f850-4085-83a5-621bcb0371ba",
+			"id": "7af29fb4-b109-4530-afce-47286ab5a21c",
 			"key": "now",
 			"value": "",
 			"disabled": true
 		},
 		{
-			"id": "452be5af-4f0a-4251-9982-c651ec50ce8b",
+			"id": "b15f2e20-5140-4855-957f-81b8a930047f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4c51d835-341d-4d44-8b6a-f6d4fd77bcc7",
+			"id": "12c3147c-112d-40ff-8c20-7d38eafcbbb9",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "81a399a3-263b-4d7e-9847-ea06afcf822c",
+			"id": "49a167ab-b468-41db-8f03-baef997658d7",
 			"key": "newDT",
 			"value": ""
 		}
