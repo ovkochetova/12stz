@@ -13581,18 +13581,17 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "64e6995e-1b3b-4b56-a64e-dad45624e5c3",
+				"id": "b0b2a26f-b64e-466c-ab6e-4a289cf6f656",
 				"type": "text/javascript",
 				"exec": [
-					"var now = new Date();",
-					"pm.collectionVariables.set(\"now\", now);"
+					""
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "cc7e3be1-6573-4768-8da8-52007afd33f0",
+				"id": "643230d9-9298-41d9-b581-b23a5476e9f4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13602,56 +13601,50 @@
 	],
 	"variable": [
 		{
-			"id": "3cedd08a-36b7-412f-b6ba-91d92a3cc2b3",
+			"id": "b8045ad7-0130-4681-b972-fbd5fe204c38",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fb478528-c659-4571-8c2f-799c935875a7",
+			"id": "ce816764-c599-4b8e-b041-2547a34802cd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a0de605d-95fa-453f-8ea8-e83b2ee9d387",
+			"id": "de54e555-a779-4a0b-b3ad-288b9800b926",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "45eb00dc-2fb4-4625-8035-4726428eabe9",
+			"id": "161b280e-8c85-4087-aea5-a79adb827b0c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "03fe49da-5ac7-42d6-b0c1-2def2fb5303f",
+			"id": "829dd528-9317-4bbb-b551-a375117e9369",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "37702899-5770-48eb-9ac5-7722487747c1",
+			"id": "26f3e205-eed6-4ceb-b0ae-c2b475081616",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "73b01c7e-4bc0-41af-8ead-4345ff49fae4",
-			"key": "now",
-			"value": "",
-			"disabled": true
-		},
-		{
-			"id": "d8d217a8-0543-4849-8ef2-b10edf132fe9",
+			"id": "f6037357-70aa-4438-a3cb-a939fe9dd965",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9b643487-5088-4fd1-acbc-aa39f6529d06",
+			"id": "97a305e1-833e-425c-b8c4-65a2308cd263",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "ad65c548-d273-4f7a-b6f4-aeddb15f5f69",
+			"id": "90278c0f-4e68-49b8-879a-018cfcdff310",
 			"key": "newDT",
 			"value": ""
 		}
