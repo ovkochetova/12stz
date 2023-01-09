@@ -9526,7 +9526,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id?name",
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id?name=12",
 							"protocol": "https",
 							"host": [
 								"logistics",
@@ -9542,8 +9542,7 @@
 							"query": [
 								{
 									"key": "name",
-									"value": null,
-									"type": "text"
+									"value": "12"
 								}
 							],
 							"variable": [
@@ -13698,50 +13697,50 @@
 	],
 	"variable": [
 		{
-			"id": "e447f00f-3ef3-4ddd-9065-2b2f36377f38",
+			"id": "543d3042-1e14-4d49-840e-6978e219d6a1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5d3918a6-b81a-4c53-8b7e-016b2816a7d6",
+			"id": "909c7e5e-d74f-46f6-b7ac-e0d4c36c012a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cb132e40-74f7-4e21-b19e-9582449d648d",
+			"id": "dd9e3261-bc38-433d-9a35-6fc0c19b63a6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d74c36df-292e-4d28-a647-71171eefe87c",
+			"id": "fb3dbb25-347f-4818-88e3-2a67d1b121d0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7d2981a4-10fb-41b7-a6da-d292d8db572c",
+			"id": "dd76ac39-c714-46ef-be4b-bf1e3ca50eaa",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1a3c6662-4d03-4175-868d-10666f0ac53f",
+			"id": "9e3cc4b3-053c-434e-b9fe-eabfaac735f4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b66f40e0-b9b2-4c8e-a7bd-7ff462674730",
+			"id": "1b41b521-e705-4335-a70d-a9b7abc5d918",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5bcff69e-b8fe-432b-a9d9-8cb7938e2f06",
+			"id": "77e3d103-3d8b-473f-a760-a97b0aca1d01",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "8cc1a0dd-5415-4159-b58b-c57a31eb53bd",
+			"id": "ef4abbe4-0fd7-4e40-870a-e7637d29debb",
 			"key": "newDT",
 			"value": ""
 		}
