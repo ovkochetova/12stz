@@ -7660,7 +7660,6 @@
 									"pm.test(\"Результат поиска есть\", function () {\r",
 									"    pm.expect(jsonData).to.be.an('object');\r",
 									"});\r",
-									"\r",
 									"pm.environment.set(\"id\",jsonData.results[0].id);\r",
 									"console.log(\"id\",jsonData.results[0].id)"
 								],
@@ -7812,7 +7811,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "{{id}}"
+									"value": "274"
 								}
 							]
 						}
@@ -9381,9 +9380,7 @@
 								"exec": [
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
-									"\r",
 									"body.gapHours = 8;\r",
-									"\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -9403,8 +9400,8 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Время отсечки 19:00\" , function () {\r",
-									"    pm.expect(jsonData.cutoffTime).to.eql(\"19:00\");\r",
+									"pm.test(\"Запас по времени 8ч\" , function () {\r",
+									"    pm.expect(jsonData.gapHours).to.eql(8);\r",
 									"});\r",
 									""
 								],
@@ -9412,7 +9409,7 @@
 							}
 						}
 					],
-					"id": "f8bcdeb8-9697-4e8f-80da-3fc145cf1dfd",
+					"id": "f2939b73-3b2f-4b96-b78f-a7fccb932a61",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -13584,7 +13581,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ef59f2b2-af05-415a-acfe-e8f066207ce3",
+				"id": "c72ebc38-be9c-45f6-9332-2f4eba5f8494",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13594,7 +13591,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e2cecefb-74fd-4385-96a5-bd72490a8aab",
+				"id": "e7062eea-b9c1-4106-a12f-242e58f9febd",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13604,50 +13601,50 @@
 	],
 	"variable": [
 		{
-			"id": "f0635d1f-eeff-410e-a95e-e70c12d0d953",
+			"id": "356d6a76-4bd8-4056-ac11-ac225b5e73a9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "30a7cb05-fa21-41de-9957-fd7bbdbdc3f3",
+			"id": "90510a1d-2dc2-4b39-9c46-875a141c09ee",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "85af441d-56d9-4d2c-97ff-49ae091ecad4",
+			"id": "27243c06-8ee4-4423-9796-718f84580b20",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8f1a2f49-28c6-40e5-a43f-78d197e61401",
+			"id": "2627c709-69d8-4b0f-b4b0-fbfc4cec273a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4664dbc9-6dc0-4ea6-b866-81f0fe5f456d",
+			"id": "2df0d0a7-fadb-4f1e-a515-77cb44b562ec",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "fada28af-9b8a-4457-bf3c-45c9ddd2b494",
+			"id": "013540e3-b534-4b96-a7da-0fb7c9d91df3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4419d549-daca-49c1-974d-b27a44653aae",
+			"id": "5391497a-937d-48c3-9cc9-c20b9a6ae2ef",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "289b309c-9b40-4b96-a76b-1f2e69d6acf7",
+			"id": "e7e90389-a775-4ba3-ac7b-70f652be5956",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "4d12a35b-3e7a-4680-9c5e-f49a4bbd9f61",
+			"id": "379f72c6-e69c-4fbd-8332-db4580fcd44b",
 			"key": "newDT",
 			"value": ""
 		}
