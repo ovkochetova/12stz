@@ -9369,96 +9369,6 @@
 						"url": "{{url}}"
 					},
 					"response": []
-				},
-				{
-					"name": "Запас по времени 8ч",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "07d64568-113c-475b-948b-c64a2aaae808",
-								"exec": [
-									"let body = pm.collectionVariables.get(\"newDT\");\r",
-									"\r",
-									"body.gapHours = 8;\r",
-									"\r",
-									"pm.request.body.raw = body;\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Запас по времени 8ч\" , function () {\r",
-									"    pm.expect(jsonData.gapHours).to.eql(8);\r",
-									"});\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "f2939b73-3b2f-4b96-b78f-a7fccb932a61",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
-							"protocol": "https",
-							"host": [
-								"logistics",
-								"12stz",
-								"dev"
-							],
-							"path": [
-								"api",
-								"v1",
-								"delivery-type",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
-									"key": "id",
-									"value": "{{id}}"
-								}
-							]
-						}
-					},
-					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -13601,50 +13511,50 @@
 	],
 	"variable": [
 		{
-			"id": "db46d47f-11b7-4ce3-be9b-4afd525c1dbf",
+			"id": "2762f2d4-8819-4e24-9e82-add7c2a5db81",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3b89a234-1c36-4ba6-a1c6-dcb4f0114ca4",
+			"id": "22c052a8-1e0d-499d-8dd5-819092523b79",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8a8296f5-23d5-4fc3-8a2e-78eb22054cff",
+			"id": "d0fc3501-c981-4376-8303-559dd0032adc",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3c94af91-ea2b-465b-9666-d2b5ae00addf",
+			"id": "57c799e0-b0ca-41d1-96a2-9018fc0eaa29",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5d7b8af0-351c-4d92-a81a-f072ae42d53a",
+			"id": "5292e1e6-7f73-40a2-8fe6-a6d872f33c12",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "44b976b0-9837-4512-8fff-b2015f095246",
+			"id": "a7210874-9017-41c2-bd04-a876411be530",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5cdb3a03-8207-4e99-bf80-0f1a41f2b24f",
+			"id": "a4f644eb-4086-4bd6-89b5-7ba4c225ec3f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2cd3465b-05f2-44ed-b71b-2ddc57ff3ed0",
+			"id": "dc4800be-284a-4ed4-b998-5952d4510c83",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "e601858c-e503-4ae5-856a-3ab044915993",
+			"id": "da7618f4-746d-4c77-86cd-3252e6e3c0c4",
 			"key": "newDT",
 			"value": ""
 		}
