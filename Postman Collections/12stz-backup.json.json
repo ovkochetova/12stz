@@ -9381,7 +9381,7 @@
 								"exec": [
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
-									"body.cutoffTime = \"19:00\";\r",
+									"body.cutoffTime = \"20:00\";\r",
 									"body.gapHours = 6;\r",
 									"\r",
 									"\r",
@@ -13684,55 +13684,55 @@
 	],
 	"variable": [
 		{
-			"id": "cee246b7-3870-49c6-b78b-f3bcf1f609de",
+			"id": "b96306a9-b106-47fa-adb5-52a4ecd5153d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "02b8f16a-4f44-4d7a-b706-60a221e4f1ed",
+			"id": "51f4044e-5330-4981-b714-6ae1ddb82e41",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c60e7d94-96d1-40f9-b408-91abf6f4799d",
+			"id": "6e8adc42-8560-4404-aeaa-cef1884264c4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8a789a37-701c-4159-a37b-1ac89d5e9c05",
+			"id": "17e3fe12-440a-4370-bd06-93d722784f04",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "447cbd94-b010-44a6-8d1b-0bae7d907793",
+			"id": "27c1a23e-1f1d-4bb1-a114-5ea71a6e9287",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "28faf9c3-04a3-4944-8dd4-0bcb59c03816",
+			"id": "cb3b850b-39a9-4e50-b0df-0e1e0408349d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1e559ba2-221c-496f-a5a3-582fe84c9467",
+			"id": "7d0396ab-feaf-4d44-b5e0-f4904409a112",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "01c06a8b-6bee-48e8-8779-0baf89bd216a",
+			"id": "a4354f5b-067e-4f09-aca9-17a518ce4e9d",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "247fc2e6-60cc-422d-bdf2-87572b4044a9",
+			"id": "416c5e60-7ac4-460e-a999-ad398a8872a6",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "fcf167f7-847f-4d91-9a1c-cb76c7db37f2",
+			"id": "e653f77d-9355-45a3-99ce-422c43c061d6",
 			"key": "id",
 			"value": "{{id}}"
 		}
