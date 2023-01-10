@@ -13664,7 +13664,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b0d992a4-4941-4655-8f94-98ec603b3f18",
+				"id": "4fc1c34d-8a33-48e3-9796-8440e06c0288",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -13674,7 +13674,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e11adacf-a533-41ad-bfc2-ba6d1757a04c",
+				"id": "b1448e2b-3408-4e9b-8022-742717699874",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13684,55 +13684,55 @@
 	],
 	"variable": [
 		{
-			"id": "de3ed969-18f2-4b7d-92c2-d9c783e021be",
+			"id": "1138df0c-82f8-4b05-b317-8c5a79f60b98",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ef700a41-ddca-4943-b01b-d39ee917936b",
+			"id": "f2feca43-20ed-4582-a9af-bbee8370d947",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ce1f19a-6c7c-4a6b-ae08-f94e5e469513",
+			"id": "c8dfb0a6-5071-46a0-a560-afed184dcd8c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "292d72d1-339e-4b9e-81fc-9d4c32218f36",
+			"id": "b886ba13-24e9-4f50-bad2-e5b2ec82ead9",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ccfc49b2-7f00-4b83-b35d-94992d02ae22",
+			"id": "befe4b32-b3ea-4996-addd-fd9aadfedbaa",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9bbba0b6-71e2-481a-bb55-e4c2f77e098e",
+			"id": "93e61a52-6798-40db-b969-96ebb250a887",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "84ddb672-f87a-45dd-ae3e-f7b215f73438",
+			"id": "62ec9b81-c5a9-4661-ab34-b71c78d3e223",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3721d9d3-d1b1-456f-af36-1cad486423b3",
+			"id": "6b8774fa-5bdd-4643-93eb-26e3f98df178",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "d0240eeb-4424-42c8-98bb-273c8e108a5c",
+			"id": "00ec5bd5-3226-45b6-9646-269fb640b1a3",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "0f55ef58-a83a-40b0-9ecf-950ddee9417b",
+			"id": "9b9b5ae7-5ecc-453b-a388-02ff621c8a77",
 			"key": "id",
 			"value": "{{id}}"
 		}
