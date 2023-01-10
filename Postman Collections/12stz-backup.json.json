@@ -13664,7 +13664,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cdece48a-0f45-4182-b118-2795188912e4",
+				"id": "e3cc9641-baa4-4c2e-b998-b2cca89e6ac7",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -13674,7 +13674,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "33db24ee-65ed-4487-a266-6483187e3e31",
+				"id": "47116ba9-e903-4a1f-a249-b404f46a0ce9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13684,63 +13684,57 @@
 	],
 	"variable": [
 		{
-			"id": "c986f04e-a52d-4324-b9f2-4f866143344a",
+			"id": "387c3828-25b3-4193-aef0-370d5d91b19c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ed80c3c2-c6c7-495b-b3d4-fa920f397b34",
+			"id": "f5a22bfb-b091-4c5e-8169-69126ad24c06",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1b2756c8-79d3-48f6-b236-77ab5c57adb8",
+			"id": "0cdabc33-d244-4337-a17a-5c09f911994c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1074fb9b-c5c1-4413-b169-93a438abae6b",
+			"id": "3dd552ed-935a-4236-877d-aa84d825ed26",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "94703514-e447-4111-979d-652c5b4ad61c",
+			"id": "f22fce2d-ed39-4ad0-9c51-56a4e3a88da1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "8b59f937-21c1-4afc-9683-9de051758825",
+			"id": "298ff72d-2144-483f-b42e-6e9ff1928f2c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "30a2e3dc-70e1-4a8f-b983-b8820c063d06",
+			"id": "3b94ae2d-c2c9-46b7-a5b0-f40b2b12b0fe",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e0014a27-40a5-4248-8cb5-ed2d45067595",
+			"id": "f3bb7b08-aa6e-4e83-9e6a-49b7098d3216",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "b2bdc638-4af3-4c87-b879-b2c492a9a9f7",
+			"id": "44bf521b-26c8-49e7-9444-f2e925d1250d",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "2c1c004d-5169-4942-b3df-13c0472e91a5",
+			"id": "70421313-20e9-4ac7-a093-dc0accc0c0a1",
 			"key": "id",
 			"value": "{{id}}"
-		},
-		{
-			"id": "e84e32b8-f35c-465a-9b91-f8e0d5a35d25",
-			"key": "cart_id",
-			"value": "",
-			"type": "string"
 		}
 	]
 }
