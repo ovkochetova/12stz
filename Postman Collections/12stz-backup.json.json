@@ -13664,7 +13664,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "381d00d2-dab4-4225-8d6d-74cee00ad15b",
+				"id": "94256c28-6281-4424-8639-00787a2eb342",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", $randomInt);"
@@ -13674,7 +13674,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "11824706-d7d2-4ed5-b882-4abec0414b34",
+				"id": "0535fa92-57ca-446f-be35-5c25313c1b57",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13684,55 +13684,55 @@
 	],
 	"variable": [
 		{
-			"id": "8adc5a94-acb1-4aa9-b3b1-fc5c03013b9e",
+			"id": "b2d9ac89-6cab-4621-b167-4ff0aa867b84",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "43c9b705-1aac-4dda-8ca6-f8aa43ead1b2",
+			"id": "72be968c-dde5-411e-aac7-f240165a5f17",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1689d3e3-64b6-4dd6-ab01-4317f8587924",
+			"id": "138fb78b-d914-4316-b7d0-53e2094c51e9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d49b00e3-14bf-4111-a113-f571a841562a",
+			"id": "5b7e747b-ab3d-44b4-8f4c-a42cc19047c2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "6471eea7-6dab-4f1e-a543-7e174e0e2f65",
+			"id": "bd449274-d9ad-4a67-95aa-7648825d3528",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "433b15dd-1042-484a-810e-a22b6ed82f22",
+			"id": "ef582c54-8e5a-42e1-81c1-56dd9661eb42",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "319a2ab4-0d83-4aca-a87f-4c91160395d4",
+			"id": "c1c7438e-136f-4fc9-8892-cb6cda7be652",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "eef8ca14-188a-4c30-b47d-1b390d9d9e2c",
+			"id": "b46dd9ac-8171-4ebf-b036-89691248e83e",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "bc2d8af0-7c2f-4240-b8dc-58666b75c029",
+			"id": "9a80f381-af8d-405c-b9c0-2ded726156be",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "f6793b59-fd51-4d97-a07d-00f975cad7e5",
+			"id": "17827600-06bc-48c8-a685-10a1a514e45a",
 			"key": "id",
 			"value": "{{id}}"
 		}
