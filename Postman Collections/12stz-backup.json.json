@@ -13664,20 +13664,17 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "7be7a6eb-1767-404b-8f12-dc2609613fba",
+				"id": "cdece48a-0f45-4182-b118-2795188912e4",
 				"type": "text/javascript",
 				"exec": [
-					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));",
-					"",
-					"",
-					""
+					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "40ae2d91-9b44-446c-971c-ecbbce35f337",
+				"id": "33db24ee-65ed-4487-a266-6483187e3e31",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13687,60 +13684,60 @@
 	],
 	"variable": [
 		{
-			"id": "36a5dc91-a750-4d39-a840-61f3b79ec1e1",
+			"id": "c986f04e-a52d-4324-b9f2-4f866143344a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5efbdb4b-970c-43b3-89d5-46928d94fe98",
+			"id": "ed80c3c2-c6c7-495b-b3d4-fa920f397b34",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "85b03d30-73a9-41d2-b8c3-4e4e45dc1a26",
+			"id": "1b2756c8-79d3-48f6-b236-77ab5c57adb8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0255cc63-e89f-4931-a6dd-0072033af3e9",
+			"id": "1074fb9b-c5c1-4413-b169-93a438abae6b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "38630e17-4fab-4003-9927-5d95c666428d",
+			"id": "94703514-e447-4111-979d-652c5b4ad61c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "4d7c1b50-740d-4f9e-a5b5-06473b380922",
+			"id": "8b59f937-21c1-4afc-9683-9de051758825",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3d5442aa-b6ce-47e4-a707-6a678458573b",
+			"id": "30a2e3dc-70e1-4a8f-b983-b8820c063d06",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d82bd002-f940-4729-8f71-105674209966",
+			"id": "e0014a27-40a5-4248-8cb5-ed2d45067595",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "74f0be72-91c7-4172-9a14-0cf71cf51e5f",
+			"id": "b2bdc638-4af3-4c87-b879-b2c492a9a9f7",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "a1b9428f-dab5-4783-b974-f6dc797012b5",
+			"id": "2c1c004d-5169-4942-b3df-13c0472e91a5",
 			"key": "id",
 			"value": "{{id}}"
 		},
 		{
-			"id": "f8f136c2-4858-4574-88bf-b26d12d97a89",
+			"id": "e84e32b8-f35c-465a-9b91-f8e0d5a35d25",
 			"key": "cart_id",
 			"value": "",
 			"type": "string"
