@@ -9402,10 +9402,10 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"/*var jsonData = pm.response.json();\r",
+									"var jsonData = pm.response.json();\r",
 									"pm.test(\"запас по времени 6ч\" , function () {\r",
 									"    pm.expect(jsonData.cutoffTime).to.eql(6);\r",
-									"});*/\r",
+									"});\r",
 									""
 								],
 								"type": "text/javascript"
@@ -13605,55 +13605,55 @@
 	],
 	"variable": [
 		{
-			"id": "b33317c1-fa99-4a95-9222-761696d4a4cd",
+			"id": "adaa790d-69c1-4cde-a3a9-bc6ec7afa828",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3824dba7-08b7-4318-9217-63206c0e86c7",
+			"id": "8306369c-f7d2-4155-9db0-8567757db726",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a2886da2-bd74-4d78-a220-365400b31676",
+			"id": "abe984e0-b095-436a-8312-abdb17026ffb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e83cd66-1df7-4e0a-b5d5-dd6425d599b3",
+			"id": "aafacf3f-b6a1-408d-8d8c-6f169b3ca0f4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "bb2328d2-c24f-472b-9a9e-30026765d862",
+			"id": "a5c49f77-4640-48bf-99d3-28a3515ef56e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "180a1b3e-6609-4226-8865-563ff7a285ef",
+			"id": "9b41ba73-9448-4367-b446-ab6cc572798d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ecab7371-5d63-43e6-a990-74dca00d2bc7",
+			"id": "cda554db-3e7e-4c1f-810f-d96d719f49bd",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "650d80af-8d5e-4b82-8385-ed37733260af",
+			"id": "fb81af5b-90f1-4e75-967a-0bf2e3937970",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "1e2b1d7d-f26c-4647-8165-5f812fe7c353",
+			"id": "3954b704-bee4-45ab-ac44-9547299dfcfd",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "cd9afd56-18eb-482a-91e1-275637bd02cf",
+			"id": "089ad7e9-6f48-4597-9285-b9d480afdad0",
 			"key": "id",
 			"value": "{{id}}"
 		}
