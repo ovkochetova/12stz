@@ -9464,7 +9464,7 @@
 					"response": []
 				},
 				{
-					"name": "Запас по времени",
+					"name": "Запас по времени 6ч",
 					"event": [
 						{
 							"listen": "test",
@@ -13684,55 +13684,55 @@
 	],
 	"variable": [
 		{
-			"id": "47d668bf-74bd-4325-ad47-7d011fe04f5f",
+			"id": "6cf73c4d-be90-4b69-96c0-512bee2289f6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6067edce-a886-419e-90fe-6cc57e216612",
+			"id": "9cb926d2-fd9d-40fd-9b05-db2124c1267b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a522710-19e8-49fd-b7d1-fbcb15370788",
+			"id": "f6cc6989-0df8-4674-ad1c-d5e95b5874e4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "782b8173-adfc-4010-afe3-bd1f3dcf444d",
+			"id": "6c1c35e4-50c0-490c-b65d-9cfde2600dee",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "45bb0709-6ad9-4b78-bd6c-d3c860659948",
+			"id": "a7f73aed-2ec2-4b5f-9e65-65e1299c76a2",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0ffac818-9388-4314-9bb3-a6e1a1f266a3",
+			"id": "96f09283-9a04-4c84-a578-9db300e59df0",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "23dba4f7-366f-4692-a27e-56fe42e59eec",
+			"id": "78fbc73c-c2d4-4abd-aecc-ff279ef22fe2",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "25848910-6684-4996-8ddb-377f35952a06",
+			"id": "149a6bc6-3422-494a-bda2-09357f79dd05",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "d3eef4a7-fd70-43af-8538-7b2828547148",
+			"id": "76413dce-2281-4b87-a634-190ab603db84",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "ac3bbdd6-514f-4031-8fc0-e1334b7ab4cb",
+			"id": "989d0ff6-3145-4938-8e05-1b55e620bb55",
 			"key": "id",
 			"value": "{{id}}"
 		}
