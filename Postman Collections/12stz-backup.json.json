@@ -13664,7 +13664,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "15200a90-4056-4cab-a359-2aa729b5a986",
+				"id": "adcbdf7a-6cca-419d-ac1b-9b173ec4e7fb",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -13674,7 +13674,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "797e92b0-9803-47e5-aef0-1782efb59664",
+				"id": "72119620-f544-40c4-9913-caca3b7cd6df",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13684,55 +13684,55 @@
 	],
 	"variable": [
 		{
-			"id": "1e8e9fbd-b241-4bde-bc17-05d152c5a1e5",
+			"id": "58273fc1-9eba-4b4f-a83b-7233895cae32",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5e26a2b9-4e5e-4820-a678-1061c3e05761",
+			"id": "aab99c70-1bbe-4d7b-8e1a-d0620021b6dd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2fd12800-732d-4048-ac30-cb92df8664f5",
+			"id": "bbe2d5cf-ad91-481d-a78c-8afc0da3fed8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c114a69f-a2b8-4da4-a469-78c8103f1f75",
+			"id": "9d61d015-599b-4b8e-9ee4-08af73001817",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "793cfb5f-1de0-4ac6-85d7-cf3bc39251a8",
+			"id": "acb64a92-7a7b-436a-bd31-b8498506e89e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e5b6d411-05d0-4f6c-8824-6d9c7d912177",
+			"id": "c4e2adce-54c0-4e32-9fc9-07907931023c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a3b56780-e65d-420d-87ca-5e762f268c2e",
+			"id": "de584066-ed2b-47c8-b85e-a956213b60cb",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7ce30f0a-8f66-4a73-9aeb-4bc1f108068a",
+			"id": "776e0eff-b014-4ac0-88a7-f338dcb28968",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "a3e88c7a-97a9-4903-917c-48d87532d833",
+			"id": "b3780d64-2ba9-409c-a30e-7e2da575c09b",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "c6a90b6e-97e3-49b2-8517-27150312007c",
+			"id": "31527b40-4038-4c4d-9696-fe1943abbc40",
 			"key": "id",
 			"value": "{{id}}"
 		}
