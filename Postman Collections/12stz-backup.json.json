@@ -9699,6 +9699,98 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Запас по времени 6ч Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"\r",
+									"body.gapHours = 6;\r",
+									"\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Запас по времени 6ч\" , function () {\r",
+									"    pm.expect(jsonData.gapHours).to.eql(6);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "2713ec0b-8b8e-4d8f-b7b9-c5e69fb28a59",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -13808,7 +13900,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f0de87b7-dc92-4471-98cf-4314acc54955",
+				"id": "cb11cfd1-c971-4c05-9772-27e1522132f6",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -13818,7 +13910,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "08503851-78ce-4fba-9b99-4427148cc22f",
+				"id": "6a080f51-e469-4edf-8f17-5f0b923143b2",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -13828,55 +13920,55 @@
 	],
 	"variable": [
 		{
-			"id": "d85e3e99-a2ad-430f-8209-eb941daf3d06",
+			"id": "e3b31a7b-958c-40b3-8d5f-67c0c866f1f4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cb9cfbe8-8123-4335-adaf-e6b75bd07998",
+			"id": "269a09f0-3879-4438-ab4a-92a102818601",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "15b46fbf-fa2e-4fb2-89f2-1a4e1aede8c5",
+			"id": "cdaf2c6f-5254-45dd-b0df-05c83c52204c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "19afdd26-5c4e-4ea3-95ce-464bd16c057c",
+			"id": "3605b3ab-5023-45fd-a4bb-c94f1a8ae295",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "525c9705-8a54-4d9e-9535-31ca49757ff5",
+			"id": "11dbff12-23ae-44a3-81c7-7f9f6122fc5c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "df07dce7-8216-4895-b665-5a790bdb0c41",
+			"id": "0366911d-eece-431f-9753-2f40af050599",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "00ab3440-157b-4b31-9af2-d4a98851e972",
+			"id": "b7fa78a5-3c2a-4791-a379-3b4396053ded",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "56be4377-1130-49bc-bfcf-f165726eb589",
+			"id": "5bcac7a8-7928-481b-9f2c-4eacdaa5b40c",
 			"key": "now",
 			"value": ""
 		},
 		{
-			"id": "929ca760-d809-4e9a-947f-3512c82e46fd",
+			"id": "64f90906-696c-41a6-9f25-2958c268de03",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "c6a15181-e3a8-4a72-ba65-ab32ca5a2176",
+			"id": "6d6c22a5-e0dc-4443-bce8-90d3748ab713",
 			"key": "id",
 			"value": "{{id}}"
 		}
