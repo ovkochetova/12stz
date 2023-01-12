@@ -10323,8 +10323,8 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Запас по времени 6ч\" , function () {\r",
-									"    pm.expect(jsonData.gapHours).to.eql(0);\r",
+									"pm.test(\"Время консолидации 6ч\" , function () {\r",
+									"    pm.expect(jsonData.consolidationHours).to.eql(6);\r",
 									"});\r",
 									""
 								],
@@ -14511,45 +14511,45 @@
 	],
 	"variable": [
 		{
-			"id": "d9724624-502e-4b85-912b-b114b2c7b8c1",
+			"id": "6f1d8877-4949-483f-ae3e-2eb4eb853f0e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b00d9aae-3a7a-4e7e-b60c-860bce342d9b",
+			"id": "da7cac50-a36d-4a6d-9ce5-92da635881fc",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "457b7495-346f-4771-bc84-35395c80631c",
+			"id": "18a412d0-26b9-4d58-9523-d715fe8530c4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4fa39c8d-791c-4ee4-b1fe-edd4a97c5531",
+			"id": "ce061877-5578-4bf9-958b-0e25de288296",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c43ee061-09ac-41d0-9508-ef1ebe22bede",
+			"id": "806415e8-9ea5-4d1b-9b75-9b10bfc86e81",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bf6c401f-b0e2-4853-a1d2-685b5f399bab",
+			"id": "0179313f-71aa-491e-8bcb-07cf3c25822a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e09d683b-25c5-4a21-9487-c269219305c4",
+			"id": "7f9771c7-b80c-416b-8b6e-f4e7370c833b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f7068376-fd04-413f-a654-523d9cc3c103",
+			"id": "60077d66-681f-493f-9aac-6b5422ab1a34",
 			"key": "newDT",
 			"value": ""
 		}
