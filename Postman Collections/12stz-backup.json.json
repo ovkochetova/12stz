@@ -9043,7 +9043,7 @@
 					"response": []
 				},
 				{
-					"name": "Время отсечки",
+					"name": "Время отсечки 19ч",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -13999,45 +13999,45 @@
 	],
 	"variable": [
 		{
-			"id": "cd20e29c-4727-438c-abd2-e2f974e742b2",
+			"id": "e32245da-5ccf-434c-a993-19bc0c1201de",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e8d386b0-8bcf-4b00-a746-d2da7d682a9c",
+			"id": "cf7090f6-c363-4c68-aead-3650d910554f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ad82d62-b8d9-4651-960b-28d605cfc9b4",
+			"id": "d4113529-c9a0-4aa3-98b5-b90810a49ff7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0cca4d59-805b-4c47-aeeb-94e873157516",
+			"id": "3443152b-1a2f-4eaf-a49d-05fb4cf4e75e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1e6018a6-3b38-42b5-b4a1-853a82600648",
+			"id": "1c01b634-0d60-45e3-be6f-89b74c6be908",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "278f31d7-5aed-4b78-9e34-242bd1c3329f",
+			"id": "775fa9a2-70e0-43e1-9473-9ff923165e15",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "bea6dd3a-51a3-468a-8866-68e7054a3583",
+			"id": "ec87555c-fc8f-4b2d-9455-2d3a21167d37",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1df383fc-31dd-47ac-aaeb-0cc3cb19ce1c",
+			"id": "0de6b663-a23f-47a5-9ddd-608b424a2d03",
 			"key": "newDT",
 			"value": ""
 		}
