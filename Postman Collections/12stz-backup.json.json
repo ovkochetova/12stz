@@ -9563,10 +9563,10 @@
 									"console.log('winner', dataDostavki_winner)\r",
 									"\r",
 									"//время отсечки, запас по времени\r",
-									"const cutoff = 19;\r",
+									"const cutoff = 10;\r",
 									"const gapHours = 6;\r",
 									"const actualCutoff = cutoff - gapHours;\r",
-									"const currentDateTime = new Date(\"2023-01-10 13:00:00\");\r",
+									"const currentDateTime = new Date(\"2023-01-10 04:00:00\");\r",
 									"console.log('currentDateTime', currentDateTime)\r",
 									"\r",
 									"//ожидаемая дата доставки\r",
@@ -9610,7 +9610,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 4:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 04:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -14328,45 +14328,45 @@
 	],
 	"variable": [
 		{
-			"id": "34bdd2d5-e54b-413b-b194-9af61c6b3c95",
+			"id": "e576ac71-4a5d-4278-a331-622c30386725",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "81a47731-e681-4151-9cd2-1c5e412cab0f",
+			"id": "b0e3fe57-7635-4665-a7f0-598bceedbf88",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "30d9f6f6-cd66-4984-b3ee-bb56bb22d590",
+			"id": "18683444-fb31-432c-9e0b-be18516790f7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8544641e-048e-4ce4-bb37-1d7fb31695cc",
+			"id": "6fb21690-8cf0-4d91-945a-343c42c354a2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d613c6d7-c054-47cf-9e87-6dc21c6b2ecf",
+			"id": "e703ba1c-46c3-4ede-9fef-aee1d818a6a5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9d15758e-8c26-4539-a7b3-ab55672dbfb5",
+			"id": "05ff4927-214c-4d7c-bc52-9a60b62f0d85",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "cfa53127-7437-41f7-b39c-16d79ffae658",
+			"id": "70ac0c70-bd30-49c6-8762-f6c43823a82b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "35996996-2b24-4e4a-912f-c4766f87674d",
+			"id": "283bf09a-656e-4fef-8850-bb2544faab5d",
 			"key": "newDT",
 			"value": ""
 		}
