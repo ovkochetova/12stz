@@ -10384,7 +10384,7 @@
 					"response": []
 				},
 				{
-					"name": "Время консолидации",
+					"name": "Время консолидации 6ч",
 					"event": [
 						{
 							"listen": "test",
@@ -14590,45 +14590,45 @@
 	],
 	"variable": [
 		{
-			"id": "78996a35-db95-42f0-a005-f39778ab16e9",
+			"id": "be2d7a5f-34ae-4d28-aeb0-47e47e8cdcaa",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2c55f139-2db5-4997-ab7a-b4b8c7ce4a49",
+			"id": "4ec467be-2138-498b-962c-0b8ebcc36a45",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b82c49f8-1a97-46c5-aa3b-c15141c8fce5",
+			"id": "1e1b2b27-c598-4a05-89c8-dd73549f6bae",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a12300bc-582a-4ba2-ab16-b0906094442c",
+			"id": "7d3821f0-4c8c-460e-852f-abd524a1535f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "91c3bab9-4cf5-4bb6-8f3e-a13b8daab860",
+			"id": "8ca25c6c-08c7-4174-9882-721e7d0a3e08",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9b7f4b79-9b6c-4a88-a8ad-abb1d9fe0098",
+			"id": "42da485a-0f85-4b77-8270-63e481a82554",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "bc86fe08-048d-43b7-87c7-c138e1402f62",
+			"id": "a84aa31b-5036-43ea-abd5-c8ef45570b6d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d7a76edd-5304-43d2-adf8-96c57ac2fcf0",
+			"id": "0401a242-7cd4-4fa4-8901-da26dbaa16d2",
 			"key": "newDT",
 			"value": ""
 		}
