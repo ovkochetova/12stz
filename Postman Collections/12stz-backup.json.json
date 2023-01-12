@@ -10576,7 +10576,7 @@
 									"\r",
 									"//время отсечки, запас по времени\r",
 									"const cutoff = 19;\r",
-									"const gapHours = 0;\r",
+									"const gapHours = 6;\r",
 									"const actualCutoff = cutoff - gapHours;\r",
 									"const currentDateTime = new Date(\"2023-01-10 10:00:00\");\r",
 									"console.log('currentDateTime', currentDateTime)\r",
@@ -14932,45 +14932,45 @@
 	],
 	"variable": [
 		{
-			"id": "c5a4cb70-00ee-402a-ab7f-869f9ccb9030",
+			"id": "7803f3ba-9f9a-4bdb-a5b2-b22626341da6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "43a8f060-ace0-4581-9d45-2e2a442f8d6e",
+			"id": "0a9d5b8c-aa7e-43b5-b8e3-8fdf9e8153a1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "781055e6-3298-41a8-9ae8-139b4f72758e",
+			"id": "ac57b310-1a10-4a41-a3cc-a7179abf73bd",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8c8b769f-5515-463f-99c8-fc6810597856",
+			"id": "4c7b4f03-fa8a-4795-a3af-77ab1579fdf3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "0dd53615-42e0-4b05-aa79-9b7b3e969842",
+			"id": "fd1cfc22-50e7-4579-8638-a7e9c20de771",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "21e3343c-232b-4c2e-bad2-730f6f9ebcef",
+			"id": "d512b222-01f5-4e35-bd80-7fab311ea513",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "70efe6b5-9188-4b06-adf8-da7402c40be2",
+			"id": "fa81688a-6f0e-4588-ba1a-d46f376c187b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b7576b2b-9cff-4ecc-a3b2-f546b9dde4aa",
+			"id": "76438082-b7ae-4eb2-be73-578b2135ad8f",
 			"key": "newDT",
 			"value": ""
 		}
