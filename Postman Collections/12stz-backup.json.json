@@ -10071,9 +10071,9 @@
 									"//ожидаемая дата доставки\r",
 									"let expectedDelivery = currentDateTime ;\r",
 									"if (currentDateTime.getHours() >= actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 6);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
 									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 5);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
 									"console.log('expectedDelivery', expectedDelivery)\r",
 									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
 									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
@@ -14248,45 +14248,45 @@
 	],
 	"variable": [
 		{
-			"id": "3b75f694-ff20-4753-a258-5b08e179e464",
+			"id": "2735f199-2cf1-4cf6-831e-b1e5b2de46cd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "13eb84c7-7406-453d-bc06-a4689cb68c1f",
+			"id": "ec2ff3b6-20f7-47b3-b0bf-219ab209bbf9",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cfbcaf08-09ab-43e5-9006-7116711340ef",
+			"id": "1051406c-b036-4424-ad8c-acb731a14078",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "558223af-aced-40c4-9f03-85cdf1d73ac4",
+			"id": "4a4b4018-b5ef-4d53-954e-c97e618ddfc2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "74ec4c24-50e6-4c22-bc7b-ae9f57a98d2f",
+			"id": "75eaf16c-3d05-48dc-9f22-93a2d2289b2b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "61d031a3-4d56-4b32-8a25-07f919552331",
+			"id": "53bb851c-3991-4fab-a981-33ce02327f52",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "71ecd653-2699-40ce-9c80-ff6c12d5b631",
+			"id": "3030a4a6-5e32-40cc-a5a6-8aa1b8267a18",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a11b7986-808b-4cb6-b872-cced44cc4c64",
+			"id": "c34d9793-84b8-4ac3-9b66-632465ed605e",
 			"key": "newDT",
 			"value": ""
 		}
