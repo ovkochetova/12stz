@@ -10632,6 +10632,98 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Время консолидации 0ч",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"\r",
+									"body.gapHours = 6;\r",
+									"body.consolidationHours = 6;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Время консолидации 6ч\" , function () {\r",
+									"    pm.expect(jsonData.consolidationHours).to.eql(6);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ae0c9ab4-b3d1-4a45-9545-e6420d20b2ce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -14761,45 +14853,45 @@
 	],
 	"variable": [
 		{
-			"id": "a6e18971-21f9-4047-a338-fac4147a85b0",
+			"id": "b28812e8-c971-4533-874f-4fe764280c67",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d3b63296-778a-4728-ae8f-0b2d971e2f2d",
+			"id": "2be571c1-33aa-4cc1-8676-c029d1189f96",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e7a9c1c2-2328-4bd8-adc7-ee8796b64f43",
+			"id": "00ff35fe-76a0-4550-9497-9884ee99ec49",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e6f0fe78-8776-416b-9e3c-54d31429490f",
+			"id": "ab6a083c-2b17-491e-951b-612695710d55",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "03b5eec8-3ec2-417f-8271-9cc741ddb7c0",
+			"id": "d07c1692-33b1-4dfe-a41b-4f55fe909d9e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "29eacb05-4506-4f1e-98f5-99d2ddeb0736",
+			"id": "7323e688-b69f-48a7-a259-ff200bd87061",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "bd91acb3-b24f-4848-a574-a06079b9177d",
+			"id": "c9ac853f-304f-4d68-8b42-8c6589ebaa96",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5a1d0206-d450-4cc3-96c6-ea43ed6a0638",
+			"id": "23f42add-e5d8-4ffe-918d-8027da2dd3b9",
 			"key": "newDT",
 			"value": ""
 		}
