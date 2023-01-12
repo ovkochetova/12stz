@@ -10803,6 +10803,98 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Экспресс-доставка",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"\r",
+									"\r",
+									"body.consolidationHours = 0;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Время консолидации 6ч\" , function () {\r",
+									"    pm.expect(jsonData.consolidationHours).to.eql(0);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "128c11a8-7a5b-4b10-b606-71b308a64f14",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -14932,45 +15024,45 @@
 	],
 	"variable": [
 		{
-			"id": "1d12cd89-6fac-4bdd-bb56-72711e4726f8",
+			"id": "b9cf5a7b-447f-4100-8b00-ef921d8bea54",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "65858f1d-e72f-4ab2-9d3f-78beb9cf47b5",
+			"id": "e48cc901-c78d-497e-9db5-022ed296403b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "13cc1feb-0c31-400c-a90c-583ae44fe8d5",
+			"id": "1e323bcd-cd8f-4326-ae2d-6e2cc1e4935b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "25dd23f5-135a-48e3-b58d-335554694a3a",
+			"id": "8185f55b-b90f-4f33-82b2-b4947b1be62e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7163bda7-e63e-4291-a33e-b725c9c97da1",
+			"id": "8612111e-375c-4b75-9b45-5bf2fe3dc867",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f6c28b1f-ffac-4bfa-81f5-0e819a12609f",
+			"id": "e3a8c022-d639-45fb-83ed-c040b6bc6ad5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "8b22e98a-bc27-4353-bcf7-d8380ee08db9",
+			"id": "f8f62e83-57e0-4466-b2ca-dd783d8d099b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "de843494-023a-4d53-8f01-500781b980fa",
+			"id": "13c6ebee-2b1f-4b93-863f-20e6fe39378b",
 			"key": "newDT",
 			"value": ""
 		}
