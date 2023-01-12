@@ -9451,6 +9451,98 @@
 					"response": []
 				},
 				{
+					"name": "Время отсечки 10ч Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"\r",
+									"body.deliveryMinDays = 1;\r",
+									"body.cutoffTime = \"19:00\";\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Время отсечки 19:00\" , function () {\r",
+									"    pm.expect(jsonData.cutoffTime).to.eql(\"19:00\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "276ad75d-1be3-40c3-9476-673d9a4b7646",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Запас по времени 6ч",
 					"event": [
 						{
@@ -13999,45 +14091,45 @@
 	],
 	"variable": [
 		{
-			"id": "e32245da-5ccf-434c-a993-19bc0c1201de",
+			"id": "d067e637-3be4-4ccd-9a00-8ee46c380e92",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf7090f6-c363-4c68-aead-3650d910554f",
+			"id": "acbbf117-8feb-434c-beba-0bcafb11996e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d4113529-c9a0-4aa3-98b5-b90810a49ff7",
+			"id": "31ef8e6e-7d15-44f0-8417-33d63351190a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3443152b-1a2f-4eaf-a49d-05fb4cf4e75e",
+			"id": "b5aa767a-ca58-4dc3-99ae-3ab0241f8b6c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1c01b634-0d60-45e3-be6f-89b74c6be908",
+			"id": "127c1dc4-34f7-4c93-9641-0773b456e80a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "775fa9a2-70e0-43e1-9473-9ff923165e15",
+			"id": "ba824be5-2740-4e27-b96a-3081f89f62a5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ec87555c-fc8f-4b2d-9455-2d3a21167d37",
+			"id": "56263868-f9c5-4f25-bf34-f3b416465237",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0de6b663-a23f-47a5-9ddd-608b424a2d03",
+			"id": "bf1c0f74-940e-406e-8d18-b5cbdd7c853c",
 			"key": "newDT",
 			"value": ""
 		}
