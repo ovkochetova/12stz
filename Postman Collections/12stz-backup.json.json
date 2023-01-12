@@ -7644,11 +7644,6 @@
 			"name": "Типы доставки",
 			"item": [
 				{
-					"name": "Общие",
-					"item": [],
-					"id": "baa34af1-52aa-4670-bbb0-135c48563db6"
-				},
-				{
 					"name": "Поиск типа доставки по названию",
 					"event": [
 						{
@@ -15110,45 +15105,45 @@
 	],
 	"variable": [
 		{
-			"id": "7d102026-2ca5-4aa3-b9e2-effa9934cc17",
+			"id": "9c167594-fd7c-4a53-b6b1-4b42e0f4fbf0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "01642e30-384b-4ab7-8eb9-7b0c99934e1a",
+			"id": "0cd857f0-480d-41f8-a9ad-357656068b1f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e0c2dfa8-29f4-4d02-b3fe-833187b93941",
+			"id": "016fc269-bace-482f-952c-cf428f5f1e9b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "192faa45-0c2a-4f72-9752-acc4712ef5cd",
+			"id": "01b07562-08a6-4406-990d-d1e4096cc2f5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3c72b384-b82d-4a8f-bc7e-ab31305461ae",
+			"id": "35a8c844-4077-43b0-9c92-81beba104ba1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "08c95619-f751-4a48-a234-ad8428d0f980",
+			"id": "8c6fae98-8204-4890-9422-6bf033fa6b98",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "990833f9-33b4-4c27-8e01-5e33ea87bb29",
+			"id": "63a8b844-1249-4eef-9dd2-097bc6aa2f8c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5192d300-f79e-4807-980d-71a478aa7f1a",
+			"id": "50524825-1ee8-424b-a25a-7a72b961d987",
 			"key": "newDT",
 			"value": ""
 		}
