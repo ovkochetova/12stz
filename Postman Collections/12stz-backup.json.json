@@ -9900,9 +9900,9 @@
 									"//ожидаемая дата доставки\r",
 									"let expectedDelivery = currentDateTime ;\r",
 									"if (currentDateTime.getHours() >= actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 6);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
 									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 5);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
 									"console.log('expectedDelivery', expectedDelivery)\r",
 									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
 									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
@@ -14248,45 +14248,45 @@
 	],
 	"variable": [
 		{
-			"id": "e8404cb1-b49f-41cc-9484-808fddd53d28",
+			"id": "3b75f694-ff20-4753-a258-5b08e179e464",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ee5bb65e-9ae2-4962-9f55-08b1801d4e2d",
+			"id": "13eb84c7-7406-453d-bc06-a4689cb68c1f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9294e08c-bee9-46a9-b5d2-b313c9daeb45",
+			"id": "cfbcaf08-09ab-43e5-9006-7116711340ef",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3aa43ea6-9fad-4802-8cdc-d2b591b3f7e9",
+			"id": "558223af-aced-40c4-9f03-85cdf1d73ac4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e9965114-6b88-403f-b532-9dbbe542c0b2",
+			"id": "74ec4c24-50e6-4c22-bc7b-ae9f57a98d2f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e2232823-57e5-4664-9341-27caf2c24754",
+			"id": "61d031a3-4d56-4b32-8a25-07f919552331",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b605cdd1-f3aa-4160-bc86-2476f7a1bad2",
+			"id": "71ecd653-2699-40ce-9c80-ff6c12d5b631",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7e3dd9c5-db98-47d5-ac62-ef51d3c46168",
+			"id": "a11b7986-808b-4cb6-b872-cced44cc4c64",
 			"key": "newDT",
 			"value": ""
 		}
