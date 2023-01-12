@@ -7644,6 +7644,11 @@
 			"name": "Типы доставки",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "baa34af1-52aa-4670-bbb0-135c48563db6"
+				},
+				{
 					"name": "Поиск типа доставки по названию",
 					"event": [
 						{
@@ -10922,7 +10927,7 @@
 									"const cutoff = 12;\r",
 									"const gapHours = 0;\r",
 									"const actualCutoff = cutoff - gapHours;\r",
-									"const currentDateTime = new Date(\"2023-01-10 06:00:00\");\r",
+									"const currentDateTime = new Date(\"2023-01-10 08:00:00\");\r",
 									"console.log('currentDateTime', currentDateTime)\r",
 									"\r",
 									"//ожидаемая дата доставки\r",
@@ -15105,45 +15110,45 @@
 	],
 	"variable": [
 		{
-			"id": "8c77ce1d-a3a4-44c7-984b-8911d425cc7a",
+			"id": "37859368-7b34-4b2d-93e5-9207eebd213d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4ae5575a-947a-41c6-bd72-273e395eaaef",
+			"id": "1a4449ec-88c7-4efe-a2d9-6859c8659d1f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a98185b9-e873-4363-8c13-5ff670f5a0c3",
+			"id": "c71e658d-40b1-4309-9025-a6f815f218c8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d002ec64-15db-4aac-97de-db0221fce04a",
+			"id": "3be11f26-9b26-4741-8ff1-3cd7d2130bf6",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "28cead68-a5f0-44a9-8d05-a99e97552b9f",
+			"id": "472f3f0b-a034-4116-8f95-65049a569566",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b1a89abe-fb12-48e4-a98f-ebf57a3e97dc",
+			"id": "afbbdc20-12d6-4d68-8868-e3c0d48134a8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "7b299f45-e614-441b-aaac-89e29f75f198",
+			"id": "3b4bf2cf-c9a9-4569-ac52-77b9d324cb77",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fd648ebc-7afc-46fe-aa70-64dee347db16",
+			"id": "ff2d190c-0e69-4922-b456-3d845a6d9e3a",
 			"key": "newDT",
 			"value": ""
 		}
