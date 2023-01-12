@@ -10919,7 +10919,7 @@
 									"console.log('winner', dataDostavki_winner)\r",
 									"\r",
 									"//время отсечки, запас по времени\r",
-									"const cutoff = 19;\r",
+									"const cutoff = 12;\r",
 									"const gapHours = 0;\r",
 									"const actualCutoff = cutoff - gapHours;\r",
 									"const currentDateTime = new Date(\"2023-01-10 10:00:00\");\r",
@@ -15105,45 +15105,45 @@
 	],
 	"variable": [
 		{
-			"id": "492b19f4-e5fa-43f4-9adc-56a9d4965552",
+			"id": "529f7c84-6c3a-46af-8e8a-d8a38391e389",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e9394341-0191-41cb-8bc9-ab29643a71db",
+			"id": "3efc0a14-fdec-4595-a191-01f7f6374f5c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d6cc212-c56e-4a65-8d8b-102e62beb3bf",
+			"id": "3c019a64-3a9d-443d-a26a-29d0ebdae940",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d8c3ff48-ad8b-419d-857d-f7c7248bf351",
+			"id": "b4348ee3-48b2-4516-b0a8-e0f1e3b957e3",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "87b274d6-f75b-484a-ba0c-be319307b655",
+			"id": "0e482c0a-cf89-4ab2-b866-6fe945d958fb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1f75f7b4-1655-41e2-a0a0-2603adda35d2",
+			"id": "291db3e1-dd8c-4e39-aa6f-35b1d7124bb5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "14304242-db61-42cf-a638-b2dffd768106",
+			"id": "355fd3be-06a9-4a4a-a964-d968de782f59",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e6e97967-21b2-491f-871d-5cbf762d0c4a",
+			"id": "b060d0d2-8d73-4c83-b95d-5ee6870e6442",
 			"key": "newDT",
 			"value": ""
 		}
