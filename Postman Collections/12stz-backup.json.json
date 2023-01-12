@@ -10292,7 +10292,86 @@
 					"response": []
 				},
 				{
-					"name": "Время консолидации",
+					"name": "Запас по времени 0ч Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
+									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
+									"\r",
+									"//дата, отдаваемая виннером\r",
+									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
+									"console.log('winner', dataDostavki_winner)\r",
+									"\r",
+									"//время отсечки, запас по времени\r",
+									"const cutoff = 19;\r",
+									"const gapHours = 0;\r",
+									"const actualCutoff = cutoff - gapHours;\r",
+									"const currentDateTime = new Date(\"2023-01-10 10:00:00\");\r",
+									"console.log('currentDateTime', currentDateTime)\r",
+									"\r",
+									"//ожидаемая дата доставки\r",
+									"let expectedDelivery = currentDateTime ;\r",
+									"if (currentDateTime.getHours() >= actualCutoff)\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
+									"else\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
+									"console.log('expectedDelivery', expectedDelivery)\r",
+									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
+									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
+									"\r",
+									"\r",
+									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
+									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "0417a48e-b8dd-48cf-af75-7ab1019ef335",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 10:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Время консолидации 6ч",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -14511,45 +14590,45 @@
 	],
 	"variable": [
 		{
-			"id": "2bb9dc2c-c768-4b29-8e1c-ecd6aff300af",
+			"id": "270e4c15-d0c4-4d5b-923f-3d8b89f0021b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bcf095ce-4687-48e4-b18a-f71c55df719b",
+			"id": "815be334-7281-4792-9906-5c065b6eafe9",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1797ce27-7a1e-4cc0-b335-02c1da6f829c",
+			"id": "3fa55826-99a2-45dd-b99f-0d4df8802ca3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "af10f8a8-fd7e-40a9-9efe-af7cf7dc4bd0",
+			"id": "131f3aef-e8ca-4149-8a61-2ede3b1067fd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "93077cc2-540d-4b10-8842-a8694b7f53fa",
+			"id": "03823139-87e2-41f8-8178-055f513b5bc7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "84d9b35b-f3d8-48b5-95ee-dc02e13a1d65",
+			"id": "364fd7fa-ca15-494e-9a22-73be7a1d0eea",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "53720464-bb1d-4242-8aad-a23baf49fffd",
+			"id": "9d436cb5-5a8e-4908-af07-27e70057ae03",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1e159c1f-448b-4465-ac87-44f7909cd327",
+			"id": "1130ea97-54e1-4766-8936-67eb741986e8",
 			"key": "newDT",
 			"value": ""
 		}
