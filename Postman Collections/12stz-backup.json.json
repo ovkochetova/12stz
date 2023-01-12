@@ -9950,85 +9950,6 @@
 					"response": []
 				},
 				{
-					"name": "Запас по времени 6ч 1мин",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"\r",
-									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
-									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
-									"\r",
-									"//дата, отдаваемая виннером\r",
-									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
-									"console.log('winner', dataDostavki_winner)\r",
-									"\r",
-									"//время отсечки, запас по времени\r",
-									"const cutoff = 19;\r",
-									"const gapHours = 6;\r",
-									"const actualCutoff = cutoff - gapHours;\r",
-									"const currentDateTime = new Date(\"2023-01-10 13:00:00\");\r",
-									"console.log('currentDateTime', currentDateTime)\r",
-									"\r",
-									"//ожидаемая дата доставки\r",
-									"let expectedDelivery = currentDateTime ;\r",
-									"if (currentDateTime.getHours() >= actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 6);\r",
-									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 5);\r",
-									"console.log('expectedDelivery', expectedDelivery)\r",
-									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
-									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
-									"\r",
-									"\r",
-									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
-									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
-									"});\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "87828e57-7dba-4ef3-81b6-9b36664091d4",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
-							}
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Grpc-Metadata-Api_Key",
-								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 14:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "Запас по времени 5ч 59мин",
 					"event": [
 						{
@@ -14327,45 +14248,45 @@
 	],
 	"variable": [
 		{
-			"id": "883fb57b-3633-4c99-b634-cd5f10c4b4f5",
+			"id": "4bc86bc8-91bc-4a9d-8a9a-bbf4858f61e9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb5ed1c6-2132-47e1-a465-e4a17e554027",
+			"id": "cd7ba3d9-b83f-413d-beb5-01637613efe5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "14ec98cb-f401-4a97-8fb1-ab119ff35c1b",
+			"id": "d86afbdf-f45d-4ed6-98b4-29360e8d597f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "946dd1f5-aead-4d04-a1c9-dcc5a1387cc7",
+			"id": "87904f0c-0b8b-4480-9a94-6d20bcfd7c24",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1c4ad28d-a5e8-45d2-add9-54c39b7f446a",
+			"id": "bb6263eb-9572-4d5d-ba39-cb1781e4faea",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ebcf1a60-767a-46f6-8e21-2e837feb160b",
+			"id": "ff16f33b-3654-4a8f-a2ab-bcc5f8e54096",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5848ad1e-bfd8-4656-b8b7-9bd64347368a",
+			"id": "27f3ebe3-b2e4-421f-aaf4-24d4746e7a82",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c2ebfded-5f33-41b7-82cb-3423cb21f8c4",
+			"id": "d9dcf2a6-9f0f-44c1-97ba-3d14d1555b14",
 			"key": "newDT",
 			"value": ""
 		}
