@@ -11352,6 +11352,100 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Максимальная сумма оплаты",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.gapHours = 0\r",
+									"body.cutoffTime = \"12:00\";\r",
+									"body.consolidationHours = 3;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Экспресс-доставка в действии\" , function () {\r",
+									"    pm.expect(jsonData.gapHours).to.eql(0);\r",
+									"    pm.expect(jsonData.cutoffTime).to.eql(\"12:00\");\r",
+									"    pm.expect(jsonData.consolidationHours).to.eql(3);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7aa5ad60-aa5a-4a78-bf85-4196de78b4c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -15481,45 +15575,45 @@
 	],
 	"variable": [
 		{
-			"id": "fd6cfd73-6bf8-4ebc-8eca-eb0c0dc135a5",
+			"id": "f7717fa7-54cd-482a-86f4-2f48595d03ed",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7fa0c900-0a24-4812-be06-7841c0322645",
+			"id": "0423fc5f-44da-4954-9f97-02e29637535d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "69d5a936-7e4c-48c1-8aa8-5405b6ba8564",
+			"id": "26d136b3-7ac9-46f4-9bf5-3052ab6aec9c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "db21b9c0-c3b2-4ca6-aff2-29fdc2ba9b4f",
+			"id": "ce63cccc-2b38-47a7-bd79-1e3c35139bee",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "22a0f494-d600-46df-bc0b-727c1f5e56b2",
+			"id": "72c707ec-f330-4c6d-bb79-277aa6c8f367",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ab92f0e4-aa57-4cf6-8b7e-7ff46ef9e71b",
+			"id": "2e2cc625-617a-49f2-80d3-357b34c91ceb",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "fdacc09f-d3ea-4059-9a71-05ca797b21b5",
+			"id": "f32a2132-2881-417a-b659-ce4d00181866",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7fcf9ef3-02d3-4c94-a3ad-296a661df506",
+			"id": "27310f28-1357-4ce5-b50a-74f4fd63a987",
 			"key": "newDT",
 			"value": ""
 		}
