@@ -10895,6 +10895,85 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "?Экспресс-доставка",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
+									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
+									"\r",
+									"//дата, отдаваемая виннером\r",
+									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
+									"console.log('winner', dataDostavki_winner)\r",
+									"\r",
+									"//время отсечки, запас по времени\r",
+									"const cutoff = 19;\r",
+									"const gapHours = 0;\r",
+									"const actualCutoff = cutoff - gapHours;\r",
+									"const currentDateTime = new Date(\"2023-01-10 10:00:00\");\r",
+									"console.log('currentDateTime', currentDateTime)\r",
+									"\r",
+									"//ожидаемая дата доставки\r",
+									"let expectedDelivery = currentDateTime ;\r",
+									"if (currentDateTime.getHours() >= actualCutoff)\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
+									"else\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
+									"console.log('expectedDelivery', expectedDelivery)\r",
+									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
+									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
+									"\r",
+									"\r",
+									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
+									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ddb47604-f74c-4298-bc7a-1f298a58f8b2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 10:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -15024,45 +15103,45 @@
 	],
 	"variable": [
 		{
-			"id": "4b0939d8-dd24-42e9-9808-0f8c35e5a0fe",
+			"id": "f0e75260-c89b-48fb-96d1-d4d69eb10334",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fec8d411-7f71-4b4b-8246-e15c3257dcde",
+			"id": "4ea868f0-9021-4d3f-ad21-c8410af34bb7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a13e3e36-974e-48af-ac04-ad08ef6494d5",
+			"id": "30a4f23e-7e0b-4695-b1a3-de0f6b4d09bb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d02ce592-5b84-4945-bcf4-691cca400922",
+			"id": "ed6adaa9-b8e5-4688-920a-d72afb55c36f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "364145aa-9031-42c4-9498-08d372cc52a9",
+			"id": "a8ffb5cc-878c-4eb2-a652-04250a6d4c57",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1d2c2b7b-d69f-49af-871a-c72c18e6d1c0",
+			"id": "b641e38a-4cac-4682-aabe-6e827a7e8354",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9a49205e-25a2-4e0d-97ea-9b4b0e8c12fe",
+			"id": "4599268a-3c48-44c2-9d91-1c2aa160b53b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "429b5325-8439-47d3-95aa-bc434778ed1e",
+			"id": "5d6eeb11-464b-4897-a5ce-0618fc77426b",
 			"key": "newDT",
 			"value": ""
 		}
