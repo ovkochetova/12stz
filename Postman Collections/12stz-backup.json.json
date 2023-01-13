@@ -10978,6 +10978,76 @@
 					"response": []
 				},
 				{
+					"name": "добавление второй ТК",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "da288e7e-33b7-4b48-b1be-54b35769f135",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.test(\"Результат поиска есть\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.environment.set(\"id\",jsonData.results[0].id);\r",
+									"console.log(\"id\",jsonData.results[0].id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "84aab8d8-7346-454e-8e4b-c79e53421449",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=ТК для тестов(не удалять)&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "40"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "ТК для тестов(не удалять)"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Ручной приоритет=2",
 					"event": [
 						{
@@ -15994,45 +16064,45 @@
 	],
 	"variable": [
 		{
-			"id": "4d06c635-af3b-402f-a419-88d79b28ce32",
+			"id": "4ceb9bc5-c913-4e4d-ab7d-26c3661d7023",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "192704f3-aa60-4351-be6d-2de3efc7d7ea",
+			"id": "cecab912-ec94-468a-92fb-2af415031732",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "51487d11-cdb0-4677-b86f-829bd1b67860",
+			"id": "8c18213d-0eba-4a65-a05a-9f4bc278c5ff",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1fd31842-0740-4e67-9213-0c4d97ed0766",
+			"id": "74a8996b-805a-4869-a5b1-ad146bc0fe60",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ff43e6ad-2d5e-4c3a-a3e3-a47be0f67e73",
+			"id": "aaa08da9-e399-4d54-9967-b3799aff4d51",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "6704f14b-e74f-49c9-9430-4229d8522acc",
+			"id": "a36f27fb-30e1-4f89-acf6-381760b382db",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1a6a8303-21cd-441a-8d94-229ce331bf60",
+			"id": "b94ee28d-337a-4eab-90f6-8c337f321bb8",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "70d4941d-8c78-4367-99c4-80dae5eac6e7",
+			"id": "3ba62603-d218-49c6-bd26-48ea3db820e7",
 			"key": "newDT",
 			"value": ""
 		}
