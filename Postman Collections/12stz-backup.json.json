@@ -11016,7 +11016,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=ТК для тестов(не удалять)&sort=",
+							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=Вторая ТК для тестов&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -11036,7 +11036,7 @@
 								},
 								{
 									"key": "search",
-									"value": "ТК для тестов(не удалять)"
+									"value": "Вторая ТК для тестов"
 								},
 								{
 									"key": "sort",
@@ -16350,45 +16350,45 @@
 	],
 	"variable": [
 		{
-			"id": "2b36fbb3-0938-410e-946b-c55d05c1fc4d",
+			"id": "4221f70e-9316-4987-8da4-1ebc8025c3c9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "01dc0454-f7f6-457a-a7b4-2117345629fa",
+			"id": "c6d8fc5c-be7b-4c91-b2a2-6d4165ba951a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8c578596-26c5-42ca-9973-bf5cf0ac456e",
+			"id": "1b7fa536-79b4-42cc-8dbf-944575d08e75",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "640a2aa8-542a-4405-a1d1-d12056692da7",
+			"id": "44dccf65-ca14-4724-9c1d-47c9d0d2231a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "6e42eca6-484c-4b24-988f-33b1eda962a3",
+			"id": "b9d758f6-5e0c-45f7-a286-08a7e79f34bf",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3d6190f3-fb1d-40a0-87f4-b2213245103d",
+			"id": "2716b775-0b4b-4a3b-b849-98c1ddbf17a3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "c07a46ac-979a-4a01-a218-40ba3a6dfe1c",
+			"id": "58511e3f-815f-4e70-b0c0-ea15aa1b4206",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ce097a66-6233-4a34-944f-350ebb562ee1",
+			"id": "366cbb85-ea64-4b7c-b551-c35bd77a94c2",
 			"key": "newDT",
 			"value": ""
 		}
