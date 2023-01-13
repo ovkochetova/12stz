@@ -11155,7 +11155,7 @@
 					"response": []
 				},
 				{
-					"name": "Изменение статуса типа доставки на false Copy",
+					"name": "добавление второй ТК в соревнование",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -16350,45 +16350,45 @@
 	],
 	"variable": [
 		{
-			"id": "4df9a0c6-eb0f-4cb5-a5b6-d6bcc7bace1b",
+			"id": "2b36fbb3-0938-410e-946b-c55d05c1fc4d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4b8a94c5-a0d9-4245-abd6-fbf316308249",
+			"id": "01dc0454-f7f6-457a-a7b4-2117345629fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d7881f27-e16c-4e6f-b930-4138d75ac32a",
+			"id": "8c578596-26c5-42ca-9973-bf5cf0ac456e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "85d3268c-e23f-4d59-92ec-35d1ded53994",
+			"id": "640a2aa8-542a-4405-a1d1-d12056692da7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "839bca40-51b1-430e-90b0-e421d6ec55bd",
+			"id": "6e42eca6-484c-4b24-988f-33b1eda962a3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "62d828ca-5cfe-4535-9654-49c0cbcb3c39",
+			"id": "3d6190f3-fb1d-40a0-87f4-b2213245103d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0ae57cd2-3f2f-48ef-a262-faab8a012695",
+			"id": "c07a46ac-979a-4a01-a218-40ba3a6dfe1c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "43f4265c-0d2a-4ec9-8745-f10a8c5aa2ed",
+			"id": "ce097a66-6233-4a34-944f-350ebb562ee1",
 			"key": "newDT",
 			"value": ""
 		}
