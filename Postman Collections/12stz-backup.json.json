@@ -11083,34 +11083,6 @@
 									"});\r",
 									"\r",
 									"\r",
-									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
-									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
-									"\r",
-									"//дата, отдаваемая виннером\r",
-									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
-									"console.log('winner', dataDostavki_winner)\r",
-									"\r",
-									"//время отсечки, запас по времени\r",
-									"const cutoff = 12;\r",
-									"const gapHours = 0;\r",
-									"const actualCutoff = cutoff - gapHours;\r",
-									"const currentDateTime = new Date(\"2023-01-10 08:00:00\");\r",
-									"console.log('currentDateTime', currentDateTime)\r",
-									"\r",
-									"//ожидаемая дата доставки\r",
-									"let expectedDelivery = currentDateTime ;\r",
-									"if (currentDateTime.getHours() >= actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
-									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 0);\r",
-									"console.log('expectedDelivery', expectedDelivery)\r",
-									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
-									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
-									"\r",
-									"\r",
-									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
-									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
-									"});\r",
 									""
 								],
 								"type": "text/javascript"
@@ -15841,45 +15813,45 @@
 	],
 	"variable": [
 		{
-			"id": "6c359b5c-76b4-4e3f-8b1c-acd7ad146d37",
+			"id": "20c0195c-bce6-4e14-98fa-80ae3fd6e3cb",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0b31d35b-3986-42d6-896f-ad9a9ae2d608",
+			"id": "12e73d5e-c7a9-4d4b-b237-23230e7524fc",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e1b76c44-87c9-4d93-aaa5-c8fa056aa343",
+			"id": "db623e29-198a-430f-9f04-0173dfa595a4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4014e9b0-5fb0-48c1-9b65-d3a35df06188",
+			"id": "b56c7fe5-55e7-448c-9633-aba6a36df90c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "51ead99b-df96-44cf-9635-8dce223c6a67",
+			"id": "3e7f223e-8bc1-4f26-bf2c-2815a0cbc3a5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "27968f7a-a500-4714-ae4a-5db93d8db952",
+			"id": "95c43a39-433a-415d-9dbd-cdee53aaf4b8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d9e0b01e-44f7-4ee0-8e2b-4517a698b233",
+			"id": "0fda1569-5264-4e65-b8ac-71527b03d6a6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "eeeb0b38-088d-40a8-a7b2-55dbd5807550",
+			"id": "5525b527-23d8-49c6-aa9e-e8d69e080d5b",
 			"key": "newDT",
 			"value": ""
 		}
