@@ -11048,6 +11048,292 @@
 					"response": []
 				},
 				{
+					"name": "поиск второй ТК",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "26462bb9-ab46-4bfc-8b87-3c7ccd273d24",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var DeliveryType = pm.response.json();\r",
+									"console.log(DeliveryType);\r",
+									"pm.collectionVariables.set(\"DT\", DeliveryType);\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\", jsonData.id);\r",
+									"/*pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
+									"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
+									"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
+									"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
+									"pm.environment.set(\"restrictionByPricePopupId\", jsonData.restrictionByPricePopup.id);\r",
+									"pm.environment.set(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
+									"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+									"pm.environment.set(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)\r",
+									"\r",
+									"let arr = \r",
+									"\r",
+									"\r",
+									"console.log(\"transportCompanyModeId\", jsonData.transportCompanyMode.id)\r",
+									"console.log(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
+									"console.log(\"popupId\", jsonData.popup.id);\r",
+									"console.log(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
+									"console.log(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
+									"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
+									"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
+									"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
+									"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+									"console.log(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)*/\r",
+									"\r",
+									"  \r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"  "
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f1df571b-2553-4386-8122-f60e081510b1",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "29d1893e-fc4f-4f56-ae35-1009e4f05780",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/delivery-type/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "12c46ca4-47a1-46da-99d4-dc591b9c81c0",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Изменение статуса типа доставки на false Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2bd1655c-0d60-4e46-9cc5-7463641a64a7",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"DT\");\r",
+									"console.log(body);\r",
+									"\r",
+									"\r",
+									"let newbody = {\r",
+									"  \"transportCompanyModeId\": body.transportCompanyMode.id,\r",
+									"  \"zoneGroupId\": body.zoneGroup.id,\r",
+									"  \"name\": body.name,\r",
+									"  \"descriptionRu\": body.descriptionRu,\r",
+									"  \"popupId\": body.popup.id,\r",
+									"  \"code\": body.code,\r",
+									"  \"defaultDaysFrom\": body.defaultDaysFrom,\r",
+									"  \"defaultDaysTo\": body.defaultDaysTo,\r",
+									"  \"deliveryPrice\": body.deliveryPrice,\r",
+									"  \"deliveryPriceBorder\": body.deliveryPriceBorder,\r",
+									"  \"deliveryPriceAfterBorder\": body.deliveryPriceAfterBorder,\r",
+									"  \"deliveryMinDays\": body.deliveryMinDays,\r",
+									"  \"cutoffTime\": body.cutoffTime,\r",
+									"  \"consolidationHours\": body.consolidationHours,\r",
+									"  \"gapHours\": body.gapHours,\r",
+									"  \"priorityCoefficient\": body.priorityCoefficient,\r",
+									"  \"maxDaysCoefficient\": body.maxDaysCoefficient,\r",
+									"  \"tariffCoefficient\": body.tariffCoefficient,\r",
+									"  \"winnerPercent\": body.winnerPercent,\r",
+									"  \"maxPrice\": body.maxPrice,\r",
+									"  \"restrictionByPriceIsActive\": body.restrictionByPriceIsActive,\r",
+									"  \"restrictionByPriceMessageId\": body.restrictionByPriceMessage.id,\r",
+									"  \"restrictionByPricePopupId\": body.restrictionByPricePopup.id,\r",
+									"  \"maxQuantity\": body.maxQuantity,\r",
+									"  \"restrictionByQuantityIsActive\": body.restrictionByQuantityIsActive,\r",
+									"  \"restrictionByQuantityMessageId\": body.restrictionByQuantityMessage.id,\r",
+									"  \"restrictionByQuantityPopupId\": body.restrictionByQuantityPopup.id,\r",
+									"  \"maxQuantityPerArticle\": body.maxQuantityPerArticle,\r",
+									"  \"restrictionByQuantityPerArticleIsActive\": body.restrictionByQuantityPerArticleIsActive,\r",
+									"  \"restrictionByQuantityPerArticleMessageId\": body.restrictionByQuantityPerArticleMessage.id,\r",
+									"  \"restrictionByQuantityPerArticlePopupId\": body.restrictionByQuantityPerArticlePopup.id,\r",
+									"  \"isVisibleWhileRestricted\": body.isVisibleWhileRestricted,\r",
+									"  \"isActive\": false,\r",
+									"  \"paymentMethodToDeliveryType\": [\r",
+									"    {\r",
+									"      \"paymentMethodId\": body.paymentMethodToDeliveryType[0].paymentMethod.id,\r",
+									"      \"messageId\": body.paymentMethodToDeliveryType[0].message.id,\r",
+									"      \"maxPrice\": body.paymentMethodToDeliveryType[0].maxPrice,\r",
+									"      \"isVisibleWhileRestricted\": body.paymentMethodToDeliveryType[0].isVisibleWhileRestricted,\r",
+									"      \"paymentMethodCategoryRestrictions\": [\r",
+									"        {\r",
+									"          \"categoryId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].category.id,\r",
+									"          \"messageId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].message.id,\r",
+									"          \"isActive\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive\r",
+									"        }\r",
+									"      ]\r",
+									"    }\r",
+									"      ],\r",
+									"    \r",
+									"    \"categoryDeliveryTypeRestrictions\": [\r",
+									"    {\r",
+									"      \"categoryId\": body.categoryDeliveryTypeRestrictions[0].category.id,\r",
+									"      \"messageId\": body.categoryDeliveryTypeRestrictions[0].message.id,\r",
+									"      \"popupId\": body.categoryDeliveryTypeRestrictions[0].popup.id,\r",
+									"      \"isActive\": body.categoryDeliveryTypeRestrictions[0].isActive\r",
+									"    }\r",
+									"    \r",
+									"  ],\r",
+									"  \"intervals\": [\r",
+									"    {\r",
+									"      \"id\": body.intervals[0].id,\r",
+									"      \"clientTimeFrom\": body.intervals[0].clientTimeFrom,\r",
+									"      \"clientTimeTo\": body.intervals[0].clientTimeTo,\r",
+									"      \"tkTimeFrom\": body.intervals[0].tkTimeFrom,\r",
+									"      \"tkTimeTo\": body.intervals[0].tkTimeTo,\r",
+									"      \"dayOfWeek\": body.intervals[0].dayOfWeek,\r",
+									"      \"code\": body.intervals[0].code,\r",
+									"      \"createdAt\": body.intervals[0].createdAt,\r",
+									"      \"updatedAt\": body.intervals[0].updatedAt\r",
+									"    },\r",
+									"    {\r",
+									"      \"id\": body.intervals[1].id,\r",
+									"      \"clientTimeFrom\": body.intervals[1].clientTimeFrom,\r",
+									"      \"clientTimeTo\": body.intervals[1].clientTimeTo,\r",
+									"      \"tkTimeFrom\": body.intervals[1].tkTimeFrom,\r",
+									"      \"tkTimeTo\": body.intervals[1].tkTimeTo,\r",
+									"      \"dayOfWeek\": body.intervals[1].dayOfWeek,\r",
+									"      \"code\": body.intervals[1].code,\r",
+									"      \"createdAt\": body.intervals[1].createdAt,\r",
+									"      \"updatedAt\": body.intervals[1].updatedAt\r",
+									"    }\r",
+									"  ]\r",
+									"}\r",
+									"\r",
+									"pm.request.body.raw = newbody;\r",
+									"\r",
+									"pm.collectionVariables.set(\"newDT\", newbody);\r",
+									"console.log(\"newDT\", newbody)\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "a34ef7e3-c552-4d10-bc32-032f9825ce0b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Статус доставки false\" , function () {\r",
+									"    pm.expect(jsonData.isActive).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "47690e6e-f631-4519-8b53-5c2f7ba35713",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "04b228a6-2a07-42c8-a069-ab1d52d9402e",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Ручной приоритет=2",
 					"event": [
 						{
@@ -16064,45 +16350,45 @@
 	],
 	"variable": [
 		{
-			"id": "bd84df2a-e629-4ec9-8b5b-ef6f9b23d73a",
+			"id": "c0b8066a-3681-478b-926d-8eff644b0507",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "10fb0133-9049-457a-9ed5-720fe28f322e",
+			"id": "02d90380-1cdf-4684-8b29-25a553bb408f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b5195915-02ac-4e79-9fd2-9673bbecd079",
+			"id": "888df10c-c2d0-4b18-8a9e-549c65c7b177",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5aa900e8-5e21-4fc9-aa34-77fac1cdcf75",
+			"id": "4c640d00-753d-44a3-b1c1-19a8cf795b97",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "db6811ed-b8bb-4713-a513-c5a26b037138",
+			"id": "bde92145-782f-420c-ba50-e02991a548bc",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7cd42287-1a7a-432d-bc2e-5342a50eb661",
+			"id": "64068128-61e0-4488-a5d0-2cabe94b6225",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1b445f1e-7059-471e-a3e8-e272c42f655b",
+			"id": "683f399a-1354-4739-9b27-1226ecf71d9e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "52e4685b-aa69-4f76-98a0-df3cbabdeacd",
+			"id": "9cac545f-ff06-4599-835c-65b1e95dd6f6",
 			"key": "newDT",
 			"value": ""
 		}
