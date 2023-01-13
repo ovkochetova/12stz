@@ -11527,6 +11527,64 @@
 					"response": []
 				},
 				{
+					"name": "Ручной приоритет - 60/40",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Вторая ТК для тестов\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"Вторая ТК для тестов\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b6d1bc29-4f66-42c3-a859-acf66f3c83ac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Процент приоритета - 0%",
 					"event": [
 						{
@@ -15936,45 +15994,45 @@
 	],
 	"variable": [
 		{
-			"id": "fbeb8e49-0de1-49ff-b969-0ba92e4e6b20",
+			"id": "4d06c635-af3b-402f-a419-88d79b28ce32",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4845a78f-fe68-4215-b099-551a406fa48e",
+			"id": "192704f3-aa60-4351-be6d-2de3efc7d7ea",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aa8f5180-03fa-45a5-9624-784bfb3a862a",
+			"id": "51487d11-cdb0-4677-b86f-829bd1b67860",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6ad1ef7a-1635-4c16-97a0-55e0f3e49666",
+			"id": "1fd31842-0740-4e67-9213-0c4d97ed0766",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "0b0162dd-1d45-4ad0-b543-eaa3b1a456a4",
+			"id": "ff43e6ad-2d5e-4c3a-a3e3-a47be0f67e73",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "838f9f4d-47f8-42da-b52e-80abcbd755ad",
+			"id": "6704f14b-e74f-49c9-9430-4229d8522acc",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "54ec4066-d41a-4470-94a4-5c856c3411cd",
+			"id": "1a6a8303-21cd-441a-8d94-229ce331bf60",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d352f513-e2e9-408f-b1a1-c93e36a418be",
+			"id": "70d4941d-8c78-4367-99c4-80dae5eac6e7",
 			"key": "newDT",
 			"value": ""
 		}
