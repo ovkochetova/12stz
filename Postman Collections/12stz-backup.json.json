@@ -11071,7 +11071,7 @@
 					"response": []
 				},
 				{
-					"name": "?Экспресс-доставка Copy",
+					"name": "Ручной приоритет = 2",
 					"event": [
 						{
 							"listen": "test",
@@ -15841,45 +15841,45 @@
 	],
 	"variable": [
 		{
-			"id": "db8c9553-1511-4fb4-8539-b3a4ecd457f4",
+			"id": "6c359b5c-76b4-4e3f-8b1c-acd7ad146d37",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dab590ab-f258-4d19-8f77-880668e788c2",
+			"id": "0b31d35b-3986-42d6-896f-ad9a9ae2d608",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cd1e99e2-3c76-4015-ac5d-81a418379e86",
+			"id": "e1b76c44-87c9-4d93-aaa5-c8fa056aa343",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9181a437-e323-4b40-9d10-62cbd5a522bd",
+			"id": "4014e9b0-5fb0-48c1-9b65-d3a35df06188",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d4cb8490-a7d4-408e-b44b-4d66ac2e7441",
+			"id": "51ead99b-df96-44cf-9635-8dce223c6a67",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7ac73125-e3c1-4ba4-9b2a-cc5e0adf83f2",
+			"id": "27968f7a-a500-4714-ae4a-5db93d8db952",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "7b17ad3d-52ce-47ce-ad4f-477f7340de41",
+			"id": "d9e0b01e-44f7-4ee0-8e2b-4517a698b233",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "eb77185a-b06c-4849-981c-8ea0d6766d24",
+			"id": "eeeb0b38-088d-40a8-a7b2-55dbd5807550",
 			"key": "newDT",
 			"value": ""
 		}
