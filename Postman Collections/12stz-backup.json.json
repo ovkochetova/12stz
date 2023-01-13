@@ -11011,7 +11011,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Ручной приоритет равен 2\" , function () {\r",
-									"    pm.expect(jsonData.gapHours).to.eql(0);\r",
+									"    pm.expect(jsonData.priorityCoefficient).to.eql(2);\r",
 									"  });\r",
 									""
 								],
@@ -15762,45 +15762,45 @@
 	],
 	"variable": [
 		{
-			"id": "23067b36-4e23-4312-898a-c677b94de780",
+			"id": "1a57ae5d-3069-48de-afe6-6b0916ecd873",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7f13732c-9f7c-442b-877f-e8598414d758",
+			"id": "6485d787-5613-4824-af1d-c78e5077c578",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "77bfec34-5b3e-4c8e-9a98-1bfa43d099e3",
+			"id": "219e7101-79bf-40fa-b194-465a7f5f26b3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f105345a-06e9-49f3-8d23-ff8553fbcd1f",
+			"id": "2ea5ece7-0656-46b1-99ad-cbb7e2b6cddc",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8d1b809a-4b81-4425-bc57-7cd80e578980",
+			"id": "9b856b11-8b69-47de-b437-c9678458e94f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7253bdc7-4b7a-4e93-b67a-aaacbf4f95ea",
+			"id": "94ce24cc-16ff-4e9d-a0e6-e0cb95158066",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "2c665ea1-e122-498a-bb2b-8d3c315b03cd",
+			"id": "f74f7b68-b34f-4b00-b8ed-b8ac1939cbc9",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a245de72-b0be-4bf1-a6c4-8b3d03c9bdab",
+			"id": "3486ac2e-02b1-468a-9778-8c2d4290e9f7",
 			"key": "newDT",
 			"value": ""
 		}
