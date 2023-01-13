@@ -11048,7 +11048,7 @@
 					"response": []
 				},
 				{
-					"name": "поиск второй ТК",
+					"name": "поиск второй ТК по id",
 					"event": [
 						{
 							"listen": "test",
@@ -16350,45 +16350,45 @@
 	],
 	"variable": [
 		{
-			"id": "826d10c3-2fb5-443c-a0f6-9a67b31088cc",
+			"id": "4df9a0c6-eb0f-4cb5-a5b6-d6bcc7bace1b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0c1eb7e3-ecd2-4d11-88af-f0c47a99542b",
+			"id": "4b8a94c5-a0d9-4245-abd6-fbf316308249",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8f674061-a9c1-4b0c-b005-f84aad85f983",
+			"id": "d7881f27-e16c-4e6f-b930-4138d75ac32a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8aefce77-597e-4ee5-b3c1-191bb6fbea64",
+			"id": "85d3268c-e23f-4d59-92ec-35d1ded53994",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "123e564f-fda0-48bd-81a7-93f00c74e75f",
+			"id": "839bca40-51b1-430e-90b0-e421d6ec55bd",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "14e82819-c760-4263-b90e-8ad41ccb3e9f",
+			"id": "62d828ca-5cfe-4535-9654-49c0cbcb3c39",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e49b043e-5925-4628-b2bd-915d3ae5e896",
+			"id": "0ae57cd2-3f2f-48ef-a262-faab8a012695",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1f668ea0-d03f-414a-b6ed-32fdab8f6c5d",
+			"id": "43f4265c-0d2a-4ec9-8745-f10a8c5aa2ed",
 			"key": "newDT",
 			"value": ""
 		}
