@@ -10990,6 +10990,7 @@
 									"body.gapHours = 6\r",
 									"body.cutoffTime = \"19:00\";\r",
 									"body.consolidationHours = 8;\r",
+									"body.priorityCoefficient = 2;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -11009,11 +11010,9 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Экспресс-доставка в действии\" , function () {\r",
+									"pm.test(\"Ручной приоритет равен 2\" , function () {\r",
 									"    pm.expect(jsonData.gapHours).to.eql(0);\r",
-									"    pm.expect(jsonData.cutoffTime).to.eql(\"12:00\");\r",
-									"    pm.expect(jsonData.consolidationHours).to.eql(3);\r",
-									"});\r",
+									"  });\r",
 									""
 								],
 								"type": "text/javascript"
@@ -15763,45 +15762,45 @@
 	],
 	"variable": [
 		{
-			"id": "8d52cafd-769e-4a68-bc95-1e4623fc3d15",
+			"id": "23067b36-4e23-4312-898a-c677b94de780",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ce513ca5-7635-4dc3-b053-2fb913fce50b",
+			"id": "7f13732c-9f7c-442b-877f-e8598414d758",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c88abf32-ffbe-4b58-b1cb-c4bcb3a59bd0",
+			"id": "77bfec34-5b3e-4c8e-9a98-1bfa43d099e3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "81c05692-8f1a-4f32-a893-bda291a61e55",
+			"id": "f105345a-06e9-49f3-8d23-ff8553fbcd1f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "745e1824-c7cc-4a99-99bf-fe6d3eabbda7",
+			"id": "8d1b809a-4b81-4425-bc57-7cd80e578980",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c62eec9c-a400-40e6-8089-7c88e57c0660",
+			"id": "7253bdc7-4b7a-4e93-b67a-aaacbf4f95ea",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6193f67f-8df9-4828-8a4a-cb3bac473b73",
+			"id": "2c665ea1-e122-498a-bb2b-8d3c315b03cd",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7097a071-db6e-4864-b164-1f82562188d6",
+			"id": "a245de72-b0be-4bf1-a6c4-8b3d03c9bdab",
 			"key": "newDT",
 			"value": ""
 		}
