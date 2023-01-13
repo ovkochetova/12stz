@@ -10978,7 +10978,7 @@
 					"response": []
 				},
 				{
-					"name": "добавление второй ТК",
+					"name": "поиск второй ТК",
 					"event": [
 						{
 							"listen": "test",
@@ -16064,45 +16064,45 @@
 	],
 	"variable": [
 		{
-			"id": "4ceb9bc5-c913-4e4d-ab7d-26c3661d7023",
+			"id": "bd84df2a-e629-4ec9-8b5b-ef6f9b23d73a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cecab912-ec94-468a-92fb-2af415031732",
+			"id": "10fb0133-9049-457a-9ed5-720fe28f322e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8c18213d-0eba-4a65-a05a-9f4bc278c5ff",
+			"id": "b5195915-02ac-4e79-9fd2-9673bbecd079",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "74a8996b-805a-4869-a5b1-ad146bc0fe60",
+			"id": "5aa900e8-5e21-4fc9-aa34-77fac1cdcf75",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "aaa08da9-e399-4d54-9967-b3799aff4d51",
+			"id": "db6811ed-b8bb-4713-a513-c5a26b037138",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a36f27fb-30e1-4f89-acf6-381760b382db",
+			"id": "7cd42287-1a7a-432d-bc2e-5342a50eb661",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b94ee28d-337a-4eab-90f6-8c337f321bb8",
+			"id": "1b445f1e-7059-471e-a3e8-e272c42f655b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3ba62603-d218-49c6-bd26-48ea3db820e7",
+			"id": "52e4685b-aa69-4f76-98a0-df3cbabdeacd",
 			"key": "newDT",
 			"value": ""
 		}
