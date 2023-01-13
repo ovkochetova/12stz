@@ -11637,6 +11637,185 @@
 					"response": []
 				},
 				{
+					"name": "добавление второй ТК процент приоритета = 30",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2bd1655c-0d60-4e46-9cc5-7463641a64a7",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"DT\");\r",
+									"console.log(body);\r",
+									"\r",
+									"\r",
+									"let newbody = {\r",
+									"  \"transportCompanyModeId\": body.transportCompanyMode.id,\r",
+									"  \"zoneGroupId\": body.zoneGroup.id,\r",
+									"  \"name\": body.name,\r",
+									"  \"descriptionRu\": body.descriptionRu,\r",
+									"  \"popupId\": body.popup.id,\r",
+									"  \"code\": body.code,\r",
+									"  \"defaultDaysFrom\": body.defaultDaysFrom,\r",
+									"  \"defaultDaysTo\": body.defaultDaysTo,\r",
+									"  \"deliveryPrice\": body.deliveryPrice,\r",
+									"  \"deliveryPriceBorder\": body.deliveryPriceBorder,\r",
+									"  \"deliveryPriceAfterBorder\": body.deliveryPriceAfterBorder,\r",
+									"  \"deliveryMinDays\": body.deliveryMinDays,\r",
+									"  \"cutoffTime\": body.cutoffTime,\r",
+									"  \"consolidationHours\": body.consolidationHours,\r",
+									"  \"gapHours\": body.gapHours,\r",
+									"  \"priorityCoefficient\": body.priorityCoefficient,\r",
+									"  \"maxDaysCoefficient\": body.maxDaysCoefficient,\r",
+									"  \"tariffCoefficient\": body.tariffCoefficient,\r",
+									"  \"winnerPercent\": body.winnerPercent,\r",
+									"  \"maxPrice\": body.maxPrice,\r",
+									"  \"restrictionByPriceIsActive\": body.restrictionByPriceIsActive,\r",
+									"  \"restrictionByPriceMessageId\": body.restrictionByPriceMessage.id,\r",
+									"  \"restrictionByPricePopupId\": body.restrictionByPricePopup.id,\r",
+									"  \"maxQuantity\": body.maxQuantity,\r",
+									"  \"restrictionByQuantityIsActive\": body.restrictionByQuantityIsActive,\r",
+									"  \"restrictionByQuantityMessageId\": body.restrictionByQuantityMessage.id,\r",
+									"  \"restrictionByQuantityPopupId\": body.restrictionByQuantityPopup.id,\r",
+									"  \"maxQuantityPerArticle\": body.maxQuantityPerArticle,\r",
+									"  \"restrictionByQuantityPerArticleIsActive\": body.restrictionByQuantityPerArticleIsActive,\r",
+									"  \"restrictionByQuantityPerArticleMessageId\": body.restrictionByQuantityPerArticleMessage.id,\r",
+									"  \"restrictionByQuantityPerArticlePopupId\": body.restrictionByQuantityPerArticlePopup.id,\r",
+									"  \"isVisibleWhileRestricted\": body.isVisibleWhileRestricted,\r",
+									"  \"isActive\": true,\r",
+									"  \"paymentMethodToDeliveryType\": [\r",
+									"    {\r",
+									"      \"paymentMethodId\": body.paymentMethodToDeliveryType[0].paymentMethod.id,\r",
+									"      \"messageId\": body.paymentMethodToDeliveryType[0].message.id,\r",
+									"      \"maxPrice\": body.paymentMethodToDeliveryType[0].maxPrice,\r",
+									"      \"isVisibleWhileRestricted\": body.paymentMethodToDeliveryType[0].isVisibleWhileRestricted,\r",
+									"      \"paymentMethodCategoryRestrictions\": [\r",
+									"        {\r",
+									"          \"categoryId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].category.id,\r",
+									"          \"messageId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].message.id,\r",
+									"          \"isActive\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive\r",
+									"        }\r",
+									"      ]\r",
+									"    }\r",
+									"      ],\r",
+									"    \r",
+									"    \"categoryDeliveryTypeRestrictions\": [\r",
+									"    {\r",
+									"      \"categoryId\": body.categoryDeliveryTypeRestrictions[0].category.id,\r",
+									"      \"messageId\": body.categoryDeliveryTypeRestrictions[0].message.id,\r",
+									"      \"popupId\": body.categoryDeliveryTypeRestrictions[0].popup.id,\r",
+									"      \"isActive\": body.categoryDeliveryTypeRestrictions[0].isActive\r",
+									"    }\r",
+									"    \r",
+									"  ],\r",
+									"  \"intervals\": [\r",
+									"    {\r",
+									"      \"id\": body.intervals[0].id,\r",
+									"      \"clientTimeFrom\": body.intervals[0].clientTimeFrom,\r",
+									"      \"clientTimeTo\": body.intervals[0].clientTimeTo,\r",
+									"      \"tkTimeFrom\": body.intervals[0].tkTimeFrom,\r",
+									"      \"tkTimeTo\": body.intervals[0].tkTimeTo,\r",
+									"      \"dayOfWeek\": body.intervals[0].dayOfWeek,\r",
+									"      \"code\": body.intervals[0].code,\r",
+									"      \"createdAt\": body.intervals[0].createdAt,\r",
+									"      \"updatedAt\": body.intervals[0].updatedAt\r",
+									"    },\r",
+									"    {\r",
+									"      \"id\": body.intervals[1].id,\r",
+									"      \"clientTimeFrom\": body.intervals[1].clientTimeFrom,\r",
+									"      \"clientTimeTo\": body.intervals[1].clientTimeTo,\r",
+									"      \"tkTimeFrom\": body.intervals[1].tkTimeFrom,\r",
+									"      \"tkTimeTo\": body.intervals[1].tkTimeTo,\r",
+									"      \"dayOfWeek\": body.intervals[1].dayOfWeek,\r",
+									"      \"code\": body.intervals[1].code,\r",
+									"      \"createdAt\": body.intervals[1].createdAt,\r",
+									"      \"updatedAt\": body.intervals[1].updatedAt\r",
+									"    }\r",
+									"  ]\r",
+									"}\r",
+									"\r",
+									"pm.request.body.raw = newbody;\r",
+									"\r",
+									"pm.collectionVariables.set(\"newDT\", newbody);\r",
+									"console.log(\"newDT\", newbody)\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "a34ef7e3-c552-4d10-bc32-032f9825ce0b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Статус доставки false\" , function () {\r",
+									"    pm.expect(jsonData.isActive).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "a4c6f5da-0359-45f3-bc2f-21f0119a08a9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "04b228a6-2a07-42c8-a069-ab1d52d9402e",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Процент приоритета - 70/30",
 					"event": [
 						{
@@ -16350,45 +16529,45 @@
 	],
 	"variable": [
 		{
-			"id": "4004fd4b-9359-4d0a-80b4-09bbdc0de4b7",
+			"id": "069b0cca-2a97-40e4-a377-d08a0feb9ebd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a384117e-e819-4dae-93bc-09bdaf961493",
+			"id": "b9ef08a4-9ec1-4a5a-a85b-74c5261ea69c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "34ffcaea-b02d-4ca1-87a3-368edeea188d",
+			"id": "3844c1b8-aa4a-4903-ba22-22bb0f5cf36a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "313b9174-1b46-452e-ade9-5084e61b0340",
+			"id": "177b0df1-e7dc-452d-9722-cc8cca54eecb",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "edd826dd-cfcf-4c58-b665-fd8eb1af7e5f",
+			"id": "a90826a2-29dd-43b4-a349-3c4ba0607efa",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c5c52197-dd35-45ff-9a38-7bd26f3eb8d5",
+			"id": "51ba3f36-d338-4479-b4ca-2c1540e2f369",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e0f2f06f-cabb-4e29-9a8a-f8303685c970",
+			"id": "f7e954a5-0b20-4a54-9629-1f1630aa1675",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d49f1458-c96d-44a1-a6c5-24bb5402c881",
+			"id": "5c94758c-c858-4c97-9476-57e16b3fbb8f",
 			"key": "newDT",
 			"value": ""
 		}
