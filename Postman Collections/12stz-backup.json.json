@@ -11279,30 +11279,7 @@
 									"      ],\r",
 									"    \r",
 									"    \"categoryDeliveryTypeRestrictions\": body.categoryDeliveryTypeRestrictions,\r",
-									"  \"intervals\": [\r",
-									"    {\r",
-									"      \"id\": body.intervals[0].id,\r",
-									"      \"clientTimeFrom\": body.intervals[0].clientTimeFrom,\r",
-									"      \"clientTimeTo\": body.intervals[0].clientTimeTo,\r",
-									"      \"tkTimeFrom\": body.intervals[0].tkTimeFrom,\r",
-									"      \"tkTimeTo\": body.intervals[0].tkTimeTo,\r",
-									"      \"dayOfWeek\": body.intervals[0].dayOfWeek,\r",
-									"      \"code\": body.intervals[0].code,\r",
-									"      \"createdAt\": body.intervals[0].createdAt,\r",
-									"      \"updatedAt\": body.intervals[0].updatedAt\r",
-									"    },\r",
-									"    {\r",
-									"      \"id\": body.intervals[1].id,\r",
-									"      \"clientTimeFrom\": body.intervals[1].clientTimeFrom,\r",
-									"      \"clientTimeTo\": body.intervals[1].clientTimeTo,\r",
-									"      \"tkTimeFrom\": body.intervals[1].tkTimeFrom,\r",
-									"      \"tkTimeTo\": body.intervals[1].tkTimeTo,\r",
-									"      \"dayOfWeek\": body.intervals[1].dayOfWeek,\r",
-									"      \"code\": body.intervals[1].code,\r",
-									"      \"createdAt\": body.intervals[1].createdAt,\r",
-									"      \"updatedAt\": body.intervals[1].updatedAt\r",
-									"    }\r",
-									"  ]\r",
+									"  \"intervals\":body.intervals,\r",
 									"}\r",
 									"\r",
 									"\r",
@@ -16891,45 +16868,45 @@
 	],
 	"variable": [
 		{
-			"id": "08d60231-b140-4b2a-85d1-cc587fbec146",
+			"id": "7dad2cfd-2621-4514-ab32-d76ce40cb52e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "82d9f8c4-3cbd-464d-ab3b-2070c9f56c69",
+			"id": "57924a83-2079-4290-a231-8595f8de5ff8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1c596cf4-8bab-4b1e-9152-f6a908839ba6",
+			"id": "22f68e1c-6227-4f56-bc99-e820deb385e3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0d673dca-6995-4d7b-bfa0-7c93e8393048",
+			"id": "37dd20b7-bd29-43ad-bd68-7c54228e32d4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f9f90e50-7f2b-4de2-bf77-cdf8e754bba0",
+			"id": "3c659a35-1ea4-4c91-85f2-ae45ebe2ddaa",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "4318a092-5083-4c4f-9167-99ac1544cc09",
+			"id": "3f4bd0a9-2867-4aa4-8862-63df67bb642d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3a7e0338-ae82-4692-b9e9-877ffbdb2ae4",
+			"id": "5d3df5a1-f9d0-4c5a-8049-728c160501e0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "91aa3f41-6f67-43f4-a16c-fb5ac9ea1aa2",
+			"id": "30509a04-e582-432f-b14d-43d5aa5b4c17",
 			"key": "newDT",
 			"value": ""
 		}
