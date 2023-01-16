@@ -10990,7 +10990,7 @@
 									"body.gapHours = 6\r",
 									"body.cutoffTime = \"19:00\";\r",
 									"body.consolidationHours = 8;\r",
-									"body.priorityCoefficient = 2;\r",
+									"body.priorityCoefficient = 1;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -11010,8 +11010,8 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Ручной приоритет равен 2\" , function () {\r",
-									"    pm.expect(jsonData.priorityCoefficient).to.eql(2);\r",
+									"pm.test(\"Ручной приоритет равен 1\" , function () {\r",
+									"    pm.expect(jsonData.priorityCoefficient).to.eql(1);\r",
 									"  });\r",
 									""
 								],
@@ -11575,7 +11575,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=Вторая ТК для тестов&sort=",
+							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=ТК для тестов(не удалять)&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -11595,7 +11595,7 @@
 								},
 								{
 									"key": "search",
-									"value": "Вторая ТК для тестов"
+									"value": "ТК для тестов(не удалять)"
 								},
 								{
 									"key": "sort",
@@ -12036,6 +12036,183 @@
 							"variable": [
 								{
 									"id": "04b228a6-2a07-42c8-a069-ab1d52d9402e",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "поиск второго типа доставки по названию Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "da288e7e-33b7-4b48-b1be-54b35769f135",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.test(\"Результат поиска есть\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.environment.set(\"id\",jsonData.results[0].id);\r",
+									"console.log(\"id\",jsonData.results[0].id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8a5215f8-fb51-4c82-a757-2c0d015d5859",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=Вторая ТК для тестов&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "40"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "Вторая ТК для тестов"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "поиск второй типа доставки по id Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "26462bb9-ab46-4bfc-8b87-3c7ccd273d24",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var DeliveryType = pm.response.json();\r",
+									"console.log(DeliveryType);\r",
+									"pm.collectionVariables.set(\"DT\", DeliveryType);\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\", jsonData.id);\r",
+									"/*pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
+									"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
+									"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
+									"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
+									"pm.environment.set(\"restrictionByPricePopupId\", jsonData.restrictionByPricePopup.id);\r",
+									"pm.environment.set(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
+									"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+									"pm.environment.set(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)\r",
+									"\r",
+									"let arr = \r",
+									"\r",
+									"\r",
+									"console.log(\"transportCompanyModeId\", jsonData.transportCompanyMode.id)\r",
+									"console.log(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
+									"console.log(\"popupId\", jsonData.popup.id);\r",
+									"console.log(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
+									"console.log(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
+									"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
+									"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
+									"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
+									"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+									"console.log(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)*/\r",
+									"\r",
+									"  \r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"  "
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f1df571b-2553-4386-8122-f60e081510b1",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8cc3314f-cf9f-45b3-8305-9e0fadb0208c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/delivery-type/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "12c46ca4-47a1-46da-99d4-dc591b9c81c0",
 									"key": "id",
 									"value": "{{id}}"
 								}
@@ -16757,45 +16934,45 @@
 	],
 	"variable": [
 		{
-			"id": "d99d6a77-ce81-4e9e-b8fb-a1a354dbb95b",
+			"id": "63509c4f-a6bf-438c-ad10-98090efaec31",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a44d77b5-6c15-4cee-9b3c-9c13d4f3c464",
+			"id": "36a833f2-98cf-453a-9f01-dc52a663f6ac",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "94ff02bd-80b1-44f9-aa1c-84359e66ab0e",
+			"id": "72d7894c-7c31-4cb2-8de6-75b518039fdb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f20198e5-b39b-4c3f-96c5-990432cba4d0",
+			"id": "bfd7c12a-3b9d-447e-939a-b028ce4ee9b4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e7786aaf-0202-4bb2-bc10-f6e7f21d4cd2",
+			"id": "1925ec4d-1e19-467c-bfbd-29a1139c4334",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "405172d6-7bd3-4261-a13d-f5dfd4aa827c",
+			"id": "c14ebd75-180e-42a1-b02a-72d763704389",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a8116fe3-4754-41c8-bae4-85c2fe57f8d6",
+			"id": "922e8e71-c937-4d02-b133-c28185b56f46",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "225d8e15-819c-4bc5-bb1a-9820f4fb514a",
+			"id": "e26e4078-2e85-49f1-8d83-dadf59a98f7c",
 			"key": "newDT",
 			"value": ""
 		}
