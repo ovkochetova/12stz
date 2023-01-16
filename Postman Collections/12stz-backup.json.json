@@ -10978,6 +10978,99 @@
 					"response": []
 				},
 				{
+					"name": "первый тип доставки Ручной приоритет=1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.gapHours = 6\r",
+									"body.cutoffTime = \"19:00\";\r",
+									"body.consolidationHours = 8;\r",
+									"body.priorityCoefficient = 2;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Ручной приоритет равен 2\" , function () {\r",
+									"    pm.expect(jsonData.priorityCoefficient).to.eql(2);\r",
+									"  });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8c865cef-fa3d-431c-af14-3fc7fdce8ce7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "поиск второго типа доставки по названию",
 					"event": [
 						{
@@ -11325,99 +11418,6 @@
 							"variable": [
 								{
 									"id": "04b228a6-2a07-42c8-a069-ab1d52d9402e",
-									"key": "id",
-									"value": "{{id}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Ручной приоритет=2",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "07d64568-113c-475b-948b-c64a2aaae808",
-								"exec": [
-									"let body = pm.collectionVariables.get(\"newDT\");\r",
-									"\r",
-									"body.gapHours = 6\r",
-									"body.cutoffTime = \"19:00\";\r",
-									"body.consolidationHours = 8;\r",
-									"body.priorityCoefficient = 2;\r",
-									"\r",
-									"pm.request.body.raw = body;\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Ручной приоритет равен 2\" , function () {\r",
-									"    pm.expect(jsonData.priorityCoefficient).to.eql(2);\r",
-									"  });\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "8c865cef-fa3d-431c-af14-3fc7fdce8ce7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"url": {
-							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
-							"protocol": "https",
-							"host": [
-								"logistics",
-								"12stz",
-								"dev"
-							],
-							"path": [
-								"api",
-								"v1",
-								"delivery-type",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
 									"key": "id",
 									"value": "{{id}}"
 								}
@@ -16528,45 +16528,45 @@
 	],
 	"variable": [
 		{
-			"id": "be0c4201-dbff-4d5b-8d63-0a9414b4e284",
+			"id": "63b8b43c-73f7-4139-bdaf-2a82870d0dd4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b1657251-ba8b-4495-83be-b2e9c1574633",
+			"id": "bea339e6-e52d-4582-84de-806473bc07f9",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "07eb666e-5483-4631-b1a9-b91d3417ee37",
+			"id": "10bee5ac-fb68-4a5a-8e7a-5780c5728f11",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "820f62ac-4c88-40a6-91f3-3ed5505be696",
+			"id": "6989c08b-481a-4bdc-ad24-c36b5e6e2507",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "03dd02e7-5e02-4b27-a61b-492a1371a959",
+			"id": "62fe889c-144c-433c-af1c-23acc6db30b1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9e01903d-d319-461c-ae4e-757af785d32d",
+			"id": "b1dbcf73-0229-4746-8696-bd28bc41d81c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0bc62daa-b3a4-4fb7-be76-8a4844ae57ad",
+			"id": "e3c4e4f8-638e-4002-90d9-670a47a10de5",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3df988fc-6d6d-495f-9448-b1153c4da57b",
+			"id": "534f2780-85f3-4cde-991b-22b03cfd1cb7",
 			"key": "newDT",
 			"value": ""
 		}
