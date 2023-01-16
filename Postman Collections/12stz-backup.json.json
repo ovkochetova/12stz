@@ -11448,12 +11448,6 @@
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"Вторая ТК для тестов\");\r",
 									"});\r",
 									"\r",
-									"for (let i = 0; i < 20; i++) { \r",
-									"  pm.sendRequest(\"https://logistics.12stz.dev/api/v1/winner/calculate\", function (err, response) {\r",
-									"    console.log(response.json());\r",
-									"});\r",
-									"}\r",
-									"\r",
 									"\r",
 									"\r",
 									"const postRequest = {\r",
@@ -11461,17 +11455,47 @@
 									"  method: 'POST',\r",
 									"  header: {\r",
 									"    'Content-Type': 'application/json',\r",
-									"    'Accept-Encoding':\r",
-									"    'Grpc-Metadata-Api_Key': 'bar'\r",
-									"  },\r",
+									"    'Accept-Encoding':'gzip, deflate, br',\r",
+									"    'Grpc-Metadata-Api_Key': '9902dcfd045723d9479ea310c08a8cb6e4252dfc',\r",
+									"      },\r",
 									"  body: {\r",
 									"    mode: 'raw',\r",
-									"    raw: JSON.stringify({ key: 'this is json' })\r",
+									"    raw: JSON.stringify({ country_iso_code: \"AQ\",\r",
+									"    country_iso_code: \"AQ\",\r",
+									"  region_geo_id: \"\",\r",
+									"  city_geo_id: \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r",
+									"  settlement_geo_id: \"\",\r",
+									"  street_geo_id: \"\",\r",
+									"  house_geo_id: \"\",\r",
+									"  geo_id: \"\",\r",
+									"  cart_id: \"{{cart_id}}\",\r",
+									"  order_datetime:\"2023-01-10 08:00:00\" ,\r",
+									"  cart: [\r",
+									"    {\r",
+									"      \"category_id\": 100144,\r",
+									"      \"quantity\": 1,\r",
+									"      \"price\": 15000.00,\r",
+									"      \"is_present\": false\r",
+									"    },\r",
+									"    {\r",
+									"      \"category_id\": 100105,\r",
+									"      \"quantity\": 1,\r",
+									"      \"price\": 2000.00,\r",
+									"      \"is_present\": false\r",
+									"    }      \r",
+									"  ]   \r",
+									"   \r",
+									"     })\r",
 									"  }\r",
 									"};\r",
-									"pm.sendRequest(postRequest, (error, response) => {\r",
+									"\r",
+									"for (let i = 0; i < 20; i++) { \r",
+									"  pm.sendRequest(postRequest, (error, response) => {\r",
 									"  console.log(error ? error : response.json());\r",
-									"});"
+									"  })};\r",
+									"  \r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -16710,7 +16734,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ea8874a1-0bec-4057-a90e-35115252aaca",
+				"id": "c97f6e42-e1e9-4a4a-9966-7db8a226cf8d",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -16720,7 +16744,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "d6c33aca-3c97-4120-aea1-78ca00b5b799",
+				"id": "4e906337-9f33-49fb-8de2-84c65d147823",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -16730,45 +16754,45 @@
 	],
 	"variable": [
 		{
-			"id": "a0896261-d5af-4a35-bf66-f949af286453",
+			"id": "5bdf9e66-d115-4a3b-89bf-6d4f20c5269f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "716e99b0-dc50-43fc-acab-2ceb5d7ec755",
+			"id": "1747c858-0c13-45f9-9346-0ffd5d81bd55",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f4230ec4-f5eb-44e4-b286-4f58e3264c09",
+			"id": "ccf76a8a-813a-49c5-890c-2b38a9ffc2fc",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4b463baf-58a7-41eb-828f-338e526c0ebd",
+			"id": "514641db-3fb4-43d3-8972-bf03ddb49d36",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a3b8b7fe-74b2-4592-9544-00cabf2a62b2",
+			"id": "660b3553-5596-4da4-9eb2-bc8516128cc7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "126fe543-3578-40cd-a353-26b36c3b5cbd",
+			"id": "61953dcd-31dd-4ed9-8ed8-a0362560da09",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f2638ec1-38ab-471f-a93e-43a2586307db",
+			"id": "de2b6169-cc7d-4c01-be93-2b97e3d77926",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fdd87d1d-3dc0-4ec2-bf9e-83c65dd77aaa",
+			"id": "302df185-c632-4614-8acc-4d04bb071b09",
 			"key": "newDT",
 			"value": ""
 		}
