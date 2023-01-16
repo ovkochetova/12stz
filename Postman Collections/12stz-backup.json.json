@@ -11448,11 +11448,13 @@
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"Вторая ТК для тестов\");\r",
 									"});\r",
 									"\r",
-									"for (let i = 0; i < 21; i++) { \r",
-									"  pm.sendRequest(\"https://logistics.12stz.dev/api/v1/winner/calculate\", function (err, response) {\r",
+									"for (let i = 0; i < 20; i++) { \r",
+									"  pm.sendRequest(\"https://logistics.12stz.dev/api/v1/winner/calculate/post\", function (err, response) {\r",
 									"    console.log(response.json());\r",
 									"});\r",
-									"}"
+									"}\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -16711,45 +16713,45 @@
 	],
 	"variable": [
 		{
-			"id": "7676969f-d41b-46b4-b4cc-311f2d854bd8",
+			"id": "c9190188-3f6c-4ace-8770-c0c2ae2e20bf",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "23cf358a-e813-4230-999f-9fca864c070e",
+			"id": "58f54383-3063-4e78-9257-27eed5c34252",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e657ccb2-f7f4-4895-bed5-7e253b6ae3ef",
+			"id": "4c698c01-3f31-4757-97a7-926c62302d35",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fd8cb7ea-77d6-4821-b845-4f9637b6eb21",
+			"id": "95fcd76d-b314-4747-85c3-c2bf3b8ae9a7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "6b5ccebf-8971-4682-9553-39d60a68f0cd",
+			"id": "cbae4c06-0d8f-4db9-a49f-6115f813bfd0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c3051b45-680c-4f79-925b-ffe10d1f6153",
+			"id": "174a31d2-ccb5-4f3a-9406-7cfd2c9ff163",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "06d2a903-3a63-4372-98fa-503b955fa455",
+			"id": "b6f857e2-7492-4ded-a970-d381ffcca0ee",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "576c5b6e-ca0a-46cd-b244-c7013048b91b",
+			"id": "b6a427a2-4708-49e0-8a76-c14035d8041c",
 			"key": "newDT",
 			"value": ""
 		}
