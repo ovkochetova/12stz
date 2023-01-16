@@ -11273,13 +11273,8 @@
 									"      \"messageId\": body.paymentMethodToDeliveryType[0].message.id,\r",
 									"      \"maxPrice\": body.paymentMethodToDeliveryType[0].maxPrice,\r",
 									"      \"isVisibleWhileRestricted\": body.paymentMethodToDeliveryType[0].isVisibleWhileRestricted,\r",
-									"      \"paymentMethodCategoryRestrictions\": [\r",
-									"        {\r",
-									"          \"categoryId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].category.id,\r",
-									"          \"messageId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].message.id,\r",
-									"          \"isActive\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive\r",
-									"        }\r",
-									"      ]\r",
+									"      \"paymentMethodCategoryRestrictions\": body.paymentMethodCategoryRestrictions,\r",
+									"           \r",
 									"    }\r",
 									"      ],\r",
 									"    \r",
@@ -16904,45 +16899,45 @@
 	],
 	"variable": [
 		{
-			"id": "e226374f-fdd3-411a-9b50-01070f337857",
+			"id": "aa475e25-d999-44ff-b85b-aadc9c0ce03a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa08a93b-5719-4c92-998d-2917affd7fa9",
+			"id": "031e1a1f-7cdf-4545-aef5-068673d5d75e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "48fb9fa5-1c6d-41f6-b9fa-60953690f460",
+			"id": "18e035d7-7a63-483b-8484-614cdef36a98",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6de780c0-f047-4f4a-a3ea-9ad41e797bd4",
+			"id": "db32dd4e-96f1-4c29-a2a2-ab4a4fbd1a34",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "68cd47a7-bc90-4640-88b8-5e395f06ee3d",
+			"id": "9554fc5c-87c9-49f9-92f3-44659e182106",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2be6a480-7b04-4ebb-a49a-13dc4c803522",
+			"id": "59ebe390-c0c7-401f-a370-bdcc15085280",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "fcf63738-d4d5-47e6-af68-d35e7c157edc",
+			"id": "60bed02f-f1bd-46fc-a718-929f0b3aff73",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c0e7f0e7-ba6e-4f31-a038-fb6599ee1b11",
+			"id": "58daafa6-2776-4436-8731-e8d2ecae08d9",
 			"key": "newDT",
 			"value": ""
 		}
