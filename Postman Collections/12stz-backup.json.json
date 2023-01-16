@@ -11427,7 +11427,7 @@
 					"response": []
 				},
 				{
-					"name": "Ручной приоритет = 1",
+					"name": "Ручной приоритет = 1 (запустить run 20 раз)",
 					"event": [
 						{
 							"listen": "test",
@@ -11446,7 +11446,13 @@
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Вторая ТК для тестов\", function () {\r",
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"Вторая ТК для тестов\");\r",
-									"});"
+									"});\r",
+									"\r",
+									"for (let i = 0; i < 21; i++) { \r",
+									"  pm.sendRequest(\"https://logistics.12stz.dev/api/v1/winner/calculate\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});\r",
+									"}"
 								],
 								"type": "text/javascript"
 							}
@@ -11662,7 +11668,7 @@
 					"response": []
 				},
 				{
-					"name": "Ручной приоритет=4",
+					"name": "Ручной приоритет=4 (запустить run 20 раз)",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -16685,7 +16691,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "138ef4e3-6e53-4ee3-a9b3-d3933bd6da61",
+				"id": "ea8874a1-0bec-4057-a90e-35115252aaca",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -16695,7 +16701,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "461fd005-8af7-4288-a77f-7f9684f871c1",
+				"id": "d6c33aca-3c97-4120-aea1-78ca00b5b799",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -16705,45 +16711,45 @@
 	],
 	"variable": [
 		{
-			"id": "9ee5d953-a0e8-4a3b-8c98-501a2271315e",
+			"id": "7676969f-d41b-46b4-b4cc-311f2d854bd8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "114a10ff-ee89-46a0-9b8d-71855f940ea1",
+			"id": "23cf358a-e813-4230-999f-9fca864c070e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b8a8440b-c17a-4434-8b83-40bf51480279",
+			"id": "e657ccb2-f7f4-4895-bed5-7e253b6ae3ef",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f9f5f64-8057-4518-907b-05c0efb3fa0c",
+			"id": "fd8cb7ea-77d6-4821-b845-4f9637b6eb21",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "46901ea2-d24b-44c6-b49d-21ad914bca1e",
+			"id": "6b5ccebf-8971-4682-9553-39d60a68f0cd",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "18d90640-ebc6-42e5-ae70-3105f95cda44",
+			"id": "c3051b45-680c-4f79-925b-ffe10d1f6153",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "aac18594-4aaa-453e-90ba-459d26742f8f",
+			"id": "06d2a903-3a63-4372-98fa-503b955fa455",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "89030a0a-620a-4fd3-94c8-d54f28a7f415",
+			"id": "576c5b6e-ca0a-46cd-b244-c7013048b91b",
 			"key": "newDT",
 			"value": ""
 		}
