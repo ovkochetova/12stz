@@ -11472,7 +11472,7 @@
 									"  order_datetime:\"2023-01-10 08:00:00\" ,\r",
 									"  cart: [\r",
 									"    {\r",
-									"      category_id\": 100144,\r",
+									"      category_id: 100144,\r",
 									"      quantity: 1,\r",
 									"      price: 15000.00,\r",
 									"      is_present: false\r",
@@ -16754,45 +16754,45 @@
 	],
 	"variable": [
 		{
-			"id": "47ed14c0-e7da-4c65-bf92-0219395bb0ed",
+			"id": "b6bd4d9c-b608-408c-986b-537b15633201",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "24a060d8-fd66-47c0-a9df-e79ddb08dfa3",
+			"id": "5c976228-4e0a-430e-9fc3-1ed3dee55aa7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fd8adcaa-5b75-4dd4-9241-5cc084c9172f",
+			"id": "d7ba9713-75d9-4114-a6ef-51b9a2d0cfc3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "afd04e00-cc2a-444b-b5a4-a1fa7ec7cdd6",
+			"id": "018e354a-3d4b-48cb-8e3c-e04d98cb21e7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9e71d0e9-9541-4964-91d9-396d379aff09",
+			"id": "8d4c5f71-b655-432b-af08-535fc67f6b92",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "cabb3bc1-28e0-4bbd-8dba-c9cd0d842222",
+			"id": "848b71aa-3840-4cae-ad0f-16ae9c147330",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "63769c55-c744-4b9f-8eb3-fbd51f68a9aa",
+			"id": "d64312a7-7c24-41cf-ad10-599f7be8908e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "bf98c33d-19e5-45a9-bed1-13d20d3d0886",
+			"id": "6cfb502d-d6ce-4382-9a7b-38f0ee1c54cf",
 			"key": "newDT",
 			"value": ""
 		}
