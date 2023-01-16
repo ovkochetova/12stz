@@ -11161,9 +11161,8 @@
 									"console.log('DeliveryType',DeliveryType);\r",
 									"pm.collectionVariables.set(\"DT\", DeliveryType);\r",
 									"\r",
-									"\r",
-									"/*var jsonData = JSON.parse(responseBody);*/\r",
-									"//pm.environment.set(\"id\", jsonData.id);\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\", jsonData.id);\r",
 									"\r",
 									"\r",
 									""
@@ -16905,45 +16904,45 @@
 	],
 	"variable": [
 		{
-			"id": "ead9a5e2-1f50-4270-9d3f-1b6dc19bb6dc",
+			"id": "f666683b-e9ea-4ad0-aca5-9d9ea5b55201",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "47c8a44a-b055-4bba-984e-f915ff33753f",
+			"id": "0ace6f8a-f83d-48c2-af23-ab2d3d2a1d2f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a998de67-c5a0-498a-ad20-51771f2e175d",
+			"id": "1337e7cd-2481-49cd-b8ed-6152b378878b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2cfcc174-0ab4-45ca-8bf6-6e3622b20fd9",
+			"id": "b8f1641f-c7ca-475a-ac97-0253d5b9d74b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ce27be9a-3323-44e5-b3f4-753143d711d0",
+			"id": "20d27295-fd65-4be5-a1ea-2a66a399cbbf",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ec45a6c5-e899-4a00-ae2c-98070b6fb6a0",
+			"id": "94152518-dc50-41b1-9380-a8daa698ea87",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "8d8446b7-c32c-439b-86ff-0318d5cbab71",
+			"id": "89b26d7f-584d-43b7-a532-3bf027004d02",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "333c0e00-195b-446d-92f1-a677af6924fc",
+			"id": "8d70e521-fb19-417c-8c1f-b2005f8a4585",
 			"key": "newDT",
 			"value": ""
 		}
