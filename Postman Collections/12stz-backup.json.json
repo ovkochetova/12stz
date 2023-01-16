@@ -11449,12 +11449,29 @@
 									"});\r",
 									"\r",
 									"for (let i = 0; i < 20; i++) { \r",
-									"  pm.sendRequest(\"https://logistics.12stz.dev/api/v1/winner/calculate/post\", function (err, response) {\r",
+									"  pm.sendRequest(\"https://logistics.12stz.dev/api/v1/winner/calculate\", function (err, response) {\r",
 									"    console.log(response.json());\r",
 									"});\r",
 									"}\r",
 									"\r",
-									""
+									"\r",
+									"\r",
+									"const postRequest = {\r",
+									"  url: 'https://logistics.12stz.dev/api/v1/winner/calculate/post',\r",
+									"  method: 'POST',\r",
+									"  header: {\r",
+									"    'Content-Type': 'application/json',\r",
+									"    'Accept-Encoding':\r",
+									"    'Grpc-Metadata-Api_Key': 'bar'\r",
+									"  },\r",
+									"  body: {\r",
+									"    mode: 'raw',\r",
+									"    raw: JSON.stringify({ key: 'this is json' })\r",
+									"  }\r",
+									"};\r",
+									"pm.sendRequest(postRequest, (error, response) => {\r",
+									"  console.log(error ? error : response.json());\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -16713,45 +16730,45 @@
 	],
 	"variable": [
 		{
-			"id": "c9190188-3f6c-4ace-8770-c0c2ae2e20bf",
+			"id": "a0896261-d5af-4a35-bf66-f949af286453",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "58f54383-3063-4e78-9257-27eed5c34252",
+			"id": "716e99b0-dc50-43fc-acab-2ceb5d7ec755",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4c698c01-3f31-4757-97a7-926c62302d35",
+			"id": "f4230ec4-f5eb-44e4-b286-4f58e3264c09",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "95fcd76d-b314-4747-85c3-c2bf3b8ae9a7",
+			"id": "4b463baf-58a7-41eb-828f-338e526c0ebd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cbae4c06-0d8f-4db9-a49f-6115f813bfd0",
+			"id": "a3b8b7fe-74b2-4592-9544-00cabf2a62b2",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "174a31d2-ccb5-4f3a-9406-7cfd2c9ff163",
+			"id": "126fe543-3578-40cd-a353-26b36c3b5cbd",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b6f857e2-7492-4ded-a970-d381ffcca0ee",
+			"id": "f2638ec1-38ab-471f-a93e-43a2586307db",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b6a427a2-4708-49e0-8a76-c14035d8041c",
+			"id": "fdd87d1d-3dc0-4ec2-bf9e-83c65dd77aaa",
 			"key": "newDT",
 			"value": ""
 		}
