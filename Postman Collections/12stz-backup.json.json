@@ -11048,7 +11048,7 @@
 					"response": []
 				},
 				{
-					"name": "поиск второй ТК по id",
+					"name": "поиск второй тира доставки по id",
 					"event": [
 						{
 							"listen": "test",
@@ -11155,7 +11155,7 @@
 					"response": []
 				},
 				{
-					"name": "добавление второй ТК в соревнование",
+					"name": "добавление второго типа доставки в соревнование",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -16528,45 +16528,45 @@
 	],
 	"variable": [
 		{
-			"id": "c9c9d89d-64a4-45df-b3c0-ce90e53e3e10",
+			"id": "be0c4201-dbff-4d5b-8d63-0a9414b4e284",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "05c40e3c-e53a-4729-aa29-09e6045e6f23",
+			"id": "b1657251-ba8b-4495-83be-b2e9c1574633",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d4ff6ffb-84ba-4df4-a10f-7da9c329ee2b",
+			"id": "07eb666e-5483-4631-b1a9-b91d3417ee37",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6111146a-81f2-4b50-b632-f578a4aaafa3",
+			"id": "820f62ac-4c88-40a6-91f3-3ed5505be696",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7671b397-96f0-4a97-8600-c603223a8c3d",
+			"id": "03dd02e7-5e02-4b27-a61b-492a1371a959",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d9dd7e5a-0ddd-464b-b171-78c9c36c62a6",
+			"id": "9e01903d-d319-461c-ae4e-757af785d32d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0a49dd93-c5f8-4c75-b4ef-bc69b6410618",
+			"id": "0bc62daa-b3a4-4fb7-be76-8a4844ae57ad",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "846e03fe-5e5f-4525-9e4a-307a807459c9",
+			"id": "3df988fc-6d6d-495f-9448-b1153c4da57b",
 			"key": "newDT",
 			"value": ""
 		}
