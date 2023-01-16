@@ -11448,7 +11448,7 @@
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"Вторая ТК для тестов\");\r",
 									"});\r",
 									"\r",
-									"\r",
+									"/*\r",
 									"\r",
 									"const postRequest = {\r",
 									"  url: 'https://logistics.12stz.dev/api/v1/winner/calculate/post',\r",
@@ -11491,12 +11491,13 @@
 									"\r",
 									"for (let i = 0; i < 20; i++) { \r",
 									"  pm.sendRequest(postRequest, (error, response) => {\r",
+									"  console.log(i)    \r",
 									"  console.log(error ? error : response.json());\r",
-									"  console.log(i)\r",
+									"  \r",
 									"  })};\r",
 									"  \r",
 									"\r",
-									""
+									"*/"
 								],
 								"type": "text/javascript"
 							}
@@ -16755,45 +16756,45 @@
 	],
 	"variable": [
 		{
-			"id": "9bc4097d-df19-4d30-a290-1aeb624c409d",
+			"id": "ad656abb-9bef-48a3-9a94-7461248ffcc3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "26b73239-2d8f-437c-ad85-edb3faa7a328",
+			"id": "42e77098-0e61-45e2-8266-d2c2e0ce8016",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b8d923a-5704-41ed-81b1-cdd72170e170",
+			"id": "bb698523-1d4d-4609-9db0-c8c95cc4140c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f36a01a5-e457-4c58-a121-d27d0351f4ee",
+			"id": "6c2e42a2-391a-4827-807c-9c1f6fed0c12",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "abf6351d-cd71-475b-9872-59531907388c",
+			"id": "ce048e32-882b-4081-8ed9-5800e5b6b508",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a1c02d6d-b92e-434a-b3b2-74a1f0546d4a",
+			"id": "5753170b-f7a6-435e-85dc-50b50c263006",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3732c082-4b25-4113-b15d-e7aa240d39a0",
+			"id": "704f230c-8ea1-43b8-8e7e-caa19686a719",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e8238baa-b3a4-483b-895b-ce8d1cce8c46",
+			"id": "c452066e-0060-4904-8628-048718cc4e23",
 			"key": "newDT",
 			"value": ""
 		}
