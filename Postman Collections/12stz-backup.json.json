@@ -13415,7 +13415,7 @@
 					"response": []
 				},
 				{
-					"name": "Чекбокс Скрыть для категории",
+					"name": "Чекбокс Скрыть для категории не Активен",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -13425,7 +13425,7 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"body.isActive = true;\r",
-									"body.restrictionByPriceIsActive = true;\r",
+									"body.\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -17636,45 +17636,45 @@
 	],
 	"variable": [
 		{
-			"id": "5d507c96-0434-4c6f-b051-f952c18ac106",
+			"id": "dc3d15a6-c743-4ae6-ad3f-c94ff0441273",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9be948c7-a11d-487f-8f27-98586ca4a69e",
+			"id": "9f395579-7e5b-4520-9fb0-8a58cc9e53fd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1c62d54d-46e6-44d9-b334-3df0d4d0a3af",
+			"id": "81ea6ea2-c3fb-4b12-b206-7af9f0f19bd5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e1517f6f-4cdc-4511-a2de-02abf14a433f",
+			"id": "7b5c99a5-2182-4668-aa22-66f8783d1e54",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ccb40634-4fc1-4784-b84d-d8c36daf5e79",
+			"id": "b4492eb3-470e-4f98-947b-1348a66cd18a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7afd31e5-e61c-4ac1-976f-fb818aad5e8c",
+			"id": "242d29b2-55c1-4acb-ac4a-2cb23f30e1ce",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f559c050-fcc3-4458-aa47-b6627c522076",
+			"id": "f1c20609-090f-4ff8-9fe9-20d8869d3e3c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a94b359b-92e5-4ad7-a1db-f4a9dceea6f2",
+			"id": "ee3da21c-6f3e-45c2-91b8-61228e73362c",
 			"key": "newDT",
 			"value": ""
 		}
