@@ -11620,7 +11620,7 @@
 					"response": []
 				},
 				{
-					"name": "Ручной приоритет=4 (запустить run 20 раз)",
+					"name": "Ручной приоритет=4",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -11712,7 +11712,7 @@
 					"response": []
 				},
 				{
-					"name": "Ручной приоритет = 4",
+					"name": "Ручной приоритет = 4 (запустить run 20 раз)",
 					"event": [
 						{
 							"listen": "test",
@@ -12523,7 +12523,7 @@
 					"response": []
 				},
 				{
-					"name": "отключение второго типа доставки(isActive=false)",
+					"name": "отключение второго типа доставки (isActive=false)",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -16960,7 +16960,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ed64f70e-02b6-4e36-baac-66690db1252e",
+				"id": "9d036a4a-7622-4e6e-8f94-b663b24c5c0c",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -16970,7 +16970,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "143e4dcc-d719-498f-8f46-d700beac9e43",
+				"id": "3c6e1b37-9d3a-4d20-aac4-6aff6efd582d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -16980,45 +16980,45 @@
 	],
 	"variable": [
 		{
-			"id": "d753ee29-e630-4c06-ba4d-650ae1c5fcfc",
+			"id": "e95c50d7-c2a6-4075-ae51-cf4ca73bd885",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8c55320-1d45-4109-9ede-76825b357b11",
+			"id": "93c54c45-5a39-48f1-b3f8-613ed7787453",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "61d8a2cf-8f28-4951-83ee-da4ec979ed9a",
+			"id": "aed25236-a9b9-4009-b747-fe8eca7910f3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "418d9469-fcc8-41d2-bfc8-c855eac31089",
+			"id": "f08e3ec3-6015-4c4e-ad6e-3821ede33d59",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "79cc2f80-eb7d-477b-84ee-8d346b4a0ca7",
+			"id": "ed323c1e-94ac-4fd7-a1f5-5e41ed39ece4",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "dd7302d3-8c81-4148-a698-f61c67a953d9",
+			"id": "d1677431-2867-4e6d-81fc-5444874ec0c0",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4ae5552a-cb3c-480a-8aa6-25a5e718fc47",
+			"id": "0e9ece94-70eb-48f5-a7b9-be7b4d4aa29f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8fe3c918-7564-4fd5-a6cb-7cfc77dce7ac",
+			"id": "946d79a7-90c4-4f2f-a39d-47bf4e2b3341",
 			"key": "newDT",
 			"value": ""
 		}
