@@ -12931,6 +12931,64 @@
 					"response": []
 				},
 				{
+					"name": "Ручной приоритет - 60/40 Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Вторая ТК для тестов\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"Вторая ТК для тестов\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "10adb2e4-2003-452c-9cb4-f62a1d03e05a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Максимальная сумма оплаты 500 000",
 					"event": [
 						{
@@ -17152,45 +17210,45 @@
 	],
 	"variable": [
 		{
-			"id": "3e40f425-0f4d-48f6-965a-db803beda876",
+			"id": "8ad13d06-8c8a-4138-ba71-73ea50cd3524",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "60d28e45-c08a-4a2a-ba44-45aa2b3ba636",
+			"id": "f1a56fb3-4fb9-4909-aab9-4f7ccc29430f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1d3ad1fc-2ce1-4d1b-8ae2-2b468d9b881c",
+			"id": "c812eb62-e967-4839-b9cf-014044b2452d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fbe63e4a-d1b1-461d-a3fd-a655e1157d88",
+			"id": "21b01280-3493-4c80-af4b-5fa1355b0971",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a56dd477-7c56-4ac0-ae28-cce533d38370",
+			"id": "b340a6af-b750-428d-b012-b484272cf6cb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b464838c-e60a-4323-98cf-020c97306b08",
+			"id": "e4acae24-6a7d-4206-aba6-bd376d64d17c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "2c3528d2-94e7-4a00-bcd3-bcd1ef49141b",
+			"id": "12fa129d-92f2-4f71-a5a7-23e3690a699f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9021c6e8-03e2-4c78-ab92-97f610de2420",
+			"id": "7974fc57-1b09-498c-9bb0-372c2613fa58",
 			"key": "newDT",
 			"value": ""
 		}
