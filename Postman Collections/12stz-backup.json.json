@@ -12664,6 +12664,183 @@
 					"response": []
 				},
 				{
+					"name": "поиск первого типа доставки по названию",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "da288e7e-33b7-4b48-b1be-54b35769f135",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.test(\"Результат поиска есть\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.environment.set(\"id\",jsonData.results[0].id);\r",
+									"console.log(\"id\",jsonData.results[0].id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "38889c60-6cac-4b4e-a69c-4a06f6868d36",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=ТК для тестов(не удалять)&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "40"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "ТК для тестов(не удалять)"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "поиск первого типа доставки по id Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "26462bb9-ab46-4bfc-8b87-3c7ccd273d24",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var DeliveryType = pm.response.json();\r",
+									"console.log(DeliveryType);\r",
+									"pm.collectionVariables.set(\"DT\", DeliveryType);\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\", jsonData.id);\r",
+									"/*pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
+									"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
+									"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
+									"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
+									"pm.environment.set(\"restrictionByPricePopupId\", jsonData.restrictionByPricePopup.id);\r",
+									"pm.environment.set(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
+									"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
+									"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+									"pm.environment.set(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)\r",
+									"\r",
+									"let arr = \r",
+									"\r",
+									"\r",
+									"console.log(\"transportCompanyModeId\", jsonData.transportCompanyMode.id)\r",
+									"console.log(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
+									"console.log(\"popupId\", jsonData.popup.id);\r",
+									"console.log(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
+									"console.log(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
+									"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
+									"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
+									"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
+									"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
+									"console.log(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)*/\r",
+									"\r",
+									"  \r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"  "
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f1df571b-2553-4386-8122-f60e081510b1",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "a7d05876-95ac-4f3b-ac9a-0c9031c99800",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/delivery-type/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "12c46ca4-47a1-46da-99d4-dc591b9c81c0",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Максимальная сумма оплаты 300 000",
 					"event": [
 						{
@@ -16979,45 +17156,45 @@
 	],
 	"variable": [
 		{
-			"id": "59e4816c-5e96-4fce-9c9f-3c3d9d6c0d94",
+			"id": "951ba136-7e30-4781-9b11-b43462aa928f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e527d32d-6627-4500-848a-b91ec5c6ae6b",
+			"id": "ffd7bd22-5aa1-47dc-bdbb-cdda01ece6a8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "628b5ace-41eb-49f3-b7a9-1675f7a055f3",
+			"id": "d62dcfcf-4e6e-42be-9332-fb0314fb4139",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8af88f8e-279d-44f8-a4ea-de7fc5c3da12",
+			"id": "5dd6c11c-99f1-4f00-8696-5be74673d337",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d4714f09-f7cd-4871-ae1f-506218314a0e",
+			"id": "875bee09-1694-49d4-a7c3-1678d8f8c499",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1853f973-d716-4309-a3d0-1ddf99f0eeab",
+			"id": "173d75e8-0347-4e43-a636-1391d82407b1",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "96acb133-f0d7-4516-9245-ad64f7122f42",
+			"id": "71c3db8a-f8a4-4fb9-924f-37352e8f63a0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "63fd7044-9543-4cde-9a39-41d683728e6d",
+			"id": "48fb93d5-8de6-44e8-a84d-f077b57c072f",
 			"key": "newDT",
 			"value": ""
 		}
