@@ -12871,9 +12871,8 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Экспресс-доставка в действии\" , function () {\r",
-									"    pm.expect(jsonData.gapHours).to.eql(0);\r",
-									"    pm.expect(jsonData.cutoffTime).to.eql(\"12:00\");\r",
-									"    pm.expect(jsonData.consolidationHours).to.eql(3);\r",
+									"    pm.expect(jsonData.maxPrice).to.eql(300000);\r",
+									"    \r",
 									"});\r",
 									""
 								],
@@ -17154,45 +17153,45 @@
 	],
 	"variable": [
 		{
-			"id": "5e4fadb3-2d16-48b1-a648-fe396f89717b",
+			"id": "3ebc1a37-562f-4365-83cf-a9b2233db46d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d94285fa-3111-430c-8a68-e243c3ed583d",
+			"id": "199a748c-c3c2-4e3e-8617-1834dd747a89",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "28f859c5-e21b-4e86-9e8f-096f44cfe4d2",
+			"id": "50673937-d377-419d-9185-7fd972b5bdc6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d1336c2-47f0-4c19-b77d-811caef76a2f",
+			"id": "e73fda8e-f65d-44c2-a2e3-2836ce4e2d6e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "acc844a3-c929-4a58-a2cc-32a7538c35cf",
+			"id": "1277761a-0070-4ecb-9023-60e5c2fd81fe",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ac0b5745-6fac-451d-b180-ac19b2a3c9ff",
+			"id": "41ecf32d-513e-4825-82c4-2d27322c9272",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6d37ceaa-6e28-4b8f-9d2b-cfcc846d462a",
+			"id": "e5db29d9-d163-4cb1-b6a9-80309c87481e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5202491c-1040-49f9-9483-bd444821226f",
+			"id": "4f8293de-3e42-4a40-881a-ca91626969e9",
 			"key": "newDT",
 			"value": ""
 		}
