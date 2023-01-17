@@ -13074,7 +13074,14 @@
 									"  };\r",
 									"  console.log('pm.response.json()', pm.response.json())\r",
 									"  pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
-									"});"
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    pm.expect(jsonData.value).to.eql(100);\r",
+									"});\r",
+									"\r",
+									"pm.expect({message: \"Внимание! Сумма заказа товаров превышает 300 000 руб!\"}).to.have.property('a');"
 								],
 								"type": "text/javascript"
 							}
@@ -17334,45 +17341,45 @@
 	],
 	"variable": [
 		{
-			"id": "3e1e750f-5d48-4e6d-b938-1ef1e0b190f9",
+			"id": "fd52f83b-1c57-410c-918d-6f9aa000a981",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "57106b1a-15e1-49d7-83fd-26f67e2c9633",
+			"id": "b42f0a20-773e-4f87-8545-49bdb3f1b47d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8cd07ab7-50a9-4f88-8a02-7999a948a2a6",
+			"id": "cf0fa911-b77a-4ff1-8336-440480d344e0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b13bf35f-1625-4744-a787-d8f99fd463c7",
+			"id": "4325d263-eaea-485f-8e61-e1034975fbde",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2720588f-803e-48fa-96f5-32808169b974",
+			"id": "14ea28c2-a996-4419-892a-2977f0e9c0c5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "61fc78e0-d2fd-4bdd-99aa-df4c510e7ce7",
+			"id": "9f2d3a0f-813a-4629-a837-6cbba00856b6",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "03e4f2ec-6c57-4cbb-a3bf-1269b7df7a45",
+			"id": "b0795c10-8ae2-45e8-ac5a-f5eced0e92d4",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a158ea28-6587-44de-a9f4-0cdc3e592810",
+			"id": "57b00542-4620-419f-a8df-e98cb996dee7",
 			"key": "newDT",
 			"value": ""
 		}
