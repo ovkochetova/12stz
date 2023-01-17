@@ -13083,7 +13083,9 @@
 									"pm.test(\"Есть ограничения на сумму 300 001 руб\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа товаров превышает 300 000\");\r",
 									"});\r",
-									""
+									"pm.test(\"Есть ограничения на сумму 300 001 руб\", function () {\r",
+									"    pm.expect(pm.response.text()).to.have.any.keys(\"Сумма заказа товаров превышает 300 000\");\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -17343,45 +17345,45 @@
 	],
 	"variable": [
 		{
-			"id": "80e29027-757d-4005-b060-8e96a63932e5",
+			"id": "c03abae3-5670-4db9-89bd-9d0dc525d2f5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "71f79e85-d793-48b6-b715-094e9bf3bf34",
+			"id": "5ddba1b3-6923-43ab-85ed-37ca726a2741",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "49a3fc79-4b61-447b-a97f-c1704902d408",
+			"id": "c7b4e08a-5927-41b0-ab67-9c169b93b37d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0232657b-25d1-4cac-9c42-7668eaff106d",
+			"id": "bfe092bd-258b-488f-a875-998b5aede642",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c4145b05-575b-492b-bba1-ba684eb47b22",
+			"id": "91e842cc-5a91-4435-95e0-fec43b346b1b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ed3aadd7-db48-4efb-90ad-d6666aebb063",
+			"id": "f61cc189-aec4-4832-8598-a486871240c5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f8a25d0e-e076-4799-9f0f-bb905c68975c",
+			"id": "b74b0939-005a-4236-bce1-5f1882d4d712",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4869e1ce-dc90-456c-aa4d-730a1ab8e21b",
+			"id": "fbfbbcb1-8da6-4704-bae2-c3c41297eca6",
 			"key": "newDT",
 			"value": ""
 		}
