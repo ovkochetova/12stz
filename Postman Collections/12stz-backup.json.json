@@ -7733,38 +7733,7 @@
 									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
 									"pm.environment.set(\"id\", jsonData.id);\r",
-									"/*pm.environment.set(\"transportCompanyModeId\", jsonData.transportCompanyMode.id);\r",
-									"pm.environment.set(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
-									"pm.environment.set(\"popupId\", jsonData.popup.id);\r",
-									"pm.environment.set(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
-									"pm.environment.set(\"restrictionByPricePopupId\", jsonData.restrictionByPricePopup.id);\r",
-									"pm.environment.set(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
-									"pm.environment.set(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
-									"pm.environment.set(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
-									"pm.environment.set(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-									"pm.environment.set(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
-									"pm.environment.set(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)\r",
-									"\r",
-									"let arr = \r",
-									"\r",
-									"\r",
-									"console.log(\"transportCompanyModeId\", jsonData.transportCompanyMode.id)\r",
-									"console.log(\"zoneGroupId\", jsonData.zoneGroup.id);\r",
-									"console.log(\"popupId\", jsonData.popup.id);\r",
-									"console.log(\"restrictionByPriceMessageId\", jsonData.restrictionByPriceMessage.id);\r",
-									"console.log(\"restrictionByQuantityMessageId\", jsonData.restrictionByQuantityMessage.id);\r",
-									"console.log(\"restrictionByQuantityPopupId\", jsonData.restrictionByQuantityPopup.id);\r",
-									"console.log(\"restrictionByQuantityPerArticleMessageId\", jsonData.restrictionByQuantityPerArticleMessage.id);\r",
-									"console.log(\"restrictionByQuantityPerArticlePopupId\", jsonData.restrictionByQuantityPerArticlePopup.id);\r",
-									"console.log(\"paymentMethodId\", jsonData.paymentMethodToDeliveryType[0].paymentMethod.id)\r",
-									"console.log(\"messageId\", jsonData.paymentMethodToDeliveryType[0].message.id)*/\r",
-									"\r",
-									"  \r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									"  "
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -16868,45 +16837,45 @@
 	],
 	"variable": [
 		{
-			"id": "8fb59d2e-461b-4bb5-90fd-c50bd5e69877",
+			"id": "a661fbc0-adb4-4abc-b439-bfd900e5da3e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "20b629b7-ad6f-42ce-bcb0-df6eef6bed67",
+			"id": "3a757b45-aaa3-4f4f-8af7-cdd7341d2703",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ba1bcc9-1406-4d8c-9480-44711058ef1a",
+			"id": "2ddf3245-1588-4643-9465-290a4970c0d1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5fd27ef6-8769-42f8-be42-7afc0670b5e1",
+			"id": "8b927985-9f82-40b4-a836-a40c53004072",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f06d6cc5-a59d-4349-8dbe-3a4e5f0d9f51",
+			"id": "083dd835-7407-49cd-890a-57bd3a709931",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "37f48c56-d415-44d0-9a18-1535f618a2e3",
+			"id": "91158ca9-e7a0-4849-b701-17a7b7cbab7d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1987ec49-c853-4aa9-ac2f-17d8e1a3f981",
+			"id": "804411a8-67cf-4103-9117-575873e39dd6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7e2edd5b-e5ef-4a9a-968a-964f2a4de2eb",
+			"id": "61c918ef-67c7-4637-8ec5-2d9c52cf1bd6",
 			"key": "newDT",
 			"value": ""
 		}
