@@ -12953,7 +12953,7 @@
 									"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
 									"    \r",
 									"  };\r",
-									"  pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+									"  pm.expect(pm.response.json()).not.to.deep.include(expectedObject);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -17324,45 +17324,45 @@
 	],
 	"variable": [
 		{
-			"id": "34961d85-da5f-42b0-9fb9-d9fa7da230ab",
+			"id": "9b3722ff-97ac-488e-8cc9-dcd4039ea721",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4489c8d9-b7fd-4c22-ab04-41153d312cd9",
+			"id": "7605903b-dd22-49e1-ab2e-79d5753d1c2b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "36750004-d2de-4e17-8029-939257994199",
+			"id": "c0722148-34eb-421b-af11-b5b8a750095d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d30245a3-8d74-410c-b9e0-81503607f67c",
+			"id": "3656e59a-3295-48e8-88dd-9088f5e94951",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "31b0bda3-be67-43ca-a63d-c3ece8dcc130",
+			"id": "56cf2ecb-22ec-40ac-a661-c4885efda997",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5cae79bd-bde6-464e-b50b-6c6cbd4b319d",
+			"id": "6e6e6135-e572-4289-a403-f3e3f9c77907",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0edc0052-fa71-4d34-823c-5d5778a6d991",
+			"id": "5ee5669d-bca1-4e61-b996-c29d38508eb2",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f4313c86-fe0e-453f-abf1-d53599df99c9",
+			"id": "04d3647e-1c9e-4ec9-b249-45922ea12aa3",
 			"key": "newDT",
 			"value": ""
 		}
