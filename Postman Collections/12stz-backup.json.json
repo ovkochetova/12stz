@@ -13030,7 +13030,7 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен\" , function () {\r",
+									"pm.test(\"Максимальная сумма оплаты на сайте 300000 руб\" , function () {\r",
 									"    pm.expect(jsonData.restrictionByPriceIsActive).to.eql(false);\r",
 									"    });\r",
 									""
@@ -17350,45 +17350,45 @@
 	],
 	"variable": [
 		{
-			"id": "28e920aa-4f21-4d87-8d76-fdbd4e15cc41",
+			"id": "e111608a-5adc-4694-a50e-b78ecab26474",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a5d21de8-b00d-44a4-8957-b8196214d0a1",
+			"id": "9ef0cc1f-93ec-46f2-96b5-cf7aff849e41",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "99a0688b-cd63-4f88-929c-b54bf5e142fb",
+			"id": "a6be8137-59f4-4f64-8319-1f44bb0120c9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cefccb79-7d3e-415b-bd58-f46a0a53af48",
+			"id": "22ab628c-4ecf-49ba-861d-ee3de2f7f772",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7c8766ae-1ee2-4fcd-89c3-8818ef131db3",
+			"id": "fc343c06-00cf-42f5-bd63-b2bba9b9560b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1878a9d5-30fe-4fad-a052-9a41214cbc4b",
+			"id": "ddc85852-b01c-49bc-a9ab-12ef30361d41",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "86269aec-289e-4685-b891-7423c462dca0",
+			"id": "ad4327e2-6fdf-4806-9049-061321eb3ba7",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "98ecdf89-7831-4dc6-936e-f1d0652114c1",
+			"id": "091b53ec-c70f-48bf-9d05-8b26c111f1b7",
 			"key": "newDT",
 			"value": ""
 		}
