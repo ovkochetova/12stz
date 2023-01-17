@@ -11629,9 +11629,7 @@
 								"exec": [
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
-									"body.gapHours = 0\r",
-									"body.cutoffTime = \"12:00\";\r",
-									"body.consolidationHours = 3;\r",
+									"body.priorityCoefficient = 4;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -16820,7 +16818,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c7b7caeb-e681-4753-a6b9-2dbb050bc5a1",
+				"id": "ed64f70e-02b6-4e36-baac-66690db1252e",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -16830,7 +16828,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "538d45bf-0194-428c-bb3d-9e66b6d16968",
+				"id": "143e4dcc-d719-498f-8f46-d700beac9e43",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -16840,45 +16838,45 @@
 	],
 	"variable": [
 		{
-			"id": "44ed7604-dd6d-4bd3-8b6d-49ad435bb04c",
+			"id": "135e6ea0-3c78-408f-bb0b-556ebbf665ea",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fb585082-dc1d-4a03-8652-97df16ff6535",
+			"id": "1a2796dc-1840-49f7-91d1-388c4cb5f53a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a84d8f3-b033-408a-b7f5-74fd5a0440f5",
+			"id": "d84d98f3-ede7-416c-93eb-99b34f357749",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e97aeee5-6980-4464-a1e5-2006f4227d4d",
+			"id": "14090943-fea2-411e-8088-d7cafa415ee1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7c004abc-49e7-4aec-9f0b-91651c50893b",
+			"id": "566d1748-2252-423f-b76f-c0012ac9d920",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "994fe51d-005d-4b58-82ab-040de454f5e7",
+			"id": "a435399a-f91c-4dca-aaa6-fdad65fd2d8f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "533bb686-2e1a-4273-bff4-c07756f70a93",
+			"id": "fc9a7dbd-71d0-4639-816f-9f6121c6f96e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "61f8192a-5436-45c6-b6a1-a34a6e4d5f58",
+			"id": "5cc18187-aacc-433f-aeac-690bb5bc66e4",
 			"key": "newDT",
 			"value": ""
 		}
