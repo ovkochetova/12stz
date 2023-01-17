@@ -13164,23 +13164,9 @@
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Есть ограничения на сумму 300 001 руб\", () => {\r",
-									"  const expectedObject = {\r",
-									"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
-									"  };\r",
-									"   pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
-									"});\r",
 									"\r",
-									"\r",
-									"pm.test(\"Ограничения есть\", function () {\r",
-									"    pm.expect({\"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\"}).to.have.property('Внимание! Сумма заказа товаров превышает 300 000 руб!');;\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Есть ограничения на сумму 300 001 руб\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа товаров превышает 300 000\");\r",
-									"});\r",
-									"pm.test(\"Есть ограничения на сумму 300 001 руб\", function () {\r",
-									"    pm.expect(pm.response.text()).to.have.any.keys(\"Сумма заказа товаров превышает 300 000\");\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен \", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -17347,45 +17333,45 @@
 	],
 	"variable": [
 		{
-			"id": "10de1957-7122-43dd-83bd-3a18382abf2b",
+			"id": "6c1faee3-23a8-4c9f-b01d-36f1efc95867",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ee2d8992-760e-4f4c-ac2f-591f835a7ad0",
+			"id": "b7d74ef0-2304-4b70-931f-d20771819397",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "15cedeea-5e0f-4f17-b82a-605eb04eb1e2",
+			"id": "369227a5-5173-4049-8450-c5ff84bb0fa0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "09ecb304-3db8-482c-82f1-cda29b9b72f5",
+			"id": "be6bab0d-46bf-4890-8bce-6fefa45cf74c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "34fd6a47-03cf-4a82-9d6c-324c6fd8a4eb",
+			"id": "56626bac-350c-4e89-bbbc-bee6439e533d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9de54492-da16-4455-a148-1c9155a1cea5",
+			"id": "0ff45e8e-0b6b-4872-b214-1b664acad7dd",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "119a19f6-1a18-452a-98a2-0f1b072477f3",
+			"id": "656e1445-05fb-4291-a059-00da3b928b67",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a70b5bf2-7d87-427e-972b-62b72d5cf37d",
+			"id": "4d55e220-8c8f-4985-97ba-f442d4d0543b",
 			"key": "newDT",
 			"value": ""
 		}
