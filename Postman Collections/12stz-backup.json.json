@@ -12566,7 +12566,7 @@
 									"  \"restrictionByQuantityPerArticleMessageId\": body.restrictionByQuantityPerArticleMessage.id,\r",
 									"  \"restrictionByQuantityPerArticlePopupId\": body.restrictionByQuantityPerArticlePopup.id,\r",
 									"  \"isVisibleWhileRestricted\": body.isVisibleWhileRestricted,\r",
-									"  \"isActive\": true,\r",
+									"  \"isActive\": false,\r",
 									"  \"paymentMethodToDeliveryType\": [\r",
 									"    {\r",
 									"      \"paymentMethodId\": body.paymentMethodToDeliveryType[0].paymentMethod.id,\r",
@@ -16979,45 +16979,45 @@
 	],
 	"variable": [
 		{
-			"id": "9f33e99e-7429-433a-a016-716540017d43",
+			"id": "ac692762-d1aa-4e82-9863-2e002070f90c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0b3f1fac-edec-4cd3-ac67-8e3345b78375",
+			"id": "ad0a579f-a677-4b4e-9644-3b1eb1af4376",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fc74dbea-d813-43df-b636-b69ca81f6dda",
+			"id": "373aa971-57cc-4525-b383-56f18a531340",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9a6b7c44-d3ef-4089-86a8-d6f6b4e98c9e",
+			"id": "8ad06cf4-da80-4117-9dab-395d4cc9ef3b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f2026976-e5e0-4cc8-8cc1-23f3dc2ea640",
+			"id": "cf00e0c0-ba9c-4f69-804b-6796fb76ccfb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "44c5b502-bc7f-496c-8a5d-a42cd1d4df9d",
+			"id": "0854f23c-df1c-4bf0-9864-4c0581bc1bec",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "bed23c7b-8fb2-45f7-938f-9a44103310c8",
+			"id": "511bebd4-d17e-4fc8-b9a0-aac97145bed0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a3bf1adb-6b2d-4f71-83af-2ba26456d510",
+			"id": "87b56d83-48da-454e-901e-a005fbd55913",
 			"key": "newDT",
 			"value": ""
 		}
