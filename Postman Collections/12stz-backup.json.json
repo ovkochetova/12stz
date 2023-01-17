@@ -12986,6 +12986,116 @@
 					"response": []
 				},
 				{
+					"name": "Максимальная сумма оплаты 300 001",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "c6370ba8-3fee-43a2-8bc7-4b998d78151d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Максимальная сумма оплаты 300 000 Copy 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "c3f452cd-cbe8-4695-8b8c-f7093f3f70bb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Максимальная сумма оплаты 500 000",
 					"event": [
 						{
@@ -17207,45 +17317,45 @@
 	],
 	"variable": [
 		{
-			"id": "f9d7b44b-c253-4a4d-a7f6-1f78165c1a9d",
+			"id": "5d6e18b2-7830-4d9d-98de-efefbdc59ab1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "54f5ecbe-80ad-49b3-9dcc-2c6fe8fee1e4",
+			"id": "2444d3cd-90fd-466a-a3c7-6052cf6a8756",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d99ae65-6f82-411c-a11f-89d81edbd6f1",
+			"id": "60f48e78-fcfc-4991-b174-a4997bb81897",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8db43e4f-6b41-4041-b5ed-7ff1bac622db",
+			"id": "139897e1-370f-4a5e-ae12-0c68b6cfb991",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "72bfad82-ae51-4daa-9037-3f13f50ea3cc",
+			"id": "96a845d5-4eee-4f78-bdfc-49c3fa22dc11",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2b7fbcf9-36eb-451e-8191-ccc0c9a6ae86",
+			"id": "0e324890-45fd-4a62-867f-5700499284f0",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "48a626ca-d364-4424-a450-d56e4565f9b7",
+			"id": "273bb6c4-a03c-438a-b015-3aca0c34dd21",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e49ada81-03da-419b-ad3c-92a6ec767631",
+			"id": "a135cc0a-36f1-4047-be26-2406dfbdb619",
 			"key": "newDT",
 			"value": ""
 		}
