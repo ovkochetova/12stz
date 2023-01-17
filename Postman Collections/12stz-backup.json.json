@@ -13153,11 +13153,9 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Экспресс-доставка в действии\" , function () {\r",
-									"    pm.expect(jsonData.gapHours).to.eql(0);\r",
-									"    pm.expect(jsonData.cutoffTime).to.eql(\"12:00\");\r",
-									"    pm.expect(jsonData.consolidationHours).to.eql(3);\r",
-									"});\r",
+									"pm.test(\"Максимальная сумма оплаты на сайте 500000 руб\" , function () {\r",
+									"    pm.expect(jsonData.maxPrice).to.eql(500000);\r",
+									"    });\r",
 									""
 								],
 								"type": "text/javascript"
@@ -17343,45 +17341,45 @@
 	],
 	"variable": [
 		{
-			"id": "28330d41-d5e5-44cd-a5fb-878c84fd0e93",
+			"id": "31babd1d-f647-4b7b-b2bb-7654b745aa51",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f4fee790-37d7-48cd-9f5f-f319ec0258e0",
+			"id": "dbba12ba-140b-4df0-9389-225b9d45c7b3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b16f69a-a0ef-4d1b-b27a-88a6f5684106",
+			"id": "e024b804-3838-470e-83b2-de31364e6011",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "984f1980-459e-41ea-b7a1-44d86a404321",
+			"id": "b0cd1566-16ba-41b4-964b-33242cae1852",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2ce4aabf-23c1-4fb5-8dc8-2d4bb31883ef",
+			"id": "4eefd799-a798-43e1-891c-9bc73238fa38",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "6183f816-fd1c-4ca2-8962-2d166c6f70e4",
+			"id": "2ed6c6db-4ae3-409e-8a50-339c46d494e7",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a17c53da-a70b-4c0a-adb3-291bf5f158de",
+			"id": "d53200c4-09b5-444f-868f-34506c78a0f6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f5f20410-ffda-4276-9aeb-62f6d235aee4",
+			"id": "cc9e25ca-1da5-4cc7-a38c-99d75fb09319",
 			"key": "newDT",
 			"value": ""
 		}
