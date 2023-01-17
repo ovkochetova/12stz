@@ -11776,104 +11776,12 @@
 							"script": {
 								"id": "2bd1655c-0d60-4e46-9cc5-7463641a64a7",
 								"exec": [
-									"let body = pm.collectionVariables.get(\"DT\");\r",
-									"console.log(body);\r",
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
+									"body.priorityCoefficient = 1;\r",
+									"body.winnerPercent = 70;\r",
 									"\r",
-									"let newbody = {\r",
-									"  \"transportCompanyModeId\": body.transportCompanyMode.id,\r",
-									"  \"zoneGroupId\": body.zoneGroup.id,\r",
-									"  \"name\": body.name,\r",
-									"  \"descriptionRu\": body.descriptionRu,\r",
-									"  \"popupId\": body.popup.id,\r",
-									"  \"code\": body.code,\r",
-									"  \"defaultDaysFrom\": body.defaultDaysFrom,\r",
-									"  \"defaultDaysTo\": body.defaultDaysTo,\r",
-									"  \"deliveryPrice\": body.deliveryPrice,\r",
-									"  \"deliveryPriceBorder\": body.deliveryPriceBorder,\r",
-									"  \"deliveryPriceAfterBorder\": body.deliveryPriceAfterBorder,\r",
-									"  \"deliveryMinDays\": body.deliveryMinDays,\r",
-									"  \"cutoffTime\": body.cutoffTime,\r",
-									"  \"consolidationHours\": body.consolidationHours,\r",
-									"  \"gapHours\": body.gapHours,\r",
-									"  \"priorityCoefficient\": body.priorityCoefficient,\r",
-									"  \"maxDaysCoefficient\": body.maxDaysCoefficient,\r",
-									"  \"tariffCoefficient\": body.tariffCoefficient,\r",
-									"  \"winnerPercent\": body.winnerPercent,\r",
-									"  \"maxPrice\": body.maxPrice,\r",
-									"  \"restrictionByPriceIsActive\": body.restrictionByPriceIsActive,\r",
-									"  \"restrictionByPriceMessageId\": body.restrictionByPriceMessage.id,\r",
-									"  \"restrictionByPricePopupId\": body.restrictionByPricePopup.id,\r",
-									"  \"maxQuantity\": body.maxQuantity,\r",
-									"  \"restrictionByQuantityIsActive\": body.restrictionByQuantityIsActive,\r",
-									"  \"restrictionByQuantityMessageId\": body.restrictionByQuantityMessage.id,\r",
-									"  \"restrictionByQuantityPopupId\": body.restrictionByQuantityPopup.id,\r",
-									"  \"maxQuantityPerArticle\": body.maxQuantityPerArticle,\r",
-									"  \"restrictionByQuantityPerArticleIsActive\": body.restrictionByQuantityPerArticleIsActive,\r",
-									"  \"restrictionByQuantityPerArticleMessageId\": body.restrictionByQuantityPerArticleMessage.id,\r",
-									"  \"restrictionByQuantityPerArticlePopupId\": body.restrictionByQuantityPerArticlePopup.id,\r",
-									"  \"isVisibleWhileRestricted\": body.isVisibleWhileRestricted,\r",
-									"  \"isActive\": true,\r",
-									"  \"paymentMethodToDeliveryType\": [\r",
-									"    {\r",
-									"      \"paymentMethodId\": body.paymentMethodToDeliveryType[0].paymentMethod.id,\r",
-									"      \"messageId\": body.paymentMethodToDeliveryType[0].message.id,\r",
-									"      \"maxPrice\": body.paymentMethodToDeliveryType[0].maxPrice,\r",
-									"      \"isVisibleWhileRestricted\": body.paymentMethodToDeliveryType[0].isVisibleWhileRestricted,\r",
-									"      \"paymentMethodCategoryRestrictions\": [\r",
-									"        {\r",
-									"          \"categoryId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].category.id,\r",
-									"          \"messageId\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].message.id,\r",
-									"          \"isActive\": body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive\r",
-									"        }\r",
-									"      ]\r",
-									"    }\r",
-									"      ],\r",
-									"    \r",
-									"    \"categoryDeliveryTypeRestrictions\": [\r",
-									"    {\r",
-									"      \"categoryId\": body.categoryDeliveryTypeRestrictions[0].category.id,\r",
-									"      \"messageId\": body.categoryDeliveryTypeRestrictions[0].message.id,\r",
-									"      \"popupId\": body.categoryDeliveryTypeRestrictions[0].popup.id,\r",
-									"      \"isActive\": body.categoryDeliveryTypeRestrictions[0].isActive\r",
-									"    }\r",
-									"    \r",
-									"  ],\r",
-									"  \"intervals\": [\r",
-									"    {\r",
-									"      \"id\": body.intervals[0].id,\r",
-									"      \"clientTimeFrom\": body.intervals[0].clientTimeFrom,\r",
-									"      \"clientTimeTo\": body.intervals[0].clientTimeTo,\r",
-									"      \"tkTimeFrom\": body.intervals[0].tkTimeFrom,\r",
-									"      \"tkTimeTo\": body.intervals[0].tkTimeTo,\r",
-									"      \"dayOfWeek\": body.intervals[0].dayOfWeek,\r",
-									"      \"code\": body.intervals[0].code,\r",
-									"      \"createdAt\": body.intervals[0].createdAt,\r",
-									"      \"updatedAt\": body.intervals[0].updatedAt\r",
-									"    },\r",
-									"    {\r",
-									"      \"id\": body.intervals[1].id,\r",
-									"      \"clientTimeFrom\": body.intervals[1].clientTimeFrom,\r",
-									"      \"clientTimeTo\": body.intervals[1].clientTimeTo,\r",
-									"      \"tkTimeFrom\": body.intervals[1].tkTimeFrom,\r",
-									"      \"tkTimeTo\": body.intervals[1].tkTimeTo,\r",
-									"      \"dayOfWeek\": body.intervals[1].dayOfWeek,\r",
-									"      \"code\": body.intervals[1].code,\r",
-									"      \"createdAt\": body.intervals[1].createdAt,\r",
-									"      \"updatedAt\": body.intervals[1].updatedAt\r",
-									"    }\r",
-									"  ]\r",
-									"}\r",
-									"\r",
-									"pm.request.body.raw = newbody;\r",
-									"\r",
-									"pm.collectionVariables.set(\"newDT\", newbody);\r",
-									"console.log(\"newDT\", newbody)\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
-									""
+									"pm.request.body.raw = body;"
 								],
 								"type": "text/javascript"
 							}
@@ -17315,6 +17223,199 @@
 				}
 			],
 			"id": "aeff015f-9afc-42f7-885f-da196c6ac10b"
+		},
+		{
+			"name": "Максимальная сумма оплаты 299 999 Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							" var jsonData = pm.response.json();\r",
+							"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+							"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+							"});\r",
+							"\r",
+							"//Contain restriction\r",
+							"pm.test(\"Нет ограничения на сумму 299 999 руб\", () => {\r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
+							"  };\r",
+							"  pm.expect(pm.response.json()).not.to.deep.include(expectedObject);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "4eb557df-ad52-4a71-9e4e-91640380208f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Grpc-Metadata-Api_Key",
+						"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 149999.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Максимальная сумма оплаты 300 000 Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							" var jsonData = pm.response.json();\r",
+							"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+							"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Нет ограничения на сумму 300 000 руб\", () => {\r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
+							"  };\r",
+							"  pm.expect(pm.response.json()).not.to.deep.include(expectedObject);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "41c03fc1-a817-41cf-b1c3-0d5ea68fa52c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Grpc-Metadata-Api_Key",
+						"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Максимальная сумма оплаты 300 001 Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							" var jsonData = pm.response.json();\r",
+							"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+							"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Есть ограничения на сумму 300 001 руб\", () => {\r",
+							"  const expectedObject = {\r",
+							"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
+							"  };\r",
+							"   pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Ограничения есть\", function () {\r",
+							"    pm.expect({\"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\"}).to.have.property('Внимание! Сумма заказа товаров превышает 300 000 руб!');;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Есть ограничения на сумму 300 001 руб\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Сумма заказа товаров превышает 300 000\");\r",
+							"});\r",
+							"pm.test(\"Есть ограничения на сумму 300 001 руб\", function () {\r",
+							"    pm.expect(pm.response.text()).to.have.any.keys(\"Сумма заказа товаров превышает 300 000\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "ca2243ec-2de4-423f-ad4a-6f9046b3cc0b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Grpc-Metadata-Api_Key",
+						"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 150001.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{url}}"
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -17341,45 +17442,45 @@
 	],
 	"variable": [
 		{
-			"id": "31babd1d-f647-4b7b-b2bb-7654b745aa51",
+			"id": "746f237f-dcc4-4a07-b834-c6b3e66e2de8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dbba12ba-140b-4df0-9389-225b9d45c7b3",
+			"id": "e38911c3-e187-4272-9398-c6db358f5acc",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e024b804-3838-470e-83b2-de31364e6011",
+			"id": "b2b928c3-287d-4066-8efe-1922157df40d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b0cd1566-16ba-41b4-964b-33242cae1852",
+			"id": "d9394783-4293-4b7c-939f-cd3956c2b059",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4eefd799-a798-43e1-891c-9bc73238fa38",
+			"id": "a2745ba1-c38f-41f7-bb98-9b79d3f0534f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2ed6c6db-4ae3-409e-8a50-339c46d494e7",
+			"id": "005a71f0-c355-45b0-ba6d-27644bee448b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d53200c4-09b5-444f-868f-34506c78a0f6",
+			"id": "53ea1728-1b40-447c-a43e-5f687d55e68f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "cc9e25ca-1da5-4cc7-a38c-99d75fb09319",
+			"id": "a1296c48-29a3-4c5b-af0e-664e477f0410",
 			"key": "newDT",
 			"value": ""
 		}
