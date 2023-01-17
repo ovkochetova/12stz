@@ -11246,7 +11246,7 @@
 									"  \"deliveryPriceBorder\": body.deliveryPriceBorder,\r",
 									"  \"deliveryPriceAfterBorder\": body.deliveryPriceAfterBorder,\r",
 									"  \"deliveryMinDays\": body.deliveryMinDays,\r",
-									"  \"cutoffTime\": body.cutoffTime,\r",
+									"  \"cutoffTime\": \"19:00\",\r",
 									"  \"consolidationHours\": body.consolidationHours,\r",
 									"  \"gapHours\": body.gapHours,\r",
 									"  \"priorityCoefficient\": body.priorityCoefficient,\r",
@@ -16868,45 +16868,45 @@
 	],
 	"variable": [
 		{
-			"id": "96b5baa7-d6bf-4c02-a4cf-6e43ed0d9b4b",
+			"id": "5b11ded8-0f9b-4991-aace-e2b65f47a0e7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "248075e0-a9bc-414f-b7b3-08f44a470a84",
+			"id": "b44e454a-8ba7-4e17-b62d-13b5a96200c5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf5e12b1-cbc4-466a-bd6c-79efd5bcc03d",
+			"id": "800e5fad-f9cf-4ace-9586-d4002604e0d3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eb476a66-550f-4403-ad4f-1fb2f6f41328",
+			"id": "df9b6a5a-e15c-4c04-adb5-7ed07f28afd7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "89cd3c20-5d9b-4d5f-a44e-2d40978a5c6b",
+			"id": "d9d3a87e-f45c-4e0e-b268-673fe2cb10f7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "18be7e81-71a9-4e2a-bdd2-c604336968e2",
+			"id": "005070f5-f89e-4ec4-9b05-5cb77152e35d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4d78d1bf-aa4b-473d-b25a-fad3fd8ad9db",
+			"id": "89ce7abb-4ddc-4500-b8b2-c3cbcc0a2f34",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c89071d8-842f-4388-ada8-284a1fc76e21",
+			"id": "9aafeb71-9892-4982-b3cd-a91742358841",
 			"key": "newDT",
 			"value": ""
 		}
