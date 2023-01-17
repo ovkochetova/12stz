@@ -13413,6 +13413,100 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Чекбокс Скрыть для категории",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.isActive = true;\r",
+									"body.restrictionByPriceIsActive = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен\" , function () {\r",
+									"    pm.expect(jsonData.restrictionByPriceIsActive).to.eql(true);\r",
+									"    });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "8809a331-8241-453f-b001-ffd2ccfa0a9d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -17542,45 +17636,45 @@
 	],
 	"variable": [
 		{
-			"id": "cb56eb7c-9521-436e-a3d5-28b49384a02e",
+			"id": "3e60d15c-f901-44e1-9ad0-f75564ddd906",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "99178def-3fe2-4dd6-b0b5-41b71284baf1",
+			"id": "9b8936c1-4e5e-4227-9942-38a585c7dd42",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "db1478c8-07a8-4211-ab68-99eec74b8ec3",
+			"id": "a4d46ef7-6ce4-46ff-bbc8-019f52bfe9ed",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7c9088fb-25f3-43c1-bc8c-49a0aa568e1a",
+			"id": "d5be737f-f017-4361-8876-b54958b20ec0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "920de52d-b579-4ec3-b39b-09109b00ba99",
+			"id": "4e4e1644-ad8b-4269-a9c7-fba850137b98",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "624fb2af-6919-441d-867a-f6589344ea87",
+			"id": "d96c0ba5-b4c7-4f13-b4fd-b30c75f68508",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0c387e17-24e0-41c1-9d0b-585a4c514605",
+			"id": "c883ab15-0b2c-4a6b-a501-d1233f337b7f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "60ea5fd8-d54c-4877-9eb7-a535c1fd1a5a",
+			"id": "ba435449-382b-460a-b4ec-ff5f13929cc3",
 			"key": "newDT",
 			"value": ""
 		}
