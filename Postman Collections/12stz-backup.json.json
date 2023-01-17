@@ -11368,7 +11368,7 @@
 									"      },\r",
 									"  body: {\r",
 									"    mode: 'raw',\r",
-									"    raw: JSON.stringify({ country_iso_code: \"AQ\",\r",
+									"    raw: JSON.stringify({ \r",
 									"    country_iso_code: \"AQ\",\r",
 									"  region_geo_id: \"\",\r",
 									"  city_geo_id: \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r",
@@ -16961,7 +16961,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d08bd5c6-b8d4-407b-b354-072093d6a4ca",
+				"id": "a070c46a-b36f-4682-bbf9-f4cd83790629",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -16971,7 +16971,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4943a259-7081-4cd6-b0ae-a0a2dbde7be5",
+				"id": "63da569f-fafd-43e1-bcfe-189f63a4d202",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -16981,45 +16981,45 @@
 	],
 	"variable": [
 		{
-			"id": "ab23ae43-737f-418b-a383-cc3d95ec25d1",
+			"id": "8fff95f6-1cc9-4a83-867c-4237d3926ff3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aae929d9-a9ea-488c-a67e-cc0419195768",
+			"id": "5fcbda2d-c6eb-416b-8651-87b5a307f1b8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6d669d2a-1df0-49b1-8b7a-7fc868061bb5",
+			"id": "1bd8d238-9a23-410c-87f4-ae206ba1d6c3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d9789199-415f-4c46-872a-873457b0c281",
+			"id": "51283685-2797-41e4-b4c7-0818b6ecebdc",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c5bc83bd-f2c5-4e3c-9e06-4dce50a6518f",
+			"id": "014bfc88-d5f8-4a3b-add9-b2853b8f0968",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1bc5b630-4aa1-4db5-a99d-73aafd13a5bb",
+			"id": "1ce700be-af56-4919-be44-e6aa2f786b7e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4fa65339-6f6f-4a0a-a4a5-080a37d008a4",
+			"id": "dc5f24d2-cd05-4568-b283-92a5336355f1",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "46ce6699-6f99-47ef-8057-2445391eff54",
+			"id": "02d8cebb-1206-40c4-a604-5fb336283295",
 			"key": "newDT",
 			"value": ""
 		}
