@@ -13151,7 +13151,7 @@
 					"response": []
 				},
 				{
-					"name": "Максимальная сумма оплаты 300 001 Copy",
+					"name": "Максимальная сумма оплаты 300 001",
 					"event": [
 						{
 							"listen": "test",
@@ -17350,45 +17350,45 @@
 	],
 	"variable": [
 		{
-			"id": "8cc10c7d-fbf6-4afe-b440-91d498d32750",
+			"id": "74b8349a-a861-4038-b2e9-ac69181f5728",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7636b732-c47b-4775-8c23-32237fbd2df2",
+			"id": "7bebc4be-9905-4c30-ae97-c6cfb8ed6cf3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a729b5d1-269b-4a6a-8342-6cfb83d6beea",
+			"id": "89df16c7-32d0-442b-b04b-09a6e6b927e3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dd67b87c-bdf3-48c4-b8a0-1b48b835877a",
+			"id": "81ba9551-1d76-431a-b5fe-bbc49c62564b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "35d055b8-4d26-4a7f-9cac-260a304cba20",
+			"id": "d9914127-9d24-4431-8b20-a65e72b833d3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "92c702bc-db65-4189-9baa-3c68ec6e5f87",
+			"id": "e3d6c945-5220-4d46-a515-6c4afa92a37f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1dae2cc6-8fc8-45c1-8ff8-5aac6e6bd28c",
+			"id": "2cc573d1-b723-48c3-b14f-c6e629a5ea3f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "79da799d-6ff5-445a-9e36-d24f86f4f665",
+			"id": "b0aab295-5806-411e-a901-476e0b301e40",
 			"key": "newDT",
 			"value": ""
 		}
