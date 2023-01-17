@@ -13030,7 +13030,7 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Максимальная сумма оплаты на сайте 300000 руб\" , function () {\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен\" , function () {\r",
 									"    pm.expect(jsonData.restrictionByPriceIsActive).to.eql(false);\r",
 									"    });\r",
 									""
@@ -13107,11 +13107,8 @@
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Нет ограничения на сумму 300 000 руб\", () => {\r",
-									"  const expectedObject = {\r",
-									"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
-									"  };\r",
-									"  pm.expect(pm.response.json()).not.to.deep.include(expectedObject);\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен \", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -17350,45 +17347,45 @@
 	],
 	"variable": [
 		{
-			"id": "e111608a-5adc-4694-a50e-b78ecab26474",
+			"id": "10de1957-7122-43dd-83bd-3a18382abf2b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9ef0cc1f-93ec-46f2-96b5-cf7aff849e41",
+			"id": "ee2d8992-760e-4f4c-ac2f-591f835a7ad0",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a6be8137-59f4-4f64-8319-1f44bb0120c9",
+			"id": "15cedeea-5e0f-4f17-b82a-605eb04eb1e2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "22ab628c-4ecf-49ba-861d-ee3de2f7f772",
+			"id": "09ecb304-3db8-482c-82f1-cda29b9b72f5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "fc343c06-00cf-42f5-bd63-b2bba9b9560b",
+			"id": "34fd6a47-03cf-4a82-9d6c-324c6fd8a4eb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ddc85852-b01c-49bc-a9ab-12ef30361d41",
+			"id": "9de54492-da16-4455-a148-1c9155a1cea5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ad4327e2-6fdf-4806-9049-061321eb3ba7",
+			"id": "119a19f6-1a18-452a-98a2-0f1b072477f3",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "091b53ec-c70f-48bf-9d05-8b26c111f1b7",
+			"id": "a70b5bf2-7d87-427e-972b-62b72d5cf37d",
 			"key": "newDT",
 			"value": ""
 		}
