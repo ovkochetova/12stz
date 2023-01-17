@@ -12947,7 +12947,14 @@
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
 									"});\r",
 									"\r",
-									""
+									"//Contain restriction\r",
+									"pm.test(\"Нет ограничения на сумму 299 999 руб\", () => {\r",
+									"  const expectedObject = {\r",
+									"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
+									"    \r",
+									"  };\r",
+									"  pm.expect(pm.jsonData).not.to.deep.include(expectedObject);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -17317,45 +17324,45 @@
 	],
 	"variable": [
 		{
-			"id": "5f41a8c7-f8f7-4ea9-b7c1-6ab419457214",
+			"id": "7af592d8-dfaf-4e24-865f-241c48ecbce6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d2154fe9-b3b9-4429-877d-cd152c1d106c",
+			"id": "78d23fcd-fac2-4ab4-aeeb-999fe0eb68f5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2d04b30e-613b-4a4f-8a6b-a0de5dc8d60e",
+			"id": "3ba6e230-df11-41c1-813f-a1edf0494675",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "231a9904-86fb-4b34-ae8c-c62c24c4ff70",
+			"id": "2069ad7e-0d13-497f-878e-4571a0322a43",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2620fb52-a271-4866-ba5d-117994287d46",
+			"id": "c68da9c0-c667-4f44-90bf-76753d6d3642",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a50561c6-fdae-4aae-b0bc-c9f110b2143b",
+			"id": "d1377288-3528-4ea5-99fa-70e84bf73ce8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "eb64d947-5ea7-425f-8745-fc5004f6843b",
+			"id": "77eaa78c-00b9-4307-a311-eb647b426ba8",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "be2dd7ac-63f8-41cd-a17e-290d8ba52b24",
+			"id": "0c4ebab1-95a6-4553-b423-2962cd8378c5",
 			"key": "newDT",
 			"value": ""
 		}
