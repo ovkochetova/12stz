@@ -13240,7 +13240,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен\" , function () {\r",
-									"    pm.expect(jsonData.restrictionByPriceIsActive).to.eql(false);\r",
+									"    pm.expect(jsonData.restrictionByPriceIsActive).to.eql(true);\r",
 									"    });\r",
 									""
 								],
@@ -17427,45 +17427,45 @@
 	],
 	"variable": [
 		{
-			"id": "b1029454-221c-4854-9d59-e6ffbcefaabe",
+			"id": "7db9fc49-383f-4c4b-8c15-edcef057ddab",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f47f6e96-8ffe-4c16-a683-cb041aaf9b22",
+			"id": "2a9c3325-a71b-4433-891c-2012879d5544",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "00db0352-54f1-4968-bdcf-a83541016c8a",
+			"id": "9160658a-9019-47f1-a6e7-0cc15a4bc532",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ff32a735-2566-4744-9d1c-9793a9576362",
+			"id": "5006fc0f-cb29-4344-aa07-c11ce307e12c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8eb09d8b-28ad-4c48-acda-a55f5c01fd97",
+			"id": "1818bf7b-6de9-4eb9-8520-29b67f71d6e6",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3dba6ca2-1e2a-4666-8543-4e8276c4de13",
+			"id": "ee7eb839-e6df-49e9-b609-d90bf8422478",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ec7dec3e-773c-4523-b26b-7382f83ba65d",
+			"id": "96bff238-1511-4eda-a5ed-b1b31f61f2ba",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8b6ea362-2c34-4edd-9d5c-18d9b0517b03",
+			"id": "fb0bd9d2-98ea-4d8a-9a28-fd33c0fcfb47",
 			"key": "newDT",
 			"value": ""
 		}
