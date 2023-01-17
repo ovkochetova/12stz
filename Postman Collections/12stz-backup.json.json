@@ -12997,7 +12997,7 @@
 					"response": []
 				},
 				{
-					"name": "Чекбокс Виден при срабатывании ограничений",
+					"name": "Чекбокс Виден при срабатывании ограничений не Активен",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -17218,45 +17218,45 @@
 	],
 	"variable": [
 		{
-			"id": "936eb2b8-25b3-423a-8758-f381d7210677",
+			"id": "4c6116b0-9da4-4f4e-9713-6167798cf95f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e46ba398-a7b6-4574-a2fb-667d93613fcb",
+			"id": "4e3e4709-3b4b-4914-9cb5-afb03095915f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bced4958-fbd8-4a15-9001-8359991ed288",
+			"id": "a6002797-289b-4335-90f2-2559fcfdb697",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d6553202-e745-4745-9313-4c57118c91fd",
+			"id": "7e21c11e-a78a-4457-827e-363454c1f1b9",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2cfa9757-4dc9-4f7f-a11f-e8c344bb4118",
+			"id": "89c7d07a-3d86-4f28-8c7c-fbe1bdb6cb23",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "49100fc3-a875-4ed8-99f6-9cfab4f82080",
+			"id": "92e08ebd-e334-4e42-bbc9-037787381b45",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "530a08f1-2e0a-4f6a-bf31-24a4085c608f",
+			"id": "4511ac91-b301-42b1-9719-61fde63f4807",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9745aed2-2780-4476-aad4-8cfe29cd1664",
+			"id": "f2396e12-c597-4b39-9608-ac54b739938d",
 			"key": "newDT",
 			"value": ""
 		}
