@@ -13007,7 +13007,7 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"body.isActive = true;\r",
-									"body.maxPrice = 300000;\r",
+									"body.restrictionByPriceIsActive = false;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -17218,45 +17218,45 @@
 	],
 	"variable": [
 		{
-			"id": "04e2eb7c-c45d-4d58-9c59-67b21a720170",
+			"id": "936eb2b8-25b3-423a-8758-f381d7210677",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "515010b0-0a63-405b-b810-518e74ac88b9",
+			"id": "e46ba398-a7b6-4574-a2fb-667d93613fcb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7083532b-6456-4215-8627-839b115b4d51",
+			"id": "bced4958-fbd8-4a15-9001-8359991ed288",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6c13e9d0-96bf-499e-844f-c6bbba2cab04",
+			"id": "d6553202-e745-4745-9313-4c57118c91fd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "51ba43b5-98a6-4a64-bf60-90b55ce577a5",
+			"id": "2cfa9757-4dc9-4f7f-a11f-e8c344bb4118",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "094f3613-a544-49f9-a6ed-b83cc707fd49",
+			"id": "49100fc3-a875-4ed8-99f6-9cfab4f82080",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "748f61f8-5fd5-4ab3-bdc1-46710b03c9f1",
+			"id": "530a08f1-2e0a-4f6a-bf31-24a4085c608f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "48beb92e-f203-49be-9750-ad1b141ad0be",
+			"id": "9745aed2-2780-4476-aad4-8cfe29cd1664",
 			"key": "newDT",
 			"value": ""
 		}
