@@ -11358,12 +11358,13 @@
 									"\r",
 									"\r",
 									"const postRequest = {\r",
-									"  url: 'https://logistics.12stz.dev/api/v1/winner/calculate/post',\r",
+									"  url: 'https://logistics.12stz.dev/api/v1/winner/calculate',\r",
 									"  method: 'POST',\r",
 									"  header: {\r",
 									"    'Content-Type': 'application/json',\r",
 									"    'Accept-Encoding':'gzip, deflate, br',\r",
 									"    'Grpc-Metadata-Api_Key': '9902dcfd045723d9479ea310c08a8cb6e4252dfc',\r",
+									"    'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJoaXFpSDI0RmxRY0lpM0RScGo2TjVQVHVIMEd4VDV3VVRRX1NPM056MWs4In0.eyJleHAiOjE2NzM5NDgyNzksImlhdCI6MTY3Mzk0NzY3OSwiYXV0aF90aW1lIjoxNjczOTM2MzMwLCJqdGkiOiIwZjA4NGEzNy1kMWQ2LTRkY2MtOWU0ZS0yYTA0OWM0NTM1YTQiLCJpc3MiOiJodHRwczovL2tleWNsb2FrLWJlaWdlLjEyc3R6LmNvbS9hdXRoL3JlYWxtcy9hdXRvcml6YXRpb24tcHJvamVjdCIsImF1ZCI6WyJ0ZXN0LXpodWJhIiwiYWNjb3VudCJdLCJzdWIiOiIwOTViMTZiYi00ZDRhLTQ4NTAtOTEwNi04NjYyMjMyNjJmODgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJsb2dpc3RpY3MiLCJub25jZSI6IjRmYThjZThlLTg4MDMtNDI1ZS05ODVmLTVjNDIzNmNkOGQzMyIsInNlc3Npb25fc3RhdGUiOiIyM2Q0ZjVmOC1hNzMxLTQ5MzQtODg5MS01NzY1ZTFjZjc0MGIiLCJhY3IiOiIwIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHBzOi8vbG9naXN0aWNzLjEyc3R6LmRldiIsImh0dHBzOi8vbG9naXN0aWNzLjEyc3R6LmNvbSIsImh0dHA6Ly9sb2NhbGhvc3Q6NDIwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsImRlZmF1bHQtcm9sZXMtYXV0b3Jpc2F0aW9uLXByb2plY3QiXX0sInJlc291cmNlX2FjY2VzcyI6eyJ0ZXN0LXpodWJhIjp7InJvbGVzIjpbImFjY2VzcyIsIm1hbmFnZXIiLCJhZG1pbiJdfSwibG9naXN0aWNzIjp7InJvbGVzIjpbImFjY2VzcyJdfSwiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgcHJvZmlsZSIsInNpZCI6IjIzZDRmNWY4LWE3MzEtNDkzNC04ODkxLTU3NjVlMWNmNzQwYiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IktvY2hldG92YSBPbGdhIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiby5rb2NoZXRvdmEiLCJnaXZlbl9uYW1lIjoiS29jaGV0b3ZhIiwiZmFtaWx5X25hbWUiOiJPbGdhIiwiZW1haWwiOiJvLmtvY2hldG92YUAxMnN0b3JlZXouY29tIn0.gzatVjonpFdDy2iF_X2bE5Lz8hAcH-MUyEkxo9vwtekqAau5eo4c-uo-c0dLVENl7TWFXjE55-IsRsZbKfqOcIIWIJ0qc9AjVWzhSPQfQM7iP86ounBApRArPaovq6mi2vweylZmnMx8rksgyTeF49l_5J_rVpKKkik1wYB9vPvdlSYZGezWnP1_mJvwC5ueo5r6yJIocGrTX143lyZRKT8IqLDhhdGzfhApQzwGcqUtZCrpDqJ5009jazWqj5lFvOr7zPA8J9Iu9SzCSjk4_hL2k0HbfdzwfPk7HhmQ8lVjtXeTIK_0W80wS08WNIHAgNNltAGEqC0zUpar5BoZGQ'\r",
 									"      },\r",
 									"  body: {\r",
 									"    mode: 'raw',\r",
@@ -11375,7 +11376,7 @@
 									"  street_geo_id: \"\",\r",
 									"  house_geo_id: \"\",\r",
 									"  geo_id: \"\",\r",
-									"  cart_id: \"1233\",\r",
+									"  cart_id: \"234\",\r",
 									"  order_datetime:\"2023-01-10 08:00:00\" ,\r",
 									"  cart: [\r",
 									"    {\r",
@@ -16960,7 +16961,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9d036a4a-7622-4e6e-8f94-b663b24c5c0c",
+				"id": "d08bd5c6-b8d4-407b-b354-072093d6a4ca",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -16970,7 +16971,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "3c6e1b37-9d3a-4d20-aac4-6aff6efd582d",
+				"id": "4943a259-7081-4cd6-b0ae-a0a2dbde7be5",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -16980,45 +16981,45 @@
 	],
 	"variable": [
 		{
-			"id": "e95c50d7-c2a6-4075-ae51-cf4ca73bd885",
+			"id": "f0fd1dd6-ecf3-4fc2-b8cf-a4e20272ba9f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "93c54c45-5a39-48f1-b3f8-613ed7787453",
+			"id": "61aee4f3-fd28-4d6a-a06c-d02e2ab38e1f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aed25236-a9b9-4009-b747-fe8eca7910f3",
+			"id": "d49c364f-500b-4266-be5e-27d3f23978c2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f08e3ec3-6015-4c4e-ad6e-3821ede33d59",
+			"id": "9eb4f038-07f6-49b5-9165-c04805e326ea",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ed323c1e-94ac-4fd7-a1f5-5e41ed39ece4",
+			"id": "65a84ab4-c7dd-4640-8a2f-4fe4c55a34c7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d1677431-2867-4e6d-81fc-5444874ec0c0",
+			"id": "40dba17c-9330-4c7e-8678-4ca13b910dc9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0e9ece94-70eb-48f5-a7b9-be7b4d4aa29f",
+			"id": "414cabdd-eb3d-4b55-b260-a02bd68e0637",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "946d79a7-90c4-4f2f-a39d-47bf4e2b3341",
+			"id": "222067e9-22a1-46bb-8d52-cb1b6eea95ec",
 			"key": "newDT",
 			"value": ""
 		}
