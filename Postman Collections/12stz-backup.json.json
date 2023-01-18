@@ -12501,7 +12501,7 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"body.isActive = true;\r",
-									"body.maxPrice = 500000;\r",
+									"body.paymentMethodToDeliveryType[0].maxPrice = 500000;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -12522,7 +12522,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Максимальная сумма оплаты на сайте 500000 руб\" , function () {\r",
-									"    pm.expect(jsonData.maxPrice).to.eql(500000);\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].maxPrice).to.eql(500000);\r",
 									"    });\r",
 									""
 								],
@@ -18648,45 +18648,45 @@
 	],
 	"variable": [
 		{
-			"id": "be534d71-7617-4115-ab6c-e0b34d057fdf",
+			"id": "3a8d3f83-380f-4862-8928-b95280eae15e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0a55e329-ec3a-4271-ae3c-82148233ae2a",
+			"id": "c57ee5e5-27a2-4860-85f9-0746d808a3c5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "db3cab81-7c1e-40ab-8ab0-7eedc525f897",
+			"id": "0ad4c885-e0a8-4c9b-94b8-92cff698a5d8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "18054ba2-9b02-489f-a554-92849d0734cb",
+			"id": "d8093ec3-281e-4cf4-8b04-5a325cf88788",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1f31c12a-caad-4609-9953-2866e5fe1a28",
+			"id": "7e7e2ea1-25ba-43ac-b32b-0698b46b3389",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d74f0404-2dd7-4eb1-aab9-a630da137c72",
+			"id": "4413083d-0866-4dd4-9464-f7a654116c4c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a488ea1f-ff9e-4ed3-8f44-e20bf63f7a01",
+			"id": "6aeb2e15-e1af-4b27-85d3-ef6dc172fd24",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "afcec2d3-c050-421a-9d77-cdb9fd4255d1",
+			"id": "5129ebbd-0171-4a01-94ef-a7d232b88e5d",
 			"key": "newDT",
 			"value": ""
 		}
