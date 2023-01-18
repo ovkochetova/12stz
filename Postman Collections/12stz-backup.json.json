@@ -14425,6 +14425,100 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Чекбокс Виден при срабатывании ограничений не Активен",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.isActive = true;\r",
+									"body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive).to.eql(true);\r",
+									"    });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "a03b75dc-e1ab-4cec-b99e-361f1cb07695",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -18554,45 +18648,45 @@
 	],
 	"variable": [
 		{
-			"id": "2810f921-7b2a-4811-bc60-6152ec01bda8",
+			"id": "19db7fcd-7d21-414e-8946-aca5a898d4eb",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e3dfad8d-6d10-4517-9ce4-316dcfb0f26c",
+			"id": "fb618164-dfb5-4f34-86f9-a808301c1078",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4c111a88-bd2b-4e6d-a9df-818f7fe1c21c",
+			"id": "ed3ab49c-0a8e-4b17-bcbd-7738dfe770fc",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ff06c73-4dc6-4bea-a3f7-29412af5fc7d",
+			"id": "5fe0a469-c346-41d5-857b-e2dbf2c5f0f5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1041ac26-cabd-4670-abb9-6eea36a3ab20",
+			"id": "ab13382a-f837-4e73-ac32-a1987dd81dfc",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a411b62d-2da7-47bb-aa4c-c7f8105fe3ff",
+			"id": "edb36852-8fd9-4bbd-af61-ed6e714b8c8f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0f67ac5c-0921-42bb-865e-49fe94f1fd86",
+			"id": "2e1d984c-4dd6-497f-9671-851ef298b4cb",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a87985e4-4843-4429-a170-2524d5a9705d",
+			"id": "aa040d5f-b541-4c87-b761-9f7e724d3ec7",
 			"key": "newDT",
 			"value": ""
 		}
