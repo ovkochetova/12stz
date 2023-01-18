@@ -13863,6 +13863,100 @@
 					"response": []
 				},
 				{
+					"name": "Чекбокс Макс кол-во позиций не Активен",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.isActive = true;\r",
+									"body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive).to.eql(true);\r",
+									"    });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "6f07a245-3c40-4832-8835-61fe91c2bc23",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Чекбокс Макс кол-во позиций одного артикула Активен",
 					"event": [
 						{
@@ -18272,45 +18366,45 @@
 	],
 	"variable": [
 		{
-			"id": "2b312905-84e5-4eae-b05e-36deb559322b",
+			"id": "638d284e-1917-4168-9903-ee799f4b7192",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f7d34aed-c7f2-40f6-bc6d-d82544d15f33",
+			"id": "a2172a9c-4dc5-42ff-a064-9f005ebbd420",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c0dec7b2-0532-4c9f-abd9-3a62d73e4541",
+			"id": "924e52fe-852f-4dcc-a619-7e2070de8895",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "df3eb854-d6f4-40ff-9592-3b1c6ad00ecb",
+			"id": "ee87d86f-877f-426b-967e-63bea36cbe5e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "aa950bef-0b5f-41eb-bb97-eba91aaa796b",
+			"id": "736904e8-9c8f-4dc6-be91-38ebd551d874",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c632ccf1-b75e-43fe-bff9-57e65c0f5769",
+			"id": "3c6e5cbd-0820-44df-bffe-7e1a628934ed",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f8ec22aa-0fde-4514-bedb-8351ad4adbcf",
+			"id": "2985ff5d-8183-4ada-823a-33ba1d412a7c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "235a54f4-44e3-488e-bbab-c56e04577e9c",
+			"id": "f576c8d5-496b-4092-a3f5-252dd4aa76d6",
 			"key": "newDT",
 			"value": ""
 		}
