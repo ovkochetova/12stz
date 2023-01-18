@@ -13561,7 +13561,7 @@
 					"response": []
 				},
 				{
-					"name": "Чекбокс Скрыть для категории(вечерняя коллекция) не Активен",
+					"name": "!Чекбокс Скрыть для категории(вечерняя коллекция) не Активен",
 					"event": [
 						{
 							"listen": "test",
@@ -13765,6 +13765,288 @@
 							}
 						},
 						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Чекбокс Макс кол-во позиций Активен",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.isActive = true;\r",
+									"body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive).to.eql(true);\r",
+									"    });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "a0ad3d7b-ebea-4c0a-bc71-b0c7c6745d10",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Чекбокс Скрыть для категории Активен Copy 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.isActive = true;\r",
+									"body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive).to.eql(true);\r",
+									"    });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "46145f36-3fc3-485f-8d8b-6eb7d3cbd150",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Чекбокс Скрыть для категории Активен Copy 2",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.isActive = true;\r",
+									"body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive).to.eql(true);\r",
+									"    });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "bda25d61-a59f-4a61-9b0f-e1af165cdcf8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -17896,45 +18178,45 @@
 	],
 	"variable": [
 		{
-			"id": "6fd1578f-6edb-480d-b864-b6a176bd1b8f",
+			"id": "028b020e-8426-48de-a60b-c04bbbd9bb8d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6351ae4f-b81a-4b0f-a561-1541454c3681",
+			"id": "596f22cd-44ea-4817-a175-6861ab53954c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "00a8a527-0cdc-4bb3-a9ec-bc0ef10af831",
+			"id": "ff9b9b1a-350a-46ee-91df-635ac4a536c7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f5154c34-a956-477d-b490-1522493412c0",
+			"id": "ac909004-f5ba-48cb-96aa-d12b3a132f00",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cd419c48-de7b-43c3-842e-0d52a567be18",
+			"id": "be5de3fd-a2b1-43d2-9fdb-a67d4584e7d0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a0132737-e803-44e1-ae74-24646b549d4a",
+			"id": "8e901070-32a2-4feb-b3ed-0c0ccd922c21",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "edaaa2d1-3749-455d-8643-cf1374e9a8a9",
+			"id": "38387dc9-c798-4d26-87b2-2da8d0000b03",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7d928c63-d021-4fa9-89b7-1869bb012c02",
+			"id": "8dde5522-a0d8-4822-b53b-696fed59748d",
 			"key": "newDT",
 			"value": ""
 		}
