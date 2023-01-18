@@ -2020,6 +2020,58 @@
 					"response": []
 				},
 				{
+					"name": "СПб вечерняя коллекция",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "056c6c03-5cd2-46c3-9027-a78dae5724b1",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Ограничений для типов доставки нет\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"is_restricted\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var data = pm.response.json().delivery_types;\r",
+									"pm.test('Для этой доставки ' + data.length + ' транспортных компании', function () {\r",
+									"    pm.expect(data).to.be.an('array').to.have.lengthOf(2)\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "5bdf5aeb-fd5e-4977-8b0e-c7b159bd796f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"сity_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100051,\r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }     \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Спб купальник",
 					"event": [
 						{
@@ -17844,45 +17896,45 @@
 	],
 	"variable": [
 		{
-			"id": "5fd474d7-09e1-4f3c-abf6-b24fa80d2679",
+			"id": "b5db1792-69a4-4289-9484-2f1fdece6073",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a70d8176-455b-410b-acb9-f64f4aadccef",
+			"id": "af71e844-aa60-4cf2-bbe8-0dd3f9e1b221",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a51114b3-c67f-4045-b4f7-c98dc7f85d78",
+			"id": "5524cae5-fd9b-4afc-90a3-7f0da205377d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1d7dd6e2-6a9d-4d91-b2d9-a729f9890e91",
+			"id": "66067ea0-32a4-4c8c-97d8-10186931f4c1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "575beebe-b87c-4c0b-a6e4-e6c037d35c99",
+			"id": "5239f63e-9631-4ec1-8066-3a045a0c6b48",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b4e4e81c-a2ba-4d64-9de7-88ac745aa069",
+			"id": "521688a4-6a72-4f33-b7b8-97c77b57b42a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "db1c00ea-fb70-4e51-8987-3f65462e7bbe",
+			"id": "6749deb5-dd53-4c00-be74-40cf514dfa6f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0ef0a0fd-fb50-4b78-8e03-8825bf5bdda2",
+			"id": "3ebf727d-5825-4b41-9d96-edc0e5ba2d32",
 			"key": "newDT",
 			"value": ""
 		}
