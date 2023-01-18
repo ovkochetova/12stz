@@ -13783,7 +13783,8 @@
 									"body.restrictionByQuantityMessage.id = 2;\r",
 									"body.restrictionByQuantityMessage.text = \"Нельзя заказать больше 9 товаров в корзине\"\r",
 									"body.restrictionByQuantityPopup.id = 109;\r",
-									"body.restrictionByQuantityPopup.text\r",
+									"body.restrictionByQuantityPopup.text = \"Нельзя заказать больше 9 товаров в корзине\"\r",
+									"\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -18652,45 +18653,45 @@
 	],
 	"variable": [
 		{
-			"id": "069f54c8-e91a-4742-b4d6-a67663d4c302",
+			"id": "eda62130-c4c3-4498-a17b-5018ff49da2a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0cacdfd7-0f2a-4137-9ccb-b9e0f31615b2",
+			"id": "900658b1-f4fd-408a-a7e6-18dcffd8c88d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8e22cde4-4685-42c8-88d4-13a59811693c",
+			"id": "8561d8d5-4a9f-40e6-855b-b98cca1f61fa",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "803dc489-932f-4298-abab-aa61c6645552",
+			"id": "80747626-5713-4752-a97c-5b1de262de95",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "47253b81-50f7-4538-8d08-b30537f78eeb",
+			"id": "1e8a8eb8-63e0-4958-b676-6af503340fc5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d9e26ed8-49f0-4a49-9327-7eb92314c415",
+			"id": "78556a19-fdcb-4ef5-bb56-7993308a571c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "594ab513-4b7b-4f82-b951-2fba0c8730b4",
+			"id": "6581094f-ee2d-4e09-ade7-83e4619785d5",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5331f831-4aeb-4173-aa22-2db70ae66529",
+			"id": "2a36c13a-c31f-4862-a1ab-537f5b076ac5",
 			"key": "newDT",
 			"value": ""
 		}
