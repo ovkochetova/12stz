@@ -13780,7 +13780,6 @@
 									"\r",
 									"body.isActive = true;\r",
 									"body.restrictionByQuantityIsActive = true;\r",
-									"body.maxQuantity = 9;\r",
 									"\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
@@ -18650,45 +18649,45 @@
 	],
 	"variable": [
 		{
-			"id": "7a35e7ce-2c51-459c-a12b-788b26f01c0b",
+			"id": "0e24e9ad-4efd-455d-bd49-24c54fab7d62",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1377aa14-deed-48cc-b2db-655308882363",
+			"id": "45db601b-f261-45a8-a113-a4556d1a9ae5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "10de84f2-d14f-4aad-9cfa-b72cdf792a52",
+			"id": "281bf866-dddb-4572-a5d0-b7cd1cd03f1b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "51f40ec3-6105-4d59-bfba-f3d98dfb802e",
+			"id": "b3de0c3f-f330-4967-a35f-239d7a38dda8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ae565d9b-5f2f-4294-a8a5-b948aca9a058",
+			"id": "6dfcd5ce-0702-4174-b09c-80cf6b2b795d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5075b5ce-04df-4cf0-9fa9-750dab1fb6ac",
+			"id": "87207eaf-6799-466f-b130-7c0f370dd016",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "272f7448-16f1-4a9b-a694-75462c8cfcf8",
+			"id": "9e638455-593d-432c-b55e-5b1f8d285f27",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "87729d2a-0fa7-490d-b260-0f4e0a19ca82",
+			"id": "18aebc97-5516-4f69-9139-97022f44c6cf",
 			"key": "newDT",
 			"value": ""
 		}
