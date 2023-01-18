@@ -13507,6 +13507,63 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Чекбокс Скрыть для категории(вечерняя коллекция) не Активен",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен \", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "4a195e9b-8f2a-44e4-ae75-faba7a1d57bc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
 				}
 			],
 			"id": "af1eb0e6-029d-48ff-8b41-9340d1dc1f34"
@@ -17636,45 +17693,45 @@
 	],
 	"variable": [
 		{
-			"id": "86012217-18e5-415c-848a-51854b6dda43",
+			"id": "eba1ff46-f121-4d9a-b501-7ca427990038",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a2b92bcc-9e4a-4d1a-a7b5-d7aa1a593244",
+			"id": "2b6d17a7-34ac-4c59-a057-f66eb8c5272f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2d8bdfea-a577-48e9-9bad-fbc10ca77eed",
+			"id": "1f07361a-cfa2-46be-9325-df9e09ebe981",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ffe0d62-96f4-4064-a3be-e672653288d9",
+			"id": "0a29846e-9432-42db-ae70-fe10639e2c43",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "152f1092-f3e1-4629-8516-563e3f1633cb",
+			"id": "d16b25d6-06d7-4b86-8d91-c69d89208da1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "842e9868-de76-4187-9496-cd205e8fe98d",
+			"id": "a965bd7b-2dec-40d5-9253-89325176560e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "447e849f-21da-48bd-95a5-f9f3d5eba173",
+			"id": "1ecdb9b8-88fc-476f-961c-62c51b013009",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8740ed7f-1265-44ff-ba39-bb40a24fb2f4",
+			"id": "3cef247c-06ed-4d65-b435-274f8b4a8079",
 			"key": "newDT",
 			"value": ""
 		}
