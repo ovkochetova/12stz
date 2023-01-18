@@ -2060,7 +2060,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"сity_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100051,\r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }     \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"RU\",\r\n  \"region_geo_id\": \"\",\r\n  \"сity_geo_id\": \"\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"e3a17faa-11ec-4410-84b1-5766e5887508\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100202, \r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100051,\r\n      \"quantity\": 1,\r\n      \"price\": 3000.00,\r\n      \"is_present\": false\r\n    }     \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -17896,45 +17896,45 @@
 	],
 	"variable": [
 		{
-			"id": "b5db1792-69a4-4289-9484-2f1fdece6073",
+			"id": "7daccb0e-86e3-45e7-8876-7f79e01dcb17",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "af71e844-aa60-4cf2-bbe8-0dd3f9e1b221",
+			"id": "32255b24-7b08-400d-bcb3-e3f2e0fa2839",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5524cae5-fd9b-4afc-90a3-7f0da205377d",
+			"id": "dc25cce9-b907-40b2-b189-f3822b41c442",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "66067ea0-32a4-4c8c-97d8-10186931f4c1",
+			"id": "5e5b0266-be7b-4a21-b5aa-9c79a30557ee",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5239f63e-9631-4ec1-8066-3a045a0c6b48",
+			"id": "b70074f5-32bf-4fff-ba9d-0c0c9dc0fa29",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "521688a4-6a72-4f33-b7b8-97c77b57b42a",
+			"id": "124530e2-828f-4179-8c0a-fef5dc2b8466",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6749deb5-dd53-4c00-be74-40cf514dfa6f",
+			"id": "c4610c67-8bbe-400d-9704-3b1417391272",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3ebf727d-5825-4b41-9d96-edc0e5ba2d32",
+			"id": "2a5f71d4-54a9-4513-ba3c-5782cd2f25d9",
 			"key": "newDT",
 			"value": ""
 		}
