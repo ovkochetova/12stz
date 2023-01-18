@@ -13651,7 +13651,7 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) не Активен\" , function () {\r",
+									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
 									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive).to.eql(true);\r",
 									"    });\r",
 									""
@@ -17896,45 +17896,45 @@
 	],
 	"variable": [
 		{
-			"id": "c5c8e9ee-b345-4b6a-b95f-3e788fe7fea9",
+			"id": "da94ea2d-d599-4337-bfe9-03eab754ed2a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "017694f7-b5f0-41c3-a28e-80900b025cd1",
+			"id": "2ffac7bc-4b83-4113-924b-aa39aa08d25e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f24681f7-c68c-4c05-b3d1-f7c5cbba485d",
+			"id": "f86a8c19-8997-4b9a-b54b-fab5d38084af",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6bbf66d9-be30-4923-9c76-3095f03bc367",
+			"id": "d36103b8-f22c-48e6-98ec-dc919cb37b5e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "bee2470c-08ba-4301-9204-e0f9316bfcf2",
+			"id": "77aa38dd-b018-443c-ae5a-b659e6338638",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "91af8707-91c8-48aa-83b5-16e1df3aedae",
+			"id": "80f5bd9a-c0cf-4223-8fa7-9430424a34d3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "217114f2-713c-49f5-8715-78284c9ddfe2",
+			"id": "d024c1cd-5439-41ce-8ccf-7407b66ef9d0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "22df2428-cf47-4aa3-9be1-e1b0d9a88fdf",
+			"id": "93a7fd96-d987-4ace-85f6-44acd4d88e21",
 			"key": "newDT",
 			"value": ""
 		}
