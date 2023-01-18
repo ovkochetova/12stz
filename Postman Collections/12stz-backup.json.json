@@ -13561,7 +13561,7 @@
 					"response": []
 				},
 				{
-					"name": "!Чекбокс Скрыть для категории(вечерняя коллекция) не Активен",
+					"name": "Чекбокс Скрыть для категории(вечерняя коллекция) не Активен",
 					"event": [
 						{
 							"listen": "test",
@@ -17896,45 +17896,45 @@
 	],
 	"variable": [
 		{
-			"id": "3d4fb390-13c3-4995-94ed-2ab51ff86686",
+			"id": "6fd1578f-6edb-480d-b864-b6a176bd1b8f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ebe00f3c-05b5-4eb8-8d0c-2260e63e2712",
+			"id": "6351ae4f-b81a-4b0f-a561-1541454c3681",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "baec6213-cff0-4c40-8907-4f07be6cad5d",
+			"id": "00a8a527-0cdc-4bb3-a9ec-bc0ef10af831",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d371d7ed-5d2a-4160-b4fc-bc69067fe047",
+			"id": "f5154c34-a956-477d-b490-1522493412c0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "02fa4ed1-00d4-4bb7-955b-60958c29fd72",
+			"id": "cd419c48-de7b-43c3-842e-0d52a567be18",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "089635c2-8d26-4169-b2e1-40c1f4977d8c",
+			"id": "a0132737-e803-44e1-ae74-24646b549d4a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "24269b76-5f83-4b61-be7e-06da71c8f585",
+			"id": "edaaa2d1-3749-455d-8643-cf1374e9a8a9",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "67f25b8b-ff21-4a35-b1b9-d395e0dcabb3",
+			"id": "7d928c63-d021-4fa9-89b7-1869bb012c02",
 			"key": "newDT",
 			"value": ""
 		}
