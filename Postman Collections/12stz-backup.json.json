@@ -13448,8 +13448,8 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен\" , function () {\r",
-									"    pm.expect(jsonData.restrictionByPriceIsActive).to.eql(true);\r",
+									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) не Активен\" , function () {\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions.isActive).to.eql(false);\r",
 									"    });\r",
 									""
 								],
@@ -17693,45 +17693,45 @@
 	],
 	"variable": [
 		{
-			"id": "fa1899cb-2d16-48f0-bd83-b8a53c32f4d8",
+			"id": "a06058f1-4039-4880-a0d9-c1c16c098700",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0098d622-f55b-4dcb-8c63-44f0e3856bfc",
+			"id": "41911819-87e9-4651-ac3e-f55948fcb5fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d2ff263a-99de-4d59-9253-1a65e01306f4",
+			"id": "3b7b798e-6e04-4d03-8c61-96e71285a26a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e698f4b2-3c2d-407f-9682-2048c7f36cfe",
+			"id": "12646896-eed8-4668-85d8-691b8cece407",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3ac8f34f-0b2b-4b77-8333-421780613b51",
+			"id": "3c3d297e-65c5-47a1-8b17-5f9e8964b34c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c654dcce-fa8b-4757-95b5-0bdd5d106152",
+			"id": "7b0dd5c5-b353-4192-a8f6-be429f22111a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "48b88e28-0b84-4aad-8518-01a7c91557de",
+			"id": "8d112946-f9eb-411e-8382-73a3d8eafb0c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fe4972b1-fbbc-4d5e-8943-2bdf298aaf17",
+			"id": "733ae934-dbe9-4e25-be70-e4626ec08417",
 			"key": "newDT",
 			"value": ""
 		}
