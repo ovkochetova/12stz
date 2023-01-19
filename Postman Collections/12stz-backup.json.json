@@ -14827,7 +14827,10 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"body.isActive = true;\r",
-									"body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive = true;\r",
+									"body.restrictionByPriceIsActive = true;\r",
+									"body.maxPrice = 300000;\r",
+									"body.restrictionByPriceMessageId= 179;\r",
+									"body.restrictionByPricePopupId = 143;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -19226,45 +19229,45 @@
 	],
 	"variable": [
 		{
-			"id": "3f1b2b4d-fd5b-4122-96bd-c724313a141e",
+			"id": "28e159fc-4487-4497-b883-e842cfe8c607",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03451987-8bc2-4e0a-b01b-10466c63a87d",
+			"id": "6436b371-e9f2-4f3a-b90c-4aa61de2fa3e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b53cff87-5212-49b5-9429-6480eedbda8a",
+			"id": "b3f3a36c-9bdc-4f77-9c3e-42524e5ae254",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bdef8f29-360a-42bc-b2c8-b51f53da2a47",
+			"id": "266cb414-659a-4f12-bcf7-977085e0201c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "af761e94-a02f-4054-9dd9-61b6cefc70b9",
+			"id": "7a2e51a6-996a-4260-b5e1-b76ea9048670",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bd7bb860-ffc2-4d13-a476-3eedb377bb0c",
+			"id": "e79e9b80-8562-4589-a85e-387e96efc9ba",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b663b7b2-41d0-483a-9451-1bce202de649",
+			"id": "a2e5e2bb-7ebc-4430-9ae4-8984ae88ffa9",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f9d053fb-0964-4a8c-a72f-58ccb7d898e3",
+			"id": "4d296ffe-9bdd-4e17-a664-aefbf6414069",
 			"key": "newDT",
 			"value": ""
 		}
