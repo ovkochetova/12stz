@@ -14759,7 +14759,7 @@
 					"response": []
 				},
 				{
-					"name": "Чекбокс Макс стоимость заказа Активен300 001",
+					"name": "Чекбокс Макс стоимость заказа Активен 300 001",
 					"event": [
 						{
 							"listen": "test",
@@ -19344,45 +19344,45 @@
 	],
 	"variable": [
 		{
-			"id": "3933c928-6bab-415f-8712-2c1c7810c2be",
+			"id": "2e79e6da-bb6a-4f3f-bf87-bfa0a3b6938e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "141bea62-d00c-43e3-9658-519ebf53b0c3",
+			"id": "e6290469-261e-45cc-ae89-71e6dfce26b0",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "76a54447-0f7b-461d-aae1-6e81dad0ee62",
+			"id": "df34f633-f6fc-42a3-aec4-cd013d663cd1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "503c72c4-c64d-49b5-828e-94732bebd919",
+			"id": "4138f06a-df79-4834-a02e-09169f4e3234",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a369588d-82d9-488f-a16a-2e6722a76f39",
+			"id": "b6286de8-243b-4f29-a404-7324d08ebfbb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "78e0ef6a-0a3f-4821-aa96-41d8ff7a7ee2",
+			"id": "efffd9dc-8d10-47e9-a670-317acfd5c47e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "869d34e6-ae23-41ce-8bd7-ac9099578542",
+			"id": "25ac8744-7cca-4ada-b458-7dae4c66aed5",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "6147669f-b3c7-41a1-abb6-f46a09c6544a",
+			"id": "f98002e7-1a91-4cff-bc76-1ef217e019c8",
 			"key": "newDT",
 			"value": ""
 		}
