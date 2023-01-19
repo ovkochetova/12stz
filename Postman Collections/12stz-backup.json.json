@@ -14237,7 +14237,7 @@
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Чекбокс Макс кол-во позиций одного артикула Активен\" , function () {\r",
 									"    pm.expect(jsonData.restrictionByQuantityPerArticleIsActive).to.eql(true);\r",
-									"     pm.expect(jsonData.maxQuantityPerArticle).to.eql(2)\r",
+									"     pm.expect(jsonData.maxQuantityPerArticle).to.eql(1)\r",
 									"    });\r",
 									""
 								],
@@ -19011,45 +19011,45 @@
 	],
 	"variable": [
 		{
-			"id": "6f5fbb6b-73a4-42d4-9d53-3f2712a161b5",
+			"id": "a8534563-8fe8-446f-bb7d-5e38b6047d7c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "18a0fbee-f210-4276-a15b-ecff37ed1fcb",
+			"id": "4d0e6166-dd43-4c66-acc0-fa11e3ac223f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a2b61d07-2fc3-40d1-83b1-85191df248b8",
+			"id": "48f13822-2a23-4a14-b474-c38f4a350925",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "968a9ef2-13f6-444d-bfaf-4f84af1c13ab",
+			"id": "56a126bc-df49-4c18-9d71-4ab684746749",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "096359a5-2f1d-4918-9799-922c11e4b7ab",
+			"id": "01225eda-4adb-4fbc-b078-d01734ab6946",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "578c7137-388c-43fa-b4bf-567be6098c2f",
+			"id": "671a72c4-b633-4607-9aa0-0a47986c9e37",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "8ab694b1-ea38-4063-bbcc-6bebe0d49764",
+			"id": "b2c10d58-c4b0-4341-9627-3b0d8a6540c7",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d8866f35-216b-4135-9e07-338662e9564a",
+			"id": "76b2f4a2-8fcc-4930-82ae-1febac9279ad",
 			"key": "newDT",
 			"value": ""
 		}
