@@ -14413,7 +14413,7 @@
 									"body.restrictionByPriceIsActive = true;\r",
 									"body.maxPrice = 300000;\r",
 									"body.restrictionByPriceMessageId= 179;\r",
-									"body.restrictionByPricePopupId = 120;\r",
+									"body.restrictionByPricePopupId = 143;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -19106,45 +19106,45 @@
 	],
 	"variable": [
 		{
-			"id": "95b4bfba-8b51-4276-bfe5-3380e16b851b",
+			"id": "f1b8dd8b-932a-4e6c-a0cc-6498456fe4aa",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "af0a0f42-72b2-46b2-b123-ed0daf13e463",
+			"id": "dce3c8d4-6897-4766-bbf5-9ddf4d7452bc",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "09d8d19b-790d-4f57-b4f3-545d6f98bc37",
+			"id": "1acd0917-c4c5-4c84-8f27-b4ee4bfcea66",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ba475586-4ea4-4e07-991e-39defefed3eb",
+			"id": "f91520ec-44f8-42b5-99fc-59ef36214c89",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c1e000e4-4771-41b3-9dc9-feb954cbd7b5",
+			"id": "4a44c07e-6f08-4289-a4f7-79d8b9e88e3f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "277656ee-a618-44c0-b59f-ad7344a6b515",
+			"id": "d8b3d6f4-4c91-4724-a92a-c0fb8fd26e26",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4f42ccaf-b7df-4d72-997f-fe09fffb5225",
+			"id": "07a574b1-6876-45ad-9e39-eb059e140e0b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0bdf2077-9324-439e-a76c-eeeb4dac7f5c",
+			"id": "adba7859-9392-4b2f-9d1c-23d23f72b584",
 			"key": "newDT",
 			"value": ""
 		}
