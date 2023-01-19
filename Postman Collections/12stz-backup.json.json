@@ -14496,7 +14496,7 @@
 					"response": []
 				},
 				{
-					"name": "Чекбокс Макс кол-во позиций одного артикула Активен 1 шт.",
+					"name": "Чекбокс Макс кол-во позиций одного артикула не Активен 1 шт.",
 					"event": [
 						{
 							"listen": "test",
@@ -19106,45 +19106,45 @@
 	],
 	"variable": [
 		{
-			"id": "158d6440-cbcc-41ee-aa37-7cdedbf9561e",
+			"id": "a76ba772-690d-48f6-972a-77b3b9eaf54d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c5148a80-ba29-48cd-9a61-ea5b426ddec4",
+			"id": "e288952c-c016-4fcf-8f1a-acf95875dfd2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bdceb0bd-d4f1-4807-b5d9-ed3368bede00",
+			"id": "3c55c02d-0ef3-4d63-ad8f-37331c0b6531",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "83655a9b-e1f7-40cf-b494-614d36b1b2a8",
+			"id": "a1781279-1d6d-424b-b2d5-7fdc44e818e7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ced82607-b42c-4bbd-ae7f-58fe67a6fb2b",
+			"id": "7ece6ab9-6074-46e1-a695-e725f3f2bf09",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7d32b66e-35a3-4e6f-802f-94e305795403",
+			"id": "be6f1c6b-aefd-42d5-8668-6db0a35be675",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e85598d3-b71c-4e1f-a314-28a7e324182c",
+			"id": "4124ede2-fab5-4afb-950a-1cc67c260dbc",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ae3a0feb-dbb5-464e-b81c-8b7becfccdce",
+			"id": "bdb61ff8-2eca-48ca-a1ed-eb6a22c3bc8a",
 			"key": "newDT",
 			"value": ""
 		}
