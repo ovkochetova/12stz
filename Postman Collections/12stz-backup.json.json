@@ -13813,6 +13813,7 @@
 									"pm.test(\"Чекбокс Макс кол-во позиций Активен\" , function () {\r",
 									"    pm.expect(jsonData.restrictionByQuantityIsActive).to.eql(true);\r",
 									"    pm.expect(jsonData.isVisibleWhileRestricted).to.eql(true);\r",
+									"    pm.expect(jsonData.maxQuantity).to.eql(9)\r",
 									"    });\r",
 									""
 								],
@@ -18774,45 +18775,45 @@
 	],
 	"variable": [
 		{
-			"id": "32973c08-a896-4773-965f-a69e243aa589",
+			"id": "9f31d00d-bfea-475c-a995-89a6d3f51e8c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d76f59ab-4486-4ad3-8d52-a8647ecababf",
+			"id": "a814f8ec-6f09-4877-b24a-3bdd6e939563",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7cd7e102-87b6-4ce0-9ffe-ef3bce842a3f",
+			"id": "bfad99c2-e34a-44d7-8ba0-32b4c839a60c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3974f95b-231b-492f-9d9b-6b128e603558",
+			"id": "f27fcb91-0c4f-4cc7-9ccc-72ea30701c6a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "455dbabb-5cf6-4bf3-a408-17a2a67a97c7",
+			"id": "1b54eed4-70fa-426e-adea-63d17b142a00",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "f090003e-4ccb-4ffa-9eae-7c1a854b0560",
+			"id": "63916f31-dd2b-4afe-8844-4aac53a0ea45",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "c3f36837-2783-430f-81cd-2c6fcab7de1d",
+			"id": "2c7cc394-e60f-4788-adeb-a0b254c02c8f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2a51cb2f-0bf6-4b17-9656-ec9b9ef540f2",
+			"id": "70eaa768-e383-44ef-aa35-d40999e28bb0",
 			"key": "newDT",
 			"value": ""
 		}
