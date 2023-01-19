@@ -14158,7 +14158,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Чекбокс Макс кол-во позиций Активен 10шт\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Нельзя заказать больше 9 товаров в корзине\");\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Нельзя заказать больше 9 товаров в корзине\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -18889,45 +18889,45 @@
 	],
 	"variable": [
 		{
-			"id": "4db6db33-4fa2-41a5-9c1a-0bbf23cd131e",
+			"id": "59e6f639-7643-4760-b77f-783c577d99a2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a176a79e-420b-4ca5-824c-e36bc6d0c6bf",
+			"id": "e8270a98-387e-4565-b5a4-44ae16bc4719",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d60974da-d4cb-4d37-a011-cc1d3675d5d3",
+			"id": "6a10544a-944c-4bda-bec5-9203c843fe23",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "90e0e3c9-9cff-44f3-909a-c98d6c515b70",
+			"id": "a1d2c52a-d943-4b24-ae3a-0920eb40f16d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "65e7284e-2dcd-473e-994b-64619a0d57ce",
+			"id": "fac1abc2-b55d-4c00-94c2-c09fe31f75ff",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "cb45edc9-5acb-49cb-9d41-c03b3aa7ed44",
+			"id": "39767ff4-639a-4741-8672-d31d5bc0a43c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d1a9bf15-90be-4a8f-a84c-f0fb047b9fef",
+			"id": "281081e8-085c-4b06-a7d6-2c773de8fad1",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "74131851-cc0f-43a2-89fe-8be3f46c2a38",
+			"id": "acad03bf-a9c4-4df7-9318-79b70240b424",
 			"key": "newDT",
 			"value": ""
 		}
