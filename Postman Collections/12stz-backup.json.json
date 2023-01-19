@@ -14141,7 +14141,7 @@
 					"response": []
 				},
 				{
-					"name": "Чекбокс Макс кол-во позиций Активен 10шт. Copy",
+					"name": "Чекбокс Макс кол-во позиций Активен 10шт.",
 					"event": [
 						{
 							"listen": "test",
@@ -18889,45 +18889,45 @@
 	],
 	"variable": [
 		{
-			"id": "3f6d456a-23fb-4c26-a3c2-3c039797b29d",
+			"id": "4db6db33-4fa2-41a5-9c1a-0bbf23cd131e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "25bfeace-be73-4bde-ae68-99411c055839",
+			"id": "a176a79e-420b-4ca5-824c-e36bc6d0c6bf",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a46b23b-ed54-4727-9e46-e7776446c4de",
+			"id": "d60974da-d4cb-4d37-a011-cc1d3675d5d3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "64c417cf-fc44-475b-8f1d-da1e3ecfd388",
+			"id": "90e0e3c9-9cff-44f3-909a-c98d6c515b70",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d8ff35ff-e4af-40d6-8ee2-a20d71a5e90f",
+			"id": "65e7284e-2dcd-473e-994b-64619a0d57ce",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9199d574-83d4-4695-b606-8243f9e244fc",
+			"id": "cb45edc9-5acb-49cb-9d41-c03b3aa7ed44",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ffd63e6e-bd78-428a-97b9-a2ea77095dab",
+			"id": "d1a9bf15-90be-4a8f-a84c-f0fb047b9fef",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f640a14d-01bb-4e75-9318-ba816c8c2b48",
+			"id": "74131851-cc0f-43a2-89fe-8be3f46c2a38",
 			"key": "newDT",
 			"value": ""
 		}
