@@ -14236,6 +14236,7 @@
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
 									"    pm.expect(jsonData.restrictionByQuantityPerArticleIsActive).to.eql(true);\r",
+									"     pm.expect(jsonData.maxQuantityPerArticle).to.eql(2)\r",
 									"    });\r",
 									""
 								],
@@ -18892,45 +18893,45 @@
 	],
 	"variable": [
 		{
-			"id": "37cbc7c1-7df0-4e6e-8420-621231880ac4",
+			"id": "94092475-b90d-4071-a063-aa501eee70ae",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d0740425-5555-41d5-8ba5-41c668971d6e",
+			"id": "34731048-9ef5-4c73-8abf-2295559dce2b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e19bb978-124a-4d4f-a058-fb42117ada7b",
+			"id": "830edaee-d0fc-4bef-abce-b66c3b864c05",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "10f47444-3e03-42d5-a462-ef04f7e2053f",
+			"id": "7a1b919f-be32-430f-a9aa-72492abf95d2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2e18eee8-e33a-4616-8b94-918bd7d3f8b8",
+			"id": "55a6f810-2590-4a86-9cc0-5fc261c5b0db",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5c491bc1-1984-4d79-bd7c-643266db5959",
+			"id": "2a496f6a-407c-4cde-a25d-81f9492cdb97",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1c1e36a9-4485-4ab1-88da-cd0528171acb",
+			"id": "970b0154-5ebc-4b2d-80c1-5b72f06d3f78",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "6510827d-c359-4c55-8710-f51141296f9a",
+			"id": "4bdb4900-09b2-463e-8552-f13af744578b",
 			"key": "newDT",
 			"value": ""
 		}
