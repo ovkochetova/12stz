@@ -14702,7 +14702,7 @@
 					"response": []
 				},
 				{
-					"name": "Максимальная сумма оплаты 300 000",
+					"name": "Чекбокс Макс стоимость заказа Активен 300 000",
 					"event": [
 						{
 							"listen": "test",
@@ -14759,7 +14759,7 @@
 					"response": []
 				},
 				{
-					"name": "Максимальная сумма оплаты 300 001",
+					"name": "Чекбокс Макс стоимость заказа Активен300 001",
 					"event": [
 						{
 							"listen": "test",
@@ -19344,45 +19344,45 @@
 	],
 	"variable": [
 		{
-			"id": "45b025e9-bceb-445c-9f81-f8a1026ee2be",
+			"id": "3006ed25-0e81-4b82-848c-4dd27af21dda",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3abfe323-fc33-4f7a-b78e-a645ddf194b0",
+			"id": "066a31e5-fc32-4e4c-90fb-9b7d226a32e2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6cee0df2-f9c0-4fbd-bdc4-7c5550d3fbe8",
+			"id": "460513cf-6d7c-4bba-a2d6-7aa9b973be40",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "894ad40e-d92e-492f-93a5-6cc0c9d93715",
+			"id": "2aea8917-a865-426f-9846-d9e12b1ab85b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b0e4f1c6-d908-41e1-b63f-2248b32b6cef",
+			"id": "66883446-cf9e-494a-97a8-c47465dac0fc",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "54551530-24da-4905-8581-5d4f80502ea1",
+			"id": "c40d4ac3-9e92-4191-b868-6b076f9ad2b3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ac1f254f-de49-4316-b693-addeaf37f43b",
+			"id": "ee9e876d-0763-4fac-9b51-ba9425445601",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f799c794-9bf0-4141-90b7-fe95631519bd",
+			"id": "369a4a5e-b029-4530-8c7e-8fd81688f4d0",
 			"key": "newDT",
 			"value": ""
 		}
