@@ -14562,9 +14562,8 @@
 									"});\r",
 									"\r",
 									"\r",
-									"pm.test(\"Чекбокс Макс кол-во позиций Активен 10шт\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Примерка недоступна, если вы заказали несколько экземпляров модели в одном и том же размере\");\r",
-									"});"
+									"pm.test(\"Чекбокс Макс кол-во позиций одного артикула не Активен 2 шт\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Примерка недоступна, если вы заказали несколько экземпляров модели в одном и том же размере\");"
 								],
 								"type": "text/javascript"
 							}
@@ -19106,45 +19105,45 @@
 	],
 	"variable": [
 		{
-			"id": "f501d502-2ccc-42aa-96e0-df69b9f8bca2",
+			"id": "35e5ef9b-3249-493d-9ada-6cb6ae6cc392",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dcb96a34-f0e9-41bb-9f63-61badb46a80d",
+			"id": "027b71d8-d672-4875-95fb-9f3b5c3e4084",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e376830e-1817-45bc-9779-46619d1fe530",
+			"id": "c4ed31ec-bf46-494b-998c-436cea05052b",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c5b2b879-a9e9-4655-a650-3e07f6f43573",
+			"id": "0ecab661-ce14-4718-a43e-829a67842bcd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b1129ed0-9d0b-49fb-80a3-87656e3462b5",
+			"id": "c9bc4a65-555e-4bdd-b508-a28535bc6983",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d3a0688b-3c50-429e-ad1b-8613607461f5",
+			"id": "80594f12-9d0f-45b5-812e-6d9bbeebf29c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "223f0ee4-27fb-4d26-9795-3b5f9ac2cecf",
+			"id": "28181264-dea6-44b5-a7c0-5be583cb1cf0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0903226e-0ebc-4405-b71a-343fe3c4d0f3",
+			"id": "e76545d5-170f-445e-a09b-9847eb81a606",
 			"key": "newDT",
 			"value": ""
 		}
