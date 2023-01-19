@@ -14235,7 +14235,7 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
+									"pm.test(\"Чекбокс Макс кол-во позиций одного артикула Активен\" , function () {\r",
 									"    pm.expect(jsonData.restrictionByQuantityPerArticleIsActive).to.eql(true);\r",
 									"     pm.expect(jsonData.maxQuantityPerArticle).to.eql(2)\r",
 									"    });\r",
@@ -19011,45 +19011,45 @@
 	],
 	"variable": [
 		{
-			"id": "2aae051b-5e53-46dc-98e4-dc014ad70337",
+			"id": "6f5fbb6b-73a4-42d4-9d53-3f2712a161b5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "74187ff0-2d5e-4a09-b064-a62a5e38539f",
+			"id": "18a0fbee-f210-4276-a15b-ecff37ed1fcb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2d04c506-1ebe-4d1a-aaae-84ed8d1291ae",
+			"id": "a2b61d07-2fc3-40d1-83b1-85191df248b8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "53e64042-715e-40fd-88ce-05528d67e4c9",
+			"id": "968a9ef2-13f6-444d-bfaf-4f84af1c13ab",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9bfae38d-07ee-49e0-b9f4-755dd121b20c",
+			"id": "096359a5-2f1d-4918-9799-922c11e4b7ab",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5bf762b4-4258-4c70-933e-fb2a1ce762f7",
+			"id": "578c7137-388c-43fa-b4bf-567be6098c2f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e2b089e8-6e7f-454c-be3c-554d88719e68",
+			"id": "8ab694b1-ea38-4063-bbcc-6bebe0d49764",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "cdd1bf12-e976-4a36-a566-8e17378d71c1",
+			"id": "d8866f35-216b-4135-9e07-338662e9564a",
 			"key": "newDT",
 			"value": ""
 		}
