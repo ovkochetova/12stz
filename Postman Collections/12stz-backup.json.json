@@ -13927,6 +13927,63 @@
 					"response": []
 				},
 				{
+					"name": "Чекбокс Макс кол-во позиций Активен 10шт.",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен \", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "61c2f81a-5755-4232-80f1-97c8a9ce4f68",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 6000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 9000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 24000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 4000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": false\r\n    \r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Чекбокс Макс кол-во позиций не Активен",
 					"event": [
 						{
@@ -18715,45 +18772,45 @@
 	],
 	"variable": [
 		{
-			"id": "24b35138-8621-4cb3-9ed9-a44221d340a9",
+			"id": "c7d9e456-1a51-45ea-8973-714f07f46dd5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0fb4c342-d08e-49d1-8a68-407cd94397f8",
+			"id": "fe180dbf-56a5-4585-b9da-0c44b0434144",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bc3f5b25-0bbc-414f-8387-b9d2cb894965",
+			"id": "ead2c4ac-d043-4f63-b869-af8accb61c39",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cc66c88d-b270-4ba9-a053-b620dc39caa7",
+			"id": "23bc691d-e06c-4902-ab85-b4514a2bf62b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "da6b3882-a641-4a1f-a8d2-3500c42be210",
+			"id": "0d721825-3aea-444a-aa19-06e367903f22",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "71844acb-7570-4c40-b855-7e56e3888c04",
+			"id": "6e9d73da-0a81-4b65-8534-8b155fb6b71d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "831e3caf-e5c6-4915-8a95-2a21875ce427",
+			"id": "3f7b553c-9a58-48ab-b333-e135cef3db7f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "38632dad-ff60-4019-a5fe-0c78e8a16a5b",
+			"id": "224f4cad-8d54-4371-99c6-d9858cb2e844",
 			"key": "newDT",
 			"value": ""
 		}
