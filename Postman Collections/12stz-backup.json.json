@@ -14313,8 +14313,8 @@
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Чекбокс Макс кол-во позиций Активен 9шт\", function () {\r",
-									"    pm.expect(pm.response.text()).not.to.include(\"Нельзя заказать больше 9 товаров в корзине\");\r",
+									"pm.test(\"Чекбокс Макс кол-во позиций одного артикула Активен 1 шт\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Примерка недоступна, если вы заказали несколько экземпляров модели в одном и том же размере\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -19011,45 +19011,45 @@
 	],
 	"variable": [
 		{
-			"id": "a8534563-8fe8-446f-bb7d-5e38b6047d7c",
+			"id": "9dc50110-6a96-464a-95a7-4878f71cdba7",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d0e6166-dd43-4c66-acc0-fa11e3ac223f",
+			"id": "055d989d-c361-4435-902f-4829808908ab",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "48f13822-2a23-4a14-b474-c38f4a350925",
+			"id": "d17cef0d-83f7-4082-91e2-053993735722",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "56a126bc-df49-4c18-9d71-4ab684746749",
+			"id": "857b457e-36c6-43de-b0ae-0a2e3348c88d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "01225eda-4adb-4fbc-b078-d01734ab6946",
+			"id": "ef0c7c1b-c856-4f0f-9a10-2e3fd9632d76",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "671a72c4-b633-4607-9aa0-0a47986c9e37",
+			"id": "e8492cc5-a86d-40b3-9f36-dcbc7343a906",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b2c10d58-c4b0-4341-9627-3b0d8a6540c7",
+			"id": "ef87bdb9-b0f6-4c99-a1e7-bbff5d3045fa",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "76b2f4a2-8fcc-4930-82ae-1febac9279ad",
+			"id": "b51afa45-0cd2-498f-905c-0350b4ae75ce",
 			"key": "newDT",
 			"value": ""
 		}
