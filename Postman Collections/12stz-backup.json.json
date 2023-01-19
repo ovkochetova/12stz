@@ -13886,8 +13886,8 @@
 									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен \", function () {\r",
-									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000\");\r",
+									"pm.test(\"Чекбокс Макс кол-во позиций Активен 9шт\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Нельзя заказать больше 9 товаров в корзине\");\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -18772,45 +18772,45 @@
 	],
 	"variable": [
 		{
-			"id": "7996ac9c-1293-47e9-9030-73dda457f3b1",
+			"id": "1b4437f7-5a0c-4228-bcc1-a781b45dccfc",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6b037584-6ded-4fad-9bfb-770f9b68b763",
+			"id": "c380489b-f67f-404b-98ba-b9f9394f1f16",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ac547571-bc09-49ba-8ce7-721cb5c9bbe4",
+			"id": "0941f214-47c5-4962-bb67-acbc18c71190",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a5c1a29-c42a-4507-b3f9-572db08cae85",
+			"id": "2b01d6ad-29f1-4487-bd8c-8bac9ef751ae",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "780406b5-def7-4ac3-930b-6305442695f2",
+			"id": "9ebf4cd6-5d8a-475e-baf5-ff6675eb03e4",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "23d8eaf3-813c-4338-b82c-c1f80b2a0e68",
+			"id": "b303b89c-ef1b-434d-b91e-205a1d85d148",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "fc694fe3-1aa0-4997-9e31-7f3eacc238b3",
+			"id": "ef15213a-37e4-4315-af7e-523a694aab7b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ad24dbda-7f3a-4d74-a3c2-7435f6c7aa8f",
+			"id": "5e6e0138-6254-40df-94e0-3cc7824c8baf",
 			"key": "newDT",
 			"value": ""
 		}
