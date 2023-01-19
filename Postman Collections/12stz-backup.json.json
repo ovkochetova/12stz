@@ -14509,7 +14509,7 @@
 									"\r",
 									"\r",
 									"\r",
-									"pm.test(\"Чекбокс Макс кол-во позиций одного артикула Активен 1 шт\", function () {\r",
+									"pm.test(\"Чекбокс Макс кол-во позиций одного артикула не Активен 1 шт\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\"Примерка недоступна, если вы заказали несколько экземпляров модели в одном и том же размере\");\r",
 									"});"
 								],
@@ -19106,45 +19106,45 @@
 	],
 	"variable": [
 		{
-			"id": "b2d9a4a6-f6d0-431c-bd54-fbdf8171015c",
+			"id": "f501d502-2ccc-42aa-96e0-df69b9f8bca2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "33fc6eca-2f4e-449f-8bf5-8db5a72e7c12",
+			"id": "dcb96a34-f0e9-41bb-9f63-61badb46a80d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "338eb65f-8a3a-4857-8e44-4595e94bb0f1",
+			"id": "e376830e-1817-45bc-9779-46619d1fe530",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0e4bc643-a7db-4f07-badf-c3088eb7bcc0",
+			"id": "c5b2b879-a9e9-4655-a650-3e07f6f43573",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4e5800d7-acbe-4217-a4d0-d376acad0e0b",
+			"id": "b1129ed0-9d0b-49fb-80a3-87656e3462b5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7c6038ea-1ba5-40d2-b600-b79e718f902c",
+			"id": "d3a0688b-3c50-429e-ad1b-8613607461f5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "18fa0f70-da15-43b9-9df8-6fd3dfea0d75",
+			"id": "223f0ee4-27fb-4d26-9795-3b5f9ac2cecf",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ffb38038-5869-4be4-8671-4a8d6a0e3481",
+			"id": "0903226e-0ebc-4405-b71a-343fe3c4d0f3",
 			"key": "newDT",
 			"value": ""
 		}
