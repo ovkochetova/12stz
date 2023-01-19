@@ -14614,7 +14614,10 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"body.isActive = true;\r",
-									"body.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive = true;\r",
+									"body.restrictionByPriceIsActive = true;\r",
+									"body.maxPrice = 300000;\r",
+									"body.restrictionByPriceMessageId= 179;\r",
+									"body.restrictionByPricePopupId = 143;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -14637,8 +14640,9 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
-									"    pm.expect(jsonData.paymentMethodToDeliveryType[0].paymentMethodCategoryRestrictions[0].isActive).to.eql(true);\r",
+									"pm.test(\"Чекбокс Макс стоимость заказа Активен\" , function () {\r",
+									"    pm.expect(jsonData.restrictionByPriceIsActive).to.eql(true);\r",
+									"    pm.expect(jsonData.maxPrice).to.eql(300000);\r",
 									"    });\r",
 									""
 								],
@@ -19107,45 +19111,45 @@
 	],
 	"variable": [
 		{
-			"id": "b0880b0a-5596-460d-bf63-5ac97e3f51a8",
+			"id": "49bcacea-774c-44d7-ad7e-712294d04485",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6dd0d121-5576-4fbb-95b4-bc905bfa8416",
+			"id": "a39883ef-0898-40dc-87d4-7d7225e3cc40",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "678bb319-9f74-4118-9076-0ac428a2f606",
+			"id": "19b94831-c1e4-4a54-9dd0-5b90ca13c0c7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9e1b3527-2799-4175-b9b1-cdca37c605ba",
+			"id": "680cd9a7-dbdc-470b-9406-a19b01610b4a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "0223a2b7-25cc-44b8-af0a-dfb9879ae456",
+			"id": "3b3d9b67-eaaa-48f5-9cec-054b8ed8f2ad",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "995623ba-0288-4c9a-badb-0ea16ef6a3ec",
+			"id": "f01098c1-2baa-4d67-9216-eeb803fa87b3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "c6972a67-ba3b-4904-849e-5d3b41a052dd",
+			"id": "119835a7-3fd6-4fd9-92e6-fe1de13ec813",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "bc757553-70bf-423b-b92c-5973e774a695",
+			"id": "6e881f50-a286-420e-83a8-25a47fe1928b",
 			"key": "newDT",
 			"value": ""
 		}
