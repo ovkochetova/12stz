@@ -15029,7 +15029,7 @@
 					"response": []
 				},
 				{
-					"name": "Чекбокс Виден при срабатывании ограничений Активен",
+					"name": "Чекбокс Виден при срабатывании ограничений не Активен",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -15039,7 +15039,7 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"body.isActive = true;\r",
-									"body.isVisibleWhileRestricted = true;\r",
+									"body.isVisibleWhileRestricted = false;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -15071,7 +15071,7 @@
 							}
 						}
 					],
-					"id": "822441f6-54ac-4f60-82ba-fb69b022e551",
+					"id": "a03b75dc-e1ab-4cec-b99e-361f1cb07695",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -15126,6 +15126,63 @@
 					"name": "Чекбокс Виден при срабатывании ограничений не Активен",
 					"event": [
 						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен \", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "5383f32d-a1f2-4780-a1b4-1a7db6cdf90d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 150000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Чекбокс Виден при срабатывании ограничений Активен",
+					"event": [
+						{
 							"listen": "prerequest",
 							"script": {
 								"id": "07d64568-113c-475b-948b-c64a2aaae808",
@@ -15133,7 +15190,7 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"body.isActive = true;\r",
-									"body.isVisibleWhileRestricted = false;\r",
+									"body.isVisibleWhileRestricted = true;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -15165,7 +15222,7 @@
 							}
 						}
 					],
-					"id": "a03b75dc-e1ab-4cec-b99e-361f1cb07695",
+					"id": "822441f6-54ac-4f60-82ba-fb69b022e551",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -19344,45 +19401,45 @@
 	],
 	"variable": [
 		{
-			"id": "eaecf3af-aed7-4418-80d7-8f7bbb2bfbf0",
+			"id": "0f132296-6b3b-4fa1-896b-bfeb40c6b809",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fe503623-490c-47fb-99ea-c8e5974f69f8",
+			"id": "f5fcbb83-2dfb-40c8-9f44-64eff76b0844",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "94bbeded-89c6-4421-bc3a-c833e7a1c17c",
+			"id": "fb26727e-d6f1-48c4-b477-67a9ab905ba4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "776fc285-38ad-41a5-b813-56af4ab6759d",
+			"id": "d04ef25b-7c79-4fc3-8938-bd66fe494602",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "578ea75e-158b-4eaf-9723-b6926b1bc3a5",
+			"id": "b41484f9-2fa3-4837-9552-55d6fad09f0b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0ddb976f-4f2a-4ce3-84b2-9bb22d2a0cc9",
+			"id": "e7d47bbc-ff27-46d0-8a76-993747555bc4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6cf5703d-58e1-4d9a-807d-b1c9cd245f08",
+			"id": "27280cc8-7b72-4916-a027-bc09e088860d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ff9f3b33-a15f-4ac9-a032-b350686fdf8a",
+			"id": "9d4ba4b9-b3b5-4bc3-b7da-1dc6121a8e10",
 			"key": "newDT",
 			"value": ""
 		}
