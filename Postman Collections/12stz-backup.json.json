@@ -14407,9 +14407,7 @@
 									"\r",
 									"body.isActive = true;\r",
 									"body.restrictionByQuantityPerArticleIsActive = false;\r",
-									"body.maxQuantityPerArticle = 1;\r",
-									"body.restrictionByQuantityPerArticleMessageId= 151;\r",
-									"body.restrictionByQuantityPerArticlePopupId = 120;\r",
+									"\r",
 									"\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
@@ -19414,45 +19412,45 @@
 	],
 	"variable": [
 		{
-			"id": "a40cea33-5df4-4c47-8a08-f6fc61117e7b",
+			"id": "19c3f034-301a-4cc5-82c9-ccea29afbf08",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f8e9210d-3cf4-4aec-abe6-1086309131cc",
+			"id": "7d3b801a-ba3c-41f4-bb82-33b854bcc9ca",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0d2bb970-1a7f-4dfb-935c-08c4a68eee5c",
+			"id": "c8820740-7513-4227-af71-f53cae18ea69",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3fdd7da7-d30e-41cf-93b8-08f8acec9887",
+			"id": "b323e101-7b93-49bd-9fd9-dfd8d43525b2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b7cbb5e9-3557-4864-8029-9f6472a4e55a",
+			"id": "88cb5e99-ab70-4048-919a-0d9133c1929e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "6c1e0c50-655e-42ae-984f-7837a02729c3",
+			"id": "3d1b6787-b848-4327-9f3e-bba9e793bab3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "42d79d70-ea14-4a7c-89a2-9650ef6f1041",
+			"id": "c5b6af06-a927-40f3-a5e7-a798db93db25",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4f9cd16e-38ec-4dc4-8f30-75aa64d04a85",
+			"id": "29d79d54-07b8-4156-9683-2c5b7a99c046",
 			"key": "newDT",
 			"value": ""
 		}
