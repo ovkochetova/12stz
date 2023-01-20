@@ -15070,7 +15070,7 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Чекбокс Скрыть для категории (вечерняя коллекция) Активен\" , function () {\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений не Активен\" , function () {\r",
 									"    pm.expect(jsonData.isVisibleWhileRestricted).to.eql(false);\r",
 									"    });\r",
 									""
@@ -19466,45 +19466,45 @@
 	],
 	"variable": [
 		{
-			"id": "c2628647-bf8b-40a2-8469-99b3ca099370",
+			"id": "d4a0b0ee-95e9-49d7-adb1-7bace6dafc71",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "76cca269-06cd-4222-87c2-80ec3d1cafeb",
+			"id": "fde8ba15-4e04-4ea9-84bd-711c3d995c54",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b0089bc-ef81-419a-80ee-4d9cc9765032",
+			"id": "34e1894b-62e4-4733-9d6a-73dd634973b4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "163fe9bf-214b-4415-b25e-5acbed0b3b2f",
+			"id": "45810f01-d9eb-4251-bc92-f5131c2e2774",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e8619656-0ff0-4fda-a1c4-146e3aa0d4f0",
+			"id": "ed3007ee-3f80-4c42-bef4-b7104b622e05",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "26cd0d7f-8c4e-4cd6-acfa-2ca6e211680f",
+			"id": "1e0a233c-9b0f-48ec-bbb4-3463cc6bd4d5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "cc165de6-687e-486c-abeb-2fc41436e95b",
+			"id": "68782382-17b3-47bc-87b5-eec836069d47",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b35b604b-aa53-45ee-988e-9ffd59f11508",
+			"id": "bf1a731c-75fc-4d09-863f-efe3c805bfe7",
 			"key": "newDT",
 			"value": ""
 		}
