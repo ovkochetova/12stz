@@ -15041,6 +15041,23 @@
 									"body.isActive = true;\r",
 									"body.isVisibleWhileRestricted = false;\r",
 									"\r",
+									"body.restrictionByQuantityIsActive = true;\r",
+									"body.isVisibleWhileRestricted = true;\r",
+									"body.maxQuantity = 9;\r",
+									"body.restrictionByQuantityMessageId = 2;\r",
+									"body.restrictionByQuantityPopupId = 109;\r",
+									"\r",
+									"body.restrictionByQuantityPerArticleIsActive = true;\r",
+									"body.maxQuantityPerArticle = 1;\r",
+									"body.restrictionByQuantityPerArticleMessageId= 151;\r",
+									"body.restrictionByQuantityPerArticlePopupId = 120;\r",
+									"\r",
+									"body.restrictionByPriceIsActive = true;\r",
+									"body.maxPrice = 300000;\r",
+									"body.restrictionByPriceMessageId= 179;\r",
+									"body.restrictionByPricePopupId = 143;\r",
+									"\r",
+									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
 									"\r",
@@ -19401,45 +19418,45 @@
 	],
 	"variable": [
 		{
-			"id": "07eaab0c-cdbc-4e9f-b3af-79803d2f597d",
+			"id": "3af8777f-9119-4c5c-bc11-36e567e1f6b8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d9fc8835-695b-4e3a-bbf3-c339952ed1f0",
+			"id": "21b02086-0555-4a20-b161-5fd3621f38cd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d9ade8e9-9d11-4832-924d-5191583806c6",
+			"id": "ec59e09c-45c8-4e1b-b522-0423e70934c5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "212e1bb1-ed10-4d3a-bb78-05d735303964",
+			"id": "37121fec-d98d-4e49-8fc8-02b628943aea",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cc79cdc9-5a94-49db-a10e-abe5b592fe12",
+			"id": "e8ae66bc-256b-4309-82fb-bc5299d8815e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "be5a87f5-a798-4182-9cc3-081bc84e13a7",
+			"id": "4b5c7364-d7ed-4fe0-82ae-388fda1a7ad5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5df00a51-ca92-43e7-b6b0-5c50b0031598",
+			"id": "a15de1f0-6fee-4d8c-89e4-7ae6a1ac53be",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "066159d8-4811-47ab-9cd7-53b68d5534af",
+			"id": "cbcdeda2-1f99-46b3-a707-c232409bc51b",
 			"key": "newDT",
 			"value": ""
 		}
