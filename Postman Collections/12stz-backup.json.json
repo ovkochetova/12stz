@@ -3173,7 +3173,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/transport-company?limit=70&offset=0&search=ТК для тестов(не удалять)&sort=",
+							"raw": "{{baseUrl}}/api/v1/transport-company?limit=70&offset=0&search=ТК для тестов&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -3193,7 +3193,7 @@
 								},
 								{
 									"key": "search",
-									"value": "ТК для тестов(не удалять)"
+									"value": "ТК для тестов"
 								},
 								{
 									"key": "sort",
@@ -19519,45 +19519,45 @@
 	],
 	"variable": [
 		{
-			"id": "01c36c23-664c-4ef8-905b-8c9d160b1847",
+			"id": "ad2086d9-a21a-417b-9c9e-1811260ab603",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bce19a08-7d0b-4e85-a4c5-e67bb2aaf596",
+			"id": "6433bd75-e863-4201-ba4a-b632b901614e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "90d223c6-a126-45f1-8864-3d5d22949490",
+			"id": "c4f4b454-5126-4204-9738-61289c60d518",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "643bb062-3f87-40b7-8197-c0b297f4788e",
+			"id": "3f9ab1f6-413a-4edd-bcd4-2a17367db6e2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b7f2eb97-36b0-4973-96c0-b5f060b0411f",
+			"id": "80b89ef1-ad6b-455f-89c2-2ec5fab77b15",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3e07dfb2-f65e-49ea-ab39-279ba6380dbe",
+			"id": "3401336f-2608-49a9-82ed-3b28cede6d8f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5a7756c4-f9a4-427c-a4f4-2ce3e9703c48",
+			"id": "21b1b646-3f6f-4f34-b5b9-d66fc3b0287f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ad8fd640-96d4-46f9-8c1e-e62be85b838f",
+			"id": "73728fcf-31d5-4b84-878a-3204a8756875",
 			"key": "newDT",
 			"value": ""
 		}
