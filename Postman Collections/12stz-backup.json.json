@@ -7388,10 +7388,10 @@
 									"\r",
 									"delete body.id;\r",
 									"body.isActive = true;\r",
-									"body.isPriceBorderIncludeDelivery = true;\r",
-									"body.isPriceBorderIncludePresent = true;\r",
-									"body.isProductQuantityBorderIncludeDelivery = true;\r",
-									"body.isProductQuantityBorderIncludePresent = true;\r",
+									"body.isPriceBorderIncludeDelivery = false;\r",
+									"body.isPriceBorderIncludePresent = false;\r",
+									"body.isProductQuantityBorderIncludeDelivery = false;\r",
+									"body.isProductQuantityBorderIncludePresent = false;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -19703,45 +19703,45 @@
 	],
 	"variable": [
 		{
-			"id": "467da724-92d0-45d3-b135-e93cbf177b8b",
+			"id": "dc0a44b9-4c19-40a4-9afe-7528257c3799",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ac0d38f-5f59-467b-95a7-c7a0a52a1b04",
+			"id": "cc60d6b9-7d57-4920-878f-63f362e6b69a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1ff150d2-4bd2-4b1c-8e84-152614d43f1a",
+			"id": "badd7eef-9d59-47c2-b414-163dc0af97c2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bd5f6ab2-872a-47b3-9bc1-29064d3931de",
+			"id": "12b9f693-691e-470f-852d-fbeabaecb0cc",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "764bf651-5131-4210-8708-053dd74a3357",
+			"id": "2f3423a9-5de7-44f1-8e02-35694152037b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "07ee6dcb-5f4e-42fc-8f5e-fa42b137f81e",
+			"id": "3e34f904-a1ea-4cd6-a2fe-2a24803040c6",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4b7da358-d718-4aa5-ba44-6c04491243d7",
+			"id": "5d5ea190-7f0f-4c14-b481-1e253a0eb910",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "de5dd5d3-2479-468e-8d93-29e836bc6aee",
+			"id": "48fae805-b4ca-439a-93a5-ea0e67d7927c",
 			"key": "newDT",
 			"value": ""
 		}
