@@ -7320,10 +7320,10 @@
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Все чекбоксы Активны\", function () {\r",
 									"       pm.expect(jsonData.isActive).to.eql(true);\r",
-									"\r",
-									"\r",
-									"\r",
-									"\r",
+									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(true);\r",
+									"       pm.expect(jsonData.isPriceBorderIncludePresent).to.eql(true);\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludeDelivery).to.eql(true);\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -19557,45 +19557,45 @@
 	],
 	"variable": [
 		{
-			"id": "97c201f9-1559-453e-8966-be655e9a544a",
+			"id": "507c5a18-6110-4fa2-9e97-82a8862cebf0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "63b3585d-551f-4160-a513-5c4a73e0af57",
+			"id": "f1365efa-d99c-4949-94c4-c2bc5ccabc4c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "30957d7f-a909-4854-a297-394629d2a049",
+			"id": "3f6686f1-68b6-4413-8249-26edb2892ba1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eda39838-b96d-499e-9b76-3986f34a6009",
+			"id": "3d776b8c-eb3f-45d5-b157-ee7c65af09a7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f58732e7-58e3-45a3-bdcf-4eb4a0bd7f57",
+			"id": "9dbc22af-f088-43c9-85d5-67479bfd3ebc",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a035104d-5bec-48fa-a91f-304c786d9571",
+			"id": "fcefac0e-5f64-408c-8bc0-cad9081a5a81",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b33b0dd4-03fb-49fb-ab95-b9610416c0d6",
+			"id": "2f68372a-aa8c-41eb-89fb-d6bc18dc99b0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "158f7515-5598-4111-8635-c85c4ded11bb",
+			"id": "58889598-c238-4cbe-8b65-8e65cc6906ac",
 			"key": "newDT",
 			"value": ""
 		}
