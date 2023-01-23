@@ -3158,6 +3158,18 @@
 			"name": "Юр. Лица",
 			"item": [
 				{
+					"name": "Поиск юр.лица по названию",
+					"id": "e6a11272-618e-46cf-93c5-33b0949c2c6f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
 					"name": "Информация о Юр. Лице",
 					"event": [
 						{
@@ -3680,18 +3692,6 @@
 							}
 						},
 						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "e6a11272-618e-46cf-93c5-33b0949c2c6f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
 					},
 					"response": []
 				}
@@ -19484,45 +19484,45 @@
 	],
 	"variable": [
 		{
-			"id": "4c6319c5-22a2-4468-8047-ec80a1162746",
+			"id": "6fa37f6c-2226-4dc0-a438-5ca31b8415a9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa123509-7dde-47a7-8b2a-ceea43e75085",
+			"id": "acc0aa5b-6ade-4cb6-b4e9-2a0cf8f1eb2c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8856611b-155b-4dc1-8b01-43f24d639f0d",
+			"id": "77495940-4d80-46f0-91cf-1b3eaec4b8a0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9dd8cef9-791d-4b64-a095-c8b909d7b183",
+			"id": "813a5074-264f-4779-b7ee-65adff0a4f52",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "16a481b3-12d7-4524-a949-31847709200a",
+			"id": "9d077ca8-7977-49d1-a8fa-4bb2fce008ea",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "8ecbc9d4-d27a-4df4-b413-9150e9a1d8aa",
+			"id": "e6730d87-5ce5-45e1-9f93-e23d1d032370",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "8958acf4-0d19-4baf-a410-6753287019d6",
+			"id": "be06a957-e286-44bb-8d53-876cc23bcc73",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7729f0ee-73e2-4c63-85e9-892724a132df",
+			"id": "0d014c8e-184c-48af-b314-f612b3fdbb51",
 			"key": "newDT",
 			"value": ""
 		}
