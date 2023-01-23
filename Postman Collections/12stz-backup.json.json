@@ -4433,7 +4433,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"/*let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='Тестовая ТК (не удалять)')\r",
+									"/*let delivery = pm.response.json().delivery_types.find(x=> x.delivery_type_name ==='ТК для тестов(не удалять)')\r",
 									"console.log(delivery);\r",
 									"\r",
 									"let maxdostavka = delivery.to_days;\r",
@@ -19648,45 +19648,45 @@
 	],
 	"variable": [
 		{
-			"id": "09f858ab-bc85-4576-9ad2-cf77d00f8c9c",
+			"id": "f6f959f2-4844-41b7-803d-72d78397b2f8",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "94187c57-01dc-498a-90db-27c9a9c6b745",
+			"id": "a0a88da8-67c6-47c2-a558-f9ae7d738799",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d14f439-7e9a-4f69-99b7-e9064c4f4ea9",
+			"id": "ddf9af43-aad2-41ca-a067-cb2269c874ba",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0258f5d2-8317-43d0-8b7b-26801ffc92f8",
+			"id": "032f1857-7df2-4d07-a0ac-988bf6a9df82",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a0b40fec-deff-4488-abe7-c4edefd8404b",
+			"id": "a061008b-cbaf-40c1-bfef-5b6c155bb8ae",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "39c68072-bda5-470a-a899-7a9e2276023d",
+			"id": "d22972b4-4c77-4091-baef-f12faa2dbb21",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4b1a7a7d-23b1-40d2-928f-5df35024b004",
+			"id": "3cc06cd2-ca44-426e-937c-80fbfda7465f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "20b467c8-966c-4867-b50f-2229838a2d1f",
+			"id": "b6bc3a3a-e9a6-4304-9a4f-3a5ea3bb4b81",
 			"key": "newDT",
 			"value": ""
 		}
