@@ -3582,19 +3582,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"var schema = {\r",
-									"    \"items\": {\r",
-									"        \"type\": \"boolean\"\r",
-									"    }\r",
-									"};\r",
-									"\r",
-									"var data1 = [true, false];\r",
-									"var data2 = [true, 123];\r",
-									"\r",
-									"pm.test('Schema is valid', function () {\r",
-									"    pm.expect(tv4.validate(data1, schema)).to.be.true;\r",
-									"    pm.expect(tv4.validate(data2, schema)).to.be.true;\r",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -19542,45 +19530,45 @@
 	],
 	"variable": [
 		{
-			"id": "cb483f60-e8eb-4296-9bbe-cd3ef838b0dd",
+			"id": "46c798b9-1f9f-426a-ac89-bdfbc480f2ea",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5cd9e57f-1dde-4204-8c90-278999ff92a2",
+			"id": "2df7d847-0584-4624-bed8-499d7fcd3daa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "50511f22-b2e9-4e39-be5e-861328ee8071",
+			"id": "2078960c-eb9b-4353-8952-46ca725b3d11",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "25b38c7f-7ea5-4cc8-9887-aeb9425fe513",
+			"id": "4e80e455-7e42-4bd9-8644-53d62ca065f9",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c1d7b169-1781-4d2f-b48b-005d13d6b393",
+			"id": "eefe6be2-1e43-436e-a559-a2071e03d8d1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0439f90d-4fbe-465c-993c-5f08c6b6f560",
+			"id": "26864f1b-3093-4df8-8ab9-6a3dd39d90a4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4670d879-67d0-4cfa-8436-6d5a57ce45ad",
+			"id": "09ca52d9-ac33-4ee7-9fb7-2dfda5efea2b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b72f9958-7a0c-4f44-9708-4e1d2c2061e3",
+			"id": "97902d6a-4259-4101-b8c3-49c3062c368c",
 			"key": "newDT",
 			"value": ""
 		}
