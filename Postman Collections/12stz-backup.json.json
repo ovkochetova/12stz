@@ -5057,6 +5057,7 @@
 									"delete body.id;\r",
 									"body.isActive = true;\r",
 									"body.isPriceBorderIncludePresent = true,\r",
+									"body.isPriceBorderIncludeDelivery = false,\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(body)\r",
@@ -19645,45 +19646,45 @@
 	],
 	"variable": [
 		{
-			"id": "a995cd09-d630-4d84-96b1-d115256e0032",
+			"id": "6720a865-5e44-49ab-826b-030bcec3139b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0d7220f2-057e-4a1b-98da-391f6f9464bf",
+			"id": "25b8e6a3-8db7-4803-b259-982b8b1eff34",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "41bd5978-a2dd-4dc9-961e-511f88dec132",
+			"id": "b4d1724c-5cd4-4dba-b1e6-c2a04d9d807f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8f062be-2036-48aa-992f-3bfd4c089d36",
+			"id": "3f1d2762-b22b-4ad1-b6dd-d6d07e770569",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cd49b981-4457-4959-9428-2577f15f1b24",
+			"id": "73a8ba27-ed6f-4aed-a2cb-aa3ba14a071f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "da9e2b23-668d-47a8-99cc-f8d1294819b9",
+			"id": "585e64fd-839e-4277-a89c-295e6ef6a0b5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "774bae50-fee8-4352-8ae5-70edc196735b",
+			"id": "09c03935-4ce1-4c65-bd2a-fffe6edb03b6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "037dc28b-d69a-42d0-8a95-22b5c7e10f6f",
+			"id": "fc0ffebc-6002-4ba8-a181-610a5c6003b4",
 			"key": "newDT",
 			"value": ""
 		}
