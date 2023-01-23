@@ -7319,7 +7319,11 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Все чекбоксы Активны\", function () {\r",
-									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
+									"       pm.expect(jsonData.isActive).to.eql(true);\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -19553,45 +19557,45 @@
 	],
 	"variable": [
 		{
-			"id": "0966ce56-c16c-441c-ac90-8f2edd4c46ef",
+			"id": "97c201f9-1559-453e-8966-be655e9a544a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "abd95653-8225-4fab-a001-1d854cfcdac6",
+			"id": "63b3585d-551f-4160-a513-5c4a73e0af57",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a333e6fc-b5a8-48ef-a658-b7ecf46ee52a",
+			"id": "30957d7f-a909-4854-a297-394629d2a049",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6bffb287-f770-4620-a5e2-48779032f68f",
+			"id": "eda39838-b96d-499e-9b76-3986f34a6009",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "0ceb758f-c4a8-4621-9cc9-8dca13d7d8a4",
+			"id": "f58732e7-58e3-45a3-bdcf-4eb4a0bd7f57",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "cb7cc7dc-b302-478b-a0d3-91b1518ae782",
+			"id": "a035104d-5bec-48fa-a91f-304c786d9571",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0a6736e2-77d0-4328-bb7b-628b74819df8",
+			"id": "b33b0dd4-03fb-49fb-ab95-b9610416c0d6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d9fa9be9-d4d2-4025-882e-6e5d890fcbb0",
+			"id": "158f7515-5598-4111-8635-c85c4ded11bb",
 			"key": "newDT",
 			"value": ""
 		}
