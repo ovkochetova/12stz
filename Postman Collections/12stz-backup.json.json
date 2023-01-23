@@ -4445,7 +4445,7 @@
 									"console.log(delta);\r",
 									"\r",
 									"pm.test(\"Разброс доставки для отображения пользователю равно \" + delta , function () {\r",
-									"    pm.expect(maxdostavka - mindostavka).to.eql(4)\r",
+									"    pm.expect(delta).to.eql(4)\r",
 									"});\r",
 									"\r",
 									"\r",
@@ -19648,45 +19648,45 @@
 	],
 	"variable": [
 		{
-			"id": "e4501ad2-bd0b-40ae-b7f2-2e73587d54f1",
+			"id": "134a479f-61da-4c65-9533-2523c4163ca5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8746918c-4a64-4969-a265-52ec49181528",
+			"id": "6540d089-42b1-43fc-9167-7fb9c705ad40",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "99a2f09c-fd0e-487b-a669-4d009c641ef2",
+			"id": "a1e1710b-46e1-4ca4-b0fd-433dc3f42943",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b9d38d6-8717-4b67-a657-1b857e0e42db",
+			"id": "a0d7b006-b336-416d-8fa7-24e2b3719b5a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1208ee1d-69f3-45e2-9fe3-03a4c79cd19f",
+			"id": "def6a3c1-b853-4c32-b20f-d8d6abb3c800",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a9dce91e-a5f7-4965-b176-47d1ff7f8e08",
+			"id": "076126fb-3ad8-4755-add5-f2beca99d65d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "7f056616-3e03-4b78-92a1-99e1750eac7e",
+			"id": "f6f0e977-a6eb-4aa6-8fa4-572bc611baec",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "88130c54-8fff-4510-99bc-aa32284e4a16",
+			"id": "d99cd80d-b60d-48b5-8cc4-4faac3fc5674",
 			"key": "newDT",
 			"value": ""
 		}
