@@ -7318,7 +7318,7 @@
 									"\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Максимальная количество товаров включает подарки\", function () {\r",
+									"pm.test(\"Все чекбоксы Активны\", function () {\r",
 									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
 									"});"
 								],
@@ -19553,45 +19553,45 @@
 	],
 	"variable": [
 		{
-			"id": "a2586b20-96f0-4373-89f0-5fd2f5867ea4",
+			"id": "033cd3d3-16d2-4a4f-a302-d21cf079ace2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e81a8e55-74d9-463b-a808-dc6cc4da9fe8",
+			"id": "273ae9a7-7979-4354-a72f-cd94671fbc4a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8796fb2-b93e-4857-9f60-7f0f5ae34903",
+			"id": "e2d1428c-5c57-4fde-ab40-0dae283ab08a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "17345806-83cb-479f-a2be-039faa08eee0",
+			"id": "033a6b84-34e1-41a3-846a-741981a26263",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2e9585b4-4f26-4952-9c59-4e1304dd2ce0",
+			"id": "52e39495-d573-46bf-b48f-369e5ad2dfb1",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1f3205fc-b7c9-4f25-877a-aed3708caa5f",
+			"id": "97d0e6bd-f017-4679-8f1e-ccc0442b8067",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ad6e819e-3302-40f3-aca9-57f64e8aecd2",
+			"id": "61e08faf-307a-4528-9c82-d8c3db45ed66",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9741fb29-c7ed-4952-9900-b0dbaf832b7a",
+			"id": "0af26e69-de38-4d6f-a48f-a30601a95f30",
 			"key": "newDT",
 			"value": ""
 		}
