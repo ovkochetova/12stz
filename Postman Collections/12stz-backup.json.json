@@ -6192,7 +6192,7 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Максимальная количество товаров  включает подарки, ограничений нет\", function () {\r",
+									"pm.test(\"Максимальная количество товаров  включает подарки, ограничения есть\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"больше 9 товаров\");\r",
 									"})"
 								],
@@ -19649,45 +19649,45 @@
 	],
 	"variable": [
 		{
-			"id": "b44d4154-07dd-40e3-92f8-23a9e77306c8",
+			"id": "c006d225-864d-4dc6-a3aa-6aa4a16c35f4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1bbc45b9-fa3f-4cc2-af43-a4e8322174eb",
+			"id": "f3537ffa-ff36-42ec-8edf-10ddca6b521d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7d29adb6-015e-4f81-abe6-6a7d3ceb0d77",
+			"id": "de1d792a-47e8-4e9f-af83-20d4989cb900",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1aa8950c-b96a-4e0f-910e-8e709ae48b42",
+			"id": "13774d6d-b855-4707-b08d-1ae29f4800b7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e79ab24e-c71e-4e77-a93d-5b6c8b19a910",
+			"id": "2bec98df-14eb-498c-bd31-c07ed137523c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0033c84a-4fdc-4de6-8277-ba3177de2a7e",
+			"id": "dfb4b4e2-9ab4-4c6e-ac46-03b09bf3ab97",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "620f3f13-7c41-441c-acf0-6716d3155495",
+			"id": "b196be99-2aca-4a9f-8e64-17498f5536f6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "bc90b518-dd76-4645-96ad-2b7ca090dc4d",
+			"id": "c56d62ab-2b99-4bf3-8960-8ecca37e16f5",
 			"key": "newDT",
 			"value": ""
 		}
