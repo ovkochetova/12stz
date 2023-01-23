@@ -3291,6 +3291,25 @@
 				},
 				{
 					"name": "Изменение статуса Юр. Лица на false",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "188d5d52-350e-4113-830f-4b98561b5733",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Статус isActive = false \", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.isActive).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "287a3ca2-f152-447c-9488-855937bf9ccd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -19521,45 +19540,45 @@
 	],
 	"variable": [
 		{
-			"id": "87995b48-c777-4cf2-b279-c9f3b69d0675",
+			"id": "8fa72275-1e73-489e-946e-4bfc13374e13",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5fca3938-7e50-4311-afb1-d37774901a8c",
+			"id": "abfa0589-e237-4992-98f6-f5ebf88db5ba",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa5323f2-cece-4c30-bc9d-ca17dfdf273c",
+			"id": "8590931b-42c5-4d0e-ae80-ea025b2ece24",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "debce90a-667a-4026-9b35-9e1f16ddfe40",
+			"id": "1f6b4db9-247b-462d-bb64-5afa1b2cc21f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e52c5886-4459-4a13-ac0a-fce7c2074da2",
+			"id": "6b8f925e-9f7a-424e-9b67-0e62edf2aaba",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ecb7607c-ee51-472f-91ae-9f8f3653364b",
+			"id": "0f02a3e0-9ddd-4e50-8820-cd3a2427bfce",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f00ef7ca-f441-45fe-8621-5a56b7f24a70",
+			"id": "fcc2dfb6-891e-4006-810f-9d1adbea544b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4f8e9789-c701-4517-afd4-6a2872465ea0",
+			"id": "e7014959-1a8f-4989-9f49-8ecf20b2b63f",
 			"key": "newDT",
 			"value": ""
 		}
