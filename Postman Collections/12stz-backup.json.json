@@ -4878,7 +4878,7 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку сумма  299011",
+					"name": "!учитывать доставку сумма  299011",
 					"event": [
 						{
 							"listen": "test",
@@ -19645,45 +19645,45 @@
 	],
 	"variable": [
 		{
-			"id": "aef7d668-0d0c-4e06-be03-af4ea514d5ef",
+			"id": "a995cd09-d630-4d84-96b1-d115256e0032",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0adb49fd-7384-4a53-ae4e-3e5805576185",
+			"id": "0d7220f2-057e-4a1b-98da-391f6f9464bf",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2bbceac9-e62f-4e6e-acb1-bab1df63f945",
+			"id": "41bd5978-a2dd-4dc9-961e-511f88dec132",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "eef951e2-9b54-4e23-8e3e-e1c39702cf55",
+			"id": "a8f062be-2036-48aa-992f-3bfd4c089d36",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c6a6d7a4-b80f-476e-a7f0-8e2f672177fb",
+			"id": "cd49b981-4457-4959-9428-2577f15f1b24",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "5034e8e2-a3d5-436e-939d-33440e884b91",
+			"id": "da9e2b23-668d-47a8-99cc-f8d1294819b9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "2f3839e4-01da-4dbf-aa14-4949d021afe6",
+			"id": "774bae50-fee8-4352-8ae5-70edc196735b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "33bbec24-378c-481e-bc58-a3d023f5d6ca",
+			"id": "037dc28b-d69a-42d0-8a95-22b5c7e10f6f",
 			"key": "newDT",
 			"value": ""
 		}
