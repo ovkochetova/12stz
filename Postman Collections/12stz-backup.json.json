@@ -7373,6 +7373,152 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "все чекбоксы не Активны",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "14d6b7b1-72bc-4f75-a751-47eab5ed450a",
+								"exec": [
+									"\r",
+									"let body = pm.collectionVariables.get(\"TKM\");\r",
+									"console.log(body);\r",
+									"\r",
+									"delete body.id;\r",
+									"body.isActive = true;\r",
+									"body.isPriceBorderIncludeDelivery = true;\r",
+									"body.isPriceBorderIncludePresent = true;\r",
+									"body.isProductQuantityBorderIncludeDelivery = true;\r",
+									"body.isProductQuantityBorderIncludePresent = true;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"body.sProductQuantityBorderIncludeDelivery = true,\r",
+									"body.isProductQuantityBorderIncludePresent = true,\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(body)\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "83a06cbc-69fd-4f84-9f3b-20675d2750e8",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Все чекбоксы Активны\", function () {\r",
+									"       pm.expect(jsonData.isActive).to.eql(true);\r",
+									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(true);\r",
+									"       pm.expect(jsonData.isPriceBorderIncludePresent).to.eql(true);\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludeDelivery).to.eql(true);\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "9d55b96c-3113-4293-86b2-4f0586ff8112",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company-mode/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company-mode",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "5df4ae74-4e21-4979-be9d-8cf50355ef5a",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ba59bc9b-4eef-4572-96a1-aabfa7405b2f"
@@ -19557,45 +19703,45 @@
 	],
 	"variable": [
 		{
-			"id": "779f47c4-985d-4d9f-b402-b4a15363861c",
+			"id": "467da724-92d0-45d3-b135-e93cbf177b8b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cf2f5e7b-73ae-45fc-a1c9-05ea2776b92a",
+			"id": "5ac0d38f-5f59-467b-95a7-c7a0a52a1b04",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e1e78c63-409d-4038-a28b-09dc0530bd48",
+			"id": "1ff150d2-4bd2-4b1c-8e84-152614d43f1a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e7ff159c-40ff-4d09-812c-a87d8d11201d",
+			"id": "bd5f6ab2-872a-47b3-9bc1-29064d3931de",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1451844e-f521-4f9c-b509-33e26ba6d163",
+			"id": "764bf651-5131-4210-8708-053dd74a3357",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c0348758-3e6b-4ba6-89f4-10265aed4a31",
+			"id": "07ee6dcb-5f4e-42fc-8f5e-fa42b137f81e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6cd4b94e-71cc-4aba-b16f-0474a905d1c3",
+			"id": "4b7da358-d718-4aa5-ba44-6c04491243d7",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ae34a821-b58a-4d5e-9001-7122957883ae",
+			"id": "de5dd5d3-2479-468e-8d93-29e836bc6aee",
 			"key": "newDT",
 			"value": ""
 		}
