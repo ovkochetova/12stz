@@ -7466,10 +7466,10 @@
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Все чекбоксы Активны\", function () {\r",
 									"       pm.expect(jsonData.isActive).to.eql(true);\r",
-									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(true);\r",
-									"       pm.expect(jsonData.isPriceBorderIncludePresent).to.eql(true);\r",
-									"       pm.expect(jsonData.isProductQuantityBorderIncludeDelivery).to.eql(true);\r",
-									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(true);\r",
+									"       pm.expect(jsonData.isPriceBorderIncludeDelivery).to.eql(false);\r",
+									"       pm.expect(jsonData.isPriceBorderIncludePresent).to.eql(false);\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludeDelivery).to.eql(false);\r",
+									"       pm.expect(jsonData.isProductQuantityBorderIncludePresent).to.eql(false);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -19703,45 +19703,45 @@
 	],
 	"variable": [
 		{
-			"id": "dc0a44b9-4c19-40a4-9afe-7528257c3799",
+			"id": "c421cbc0-8560-4e1c-a9b1-b4d4baf6d142",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cc60d6b9-7d57-4920-878f-63f362e6b69a",
+			"id": "574962f7-18bd-4c09-aa28-aaa6e061d05c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "badd7eef-9d59-47c2-b414-163dc0af97c2",
+			"id": "cb1e66a0-2c41-4808-836c-932eaa5db965",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "12b9f693-691e-470f-852d-fbeabaecb0cc",
+			"id": "6153260b-8bca-4753-91da-372fd246f619",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2f3423a9-5de7-44f1-8e02-35694152037b",
+			"id": "67ffcbff-4dda-4a01-a4ef-0f0bccf5fc96",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3e34f904-a1ea-4cd6-a2fe-2a24803040c6",
+			"id": "7fbf40c2-b6ed-45cd-bfae-0b7043f3cfc6",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5d5ea190-7f0f-4c14-b481-1e253a0eb910",
+			"id": "eb8f3b6c-547b-4eae-92a6-5c0dab0dd509",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "48fae805-b4ca-439a-93a5-ea0e67d7927c",
+			"id": "18be798d-eb85-48d2-94eb-edbc4e5dab55",
 			"key": "newDT",
 			"value": ""
 		}
