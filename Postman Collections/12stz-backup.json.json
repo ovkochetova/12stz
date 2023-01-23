@@ -3165,7 +3165,36 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/transport-company?limit=70&offset=0&search=ТК для тестов(не удалять)&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"transport-company"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "70"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "ТК для тестов(не удалять)"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -19484,45 +19513,45 @@
 	],
 	"variable": [
 		{
-			"id": "6fa37f6c-2226-4dc0-a438-5ca31b8415a9",
+			"id": "3bb877d7-0df8-43eb-845a-f54e857b3d6c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "acc0aa5b-6ade-4cb6-b4e9-2a0cf8f1eb2c",
+			"id": "3be5f49e-843d-4495-941b-d9f1fbbabc0d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "77495940-4d80-46f0-91cf-1b3eaec4b8a0",
+			"id": "7893eb13-d709-4df2-8f3d-75f2d7f00353",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "813a5074-264f-4779-b7ee-65adff0a4f52",
+			"id": "567f3d4a-28da-4718-9ba6-dc80d5776019",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9d077ca8-7977-49d1-a8fa-4bb2fce008ea",
+			"id": "59b98af3-5d28-4ad1-9978-1744283d74d3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e6730d87-5ce5-45e1-9f93-e23d1d032370",
+			"id": "36a75ed5-0e3d-4afd-9324-aea05bd6a7c8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "be06a957-e286-44bb-8d53-876cc23bcc73",
+			"id": "069e48c6-651d-4e14-a930-3a6f67908dd5",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0d014c8e-184c-48af-b314-f612b3fdbb51",
+			"id": "83cbf230-b3f2-4eda-a90f-4b6882cde1b7",
 			"key": "newDT",
 			"value": ""
 		}
