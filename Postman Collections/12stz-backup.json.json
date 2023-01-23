@@ -7371,6 +7371,58 @@
 					"response": []
 				},
 				{
+					"name": "учитывать подарки 9 шт. и дост 299010",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Максимальная количество товаров не включает подарки, ограничений нет\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"больше 9 товаров\");\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "23c5e46a-70fe-4455-a522-d280c0b34d44",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n   {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 6000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 9000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 24000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 4000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 14000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 12000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "все чекбоксы не Активны",
 					"event": [
 						{
@@ -19645,45 +19697,45 @@
 	],
 	"variable": [
 		{
-			"id": "a52da21a-da25-4cfb-8239-603a58ed828d",
+			"id": "df72b18e-3131-4d28-9642-371b54a26fd1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2ba539ea-0fb1-419d-ba5a-8ca5fbd99c5f",
+			"id": "43bda5a0-6f04-42e9-a7e2-7e923fe9540b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "72e5b6d2-a933-4748-bb71-95ea8cccf670",
+			"id": "e5d1a153-ab99-4f00-84ab-52c377f7594e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5560191b-c263-427e-b97a-ee578c28742f",
+			"id": "326a5dc4-9d6a-4e5f-967a-4efab1cd8709",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "97900739-9641-4850-8c52-7ae7a4c57d3e",
+			"id": "3bfb8ca4-ae03-473b-aaa0-b85c61122905",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "86b248e0-a363-4867-9a8d-63f46aba128b",
+			"id": "7cce4843-bbfc-441a-bde8-e3693f55cdd8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a7c16a8f-ff3a-45d8-bf20-64e6a926c76d",
+			"id": "65fa9841-c327-40a9-b44c-f02f301bef7d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3e6d8ba1-dc7b-49c5-b1e6-dc1cd79cd496",
+			"id": "7a05b5b9-0d25-41b9-b284-4e2fa1a0566a",
 			"key": "newDT",
 			"value": ""
 		}
