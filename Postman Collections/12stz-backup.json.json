@@ -15717,24 +15717,7 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"/*var groupzone = pm.response.json();\r",
-									"console.log(groupzone)\r",
 									"\r",
-									"pm.collectionVariables.set(\"groupzone\", groupzone);\r",
-									"\r",
-									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"id\", jsonData.id);\r",
-									"pm.environment.set(\"name\", jsonData.name);\r",
-									"pm.environment.set(\"isActive\", jsonData.isActive);\r",
-									"//pm.environment.set(\"zoneIds\", jsonData.zones.map(z => z.id).join(', ')); тоже самое, что строчка ниже\r",
-									"pm.environment.set(\"zoneIds\", jsonData.zones.map(function(zone){\r",
-									"    return zone.id\r",
-									"}));\r",
-									"\r",
-									"console.log(\"zoneIds\", jsonData.zones);\r",
-									"//console.log(\"zoneIds\", jsonData.zones.map(z => z.id).join(', '));\r",
-									"console.log(\"zoneIds\", jsonData.zones.map(function(zone){\r",
-									"    return zone.id}));\r",
 									"\r",
 									"\r",
 									"\r",
@@ -19827,45 +19810,45 @@
 	],
 	"variable": [
 		{
-			"id": "a28311ca-4068-4633-9e2f-8899895f4e26",
+			"id": "316c5616-5018-40d6-bbde-f9e41fbb2a60",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "271ba22a-9634-4dac-b9c1-13fec55f5a5a",
+			"id": "b44c82de-85f7-40ec-a9ac-726bf98b3e6a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9b8578c6-6396-4a4a-bafc-bff2b6519506",
+			"id": "aebf428c-e716-442c-8380-097595938180",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "44cf0019-6da9-47b0-ab1b-8e4e3d41fbaa",
+			"id": "17fc2e84-3cac-46a8-81d6-55b043833960",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7b878c39-d42c-4fc2-b734-7537c4b4cd2d",
+			"id": "4d25f713-93ac-43f0-984e-982ec43d26db",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e8fc173d-dace-42b1-8a3d-d3bb38c27341",
+			"id": "b52bba6a-611a-4e6b-ac22-a5da79e22ff3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "abd2aa48-8813-4179-b3fa-9a2164ced762",
+			"id": "e6c8a534-1be2-4832-9519-77ca8fac2b30",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fb3c7d60-a79a-414d-9524-22d268ac55a0",
+			"id": "f04b9b60-508e-4ad1-9a14-3d900c04f75c",
 			"key": "newDT",
 			"value": ""
 		}
