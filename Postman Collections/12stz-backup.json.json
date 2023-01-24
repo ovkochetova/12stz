@@ -15642,6 +15642,22 @@
 			"item": [
 				{
 					"name": "Поиск группы зон по названию",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "31c41162-09ac-48c6-9421-c7ede1f15227",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "1f15ada9-5957-4b57-b789-07b3940b1f4f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -19809,45 +19825,45 @@
 	],
 	"variable": [
 		{
-			"id": "58f2990b-5a64-41ef-b0db-5ee36f47e93c",
+			"id": "a8764fb6-0ba8-48db-8d94-effaaf2b3073",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f23fe830-2540-4d12-9b9d-7a642c3a9d87",
+			"id": "4f4c94d0-c848-4382-b5d8-fe85e485ff51",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "95730ebe-898d-4c95-a79a-48eff647505e",
+			"id": "8b85521a-c2b9-4525-8312-91d947d09453",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "79c711b4-61d8-4484-b88b-770d4160e5b6",
+			"id": "66bbd068-a398-4413-89ae-4740e9a9ddae",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7e0f7624-2bbf-44d1-abdd-1704fce2574c",
+			"id": "0e598073-371d-4383-aaf9-e529499179dd",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2fcf0240-b7b1-47af-bb51-f6cb24add0cd",
+			"id": "6edbd0c3-5c59-4f57-87a6-b2c74f112b6f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "44dd8d48-275d-4654-a7cd-821f5d62cb17",
+			"id": "136e92a2-1ed6-407b-a204-a14cee0fa4a6",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "70087eb5-858c-41a0-8802-00bca5bce433",
+			"id": "b78dc5e1-24a4-4582-98e5-b919dbcd7812",
 			"key": "newDT",
 			"value": ""
 		}
