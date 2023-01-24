@@ -15647,8 +15647,43 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/zone?limit=40&offset=0&search=&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"zone"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "40"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -19774,45 +19809,45 @@
 	],
 	"variable": [
 		{
-			"id": "07b34dd0-4697-4f60-bcc4-ef9f928630cc",
+			"id": "cc7facd9-bc37-4f9a-8e26-220002ca3cc1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "526c4b0b-609d-42fb-8b54-8441afd75fdb",
+			"id": "aaca4071-332a-4406-9cac-2fbabd3da955",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "10a27229-33e5-4843-910c-6e9eaeba8ba2",
+			"id": "de2c6ff6-4357-42bf-8061-fc646e86e239",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5fbdd539-7882-435b-8be9-021142a48cf4",
+			"id": "664a6ece-2f9f-4c5c-818b-da7aaa7c3a80",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "fbedfdb9-dd40-4706-a2cd-a2ee045bc47c",
+			"id": "f3af4d7d-3e70-4f5b-a544-5b52ad0518fb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a4caa357-0a7c-43aa-acd0-db1c4a5b7787",
+			"id": "e48c47dd-6346-44a5-aa0e-cbd00813ef24",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "10afaa24-61e3-4b11-bc57-9b5caeb15d90",
+			"id": "5fc60086-e394-4f83-b06f-9b2d74ef1cbc",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9b168504-cf7a-45c9-9d70-7796f69fabe7",
+			"id": "3cbba749-e8c2-489d-935e-0054fc30b39f",
 			"key": "newDT",
 			"value": ""
 		}
