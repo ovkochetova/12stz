@@ -7418,7 +7418,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n   {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 30001.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    \r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n   {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 29011.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    \r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -19756,45 +19756,45 @@
 	],
 	"variable": [
 		{
-			"id": "685d2d3b-d419-4a23-9166-fa8c009f1989",
+			"id": "7d2180f0-8a64-4be4-b085-4fcddf2d9525",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c34370c7-51c4-4ccb-9d9e-2ba39612caa6",
+			"id": "9b7578ec-9f93-422c-ab2b-fea1713c150f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e34549ab-727f-462a-b14d-6b512b610755",
+			"id": "b083dc6b-4fae-48c8-bd9e-c91e4b2774a5",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5c4f2ed9-ff27-41a6-a608-c3ff39376c0f",
+			"id": "280138b6-d41b-4ee8-b6dc-772294c0186a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5b442ee1-d360-4834-b04a-7bdcbf8936b9",
+			"id": "e5a98a69-5f13-41f4-b810-cb2c484f8b80",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "6c7e49d4-71d5-4b8f-8fba-5c86ed83eb2f",
+			"id": "1e19dfd0-4922-474c-9dd8-9c09f676b2be",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a4e28e3d-846c-4399-a4ca-08176f29d191",
+			"id": "71d75105-8202-48f8-b936-a467ef139cf8",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "31c8e415-2f78-46b4-8d25-55b807a1ce89",
+			"id": "9c305873-3f70-40fd-ba13-b1ad5f209f5c",
 			"key": "newDT",
 			"value": ""
 		}
