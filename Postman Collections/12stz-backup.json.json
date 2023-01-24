@@ -16059,7 +16059,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/zone?limit=9737268&offset=9737268&search=laboris deserunt&sort=laboris deserunt",
+							"raw": "{{baseUrl}}/api/v1/zone?limit=100&offset=0&search=Ленингр&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -16071,19 +16071,19 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "9737268"
+									"value": "100"
 								},
 								{
 									"key": "offset",
-									"value": "9737268"
+									"value": "0"
 								},
 								{
 									"key": "search",
-									"value": "laboris deserunt"
+									"value": "Ленингр"
 								},
 								{
 									"key": "sort",
-									"value": "laboris deserunt"
+									"value": ""
 								}
 							]
 						}
@@ -19853,45 +19853,45 @@
 	],
 	"variable": [
 		{
-			"id": "3a4a0b1e-56e6-45ca-afa0-e19b7ab88716",
+			"id": "67e75838-a4cd-4847-83ac-4dfadcbaf844",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c73d8bd1-8bbf-4a62-b488-4cab3607ef56",
+			"id": "7faf6365-4d9c-467c-9139-ca0078a01581",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8784b7d3-fce2-444c-8048-a0f159b4a81c",
+			"id": "b153df4c-ae9f-4b51-ac11-9c8ffef29d3e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "690fe1ca-8053-4e61-9460-77bbba0796d9",
+			"id": "3eaff876-c389-4477-997f-b6ca6e10a341",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e9998a19-f2a8-4cfe-a8e6-56fd0458bc7d",
+			"id": "0e77932d-e8d4-4de5-aa5a-9b1b79dbf643",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7b9b8b3b-f280-48bc-9681-c0c8ef99b7f9",
+			"id": "7cd105f7-5037-4d35-b3f6-4742bb82c627",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f2f6ee1a-304b-4e51-a07c-7d250ac3c54a",
+			"id": "d3f33b6d-abb6-4eb3-949f-b2c8070dfa2a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "900fe0f4-20a2-49c6-ba68-ef16e23bd26e",
+			"id": "0aa30339-aa4b-4ef5-9951-6878e08de3f7",
 			"key": "newDT",
 			"value": ""
 		}
