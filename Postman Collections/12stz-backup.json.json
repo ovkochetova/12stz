@@ -15672,7 +15672,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/zone?limit=60&offset=0&search=Россия, кроме М, МО, &sort=",
+							"raw": "{{baseUrl}}/api/v1/zone?limit=200&offset=0&search=Росс&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -15684,7 +15684,7 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "60"
+									"value": "200"
 								},
 								{
 									"key": "offset",
@@ -15692,7 +15692,7 @@
 								},
 								{
 									"key": "search",
-									"value": "Россия, кроме М, МО, "
+									"value": "Росс"
 								},
 								{
 									"key": "sort",
@@ -19805,7 +19805,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0bafe65b-abe2-4399-b44c-592abe84e0cd",
+				"id": "cc530f7f-f53d-4459-8b2f-fac8b5293443",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -19815,7 +19815,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7010e3d2-00a2-4e1d-b777-ec69de4583f7",
+				"id": "010e2a04-1649-4928-9627-ee4585c26ac9",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -19825,45 +19825,45 @@
 	],
 	"variable": [
 		{
-			"id": "da1e4646-45c3-4101-afd9-3196644dc303",
+			"id": "72ee69b9-5a46-4321-93de-6953b70df09c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "850697b1-dd57-485d-9cf9-047209c1b824",
+			"id": "a0b1c44a-4c8f-4d98-85aa-bd0a830a187a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e03abe2-aedd-4c7f-8c8a-c023e11a0d7c",
+			"id": "5c40bbcc-e7be-4c07-b0d7-c3cccceccfdb",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dcda3b8d-1e5f-4fb3-81f0-7c3079b1297c",
+			"id": "c9e47fa1-4cf3-49ab-8a94-59e5a27a519b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "db45b2e9-9169-4a74-b022-dafe1327f679",
+			"id": "2bdc001d-b691-487e-ad78-914f8929312e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "df077be2-453b-42ea-897a-a4c5e543c4ed",
+			"id": "fa8fac05-261f-473d-b4e5-b396c76b361f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b5089e1d-3444-4bad-8b47-31dd1e65653b",
+			"id": "16fbc0c4-1011-4992-83f4-0dbdf048ffef",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7b51e3f4-6a72-45f2-9286-e9d46818369e",
+			"id": "0d0efb5b-ef05-406f-b421-64499858560f",
 			"key": "newDT",
 			"value": ""
 		}
