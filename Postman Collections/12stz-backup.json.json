@@ -7624,7 +7624,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=ТК для тестов(не удалять)&sort=",
+							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=60&offset=0&search=ТК для тестов(не удалять)&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -7636,7 +7636,7 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "40"
+									"value": "60"
 								},
 								{
 									"key": "offset",
@@ -19825,45 +19825,45 @@
 	],
 	"variable": [
 		{
-			"id": "b86ee75e-7ad2-4914-8219-6dbe77af1a31",
+			"id": "a0cfc7a4-ee23-49a2-a4e9-244d12beae78",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f10dda87-5a76-43a9-b73c-0403892c874d",
+			"id": "7a91b87d-e5a7-4c79-8b09-8efa816d67fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "73b17219-bbd5-4303-a1af-011892984668",
+			"id": "e616885c-46ee-42e4-8f17-a5946b195643",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d03e30c2-ee89-433c-88dd-02a7f12c19f0",
+			"id": "1d5d7eab-777b-4e28-bec3-c7e2b8831b43",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "68a6c992-9108-4b8f-b7e3-ccebead27bcb",
+			"id": "2e05942c-87d4-4809-9ebe-8c2bd0a663b7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b38bf2fb-08f9-45a6-ae2d-5541f516a897",
+			"id": "6b7f8afc-1466-4d14-b08e-87811daad583",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a804f65a-4fc4-47aa-afc0-f209bf116a90",
+			"id": "1b9b8015-4ba7-43f8-bf6a-2f8c1fce5a08",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "aa590a52-2322-4d85-8f3c-a4f057247722",
+			"id": "b3b3338b-ef08-477f-b349-18d06bc43fa3",
 			"key": "newDT",
 			"value": ""
 		}
