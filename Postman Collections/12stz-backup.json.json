@@ -16051,6 +16051,25 @@
 			"item": [
 				{
 					"name": "Поиск зоны по названию",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "83ad060f-1094-4d27-93e1-60c4a156c28c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\",jsonData.id);\r",
+									"console.log(\"jsonData.id\", jsonData.id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "6c432eb9-faed-40f9-9bf3-70ccf3b4e28b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -19859,45 +19878,45 @@
 	],
 	"variable": [
 		{
-			"id": "81147ef2-c59b-47f7-8e19-6b0ee3ed2446",
+			"id": "67026b20-10ae-436c-9d41-d786533448da",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3c0bdbe9-bdb7-4903-bb3e-e6687328091f",
+			"id": "176c0492-ff02-4de2-964b-66bafecad0fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0184bdf1-9648-44df-85b4-679569dc65b3",
+			"id": "39853ef6-9332-4238-946a-408df6515467",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4275bbf8-5d02-4e29-9a53-250d89ae6497",
+			"id": "02b677fe-07b0-49d9-aacf-21c7127b3f4d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a781f566-3eae-45bf-a497-a2d6142157b1",
+			"id": "7187ad2c-bcba-4264-ab76-2714ec7ad03c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ae9297f4-ea1b-46fd-9eae-07beecbdaccd",
+			"id": "489b425b-4fee-4d01-8113-b7c205b3c01c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "773ecd55-dea5-47d9-82a7-c412c1bf232b",
+			"id": "759e4c1b-1adc-4cb2-94ee-fa5ee6110e58",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "190c6a21-3837-414c-8cf2-6f745a2c6064",
+			"id": "9649c0c1-eb26-4a58-94d8-607bfe498f3e",
 			"key": "newDT",
 			"value": ""
 		}
