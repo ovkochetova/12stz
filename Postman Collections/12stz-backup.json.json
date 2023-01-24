@@ -7376,7 +7376,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
+								"id": "9cdaf518-a276-482b-8d99-086916149fe6",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -7388,8 +7388,10 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Максимальная количество товаров не включает подарки, ограничений нет\", function () {\r",
+									"pm.test(\"Максимальная количество товаров включает подарки и доставку, ограничений нет\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"больше 9 товаров\");\r",
+									"\r",
+									"\r",
 									"})"
 								],
 								"type": "text/javascript"
@@ -19749,45 +19751,45 @@
 	],
 	"variable": [
 		{
-			"id": "3c94c27d-6809-45cb-914c-77d49185e702",
+			"id": "723b5f66-69ed-4c58-9a31-89f908e1ccd1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7612f5d7-dd28-4500-ba5a-88dc0702ce37",
+			"id": "2de0844f-4612-4e7b-b05f-40da0ceb1cc8",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b8968c58-652e-469b-b38a-e25e8800d51c",
+			"id": "36d45598-438d-4069-bd02-3c9fed446186",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9be4017b-c0c7-4f32-8664-da523199add0",
+			"id": "d73e8413-340c-4384-a517-930ed46e0a6f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e501c14c-b1cd-4389-90f5-186f64a16435",
+			"id": "79911280-de67-45ba-b881-ea2007e690f0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "093c0479-0b4a-4212-b93f-ecd576fdfce8",
+			"id": "a5495f00-a086-4866-b24e-b6a3067d88a8",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "08ff73b3-0f43-492b-9206-973cdacce019",
+			"id": "695fe4fd-50bb-48cb-8101-61ac70f93066",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e233acb1-4c71-4eeb-b672-2f509360c4e0",
+			"id": "6900f681-c9ba-47da-92c0-d6be278c873b",
 			"key": "newDT",
 			"value": ""
 		}
