@@ -16128,6 +16128,9 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Зона найдена\", function () {\r",
+									"      pm.expect(jsonData.name).to.eql('Ленинградская');\r",
+									"});\r",
 									"\r",
 									"pm.collectionVariables.set(\"zone\", jsonData);\r",
 									"console.log(jsonData);\r",
@@ -19876,45 +19879,45 @@
 	],
 	"variable": [
 		{
-			"id": "cc30f5fa-3afc-4f60-9101-6222a316531a",
+			"id": "27235563-f4cc-4585-9a53-00ced3a282fd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "02a7c79a-894d-4e29-adf6-3ff96e7c0139",
+			"id": "4fdb4ce0-efdb-4e17-967f-ebbe42a4c1c4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4c3ae77c-2354-4820-9597-86c0662c305e",
+			"id": "98e1e53a-b9f3-419d-8a12-f87ab9674e5a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bd470184-12e2-4ead-b32b-ef8943d09762",
+			"id": "44c807fd-27c0-477b-8f55-91f76de93bb8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ef578ac1-7ec8-431a-86c2-2137efae3de7",
+			"id": "80c9018f-89c5-4074-94f1-e00b6fdddc24",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a2caead3-ec55-42c3-a9e3-640e540bb916",
+			"id": "f94153af-3e25-4f73-bc6a-a7c985b7e92d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d3a1ea48-11f2-466d-ad1f-e437e91c2aea",
+			"id": "2be6afa9-f246-48a3-afc2-86ea0faa0e3a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "abb5afb0-190d-4223-9376-c6b1c19c2601",
+			"id": "9120a5dc-686e-449a-b892-d8310d492c29",
 			"key": "newDT",
 			"value": ""
 		}
