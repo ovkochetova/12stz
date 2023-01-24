@@ -7539,7 +7539,15 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									""
+									"pm.test(\"Максимальная количество товаров учитывает подарки и доставку, ограничений нет\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Нельзя заказать больше 9 товаров в корзине\");\r",
+									"   \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Максимальная стоимость заказа учитывает подарки и доставку, ограничений нет\", function () {\r",
+									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000 руб!\");\r",
+									"   \r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -19754,45 +19762,45 @@
 	],
 	"variable": [
 		{
-			"id": "372abf86-b71a-4450-a413-3ec954b1e4e6",
+			"id": "ef5cba06-3fd1-442e-ad5b-f23481595721",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "165ab73e-2321-49bd-b939-81d38d419673",
+			"id": "a4e83005-8bcd-4344-8c10-725280491b9b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5151727f-86eb-4e59-905b-d3ad01e30770",
+			"id": "da75ce7c-f837-4fa2-b606-2e314bef2775",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "966f81c1-6a6f-4b7c-aff6-161bc2f7cdf9",
+			"id": "b89b58ac-c8c8-46ce-b696-b5f2b1cbdc43",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c22cd65e-aaf6-46f2-9687-9079c3331ae1",
+			"id": "8180efae-09fb-4a82-8105-1561789cc5df",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "976a55a7-4508-4281-95f8-138fa04907c1",
+			"id": "2c16ade0-d783-4707-bdf8-08ed2735ad47",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "38ad11e1-b2d9-475e-90cd-fdd5dc52997a",
+			"id": "99d45ae3-5d9a-4edf-a2f1-a6bbe1134733",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "956f2060-fe83-4a4a-8f89-b5f9a6b7dbd0",
+			"id": "05a35ebb-1d59-4d60-8f85-973410dcd821",
 			"key": "newDT",
 			"value": ""
 		}
