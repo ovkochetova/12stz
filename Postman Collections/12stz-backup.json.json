@@ -15656,7 +15656,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/zone?limit=40&offset=0&search=&sort=",
+							"raw": "{{baseUrl}}/api/v1/zone?limit=40&offset=0&search=Россия, кроме М, МО, Спб, Крым&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -15676,7 +15676,7 @@
 								},
 								{
 									"key": "search",
-									"value": ""
+									"value": "Россия, кроме М, МО, Спб, Крым"
 								},
 								{
 									"key": "sort",
@@ -19809,45 +19809,45 @@
 	],
 	"variable": [
 		{
-			"id": "cc7facd9-bc37-4f9a-8e26-220002ca3cc1",
+			"id": "117b8355-0770-4525-8fec-44b73df0802d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "aaca4071-332a-4406-9cac-2fbabd3da955",
+			"id": "4f187896-d7d7-4c50-8fe8-8da786677973",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "de2c6ff6-4357-42bf-8061-fc646e86e239",
+			"id": "613f05a5-2ce9-4d7a-bafb-5262b01ba7ec",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "664a6ece-2f9f-4c5c-818b-da7aaa7c3a80",
+			"id": "cd766ef8-3ac6-4b42-85f3-481c18bf2c9f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f3af4d7d-3e70-4f5b-a544-5b52ad0518fb",
+			"id": "3ae2f3f3-2710-4d2e-8c2a-c9c6bb010444",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e48c47dd-6346-44a5-aa0e-cbd00813ef24",
+			"id": "0ffe72fe-ca89-4c07-bbb5-642743462e6d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5fc60086-e394-4f83-b06f-9b2d74ef1cbc",
+			"id": "f147fe58-f36f-4f42-99e9-c8946534f816",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3cbba749-e8c2-489d-935e-0054fc30b39f",
+			"id": "c926fcbc-e662-41d3-86cd-f266bad8cfdd",
 			"key": "newDT",
 			"value": ""
 		}
