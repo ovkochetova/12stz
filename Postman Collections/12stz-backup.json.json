@@ -15641,6 +15641,18 @@
 			"name": "Группы зон",
 			"item": [
 				{
+					"name": "Поиск группы зон по названию",
+					"id": "1f15ada9-5957-4b57-b789-07b3940b1f4f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
 					"name": "информация по группе зон",
 					"event": [
 						{
@@ -15990,18 +16002,6 @@
 							}
 						},
 						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "New Request",
-					"id": "1f15ada9-5957-4b57-b789-07b3940b1f4f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
 					},
 					"response": []
 				}
@@ -19774,45 +19774,45 @@
 	],
 	"variable": [
 		{
-			"id": "6d653415-5150-47cb-b6c7-fce7f5fbdfad",
+			"id": "4b7e2ec1-5842-4e86-91f5-d60f555d86e2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0246813e-492e-4cdc-a1e5-0f062d0fa6e5",
+			"id": "57d6716a-ccda-4857-bae9-23a85fe40bc9",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e11cf0b5-17a5-4ed9-be59-a2e74735453d",
+			"id": "abd7dfab-1513-4a44-af74-e0ead653f28e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b957f1aa-ca3d-4528-8d31-6bec8d79ea3b",
+			"id": "274d20e9-2006-44fc-b30f-dd9bfe6b9be1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a0d2d8f9-e11f-42ce-a1cd-6f7b9c6b7cdc",
+			"id": "290e5ca2-8ee8-402c-b828-cc3fff659136",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c08d6a8c-fa86-471b-a548-0206718b9ad3",
+			"id": "89daffb3-efc7-4b97-8d4a-4b14571993e2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a717ddef-0e4a-452a-9532-4e1c8512265d",
+			"id": "3ab57269-b72b-45e0-b1e5-17b18b0f0b2d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ca41b1f1-05e9-4251-85e9-02ff708cf3b2",
+			"id": "0e7b43be-9706-42dd-b226-8c50aae39e92",
 			"key": "newDT",
 			"value": ""
 		}
