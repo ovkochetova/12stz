@@ -7515,7 +7515,7 @@
 					"response": []
 				},
 				{
-					"name": "все чекьоксы неактивны",
+					"name": "все чекбоксы неактивны",
 					"event": [
 						{
 							"listen": "test",
@@ -19749,45 +19749,45 @@
 	],
 	"variable": [
 		{
-			"id": "cc9b6988-83c5-4378-a244-37f2c2747976",
+			"id": "865b8a52-293d-4b22-b4c3-9e08dfd7fc12",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ad70385-b605-441b-ad25-3b9dd4f0f8ab",
+			"id": "4d57331c-d29c-4c0a-ab06-064a588c5808",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a76495c7-3695-484c-a4e5-003b9589e6c6",
+			"id": "3c53010d-3a52-43b9-af0a-e5dffbd65606",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e44613c5-b8c9-4861-b7e0-32b4d4a65947",
+			"id": "1e720180-e0d3-4744-94ca-d1f7f0c3bd16",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a813b380-fc9d-4ea5-87ab-fd86994b31b2",
+			"id": "a63b8001-092f-4a4a-9792-a9086ec8ebda",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2de16fa8-ea38-47bd-8c7b-3c40516e6ee6",
+			"id": "1f75e2f0-a985-4842-870a-aa036de259bd",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6abd1645-a6f6-431f-95ff-ac78874c12c1",
+			"id": "94b0a19d-2c6a-49be-ae6d-2839ae09eb6f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "51973354-e253-44ab-8a94-458c8ff973f3",
+			"id": "0d089d5f-8a26-4356-99df-9a9359a470e0",
 			"key": "newDT",
 			"value": ""
 		}
