@@ -15672,7 +15672,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseUrl}}/api/v1/zone?limit=60&offset=0&search=Центр&sort=",
+							"raw": "{{baseUrl}}/api/v1/zone?limit=200&offset=0&search=Центр&sort=",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -15684,7 +15684,7 @@
 							"query": [
 								{
 									"key": "limit",
-									"value": "60"
+									"value": "200"
 								},
 								{
 									"key": "offset",
@@ -19825,45 +19825,45 @@
 	],
 	"variable": [
 		{
-			"id": "f752e9dc-966b-45c9-af0a-5e67f1a62e6d",
+			"id": "a3920b04-7ea8-41a1-96f0-c741f7bdb0ff",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a0064907-f6a7-4b03-8efc-bae225642123",
+			"id": "0be5857a-9566-4b0f-aa04-62c6a3861483",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "17ec8b25-11f3-4eb3-b37a-d349d3fd3db6",
+			"id": "a6853a62-cba6-4fe9-9490-1535c6c90f5f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dcbf9520-f78d-4260-8450-75eab319a0bd",
+			"id": "cff36339-5836-443b-9206-c4e29b0f309d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a3a005c2-0706-4ab0-891e-69276f70308a",
+			"id": "86a3cd88-7c46-4689-90de-ecf1a717d165",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3ee81471-f65f-4849-ad1d-dda4937959f9",
+			"id": "bd956e97-b48a-4cac-a5fb-f6ff9dace2e4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ddfced2b-fe77-48f3-b6af-3195e2f2e1a7",
+			"id": "081cbeb3-6a8d-43be-9f8f-36f6cd6daf77",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "98a23d56-5c1a-4c26-9b48-148a3ea7977b",
+			"id": "584e046e-597a-4452-b133-229d951a81f7",
 			"key": "newDT",
 			"value": ""
 		}
