@@ -5239,61 +5239,6 @@
 					"response": []
 				},
 				{
-					"name": "?учитывать подарки сумма 300001",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"В максимальную стоимость подарки включены, ограничения есть\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"превышает 300 000\");\r",
-									"});\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "77d11dc7-761a-4766-b0fa-fd6fdbecc90c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 300001.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100254, \r\n      \"quantity\": 1,\r\n      \"price\": 1,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "чекбокс учитывать подарки в max стоимости заказа не Активен",
 					"event": [
 						{
@@ -19876,45 +19821,45 @@
 	],
 	"variable": [
 		{
-			"id": "84a909fc-60e8-4513-bdff-90a899cdc631",
+			"id": "bdeb9704-e932-48e6-b4fd-6706b9c3b087",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "86cb2f8f-a532-49c9-960a-87ff05718c47",
+			"id": "3e719705-a927-4ac8-bb5a-b2aefc1d3ec7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8100725f-e37c-444f-b7e9-3d61bc8235cd",
+			"id": "95e88a47-0ef8-4718-a4c8-813dffbf56f7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6841ffc1-9e6a-48af-8936-aa59fcee1fa6",
+			"id": "7b881688-58ad-4090-9409-6d16544318bc",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f5c13f6f-c2a5-4de0-a67d-f29ffd6f963a",
+			"id": "925c387d-d0a6-411a-af42-ae40564225eb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "127ade47-2386-4390-9d5d-8550a9838808",
+			"id": "94d31dd4-d3df-4af0-b22c-133f8e37be6e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ee7544ef-e4c8-44ee-a8ce-c74536372b98",
+			"id": "00b3a97c-f1a5-468c-8b96-6a8a139ca082",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7c60bd22-4f28-44ed-b4bf-75573a6f83c7",
+			"id": "1f7a1322-1020-4724-9824-3224f33df35f",
 			"key": "newDT",
 			"value": ""
 		}
