@@ -7086,7 +7086,7 @@
 									"});\r",
 									"\r",
 									"pm.test(\"Максимальная количество товаров включает подарки и доставку, ограничений нет\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\" больше 9 товаров\");\r",
+									"    pm.expect(pm.response.text()).not.to.include(\" больше 9 товаров\");\r",
 									"})"
 								],
 								"type": "text/javascript"
@@ -19877,45 +19877,45 @@
 	],
 	"variable": [
 		{
-			"id": "247ad2e3-40b7-423d-a3a9-d3fab014fa74",
+			"id": "8c01ef47-527e-484e-85ea-dc1c74a76d0d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ba221ce-953c-4800-b97f-9f1360991d0a",
+			"id": "d2ba7ffa-0a85-4cf9-8e94-a434724a6f32",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ce177790-a52e-4f14-a29f-ceb3d16186c5",
+			"id": "7789cfe6-dc40-4bfa-b283-6a230d40ebc4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b825576-9573-45b8-8ad1-9518cc1ef695",
+			"id": "5f283b99-5259-4588-ab59-905ea7834507",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4f7bdfdd-3629-48c0-9e93-62400a27aa1c",
+			"id": "b776692f-6312-49e9-ae51-6305ee50efee",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e43b7661-ee51-4d8e-bcac-bc55eba1a66c",
+			"id": "72d27a06-4e0f-4cda-a802-fa4fe9472ad4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f850bb14-1cf8-4063-ac20-373b5f560ebc",
+			"id": "7eef4785-8ea6-41a6-8795-2d7863725888",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2841365d-637a-4344-add3-72b1da715ac1",
+			"id": "f5638df4-4b2b-48fc-addb-c002ec168ba0",
 			"key": "newDT",
 			"value": ""
 		}
