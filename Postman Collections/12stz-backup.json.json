@@ -7396,7 +7396,7 @@
 									"   \r",
 									"});\r",
 									"\r",
-									"pm.test(\"Максимальная стоимость заказа учитывает подарки и доставку, ограничений нет\", function () {\r",
+									"pm.test(\" Чекбокс Максимальная стоимость заказа учитывает подарки и доставку Активент\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа товаров превышает 300 000 руб!\");\r",
 									"   \r",
 									"});\r",
@@ -19940,45 +19940,45 @@
 	],
 	"variable": [
 		{
-			"id": "0ecb820f-b64f-4f92-b974-8a1a2e9b150e",
+			"id": "64fe2ddf-2ef4-47cf-8317-5da99b4329bd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "565de4ac-829f-468c-8430-4cec6d5d81cb",
+			"id": "129affe3-1e06-477f-92b2-af354af218e5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "df384cf8-993e-430a-9ceb-5a827c05bd94",
+			"id": "3f618560-4e32-46a7-9f2d-534b6055ab76",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "811118fe-5c8a-4085-bf7d-834a38061471",
+			"id": "65c3aed1-acf6-43ad-b400-454f4424d330",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "0e2472d8-f180-42ea-ab3a-0a08b4ca3f14",
+			"id": "3ece3f0f-6752-48e4-b5b0-c9860c74033a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c6c3d6f6-f858-4e6d-b289-fba0e2414df6",
+			"id": "8352bbff-288e-4807-bd3f-23e9ea04d24e",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "2fe9f500-c0d7-4d95-8112-231e72080c18",
+			"id": "1db79eba-3d87-48b2-8d58-6afe7b023451",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "dd2d8ca5-3699-40fc-b768-69a883962e74",
+			"id": "a72cbb64-4711-44fd-860e-6c9b74ec76de",
 			"key": "newDT",
 			"value": ""
 		}
