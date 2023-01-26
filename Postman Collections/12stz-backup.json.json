@@ -7391,12 +7391,12 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Максимальная количество товаров учитывает подарки и доставку, ограничений нет\", function () {\r",
+									"pm.test(\"Чекбокс Максимальная количество товаров учитывает подарки и доставку Активен\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Нельзя заказать больше 9 товаров в корзине\");\r",
 									"   \r",
 									"});\r",
 									"\r",
-									"pm.test(\" Чекбокс Максимальная стоимость заказа учитывает подарки и доставку Активент\", function () {\r",
+									"pm.test(\"Чекбокс Максимальная стоимость заказа учитывает подарки и доставку Активент\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа товаров превышает 300 000 руб!\");\r",
 									"   \r",
 									"});\r",
@@ -19940,45 +19940,45 @@
 	],
 	"variable": [
 		{
-			"id": "64fe2ddf-2ef4-47cf-8317-5da99b4329bd",
+			"id": "e90e7711-e0d8-4a93-8280-e8d301a2293a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "129affe3-1e06-477f-92b2-af354af218e5",
+			"id": "d9f7572a-62f4-40f1-aa40-623041e9306b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3f618560-4e32-46a7-9f2d-534b6055ab76",
+			"id": "ffdf157a-8ddf-45ea-90fc-64bbbf5aee64",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "65c3aed1-acf6-43ad-b400-454f4424d330",
+			"id": "3b3e355b-0f63-4cb4-adb9-0a1b5b3f2f0d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3ece3f0f-6752-48e4-b5b0-c9860c74033a",
+			"id": "d810ad0b-2c8f-44ed-8234-76f0d23ff539",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "8352bbff-288e-4807-bd3f-23e9ea04d24e",
+			"id": "54da9a6d-c8f1-4d95-ab6e-a937c257afe2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1db79eba-3d87-48b2-8d58-6afe7b023451",
+			"id": "4a8cc5a5-ad71-4438-9e89-30e53204c0f2",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a72cbb64-4711-44fd-860e-6c9b74ec76de",
+			"id": "720f2cd0-b6c9-4360-a55d-e9fd9e06dbbf",
 			"key": "newDT",
 			"value": ""
 		}
