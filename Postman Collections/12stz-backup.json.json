@@ -7374,7 +7374,7 @@
 					"response": []
 				},
 				{
-					"name": "!все чекбоксы активны 8шт, 299 911руб Copy",
+					"name": "!все чекбоксы активны 8шт, 299 911руб",
 					"event": [
 						{
 							"listen": "test",
@@ -19880,45 +19880,45 @@
 	],
 	"variable": [
 		{
-			"id": "e10bbd9f-0921-45b8-ad3c-b48dead0016a",
+			"id": "d38a32ea-fcb2-4795-85a6-f40e92af16ad",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9614552a-8671-4ec3-b4c2-0272817cc471",
+			"id": "fc938512-f9d9-4a1e-8b09-d533f5eed8c1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "87f6dacb-eb03-44b2-8d09-6fc281c6227f",
+			"id": "74e0362d-2ece-4d9e-b007-f198bbbaddb4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9660a72e-889d-4d70-bd2d-76a07b877ce0",
+			"id": "771c5654-cde2-4ddc-b801-bc9dbb50d6d0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9810889f-6fd1-4961-955f-cdf1b7163950",
+			"id": "40aeaebd-33e7-4e19-9a03-9a2a891ffb40",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b113ecea-1e04-4774-8030-2b3b57985d32",
+			"id": "609221bf-739f-43af-a5f1-2a0319c20929",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "bd81d303-c6ca-4bf9-b77b-d04738f59c6f",
+			"id": "a21b5dd1-8a62-4314-a9f5-4d2e812feb4a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "30122828-8ce0-462b-8707-ec5c6ce08e7c",
+			"id": "eeea0a4a-ac29-4ea4-89a4-a5935f975048",
 			"key": "newDT",
 			"value": ""
 		}
