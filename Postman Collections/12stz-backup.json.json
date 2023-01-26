@@ -7374,6 +7374,65 @@
 					"response": []
 				},
 				{
+					"name": "!все чекбоксы активны 8шт, 299 911руб Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9cdaf518-a276-482b-8d99-086916149fe6",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"let jsonData = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Максимальная количество товаров учитывает подарки и доставку, ограничений нет\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Нельзя заказать больше 9 товаров в корзине\");\r",
+									"   \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Максимальная стоимость заказа учитывает подарки и доставку, ограничений нет\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа товаров превышает 300 000 руб!\");\r",
+									"   \r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "d018c443-e45d-4c67-a745-ea75cb921cac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n   {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 29011.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100003,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100112,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100007,\r\n      \"quantity\": 1,\r\n      \"price\": 50000.00,\r\n      \"is_present\": false\r\n    }, \r\n    {\r\n      \"category_id\": 100143,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100004,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100006,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": false\r\n    },\r\n    \r\n    {\r\n      \"category_id\": 100016,\r\n      \"quantity\": 1,\r\n      \"price\": 30000.00,\r\n      \"is_present\": true\r\n    }\r\n    \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "все чекбоксы не Активны",
 					"event": [
 						{
@@ -19821,45 +19880,45 @@
 	],
 	"variable": [
 		{
-			"id": "68ee7aea-22e1-42ca-a4c2-b548d7162ebf",
+			"id": "e10bbd9f-0921-45b8-ad3c-b48dead0016a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "11298112-5e17-4783-a9f0-d8b536dc8c85",
+			"id": "9614552a-8671-4ec3-b4c2-0272817cc471",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b12c8ef0-103e-474c-ad5e-32ff67a3b5ef",
+			"id": "87f6dacb-eb03-44b2-8d09-6fc281c6227f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b625800a-62fb-4508-95e2-f865f5769bbc",
+			"id": "9660a72e-889d-4d70-bd2d-76a07b877ce0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7eabea42-ce68-4277-b550-edfeb9795cd4",
+			"id": "9810889f-6fd1-4961-955f-cdf1b7163950",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "82710cb3-53ba-442b-bba7-889d74db0bdb",
+			"id": "b113ecea-1e04-4774-8030-2b3b57985d32",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "755fe278-d981-4141-88fc-6b2d5663d385",
+			"id": "bd81d303-c6ca-4bf9-b77b-d04738f59c6f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d0762a29-856f-4da0-92e5-2ea504a80731",
+			"id": "30122828-8ce0-462b-8707-ec5c6ce08e7c",
 			"key": "newDT",
 			"value": ""
 		}
