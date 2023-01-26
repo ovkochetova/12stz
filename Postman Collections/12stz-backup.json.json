@@ -7606,7 +7606,7 @@
 									"   \r",
 									"});\r",
 									"\r",
-									"pm.test(\"Максимальная стоимость заказа учитывает подарки и доставку, ограничений нет\", function () {\r",
+									"pm.test(\"Чекбокс Максимальная стоимость заказа учитывает подарки и доставку не Активен\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000 руб!\");\r",
 									"   \r",
 									"});\r",
@@ -19940,45 +19940,45 @@
 	],
 	"variable": [
 		{
-			"id": "50795c2a-26d9-4790-95b0-7dd1485ea17e",
+			"id": "8dfbef61-4cbf-4948-82ec-fa7a2975b473",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8d63bdde-8015-47e3-920e-0e3f0bb58ebd",
+			"id": "4daa91ae-b13a-4634-8d01-6d5557e9d4b3",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8997155d-9ec9-4ba5-b9cd-46c5e6183bf3",
+			"id": "387e3718-fe48-4732-820c-c88a34493f3e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2c0c02ad-d190-424e-978a-2897b7dc8f74",
+			"id": "05248a89-e62e-43fe-81ef-2e9dae4e76d8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b73686f2-84aa-4bdf-bab4-9d3a399a0738",
+			"id": "d1dcb107-9ed4-4930-8b8a-ac081a033892",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c29db3e0-40d0-42ac-8bf7-4260cd67ab31",
+			"id": "6528a4b7-de30-47d0-baba-e4dde1b41ec5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "7825595b-7cab-411a-8c2c-d1dafffdb036",
+			"id": "c3c51412-7f54-41f2-8f17-e041275213eb",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4c2cd459-4624-42aa-a76f-41817a845603",
+			"id": "d0c96d51-667a-4975-8455-9190ffae6c50",
 			"key": "newDT",
 			"value": ""
 		}
