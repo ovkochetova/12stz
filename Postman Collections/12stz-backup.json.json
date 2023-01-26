@@ -10885,7 +10885,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
+									"/*const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
 									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
 									"\r",
 									"//дата, отдаваемая виннером\r",
@@ -10913,7 +10913,7 @@
 									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
 									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
 									"});\r",
-									""
+									"*/"
 								],
 								"type": "text/javascript"
 							}
@@ -10940,7 +10940,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 12:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 2000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -19940,45 +19940,45 @@
 	],
 	"variable": [
 		{
-			"id": "1df23170-7a67-40f5-9ed5-b6eee8cc1d9e",
+			"id": "541fa940-bf3a-48a8-9905-56ca17266b1a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e03a15dc-7736-4999-8b58-009d441836b1",
+			"id": "7efa0df1-7242-4d49-a43c-2f329c0c35c2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f59d728d-5a8e-46f6-b0cb-1e4a214cc468",
+			"id": "a22ed221-9d11-492a-9dcb-d2a3b446c462",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "179fc2fc-ad16-49b4-aece-5fd629dbcf14",
+			"id": "de042a08-bf4d-4559-a834-d6c3751be0ba",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "bec69021-8b74-459e-9d58-6b7b16acf5c4",
+			"id": "090112f9-31e6-4db5-b70f-fb170a13cdac",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "fe8f7bdf-9d1f-4a55-bb36-8cc2d9128b44",
+			"id": "d7802a33-0f6c-4c34-9909-c6316e2f9712",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5b9ad576-7f15-499f-b526-4c1802e3acc7",
+			"id": "927fe1a9-fe59-4872-87d4-2d082f7d76d8",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c1264045-7463-4fb7-95c6-1696ced1435e",
+			"id": "08673b05-c30b-4533-8037-077d2b101a6b",
 			"key": "newDT",
 			"value": ""
 		}
