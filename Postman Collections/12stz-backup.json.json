@@ -11540,17 +11540,17 @@
 									"});\r",
 									"\r",
 									"\r",
-									"/*pm.test(\"Есть ограничения на сумму 300 001 руб\", () => {\r",
+									"pm.test(\"Есть ограничения на сумму 300 001 руб\", () => {\r",
 									"  const expectedObject = {\r",
 									"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
 									"  };\r",
 									"   pm.expect(pm.response.json()).to.include(expectedObject);\r",
 									"});\r",
 									"\r",
-									"\r",
+									"/*\r",
 									"pm.test(\"Ограничения есть\", function () {\r",
 									"    pm.expect({\"message\"}).to.have.property('Внимание! Сумма заказа товаров превышает 300 000 руб!');\r",
-									"});*/\r",
+									"});\r",
 									"\r",
 									"pm.test(\"Есть ограничения на сумму 300 001 руб\", function () {\r",
 									"    pm.expect(pm.response.text()).to.include(\"Сумма заказа товаров превышает 300 000\");\r",
@@ -19939,45 +19939,45 @@
 	],
 	"variable": [
 		{
-			"id": "f7abda66-b196-43c3-a8d9-7de79169a0e8",
+			"id": "00c16afb-8233-4dc5-a1ff-d3ed0c729467",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d2619f62-5318-485f-ac27-73957d6faaaf",
+			"id": "529441a8-031c-4138-9703-4018a76eb0fa",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9ac66013-3b03-4d0b-a410-397f1cfeaa8c",
+			"id": "6903b0ca-42df-41df-b31a-46e594624d30",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b02f3131-4307-4174-b13d-404fb136bb9d",
+			"id": "f0f51c37-a2ec-4c07-b505-55b794f38ca8",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2f8564fa-ce48-447b-a68e-bac914c84e98",
+			"id": "a5b2ed31-2520-4a1c-b286-b430531b50bb",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "68f0fb22-0d53-4615-ac12-950395fd2174",
+			"id": "4f1dc93a-5a38-43be-adfe-638e3c12587f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "b0d99256-7a2d-400f-b4d0-01dbb4bd31f4",
+			"id": "7e005f7f-0682-4f7e-8c90-18ec0fe1fb0e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "9afcadaf-da25-4321-a7a2-3399e90dce31",
+			"id": "ff4c0435-0586-4e64-9c3d-15045f1d39bf",
 			"key": "newDT",
 			"value": ""
 		}
