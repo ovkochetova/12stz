@@ -19927,7 +19927,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "b195f2c5-eb2a-4d40-a883-f742fa22a574",
+				"id": "5b8345f0-7711-4d6e-a4d8-16be7b02143c",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -19937,7 +19937,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "0084dfac-bba7-4884-af01-056cf60d7a9d",
+				"id": "835dc9d5-20e1-48a8-8698-ba939861541e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -19947,45 +19947,45 @@
 	],
 	"variable": [
 		{
-			"id": "aa805ab9-f69a-48a8-822d-d45a2c015c9e",
+			"id": "ea50181b-40d7-4c1f-b2f8-bae82f60f478",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8fa6dc63-4ccf-447c-92cd-7ba2cfcf746c",
+			"id": "1467328e-760b-4d73-9b5c-e77ae5f2d3e2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9cf094d4-d9fb-4409-911d-9714dbc8934e",
+			"id": "a66aa2a4-0a06-4510-88fc-c02335ac395c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4e68f5ab-54df-4357-bad8-0ba07a06decf",
+			"id": "b4804f67-97ad-455f-b6f4-a5d010998e3e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2e8b29b7-c993-44dc-882a-543f8a78d94a",
+			"id": "ca56da80-393b-49e1-b63c-a1bad2654d8f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "956822e3-540c-421b-9840-6303eedc581f",
+			"id": "bf42e3d9-509d-46bb-af36-42c24b550bc2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d9eea0c4-c84c-4978-b448-ab0eaf76b432",
+			"id": "49f9f3a9-902c-4b58-be27-ef7130ec50a1",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8ad689b3-bef3-4de0-b267-ca93bb4d6b02",
+			"id": "5d8d962a-328c-4447-9284-893c6a340c02",
 			"key": "newDT",
 			"value": ""
 		}
