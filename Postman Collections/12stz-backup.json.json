@@ -11422,10 +11422,6 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									" var jsonData = pm.response.json();\r",
-									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
-									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
-									"});\r",
 									"\r",
 									"//Contain restriction\r",
 									"pm.test(\"Нет ограничения на сумму 299 999 руб\", () => {\r",
@@ -19947,45 +19943,45 @@
 	],
 	"variable": [
 		{
-			"id": "881f71d7-c4a0-4a7c-aaad-2b62d8f7686a",
+			"id": "89bb90ea-c42b-4de4-987a-71a1b3715864",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c89af9f8-66fd-4cc2-880f-1ab276c93b2d",
+			"id": "9aacc331-94d2-480b-a6ad-3d8b8d58fd64",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "11b917aa-8056-4b5c-ae61-f7cda0fe163d",
+			"id": "58c17083-9e87-43bc-aa74-c6f563b89740",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cd9f229e-871a-41dd-9182-164dad61bf58",
+			"id": "54f9e63f-0ca8-4acb-bfa5-23172c5c608b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "52e73682-62ae-4ae2-b94d-3c2e78db44d8",
+			"id": "8d9e483d-3e54-4584-b8b4-5b4eafd26a78",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3f18e0c1-d41e-47ed-9848-94d6dad247f8",
+			"id": "eded76d3-f28c-4f3b-a689-947cefb05d11",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4ad261cf-ac00-4dc4-8212-bfe7bb10e58d",
+			"id": "63459b6e-e95d-4c22-a273-4bdcfd22ab8f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "98a73372-d181-47c5-a4f3-68bfba23ca46",
+			"id": "20c6d3b1-1721-4cf7-9bc7-63e48eafd679",
 			"key": "newDT",
 			"value": ""
 		}
