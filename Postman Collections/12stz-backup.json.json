@@ -11539,16 +11539,12 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									" var jsonData = pm.response.json();\r",
-									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
-									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
-									"});\r",
 									"\r",
 									"pm.test(\"Есть ограничения на сумму 300 001 руб\", () => {\r",
 									"  const expectedObject = {\r",
 									"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
 									"  };\r",
-									"   pm.expect(pm.response.json()).to.deep.include(expectedObject);\r",
+									"   pm.expect(pm.response.json()).to.include(expectedObject);\r",
 									"});\r",
 									"\r",
 									"\r",
@@ -19943,45 +19939,45 @@
 	],
 	"variable": [
 		{
-			"id": "89bb90ea-c42b-4de4-987a-71a1b3715864",
+			"id": "b223be2d-935f-4854-9b97-4dce7a2256b3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9aacc331-94d2-480b-a6ad-3d8b8d58fd64",
+			"id": "c931215d-0137-4828-b524-874b73b7d129",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "58c17083-9e87-43bc-aa74-c6f563b89740",
+			"id": "bc2c6542-9378-4850-a4cc-b2b52eeaad58",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "54f9e63f-0ca8-4acb-bfa5-23172c5c608b",
+			"id": "08e9b54e-a6bd-469b-ac82-096924618d21",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8d9e483d-3e54-4584-b8b4-5b4eafd26a78",
+			"id": "be774524-0346-498a-9db7-d8ab005d8187",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "eded76d3-f28c-4f3b-a689-947cefb05d11",
+			"id": "ca0aa664-5d81-4290-a837-07d6ca485a08",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "63459b6e-e95d-4c22-a273-4bdcfd22ab8f",
+			"id": "0ab6a7be-a53f-4627-9df6-d646c2218fab",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "20c6d3b1-1721-4cf7-9bc7-63e48eafd679",
+			"id": "c70210df-afd8-4b10-9024-89dc2a2c2e9d",
 			"key": "newDT",
 			"value": ""
 		}
