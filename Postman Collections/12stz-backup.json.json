@@ -8794,7 +8794,7 @@
 									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
 									"\r",
 									"//дата, отдаваемая виннером\r",
-									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
+									"const dataDostavki_winner = delivery_types.delivery_dates[0].date;\r",
 									"console.log('winner', dataDostavki_winner)\r",
 									"//время отсечки, запас по времени\r",
 									"\r",
@@ -19947,45 +19947,45 @@
 	],
 	"variable": [
 		{
-			"id": "df8ffca6-8dda-4c7f-aacd-c13e5d3d2bf0",
+			"id": "54db769f-b010-4c10-a294-282640e02603",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "16589763-4fcc-4eb3-a7e3-79f717d892e7",
+			"id": "bd7497dd-de19-4c54-876f-e5056981a703",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0bdea31f-752a-4631-95b9-e39f8f59fa9b",
+			"id": "735dc3ec-8857-4d1c-a947-47377ba6ba7f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9d16ba20-7ccf-4a34-affc-105bf89e68d2",
+			"id": "77680554-6ac0-4697-be70-d24b3193da67",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9dc07c5a-730b-4c78-b388-767a671ccb91",
+			"id": "7bc263c7-693a-40f0-9553-1fd8d78961de",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bd36e08f-7ed2-45ee-8e4a-d037cfa90714",
+			"id": "97767131-f89b-4c32-b832-2058bf103bbf",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9ae00907-2fe5-4350-8c5a-9e922f7c06ff",
+			"id": "8fe38ea3-560b-4446-946f-4abeb1050dfa",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "0704e595-b30e-4ee1-9555-3f06c7fc9d15",
+			"id": "878e2a01-e89a-4049-83da-788439311c51",
 			"key": "newDT",
 			"value": ""
 		}
