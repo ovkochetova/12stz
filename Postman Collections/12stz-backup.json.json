@@ -17516,7 +17516,7 @@
 			"name": "Ограничение по категориям  для типов доставки",
 			"item": [
 				{
-					"name": "Поиск огранич по категории для типов доставки(вечерн колл)",
+					"name": "Поиск огранич по категории для типов доставки по назв(вечерн колл)",
 					"event": [
 						{
 							"listen": "test",
@@ -19942,45 +19942,45 @@
 	],
 	"variable": [
 		{
-			"id": "ab984222-32ef-4b97-8de6-4430743f11d9",
+			"id": "5fad8d58-e9f4-4fd7-be3c-3db12090917e",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0307f2e4-0de4-4419-b4b8-50f3546cdf79",
+			"id": "7044bc8f-bb73-4375-8dcb-5d0b57d28636",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b746cab-cf5b-4c51-9dc0-bf8de82f82e5",
+			"id": "df2a90c3-03e2-4411-acce-32ffaf819e39",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6b353b47-7074-42f3-84d0-a65b56d26871",
+			"id": "ce63c444-6005-45eb-8a53-584b8be8fec4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2f2fcd9a-2cba-4b50-9b59-053b522c73c7",
+			"id": "3c49da45-6dba-4617-9f33-d345c09ff11e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2f8abb13-f778-4235-8e83-7117017b4a18",
+			"id": "1b11f1dd-4394-4f38-bc02-7e67e508abac",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9fa386fd-401d-4008-8cb9-dcf95eb4ec2f",
+			"id": "5f72c138-ac94-4d6a-95a7-fe0012081891",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "94f55743-81ec-4334-be2a-01fa666615e3",
+			"id": "d8b96acc-0421-426b-a3fb-e2f9af97a5d4",
 			"key": "newDT",
 			"value": ""
 		}
