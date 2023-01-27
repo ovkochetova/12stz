@@ -19917,7 +19917,7 @@
 			"id": "aeff015f-9afc-42f7-885f-da196c6ac10b"
 		},
 		{
-			"name": "New Folder",
+			"name": "пока неясно нужны будут эти кейсы или нет",
 			"item": [],
 			"id": "68faf5c7-b20d-479d-aa6a-18ec0db0c2f7"
 		}
@@ -19946,45 +19946,45 @@
 	],
 	"variable": [
 		{
-			"id": "bb801d3f-6a94-469e-bce1-68da97a00e17",
+			"id": "4d59293a-6878-4586-9eb3-a836b762e366",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ba808d6-24b9-4122-9c9e-ca28415c92a1",
+			"id": "b60c7635-9a47-47ae-b563-2239071cd4f2",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dccb95b0-5e12-4ac6-8f02-02f2161c1eb6",
+			"id": "4251cd08-9413-48aa-a23e-92d774b11e52",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "34ca98f5-44bb-4d7a-b213-4a6534bcd4bd",
+			"id": "6ee80a70-72d7-4ecb-b7b9-d4285fde2789",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "ca0e70a0-9d05-421f-8806-153f93f23b39",
+			"id": "d0dfc50c-1d46-435f-aeb1-a93940398bfe",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c12e29f9-2318-4a7b-a258-849b5a34a695",
+			"id": "2b04332e-4c75-4a71-82a6-a6e34cd324d6",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9b176acb-e34e-4934-81e6-35778838d1d1",
+			"id": "0136a174-2458-47a6-8926-6cc7f5df8280",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8d4706e8-ed9a-4655-9031-2fe257f36540",
+			"id": "693483eb-d427-4832-9d70-9f8612d385a7",
 			"key": "newDT",
 			"value": ""
 		}
