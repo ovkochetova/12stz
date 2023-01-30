@@ -16446,7 +16446,7 @@
 					"response": []
 				},
 				{
-					"name": "Изменение статуса запрещенной страны на false Copy",
+					"name": "Изменение статуса запрещенной страны на false",
 					"event": [
 						{
 							"listen": "test",
@@ -16493,6 +16493,54 @@
 							"raw": "{\n  \"id\": {{id}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"countryIsoCode\": \"{{countryIsoCode}}\",\n  \"messageId\": {{message_id}},\n  \"popupId\": {{popup_id}},\n  \"isActive\": false\n}\n\n\n\n"
 						},
 						"url": "{{baseUrl}}/api/v1/restriction/zone"
+					},
+					"response": []
+				},
+				{
+					"name": "!Запрещенная страна, тип доставки есть Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bc6bc372-1aca-431c-b3de-146b6e61c226",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"/*let jsonData = pm.response.json();\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"})\r",
+									"*/"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "4076456c-3c88-4028-b3a2-515cf30d7187",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"{{countryIsoCode}}\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJOXmTbhj4TkIRl78zNZRbyz0\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",  \r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }         \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
 					},
 					"response": []
 				}
@@ -20071,45 +20119,45 @@
 	],
 	"variable": [
 		{
-			"id": "7f42aef7-fc12-41fe-864b-a76f48ee9ce3",
+			"id": "729d904c-3129-43c7-8b06-8fd2185a7bcf",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cb2ca197-254f-4607-b96e-59bdbc52c477",
+			"id": "efac2f8e-73d6-4958-a643-9a9a87bf5deb",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "01e57722-114e-45d1-b6c2-76a3e77d780d",
+			"id": "fa560b8d-2ef8-4ed2-bf3c-e2051f70b9d2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f37499b0-9879-438e-9cc3-eb54b8864bff",
+			"id": "83b25394-0423-4431-a69b-db7b99dd60dd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "81cc3a61-e3c1-466b-98c4-527068f9ed61",
+			"id": "6923c536-27b3-4ca8-87db-ed52849f5835",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bee83d51-ed14-4154-aad9-4ed753ba67c9",
+			"id": "a6c667e3-870b-4f84-a79a-83a91f23d944",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "12a78598-f7ea-4274-8653-227afa9339d6",
+			"id": "a6b7d3cc-0e28-4948-a7ad-c2cb4fc802a9",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8cf67e4a-10a6-47da-b0fd-c7ea54d24d93",
+			"id": "f0c910dc-1d27-4870-8303-a20a79acd4a2",
 			"key": "newDT",
 			"value": ""
 		}
