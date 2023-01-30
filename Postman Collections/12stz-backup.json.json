@@ -16225,54 +16225,7 @@
 					"response": []
 				},
 				{
-					"name": "Запрещенная страна geo_id не в справочнике",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "e4e6fe51-0652-4bae-9578-f68abfd13e65",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"не доставляем \");\r",
-									"});\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "a36f3093-437a-44c2-81fa-645c1e57fa46",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"{{countryIsoCode}}\",\r\n  \"region_geo_id\": \"\",\r\n  \"сity_geo_id\": \"ChIJIdKiTjCGZ0ARZ6ku4alTMHo\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",  \r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }         \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "Запрещенная страна geo_id  в справочнике",
+					"name": "!Запрещенная страна, тип доставки есть",
 					"event": [
 						{
 							"listen": "test",
@@ -16283,17 +16236,17 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Body matches string\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"не доставляем\");\r",
-									"});\r",
-									"\r",
-									"//установить значение переменной равное"
+									"/*let jsonData = pm.response.json();\r",
+									"pm.test(\"Типы доставки есть\", () => {\r",
+									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
+									"})\r",
+									"*/"
 								],
 								"type": "text/javascript"
 							}
 						}
 					],
-					"id": "56cf4530-fc47-4832-ae00-04e3f0cb2124",
+					"id": "01efeceb-5585-4aeb-bbcf-47ed5013e285",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -16308,7 +16261,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"{{countryIsoCode}}\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJa2JP5tcMREARo25X4u2E0GE\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",  \r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }         \r\n  ]\r\n}",
+							"raw": "{\r\n  \"country_iso_code\": \"{{countryIsoCode}}\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJOXmTbhj4TkIRl78zNZRbyz0\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",  \r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }         \r\n  ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -20070,45 +20023,45 @@
 	],
 	"variable": [
 		{
-			"id": "2f13ec41-9ef3-479b-b749-d9ae210eb235",
+			"id": "23f60cf3-3360-48c2-a871-ffcde7aa403f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8ff8762e-26ca-47b7-978f-19294d40f3ed",
+			"id": "6259a5a1-bf13-4697-89ad-6a2b0267fbec",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6dae9589-98a2-45cd-96fb-661481960aef",
+			"id": "6b7d998c-733e-4021-ac84-6ab0b48d2a14",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "933bedb1-aaae-4def-a326-ada8ba3cb3db",
+			"id": "95b63724-5291-4bb4-aa90-1b62f815d1ad",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "959b01c9-bbb5-4bae-a55b-48c5e76ca511",
+			"id": "b62a8ee7-fe48-473e-bbdd-15c9ea5c5252",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b3b5b40c-c90f-4d73-9c2f-c092fe4a87e7",
+			"id": "7d306fc7-44cd-482a-9dd2-960e1be07628",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "33fb2640-c603-4669-b078-46ad2f0ed05c",
+			"id": "8f78ee98-fd41-49c2-b00d-5e443f6f0ae4",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a2310eac-4ce0-4182-a3b7-86bf236604aa",
+			"id": "b96cc3a5-ae1d-4ebf-b1d1-d9fd466d3af9",
 			"key": "newDT",
 			"value": ""
 		}
