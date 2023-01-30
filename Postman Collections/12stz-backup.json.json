@@ -16393,7 +16393,7 @@
 					"response": []
 				},
 				{
-					"name": "!Запрещенная страна, типа доставки нет",
+					"name": "?!Запрещенная страна, типа доставки нет",
 					"event": [
 						{
 							"listen": "test",
@@ -20114,45 +20114,45 @@
 	],
 	"variable": [
 		{
-			"id": "91416e29-7b46-44ff-bd50-ee1106771b37",
+			"id": "181f61b0-fe40-426a-8e61-c5ad89fbb7b9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "71e005d7-90ac-4c8f-b2ec-97a21830ab6c",
+			"id": "f002bd37-7b5d-4e63-bf11-8556b1178096",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ad3f3a56-657e-462b-9767-5aba5365d43d",
+			"id": "9e9363a3-4b06-42eb-a5e5-b2c953350d6f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e64fb9ed-d2ee-464c-9751-8b87763ca48b",
+			"id": "2ad8f911-1cc5-4ec6-afdc-7257bbabb2af",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3af55f3c-1ca2-4c4d-9b22-34646594dbca",
+			"id": "f0fb9072-d961-45eb-a60a-e9120df6546d",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "597824cb-5ae2-4e9f-b61e-bb9973d67778",
+			"id": "25eed918-02f8-4459-8b4c-ab22f62a36c6",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3cf73d8b-56b4-4386-b231-89e93751234b",
+			"id": "4fb536fa-699e-4fab-98d3-b7663f6adbc0",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "04186349-3e90-4d88-98b6-8e937b722658",
+			"id": "8aa114c4-360a-4e9d-a3a4-34d0ce8d6f14",
 			"key": "newDT",
 			"value": ""
 		}
