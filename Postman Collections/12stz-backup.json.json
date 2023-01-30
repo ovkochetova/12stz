@@ -16127,7 +16127,7 @@
 					"response": []
 				},
 				{
-					"name": "!Запрещенная страна geo_id  в справочнике",
+					"name": "!Запрещенная страна geo_id  в справочнике Грузия",
 					"event": [
 						{
 							"listen": "test",
@@ -20017,45 +20017,45 @@
 	],
 	"variable": [
 		{
-			"id": "57d26013-b68f-4a94-bee4-0706bfe27755",
+			"id": "e286136b-397e-42d1-80c7-71eded34683d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f32101f5-c095-48a3-80db-5471797f4c8d",
+			"id": "4398175b-4675-46d1-bb18-d5d9bd5e6aab",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "664b547a-5092-41a7-b6f9-92e5ee3e2470",
+			"id": "14234d9b-26ca-4d29-a634-3816247e6ff9",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "133dbe81-16ee-4980-9d52-a3ff2815e956",
+			"id": "27802891-8a13-45a2-a899-55d6e678760e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "67695467-7db9-45ab-b088-cc7597f9dece",
+			"id": "3ea0cedc-1e17-4027-a603-84168809afd4",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e0ce78fb-5261-4cd1-a216-584427103717",
+			"id": "1224fbdc-d71e-4c47-a370-ea5fc3b9ba3f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d3c8bf60-293d-47fc-88fb-23f347c892b8",
+			"id": "4f442bf9-e6bd-47e9-9ecb-5e37f80ef921",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "cd8cc33d-9d94-4df7-b260-04a7d0ecbd0c",
+			"id": "80ed2ac4-d18d-45c0-a06e-39b7afe9ca45",
 			"key": "newDT",
 			"value": ""
 		}
