@@ -15934,7 +15934,7 @@
 			"id": "db72f363-a39b-4b0a-9dfb-d14565c087da"
 		},
 		{
-			"name": "Запрещенные страны (нужно ли зоны в типах дост и без? нужны!)",
+			"name": "Запрещенные страны",
 			"item": [
 				{
 					"name": "!!!Поиск по названию(нет поиска по названию)",
@@ -20023,45 +20023,45 @@
 	],
 	"variable": [
 		{
-			"id": "23f60cf3-3360-48c2-a871-ffcde7aa403f",
+			"id": "ad03dd27-845e-4ec0-bb40-a54a3b16df4a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6259a5a1-bf13-4697-89ad-6a2b0267fbec",
+			"id": "12e91f20-0cf3-49cb-b226-986f17442a28",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6b7d998c-733e-4021-ac84-6ab0b48d2a14",
+			"id": "3b6250bc-4b67-46e8-a4c6-1e75e652228c",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "95b63724-5291-4bb4-aa90-1b62f815d1ad",
+			"id": "02502820-ad03-49c5-983f-522031b56cc2",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b62a8ee7-fe48-473e-bbdd-15c9ea5c5252",
+			"id": "df910717-60ab-4385-9f0c-edd30b17dd31",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7d306fc7-44cd-482a-9dd2-960e1be07628",
+			"id": "4b098d55-c1c4-4fe4-88a4-55fc8929b385",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "8f78ee98-fd41-49c2-b00d-5e443f6f0ae4",
+			"id": "5ba3cbe7-e3d5-4d15-8624-2c16c831ab9c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b96cc3a5-ae1d-4ebf-b1d1-d9fd466d3af9",
+			"id": "b48aecaf-1ad8-44ea-9841-6adb087eaaa7",
 			"key": "newDT",
 			"value": ""
 		}
