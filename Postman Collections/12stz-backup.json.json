@@ -16366,6 +16366,82 @@
 						"url": "{{url}}"
 					},
 					"response": []
+				},
+				{
+					"name": "Информация о запрещенной стране по id(типа доставки нет)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8b18be9b-4a41-403e-8d06-85299dbb3d85",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Получение инфо о запрещенной стране\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"countryIsoCode\",jsonData.country.countryCode);\r",
+									"pm.environment.set(\"zonegroup_id\",jsonData.zoneGroup.id);\r",
+									"pm.environment.set(\"message_id\",jsonData.message.id);\r",
+									"pm.environment.set(\"popup_id\",jsonData.popup.id);\r",
+									"pm.environment.set(\"id\", jsonData.id)\r",
+									"\r",
+									"console.log(\"countryIsoCode\",jsonData.country.countryCode);\r",
+									"console.log(\"zonegroup_id\",jsonData.zoneGroup.id);\r",
+									"console.log(\"message_id\", jsonData.message.id);\r",
+									"console.log(\"popup_id\", jsonData.popup.id);\r",
+									"console.log(\"id\", jsonData.id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "f1ea6905-1804-4bb2-990b-06de76bdeb5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/restriction/zone/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"restriction",
+								"zone",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "a6269bc4-6117-4849-9b32-a9481f4e6af4",
+									"key": "id",
+									"value": "420"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "907aa0ae-2605-46d6-ab89-583f0e761006"
@@ -19942,45 +20018,45 @@
 	],
 	"variable": [
 		{
-			"id": "2aa616f1-d15d-477c-80ef-377a33c8bdde",
+			"id": "b234dc67-805a-4e5e-951b-95014e63f1e1",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4502ad4b-f449-4e4c-ae21-29c8ee8ce805",
+			"id": "24b84717-c418-4799-8f25-e81118499227",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7d20a81e-7f07-4a3b-8c1e-08dc114521f7",
+			"id": "b90bec7a-1512-47f5-92f1-00ec91e84a5a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cfa8721f-6484-4f55-9591-9fb5f308606d",
+			"id": "0f69e5fa-7378-492b-b31d-f60beec76855",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a52bf38f-f320-4cad-8207-b70f89dedd4f",
+			"id": "f516e35e-a41a-4926-8b2a-dc689220f8f5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "afca38bc-4ca8-4c05-aa43-1287027039fe",
+			"id": "814a6b9c-b220-4395-8ce2-06300b4b4fc4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "5b91373c-4e5c-48aa-92a7-49c1e06653a7",
+			"id": "e85ff026-6245-4d50-bcfe-7b0b1f4c1a50",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a6e96c30-3795-4845-a709-f21ba13ad3ed",
+			"id": "b4c8eacb-fd56-4189-bbc3-10967a7ae932",
 			"key": "newDT",
 			"value": ""
 		}
