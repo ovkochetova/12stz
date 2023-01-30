@@ -16175,54 +16175,6 @@
 					"response": []
 				},
 				{
-					"name": "Запрещенная страна geo_id  не в справочнике",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bc6bc372-1aca-431c-b3de-146b6e61c226",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"})\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "ca3eb967-e349-44a5-82af-b8df9386e38f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"{{countryIsoCode}}\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJIdKiTjCGZ0ARZ6ku4alTMHo\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",  \r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n     {\r\n      \"category_id\": 100009, \r\n      \"quantity\": 1,\r\n      \"price\": 10000.00,\r\n      \"is_present\": false\r\n    }         \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "!Изменение статуса запрещенной страны на true",
 					"event": [
 						{
@@ -20098,7 +20050,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3e8630fc-9551-4706-ab94-2d8940be5177",
+				"id": "4c115ccd-57d1-4b5c-9b3c-e7be6dd5c72c",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -20108,7 +20060,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "5ba0144b-48cf-4bef-8a7c-0dc1f2b0fd9e",
+				"id": "dfd5072c-a783-48fe-9051-cc27b362c1d2",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -20118,45 +20070,45 @@
 	],
 	"variable": [
 		{
-			"id": "5753ca2f-5050-4d58-8a65-379791a92fc8",
+			"id": "d722f582-452d-460f-b75d-5b1e4ec5bb28",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3c48ab53-fdd9-4ab2-b025-b79d181e87a5",
+			"id": "babee55f-1456-4642-8020-a00da5a03f47",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "06b7472a-ce34-4553-851a-73ad5a665fea",
+			"id": "0e994bc0-8447-4ab5-8adf-b84c226b59a0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d908fcc1-0218-4e9b-bda0-645120169fc5",
+			"id": "bec6fb30-c6d4-4d44-ab9b-5f5ed48e6dae",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e455e7d2-563b-4f74-8166-ac281171dfe8",
+			"id": "0700f7a5-670e-4822-b5fa-c314722971b9",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "16f8ec91-a05e-45ec-a88f-5316148bbc10",
+			"id": "dfc18771-3723-4d54-8cf4-3cf999b414f2",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6d95e479-259a-43e7-9606-d6798e74d27c",
+			"id": "789cc703-8a73-46da-8a13-a1c91061b6d4",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "430bfc0a-1a48-4377-81a6-bfe663c4694d",
+			"id": "431ff788-0342-428c-ae7f-c89f7ec85729",
 			"key": "newDT",
 			"value": ""
 		}
