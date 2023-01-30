@@ -16013,7 +16013,6 @@
 									"});\r",
 									"\r",
 									" var jsonData = pm.response.json();\r",
-									"\r",
 									"pm.test(\"Запрещенная страна - Казахстан\", function () {\r",
 									"     pm.expect(jsonData.country.countryNameRu).to.eql('Казахстан');\r",
 									"});\r",
@@ -20119,45 +20118,45 @@
 	],
 	"variable": [
 		{
-			"id": "0b6e85c5-a9ef-45da-bfbe-2d0b9b7e33a6",
+			"id": "545c4f35-788a-4f8c-9bc3-31ce3c60d8f5",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e41120ba-de1f-4f33-b4a6-8f70e77c653b",
+			"id": "dccddc27-5997-4378-965c-188263ab2548",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a80d3be8-7083-4787-acb0-56d38d3f1c2b",
+			"id": "3641b49e-d978-4618-807d-83ca3d8ec3a7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a92b7a46-684b-4bcc-bb73-2c0020b113b8",
+			"id": "1deea02a-f5a3-4db7-8f77-7c754effdd33",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "fbb13250-de0c-4550-807f-f08a059781c8",
+			"id": "8888f430-fc87-41c1-9f3a-d9bb64da332b",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bb44a46f-c4f1-47d8-a84c-94826a66bbac",
+			"id": "17fba1da-d802-4539-b1b0-9abfc365d482",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1cba1a78-7a6f-4f6a-a64c-7d3d9ac55d74",
+			"id": "5aeb967a-0565-4458-b81e-b69ac604bef9",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8050af8b-42c3-4d8e-b159-20049fe26899",
+			"id": "e8d5e2b3-24df-4768-acd4-19ccc9eb0910",
 			"key": "newDT",
 			"value": ""
 		}
