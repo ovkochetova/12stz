@@ -16281,7 +16281,7 @@
 									"\r",
 									" var jsonData = pm.response.json();\r",
 									"pm.test(\"Запрещенная страна - Грузия\", function () {\r",
-									"     pm.expect(jsonData.country.countryNameRu).to.eql('Казахстан');\r",
+									"     pm.expect(jsonData.country.countryNameRu).to.eql('Грузия');\r",
 									"});\r",
 									"\r",
 									"\r",
@@ -20114,45 +20114,45 @@
 	],
 	"variable": [
 		{
-			"id": "d6a58dcb-0829-4ef8-a623-7304b3c89b19",
+			"id": "59dffdbf-b0e6-48cd-b065-baf2fb183992",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2382aa57-604a-4760-8e32-9b8f414f8eb2",
+			"id": "705ac300-9f1b-4b80-976f-686c990f8699",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a9db363c-bbd4-4934-8d1f-f96ade94358c",
+			"id": "78ae1e45-b65e-4779-92d3-580693f8afde",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2fed4cf8-4c03-435b-a907-6a2f450bd9fc",
+			"id": "c6ffc0b1-74f1-462e-be00-d038f10549c4",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "4644995e-3903-4e3d-b767-a8946a6201c4",
+			"id": "db0d9009-8f09-48b2-ae1b-03321dce6347",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "87aa6004-f114-49e2-897b-aab4945fd60a",
+			"id": "5ba6cea4-5195-45f0-b43b-1aa766fa6205",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "6b546bef-b0f4-483e-bcf7-f64226dd706a",
+			"id": "f7ee74d1-1640-4395-ad7f-0e7edbc57d2c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fb420d9c-c750-437f-be4a-05f73a9a28bc",
+			"id": "ef11d91d-26ab-41e0-9bc3-36def41562ed",
 			"key": "newDT",
 			"value": ""
 		}
