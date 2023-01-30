@@ -16001,7 +16001,7 @@
 					"response": []
 				},
 				{
-					"name": "Информация о запрещенной стране по id",
+					"name": "Информация о запрещенной стране по id(тип доставки есть)",
 					"event": [
 						{
 							"listen": "test",
@@ -19942,45 +19942,45 @@
 	],
 	"variable": [
 		{
-			"id": "17d71af8-e235-412f-89b4-87046fd43bcf",
+			"id": "2aa616f1-d15d-477c-80ef-377a33c8bdde",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bb076779-5df8-42e4-af3e-581c3814721e",
+			"id": "4502ad4b-f449-4e4c-ae21-29c8ee8ce805",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8f8862d9-4a9e-41fa-80cb-557eb718baca",
+			"id": "7d20a81e-7f07-4a3b-8c1e-08dc114521f7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "36b38e60-c089-4959-ad38-339dd96c6efe",
+			"id": "cfa8721f-6484-4f55-9591-9fb5f308606d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "605b63d6-9e6c-42d8-b683-3c3e8166ecd8",
+			"id": "a52bf38f-f320-4cad-8207-b70f89dedd4f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "01eea83c-7267-4479-ae1b-7ef4a22ace03",
+			"id": "afca38bc-4ca8-4c05-aa43-1287027039fe",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1aa12cfa-7ecf-415c-9c70-6f876dcd247e",
+			"id": "5b91373c-4e5c-48aa-92a7-49c1e06653a7",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "63d4077d-1989-409e-8d66-88e2af24d799",
+			"id": "a6e96c30-3795-4845-a709-f21ba13ad3ed",
 			"key": "newDT",
 			"value": ""
 		}
