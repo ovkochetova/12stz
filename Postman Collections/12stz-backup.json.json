@@ -16001,7 +16001,7 @@
 					"response": []
 				},
 				{
-					"name": "Информация о запрещенной стране по id(тип доставки есть)",
+					"name": "Поиск запрещенной страны по id(тип доставки есть)",
 					"event": [
 						{
 							"listen": "test",
@@ -16439,6 +16439,107 @@
 								}
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "!Изменение статуса запрещенной страны на true Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2baf2e1a-1df9-4d2a-bb0a-48e72be896d6",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const responseJson = pm.response.json();\r",
+									"pm.test(\"Запрещенная страна статус Активно\",() => {\r",
+									"  pm.expect(responseJson.isActive).to.eql(true);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "49842ed4-efe7-48ba-90aa-52425117a9ab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": {{id}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"countryIsoCode\": \"{{countryIsoCode}}\",\n  \"messageId\": {{message_id}},\n  \"popupId\": {{popup_id}},\n  \"isActive\": true\n}"
+						},
+						"url": "{{baseUrl}}/api/v1/restriction/zone"
+					},
+					"response": []
+				},
+				{
+					"name": "Изменение статуса запрещенной страны на false Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "bb594704-2d04-4e72-b39c-c8c0c60aab07",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"const responseJson = pm.response.json();\r",
+									"pm.test(\"Ограничение по категории для групп зон неактивно\",() => {\r",
+									"  pm.expect(responseJson.isActive).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "bb3b7e6c-6e36-4325-8047-339bbad37477",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": {{id}},\n  \"zoneGroupId\": {{zonegroup_id}},\n  \"countryIsoCode\": \"{{countryIsoCode}}\",\n  \"messageId\": {{message_id}},\n  \"popupId\": {{popup_id}},\n  \"isActive\": false\n}\n\n\n\n"
+						},
+						"url": "{{baseUrl}}/api/v1/restriction/zone"
 					},
 					"response": []
 				}
@@ -20017,45 +20118,45 @@
 	],
 	"variable": [
 		{
-			"id": "e286136b-397e-42d1-80c7-71eded34683d",
+			"id": "0ca553a3-f6e7-4245-a53d-0732a328fcbf",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4398175b-4675-46d1-bb18-d5d9bd5e6aab",
+			"id": "9f38c8ca-4732-499c-b0ac-0cee3424d095",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "14234d9b-26ca-4d29-a634-3816247e6ff9",
+			"id": "418a0a5e-eaad-4c47-a796-e61c9e675a74",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "27802891-8a13-45a2-a899-55d6e678760e",
+			"id": "510b4cce-497a-4003-8b4c-9ac4c0b012b0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3ea0cedc-1e17-4027-a603-84168809afd4",
+			"id": "aff7b9e4-fe07-42c5-b6e4-31f22447432f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1224fbdc-d71e-4c47-a370-ea5fc3b9ba3f",
+			"id": "205c3114-0b76-4987-9753-ea392ab460ff",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4f442bf9-e6bd-47e9-9ecb-5e37f80ef921",
+			"id": "68706251-83c9-4cb4-84b0-aec2f78b7b6c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "80ed2ac4-d18d-45c0-a06e-39b7afe9ca45",
+			"id": "615eb80f-9027-4025-a106-9f8b6cb9b488",
 			"key": "newDT",
 			"value": ""
 		}
