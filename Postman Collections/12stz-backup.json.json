@@ -16012,10 +16012,11 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
+									" var jsonData = pm.response.json();\r",
 									"pm.test(\"Получение инфо о запрещенной стране\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
-									"    pm.expect(jsonData).to.be.an('object');\r",
+									"     pm.expect(jsonData).to.be.an('object');\r",
 									"});\r",
+									"\r",
 									"\r",
 									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
@@ -20119,45 +20120,45 @@
 	],
 	"variable": [
 		{
-			"id": "c4344d6c-f2d5-4540-b24f-7a7680b3d63c",
+			"id": "2c48b158-35e7-4f58-84ec-f22e7e067141",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9b329714-df81-4a09-8a48-a1ecce503579",
+			"id": "f197a6e9-81aa-48d0-9537-e25c6d0f5a4c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e4849074-bb65-4d52-9da8-26a2d5f471f5",
+			"id": "b095a37c-6751-452c-b4bd-d27ab2451599",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e17b6036-0ea1-4ea4-80ac-0deeea25c1ba",
+			"id": "0846c1ed-701c-46eb-8932-757042394c82",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "de3b556d-a117-4992-8fa4-377839c4e03b",
+			"id": "5e04bfe2-fdc3-4692-a6ae-e0501f78df59",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "fc3d3567-b902-4c77-9115-d1e2196ae3bd",
+			"id": "bf18a877-64b3-418a-8b50-19ca77ea11f0",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "23bac0ba-504f-4716-be1e-c1e8806aa496",
+			"id": "5f0868a7-55da-4aab-8196-f77cf0dd4aa8",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "3f8c38ee-0924-4dc1-9985-3ea1d0f8f755",
+			"id": "44f5f165-52a2-40d7-8446-15ec2edfc040",
 			"key": "newDT",
 			"value": ""
 		}
