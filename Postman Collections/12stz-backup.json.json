@@ -16343,7 +16343,7 @@
 					"response": []
 				},
 				{
-					"name": "!Изменение статуса запрещенной страны на true Copy",
+					"name": "!Изменение статуса запрещенной страны на true",
 					"event": [
 						{
 							"listen": "test",
@@ -20114,45 +20114,45 @@
 	],
 	"variable": [
 		{
-			"id": "6f505d84-e270-41f9-be93-9a5eb115072c",
+			"id": "0248467b-7da2-4144-ba75-8e30c74d39d9",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "27cdcc37-af75-49cc-933a-57d31a929678",
+			"id": "ad3c4229-237c-4add-ba4d-4596b800f7a6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d5b44547-598a-46ca-b662-2b633cba1ae4",
+			"id": "14f20b94-02a3-4ac1-8565-89aebf8c0785",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b82f5485-0a71-406a-b878-0ab7cbdba546",
+			"id": "fb515507-bd3e-47e8-a2d4-4a7c74b5a628",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "82caae04-8c7b-4c5d-a701-a2e9afbe4b84",
+			"id": "064f8d0b-2b7f-43fb-8f80-c38f07eb9d94",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "42f13793-8e6e-41ed-bedf-235b264edf1f",
+			"id": "6c1742f7-466e-4490-b1eb-0a9f01d24a21",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "72368b42-a237-4211-9417-963819f83c94",
+			"id": "d1ca3d5d-c73e-4412-8ef9-ec7b9862e8fe",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5240dbd4-b75e-4200-9fd3-9dad86e73c3e",
+			"id": "c7a7381c-d5ea-416a-a92c-b01c18cbfaff",
 			"key": "newDT",
 			"value": ""
 		}
