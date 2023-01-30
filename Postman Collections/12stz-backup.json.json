@@ -16405,7 +16405,7 @@
 									"});\r",
 									"\r",
 									"let jsonData = pm.response.json();\r",
-									"pm.test(\"Типов доставки нет\", () => {\r",
+									"pm.test(\"Типов доставки нет для запрещенной страны\", () => {\r",
 									"    pm.expect(jsonData.restrictions).to.be.an(\"array\");\r",
 									"})"
 								],
@@ -20113,45 +20113,45 @@
 	],
 	"variable": [
 		{
-			"id": "b127ef2c-15ed-493b-9a92-729177a77461",
+			"id": "b0938f21-07fa-49a6-b670-dd0fbf3a654b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "88b4ecb9-bb32-41ed-b3dc-9c90a4ec5337",
+			"id": "254a9dbe-5c6c-414e-9052-bd8e56e7bba1",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fff05ee4-e9ff-4a9e-b7b9-065f7f60cd7d",
+			"id": "791869fe-1e9b-4d8d-a2cc-c610fea52d15",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "efa48acc-03d2-412c-8d96-33daf13fe358",
+			"id": "344d8e54-596b-4104-ae29-285d4d53a694",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "93ca1513-d250-47cd-b901-5501af38aa6b",
+			"id": "22b24065-8e27-404f-8860-5c98f8237837",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e0f4cfec-937b-40c3-89bf-11f81b62817b",
+			"id": "be38b2a4-e67b-47b6-b686-22167424f502",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "434aa6a9-92e7-48de-83e2-163060906005",
+			"id": "2a9da2b7-7a25-4cc7-9cce-2946b8c5f2fe",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ab953703-9d29-4c15-9723-c2b7f6bae646",
+			"id": "e291bcfd-3054-46af-a9fa-91b36a4a4a63",
 			"key": "newDT",
 			"value": ""
 		}
