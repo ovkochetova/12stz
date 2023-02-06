@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "d01e9b47-8eb1-4873-b666-8046f351c066",
-		"name": "12stz_collection",
+		"name": "12stz_Logistics",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -20116,45 +20116,45 @@
 	],
 	"variable": [
 		{
-			"id": "60ac2504-849d-4432-bd2d-ad552e7015d9",
+			"id": "138a3956-fb76-4715-bbb0-1913705b1e0b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b62fdc8d-862a-4396-b34a-729b34265d90",
+			"id": "d09be160-983c-4570-ac4e-83c468bafae6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0c389d92-317f-435d-b912-bfb0152123da",
+			"id": "026e194c-014b-40e3-9303-b904e4a477a7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0ee0bb94-7aa4-43e4-ab06-a8dc2117acaa",
+			"id": "c8e064af-bd01-472c-ab2f-c3c08a9fac1c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "403fcc30-974a-40c3-a33c-7b782263245e",
+			"id": "30959cf4-6791-4e80-a978-4f82903a6d96",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c03d05cb-beb3-47f3-8544-005e11ada60c",
+			"id": "76c5c231-3bbb-4fa3-a08d-2532a6cf7e6b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "20e34eef-0e36-4614-9e5b-391bddcfcb99",
+			"id": "c86cc929-1424-4510-bb9f-438c8fac1efc",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "abdd4a0a-ac27-4816-a336-8e4d6b937e67",
+			"id": "eb2d73c6-5add-47cf-b4c7-8c3020a6109e",
 			"key": "newDT",
 			"value": ""
 		}
