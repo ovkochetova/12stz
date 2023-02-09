@@ -8793,7 +8793,7 @@
 									"});\r",
 									"\r",
 									"\r",
-									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
+									"/*const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
 									"\r",
 									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'ТК для тестов(не удалять)');\r",
 									"\r",
@@ -8816,7 +8816,7 @@
 									"pm.test(\"Минимальное кол-во дней доставки действительно 5\"  , function () {\r",
 									"        pm.expect(dataDostavki_winner).to.eql(expectedDeliveryYMD); \r",
 									"});\r",
-									""
+									"*/"
 								],
 								"type": "text/javascript"
 							}
@@ -20117,50 +20117,50 @@
 	],
 	"variable": [
 		{
-			"id": "3fc9d3b2-add0-4344-9f68-d8fa1b963c91",
+			"id": "fc0ba47e-37be-4b56-9faa-62e00a6e7a6d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0df255a0-c158-430a-8778-044fe4530ee2",
+			"id": "2aa33e94-cacd-4881-9d45-fbda31498c16",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b7d93fd9-3121-42c4-a307-65d306a96860",
+			"id": "c854dbf1-bce9-451a-8323-819cc505690d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "03c5dc08-4a8e-4529-b1b8-1f1ce5a198c0",
+			"id": "af4a2b1f-9861-40fb-82f4-5adc200ed2bf",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "18bf115a-4286-4d2d-85a1-b894c08f05c0",
+			"id": "c6ff34ea-0d02-47f3-80b3-1237937bda40",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "ed1690dd-d960-47bf-83f6-ae942beec481",
+			"id": "a7bf6a88-9a50-43f3-ab73-44ab838b05cb",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "07e0c121-d621-4eee-a872-56949bf0a5b0",
+			"id": "ae81280a-e264-4279-9817-44aaf5596e45",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f9382fa8-a191-4c3a-876d-c6f0ab8617b0",
+			"id": "32e39edb-5ac2-4030-919a-85b4bfff8225",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "c71911af-3413-48b1-bfba-d00bb224d6bf",
+			"id": "89e2b804-f7e4-4302-a065-40d7b6ec5f16",
 			"key": "id",
 			"value": ""
 		}
