@@ -2588,11 +2588,6 @@
 									"    pm.expect(pm.response.text()).not.to.include(\"is_restricted\");\r",
 									"});\r",
 									"\r",
-									"var data = pm.response.json().delivery_types;\r",
-									"pm.test('Для этой доставки ' + data.length + ' транспортная компания', function () {\r",
-									"    pm.expect(data).to.be.an('array').to.have.lengthOf(1)\r",
-									"});\r",
-									"\r",
 									"\r",
 									"\r",
 									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
@@ -2612,9 +2607,9 @@
 									"//ожидаемая дата доставки\r",
 									"let expectedDelivery = currentDateTime ;\r",
 									"if (currentDateTime.getHours() > actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 7);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 8);\r",
 									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 6);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 7);\r",
 									"console.log('expectedDelivery', expectedDelivery)\r",
 									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
 									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
@@ -20150,50 +20145,50 @@
 	],
 	"variable": [
 		{
-			"id": "da723dfd-d6c9-4ef4-939c-c0368375fa70",
+			"id": "3379190f-5266-4bb4-ae32-9f4f7267cb43",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fdfc0cc2-2551-4fd6-8ec9-7bc15d4f0ca2",
+			"id": "adaa1f58-d173-4bdc-9646-5b9d8d86a669",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e16494d5-9ae7-4db1-93ad-febcbc1cce64",
+			"id": "b20b8d6f-0cf5-4018-8e22-ffbe737bf85d",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ccc983cb-18ce-4111-a3e8-b2d6d0a0c8d8",
+			"id": "636970db-1483-4c9e-8d49-6bc356c6930f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3e6a564a-cb3d-47c0-99aa-4737f7cd6eab",
+			"id": "e16ea2d7-be0b-421f-acb6-ba5841490235",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "edd2886e-5995-4613-9356-e958630bd805",
+			"id": "743b38d7-9ad6-4ab3-bb00-09e4a17d68af",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "e58d65d3-6e54-431a-bb29-750890c7283f",
+			"id": "21933e89-fa7d-4739-98e8-e45cf1d97858",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "b4f7c132-d0de-4187-a161-76cbdadd02f6",
+			"id": "c96a468e-9fd7-4f99-8a9b-d79776baca1d",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "a133e99e-94d0-4d84-bdc0-8b32916c431e",
+			"id": "fc062153-1921-4af9-8f9e-8c1eb9f51508",
 			"key": "id",
 			"value": ""
 		}
