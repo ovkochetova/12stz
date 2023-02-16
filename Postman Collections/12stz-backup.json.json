@@ -2588,11 +2588,42 @@
 									"    pm.expect(pm.response.text()).not.to.include(\"is_restricted\");\r",
 									"});\r",
 									"\r",
-									"\r",
 									"var data = pm.response.json().delivery_types;\r",
 									"pm.test('Для этой доставки ' + data.length + ' транспортная компания', function () {\r",
 									"    pm.expect(data).to.be.an('array').to.have.lengthOf(1)\r",
-									"});"
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									"const zeroPad = (num, places = 2) => String(num).padStart(places, '0');\r",
+									"const deliveryType = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == '790р КСЕ от СДТ РФ  (запись не редактировать!)');\r",
+									"\r",
+									"//дата, отдаваемая виннером\r",
+									"const dataDostavki_winner = deliveryType.delivery_dates[0].date;\r",
+									"console.log('winner', dataDostavki_winner)\r",
+									"\r",
+									"//время отсечки, запас по времени\r",
+									"const cutoff = 19;\r",
+									"const gapHours = 6;\r",
+									"const actualCutoff = cutoff - gapHours;\r",
+									"const currentDateTime = new Date(\"2023-01-10 13:00:00\");\r",
+									"console.log('currentDateTime', currentDateTime)\r",
+									"\r",
+									"//ожидаемая дата доставки\r",
+									"let expectedDelivery = currentDateTime ;\r",
+									"if (currentDateTime.getHours() > actualCutoff)\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
+									"else\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
+									"console.log('expectedDelivery', expectedDelivery)\r",
+									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
+									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
+									"\r",
+									"\r",
+									"pm.test(\"Дата доставки SDT действительно \" + expectedDeliveryYMD , function () {\r",
+									"        pm.expect(expectedDeliveryYMD).to.eql(dataDostavki_winner); \r",
+									"});\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -20119,50 +20150,50 @@
 	],
 	"variable": [
 		{
-			"id": "166a8238-a11a-41fb-ad14-6be5cb0e237e",
+			"id": "a978063e-c3fb-4d1c-a90b-d72b3f80aea4",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d233ff25-1149-4b5e-88d7-fb9219b1146b",
+			"id": "64a7c72a-bd1d-4444-a9c6-be2893c9eb08",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e8f0eaf8-fe52-499c-be16-5ac9875e97f4",
+			"id": "6563a6bf-08ae-44b8-9740-63c7fc9c4dc4",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e8e4b92f-98b9-4c7d-80ac-76ee8a0e4112",
+			"id": "b2609bc9-a9c1-4c70-85e8-28ad16684249",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b8e2abc5-681d-4659-b91b-52c7d5bf7bc6",
+			"id": "2656c203-c076-4c5b-b527-246b2358ba1c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "94ab38f8-770c-4d49-8994-60b14713926f",
+			"id": "f9c078d2-0c60-4212-bb71-3d50453f088b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f271c6fa-1b35-443f-9d05-9e04e362e829",
+			"id": "e0fe3373-322f-4a0d-92a4-abb13d679f40",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "87f041a6-e638-4211-9c30-9eea621161ce",
+			"id": "5fc3a6e9-7c0e-4ae7-b28e-f5504c327995",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "ce14d806-25d6-494c-b64c-a60a680faa40",
+			"id": "d5beeb0c-d75d-4766-87ec-bd785aef7e9f",
 			"key": "id",
 			"value": ""
 		}
