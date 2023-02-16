@@ -10590,9 +10590,9 @@
 									"//ожидаемая дата доставки\r",
 									"let expectedDelivery = currentDateTime ;\r",
 									"if (currentDateTime.getHours() >= actualCutoff)\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() +3);\r",
 									"else\r",
-									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
+									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
 									"console.log('expectedDelivery', expectedDelivery)\r",
 									"let expectedDeliveryYMD = '' + expectedDelivery.getFullYear() + '-' + zeroPad(expectedDelivery.getMonth() + 1)+ '-' + zeroPad(expectedDelivery.getDate());\r",
 									"console.log('expectedDeliveryYMD', expectedDeliveryYMD)\r",
@@ -20145,50 +20145,50 @@
 	],
 	"variable": [
 		{
-			"id": "5271900d-6f3e-4845-966e-c2156526c98d",
+			"id": "721e0aa6-b28f-4876-b51c-d8b62aa68ca6",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8f288e4-29d4-4e37-96a5-75fafd92d68e",
+			"id": "9b363107-bdd0-4c98-aac4-9143924cd78a",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5c2c61e4-5026-488c-ad2d-fb97f1af446e",
+			"id": "78727c67-cb5c-4f8d-aabd-106056e8cfc3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3ec912e4-ba50-4bd1-926f-bf9de5308661",
+			"id": "6001a378-64d9-4f6c-9987-c14a6267e426",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a1e2c25b-70c5-4782-a311-da52c8b1d9e7",
+			"id": "0109bc56-316e-4f8e-803a-61ddddb24bbd",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "27d3741d-dd36-43f3-95a5-17f0d510af42",
+			"id": "2670952c-f524-4d27-b20d-61b1f7cd9ea6",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f093e28f-75fc-4b30-987d-07f55a46cf8e",
+			"id": "3eef587a-ecc6-4360-b656-6ac0b1621798",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "631eb6a5-4dfc-481f-a45e-b0624fb47148",
+			"id": "e9d51352-966f-4184-9f36-d543f5f0346d",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "dc053fae-a3b5-4fd3-8a29-e2f6719f0a23",
+			"id": "f8e228fc-aaec-4d84-8ebc-eb3e9e2bfd84",
 			"key": "id",
 			"value": ""
 		}
