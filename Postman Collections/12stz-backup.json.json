@@ -9630,7 +9630,7 @@
 									"\r",
 									"//ожидаемая дата доставки\r",
 									"let expectedDelivery = currentDateTime ;\r",
-									"if (currentDateTime.getHours() >= actualCutoff)\r",
+									"if (currentDateTime.getHours() > actualCutoff)\r",
 									"    expectedDelivery.setDate(currentDateTime.getDate() + 2);\r",
 									"else\r",
 									"    expectedDelivery.setDate(currentDateTime.getDate() + 1);\r",
@@ -20119,50 +20119,50 @@
 	],
 	"variable": [
 		{
-			"id": "996f6b4c-7a12-491e-81d8-683d0dca4f74",
+			"id": "c0a8a30e-a9f7-4f7f-ba38-cc8b6c3f1cd3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8d99c3e5-c5fb-4bdd-a29c-8f6c60d4ab49",
+			"id": "a54b6a5b-7cc0-492c-b0be-6d0d620fb81d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8b703157-37dc-4a4a-a0e9-147e135d821d",
+			"id": "6fe02ea2-fcdb-4f59-a57c-de1df4f5e785",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "522da20c-08ee-40b9-b92b-25c2d9cb6241",
+			"id": "8e273348-fb22-402f-b643-90763c11aadd",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "868f1515-78bb-45b5-a894-7b2d15ad3638",
+			"id": "22163782-192c-4f26-a9f5-fd03e6ed4f78",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "445e52e6-8960-4deb-a27d-40db3f3b7275",
+			"id": "26799be8-28e6-4f73-9642-b09713f0fe91",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3e5c3639-3dab-41a5-a3b0-b14d8c1456dd",
+			"id": "4947af9b-d465-4937-907d-525997a430d8",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "33add531-e408-461a-820c-2857399304bf",
+			"id": "5e320b36-6cf4-4f34-9bc0-1667e4f887c2",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "7c467804-5d80-4c53-9b40-0cd9f507b51c",
+			"id": "dec3ed00-484d-4537-a577-47748af47e5e",
 			"key": "id",
 			"value": ""
 		}
