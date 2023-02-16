@@ -8781,7 +8781,7 @@
 					"response": []
 				},
 				{
-					"name": "!Мин кол-во дней доставки 5",
+					"name": "Мин кол-во дней доставки 5",
 					"event": [
 						{
 							"listen": "test",
@@ -8947,7 +8947,7 @@
 					"response": []
 				},
 				{
-					"name": "!Мин кол-во дней доставки 10",
+					"name": "Мин кол-во дней доставки 10",
 					"event": [
 						{
 							"listen": "test",
@@ -20119,50 +20119,50 @@
 	],
 	"variable": [
 		{
-			"id": "b7617870-f08e-432e-ae9b-e277dbbb5dc8",
+			"id": "806a04b4-dfde-4a3b-9375-474eb3795367",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "809addca-9b14-4fa6-a175-c6c28320eacc",
+			"id": "f4fa11f9-50ac-4542-ad7f-187d01f9a232",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c1cbb40f-5632-444f-99b5-2217b8082c7a",
+			"id": "6e0112f6-26aa-4a6a-9a26-953b663e9600",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d4cf6164-8c5d-40df-b00f-939f2a0505a8",
+			"id": "2464f4bd-64c1-4339-b398-34bd2489d88b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1f74b390-e06d-410b-84ee-ce165e525b07",
+			"id": "0cd153eb-04d9-477e-b683-69dc6db48124",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "292a6e24-d109-40be-a27f-3e646c849493",
+			"id": "094bacd9-c421-4ce9-8100-761810dc038d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "7578da91-e7bf-48ba-8852-cf89b721b93a",
+			"id": "2accff73-af78-46f3-84a3-11c5854f186f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "c6d6d572-6a07-41eb-8448-5d3902a7474a",
+			"id": "076aba80-87de-4b2b-b9d5-4eb88bd0993f",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "c2a3ca1e-4ce3-4aed-afad-c69b3f8abbcb",
+			"id": "7b912033-bddb-4f85-92e2-e89eb8a7589f",
 			"key": "id",
 			"value": ""
 		}
