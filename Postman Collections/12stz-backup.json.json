@@ -4651,7 +4651,7 @@
 					"response": []
 				},
 				{
-					"name": "!не учитывать доставку 300990 руб",
+					"name": "не учитывать доставку 300990 руб",
 					"event": [
 						{
 							"listen": "test",
@@ -20145,50 +20145,50 @@
 	],
 	"variable": [
 		{
-			"id": "4f9f40e3-af9c-4953-97f6-85ce9fbaa4cf",
+			"id": "5319cdf9-842c-400b-86fe-aba34bd30513",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fc24133f-c5ce-4149-88d5-db770b34bedf",
+			"id": "8f68354e-940f-4f1e-95fe-6f68ea24c02d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2818bcf0-ea7a-4663-92f8-1a8e8f5a39b6",
+			"id": "08dd740f-9301-4910-afc2-68fa9da0a01e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7fab1625-429b-4916-80bb-5b901dc697b0",
+			"id": "06b88d3a-de97-4a19-a931-a7ff1cb76349",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "e59fe62d-564a-4e29-96cf-c5b128df47e1",
+			"id": "f2e334d4-30de-4ea8-b912-1763c51c4c51",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d3386dcf-be22-4030-b17b-2906bc19a866",
+			"id": "1c2017c7-cc43-407a-b4c2-2ea8fd54147c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "2f164e6b-672e-427a-aeeb-bf56f331e881",
+			"id": "3fc8f901-7392-4ce2-92ca-bafe8e62c4ef",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d2982248-212e-48aa-8b4d-261c73eac479",
+			"id": "bd8c9375-3832-4d5e-9f01-173a8c955090",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "39a5068d-f910-45f3-b462-150c814b6fca",
+			"id": "8c2f6831-1f44-4461-835c-dfc1c1563e45",
 			"key": "id",
 			"value": ""
 		}
