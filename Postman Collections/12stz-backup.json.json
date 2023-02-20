@@ -6580,162 +6580,6 @@
 					"response": []
 				},
 				{
-					"name": "!учитывать подарки и дост 299999",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Максимальная количество товаров включает доставку и  подарки, ограничения есть\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"больше 300 000\");\r",
-									"})"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "25c00f0e-2b76-4329-8532-0fc64e91b57e",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 150000,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100145, \r\n      \"quantity\": 1,\r\n      \"price\": 149998,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100010, \r\n      \"quantity\": 1,\r\n      \"price\": 1.00,\r\n      \"is_present\": true\r\n    }    \r\n    \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "!учитывать подарки и дост 300000",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Максимальная количество товаров включает доставку и  подарки, ограничения есть\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"300 000\");\r",
-									"})"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "e14d5433-e35a-4295-9c38-5f493a8f2468",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 150000,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100145, \r\n      \"quantity\": 1,\r\n      \"price\": 149999,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100010, \r\n      \"quantity\": 1,\r\n      \"price\": 1.00,\r\n      \"is_present\": true\r\n    }    \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
-					"name": "!учитывать подарки и дост 300001",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Максимальная количество товаров включает доставку и  подарки, ограничения есть\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\" 300 000\");\r",
-									"})"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "66a98d77-e224-433c-aaf5-c4690ddcd672",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 150000,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100145, \r\n      \"quantity\": 1,\r\n      \"price\": 150000,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100010, \r\n      \"quantity\": 1,\r\n      \"price\": 1.00,\r\n      \"is_present\": true\r\n    }    \r\n    \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "чекбокс учит подарки и доставку в max кол-ве товаров Активны",
 					"event": [
 						{
@@ -19962,7 +19806,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5a6383c8-bf3f-4ec6-accc-ab84d8e43495",
+				"id": "1b41523e-52ef-40f1-a2de-6d934d5fce37",
 				"type": "text/javascript",
 				"exec": [
 					"pm.globals.set(\"cart_id\", pm.variables.replaceIn('{{$randomInt}}'));"
@@ -19972,7 +19816,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a32dab78-4cff-4eae-b4a1-f0279c12804c",
+				"id": "8b9f0ade-50f9-4b9d-89c1-c81effa80e8f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -19982,50 +19826,50 @@
 	],
 	"variable": [
 		{
-			"id": "08e9b202-b9f5-416b-8536-f5c3680d380b",
+			"id": "73f3ecd1-b1a4-4c07-a314-175ce34f659f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "27a68237-3994-4ae2-9a60-46ddc08837f0",
+			"id": "269483fa-a481-43b8-9833-2e91fcb14c3c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a2885a6b-ba32-4144-9a60-ca1868b0e158",
+			"id": "40126b18-baa3-4cf6-8a5f-720b20f231c8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a580050b-d458-43d8-bc65-c264a09fb247",
+			"id": "6aaf0de3-81b0-4136-aea5-93f6695a6794",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2f87b9ff-0b45-4f5b-89ab-b4a64b61a79f",
+			"id": "bc3d0439-4231-40eb-96cb-826cf3667224",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "18a072f3-306a-49cf-96a8-c8deaab84f00",
+			"id": "77b1ba17-da07-4d21-b7c3-ab41752380bf",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d35481b9-3c60-4084-9fc5-a33bae55097a",
+			"id": "721095db-4912-49f4-99ac-d091626ef8c3",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "87d5b69a-8d8e-4b95-8918-189c6ba73295",
+			"id": "4aa8baf8-7a3a-4387-9b0a-f946a5726016",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "d42df7c8-06bd-457a-8dd3-d880b5ac2be0",
+			"id": "8da09ee6-ba17-4120-b4a2-68f1b7b28c8c",
 			"key": "id",
 			"value": ""
 		}
