@@ -7042,12 +7042,12 @@
 									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Чекбокс Максимальное количество товаров учитывает подарки и доставку Активен\", function () {\r",
+									"pm.test(\"Чекбокс Максимальное количество товаров учитывает подарки и доставку Активен, ограничений нет\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\"Нельзя заказать больше 9 товаров в корзине\");\r",
 									"   \r",
 									"});\r",
 									"\r",
-									"pm.test(\"Чекбокс Максимальная стоимость заказа учитывает подарки и доставку Активен\", function () {\r",
+									"pm.test(\"Чекбокс Максимальная стоимость заказа учитывает подарки и доставку Активен, ограничений нет\", function () {\r",
 									"    pm.expect(pm.response.text()).not.to.include(\"Сумма заказа товаров превышает 300 000 руб!\");\r",
 									"   \r",
 									"});\r",
@@ -19826,50 +19826,50 @@
 	],
 	"variable": [
 		{
-			"id": "05f3865a-439a-4c79-9365-b9c72263a90e",
+			"id": "7043277c-4026-4231-8d4a-f80cae44e26d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e405efeb-a770-407f-a22e-867f826268a7",
+			"id": "8f729bcd-cad4-4652-b0f2-482f8f32ecd5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "01485022-2a93-49c9-b6ef-a1f90e800c55",
+			"id": "9eba7811-c78d-431d-916f-2675c7210b7e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b02bb155-f3de-4360-8b0c-777a84111335",
+			"id": "f3040b1a-a786-4150-9b6b-ab775b5effad",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d15efa85-9ed2-4789-ace9-b8a656f9b06d",
+			"id": "93c29daf-e9f8-4a56-aafe-f475e53d8c8e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "66903594-e7dd-4292-9a4e-c451846e6d8c",
+			"id": "b0e61550-9dda-4953-a028-f5dabeefd135",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "71a54c0d-a009-47ee-81b0-b7929541f1af",
+			"id": "37fd5e6b-e52d-4b30-93e1-148fa75c1ffe",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "8ae39a30-a47c-4e9a-9562-b2f78922dad6",
+			"id": "058962bf-aacd-4cf2-92df-7f02bab07bee",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "5a344529-88f5-4396-bed7-89f849d123eb",
+			"id": "6cfccd82-28fa-4111-a146-2a9c9ff94ebd",
 			"key": "id",
 			"value": ""
 		}
