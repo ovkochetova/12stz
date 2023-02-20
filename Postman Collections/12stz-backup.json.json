@@ -4925,7 +4925,7 @@
 									"\r",
 									"\r",
 									"pm.test(\"В максимальную стоимость доставка включена, ограничения нет\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\" превышать 300 000 руб\");\r",
+									"    pm.expect(pm.response.text()).to.include(\" превышает 300 000 руб\");\r",
 									"});\r",
 									"\r",
 									""
@@ -20145,50 +20145,50 @@
 	],
 	"variable": [
 		{
-			"id": "464a62f3-c1cb-4170-b9f9-6e10d1632a9e",
+			"id": "4e6cff91-f9bb-46c3-8a62-b6782ad6ed6c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "842cbc59-8785-4cbc-b1e1-2685fdac1757",
+			"id": "86166e2f-00ad-4010-abfd-053ac472168f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6b809fae-5495-49ae-88fe-9bdc895272be",
+			"id": "d0748141-edcf-4ab5-b62c-6ffcafa9f265",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "69675495-be06-4e4a-bd24-2da464a00124",
+			"id": "45d10756-7204-4e74-91b4-ec45b269112d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "a3587b61-a61e-4e27-bb51-b4512aef3a70",
+			"id": "7b143c12-bd4b-4641-ba92-7288839035b0",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "82b98d8e-0c4a-4f7d-85ad-1f41c9c5f232",
+			"id": "eb15d1c1-cdb2-4499-a229-d034679c4e6c",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f04270f4-4381-450c-a52a-90a44019b117",
+			"id": "8f6c9022-ef6a-4955-88f7-0550c5009d39",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2a1de471-bd97-4f89-8bea-81cc25bd3ddc",
+			"id": "a2065ed3-03a8-4f42-8387-1bca200cb2ba",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "aa7f3d2a-d13f-44df-ac55-ddfa830352cd",
+			"id": "d37a686b-1c39-4e82-8a42-3ff2026ea020",
 			"key": "id",
 			"value": ""
 		}
