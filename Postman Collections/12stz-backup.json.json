@@ -4706,62 +4706,6 @@
 					"response": []
 				},
 				{
-					"name": "!не учитывать доставку 300991 руб",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"В максимальную стоимость доставка не включена, ограничение есть\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"превышает 300 000 руб\");\r",
-									"});\r",
-									"\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "a6c6b6a6-7464-4f8d-8ebd-85c20846f5de",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 300991.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "чекбокс учитывать доставку в max стоимости заказа Активен",
 					"event": [
 						{
@@ -20145,50 +20089,50 @@
 	],
 	"variable": [
 		{
-			"id": "5319cdf9-842c-400b-86fe-aba34bd30513",
+			"id": "7ad281cc-ca7b-4231-820a-23251a7da8bd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8f68354e-940f-4f1e-95fe-6f68ea24c02d",
+			"id": "785a1465-3025-46ef-9fba-60acbb3255e0",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "08dd740f-9301-4910-afc2-68fa9da0a01e",
+			"id": "89bc0bb5-ff57-4936-8876-cd1017e252e3",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "06b88d3a-de97-4a19-a931-a7ff1cb76349",
+			"id": "90d2a079-7143-443f-a0bb-b20155d75fff",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f2e334d4-30de-4ea8-b912-1763c51c4c51",
+			"id": "1be8972c-6bc5-4eaa-b55d-fc366e3df372",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1c2017c7-cc43-407a-b4c2-2ea8fd54147c",
+			"id": "cfc6f31e-2d81-4ea3-9ee2-547fa10facd3",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3fc8f901-7392-4ce2-92ca-bafe8e62c4ef",
+			"id": "49f87807-cc44-44b7-95de-ed671a2f6776",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "bd8c9375-3832-4d5e-9f01-173a8c955090",
+			"id": "e5eae8c8-8f2f-4d1e-8409-52b0dbb2440c",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "8c2f6831-1f44-4461-835c-dfc1c1563e45",
+			"id": "5bc74e52-4cd3-4787-abc8-eb3c2c9d9d1c",
 			"key": "id",
 			"value": ""
 		}
