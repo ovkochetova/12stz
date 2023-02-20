@@ -6476,58 +6476,6 @@
 					"response": []
 				},
 				{
-					"name": "учитывать подарки и дост 299009",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "a06872f6-bf8e-4112-a8a0-90f1f938984c",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Максимальная количество товаров включает доставку и  подарки, ограничений нет\", function () {\r",
-									"    pm.expect(pm.response.text()).not.to.include(\"больше 300 000\");\r",
-									"})"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "4ba1555b-450e-43cd-b2a5-3990d6aa0214",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 150000,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100145, \r\n      \"quantity\": 1,\r\n      \"price\": 149008,\r\n      \"is_present\": false\r\n    },\r\n\r\n    {\r\n      \"category_id\": 100010, \r\n      \"quantity\": 1,\r\n      \"price\": 1.00,\r\n      \"is_present\": true\r\n    }    \r\n    \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "!учитывать подарки и дост 299010",
 					"event": [
 						{
@@ -20034,50 +19982,50 @@
 	],
 	"variable": [
 		{
-			"id": "015cfbb3-e840-4720-bc77-209613101e17",
+			"id": "454e3041-4da3-4b22-89d8-5cfbbcfe9d53",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "250b2c0c-9d82-4a80-9417-e56ec3ed475b",
+			"id": "810a364e-6daa-44df-90c7-f1dcca1bf24c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c1fe05bf-97a0-4da5-9758-3bf23be7197a",
+			"id": "1f67dc14-dc01-41b5-9064-5f7fc1319596",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "edfcdc05-30e6-4ac0-a528-324dcd96cd56",
+			"id": "254af3e9-7b43-4ce0-aa38-e4f87a4c5aa9",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f1dc17f7-7e66-427f-b5a5-07612ae0b092",
+			"id": "aa9090c0-4b39-433a-ac1a-817a54b90779",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "46ba1507-94c6-49f0-a082-31df1f31f9b0",
+			"id": "f10e2e45-96e9-4c2c-a9ba-dbef4af15e73",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "1884a585-757b-4497-af19-52463d904f48",
+			"id": "e06a2ad6-da3c-4415-ab23-24da02fe1450",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "75c8ada2-e35a-4da0-82b4-01eac32e98ac",
+			"id": "9f1228f3-d96c-4b52-9b10-a6e523339c52",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "44d59982-6ee1-4e21-91f8-193da09439b4",
+			"id": "88f50486-305b-4e72-9b57-ae54ac8c674f",
 			"key": "id",
 			"value": ""
 		}
