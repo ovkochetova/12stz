@@ -4960,61 +4960,6 @@
 					"response": []
 				},
 				{
-					"name": "учитывать доставку сумма 300001",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "bf7d0d73-e73d-43a3-8b67-4f84dc455b27",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"let jsonData = pm.response.json();\r",
-									"\r",
-									"pm.test(\"Типы доставки есть\", () => {\r",
-									"    pm.expect(jsonData.delivery_types).to.be.an(\"array\");\r",
-									"});\r",
-									"\r",
-									"\r",
-									"pm.test(\"В максимальную стоимость доставка включена, ограничения нет\", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"превышает 300 000 руб\");\r",
-									"});\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "55cb4bb7-b053-4221-8fc0-12f3e23f2d07",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer 9902dcfd045723d9479ea310c08a8cb6e4252dfc",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100004, \r\n      \"quantity\": 1,\r\n      \"price\": 300001.00,\r\n      \"is_present\": false\r\n    }\r\n    \r\n  ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{url}}"
-					},
-					"response": []
-				},
-				{
 					"name": "чекбокс учитывать подарки в max стоимости заказа  Активен",
 					"event": [
 						{
@@ -20089,50 +20034,50 @@
 	],
 	"variable": [
 		{
-			"id": "7ad281cc-ca7b-4231-820a-23251a7da8bd",
+			"id": "015cfbb3-e840-4720-bc77-209613101e17",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "785a1465-3025-46ef-9fba-60acbb3255e0",
+			"id": "250b2c0c-9d82-4a80-9417-e56ec3ed475b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "89bc0bb5-ff57-4936-8876-cd1017e252e3",
+			"id": "c1fe05bf-97a0-4da5-9758-3bf23be7197a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "90d2a079-7143-443f-a0bb-b20155d75fff",
+			"id": "edfcdc05-30e6-4ac0-a528-324dcd96cd56",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1be8972c-6bc5-4eaa-b55d-fc366e3df372",
+			"id": "f1dc17f7-7e66-427f-b5a5-07612ae0b092",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "cfc6f31e-2d81-4ea3-9ee2-547fa10facd3",
+			"id": "46ba1507-94c6-49f0-a082-31df1f31f9b0",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "49f87807-cc44-44b7-95de-ed671a2f6776",
+			"id": "1884a585-757b-4497-af19-52463d904f48",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "e5eae8c8-8f2f-4d1e-8409-52b0dbb2440c",
+			"id": "75c8ada2-e35a-4da0-82b4-01eac32e98ac",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "5bc74e52-4cd3-4787-abc8-eb3c2c9d9d1c",
+			"id": "44d59982-6ee1-4e21-91f8-193da09439b4",
 			"key": "id",
 			"value": ""
 		}
