@@ -14105,7 +14105,7 @@
 									"      pm.expect(jsonData.name).to.eql('Ленинградская область ');\r",
 									"});\r",
 									"\r",
-									"\r",
+									"pm.collectionVariables.set(\"zone\", jsonData);\r",
 									""
 								],
 								"type": "text/javascript"
@@ -19826,50 +19826,50 @@
 	],
 	"variable": [
 		{
-			"id": "d367fdb1-6d89-4644-944d-748b63ee4a2a",
+			"id": "cc042a32-0fb9-46c7-b496-73bc3af622c0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "da5da739-2e74-4d0f-a18c-b571fe4e3161",
+			"id": "2b0b0272-be41-4873-bf1a-5a468749fa7e",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d64e52bf-9d0d-41d3-b535-dd71ac90da00",
+			"id": "488fa86e-7a5f-43cb-ae10-46d2479d3c86",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "20213d35-ec40-40a6-b33a-146b91637814",
+			"id": "4c204e62-3828-494c-9ab4-ad535f36dfa7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7ce83766-ec28-47a5-8be9-66db6a2179ba",
+			"id": "8f307dd1-13c6-4ae3-a83a-245b08cb1694",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "2b6c017f-63a5-416d-9043-b5b5a0d01842",
+			"id": "c6333da6-d43c-49fc-87ba-372847eaf36f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3cfbae02-592d-4839-a096-6a3c1353a6b8",
+			"id": "fd9fdca7-0973-40f7-81d3-91394a288c9f",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "681aa9fc-9d17-4eb1-86a6-7854fefca59c",
+			"id": "fffacfdb-cb88-4758-a66d-f1dabb2a4d88",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "c6a837eb-f9f2-44f4-af01-24595c2421c0",
+			"id": "32037ed6-9f86-43cf-affc-4ea24c5d1273",
 			"key": "id",
 			"value": ""
 		}
