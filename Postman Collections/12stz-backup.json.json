@@ -3878,7 +3878,7 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Получение инфо об ограничении по категории для группы зон\", function () {\r",
+									"pm.test(\"Получение инфо о ТК в 1С\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.be.an('object');\r",
 									"});\r",
@@ -19865,50 +19865,50 @@
 	],
 	"variable": [
 		{
-			"id": "370155be-111a-43e8-8e75-ca5f40ffcda9",
+			"id": "8cafdad0-69df-4c4f-816a-af6faa85721d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ccc44f92-bf39-451d-937d-d955117d7bc2",
+			"id": "84760a32-7358-4c28-be80-1450022a74be",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e2b1faba-6250-4d71-91bc-5d8e372b914b",
+			"id": "9d91a7a7-1b7b-45e5-a4a7-b8bd4dce16e2",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "617d526a-8fe9-418a-8f56-d50cb78f33f5",
+			"id": "68265013-1432-4069-a67b-be62269b9b4d",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "7e9c269d-eaec-4865-8b5d-6e032008aa59",
+			"id": "37c2b4a6-d85d-45e7-9884-2da7a947ef92",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "af5ff4c4-bc6b-4859-8314-ec1bb9f1fe3a",
+			"id": "c65385c7-dcdd-42a7-8ed2-b6be80641dc1",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "fc49cf4b-1a52-458a-af07-3f4c519af609",
+			"id": "20f9ddd7-4d72-4031-9fd3-1004eb1199c7",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "217dcd75-07e2-4d40-9a55-90c58e1b907e",
+			"id": "3ecc4bd6-43f4-43b2-8d6f-bd989f5f79ea",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "04721ce6-1faf-4a3d-bbeb-6e709c877ffd",
+			"id": "9d032385-2e09-4da8-a2bb-35ff49b160e7",
 			"key": "id",
 			"value": ""
 		}
