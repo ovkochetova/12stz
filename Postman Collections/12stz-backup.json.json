@@ -3878,7 +3878,7 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Получение инфо об ограничении по категории для группы зон\", function () {\r",
+									"pm.test(\"Получение инфо о ТК в 1С\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.be.an('object');\r",
 									"});\r",
@@ -7381,6 +7381,12 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
 						"method": "GET",
 						"header": [
 							{
@@ -19865,50 +19871,50 @@
 	],
 	"variable": [
 		{
-			"id": "d95b5803-ca91-4585-b308-a2219bb4f9c6",
+			"id": "a965de4e-3864-4280-b5c3-7fab5cf04a18",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7b668a6c-f972-4ee7-8bf9-b2ace0a08154",
+			"id": "bc6511ec-2b9e-4d5b-911b-84f5105033c7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cba77b35-8568-42ce-9e68-a7ec8ef5d80b",
+			"id": "2488ebce-c4a9-49d6-a434-f402587f6e4a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d02a2261-0dec-4eee-b7fa-bef63e8a151c",
+			"id": "164d0d2c-09b1-42b6-8739-eff8082a0b8e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1b6c3115-7c65-40af-a6e1-8279c670a051",
+			"id": "d26d3532-c41c-4d62-a4d7-08ca7a6013a7",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "840896f0-ce71-47f5-97ac-da39d8cb3f53",
+			"id": "987eeb4a-0eef-4c96-971d-d9540dc59f2f",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f5c129a8-ba66-42d4-9400-78892997681b",
+			"id": "bde50b87-2df5-4b1e-9bb5-8586d1bda10b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "663aaeaa-c25c-4c11-821e-54856686400c",
+			"id": "5c12608e-ceed-4a15-9f51-fae0f0b475fe",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "e7537995-5f0e-44f9-9e46-4d7220b305ee",
+			"id": "67d4b6bc-3978-4c73-8705-221466e9c3bd",
 			"key": "id",
 			"value": ""
 		}
