@@ -7439,8 +7439,8 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
+									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Получено инфо о Типе доставки\", function () {\r",
-									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.be.an('object');\r",
 									"});\r",
 									"\r",
@@ -7448,7 +7448,7 @@
 									"console.log(DeliveryType);\r",
 									"pm.collectionVariables.set(\"DT\", DeliveryType);\r",
 									"\r",
-									"console.error()\r",
+									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -19873,50 +19873,50 @@
 	],
 	"variable": [
 		{
-			"id": "12868ef6-d478-456c-a65a-cb9d894a619b",
+			"id": "26e93bbc-b470-4cf5-b47a-57db35b87240",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4d86c72d-a70d-4f5c-8f14-12bad3200b7d",
+			"id": "68e42270-900a-4ce2-b79a-05b4ff6532dd",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7d48a346-caa8-4927-a458-71fd3e861bc2",
+			"id": "4b3fe2ea-d162-46f6-9ea0-ed9cec4caa24",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7226aad2-4d9c-477b-8886-5443d864dd2b",
+			"id": "15f31f8c-8312-4316-9f76-8c3d717d627e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "89325ead-52bb-4ece-b989-12798ed7944a",
+			"id": "589ad5f8-237a-4d5e-839e-07f0ee2579ec",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9a7af8c9-839c-444a-8df5-f8bebc9c489a",
+			"id": "666e1dbb-abbf-4193-96d5-8870888cffc4",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "56a6624d-d25f-4492-a5c7-4d345b6b1843",
+			"id": "518be98b-792c-4d4d-94a2-c67d5201d695",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "69a55702-098d-4445-8091-072bc108770a",
+			"id": "85d5a99f-eec4-4952-8b46-e42eceb155ce",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "6f1b23e9-6f11-43b8-b447-98e3d98843ad",
+			"id": "453d2493-223b-44b1-b62c-cd51e454485a",
 			"key": "id",
 			"value": ""
 		}
