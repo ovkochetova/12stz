@@ -10755,6 +10755,99 @@
 					"response": []
 				},
 				{
+					"name": "Добавить способ оплаты",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									"body.gapHours = 6\r",
+									"body.cutoffTime = \"19:00\";\r",
+									"body.consolidationHours = 8;\r",
+									"body.priorityCoefficient = 1;\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Ручной приоритет равен 1\" , function () {\r",
+									"    pm.expect(jsonData.priorityCoefficient).to.eql(1);\r",
+									"  });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7964c048-0c1e-4d5d-889b-1ec39eb7ff30",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Максимальная сумма онлайн оплаты 500 000",
 					"event": [
 						{
@@ -19870,50 +19963,50 @@
 	],
 	"variable": [
 		{
-			"id": "40da842a-0d58-4796-9301-577b263a3599",
+			"id": "370063b2-9c16-497c-a711-01f305415ad3",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1b0aaf8c-a930-46a6-b561-e59dcd11f91a",
+			"id": "27f30be2-9c09-49ce-a90e-814b550e32ff",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "98aeac3e-e38c-4ebb-bc53-843cbfe627fa",
+			"id": "65bb11a4-93b9-4802-92c0-fff166e669e7",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c5cac7fa-5981-487d-8242-9f4526e70ee2",
+			"id": "f54a04cb-57c5-4d40-bb83-b9e95c0c2a5f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "c7c9daa3-b0ed-4145-a99a-e3bbf419273f",
+			"id": "bcadfe3c-79fb-4020-ae33-00f8a6a6c88a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "399e27b4-d0ce-499e-8d1c-ba9671bd751d",
+			"id": "389eaee0-80eb-4fb8-aeaa-0fbb8a0a322a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a3978c38-ba4c-4e12-84d2-ba9591bf3eef",
+			"id": "d8ca934f-b61d-4015-b1e7-1728278e607c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "27efb70b-7855-4778-8d02-05b233b213bb",
+			"id": "7abd7b2f-3b8a-47cc-be13-572099579562",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "d3263f56-89ef-4ed7-8106-fe7822fa739b",
+			"id": "1f03ddb3-0d87-46d7-88aa-6d2c554775b2",
 			"key": "id",
 			"value": ""
 		}
