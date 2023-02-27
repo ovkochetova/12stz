@@ -7433,15 +7433,13 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"\r",
 									"var DeliveryType = pm.response.json();\r",
 									"console.log(DeliveryType);\r",
+									"\r",
+									"\r",
 									"pm.collectionVariables.set(\"DT\", DeliveryType);\r",
-									"\r",
-									"\r",
 									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"id\", jsonData.id);\r",
-									""
+									"pm.environment.set(\"id\", jsonData.id);"
 								],
 								"type": "text/javascript"
 							}
@@ -7488,8 +7486,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "{{id}}",
-									"description": "id из предыдущего запроса"
+									"value": "{{id}}"
 								}
 							]
 						}
@@ -19866,50 +19863,50 @@
 	],
 	"variable": [
 		{
-			"id": "86942c9a-fac7-48f9-ada0-d72b256c5fa1",
+			"id": "3aed2f59-7205-4176-bca4-9218ea5cd2b0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d70f5b2b-c3ab-41bd-8708-12741f673210",
+			"id": "02ef7d21-24c7-4789-a640-472d10561301",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ba49b16f-e299-404d-9322-3e2198e6832b",
+			"id": "38cb1f9b-25a2-4cda-ad5c-b90fef1c3378",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3c26ee1c-e66c-441b-ba93-367aa1411d39",
+			"id": "ceedd435-1ac4-4a90-9fed-d1b58a13e241",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "fbf75570-57c0-4bda-8147-60b145ff7c4e",
+			"id": "755c568a-ccb9-4f42-a3ae-2ccf2907b65e",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9d2b19fd-0557-41a8-a981-78d7b597e6e1",
+			"id": "42037b54-6452-40a2-b3f9-55551f87031b",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "56c1d938-6629-46a0-b99a-259e73091153",
+			"id": "1ef3c813-d04b-4187-a64e-a07ed1858fd3",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5f1211fd-4d0e-4d8f-9578-54342fdca06a",
+			"id": "75b9cf21-9bac-468d-873c-1f7df3ba4a62",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "8c05ddf0-f283-4c52-83ce-eb4245cce223",
+			"id": "4d7bbb44-799b-4f3f-9cc9-d5d8a0825c56",
 			"key": "id",
 			"value": ""
 		}
