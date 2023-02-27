@@ -10764,10 +10764,12 @@
 								"exec": [
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
-									"body.gapHours = 6\r",
-									"body.cutoffTime = \"19:00\";\r",
-									"body.consolidationHours = 8;\r",
-									"body.priorityCoefficient = 1;\r",
+									"\r",
+									"\r",
+									"body.paymentMethodToDeliveryType[1].paymentMethod.id = 2;\r",
+									"body.paymentMethodToDeliveryType[1].message.id = 179;\r",
+									"body.paymentMethodToDeliveryType[1].maxPrice = 300000;\r",
+									"body.paymentMethodToDeliveryType[1].isVisibleWhileRestricted = true;\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"\r",
@@ -19963,50 +19965,50 @@
 	],
 	"variable": [
 		{
-			"id": "36c92073-48a3-4b71-b229-78fef785bcf6",
+			"id": "0a6ecf42-5481-405a-9588-8c2697bd0536",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5a2608d3-910e-48b5-b410-34bfb3f7adea",
+			"id": "af93126b-0aec-4493-9bc7-e85958123839",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ab603311-ef56-4501-9939-fe963389e63f",
+			"id": "9584ca4d-d0cc-4a73-84fa-f6aebee0abf6",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b7840038-b71f-45fe-868d-479216e9acef",
+			"id": "615170a6-6eaf-4bbd-8d7e-15820bbae2b7",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "b5780426-0c9f-498c-b511-aa4d870c087b",
+			"id": "2689a9c6-be06-4879-90e1-635f2b11b457",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c0f9ce15-f36e-4434-9f81-da5040af397c",
+			"id": "04de9742-5aa7-4878-862e-7e0ff1239235",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "382cfcee-2dae-44e7-9452-15f6d382e99d",
+			"id": "0987777d-265f-490b-a71d-7a19c9e4ff83",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "36a0e8c0-a0d0-4d7b-bade-2ecb40f0854f",
+			"id": "0501b97d-4797-43c1-b77f-1cd107de8d89",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "bdac6a8c-05f0-405b-b251-1bfd9095b3b3",
+			"id": "9b8e0c55-e2a9-4224-b905-0329b91f1aa4",
 			"key": "id",
 			"value": ""
 		}
