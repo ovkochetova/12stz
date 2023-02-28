@@ -12190,18 +12190,24 @@
 								"exec": [
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
-									" var newPaymentMethod = {\r",
+									" var newPaymentMethodAndRestriction = {\r",
 									"paymentMethodId : 3,\r",
 									"messageId : 179,\r",
 									"maxPrice : 300000,\r",
-									"isVisibleWhileRestricted : true\r",
+									"isVisibleWhileRestricted : true,\r",
+									"paymentMethodCategoryRestrictions: [\r",
+									"        {\r",
+									"          categoryId: 100005,\r",
+									"          messageId: 176,\r",
+									"          isActive: true\r",
+									"        },\r",
+									"    ]\r",
 									" };\r",
 									"\r",
 									"body.paymentMethodToDeliveryType = [...body.paymentMethodToDeliveryType,  {...newPaymentMethod}]\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(\"body\", body)\r",
-									"\r",
 									"\r",
 									""
 								],
@@ -20121,50 +20127,50 @@
 	],
 	"variable": [
 		{
-			"id": "aaf46cfb-8110-4738-b25c-37c858eb9432",
+			"id": "947817a2-e21b-4d22-b190-fd6d51ef7edf",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e75819e3-2b95-4973-83b8-43d6c84f8a83",
+			"id": "d28b5053-6887-4e9b-bdc2-aeab06fa39d6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "559a45b9-d332-4398-bd60-638b2b90b307",
+			"id": "99884f40-2bc0-4938-8497-9b9298347fe8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "12a216dc-d080-4d3b-afcf-a13fa012204b",
+			"id": "18a15a9d-da33-4724-8a7e-9bdccd108835",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "9c90b673-5bd0-4386-9e51-72f941f4fd26",
+			"id": "97d82010-fe36-4b59-839c-84ecd797cea3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "22bfc40f-fdaf-4aba-9636-2d495235b43a",
+			"id": "4b911b2a-8419-4d10-96fc-44f0970d4a25",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9feb57da-509f-494d-a3bd-1a43ef125edc",
+			"id": "f56a8b9d-f718-4c59-965b-cb57ea83de1c",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "af1983f7-5800-4ad8-8faa-91e51a10ff58",
+			"id": "0dbdbb16-fde1-4858-8eef-cadfad409536",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "778a36db-6a6d-47ba-a38d-a85de7af84e8",
+			"id": "6e097285-9014-450d-8c13-936162d571a7",
 			"key": "id",
 			"value": ""
 		}
