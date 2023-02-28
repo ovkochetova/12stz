@@ -12224,8 +12224,12 @@
 									"});\r",
 									"\r",
 									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Ручной приоритет равен 1\" , function () {\r",
-									"    pm.expect(jsonData.priorityCoefficient).to.eql(1);\r",
+									"pm.test(\"Доступно два способа оплаты\" , function () {\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType).to.be.an('array').to.have.lengthOf(2);\r",
+									"  });\r",
+									"\r",
+									"pm.test(\"Ограничение для добавленного типа доставки Активно\" , function () {\r",
+									"    pm.expect(jsonData.paymentMethodToDeliveryType[1].paymentMethodCategoryRestrictions[0].category.isActive).to.eql(true);\r",
 									"  });\r",
 									""
 								],
@@ -20184,50 +20188,50 @@
 	],
 	"variable": [
 		{
-			"id": "8cd49a1f-dc57-42cd-9e0c-fe274fa91d8c",
+			"id": "edb85a22-79d0-4554-be3e-7b86adeb95f0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "77714f61-dc9c-456c-8793-13843fadd650",
+			"id": "04aefe87-ea86-4c0b-80b2-c568cd660a6f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fafeecd9-844c-4b06-8df0-f7b69dd31fac",
+			"id": "9cbd3217-261c-4d06-9e9e-8046e25c9a23",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "601a1631-6e9e-4bd1-9ea9-cff979b4b712",
+			"id": "cc49dcd4-bbcb-436e-a712-e74c387335b1",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "0424f49f-c9d9-4e97-82a0-54d4748fcfd8",
+			"id": "dadfe962-b76e-4533-9a39-54ef4f4d2a0f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "25de9a2b-f3ab-4d34-8957-3d175c9a90a5",
+			"id": "b9d8535f-6334-4377-a80d-026814c73f06",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "83897cb5-5ef6-409b-bade-bef9f734d166",
+			"id": "1c065020-b3e6-4e45-b33e-bbfc96caf93b",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "6c1c8452-c324-4ab3-9b20-cba2b5241e78",
+			"id": "908551ab-2090-4986-b33d-914bc7428811",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "16478ea3-578d-4f88-af46-3c9f6c7dedb7",
+			"id": "71bebe6f-c5e2-43f3-a7ac-bd5bb292086e",
 			"key": "id",
 			"value": ""
 		}
