@@ -10760,16 +10760,18 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "07d64568-113c-475b-948b-c64a2aaae808",
+								"id": "3a10ea05-8a1f-4530-bea7-3c6a373ac0d6",
 								"exec": [
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
+									" var newPaymentMethod = {\r",
+									"paymentMethodId : 1,\r",
+									"messageId : 179,\r",
+									"maxPrice : 300000,\r",
+									"isVisibleWhileRestricted : true\r",
+									" };\r",
 									"\r",
-									"body.paymentMethodToDeliveryType[1].paymentMethodId = 1;\r",
-									"body.paymentMethodToDeliveryType[1].messageId = 179;\r",
-									"body.paymentMethodToDeliveryType[1].maxPrice = 300000;\r",
-									"body.paymentMethodToDeliveryType[1].isVisibleWhileRestricted = true;\r",
-									"\r",
+									"body.paymentMethodToDeliveryType = [...body.paymentMethodToDeliveryType,  {...newPaymentMethod}]\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
 									"console.log(\"body\", body)\r",
@@ -10783,7 +10785,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "599a923b-02a6-4014-a141-7713abbf7d9d",
+								"id": "8d17d840-acdf-4b27-99ec-2bad85da32d3",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
@@ -19966,50 +19968,50 @@
 	],
 	"variable": [
 		{
-			"id": "2529090d-d008-4792-828b-ba8aee4b7e8a",
+			"id": "0914dea2-873d-43cd-9088-8496037d623a",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4f146543-7882-4c29-bcbd-8c33a30d0087",
+			"id": "2cc09dc4-61cc-45c0-af86-258b2074538f",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "13f13078-68cd-4a4e-ba93-bc6493e0406b",
+			"id": "1bdbc270-9712-4cc8-aec4-10bdd7baaf1f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3584981f-4f4f-4876-8af8-8392fc927f96",
+			"id": "b40322ec-661a-40b7-9de5-f2bb68ca28b6",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1605b6c5-8a0a-4e40-9e7b-ec4647069950",
+			"id": "63d3250b-bbe8-4042-a548-a2d8c0fe1266",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "bdb9498e-e127-48bb-9b93-6dafbf4ff53f",
+			"id": "966f001a-ca52-4fcd-b676-c2a394ccc6c9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "de50e4aa-ea07-482c-afb5-eae31bc02b12",
+			"id": "e38e72c4-a998-484b-88f3-3c4be335d356",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "614c9ac4-718d-4ccb-b79d-a6135e5a5bf8",
+			"id": "0add60e3-8422-4f63-b06d-235ae725a752",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "4a74f55c-de09-4a59-ad94-7663e111fc82",
+			"id": "e3bd569e-bd4c-4db9-8f42-8ece1ee9576a",
 			"key": "id",
 			"value": ""
 		}
