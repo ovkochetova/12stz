@@ -10866,7 +10866,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Доступны два способа оплаты\", function () {  \r",
-									"    pm.expect(jsonData.payment_methods).to.be.an('array').to.have.lengthOf(2);\r",
+									"    pm.expect(jsonData.delivery_types[0].payment_methods).to.be.an('array').to.have.lengthOf(2);\r",
 									"});\r",
 									""
 								],
@@ -20023,50 +20023,50 @@
 	],
 	"variable": [
 		{
-			"id": "2ca5b78c-c7b9-4672-bf25-9d17226a33cd",
+			"id": "88d2fa53-b71b-40df-bc86-867e2e344d8c",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "307c0bef-7f64-4b7c-ba77-2c1b0a9428d0",
+			"id": "83be6ce5-fd0b-4e8e-af34-cb24f4e773a7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "30d3694c-74ea-479e-86ca-2042f35d5943",
+			"id": "2fb80138-41dc-4bc3-a13a-9e925cfa3c79",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7ff86d43-eac1-4260-8c76-bd4cafc7a3e5",
+			"id": "baffd950-6fd7-4c1f-8523-4a8643a04049",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "36ab899d-5823-4727-aedb-4a02f004e46c",
+			"id": "2b505ee1-4438-46ef-bd65-ff9f1b624c75",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "87f51540-2011-4269-a844-f63e40f27040",
+			"id": "9f60e630-c8f7-4b7f-94aa-071b1303cfdd",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4916505c-d265-4bde-9637-26b490656494",
+			"id": "eeafabbd-dec8-4416-b1eb-0cd19e351b80",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "74e45b99-5ac2-41c9-bbdc-ea740ed905af",
+			"id": "25cf30cd-ab48-4ace-94a9-46bad7893139",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "7374a82c-c42c-43cd-9c3e-1bce3fb16edf",
+			"id": "c518384c-6ce4-45c2-8d5b-86df42415960",
 			"key": "id",
 			"value": ""
 		}
