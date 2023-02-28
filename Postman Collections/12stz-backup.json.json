@@ -18445,7 +18445,7 @@
 									"\r",
 									"var jsonData = pm.response.json();\r",
 									"pm.test(\"Второй тип доставки действительно\", function () {\r",
-									"    pm.expect(jsonData.transportCompanyMode.transportCompany.name).to.eql('Вторая ТК для тестов(не удалять)');\r",
+									"    pm.expect(jsonData.transportCompanyMode.transportCompany.name).to.eql('Вторая ТК для тестов');\r",
 									"});\r",
 									"\r",
 									"var DeliveryType = pm.response.json();\r",
@@ -20188,50 +20188,50 @@
 	],
 	"variable": [
 		{
-			"id": "583b6708-ca90-41cd-b97c-a6b8a6d11e72",
+			"id": "a50953ff-8f27-47a8-bdcc-79f0f959b7f2",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8913ef96-135a-4422-b5f5-2213cdaa309a",
+			"id": "b895f5b1-eb2a-4785-93b9-94f0d0a6bb7d",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ccbc8c3e-86c0-42ff-8067-37e7ac1c52ca",
+			"id": "1f63daa4-811d-41bf-9d5d-f4397234c970",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c85158e1-edb7-4766-a812-80ca70137456",
+			"id": "75d6ba5c-9a94-4a60-b702-f6e1a42dec50",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "f5cf73fa-0cc6-4b39-ba5b-50c2e613c07a",
+			"id": "7dba2bba-b350-46bc-88a7-636ab883f46a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "83a183fd-3f7e-4b7a-b398-02940355a96e",
+			"id": "9962aa1f-8309-4b2c-9d08-6b8af1e81219",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "09abfeba-a125-47f8-b07a-e0d94165a4ca",
+			"id": "4be58c41-2d22-4860-9e46-911ba76ea836",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "ffe17144-fb3d-4d38-9d91-20536346d858",
+			"id": "62f9ed67-b59c-469d-9f5e-9628a4f0c0a3",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "a60ecd78-c8cc-4301-96d1-faeb93b52a01",
+			"id": "1f36c93d-3b85-413e-bdea-b97022a7f151",
 			"key": "id",
 			"value": ""
 		}
