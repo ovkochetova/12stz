@@ -18359,7 +18359,7 @@
 			"id": "aeff015f-9afc-42f7-885f-da196c6ac10b"
 		},
 		{
-			"name": "пока неясно нужны будут эти кейсы или нет(папка Типы доставки)",
+			"name": "кейсы логистов",
 			"item": [
 				{
 					"name": "поиск второго типа доставки по названию",
@@ -20188,50 +20188,50 @@
 	],
 	"variable": [
 		{
-			"id": "266c35fd-bf4a-46aa-a5e1-737000d2c644",
+			"id": "b76c7296-a6c4-4f19-9463-ddd722464c80",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c142a104-1be9-477d-a521-fd2d2abeb1cf",
+			"id": "3fdf9ac1-eeb2-4fe1-b3b3-b62ed0017548",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "70ca91e0-ec80-4051-a61c-d3a2eeba0cfc",
+			"id": "41f51090-9028-48f6-8f68-b1508f10e777",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8814b98a-50e6-4889-a073-30be0da0f795",
+			"id": "affaaf75-46e2-4b4d-9a7a-c14172f42fb0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d9980120-7b30-441d-a37a-53ec894ebbfb",
+			"id": "796756bc-7496-40bb-b0a5-8dbf696e8796",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "e0a994fd-9fb5-4326-ba51-a8671c558c4c",
+			"id": "2e8e7eae-77d3-4cca-b66c-a52df20a361a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "558e8e10-1db9-4364-9344-623acb9abc2b",
+			"id": "82b290c8-8489-4ab5-83a4-aa8c6b194878",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "2228cecb-5647-4b0e-9847-106802989b0c",
+			"id": "bdfae4b3-a8d2-4767-bee0-eb44062982a4",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "cadae9d8-7392-4a0a-8184-9d0d3352d109",
+			"id": "16262ff3-f4ef-4650-99ea-5abd137c8ccf",
 			"key": "id",
 			"value": ""
 		}
