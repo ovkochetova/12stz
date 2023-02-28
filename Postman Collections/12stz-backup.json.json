@@ -12200,7 +12200,7 @@
 									"          categoryId: 100005,\r",
 									"          messageId: 176,\r",
 									"          isActive: true\r",
-									"        },\r",
+									"        }\r",
 									"    ]\r",
 									" };\r",
 									"\r",
@@ -20188,50 +20188,50 @@
 	],
 	"variable": [
 		{
-			"id": "89a1bc01-47fc-4031-bd60-f4d9ae02fecd",
+			"id": "37b70692-5ef0-40aa-9b13-cdf38770c556",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b7e50879-8303-445b-ba64-c3fdf653c455",
+			"id": "98921f2a-1426-4a36-b7bd-0c0b8925f7f0",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9e5efad7-6cbe-44cc-8f81-44c922f6c6f9",
+			"id": "acfc8980-9935-4d7b-b9d1-ea008db74ae1",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5948a376-2111-45a5-8a16-4a379285fe21",
+			"id": "ba8aa595-3304-4690-ac6a-ef59cfb1fb61",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2244db9b-c158-4a57-b050-744adddd780b",
+			"id": "605d3a67-82dc-4349-bb41-a1054dac064a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a74f5a7a-ae7d-48ce-b661-22450f630f85",
+			"id": "572888fe-685f-4562-90c9-d1fe8b233757",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "354e93e7-18f4-499c-9767-0b443d01f37e",
+			"id": "c7e27f23-a1b9-416b-bef2-efc77a5785e9",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "29e7f978-983c-491b-b130-26de32f67cac",
+			"id": "f83d47f0-c6ac-477a-afa8-881b44b364a9",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "d2625790-3b4c-4fc2-988c-0e753b93f379",
+			"id": "8800a11d-3237-4d73-b275-d53178757e73",
 			"key": "id",
 			"value": ""
 		}
