@@ -10765,10 +10765,10 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									"\r",
-									"body.paymentMethodToDeliveryType[0].paymentMethodId = 3;\r",
-									"body.paymentMethodToDeliveryType[0].messageId = 179;\r",
-									"body.paymentMethodToDeliveryType[0].maxPrice = 300000;\r",
-									"body.paymentMethodToDeliveryType[0].isVisibleWhileRestricted = true;\r",
+									"body.paymentMethodToDeliveryType[1].paymentMethodId = 1;\r",
+									"body.paymentMethodToDeliveryType[1].messageId = 179;\r",
+									"body.paymentMethodToDeliveryType[1].maxPrice = 300000;\r",
+									"body.paymentMethodToDeliveryType[1].isVisibleWhileRestricted = true;\r",
 									"\r",
 									"\r",
 									"pm.request.body.raw = body;\r",
@@ -19966,50 +19966,50 @@
 	],
 	"variable": [
 		{
-			"id": "90aab856-54b9-4b02-8250-c7111ef7cfed",
+			"id": "621390b7-a1c0-4185-9f59-7739eebb2800",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ce98b821-5f7e-413e-8152-5c300033cd65",
+			"id": "36c473d8-5017-433c-ad7d-a2eff40b07d5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "67bcf0e2-6e11-471f-bf2b-7ded9719685f",
+			"id": "a4858fce-63b4-4ce0-8dee-9c47261513bc",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "089c619f-6966-4f0a-b20f-2cb5ef6cb876",
+			"id": "4344af1f-2b43-4cbd-acac-d1bb5ea06531",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "fd1f8d5d-b53a-46d3-a6ff-b044a85cb40d",
+			"id": "6f7c1453-6967-4c6d-b8c0-ecbad030bda6",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "49542a88-0b61-458f-8bcb-79c433087de7",
+			"id": "94f0a9df-d0db-48e0-867a-899990e710a9",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4227dc90-8650-49e5-a46f-417cbd08607c",
+			"id": "7d89f94a-600e-40a2-8576-9ccd23cb6a92",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "4ddaad46-2315-4bd0-8b19-9bb3da00ab1e",
+			"id": "7b1bc058-27a8-40c7-a868-7c42c60bbca5",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "ebb71573-bb7f-466e-92e8-8364ff865f4d",
+			"id": "7451e849-2f08-4aa1-a976-dca041bfc432",
 			"key": "id",
 			"value": ""
 		}
