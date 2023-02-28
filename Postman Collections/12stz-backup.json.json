@@ -18728,11 +18728,6 @@
 								"id": "af6ba150-2661-4fb4-a756-05cd17d2ab44",
 								"exec": [
 									"\r",
-									"pm.sendRequest(postRequest, (error, response) => {\r",
-									"  console.log(error ? error : response.json());\r",
-									"});\r",
-									"\r",
-									"\r",
 									"const postRequest = {\r",
 									"  url: 'https://logistics.12stz.dev/api/v1/winner/calculate',\r",
 									"  method: 'POST',\r",
@@ -20152,50 +20147,50 @@
 	],
 	"variable": [
 		{
-			"id": "12343b10-3dc6-4996-82bf-ceb16a42f8cf",
+			"id": "854dedb9-b7d1-4c8f-9efa-e61ab7a2795d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3b4edf67-5a51-42b3-bad2-96e8e3d55792",
+			"id": "5cc9ad37-4cf6-491a-9f77-c9b4038abc09",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "677d148b-9f7e-4860-ae18-38b0ab68a1f2",
+			"id": "aab8209d-0662-4849-a18a-eda76592e303",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0b3af2e0-1841-4473-a84e-3d8d4bbbbe43",
+			"id": "c767f9d1-50c1-4aa6-9db6-bdf1b20be13c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5111143a-189a-4473-82c4-b942c6dfd3f2",
+			"id": "3221a7e9-5377-4fc6-86cf-66e418459f99",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "b5fa364d-9efc-4ee1-a6f8-535b5eb30261",
+			"id": "3f3f0a39-0b2e-4c54-bf47-36117c54450a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "93d4a3f9-3182-46b9-a10a-4ae7a48ac1fa",
+			"id": "8689405f-b0d4-4635-a9e8-afcbeed8486d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "21e3109e-3996-4931-b8b0-5ce91847afdd",
+			"id": "66d5e5e7-0707-44c6-b502-84c61cd45ff8",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "836bbad9-03f8-4c76-8187-e3e85ca6c8f3",
+			"id": "8c422c35-7353-49f3-beba-00dd82dc3012",
 			"key": "id",
 			"value": ""
 		}
