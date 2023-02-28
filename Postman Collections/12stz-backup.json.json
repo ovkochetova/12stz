@@ -12181,7 +12181,7 @@
 					"response": []
 				},
 				{
-					"name": "Добавить ограничение для способа оплаты",
+					"name": "Добавить  способ оплаты и ограничение для него",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -20121,50 +20121,50 @@
 	],
 	"variable": [
 		{
-			"id": "31d9bce4-3910-43b8-8a0b-c72da94e0667",
+			"id": "aaf46cfb-8110-4738-b25c-37c858eb9432",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2f8870eb-b2b4-4d0d-9379-1b9ac18bf3d7",
+			"id": "e75819e3-2b95-4973-83b8-43d6c84f8a83",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1e9fb654-eb3a-4db5-98be-d2be13d1e3bc",
+			"id": "559a45b9-d332-4398-bd60-638b2b90b307",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a1bd87c2-a062-4d26-a5fe-a7f2e154209a",
+			"id": "12a216dc-d080-4d3b-afcf-a13fa012204b",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "3bcb8194-993d-4934-900b-adde7f6d5490",
+			"id": "9c90b673-5bd0-4386-9e51-72f941f4fd26",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "c69b58ea-007c-4d40-9054-96151d63d9bd",
+			"id": "22bfc40f-fdaf-4aba-9636-2d495235b43a",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "cd44ad37-d6d9-4475-b8c5-9a2fcab24b99",
+			"id": "9feb57da-509f-494d-a3bd-1a43ef125edc",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "d621b13e-17c6-4253-ad99-cf2ad68a7b94",
+			"id": "af1983f7-5800-4ad8-8faa-91e51a10ff58",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "3203e070-103f-4c51-b834-78b7e0f09d45",
+			"id": "778a36db-6a6d-47ba-a38d-a85de7af84e8",
 			"key": "id",
 			"value": ""
 		}
