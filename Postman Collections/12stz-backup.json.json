@@ -18436,76 +18436,6 @@
 					"response": []
 				},
 				{
-					"name": "поиск третьего типа доставки по названию",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "da288e7e-33b7-4b48-b1be-54b35769f135",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"\r",
-									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.test(\"Второй тип доставки найден\", function () {\r",
-									"    pm.expect(jsonData).to.be.an('object');\r",
-									"});\r",
-									"\r",
-									"pm.environment.set(\"id\",jsonData.results[0].id);\r",
-									"console.log(\"id\",jsonData.results[0].id)"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "fd5d0661-d755-4abc-a1ba-03bbc32c57c8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{token}}",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=Вторая ТК для тестов&sort=",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"delivery-type"
-							],
-							"query": [
-								{
-									"key": "limit",
-									"value": "40"
-								},
-								{
-									"key": "offset",
-									"value": "0"
-								},
-								{
-									"key": "search",
-									"value": "Вторая ТК для тестов"
-								},
-								{
-									"key": "sort",
-									"value": ""
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "поиск второй типа доставки по id",
 					"event": [
 						{
@@ -18547,87 +18477,6 @@
 						}
 					],
 					"id": "29d1893e-fc4f-4f56-ae35-1009e4f05780",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{token}}"
-							}
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/api/v1/delivery-type/:id",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"api",
-								"v1",
-								"delivery-type",
-								":id"
-							],
-							"variable": [
-								{
-									"id": "12c46ca4-47a1-46da-99d4-dc591b9c81c0",
-									"key": "id",
-									"value": "{{id}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "поиск третьего типа доставки по id",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "26462bb9-ab46-4bfc-8b87-3c7ccd273d24",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.test(\"Второй тип доставки действительно\", function () {\r",
-									"    pm.expect(jsonData.transportCompanyMode.transportCompany.name).to.eql('Вторая ТК для тестов');\r",
-									"});\r",
-									"\r",
-									"var DeliveryType = pm.response.json();\r",
-									"console.log('DeliveryType',DeliveryType);\r",
-									"pm.collectionVariables.set(\"DT\", DeliveryType);\r",
-									"\r",
-									"/*var jsonData = JSON.parse(responseBody);\r",
-									"pm.environment.set(\"id\", jsonData.id);*/\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "f1df571b-2553-4386-8122-f60e081510b1",
-								"exec": [
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "f3027753-7b50-4ac9-b2a5-c6a697037aae",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -18846,6 +18695,157 @@
 					"response": []
 				},
 				{
+					"name": "поиск третьего типа доставки по названию",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "da288e7e-33b7-4b48-b1be-54b35769f135",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"var jsonData = JSON.parse(responseBody);\r",
+									"pm.test(\"Второй тип доставки найден\", function () {\r",
+									"    pm.expect(jsonData).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"pm.environment.set(\"id\",jsonData.results[0].id);\r",
+									"console.log(\"id\",jsonData.results[0].id)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "fd5d0661-d755-4abc-a1ba-03bbc32c57c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/delivery-type?limit=40&offset=0&search=Вторая ТК для тестов&sort=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "40"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "search",
+									"value": "Вторая ТК для тестов"
+								},
+								{
+									"key": "sort",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "поиск третьего типа доставки по id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "26462bb9-ab46-4bfc-8b87-3c7ccd273d24",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Второй тип доставки действительно\", function () {\r",
+									"    pm.expect(jsonData.transportCompanyMode.transportCompany.name).to.eql('Вторая ТК для тестов');\r",
+									"});\r",
+									"\r",
+									"var DeliveryType = pm.response.json();\r",
+									"console.log('DeliveryType',DeliveryType);\r",
+									"pm.collectionVariables.set(\"DT\", DeliveryType);\r",
+									"\r",
+									"/*var jsonData = JSON.parse(responseBody);\r",
+									"pm.environment.set(\"id\", jsonData.id);*/\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "f1df571b-2553-4386-8122-f60e081510b1",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "f3027753-7b50-4ac9-b2a5-c6a697037aae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/delivery-type/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "12c46ca4-47a1-46da-99d4-dc591b9c81c0",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "добавление третьего типа доставки в соревнование",
 					"event": [
 						{
@@ -19024,7 +19024,7 @@
 					"response": []
 				},
 				{
-					"name": "Ручной приоритет = 1 (запустить run 20 раз)",
+					"name": "Ручной приоритет = 1",
 					"event": [
 						{
 							"listen": "test",
@@ -20476,50 +20476,50 @@
 	],
 	"variable": [
 		{
-			"id": "499bc68a-f2f6-4bee-8be9-bb3a23c1b707",
+			"id": "23a9721a-2a48-4373-b4df-83707ea1d585",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a53a9722-57e8-4848-8a0c-b58fe773f1c5",
+			"id": "96346f37-ff7b-473d-a5a9-b5cdf1ecf6fc",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "709515e7-fb6b-4c29-b01d-3258a905a32e",
+			"id": "aff73f66-e279-4188-9801-89973ceb126e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "20538b80-0e5b-462c-b71d-534e78f0096f",
+			"id": "52f63d5b-5cfa-4e73-82dd-1d68020b673a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "cbb5b749-4fcb-4b9c-aa7a-cf5a9ce318c5",
+			"id": "8f8de5f3-f8b1-45a4-8595-07ffe798daf3",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "7f1a56f4-13e7-4a03-a35a-3bc8bcbce63d",
+			"id": "cb74c4e1-a18e-43da-a72a-ea1e11501466",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "f92d049f-b0d9-4c4e-a59e-aa92b6286a50",
+			"id": "a318243f-65bf-4854-90d2-129795ad9212",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "1c0f441f-bb73-43b8-9980-ad8e65b54652",
+			"id": "529c8543-baac-4091-9577-b1d2436f36aa",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "b0eac514-2755-4e02-b68a-71de521dfc40",
+			"id": "8e873f14-982f-4543-8bf0-a5aedd96e43a",
 			"key": "id",
 			"value": ""
 		}
