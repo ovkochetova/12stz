@@ -12285,6 +12285,63 @@
 					"response": []
 				},
 				{
+					"name": "ограничение для второго способа опл Активно",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Чекбокс Виден при срабатывании ограничений Активен \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Вечерняя \");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "1ffb000b-cc03-4463-b99c-ad5f8c0e61b1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100202,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 15000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Чекбокс Макс кол-во позиций Активен",
 					"event": [
 						{
@@ -20127,50 +20184,50 @@
 	],
 	"variable": [
 		{
-			"id": "3c2d3d05-d1cc-49d7-872b-b0f7c0ce5361",
+			"id": "6929d406-978e-4ae2-a585-6d9fdcfa3c55",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ee554a48-fb69-44c6-857d-1ab522e18550",
+			"id": "22cc01c5-0db7-4bde-8511-da9b997b10b4",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "393368e6-0337-4b39-9dc2-26e7126d8500",
+			"id": "2e42cad4-bede-4db9-8397-16c0deaa4940",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d53d4f12-7b46-4470-b8b6-7b4d3cf352fb",
+			"id": "89c71069-a774-4143-9f34-7ad1ae085c45",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "8c57198a-3a18-4fb8-af6d-632ae733043f",
+			"id": "3ece4d44-c89f-43f3-b395-b57f6df27d76",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d331ab98-49f7-4212-b399-6ea3c0df83f5",
+			"id": "a051aa22-4691-43fc-8361-16d17950db56",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "104314e4-0391-4651-a685-04906b7072e5",
+			"id": "1e521504-3e62-4235-8c36-d8f2388809b1",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "772eeeb9-b363-4de0-b42a-f42dac5a18f4",
+			"id": "b5e44d1c-0594-4e4e-87e3-0c0ec3b2e733",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "c475949a-a596-4034-8a29-69a6db61d6ec",
+			"id": "c693984f-fc88-4f78-9e8e-c65c5f81d445",
 			"key": "id",
 			"value": ""
 		}
