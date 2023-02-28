@@ -18846,7 +18846,7 @@
 					"response": []
 				},
 				{
-					"name": "добавление второго типа доставки в соревнование Copy",
+					"name": "добавление третьего типа доставки в соревнование",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -20476,50 +20476,50 @@
 	],
 	"variable": [
 		{
-			"id": "e4cd3db2-395b-45f9-abdf-c6d694de2e2e",
+			"id": "499bc68a-f2f6-4bee-8be9-bb3a23c1b707",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e6ae59f1-fc8e-4bd1-9059-641807394a3f",
+			"id": "a53a9722-57e8-4848-8a0c-b58fe773f1c5",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "514b90e2-5bb1-4ea7-a6be-6797d402f994",
+			"id": "709515e7-fb6b-4c29-b01d-3258a905a32e",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "b766e549-0663-4748-a9db-5f1d0f28e0fb",
+			"id": "20538b80-0e5b-462c-b71d-534e78f0096f",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "67672682-1967-43c5-a600-70f953efa4dd",
+			"id": "cbb5b749-4fcb-4b9c-aa7a-cf5a9ce318c5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "cb928805-ed69-4e11-b22a-d21586aba3cb",
+			"id": "7f1a56f4-13e7-4a03-a35a-3bc8bcbce63d",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "ade2306a-4aad-47ed-87f3-e3fd23de5a1c",
+			"id": "f92d049f-b0d9-4c4e-a59e-aa92b6286a50",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "deefb4a4-b5fb-429f-bd97-95a498563a99",
+			"id": "1c0f441f-bb73-43b8-9980-ad8e65b54652",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "b912eaf8-ca4a-466f-87a0-59db268078f0",
+			"id": "b0eac514-2755-4e02-b68a-71de521dfc40",
 			"key": "id",
 			"value": ""
 		}
