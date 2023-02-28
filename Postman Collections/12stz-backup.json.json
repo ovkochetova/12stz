@@ -10853,6 +10853,67 @@
 					"response": []
 				},
 				{
+					"name": "два способа оплаты",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f249893b-5fd1-4b91-8398-d74520b99913",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									" var jsonData = pm.response.json();\r",
+									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
+									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"});\r",
+									"\r",
+									"//Contain restriction\r",
+									"pm.test(\"Нет ограничения на сумму 299 999 руб\", () => {\r",
+									"  const expectedObject = {\r",
+									"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
+									"  };\r",
+									"  pm.expect(pm.response.json()).not.to.deep.include(expectedObject);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "bc2487c7-68a5-4a24-81e7-2c3f13cd4519",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "9902dcfd045723d9479ea310c08a8cb6e4252dfc"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Grpc-Metadata-Api_Key",
+								"value": "9902dcfd045723d9479ea310c08a8cb6e4252dfc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"country_iso_code\": \"AQ\",\r\n  \"region_geo_id\": \"\",\r\n  \"city_geo_id\": \"ChIJTbOlrXM5d68RUcVJZXHyQeI\",\r\n  \"settlement_geo_id\": \"\",\r\n  \"street_geo_id\": \"\",\r\n  \"house_geo_id\": \"\",\r\n  \"geo_id\": \"\",\r\n  \"cart_id\": \"{{cart_id}}\",\r\n  \"order_datetime\":\"2023-01-10 08:00:00 +03:00\" ,\r\n  \"cart\": [\r\n    {\r\n      \"category_id\": 100144,\r\n      \"quantity\": 1,\r\n      \"price\": 249999.00,\r\n      \"is_present\": false\r\n    },\r\n    {\r\n      \"category_id\": 100105,\r\n      \"quantity\": 1,\r\n      \"price\": 250000.00,\r\n      \"is_present\": false\r\n    }      \r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}"
+					},
+					"response": []
+				},
+				{
 					"name": "Максимальная сумма онлайн оплаты 500 000",
 					"event": [
 						{
@@ -19969,50 +20030,50 @@
 	],
 	"variable": [
 		{
-			"id": "0c45eecd-f9ec-4919-8583-4b8b1b4a57ba",
+			"id": "e94e5524-0ed0-42d4-b306-2baef1fed62f",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f36d5bd8-8439-4987-ba36-49503559cd3f",
+			"id": "4e263db6-c72f-4690-bd91-64afdb525c0b",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3039337f-4536-4207-8730-d0aba203ca20",
+			"id": "4f1bb6f9-3027-4d61-904a-f3509e099618",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4cdc34a9-eeb3-4740-aa99-fcf3631202a5",
+			"id": "613d2368-f1ad-492e-8aab-d5a68420d27a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5cd96e3c-be68-4188-b801-742eeeff84d0",
+			"id": "edf62e4e-5bf1-4132-87f9-94248399b426",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "a426f6c0-d4b3-406a-8dfb-6a2a6f3a208c",
+			"id": "d21d81c3-cbfb-47f2-9d35-a909e6032c92",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "730fedbb-94d0-4ec4-8bd3-33f5b33b3b0a",
+			"id": "66a01643-c377-43f9-9118-74afcc2fed8e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "55253511-44c7-4794-97b7-634d438481ab",
+			"id": "59e09ded-67ce-455b-92f6-c8a0c3827373",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "a97deb57-e291-47a6-b846-dc648a84c204",
+			"id": "5bc096f8-ad80-4721-8b43-5287198cdf5b",
 			"key": "id",
 			"value": ""
 		}
