@@ -10864,18 +10864,11 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									" var jsonData = pm.response.json();\r",
-									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
-									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Доступны два способа оплаты\", function () {  \r",
+									"    pm.expect(jsonData.payment_methods).to.be.an('array').to.have.lengthOf(2);\r",
 									"});\r",
-									"\r",
-									"//Contain restriction\r",
-									"pm.test(\"Нет ограничения на сумму 299 999 руб\", () => {\r",
-									"  const expectedObject = {\r",
-									"    \"message\": \"Внимание! Сумма заказа товаров превышает 300 000 руб!\",\r",
-									"  };\r",
-									"  pm.expect(pm.response.json()).not.to.deep.include(expectedObject);\r",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -20030,50 +20023,50 @@
 	],
 	"variable": [
 		{
-			"id": "e94e5524-0ed0-42d4-b306-2baef1fed62f",
+			"id": "2ca5b78c-c7b9-4672-bf25-9d17226a33cd",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4e263db6-c72f-4690-bd91-64afdb525c0b",
+			"id": "307c0bef-7f64-4b7c-ba77-2c1b0a9428d0",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4f1bb6f9-3027-4d61-904a-f3509e099618",
+			"id": "30d3694c-74ea-479e-86ca-2042f35d5943",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "613d2368-f1ad-492e-8aab-d5a68420d27a",
+			"id": "7ff86d43-eac1-4260-8c76-bd4cafc7a3e5",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "edf62e4e-5bf1-4132-87f9-94248399b426",
+			"id": "36ab899d-5823-4727-aedb-4a02f004e46c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d21d81c3-cbfb-47f2-9d35-a909e6032c92",
+			"id": "87f51540-2011-4269-a844-f63e40f27040",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "66a01643-c377-43f9-9118-74afcc2fed8e",
+			"id": "4916505c-d265-4bde-9637-26b490656494",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "59e09ded-67ce-455b-92f6-c8a0c3827373",
+			"id": "74e45b99-5ac2-41c9-bbdc-ea740ed905af",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "5bc096f8-ad80-4721-8b43-5287198cdf5b",
+			"id": "7374a82c-c42c-43cd-9c3e-1bce3fb16edf",
 			"key": "id",
 			"value": ""
 		}
