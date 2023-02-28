@@ -12181,6 +12181,104 @@
 					"response": []
 				},
 				{
+					"name": "Добавить ограничение для способа оплаты",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "3a10ea05-8a1f-4530-bea7-3c6a373ac0d6",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"newDT\");\r",
+									"\r",
+									" var newPaymentMethod = {\r",
+									"paymentMethodId : 3,\r",
+									"messageId : 179,\r",
+									"maxPrice : 300000,\r",
+									"isVisibleWhileRestricted : true\r",
+									" };\r",
+									"\r",
+									"body.paymentMethodToDeliveryType = [...body.paymentMethodToDeliveryType,  {...newPaymentMethod}]\r",
+									"\r",
+									"pm.request.body.raw = body;\r",
+									"console.log(\"body\", body)\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "8d17d840-acdf-4b27-99ec-2bad85da32d3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Ручной приоритет равен 1\" , function () {\r",
+									"    pm.expect(jsonData.priorityCoefficient).to.eql(1);\r",
+									"  });\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "4781ad9c-4ee8-49ff-b60a-4d6b3c628ecf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "78671a73-860d-4a91-b7cc-d9577fbf77a6",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Чекбокс Макс кол-во позиций Активен",
 					"event": [
 						{
@@ -20023,50 +20121,50 @@
 	],
 	"variable": [
 		{
-			"id": "88d2fa53-b71b-40df-bc86-867e2e344d8c",
+			"id": "31d9bce4-3910-43b8-8a0b-c72da94e0667",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "83be6ce5-fd0b-4e8e-af34-cb24f4e773a7",
+			"id": "2f8870eb-b2b4-4d0d-9379-1b9ac18bf3d7",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2fb80138-41dc-4bc3-a13a-9e925cfa3c79",
+			"id": "1e9fb654-eb3a-4db5-98be-d2be13d1e3bc",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "baffd950-6fd7-4c1f-8523-4a8643a04049",
+			"id": "a1bd87c2-a062-4d26-a5fe-a7f2e154209a",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2b505ee1-4438-46ef-bd65-ff9f1b624c75",
+			"id": "3bcb8194-993d-4934-900b-adde7f6d5490",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9f60e630-c8f7-4b7f-94aa-071b1303cfdd",
+			"id": "c69b58ea-007c-4d40-9054-96151d63d9bd",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "eeafabbd-dec8-4416-b1eb-0cd19e351b80",
+			"id": "cd44ad37-d6d9-4475-b8c5-9a2fcab24b99",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "25cf30cd-ab48-4ace-94a9-46bad7893139",
+			"id": "d621b13e-17c6-4253-ad99-cf2ad68a7b94",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "c518384c-6ce4-45c2-8d5b-86df42415960",
+			"id": "3203e070-103f-4c51-b834-78b7e0f09d45",
 			"key": "id",
 			"value": ""
 		}
