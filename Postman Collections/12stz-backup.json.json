@@ -10765,7 +10765,7 @@
 									"let body = pm.collectionVariables.get(\"newDT\");\r",
 									"\r",
 									" var newPaymentMethod = {\r",
-									"paymentMethodId : 1,\r",
+									"paymentMethodId : 3,\r",
 									"messageId : 179,\r",
 									"maxPrice : 300000,\r",
 									"isVisibleWhileRestricted : true\r",
@@ -19968,50 +19968,50 @@
 	],
 	"variable": [
 		{
-			"id": "6be24d80-c1ea-4c88-80f1-9ca4c7b455f0",
+			"id": "75c88cb4-1771-4653-8a79-577d4e4bb494",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4f4dcd6b-1de8-428f-8605-e75af40bf6e6",
+			"id": "26f9ec6c-f3d2-4658-a3ed-02766d9178f6",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4a9ea2d0-88ea-4f77-9508-76648e7cd8ef",
+			"id": "080f0d8f-3106-4f03-9889-3dd036930ab8",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "674c7409-13e2-4732-8f14-ba75cdc5b157",
+			"id": "99276f97-4725-44f3-824f-4ec5c48e8f70",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "5ad453bc-7289-49a6-91b7-2cb0efa1208f",
+			"id": "d0d2ccea-9491-4e15-a60d-9772ac60836c",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "80aba632-10ab-43db-8051-261f1b86ba36",
+			"id": "12250c6b-5a62-4748-af80-c847ffa468b7",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "9840f929-4d0f-4702-9988-75ab021ed131",
+			"id": "ea1a3e60-42e1-4677-85b6-b0d4e06137b8",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "46b4bea7-1ced-4c0a-bddd-90a404354138",
+			"id": "10a6c2ca-7c31-42b3-9cd6-dfc610cbab0d",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "25fb30b0-9950-4572-b185-22d89d57b231",
+			"id": "a0e15bfa-4bc2-4fff-a170-4f9008460f18",
 			"key": "id",
 			"value": ""
 		}
