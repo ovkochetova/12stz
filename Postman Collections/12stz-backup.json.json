@@ -12300,13 +12300,13 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									" var jsonData = pm.response.json();\r",
-									"pm.test(\"ТК для тестов(не удалять)\", function () {\r",
-									"       pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql(\"ТК для тестов(не удалять)\");\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Доступны два способа оплаты\", function () {  \r",
+									"    pm.expect(jsonData.delivery_types[0].payment_methods).to.be.an('array').to.have.lengthOf(2);\r",
 									"});\r",
 									"\r",
-									"pm.test(\"Чекбокс Виден при срабатывании ограничений Активен \", function () {\r",
-									"    pm.expect(pm.response.text()).to.include(\"Вечерняя \");\r",
+									"pm.test(\"Ограничение для добавленного способа оплаты Активно\", function () {  \r",
+									"    pm.expect(jsonData.delivery_types[0].payment_methods).to.be.an('array').to.have.lengthOf(2);\r",
 									"});"
 								],
 								"type": "text/javascript"
@@ -20134,50 +20134,50 @@
 	],
 	"variable": [
 		{
-			"id": "002efb26-8316-4125-910e-d8907dcb9d23",
+			"id": "e2878e5b-f5be-4157-9656-d7c10a14274d",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "404fd4a5-8d66-41b0-b5b4-14f9489be54f",
+			"id": "3a7070f1-fc45-4986-82ac-9e8b8d452251",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fa7e0693-0b7c-4393-9ce3-99e90a98d5de",
+			"id": "241cae87-7569-4cb4-92f2-5fcfbb4af8b0",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "bc3c65b6-975b-4a92-8b8f-e7122fc8475c",
+			"id": "a98d6e0b-3956-4442-bf3d-22e7dbe24df0",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "1e786b4a-7588-4823-a7a8-f0c50eb33cbd",
+			"id": "28db349f-4469-4a81-9c52-eb3fd947bc0a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "d59c1bba-a2d2-4be7-a86f-7fcc9b950d48",
+			"id": "f76a5f7e-7316-4599-b0f3-0b766da8eab5",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "a703ca11-8b5d-4741-ac11-fad1f5e2b49b",
+			"id": "556821b7-8436-4c52-916a-af05706214f7",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "7c69bef6-bde1-487c-b9d2-01df439c8851",
+			"id": "a140b73a-f22e-401c-9c04-f47a3111481c",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "cf718fe5-cec4-48df-8be4-66dbb47f2133",
+			"id": "2695415b-b92a-4360-86f7-6d8503094a47",
 			"key": "id",
 			"value": ""
 		}
