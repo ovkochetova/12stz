@@ -19024,7 +19024,7 @@
 					"response": []
 				},
 				{
-					"name": "Ручной приоритет = 1",
+					"name": "Выбор из Ручной приоритет = 1",
 					"event": [
 						{
 							"listen": "test",
@@ -20430,50 +20430,50 @@
 	],
 	"variable": [
 		{
-			"id": "541120a9-2b74-48da-94db-7305adb40fc7",
+			"id": "8cfb53e7-14fc-4a76-9b44-f659c046f935",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6d9e9465-6458-4db7-b8b7-67d3a103e359",
+			"id": "72ab919f-a1e3-4f8b-8fed-0f000f1d27fe",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8033cdb6-1d46-4de9-a8c0-9f790414640a",
+			"id": "d26d8323-d768-43ce-b92b-703c2ea1449f",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "74d84583-3835-4188-8bd8-841c12fe9c1e",
+			"id": "4b875d46-34ac-486d-929c-62385624927e",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "2d6892b1-d335-407b-b643-5e8a8e4ad217",
+			"id": "ca4947af-90da-4456-b483-5a08c634d8ad",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "3e3e63f5-c732-4b24-9b48-cd9ffc66bc81",
+			"id": "f55a16ef-5a7b-44b1-92e2-0c2a53268523",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "690e092b-a93a-4b7c-b6e1-7b2792976150",
+			"id": "e3dc4f1b-9922-4c2d-832c-e8a36173197e",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "5e5b0b35-bf8a-492e-8525-290874afe874",
+			"id": "8189591d-e09c-46a3-8ed3-f06ff531b5e3",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "1f3cea09-52e9-4f51-8345-0fdf469dd304",
+			"id": "8e9290e6-bfc0-4287-b2b2-55052a7a969b",
 			"key": "id",
 			"value": ""
 		}
