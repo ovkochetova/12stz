@@ -19024,7 +19024,7 @@
 					"response": []
 				},
 				{
-					"name": "3 ТК, ручной приоритет = 1 у всех",
+					"name": "3 ТК, ручной приоритет = 1 у всех(запускать раном)",
 					"event": [
 						{
 							"listen": "test",
@@ -20430,50 +20430,50 @@
 	],
 	"variable": [
 		{
-			"id": "b499ba4d-1088-4322-8d26-0db553eda4bb",
+			"id": "8e9408d3-a0ce-4a59-bf25-8c5430b6c947",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3799d159-733f-403d-8124-3a415cf0d78c",
+			"id": "233adb24-86c8-486f-9881-c01a543f3e62",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "606cdb9b-969f-4414-b2d4-0f40e5ca4bba",
+			"id": "3dd3f313-4a96-4332-9ee3-17bf33764316",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "86b7438f-1f8e-4e99-a8b1-5c5f29dd892e",
+			"id": "7a7d1bb2-666f-45c1-b873-20cb25b81bdf",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "aa440713-a746-4aaf-a656-0a4e720e750e",
+			"id": "81523339-cb28-4fea-9b88-3adf38eb9cb8",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "9cb155d7-9978-4231-917d-9a83b86f65dc",
+			"id": "0ab3db88-f666-4873-8e28-459fd3101563",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "3910f8c2-a18e-4ad6-a0e6-2beb7e9a5dff",
+			"id": "5b66af16-9306-4693-ad38-325be60c5d6a",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "582885c1-f266-4cb9-b163-991b8f36ecb7",
+			"id": "231e4458-4766-4f08-98d9-deaf1de07dd9",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "69112d45-e95c-49be-8f17-e12155a4bc70",
+			"id": "4bd3674e-d807-49ae-b847-3d311b2c46b3",
 			"key": "id",
 			"value": ""
 		}
