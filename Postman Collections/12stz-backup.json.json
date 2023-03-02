@@ -19247,7 +19247,7 @@
 					"response": []
 				},
 				{
-					"name": "Изменение статуса типа доставки на false Copy",
+					"name": "Изменение (дописать)",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -20758,50 +20758,50 @@
 	],
 	"variable": [
 		{
-			"id": "4cb69489-b300-4b24-a12b-f9840a108b72",
+			"id": "210022ce-2a0b-4b4e-8958-2852fe70ccfc",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0913eb4b-80c8-46c3-98dd-aa0c3c5bb3f3",
+			"id": "6d1ccaa4-d60a-429b-9276-9cf29ff15d74",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "288130e1-8391-49e8-ba21-9e4699739b09",
+			"id": "628fe00c-bf47-4214-b6ff-7413c875730a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ef25fe8d-ef41-49ef-aa70-c9e19b40f832",
+			"id": "5555a069-b948-4d71-96c8-3b0ac8b2a8bb",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d30ffe68-9a8c-4abc-b0cb-be559afeb7e1",
+			"id": "dacebb1c-1124-4f56-b955-24e593aff91a",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "0fda080d-f69f-4770-ac26-789967455e91",
+			"id": "307bbbb7-0c9a-4b56-a987-68ebf9bae790",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "aa103894-aea0-4634-84ef-1d8f0c7cbad1",
+			"id": "1b91ebf4-c708-4ff2-a202-311f6c46570d",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "f2d24aa0-a448-406f-9cb9-ed14e2b0488a",
+			"id": "afcd6197-512a-4c8b-985a-561d93023083",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "d63ec8ce-d16c-4397-9f45-3531244630c8",
+			"id": "f6839258-6234-4574-8b74-00e374c2f2a9",
 			"key": "id",
 			"value": ""
 		}
