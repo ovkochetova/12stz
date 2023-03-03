@@ -20226,6 +20226,148 @@
 					"response": []
 				},
 				{
+					"name": "отключение третьего типа доставки (isActive=false) дописать",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "2bd1655c-0d60-4e46-9cc5-7463641a64a7",
+								"exec": [
+									"let body = pm.collectionVariables.get(\"DT\");\r",
+									"console.log(body);\r",
+									"\r",
+									"\r",
+									"let newbody = {\r",
+									"  \"transportCompanyModeId\": body.transportCompanyMode.id,\r",
+									"  \"zoneGroupId\": body.zoneGroup.id,\r",
+									"  \"name\": body.name,\r",
+									"  \"descriptionRu\": body.descriptionRu,\r",
+									"  \"popupId\": body.popup.id,\r",
+									"  \"code\": body.code,\r",
+									"  \"defaultDaysFrom\": body.defaultDaysFrom,\r",
+									"  \"defaultDaysTo\": body.defaultDaysTo,\r",
+									"  \"deliveryPrice\": body.deliveryPrice,\r",
+									"  \"deliveryPriceBorder\": body.deliveryPriceBorder,\r",
+									"  \"deliveryPriceAfterBorder\": body.deliveryPriceAfterBorder,\r",
+									"  \"deliveryMinDays\": body.deliveryMinDays,\r",
+									"  \"cutoffTime\": body.cutoffTime,\r",
+									"  \"consolidationHours\": body.consolidationHours,\r",
+									"  \"gapHours\": body.gapHours,\r",
+									"  \"priorityCoefficient\": body.priorityCoefficient,\r",
+									"  \"maxDaysCoefficient\": body.maxDaysCoefficient,\r",
+									"  \"tariffCoefficient\": body.tariffCoefficient,\r",
+									"  \"winnerPercent\": body.winnerPercent,\r",
+									"  \"maxPrice\": body.maxPrice,\r",
+									"  \"restrictionByPriceIsActive\": body.restrictionByPriceIsActive,\r",
+									"  \"restrictionByPriceMessageId\": body.restrictionByPriceMessage.id,\r",
+									"  \"restrictionByPricePopupId\": body.restrictionByPricePopup.id,\r",
+									"  \"maxQuantity\": body.maxQuantity,\r",
+									"  \"restrictionByQuantityIsActive\": body.restrictionByQuantityIsActive,\r",
+									"  \"restrictionByQuantityMessageId\": body.restrictionByQuantityMessage.id,\r",
+									"  \"restrictionByQuantityPopupId\": body.restrictionByQuantityPopup.id,\r",
+									"  \"maxQuantityPerArticle\": body.maxQuantityPerArticle,\r",
+									"  \"restrictionByQuantityPerArticleIsActive\": body.restrictionByQuantityPerArticleIsActive,\r",
+									"  \"restrictionByQuantityPerArticleMessageId\": body.restrictionByQuantityPerArticleMessage.id,\r",
+									"  \"restrictionByQuantityPerArticlePopupId\": body.restrictionByQuantityPerArticlePopup.id,\r",
+									"  \"isVisibleWhileRestricted\": body.isVisibleWhileRestricted,\r",
+									"  \"isActive\": false,\r",
+									"  \"paymentMethodToDeliveryType\": [\r",
+									"    {\r",
+									"      \"paymentMethodId\": body.paymentMethodToDeliveryType[0].paymentMethod.id,\r",
+									"      \"messageId\": body.paymentMethodToDeliveryType[0].message.id,\r",
+									"      \"maxPrice\": body.paymentMethodToDeliveryType[0].maxPrice,\r",
+									"      \"isVisibleWhileRestricted\": body.paymentMethodToDeliveryType[0].isVisibleWhileRestricted,\r",
+									"      \"paymentMethodCategoryRestrictions\": body.paymentMethodCategoryRestrictions,\r",
+									"           \r",
+									"    }\r",
+									"      ],\r",
+									"    \r",
+									"    \"categoryDeliveryTypeRestrictions\": body.categoryDeliveryTypeRestrictions,\r",
+									"  \"intervals\":body.intervals,\r",
+									"\r",
+									"\r",
+									"\r",
+									"}\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "a34ef7e3-c552-4d10-bc32-032f9825ce0b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.test(\"Статус доставки false\" , function () {\r",
+									"    pm.expect(jsonData.isActive).to.eql(false);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "81ec9e99-399a-44c9-a549-588a5f87f36a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{token}}"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://logistics.12stz.dev/api/v1/delivery-type/:id",
+							"protocol": "https",
+							"host": [
+								"logistics",
+								"12stz",
+								"dev"
+							],
+							"path": [
+								"api",
+								"v1",
+								"delivery-type",
+								":id"
+							],
+							"variable": [
+								{
+									"id": "04b228a6-2a07-42c8-a069-ab1d52d9402e",
+									"key": "id",
+									"value": "{{id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "поиск первого типа доставки по названию",
 					"event": [
 						{
@@ -20430,50 +20572,50 @@
 	],
 	"variable": [
 		{
-			"id": "30e03a67-6a76-4278-9b75-5abdabe00f77",
+			"id": "c2c0cede-99b7-4588-a46b-dad8c5240054",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a7ae76ae-bdbc-4c12-80de-1886f781d141",
+			"id": "cf1e0315-f376-45f1-b4c7-21306c3110ec",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cbb4e419-dd86-4fd9-9eaf-7afafebf3497",
+			"id": "7d7efa72-1c18-4bec-8859-75ecb1ab4134",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f03f6259-b2db-4628-a543-818ce432ccc0",
+			"id": "1c6cfe5c-102e-4f43-a7f9-b9151aa94778",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "d7f53f3a-6817-4292-b326-9eb898d72350",
+			"id": "67a15b88-0d3e-49e7-8749-5df40fc00a46",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "1ba9a7b3-79c6-491f-a8bc-c089b7ddb411",
+			"id": "988917a7-5d17-4944-8b4b-4da43a188090",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "0fd8b669-4632-45ce-9bd8-a3d2e2cfddd6",
+			"id": "7f7d49c3-9e60-4bda-b030-8fc4bcac2c06",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "fe2b962e-577c-4cb2-9cc4-82b717e2aa51",
+			"id": "5f96afc4-57bd-4081-a423-952b179b3d85",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "223dc4ba-7fa6-47a7-995a-4db70e979cf6",
+			"id": "ff88f194-dab2-40a9-bdcf-2f12c723b0a5",
 			"key": "id",
 			"value": ""
 		}
