@@ -586,9 +586,8 @@
 									"    pm.expect(data).to.be.an('array').to.have.lengthOf(2)\r",
 									"    });\r",
 									"\r",
-									"pm.test(\"Your test name\", function () {\r",
-									"    pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql('СДТ_Москва_МО_590 (запись не редактировать!)');\r",
-									"});\r",
+									"\r",
+									"\r",
 									""
 								],
 								"type": "text/javascript"
@@ -20574,50 +20573,50 @@
 	],
 	"variable": [
 		{
-			"id": "68c425f4-8bca-45ad-be6b-98496a761aa0",
+			"id": "a9894a0c-8fcb-4eb7-9f22-447266371d4b",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "624d6b23-c2dc-4223-b966-e35f7ca43b9c",
+			"id": "705e85a6-0d78-410a-b63d-4a5df6f26b06",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "081e44c6-8fb3-4612-89d5-85d4dca3cd8a",
+			"id": "40078105-8985-4f16-b7e9-699adc9a6574",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a8f14cc5-3bc4-4b13-9b70-5f254d8ac249",
+			"id": "703c5a43-3896-4601-a6f2-67ea0117245c",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "6c263325-983b-4de8-bdd5-84e0b402bef5",
+			"id": "b7d8073c-1962-4d72-b7c0-fa2cebbdee2f",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "56501ac7-a930-45a7-b0bd-1d538f3689bd",
+			"id": "0eff4a70-3731-4983-8d3a-a3ba2bc50271",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "d2bbc60b-5cf7-4c09-839b-ef0273b83e79",
+			"id": "74c2a2cc-21a0-422b-aecb-c0bad6421985",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "a72f2e50-32c2-43cd-be85-16da877152f4",
+			"id": "b617c53d-d4a0-43c8-9331-fcc68bddc415",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "9e89a91e-f5fb-4e7b-85e4-73be15817c74",
+			"id": "6f6f73fe-6419-4d6a-80f3-bc3dc14a888a",
 			"key": "id",
 			"value": ""
 		}
