@@ -584,10 +584,12 @@
 									"var data = pm.response.json().delivery_types;\r",
 									"pm.test('Для этой доставки ' + data.length + ' транспортных компании', function () {\r",
 									"    pm.expect(data).to.be.an('array').to.have.lengthOf(2)\r",
+									"    });\r",
+									"\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    pm.expect(jsonData.delivery_types[0].delivery_type_name).to.eql('СДТ_Москва_МО_590 (запись не редактировать!)');\r",
 									"});\r",
-									"\r",
-									"\r",
-									"//const deliveryType2 = pm.response.json().delivery_types.find(dt => dt.delivery_type_name == 'СДТ_Москва_МО_590 (запись не редактировать!)');"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -20572,50 +20574,50 @@
 	],
 	"variable": [
 		{
-			"id": "4ccdcc83-d510-4895-909a-48ac92de003b",
+			"id": "68c425f4-8bca-45ad-be6b-98496a761aa0",
 			"key": "url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "fe6f395b-7abe-4f73-879c-294601d8ba4a",
+			"id": "624d6b23-c2dc-4223-b966-e35f7ca43b9c",
 			"key": "baseUrl",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cc1c0d40-958d-44a5-81c7-df8348358584",
+			"id": "081e44c6-8fb3-4612-89d5-85d4dca3cd8a",
 			"key": "token",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7c3a5f72-0062-4569-9744-8e4eb8e229ba",
+			"id": "a8f14cc5-3bc4-4b13-9b70-5f254d8ac249",
 			"key": "TKM",
 			"value": ""
 		},
 		{
-			"id": "01a890f2-0cec-4e62-8a37-c69d662036da",
+			"id": "6c263325-983b-4de8-bdd5-84e0b402bef5",
 			"key": "groupzone",
 			"value": ""
 		},
 		{
-			"id": "10f82992-a7bf-4ebc-a4df-b1bbeb4a84e0",
+			"id": "56501ac7-a930-45a7-b0bd-1d538f3689bd",
 			"key": "zone",
 			"value": ""
 		},
 		{
-			"id": "4a377888-6213-496c-bed4-0eb9ace41c64",
+			"id": "d2bbc60b-5cf7-4c09-839b-ef0273b83e79",
 			"key": "DT",
 			"value": ""
 		},
 		{
-			"id": "81e3e028-478d-4c0d-b93f-53752ab47ac3",
+			"id": "a72f2e50-32c2-43cd-be85-16da877152f4",
 			"key": "newDT",
 			"value": ""
 		},
 		{
-			"id": "7362b73c-217f-41b7-b5fe-24cd1b776f21",
+			"id": "9e89a91e-f5fb-4e7b-85e4-73be15817c74",
 			"key": "id",
 			"value": ""
 		}
